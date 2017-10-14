@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSharpPlus-Example", "DSharpPlus-Example\DSharpPlus-Example.csproj", "{57B096A1-54A8-4FF7-B99E-6DC14D0D3AB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPBot", "RPBot.csproj", "{57B096A1-54A8-4FF7-B99E-6DC14D0D3AB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,8 +7,8 @@
     <ProjectGuid>{57B096A1-54A8-4FF7-B99E-6DC14D0D3AB4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DSharpPlus_Example</RootNamespace>
-    <AssemblyName>DSharpPlus-Example</AssemblyName>
+    <RootNamespace>RPBot</RootNamespace>
+    <AssemblyName>RPBot</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
