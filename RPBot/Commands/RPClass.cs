@@ -8,6 +8,8 @@ using System;
 using System.Threading;
 using Newtonsoft.Json;
 using DSharpPlus.Interactivity;
+using DSharpPlus.Entities;
+using DSharpPlus.EventArgs;
 
 namespace RPBot
 {
@@ -177,7 +179,7 @@ namespace RPBot
             DateTime y = DateTime.Now.AddHours(-4);
             while (true)
             {
-				await e.Client.UpdateStatusAsync(new Game(DateTime.Now.DayOfWeek + " " + DateTime.Now.Hour + ":" + DateTime.Now.Minute.ToString("00")));
+				//await e.Client.(new DiscordGame(DateTime.Now.DayOfWeek + " " + DateTime.Now.Hour + ":" + DateTime.Now.Minute.ToString("00")));
 
                 string TimePhase = "";
                 if (DateTime.Now.Hour == 6 && y.AddHours(3) < DateTime.Now)

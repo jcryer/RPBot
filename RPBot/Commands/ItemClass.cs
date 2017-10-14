@@ -1,5 +1,6 @@
 ﻿using DSharpPlus;
 using DSharpPlus.CommandsNext;
+using DSharpPlus.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -173,7 +174,7 @@ namespace RPBot
                             embed.WithFooter("Heroes & Villains");
                             embed.WithTimestamp(DateTime.UtcNow);
                             embed.AddField("$" + item.price + " - " + numLeft + " left in stock", item.description);
-                            DiscordMessage y = await itemFromShop.EditAsync("", embed: embed);
+                            DiscordMessage y = await itemFromShop.ModifyAsync("", embed: embed);
                         }
                         SaveData(1);
                         SaveData(2);
