@@ -11,10 +11,11 @@ using DSharpPlus.CommandsNext;
 using System.Net.Sockets;
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Interactivity;
+using DSharpPlus.Entities;
 
 namespace RPBot
 {
-    public sealed class Commands : Program 
+    public sealed class CommandsClass : Program 
     {
         [Command("give"), Description("Command for admins to give out currency to users.")]
         public async Task Give(CommandContext e, [Description("Who to award the money to (use a mention)")] string user = "", [Description("Amount of money to award")] int money = -1) => await MoneyClass.Give(e, user.Replace("<", "").Replace(">", "").Replace("@", "").Replace("!", ""), money);

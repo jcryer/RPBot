@@ -9,6 +9,9 @@ using DSharpPlus.CommandsNext;
 using DSharpPlus;
 using DSharpPlus.CommandsNext.Exceptions;
 using DSharpPlus.Interactivity;
+using DSharpPlus.EventArgs;
+using DSharpPlus.Entities;
+using DSharpPlus.Net.WebSocket;
 
 namespace RPBot
 {
@@ -16,7 +19,6 @@ namespace RPBot
     {
         private Config Config { get; }
         public DiscordClient Discord;
-        private Commands Commands { get; }
         private CommandsNextModule CommandsNextService { get; }
 		private InteractivityModule InteractivityService { get; }
         private Timer GameGuard { get; set; }
@@ -28,10 +30,9 @@ namespace RPBot
             this.Config = cfg;
 
             // discord instance config and the instance itself
-            var dcfg = new DiscordConfig
+            var dcfg = new DiscordConfiguration
             {
                 AutoReconnect = true,
-                DiscordBranch = Branch.Stable,
                 LargeThreshold = 250,
                 LogLevel = LogLevel.Info,
                 Token = this.Config.Token,
@@ -41,15 +42,15 @@ namespace RPBot
                 ShardCount = this.Config.ShardCount,
             };
             Discord = new DiscordClient(dcfg);
-		//	Discord.SetWebSocketClient<WebSocket4NetClient>();            
+			//Discord.SetWebSocketClient<WebSocketSharpClient>();            
             // events
             Discord.DebugLogger.LogMessageReceived += this.DebugLogger_LogMessageReceived;
             Discord.Ready += this.Discord_Ready;
             Discord.GuildAvailable += this.Discord_GuildAvailable;
             Discord.MessageCreated += this.Discord_MessageCreated;
-            Discord.MessageReactionAdd += this.Discord_MessageReactionAdd;
-            Discord.MessageReactionRemoveAll += this.Discord_MessageReactionRemoveAll;
-            Discord.PresenceUpdate += this.Discord_PresenceUpdate;
+            Discord.MessageReactionAdded += this.Discord_MessageReactionAdd;
+            Discord.MessageReactionsCleared += this.Discord_MessageReactionRemoveAll;
+            Discord.PresenceUpdated += this.Discord_PresenceUpdate;
 
             // commandsnext config and the commandsnext service itself
             var cncfg = new CommandsNextConfiguration
@@ -61,9 +62,9 @@ namespace RPBot
             this.CommandsNextService = Discord.UseCommandsNext(cncfg);
             this.CommandsNextService.CommandErrored += this.CommandsNextService_CommandErrored;
             this.CommandsNextService.CommandExecuted += this.CommandsNextService_CommandExecuted;
-            this.CommandsNextService.RegisterCommands<Commands>();
-
-			this.InteractivityService = Discord.UseInteractivity();
+            this.CommandsNextService.RegisterCommands<CommandsClass>();
+            InteractivityConfiguration icfg = new InteractivityConfiguration();
+			this.InteractivityService = Discord.UseInteractivity(icfg);
         }
 
         public async Task RunAsync()
@@ -117,7 +118,7 @@ namespace RPBot
 
         private async Task Discord_Ready(ReadyEventArgs e)
         {
-            await Discord.UpdateStatusAsync(new Game("God"));
+            await Discord.UpdateStatusAsync(new DiscordGame("God"));
 
 
         }
@@ -141,13 +142,17 @@ namespace RPBot
             {
                 try
                 {
+                    if (e.Guild.Id == 312918289988976653)
+                    {
+
+                    }
                     DiscordGuild RPGuild = Discord.Guilds.First(x => x.Key == 312918289988976653).Value;
                     firstRun = false;
                     //Thread myNewThread = new Thread(async () => await UpdateClock(e));
                     //myNewThread.Start();
-                    GuildRankingChannel = await e.Client.GetChannelAsync(312964153197330433);
-                    PlayerRankingChannel = await e.Client.GetChannelAsync(315048564525105153);
-                    VillainRankingChannel = await e.Client.GetChannelAsync(315048584007385093);
+                    GuildRankingChannel = e.Guild.GetChannel(312964153197330433);
+                    PlayerRankingChannel = e.Guild.GetChannel(315048564525105153);
+                    VillainRankingChannel = e.Guild.GetChannel(315048584007385093);
 
                     await AddUsers(RPGuild, true);
                 }
@@ -184,10 +189,10 @@ namespace RPBot
                 DiscordMessage msgToDelete = e.Message;
                 if (e.Emoji.Name == "📥")
                 {
-                    DiscordUser l = await e.Client.GetUserAsync(e.User.Id);
+                    DiscordMember l = await e.Channel.Guild.GetMemberAsync(e.User.Id);
                      
                     DiscordMessage test = await e.Channel.GetMessageAsync(e.Message.Id);
-                    await test.DeleteReactionAsync(DiscordEmoji.FromName(e.Client, ":inbox_tray:"), l);
+                    await test.DeleteReactionAsync(DiscordEmoji.FromName(e.Client as DiscordClient, ":inbox_tray:"), l);
 
                     UserObject.RootObject user = Users.First(x => x.UserData.userID == e.User.Id);
                     ShopObject.RootObject item = ItemsList.First(x => x.messageID == e.Message.Id);
@@ -216,7 +221,7 @@ namespace RPBot
                                 embed.WithFooter("Heroes & Villains");
                                 embed.WithTimestamp(DateTime.UtcNow);
 
-                                await test.EditAsync("", embed: embed);
+                                await test.ModifyAsync("", embed: embed);
                             }
                             else
                             {
@@ -235,7 +240,7 @@ namespace RPBot
                 }
                 else if (e.Emoji.Name == "📤")
                 {
-                    await e.Message.DeleteReactionAsync(DiscordEmoji.FromUnicode(e.Client, "📤"), await e.Channel.Guild.GetMemberAsync(e.User.Id));
+                    await e.Message.DeleteReactionAsync(DiscordEmoji.FromUnicode(e.Client as DiscordClient, "📤"), await e.Channel.Guild.GetMemberAsync(e.User.Id));
 
                     UserObject.RootObject user = Users.First(x => x.UserData.userID == e.User.Id);
                     ShopObject.RootObject item = ItemsList.First(x => x.messageID == e.Message.Id);
@@ -257,7 +262,7 @@ namespace RPBot
                         embed.WithFooter("Heroes & Villains");
                         embed.WithTimestamp(DateTime.UtcNow);
 
-                        await e.Message.EditAsync("", embed: embed);
+                        await e.Message.ModifyAsync("", embed: embed);
                     }
                     else
                     {
@@ -270,7 +275,7 @@ namespace RPBot
             }
         }
 
-        private /*async*/ Task Discord_MessageReactionRemoveAll(MessageReactionRemoveAllEventArgs e)
+        private /*async*/ Task Discord_MessageReactionRemoveAll(MessageReactionsClearEventArgs e)
         {
             return Task.Delay(0);
         }
@@ -279,7 +284,7 @@ namespace RPBot
         {
             try
             {
-                this.Discord.UpdateStatusAsync(new Game("God")).GetAwaiter().GetResult();
+                this.Discord.UpdateStatusAsync(new DiscordGame("God")).GetAwaiter().GetResult();
             }
             catch (Exception) { }
         }
@@ -328,7 +333,7 @@ namespace RPBot
             await e.Context.RespondAsync("", embed: embed);
         }
 
-        private Task CommandsNextService_CommandExecuted(CommandExecutedEventArgs e)
+        private Task CommandsNextService_CommandExecuted(CommandExecutionEventArgs e)
         {
             Discord.DebugLogger.LogMessage(LogLevel.Info, "CommandsNext", $"{e.Context.User.Username} executed {e.Command.Name} in {e.Context.Channel.Name}", DateTime.Now);
             return Task.Delay(0);
