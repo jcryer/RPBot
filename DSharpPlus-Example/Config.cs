@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace SLOBot
+namespace RPBot
 {
     internal sealed class Config
     {

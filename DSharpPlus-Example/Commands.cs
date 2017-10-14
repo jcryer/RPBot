@@ -10,176 +10,141 @@ using System.Threading.Tasks;
 using DSharpPlus.CommandsNext;
 using System.Net.Sockets;
 using DSharpPlus.CommandsNext.Attributes;
+using DSharpPlus.Interactivity;
 
-namespace SLOBot
+namespace RPBot
 {
     public sealed class Commands : Program 
     {
-        [Command("sa"), Description("All Secret Assassin commands")]
-        public Task SA(CommandContext e, [Description("Use Create, Stop, Start, Join, Info or Vote")] string keyword, [Description("Type the player's number as shown using !sa info")] int vote = -1) => SAClass.SAGame(e, keyword, vote);
+        [Command("give"), Description("Command for admins to give out currency to users.")]
+        public async Task Give(CommandContext e, [Description("Who to award the money to (use a mention)")] string user = "", [Description("Amount of money to award")] int money = -1) => await MoneyClass.Give(e, user.Replace("<", "").Replace(">", "").Replace("@", "").Replace("!", ""), money);
 
-        [Command("test"), Description("Test Command"), Hidden()]
-        public async Task Test(CommandContext e) =>
-            await e.Channel.SendMessageAsync("u w0t m8");
+        [Command("transfer"), Description("Command for users to transfer money to each other.")]
+        public async Task Transfer(CommandContext e, [Description("Who to send the money to (use a mention)")] string user = "", [Description("Amount of money to award")] int money = -1) => await MoneyClass.Transfer(e, user.Replace("<", "").Replace(">", "").Replace("@", "").Replace("!", ""), money);
+        
+        [Command("balance"), Aliases("bal"), Description("Sends the user a PM with their current balance.")]
+        public async Task Balance(CommandContext e, [Description("Use all keyword to see everyone's balance (Admin only)")] string all = "") => await MoneyClass.Balance(e, all);
 
-        [Command("kill"), Description("Command for Assassins to use in PM in night phase.")]
-        public async Task Kill(CommandContext e, [Description("Type the player's number as shown using !sa info")] int vote = -1)
+        [Command("take"), Description("Command for admins to take currency from users.")]
+        public async Task Take(CommandContext e, [Description("Who to take the money from (use a mention)")] string user = "", [Description("Amount of money to take")] int money = -1) => await MoneyClass.Take(e, user.Replace("<", "").Replace(">", "").Replace("@", "").Replace("!", ""), money);
+        
+        [Command("roll"), Description("Dice roll command!")]
+        public async Task Roll(CommandContext e, [Description("Number of sides of the dice")] int numSides = 0, [Description("Number of rolls to do")] int numRolls = 0) => await RPClass.Roll(e, numSides, numRolls);
+    
+        [Command("xp"), Description("Admin xp command")]
+        public async Task Stats(CommandContext e, [Description("User to change stats of (Use mention)")] string user, [Description("How much you wish to change it by (-5 to 5)")] int xpNum) => await XPClass.XP(e, user.Replace("<", "").Replace(">", "").Replace("@", "").Replace("!", ""), xpNum);
+
+        [Command("stock"), Description("Admin item stock command")]
+        public async Task Stock(CommandContext e, [Description("Item ID (from !items all command) of item wanting to be changed.")] int itemID, [Description("How much you wish to change it by (-5 to 5)")] int stockChange) => await ItemClass.Stock(e, itemID, stockChange);
+
+        [Command("items"), Description("Admin item command.")]
+        public async Task Items(CommandContext e, [Description("Either Add, Remove, All or Avalon.")] string cmd, [Description("If Adding, use the format \"name|description|price|availability(-1 if unlimited)|emoji|location(Write 1 for mall or 2 for Avalon Research)\". If removing, use the item ID from the All command.")] string subcmd = "") => await ItemClass.Items(e, cmd, subcmd);
+
+        [Command("inventory"), Aliases("inv"), Description("Command to view your inventory.")]
+        public async Task Inventory(CommandContext e, [Description("Use all keyword to see everyone's inventory, or mention a specific person to view their inventory. Do not use a sub command if you wish to view your own inventory.")] string all = "") => await ItemClass.Inventory(e, all);
+
+        [Command("buy"), Description("Command to buy an item.")]
+        public async Task Buy(CommandContext e, [Description("Name of item you are buying.")] string itemName) => await ItemClass.Buy(e, itemName);
+
+        [Command("sell"), Description("Command to sell an item.")]
+        public async Task Sell(CommandContext e, [Description("Name of item you are selling")] string itemName) => await ItemClass.Sell(e, itemName);
+
+		[Command("choose"), Description("Command to choose one of the variables given.")]
+		public async Task Choose(CommandContext e, [Description("List of variables seperated by commas.")] string choiceList) => await RPClass.Choose(e, choiceList);
+
+        [Command("guild"), Description("Admin guild command.")]
+        public async Task Guild(CommandContext e, [Description("Either Create, Destroy, ChangeStatus, AddUser or RemoveUser")] string cmd, [Description("Give name of Guild.")] string subcmd = "", [Description("If Create or ChangeStatus, use 1 for Active or 2 for Retired. If AddUser or RemoveUser, @mention the person.")] string subsubcmd = "") => await XPClass.Guild(e, cmd, subcmd, subsubcmd);
+
+        [Command("cases"), Description("Admin cases command.")]
+        public async Task Cases(CommandContext e, [Description("Mention a user.")] string user, [Description("Number to increase or decrease cases resolved by")] string caseNum)
         {
-            if (e.Channel.IsPrivate)
-				await SAClass.PMTasks(e, 1, vote);
-        }
-
-        [Command("protect"), Description("Command for Medics to use in PM in night phase.")]
-        public async Task Protect(CommandContext e, [Description("Type the player's number as shown using !sa info")] int vote = -1)
-        {
-            if (e.Channel.IsPrivate)
-				await SAClass.PMTasks(e, 2, vote);
-        }
-
-        [Command("find"), Description("Command for ANBU to use in PM in night phase.")]
-        public async Task Find(CommandContext e, [Description("Type the player's number as shown using !sa info")] int vote = -1)
-        {
-            if (e.Channel.IsPrivate)
-				await SAClass.PMTasks(e, 3, vote);
-        }
-
-        [Command("ping")]
-        public async Task Ping(CommandContext e) =>
-            await e.Message.RespondAsync("Pong!");
-
-        [Command("cat"), Description("Displays a cat photo.")]
-        public async Task Cat(CommandContext e)
-        {
-
-            string s;
-            using (WebClient webclient = new WebClient())
+            user = user.Replace("<", "").Replace(">", "").Replace("@", "").Replace("!", "");
+            try
             {
-                s = webclient.DownloadString("http://random.cat/meow");
-                int pFrom = s.IndexOf("\\/i\\/", StringComparison.Ordinal) + "\\/i\\/".Length;
-                int pTo = s.LastIndexOf("\"}", StringComparison.Ordinal);
-                string cat = s.Substring(pFrom, pTo - pFrom);
-                webclient.DownloadFile("http://random.cat/i/" + cat, "cat.png");
-                await e.Channel.SendFileAsync(new FileStream("cat.png", FileMode.Open), "cat.png", "meow!");
+                RPClass.Users.First(x => x.UserData.userID == ulong.Parse(user)).UserData.resolvedCases += int.Parse(caseNum);
+                if (RPClass.Users.First(x => x.UserData.userID == ulong.Parse(user)).UserData.resolvedCases < 0)
+                    RPClass.Users.First(x => x.UserData.userID == ulong.Parse(user)).UserData.resolvedCases = 0;
+
+                if (RPClass.Users.First(x => x.UserData.userID == ulong.Parse(user)).UserData.role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
+                else if (RPClass.Users.First(x => x.UserData.userID == ulong.Parse(user)).UserData.role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
+                await XPClass.UpdateGuildRanking(e.Guild);
+
+                RPClass.SaveData(1);
+
+                await e.RespondAsync("Cases updated.");
+            }
+            catch
+            {
+                await e.RespondAsync("Mention the user to select them, and use an integer to choose the number of cases.");
             }
         }
 
-        [Command("removeSA"), Hidden()]
-        public async Task RemoveSA(CommandContext e)
+        [Command("crimes"), Description("Admin cases command.")]
+        public async Task Crimes(CommandContext e, [Description("Mention a user.")] string user, [Description("Number to increase or decrease crimes committed by")] string crimeNum)
         {
-            DiscordChannel Channel = e.Guild.Channels.First(x => x.Name == "sa");
-
-            foreach (DiscordOverwrite a in Channel.PermissionOverwrites)
+            user = user.Replace("<", "").Replace(">", "").Replace("@", "").Replace("!", "");
+            try
             {
-                Console.WriteLine(a.Type);
-                if (a.Id == 302577136148021248)
+                RPClass.Users.First(x => x.UserData.userID == ulong.Parse(user)).UserData.crimesCommitted += int.Parse(crimeNum);
+                if (RPClass.Users.First(x => x.UserData.userID == ulong.Parse(user)).UserData.crimesCommitted < 0)
+                    RPClass.Users.First(x => x.UserData.userID == ulong.Parse(user)).UserData.crimesCommitted = 0;
+
+                if (RPClass.Users.First(x => x.UserData.userID == ulong.Parse(user)).UserData.role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
+                else if (RPClass.Users.First(x => x.UserData.userID == ulong.Parse(user)).UserData.role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
+                await XPClass.UpdateGuildRanking(e.Guild);
+
+                RPClass.SaveData(1);
+
+                await e.RespondAsync("Crimes updated.");
+            }
+            catch
+            {
+                await e.RespondAsync("Mention the user to select them, and use an integer to choose the number of crimes.");
+            }
+        }
+
+        [Command("name"), Description("Command for users to change their RP name temporarily")]
+        public async Task Name(CommandContext e, [Description("What to call yourself")] string name = "")
+        {
+            DiscordMessage x;
+            if (name == "off")
+            {
+                SpeechObject.RootObject savedName = RPClass.SpeechList.FirstOrDefault(y => y.id == e.Member.Id);
+                if (savedName != null)
                 {
-                    Console.WriteLine("SA!");
-                    a.AllowPermission(DSharpPlus.Permission.ReadMessages);
-                    await Channel.UpdateOverwriteAsync(a);
+                    RPClass.SpeechList.Remove(savedName);
+                    x = await e.RespondAsync("Removed from list.");
                 }
-            }
-        }
+                else
+                {
+                    x = await e.RespondAsync("");
+                }
+                Thread.Sleep(2000);
+                await e.Message.DeleteAsync();
+                await x.DeleteAsync();
 
-        [Command("serverstatus"), Description("Pings the SLO game server directly to find out whether it is on.")]
-        public async Task ServerStatus (CommandContext e)
-        {
-            var client = new TcpClient();
-            if (!client.ConnectAsync("52.9.109.21", 443).Wait(1000))
+            }
+            else if (name != "")
             {
-                await e.Channel.SendMessageAsync("Server appears to be down.");
+                SpeechObject.RootObject savedName = RPClass.SpeechList.FirstOrDefault(y => y.id == e.Member.Id);
+                if (savedName != null)
+                {
+                    RPClass.SpeechList.Remove(savedName);
+                }
+                RPClass.SpeechList.Add(new SpeechObject.RootObject(e.Member.Id, name));
+                x = await e.RespondAsync("Name changed.");
+                Thread.Sleep(2000);
+                await e.Message.DeleteAsync();
+                await x.DeleteAsync();
             }
             else
             {
-                await e.Channel.SendMessageAsync("Server is up!");
-
+                x = await e.RespondAsync("Specify a name.");
+                Thread.Sleep(2000);
+                await e.Message.DeleteAsync();
+                await x.DeleteAsync();
             }
         }
-        [Command("translate")]
-        public async Task Translate(CommandContext e) => await Translator.Translate(e);
-
-        [Command("throwback"), Description("Returns either a random image or a specified image from throwback database.")]
-        public async Task Throwback(CommandContext e, [Description("Search for a keyword in the images database.")] string search = "") => await ThrowbackClass.Throwback(e, search);
-
 
     }
-}/*
-
-                        
-                        else if (cmd.StartsWith("latest", StringComparison.Ordinal))
-                        {
-                            string htmlCode;
-                            int numResults;
-
-                            string returnResults = "";
-                            using (WebClient SLOParse = new WebClient())
-                            {
-                                htmlCode = SLOParse.DownloadString("https://www.shinobilifeonline.com/index.php?action=forum");
-
-                            }
-
-                            Match match = Regex.Match(htmlCode, "<span class.*\n.*<a href=\"(.+)PHPSESSID.*&amp;(.+)\".*<b>(.+)</b>.*\n.*>(.+)<.*\n.*\n.*<strong>(.*)</.*at (.*)", RegexOptions.Multiline);
-                            try
-                            {
-                                string cmdEdited = cmd.Substring(7);
-                                if (int.TryParse(cmdEdited, out numResults) && numResults <= 10 && numResults > 0)
-                                {
-                                    returnResults = match.Groups[4].Value + " posted on the thread: \"" + match.Groups[3].Value + "\", " + match.Groups[5].Value.ToLower() + " at "
-                                                        + match.Groups[6].Value + "\n" + match.Groups[1].Value + match.Groups[2].Value + "\n";
-                                    for (int i = 1; i <= numResults - 1; i++)
-                                    {
-                                        match = match.NextMatch();
-                                        returnResults += match.Groups[4].Value + " posted on the thread: \"" + match.Groups[3].Value + "\", " + match.Groups[5].Value.ToLower() + " at "
-                                                        + match.Groups[6].Value + "\n" + match.Groups[1].Value + match.Groups[2].Value + "\n";
-
-                                    }
-                                }
-                                else
-                                {
-                                    await e.Message.Respond("Incorrect format. Posts requested must be an integer between 1 and 10");
-                                }
-                            }
-                            catch
-                            {
-                                returnResults += match.Groups[4].Value + " posted on the thread: \"" + match.Groups[3].Value + "\", " + match.Groups[5].Value.ToLower() + " at "
-                                                    + match.Groups[6].Value + "\n" + match.Groups[1].Value + match.Groups[2].Value + "\n";
-                            }
-                            await e.Message.Respond(returnResults);
-
-
-                        }
-
-                        else if (cmd.StartsWith("upload"))
-                        {
-                            string cmdEdited = "";
-                            try
-                            {
-                                cmdEdited = cmd.Substring(8);
-                            }
-                            catch { }
-                            if (!string.IsNullOrWhiteSpace(cmdEdited))
-                            {
-                                using (WebClient client = new WebClient())
-                                {
-                                    string tempname = Reactions.RandomString(5) + "." + cmdEdited.Substring(cmdEdited.LastIndexOf('.') + 1);
-                                    try
-                                    {
-                                        client.DownloadFile(new Uri(cmdEdited), @"SLO Shit/Temp/" + tempname);
-                                        await e.Channel.SendMessage("Uploaded successfully!");
-                                    }
-                                    catch
-                                    {
-                                        await e.Channel.SendMessage("An image URL requires an ending of .png, .jpg etc.");
-                                    }
-                                }
-                            }
-                        }
-					}
-                    
-				}
-			}
-		};
-            
-
-	}
 }
-*/

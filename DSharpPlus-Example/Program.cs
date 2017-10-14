@@ -9,26 +9,22 @@ using System.Threading;
 using System.Threading.Tasks;
 using DSharpPlus;
 using Newtonsoft.Json;
+using DSharpPlus.CommandsNext.Exceptions;
 
-namespace SLOBot
+namespace RPBot
 {
     public class Program
     {
 
         public static string token;
-        public static string LatestPosts;
-        public static List<string> FullLog = new List<string>();
-        public static List<AutoTranslate> UsersTranslated = new List<AutoTranslate>();
-        public static List<int> Colours = new List<int>() { 15158332, 10181046, 3447003, 2667619, 15844367, 8622482, 1845299 };
         public static bool firstRun = true;
         public static Random random = new Random();
-        public static bool processing = false;
+
         public static void Main(string[] args) => new Program().Run(args).GetAwaiter().GetResult();
 
         private async Task Run(string[] args)
         {
-            LatestClass.LatestStartup();
-			SAClass.LoadData();
+            RPClass.LoadData();
             var cfg = new Config();
             var json = string.Empty;
             if (!File.Exists("config.json"))
@@ -47,7 +43,7 @@ namespace SLOBot
             var tskl = new List<Task>();
             for (var i = 0; i < cfg.ShardCount; i++)
             {
-                var bot = new SLOBot(cfg, i);
+                var bot = new RPBot(cfg, i);
                 tskl.Add(bot.RunAsync());
                 await Task.Delay(7500);
             }
