@@ -238,6 +238,7 @@ namespace RPBot
         [Command("update"), Description("Admin update command"), RequireRolesAttribute("Administrator")]
         public async Task Update(CommandContext e)
         {
+            await e.RespondAsync("Restarting. Wish me luck!");
             SaveData(-1);
             var process = new Process()
             {

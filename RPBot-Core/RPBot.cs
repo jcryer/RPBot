@@ -204,12 +204,17 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
 
         }
 
-        private Task Discord_GuildAvailable(GuildCreateEventArgs e)
+        public async Task Discord_GuildAvailable(GuildCreateEventArgs e)
         {
+            if (RPClass.Restarted)
+            {
+                DiscordChannel c = e.Guild.GetChannel(329655620120608769);
+                DiscordMember me = await e.Guild.GetMemberAsync(126070623855312896);
+                await c.SendMessageAsync("Restarted successfully " + me.Mention + "!");
+            }
             this.GameGuard = new Timer(TimerCallback, null, TimeSpan.FromMinutes(0), TimeSpan.FromMinutes(15));
 
             this.Discord.DebugLogger.LogMessage(LogLevel.Info, "DSPlus Test", $"Guild available: {e.Guild.Name}", DateTime.Now);
-            return Task.Delay(0);
         }
 
         private Task Discord_PresenceUpdate(PresenceUpdateEventArgs e)
