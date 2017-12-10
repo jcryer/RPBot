@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "name": "the_hero_academy",
+    "content": [
+      "**LOCATION: One City Center**\r\n\r\nThe WayHaven Academy is an academy where students learn and train to become Heroes. It is one of the main settings in WayHaven. W.A. is the #1 ranked  School for heroics and is considered as the top Hero Academy in the world. Students are separated into specific Departments and Classes. At the entrance, there is a security wall nicknamed the �W.A. Barrier� that automatically closes if a person does not have a Student ID Card or Special Entry Permission ID. Many precautions have been made to keep members of the press and villains out.\r\nhttps://cdn.discordapp.com/attachments/267684541877977088/312923296922337281/images.png\r\nhttps://cdn.discordapp.com/attachments/252196354648965120/312936206596046850/pcclead.png",
+      "**STAFF:**\r\n\r\nWayHaven Academy has some of the most illustrious, distinguished and prestigious staff in the entire Hero community. With Pros occupying most of the jobs and educating the students with acquired knowledge from their past experiences, there is no better Heroics course in the world!.\r\n\r\nPlayer characters (PCs) once they have attained the rank of **Pro** and wish to work at W.A can simply apply by means of Role-Play and may either be accepted or declined. \r\nThere are some NPC staff members as well (added/removed as is necessary) who sometimes play an important role in the running of the academy.\r\n\r\nTHE PRINCIPAL:  The Sonic Hero, **Shrill**\r\n\r\n**Name:** Gilbert Hamilton\r\n**Quirk:** Sound Manipulation\r\nHe creates, shapes and manipulates sound waves with his voice which can be used for both offensive and defensive purposes. At low frequencies, it may cause internal damage and death. Sound is an invisible, deadly and versatile weapon which can travel through any medium making defending against it (using physical barriers) difficult.\r\n**Age:** 87\r\n**Height:** 5'1\r\n**Weight:** 65kg\r\n**Nationality:** English\r\n**History:** Was formerly the Top hero before retiring from field duty due to his age. Is often referred to as the first symbol of peace. He is probably the greatest hero to ever live and the best of his generation.\r\n**Rank:** S-Rank\r\n**Trivia:**  Likes to smoke pipes, listen to classical Music and is very eccentric personality-wise. He is respected by everyone for his foresight, intelligence and decision making.\r\nhttps://cdn.discordapp.com/attachments/252196354648965120/313787274129309696/2309f2bdf23f457a6067a80595a6d234.png",
+      "**THE COMBAT INSTRUCTOR: The Gun Hero, Deadeye**\r\n\r\n**Name:** Aldrick Dufour\r\n**Quirk:** Enhanced Gunmanship\r\nHe is highly proficient in handling all types of guns allowing him to perform great feats and benefit from far ranged combat. He has excellent bullseye accuracy when firing a bullet. Quirk makes him adept in using all sorts of projectile weapons as well.\r\n**Age:** 29\r\n**Height:** 6'4\r\n**Weight:** 77kg\r\n**Nationality:** French\r\n**History:** Having been born and raised in the streets, he endured a tough childhood, orphaned for the most part. After being taken in at W.A and graduating with honors, he made it his goal to help as many young Heroes as he could and has since then been the combat instructor at the Academy. \r\n**Rank:** A-Rank\r\n**Trivia:** is notoriously stolid and stoic in nature, never saying more than he thinks he needs to. His behaviour is often avuncular and he is very protective of his students, co-workers and friends.\r\nhttps://cdn.discordapp.com/attachments/252196354648965120/313780511812354048/Z.png"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "colbridge_academy",
+    "content": [
+      "**LOCATION: Turner Street**\r\n\r\nBefore the age of heroes, Colbridge was the first place the elite would think of sending their children to study and imbibe the laws of the world. Even now, it still retains its reputation as one of the most prestigious academies in the world with a student body of all sorts seeking to study everything but Heroics.\r\nhttp://www.aoc.com.hk/eng_aoc/image/photo/City%20Campus_small.jpg\r\nhttps://cdn.discordapp.com/attachments/313105923008757760/328809694808244224/Life_Is_Strange_Concept_Art_EC_blackwell-campus-hd.png"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "city_general",
+    "content": [
+      "WayHaven is an enormous play area for members. There are numerous locations and limitless potential for adventure. This channel serves as the city's general Role-play location and should be used as such. If however, you're looking to use a specific location within the city, the channels below offer the opportunity to RP within the most prestigious and important parts of WayHaven.\r\nhttps://cdn.discordapp.com/attachments/293767141566709761/376419357762256906/unknown.png",
+      "**GENERAL CITY PROTECTORS**\r\n\r\n\r\n**Amazon-** \r\n**Name:** Frieda \r\n**Height:** 6'6\r\n**Relationship:** With someone\r\n**Age:** 38\r\n\r\n**Style: Mimicry - The ability to copy and take in any fighting style she takes in. Anything that has to do with Martial arts and Combat, such as Ki, Nen, Chakra manipulation and such.\r\n\r\n**Personality**\r\nShe has put herself through insane training which broke her body and reformed her again. Classmates of Acrid and Mammoth, very headstrong and opinionated. She has a fist first think later attitude.",
+      "**Crescent- **\r\n**Name:** River�\r\n**Height:** 6'1\r\n**Relationships:** Seeing someone\r\n**Age:** 38\r\n\r\n**Personality:** A quiet man that keeps to himself. Likes to work solo. (Basically Batman) Grew up with Acrid and Mammoth.\r\n\r\n**Terror:**\r\nThe ability to instil fear into those in a surrounding area. He uses his cape to shroud and area in darkness where he uses his quirk to the maximum. ( Scarecrows gas basically) This quirk ranges in strength depending on the time of day.\r\nhttps://cdn.discordapp.com/attachments/252196354648965120/314306999590322176/tumblr_inline_n7snrk2muu1qa2w59.png"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "mammoth_park",
+    "content": [
+      "**LOCATION: Walnut street.**\r\n\r\nOpened on the 13th of august 2019 in memory of the great hero that was, as a way to mark his death and celebrate his life, Mammoth Memorial is one the biggest parks in the world, showing off a plethora of choices to engage oneself with. \r\n\r\nFrom amusement rides, games and themes to simple dog walking, sight-seeing, picknicking and relaxing, there is absolutely no crowd the park does not cater for. \r\n\r\nFor just $500 per individual, you can gain access to everything the park has to offer!\r\n\r\nWelcome! Citizens and tourists alike.\r\n\r\nhttps://cdn.discordapp.com/attachments/376277959591329792/376332956375056394/safaripark12.png\r\n**Park center statue**\r\nhttps://cdn.discordapp.com/attachments/252196354648965120/346030882097987584/gagarin.png",
+      "**Park rides and attractions**\r\nhttps://cdn.discordapp.com/attachments/376277959591329792/376333616306716672/SeaWorld-San-Diego-Manta-concept-art-large.png\r\nhttps://cdn.discordapp.com/attachments/376277959591329792/376333684397309953/coaster10n-2-web.png\r\n**Underwater park**\r\nhttps://cdn.discordapp.com/attachments/376277959591329792/376334298870972417/9f590f8b584d95b6b8c22c57b831fbed.png\r\nhttps://cdn.discordapp.com/attachments/376277959591329792/376334156126355477/seabase-alpha.png\r\nhttps://cdn.discordapp.com/attachments/376277959591329792/376334074891075589/52f98bf48d04c0bb2566ec4a71dde6f6.png"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "the_paladium",
+    "content": [
+      "**LOCATION: Three City Central**\r\n\r\nThe Paladium, also known as the house of sin, is an establishment owned by the renown Kazuki and is the biggest Night club, Hotel and Dining location in all of WayHaven.\r\nhttps://images-ext-2.discordapp.net/external/jTpjsvg_RMd0MT2oO156hIn544ETsphBx6liyqn0fdk/http/www.creation.com.es/wp-content/uploads/2014/10/en-usclubs-5.jpg?width=679&height=468\r\nhttps://cdn.discordapp.com/attachments/252196354648965120/314465967751168000/cyberpunk__night_club_by_dsorokin755-d75lf02.png\r\nhttps://cdn.discordapp.com/attachments/367088308901117953/375402646984720384/d8205c430c3515e917f0665dd9275e2b.png\r\nhttp://www.wonderlandnightclub.co.uk/images/132526%20-%20482%20-%20Wonderland%20Sutton%20-%20Drinks%20Menu%20Summer%20V8%20-%20OP.jpg",
+      "Not many people have achieved what business mogul and self proclaimed prince of Wayhaven, Kazuki, has in such a short time. Though quirkless, he has become a household name in Wayhaven as an example of what success through hardwork should look like. \r\nThe House of Sin, is one of Wayhaven's biggest establishments and it is solely owned and run by this enigmatic man who few are ever privileged to catch a glimpse of.\r\nDespite his fame, he has managed to avoid the press constantly and whenever he is seen, he is either in the presence of one too many guards and wealthy acquaintances such as the Espinozas or is behind the tinted glasses of his numerous expensive vehicles.\r\nThe guest list at the Paladium is an elite one and not many people make it on the list. Unruly behaviour or disobediance is swiflty dealt with by the bouncers and a certain ruthless young lad whose ability to wield and manipulate water is apparantly so impressive that he landed a job working for the narcissistic Prince himself!\r\nhttps://cdn.discordapp.com/attachments/252196354648965120/314465223065206784/film-noir-detective-character-design-for-my-ip.png\r\nhttps://cdn.discordapp.com/attachments/252196354648965120/314302909808640010/3b47572bbfdd715a4feeb646f9f217e3.png"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "movie_central",
+    "content": [
+      "**LOCATION: Three City Central**\r\n\r\nThree city central is considered the heart of WayHaven and is home to most of its nightlife. This does not come without a price however, as it has also become the center of organized criminal activity and societies. Many dread its streets at night and most of the city's most malificent villains can be found here at all times. \r\n\r\nMovie central is the biggest theater around and offers high quality viewing experience as well as arcades and game centers. It is one of the most popular attractions among locals.\r\nhttps://admiralsroundtable.files.wordpress.com/2015/05/new-bucks-arena-2.jpg?w=640\r\nhttps://cdn.discordapp.com/attachments/252196354648965120/314471762865684480/unnamed.png"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "providence_port",
+    "content": [
+      "**LOCATION: Providence (through Eastern Hamilton street)**\r\n\r\nThe first WayHaven Hero Sanctuary was established in the port town of Providence. Used throughout the Silver Age, the League of Heroes abandoned it when they moved to their neo-modern Headquarters in the city's center. It has since been used by a plethora of Individual Heroes and sidekicks as well as agencies.\r\n\r\nThe town of Providence and its numerous harbours have been attacked by a myriad of super-villains over the years and still remain an invaluable part of of the city.\r\nhttp://img11.deviantart.net/94f0/i/2010/267/6/b/environment_concept___harbour_by_anarki3000-d2zcwda.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "blank",
+    "content": [
+      "MEME"
+    ]
+  }
+]

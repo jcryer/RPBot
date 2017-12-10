@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "name": "D-grade Stealth Boost",
+    "description": "Enhancement of stealth for stealth type quirks. D-Grade enhancements give a 10% boost and  can be used 10 times",
+    "price": 5000,
+    "availability": -1,
+    "emoji": "👻",
+    "location": 1,
+    "messageID": 348204032155713547
+  },
+  {
+    "id": 2,
+    "name": "C-grade Stealth Boost",
+    "description": "Enhancement of stealth for stealth type quirks. C-Grade enhancements give a 20% boost and  can be used 8 times",
+    "price": 10000,
+    "availability": -1,
+    "emoji": "👻",
+    "location": 1,
+    "messageID": 348204319155290112
+  },
+  {
+    "id": 3,
+    "name": "B-grade Stealth Boost",
+    "description": "Enhancement of stealth for stealth type quirks. B-Grade enhancements give a 30% boost and  can be used 6 times",
+    "price": 20000,
+    "availability": -1,
+    "emoji": "👻",
+    "location": 1,
+    "messageID": 348204418271019018
+  },
+  {
+    "id": 4,
+    "name": "A-grade Stealth Boost",
+    "description": "Enhancement of stealth for stealth type quirks. A-Grade enhancements give a 40% boost and  can be used 4 times",
+    "price": 40000,
+    "availability": -1,
+    "emoji": "👻",
+    "location": 1,
+    "messageID": 348204499472744469
+  },
+  {
+    "id": 5,
+    "name": "S-grade Stealth Boost",
+    "description": "Enhancement of stealth for stealth type quirks. S-Grade enhancements give a 50% boost and  can be used 2 times",
+    "price": 80000,
+    "availability": -1,
+    "emoji": "👻",
+    "location": 1,
+    "messageID": 348204614367051786
+  },
+  {
+    "id": 6,
+    "name": "D-grade Speed Boost",
+    "description": "Enhancement of speed for speed type quirks and quirks requiring speed i.e speed of transformation, speed of firing technique. D-Grade enhancements give a 10% boost and  can be used 10 times",
+    "price": 5000,
+    "availability": -1,
+    "emoji": "🚀",
+    "location": 1,
+    "messageID": 348205409347305473
+  },
+  {
+    "id": 7,
+    "name": "C-grade Speed Boost",
+    "description": "Enhancement of speed for speed type quirks and quirks requiring speed i.e speed of transformation, speed of firing technique. C-Grade enhancements give a 20% boost and  can be used 8 times",
+    "price": 10000,
+    "availability": -1,
+    "emoji": "🚀",
+    "location": 1,
+    "messageID": 348205488971710465
+  },
+  {
+    "id": 8,
+    "name": "B-grade Speed Boost",
+    "description": "Enhancement of speed for speed type quirks and quirks requiring speed i.e speed of transformation, speed of firing technique. B-Grade enhancements give a 30% boost and  can be used 6 times",
+    "price": 20000,
+    "availability": -1,
+    "emoji": "🚀",
+    "location": 1,
+    "messageID": 348205574263013387
+  },
+  {
+    "id": 9,
+    "name": "A-grade Speed Boost",
+    "description": "Enhancement of speed for speed type quirks and quirks requiring speed i.e speed of transformation, speed of firing technique. A-Grade enhancements give a 40% boost and  can be used 4 times",
+    "price": 40000,
+    "availability": -1,
+    "emoji": "🚀",
+    "location": 1,
+    "messageID": 348205639761395713
+  },
+  {
+    "id": 10,
+    "name": "S-grade Speed Boost",
+    "description": "Enhancement of speed for speed type quirks and quirks requiring speed i.e speed of transformation, speed of firing technique. S-Grade enhancements give a 50% boost and  can be used 2 times",
+    "price": 80000,
+    "availability": -1,
+    "emoji": "🚀",
+    "location": 1,
+    "messageID": 348205702407520256
+  },
+  {
+    "id": 11,
+    "name": "D-grade Time-Limit Boost",
+    "description": "Enhancement of Time-Limit for quirks with time-limits. D-Grade enhancements give a 10% boost and  can be used 10 times",
+    "price": 5000,
+    "availability": -1,
+    "emoji": "⏱",
+    "location": 1,
+    "messageID": 348222501945475074
+  },
+  {
+    "id": 12,
+    "name": "C-grade Time-Limit Boost",
+    "description": "Enhancement of Time-Limit for quirks with time-limits. C-Grade enhancements give a 20% boost and  can be used 8 times",
+    "price": 10000,
+    "availability": -1,
+    "emoji": "⏱",
+    "location": 1,
+    "messageID": 348222576834904064
+  },
+  {
+    "id": 13,
+    "name": "B-grade Time-Limit Boost",
+    "description": "Enhancement of Time-Limit for quirks with time-limits. B-Grade enhancements give a 30% boost and  can be used 6 times",
+    "price": 20000,
+    "availability": -1,
+    "emoji": "⏱",
+    "location": 1,
+    "messageID": 348222720003145759
+  },
+  {
+    "id": 14,
+    "name": "A-grade Time-Limit Boost",
+    "description": "Enhancement of Time-Limit for quirks with time-limits. A-Grade enhancements give a 40% boost and  can be used 4 times",
+    "price": 40000,
+    "availability": -1,
+    "emoji": "⏱",
+    "location": 1,
+    "messageID": 348222869559443459
+  },
+  {
+    "id": 15,
+    "name": "S-grade Time-Limit Boost",
+    "description": "Enhancement of Time-Limit for quirks with time-limits. S-Grade enhancements give a 50% boost and  can be used 2 times",
+    "price": 80000,
+    "availability": -1,
+    "emoji": "⏱",
+    "location": 1,
+    "messageID": 348223045070225408
+  },
+  {
+    "id": 16,
+    "name": "D-grade Upper-Limit Boost",
+    "description": "Enhancement of Upper-Limit for psychic/mental quirks and body-form modification quirks. D-Grade enhancements give a 10% boost and can be used 10 times",
+    "price": 5000,
+    "availability": -1,
+    "emoji": "💪",
+    "location": 1,
+    "messageID": 348226010807926805
+  },
+  {
+    "id": 17,
+    "name": "C-grade Upper-Limit Boost",
+    "description": "Enhancement of Upper-Limit for psychic/mental quirks and body-form modification quirks. C-Grade enhancements give a 20% boost and can be used 8 times",
+    "price": 10000,
+    "availability": -1,
+    "emoji": "💪",
+    "location": 1,
+    "messageID": 348226203427012618
+  },
+  {
+    "id": 18,
+    "name": "B-grade Upper-Limit Boost",
+    "description": "Enhancement of Upper-Limit for psychic/mental quirks and body-form modification quirks. B-Grade enhancements give a 30% boost and can be used 6 times",
+    "price": 20000,
+    "availability": -1,
+    "emoji": "💪",
+    "location": 1,
+    "messageID": 348226325711945738
+  },
+  {
+    "id": 19,
+    "name": "A-grade Upper-Limit Boost",
+    "description": "Enhancement of Upper-Limit for psychic/mental quirks and body-form modification quirks. A-Grade enhancements give a 40% boost and can be used 4 times",
+    "price": 40000,
+    "availability": -1,
+    "emoji": "💪",
+    "location": 1,
+    "messageID": 348226864038412289
+  },
+  {
+    "id": 20,
+    "name": "S-grade Upper-Limit Boost",
+    "description": "Enhancement of Upper-Limit for psychic/mental quirks and body-form modification quirks. S-Grade enhancements give a 50% boost and can be used 2 times",
+    "price": 80000,
+    "availability": -1,
+    "emoji": "💪",
+    "location": 1,
+    "messageID": 348226915481681921
+  },
+  {
+    "id": 21,
+    "name": "D-grade Manifestation Boost",
+    "description": "Enhancement of strength and persistence of manifestation for creation and transformation type quirks. D-Grade enhancements give a 10% boost and can be used 10 times",
+    "price": 5000,
+    "availability": -1,
+    "emoji": "🌪",
+    "location": 1,
+    "messageID": 348228628368064514
+  },
+  {
+    "id": 22,
+    "name": "C-grade Manifestation Boost",
+    "description": "Enhancement of strength and persistence of manifestation for creation and transformation type quirks. C-Grade enhancements give a 20% boost and can be used 8 times",
+    "price": 10000,
+    "availability": -1,
+    "emoji": "🌪",
+    "location": 1,
+    "messageID": 348228638648303616
+  },
+  {
+    "id": 23,
+    "name": "B-grade Manifestation Boost",
+    "description": "Enhancement of strength and persistence of manifestation for creation and transformation type quirks. B-Grade enhancements give a 30% boost and can be used 6 times",
+    "price": 20000,
+    "availability": -1,
+    "emoji": "🌪",
+    "location": 1,
+    "messageID": 348228775621820417
+  },
+  {
+    "id": 24,
+    "name": "A-grade Manifestation Boost",
+    "description": "Enhancement of strength and persistence of manifestation for creation and transformation type quirks. A-Grade enhancements give a 40% boost and can be used 4 times",
+    "price": 40000,
+    "availability": -1,
+    "emoji": "🌪",
+    "location": 1,
+    "messageID": 348254479977676801
+  },
+  {
+    "id": 25,
+    "name": "S-grade Manifestation Boost",
+    "description": "Enhancement of strength and persistence of manifestation for creation and transformation type quirks. S-Grade enhancements give a 50% boost and can be used 2 times",
+    "price": 80000,
+    "availability": -1,
+    "emoji": "🌪",
+    "location": 1,
+    "messageID": 348254486461939712
+  }
+]
