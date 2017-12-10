@@ -235,6 +235,26 @@ namespace RPBot
             await Task.Delay(0);
         }
 
+        [Command("update"), Description("Admin update command"), RequireRolesAttribute("Administrator")]
+        public async Task Update(CommandContext e)
+        {
+            SaveData(-1);
+            var process = new Process()
+            {
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = "/bin/bash",
+                    Arguments = $"-c sudo bash update.sh",
+                    RedirectStandardOutput = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true,
+                }
+            };
+            process.Start();
+            Environment.Exit(-1);
+            await Task.Delay(0);
+        }
+
         [Command("joke"), Description("Random joke command.")]
         public async Task Joke(CommandContext e)
         {
