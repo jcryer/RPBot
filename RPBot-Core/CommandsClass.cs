@@ -244,7 +244,7 @@ namespace RPBot
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = "/bin/bash",
-                    Arguments = $"-c sudo bash update.sh",
+                    Arguments = $"-c \"bash update.sh\"",
                     RedirectStandardOutput = true,
                     UseShellExecute = false,
                     CreateNoWindow = true,
