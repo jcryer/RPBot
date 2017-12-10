@@ -194,6 +194,7 @@ namespace RPBot
             var resp = await e.RespondAsync($"Latest messages deleted.");
             await Task.Delay(2000);
             await resp.DeleteAsync("Purge command executed.");
+            await e.Message.DeleteAsync();
 
         }
 
@@ -213,6 +214,7 @@ namespace RPBot
             var resp = await e.RespondAsync($"Latest messages deleted.");
             await Task.Delay(2000);
             await resp.DeleteAsync("Clean command executed.");
+            await e.Message.DeleteAsync();
         }
 
         [Command("restart"),  Description("Admin restart command"), RequireRolesAttribute("Staff")]
@@ -245,7 +247,7 @@ namespace RPBot
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = "/bin/bash",
-                    Arguments = $"-c \"bash update.sh reee\"",
+                    Arguments = $"-c \"bash update.sh\"",
                     RedirectStandardOutput = true,
                     UseShellExecute = false,
                     CreateNoWindow = true,
