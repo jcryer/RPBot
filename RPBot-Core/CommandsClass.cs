@@ -277,7 +277,7 @@ namespace RPBot
         [Command("blankslate"), Description("His favourite passtime.")]
         public async Task BlankSlate(CommandContext e)
         {
-            WebRequest req = WebRequest.Create("url here");
+            WebRequest req = WebRequest.Create("https://memegenerator.net/img/images/400x/4895865.jpg");
             using (Stream stream = req.GetResponse().GetResponseStream())
             {
                 FileStream fileStream = stream as FileStream;
