@@ -274,6 +274,17 @@ namespace RPBot
             await e.RespondAsync(text);
             await e.Message.DeleteAsync();
         }
+        [Command("blankslate"), Description("His favourite passtime.")]
+        public async Task BlankSlate(CommandContext e)
+        {
+            WebRequest req = WebRequest.Create("url here");
+            using (Stream stream = req.GetResponse().GetResponseStream())
+            {
+                FileStream fileStream = stream as FileStream;
+                await e.RespondWithFileAsync(fileStream);
+            }
+            await e.Message.DeleteAsync();
+        }
 
         [Command("sayall"), Description("Makes the bot delete all messages in a channel (the channel the command is used in) and repost them."), RequirePermissions(Permissions.Administrator)]
         public async Task SayAll(CommandContext e, string whattodelete = "", string whattosetto = "")

@@ -61,8 +61,11 @@ namespace RPBot
             {
                 StringPrefix = this.Config.CommandPrefix,
                 EnableDms = true,
-                EnableMentionPrefix = true
+                EnableMentionPrefix = true,
+                CaseSensitive = false
             };
+
+
             this.CommandsNextService = Discord.UseCommandsNext(cncfg);
             this.CommandsNextService.CommandErrored += this.CommandsNextService_CommandErrored;
             this.CommandsNextService.CommandExecuted += this.CommandsNextService_CommandExecuted;
