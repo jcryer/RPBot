@@ -277,13 +277,14 @@ namespace RPBot
         [Command("blankslate"), Description("His favourite passtime.")]
         public async Task BlankSlate(CommandContext e)
         {
-            WebRequest req = WebRequest.Create("https://memegenerator.net/img/images/400x/4895865.jpg");
-            using (Stream stream = req.GetResponse().GetResponseStream())
+            using (var client = new WebClient())
             {
-                FileStream fileStream = stream as FileStream;
-                await e.RespondWithFileAsync(fileStream);
+                client.DownloadFileAsync(new Uri("https://memegenerator.net/img/images/400x/4895865.jpg"), "Data/blankslate.jpg");
+                await e.RespondWithFileAsync("Data/blankslate.jpg");
+
             }
             await e.Message.DeleteAsync();
+
         }
 
         [Command("sayall"), Description("Makes the bot delete all messages in a channel (the channel the command is used in) and repost them."), RequirePermissions(Permissions.Administrator)]
