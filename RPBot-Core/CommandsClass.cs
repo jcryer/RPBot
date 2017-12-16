@@ -56,6 +56,23 @@ namespace RPBot
             await e.RespondAsync("Hmm. I choose... " + Choices[randomChoice]);
         }
 
+        [Group("slowmode"), Description("Slowmode commands")]
+        class Slowmode
+        {
+            [Command("on"), Description("Admin command to make OOC chill tf out"), RequireRolesAttribute("Administrator")]
+            public async Task On(CommandContext e, [Description("Amount of time required between each message (seconds)")] int limitTime)
+            {
+                slowModeTime = limitTime;
+                await e.RespondAsync("Slowmode activated, with " + limitTime + " seconds between each message.");
+            }
+
+            [Command("off"), Description("Admin command to disable slow mode"), RequireRolesAttribute("Administrator")]
+            public async Task Off(CommandContext e)
+            {
+                slowModeTime = -1;
+                await e.RespondAsync("Slowmode disabled.");
+            }
+        }
         [Command("cases"), Description("Admin cases command."), RequireRolesAttribute("Staff")]
         public async Task Cases(CommandContext e, [Description("Select a user.")] DiscordMember user, [Description("Number to increase or decrease cases resolved by")] string caseNum)
         {
@@ -370,7 +387,7 @@ namespace RPBot
         }
 
         [Group("approval"), Description("Approval commands")]
-        class InstanceClass : RPClass
+        class ApprovalClass
         {
             [Command("add"), Description("Command to create a new approval instance."), RequireRolesAttribute("Staff")]
             public async Task AddApproval(CommandContext e, [Description("Mention the user you will be approving.")]DiscordMember m)

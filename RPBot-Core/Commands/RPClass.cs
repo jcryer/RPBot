@@ -22,6 +22,8 @@ namespace RPBot
         public static List<InstanceObject.RootObject> InstanceList = new List<InstanceObject.RootObject>();
         public static List<InstanceObject.ChannelTemplate> ChannelTemplates = new List<InstanceObject.ChannelTemplate>();
         public static Dictionary<ulong, ulong> approvalsList = new Dictionary<ulong, ulong>(); // Channel ID : User ID
+        public static Dictionary<DiscordMember, DateTime> slowModeList = new Dictionary<DiscordMember, DateTime>(); // Channel ID : User ID
+        public static int slowModeTime = -1;
         public static TOSObject.RootObject TOSData = new TOSObject.RootObject();
         public static DiscordChannel GuildRankingChannel;
         public static DiscordChannel PlayerRankingChannel;

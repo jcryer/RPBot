@@ -270,6 +270,26 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
 
                     }
                 }
+                if (slowModeTime > 0 && e.Message.ChannelId == 312918289988976653)
+                {
+                    var u = slowModeList.FirstOrDefault(x => x.Key == e.Message.Author);
+                    if (u.Key != null)
+                    {
+
+                        if (Math.Abs((u.Value - DateTime.Now).TotalSeconds) <= 3)
+                        {
+                            await e.Message.DeleteAsync();
+                        }
+                        else
+                        {
+                            slowModeList[e.Message.Author as DiscordMember] = DateTime.Now;
+                        }
+                    }
+                    else
+                    {
+                        slowModeList.Add(e.Message.Author as DiscordMember, DateTime.Now);
+                    }
+                }
             }
         }
 
