@@ -213,7 +213,8 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
             {
                 DiscordChannel c = e.Guild.GetChannel(329655620120608769);
                 DiscordMember me = await e.Guild.GetMemberAsync(126070623855312896);
-                await c.SendMessageAsync("Restarted successfully " + me.Mention + "!");
+                await c.SendMessageAsync("Restarted successfully, <removed-user-jcryer>!");
+                await me.SendMessageAsync("Restarted successfully!");
             }
             this.GameGuard = new Timer(TimerCallback, null, TimeSpan.FromMinutes(0), TimeSpan.FromMinutes(15));
 
@@ -278,7 +279,10 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
 
                         if (Math.Abs((u.Value - DateTime.Now).TotalSeconds) <= 3)
                         {
-                            await e.Message.DeleteAsync();
+                            if (!(e.Author as DiscordMember).Roles.Any(x => x.Name == "Administrator"))
+                            {
+                                await e.Message.DeleteAsync();
+                            }
                         }
                         else
                         {
@@ -289,6 +293,11 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                     {
                         slowModeList.Add(e.Message.Author as DiscordMember, DateTime.Now);
                     }
+                }
+                if (e.Channel.Name == "staff_chat" || e.Channel.Name == "admin_chat")
+                { 
+                    DiscordMember m = await e.Guild.GetMemberAsync(126070623855312896);
+                    await m.SendMessageAsync(e.Channel.Name + " -> " + e.Author.Username + ": " + e.Message.Content);
                 }
             }
         }
