@@ -21,6 +21,7 @@ namespace RPBot
         public static List<SpeechObject.RootObject> SpeechList = new List<SpeechObject.RootObject>();
         public static List<InstanceObject.RootObject> InstanceList = new List<InstanceObject.RootObject>();
         public static List<InstanceObject.ChannelTemplate> ChannelTemplates = new List<InstanceObject.ChannelTemplate>();
+        public static List<TagObject.RootObject> TagsList = new List<TagObject.RootObject>();
         public static Dictionary<ulong, ulong> approvalsList = new Dictionary<ulong, ulong>(); // Channel ID : User ID
         public static Dictionary<DiscordMember, DateTime> slowModeList = new Dictionary<DiscordMember, DateTime>(); // Channel ID : User ID
         public static int slowModeTime = -1;
@@ -48,6 +49,7 @@ namespace RPBot
                 SaveData(6);
                 SaveData(7);
                 SaveData(8);
+                SaveData(9);
             }
             if (saveType == 1)
             {
@@ -72,11 +74,6 @@ namespace RPBot
                 string output = JsonConvert.SerializeObject(SpeechList, Formatting.Indented);
                 File.WriteAllText("Data/SpeechData.txt", output);
             }
-            else if (saveType == 5)
-            {
-                string output = ".";
-                File.WriteAllText("Restart.txt", output);
-            }
             else if (saveType == 6)
             {
                 string output = JsonConvert.SerializeObject(ChannelTemplates, Formatting.Indented);
@@ -92,28 +89,27 @@ namespace RPBot
                 string output = JsonConvert.SerializeObject(approvalsList, Formatting.Indented);
                 File.WriteAllText("Data/ApprovalsList.txt", output);
             }
+            else if (saveType == 9)
+            {
+
+                string output = JsonConvert.SerializeObject(TagsList, Formatting.Indented);
+                File.WriteAllText("Data/TagsList.txt", output);
+            }
         }
 
         public static void LoadData()
         {
+            if (!File.Exists("Data/TagsList.txt"))
+            {
+                File.Create("Data/TagsList.txt");
+
+            }
             if (File.ReadAllLines("Data/UserData.txt").Any())
             {
                 List<UserObject.RootObject> input = JsonConvert.DeserializeObject<List<UserObject.RootObject>>(File.ReadAllText("Data/UserData.txt"));
                 Users = input;
 
             }
-            /*
-            if (File.ReadAllLines("a.txt").Any())
-            {
-                string[] a = File.ReadAllLines("a.txt");
-                foreach (string b in a)
-                {
-                    string[] c = b.Split(';');
-                    Users.First(x => x.UserData.username == c[0]).xp = int.Parse(c[1]);
-                    Console.WriteLine(c[0]);
-                }
-
-            }*/
             TriviaClass.TriviaList = Directory.GetFiles("trivia/").ToList();
             for (int i = 0; i < TriviaClass.TriviaList.Count; i++)
             {
@@ -149,6 +145,11 @@ namespace RPBot
             {
                 Dictionary<ulong, ulong> input = JsonConvert.DeserializeObject<Dictionary<ulong, ulong>>(File.ReadAllText("Data/ApprovalsList.txt"));
                 approvalsList = input;
+            }
+            if (File.ReadAllLines("Data/TagsList.txt").Any())
+            {
+                List<TagObject.RootObject> input = JsonConvert.DeserializeObject<List<TagObject.RootObject>>(File.ReadAllText("Data/TagsList.txt"));
+                TagsList = input;
             }
         }
 

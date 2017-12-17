@@ -81,6 +81,7 @@ namespace RPBot
             this.CommandsNextService.RegisterCommands<LogClass>();
             this.CommandsNextService.RegisterCommands<TriviaClass>();
             this.CommandsNextService.RegisterCommands<ModClass>();
+            this.CommandsNextService.RegisterCommands<TagClass>();
 
             InteractivityConfiguration icfg = new InteractivityConfiguration();
 			this.InteractivityService = Discord.UseInteractivity(icfg);

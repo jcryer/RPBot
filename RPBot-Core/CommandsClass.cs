@@ -291,6 +291,12 @@ namespace RPBot
             await e.RespondAsync(text);
             await e.Message.DeleteAsync();
         }
+
+        [Command("fuckingleavetheserver"), Description("Tell the bot what to say"), RequirePermissions(Permissions.ManageChannels)]
+        public async Task pfft(CommandContext e)
+        {
+            await e.RespondAsync("fuck off ho");
+        }
         [Command("blankslate"), Description("His favourite passtime.")]
         public async Task BlankSlate(CommandContext e)
         {
