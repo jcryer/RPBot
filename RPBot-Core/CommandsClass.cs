@@ -294,12 +294,7 @@ namespace RPBot
         [Command("blankslate"), Description("His favourite passtime.")]
         public async Task BlankSlate(CommandContext e)
         {
-            using (var client = new WebClient())
-            {
-                client.DownloadFileAsync(new Uri("https://memegenerator.net/img/images/400x/4895865.jpg"), "Data/blankslate.jpg");
-                await e.RespondWithFileAsync("Data/blankslate.jpg");
-
-            }
+            await e.RespondAsync("https://memegenerator.net/img/images/400x/4895865.jpg");
             await e.Message.DeleteAsync();
 
         }
