@@ -13,7 +13,7 @@ namespace RPBot
 {
     class XPClass : RPClass
     {
-        [Command("xp"), Description("Admin command to give XP"), RequireRolesAttribute("Staff")]
+        [Command("xp"), Description("Admin command to give XP"), RequireRolesAttribute("Staff", "Bot-Test")]
         public async Task XP(CommandContext e, [Description("User to change stats of")] DiscordMember user, [Description("How much you wish to change it by")] int xpNum)
         {
             if (xpNum != 0)

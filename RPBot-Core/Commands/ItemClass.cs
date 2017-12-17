@@ -14,7 +14,7 @@ namespace RPBot
     [Group("items"), Description("Item Commands")]
     class ItemClass : RPClass
     {
-        [Command("add"), Description("Command for admins to create new items"), RequireRolesAttribute("Staff")]
+        [Command("add"), Description("Command for admins to create new items"), RequireRolesAttribute("Staff", "Bot-Test")]
         public async Task Add(CommandContext e, [RemainingText, Description("Use the format name|description|price|availability(-1 if unlimited)|emoji|location(Write 1 for mall or 2 for Avalon Research)")] string addData)
         {
             try
@@ -53,7 +53,7 @@ namespace RPBot
             }
         }
 
-        [Command("remove"), Description("Command for admins to remove items."), RequireRolesAttribute("Staff")]
+        [Command("remove"), Description("Command for admins to remove items."), RequireRolesAttribute("Staff", "Bot-Test")]
         public async Task Remove(CommandContext e, [Description("Use the item ID from the All command")] string removeNum)
         {
             try
@@ -129,7 +129,7 @@ namespace RPBot
                 await e.Channel.SendMessageAsync("", embed: embed);
             }
         }
-        [Command("stock"), Description("Admin item stock command"), RequireRolesAttribute("Staff")]
+        [Command("stock"), Description("Admin item stock command"), RequireRolesAttribute("Staff", "Bot-Test")]
         public async Task Stock(CommandContext e, [Description("Item ID (from !items all command) of item wanting to be changed.")] int itemID, [Description("How much you wish to change it by.")] int stockChange)
         {
             try

@@ -15,7 +15,7 @@ namespace RPBot
     [Description("All Money Commands")]
     class MoneyClass : RPClass
     { 
-        [Command("give"), Description("Command for admins to give out currency to users."), RequireRolesAttribute("Staff")]
+        [Command("give"), Description("Command for admins to give out currency to users."), RequireRolesAttribute("Staff", "Bot-Test")]
         public async Task Give(CommandContext e, [Description("Who to award the money to")] DiscordMember user, [Description("Amount of money to award")] int money = -1)
         {
             if (money > 0)
@@ -27,7 +27,7 @@ namespace RPBot
             }
         }
         
-        [Command("take"), Description("Command for admins to take currency from users."), RequireRolesAttribute("Staff")]
+        [Command("take"), Description("Command for admins to take currency from users."), RequireRolesAttribute("Staff", "Bot-Test")]
         public async Task Take(CommandContext e, [Description("Who to take the money from")] DiscordMember user, [Description("Amount of money to take")] int money = -1)
         {
             if (money > 0)

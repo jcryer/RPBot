@@ -14,7 +14,7 @@ namespace RPBot
     [Group("instance"), Description("Instancing commands")]
     class InstanceClass : RPClass
     {
-        [Command("create"), Description("Creates a roleplay instance."), RequireRolesAttribute("Staff")]
+        [Command("create"), Description("Creates a roleplay instance."), RequireRolesAttribute("Staff", "Bot-Test", "Bot-Test")]
         public async Task CreateRolePlay(CommandContext e, [Description("Title for the event.")]string name, [Description("All people part of the roleplay. Mention them, separated by a space."), RemainingText] string includedPeople)
         {
             DiscordChannel newCategory = await e.Guild.CreateChannelAsync(InstanceList.Count + 1 + ": " + name, ChannelType.Category);
@@ -57,7 +57,7 @@ namespace RPBot
             }
         }
 
-        [Command("addchannel"), Description("Command to add a channel to a roleplaying instance."), RequireRolesAttribute("Staff")]
+        [Command("addchannel"), Description("Command to add a channel to a roleplaying instance."), RequireRolesAttribute("Staff", "Bot-Test", "Bot-Test")]
         public async Task CreateInstance(CommandContext e, [Description("Quote your Roleplay ID given on creation of your instance (also on the name of the category).")]int rpID, [Description("Give the ID of the channel you wish to create from the !instance channels command.")]int channelID)
         {
             InstanceObject.RootObject instance = InstanceList.FirstOrDefault(x => x.id == rpID);
@@ -106,7 +106,7 @@ namespace RPBot
             }
         }
 
-        [Command("adduser"), Description("Adds a user to a roleplay instance."), RequireRolesAttribute("Staff")]
+        [Command("adduser"), Description("Adds a user to a roleplay instance."), RequireRolesAttribute("Staff", "Bot-Test", "Bot-Test")]
         public async Task AddUser(CommandContext e, [Description("Quote your Roleplay ID given on creation of your instance (also on the name of the category).")]int rpID, [Description("People to add to the roleplay. them, separated by a space."), RemainingText] string includedPeople)
         {
             InstanceObject.RootObject instance = InstanceList.FirstOrDefault(x => x.id == rpID);
@@ -146,7 +146,7 @@ namespace RPBot
             }
         }
 
-        [Command("end"), Description("Command to end a roleplay."), RequireRolesAttribute("Staff")]
+        [Command("end"), Description("Command to end a roleplay."), RequireRolesAttribute("Staff", "Bot-Test", "Bot-Test")]
         public async Task EndRolePlay(CommandContext e, [Description("Quote your Roleplay ID given on creation of your instance (also on the name of the category).")]int rpID)
         {
             InstanceObject.RootObject instance = InstanceList.FirstOrDefault(x => x.id == rpID);
@@ -177,7 +177,7 @@ namespace RPBot
             }
         }
 
-        [Command("destroy"), Description("Command to delete a roleplay category."), RequireRolesAttribute("Administrator")]
+        [Command("destroy"), Description("Command to delete a roleplay category."), RequireRolesAttribute("Administrator", "Bot-Test")]
         public async Task Destroy(CommandContext e, [Description("Quote your Roleplay ID given on creation of your instance (also on the name of the category).")]int rpID)
         {
             InstanceObject.RootObject instance = InstanceList.FirstOrDefault(x => x.id == rpID);
@@ -201,7 +201,7 @@ namespace RPBot
         }
 
 
-        [Command("addtemplate"), Description("Admin command to add a channel template to the list."), RequireRolesAttribute("Staff")]
+        [Command("addtemplate"), Description("Admin command to add a channel template to the list."), RequireRolesAttribute("Staff", "Bot-Test", "Bot-Test")]
         public async Task AddTemplate(CommandContext e, [Description("Name of channel for template.")]string name, [Description("All text to be displayed at the start of the instance. Send in multiple messages, as the character limit is 2000. If there is more than one message, end the message with '¬' and start the next message with '¬'."), RemainingText] string content)
         {
             List<string> ContentList = new List<string>();
@@ -243,7 +243,7 @@ namespace RPBot
                 await e.RespondAsync("Template added and saved.");
             }
         }
-        [Command("channels"), Description("Command to list all channel templates and their IDs."), RequireRolesAttribute("Staff")]
+        [Command("channels"), Description("Command to list all channel templates and their IDs."), RequireRolesAttribute("Staff", "Bot-Test", "Bot-Test")]
         public async Task ListChannels(CommandContext e)
         {
             DiscordEmbedBuilder embed = new DiscordEmbedBuilder();

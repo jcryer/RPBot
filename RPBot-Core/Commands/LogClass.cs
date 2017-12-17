@@ -15,7 +15,7 @@ namespace RPBot
 {
     class LogClass : RPClass
     {
-        [Command("log"), Description("Admin log command (testing)"), RequireRolesAttribute("Staff")]
+        [Command("log"), Description("Admin log command (testing)"), RequireRolesAttribute("Staff", "Bot-Test")]
         [Hidden]
         public async Task Log(CommandContext e)
         {
