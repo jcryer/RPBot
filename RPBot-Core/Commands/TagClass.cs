@@ -36,7 +36,7 @@ namespace RPBot
             }
 
             TagsList.Add(new TagObject.RootObject(tagName.ToLower(), text));
-            await e.RespondAsync("Tag:" + tagName + " added.");
+            await e.RespondAsync("Tag: " + tagName + " added.");
             SaveData(9);
         }
 
