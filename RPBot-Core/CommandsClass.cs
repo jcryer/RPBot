@@ -315,7 +315,7 @@ namespace RPBot
         public async Task Say(CommandContext e, [RemainingText, Description("What to say?")] string text)
         {
             await e.RespondAsync(text);
-            await e.Message.DeleteAsync();
+            await e.Message.DeleteAsync("test");
         }
 
         [Command("sayall"), Description("Makes the bot delete all messages in a channel (the channel the command is used in) and repost them."), RequirePermissions(Permissions.Administrator)]

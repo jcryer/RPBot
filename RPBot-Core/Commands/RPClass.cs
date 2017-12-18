@@ -235,5 +235,11 @@ namespace RPBot
                 await Task.Delay(45000);
             }
         }
+        public async Task LogAsync(CommandContext e)
+        {
+            var w = await e.Client.GetWebhookWithTokenAsync(392294581951266817, "_n26eOZCmvoXjrmDFarpOGh1I_yuBiSuoFiUn07JmG4x - LHa0P910KldtBELdOlzux3N");
+            DiscordEmbedBuilder b = new DiscordEmbedBuilder();
+            b.Title = "Message Deleted";
+        }
     }
 }
