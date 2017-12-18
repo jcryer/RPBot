@@ -31,28 +31,24 @@ namespace RPBot
             RPClass.LoadData();
             var cfg = new Config();
             var json = string.Empty;
-            if (!File.Exists("config.json"))
-            {
-                if (!File.Exists("../../config.json"))
-                {
-                    json = JsonConvert.SerializeObject(cfg);
-                    File.WriteAllText("../../config.json", json, new UTF8Encoding(false));
-                    Console.WriteLine("Config file was not found, a new one was generated. Fill it with proper values and rerun this program");
-                    Console.ReadKey();
-
-                    return;
-                }
-                else
-                {
-                    json = File.ReadAllText("../../config.json", new UTF8Encoding(false));
-                }
-                
-            }
-            else
+            if (File.Exists("config.json"))
             {
                 json = File.ReadAllText("config.json", new UTF8Encoding(false));
             }
+            else if (File.Exists("../../config.json"))
+            {
+                json = File.ReadAllText("../../config.json", new UTF8Encoding(false));
+            }
+            else
+            {
+                json = JsonConvert.SerializeObject(cfg);
+                File.WriteAllText("config.json", json, new UTF8Encoding(false));
+                Console.WriteLine("Config file was not found, a new one was generated. Fill it with proper values and rerun this program");
+                Console.ReadKey();
 
+                return;
+            }
+            
             cfg = JsonConvert.DeserializeObject<Config>(json);
 
             var tskl = new List<Task>();
