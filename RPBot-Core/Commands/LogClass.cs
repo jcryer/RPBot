@@ -35,10 +35,6 @@ namespace RPBot
                     messageList.AddRange(await e.Channel.GetMessagesAsync(100, before: messageList.Last().Id));
                     break;
                 }
-                if (iter % 100 == 0)
-                {
-                    await e.RespondAsync("Messages so far: " + iter * 100);
-                }
                 iter++;
             }
             messageList.Reverse();
@@ -107,9 +103,10 @@ namespace RPBot
 
             string HTMLResponse = File.ReadAllText("template.html");
             HTMLResponse = HTMLResponse.Replace("TOPICHERE", "test").Replace("CHANNELHERE", e.Channel.Name).Replace("CONTENTHERE", returnedHTML);
-
-            File.WriteAllText("resp.html", HTMLResponse);
-            await e.RespondWithFileAsync("resp.html", "Data dump complete!");
+            string folderName = DateTime.Now.ToString("hh-mm-ss_dd-mm-yyyy");
+            Directory.CreateDirectory(folderName);
+            File.WriteAllText(folderName + "/response.html", HTMLResponse);
+            await e.RespondAsync("Done!");
             //string output = JsonConvert.SerializeObject(htmlArray);
             //string logFile = "logs/" + DateTime.Now.ToString("MM_dd_yy-H_mm_ss") + "(" + e.Channel.Id + ")" + ".txt";
             //File.WriteAllText(logFile, output);
