@@ -889,7 +889,7 @@
   {
     "UserData": {
       "userID": 286222030997684226,
-      "username": "🎄Praetoria🎄",
+      "username": "Praetoria",
       "role": 1,
       "status": 1,
       "money": 45500,
@@ -1529,7 +1529,7 @@
   {
     "UserData": {
       "userID": 245774738050252803,
-      "username": "Ice Spirit 🕊",
+      "username": "Ice Spirit 🕊 ✡🕯✡",
       "role": 1,
       "status": 1,
       "money": 0,
@@ -3269,8 +3269,8 @@
   {
     "UserData": {
       "userID": 382533339770388481,
-      "username": "The_Mysterious_One",
-      "role": 0,
+      "username": "Hale Sylon",
+      "role": 1,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -3289,8 +3289,8 @@
   {
     "UserData": {
       "userID": 351161828174331907,
-      "username": "Trainer Red",
-      "role": 0,
+      "username": "West Wind",
+      "role": 1,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -3309,7 +3309,7 @@
   {
     "UserData": {
       "userID": 201731211796676608,
-      "username": "The Joker",
+      "username": "🎄🎁The Joker🎁🎄",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3489,7 +3489,7 @@
   {
     "UserData": {
       "userID": 333494746376962048,
-      "username": "Just A Kid",
+      "username": "Yaoi",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3590,6 +3590,26 @@
     "UserData": {
       "userID": 387317945224658944,
       "username": "Harley quinn",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 360092700592177152,
+      "username": "Ben Johnson",
       "role": 0,
       "status": 1,
       "money": 0,

@@ -3565,7 +3565,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Joseph\\.nuget\\packages\\": {},
+    "C:\\Users\\jcryer\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3574,17 +3574,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\Desktop\\Coding\\Bots\\RPBot\\RPBot-Core\\RPBot-Core.csproj",
+      "projectUniqueName": "C:\\Users\\jcryer\\Desktop\\RP-Bot\\RPBot\\RPBot-Core\\RPBot-Core.csproj",
       "projectName": "RPBot-Core",
-      "projectPath": "E:\\Desktop\\Coding\\Bots\\RPBot\\RPBot-Core\\RPBot-Core.csproj",
-      "packagesPath": "C:\\Users\\Joseph\\.nuget\\packages\\",
-      "outputPath": "E:\\Desktop\\Coding\\Bots\\RPBot\\RPBot-Core\\obj\\",
+      "projectPath": "C:\\Users\\jcryer\\Desktop\\RP-Bot\\RPBot\\RPBot-Core\\RPBot-Core.csproj",
+      "packagesPath": "C:\\Users\\jcryer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jcryer\\Desktop\\RP-Bot\\RPBot\\RPBot-Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Joseph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jcryer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

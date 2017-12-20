@@ -21,9 +21,13 @@ namespace RPBot
             InstanceObject.ChannelTemplate template = ChannelTemplates.FirstOrDefault(x => x.id == channelID);
             if (template != null)
             {
-                int instanceID = InstanceList.Last().id + 1;
+                int instanceID = 1;
+                if (InstanceList.Count > 0)
+                {
+                    instanceID = InstanceList.Last().id + 1;
+                }
 
-                DiscordChannel c = await e.Guild.CreateChannelAsync(instanceID + ":" + template.name, ChannelType.Text, parent: InstanceCategory);
+                DiscordChannel c = await e.Guild.CreateChannelAsync(instanceID + "-" + template.name, ChannelType.Text, parent: InstanceCategory);
                 InstanceList.Add(new InstanceObject.RootObject(instanceID, c.Id, template.id));
                 if (template.content.Count > 0)
                 {
