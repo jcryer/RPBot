@@ -11,192 +11,71 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("instance"), Description("Instancing commands")]
+   
+    [Group("instance"), Description("Instance commands")]
     class InstanceClass : RPClass
     {
-        [Command("create"), Description("Creates a roleplay instance."), RequireRolesAttribute("Staff")]
-        public async Task CreateRolePlay(CommandContext e, [Description("Title for the event.")]string name, [Description("All people part of the roleplay. Mention them, separated by a space."), RemainingText] string includedPeople)
+        [Command("add"), Description("Command to create a new location instance."), RequireRolesAttribute("Staff", "Bot-Test")]
+        public async Task Add(CommandContext e, [Description("Give the ID of the channel you wish to create from the !instance channels command.")]int channelID)
         {
-            DiscordChannel newCategory = await e.Guild.CreateChannelAsync(InstanceList.Count + 1 + ": " + name, ChannelType.Category);
-            //await newCategory.AddOverwriteAsync(e.Guild.EveryoneRole, Permissions.SendMessages, Permissions.None);
-            await newCategory.AddOverwriteAsync(e.Guild.EveryoneRole, Permissions.ReadMessageHistory, Permissions.SendMessages);
-            await newCategory.AddOverwriteAsync(StaffRole, Permissions.SendMessages, Permissions.None);
-            List<ulong> mentionedMembers = new List<ulong>();
-            mentionedMembers.Add(e.Member.Id);
-            await newCategory.AddOverwriteAsync(e.Member, Permissions.SendMessages, Permissions.None);
-
-            if (!string.IsNullOrWhiteSpace(includedPeople))
+            InstanceObject.ChannelTemplate template = ChannelTemplates.FirstOrDefault(x => x.id == channelID);
+            if (template != null)
             {
-                IReadOnlyList<DiscordMember> allMembers = await e.Guild.GetAllMembersAsync();
-                includedPeople = includedPeople.Replace("<", "").Replace(">", "").Replace("@", "").Replace("!", "");
-                List<string> mentions = includedPeople.Split(' ').ToList();
+                int instanceID = InstanceList.Last().id + 1;
 
-                foreach (string mention in mentions)
+                DiscordChannel c = await e.Guild.CreateChannelAsync(instanceID + ":" + template.name, ChannelType.Text, parent: InstanceCategory);
+                InstanceList.Add(new InstanceObject.RootObject(instanceID, c.Id, template.id));
+                if (template.content.Count > 0)
                 {
-                    ulong memberID = 0;
-                    if (ulong.TryParse(mention, out memberID))
+                    foreach (string content in template.content)
                     {
-                        if (allMembers.Any(x => x.Id == memberID))
-                        {
-                            mentionedMembers.Add(memberID);
-                            await newCategory.AddOverwriteAsync(allMembers.First(x => x.Id == memberID), Permissions.SendMessages, Permissions.None);
-                        }
+                        await c.SendMessageAsync(content);
                     }
                 }
-                int id = InstanceList.Count + 1;
-                InstanceList.Add(new InstanceObject.RootObject(id, name, newCategory.Id, new List<ulong>(), new List<int>(), mentionedMembers));
-                await e.RespondAsync("New instance made with ID: " + id + " -  Quote this when adding channels to your instance.");
                 SaveData(7);
+                await e.RespondAsync("Channel: " + template.name + " created with ID: " + instanceID + ".");
             }
             else
             {
-                int id = InstanceList.Count + 1;
-                InstanceList.Add(new InstanceObject.RootObject(id, name, newCategory.Id, new List<ulong>(), new List<int>(), mentionedMembers));
-                await e.RespondAsync("New instance made with ID: " + id + " -  Quote this when adding channels to your instance.");
-                SaveData(7);
-            }
-        }
-
-        [Command("addchannel"), Description("Command to add a channel to a roleplaying instance."), RequireRolesAttribute("Staff")]
-        public async Task CreateInstance(CommandContext e, [Description("Quote your Roleplay ID given on creation of your instance (also on the name of the category).")]int rpID, [Description("Give the ID of the channel you wish to create from the !instance channels command.")]int channelID)
-        {
-            InstanceObject.RootObject instance = InstanceList.FirstOrDefault(x => x.id == rpID);
-            if (instance != null)
-            {
-                if (instance.active)
-                {
-                    DiscordChannel category = e.Guild.GetChannel(instance.categoryID);
-
-                    InstanceObject.ChannelTemplate template = ChannelTemplates.FirstOrDefault(x => x.id == channelID);
-                    if (template != null)
-                    {
-                        if (!instance.channelTemplateIDs.Contains(template.id))
-                        {
-                            DiscordChannel newChannel = await e.Guild.CreateChannelAsync(template.name, ChannelType.Text, parent: category);
-                            instance.channelIDs.Add(newChannel.Id);
-                            instance.channelTemplateIDs.Add(template.id);
-                            foreach (string content in template.content)
-                            {
-                                await newChannel.SendMessageAsync(content);
-                            }
-                            SaveData(7);
-                            await e.RespondAsync("Channel: " + template.name + " created on instance with ID: " + instance.id + ".");
-                        }
-                        else
-                        {
-                            await e.RespondAsync("This channel already exists!");
-
-                        }
-
-                    }
-                    else
-                    {
-                        await e.RespondAsync("Use a channel template ID.");
-
-                    }
-                }
-                else
-                {
-                    await e.RespondAsync("This RP has completed.");
-                }
-            }
-            else
-            {
-                await e.RespondAsync("Use your RP ID.");
-            }
-        }
-
-        [Command("adduser"), Description("Adds a user to a roleplay instance."), RequireRolesAttribute("Staff")]
-        public async Task AddUser(CommandContext e, [Description("Quote your Roleplay ID given on creation of your instance (also on the name of the category).")]int rpID, [Description("People to add to the roleplay. them, separated by a space."), RemainingText] string includedPeople)
-        {
-            InstanceObject.RootObject instance = InstanceList.FirstOrDefault(x => x.id == rpID);
-            if (instance != null)
-            {
-                if (instance.active)
-                {
-                    DiscordChannel category = e.Guild.GetChannel(instance.categoryID);
-
-                    IReadOnlyList<DiscordMember> allMembers = await e.Guild.GetAllMembersAsync();
-                    includedPeople = includedPeople.Replace("<", "").Replace(">", "").Replace("@", "").Replace("!", "");
-                    List<string> mentions = includedPeople.Split(' ').ToList();
-
-                    foreach (string mention in mentions)
-                    {
-                        ulong memberID = 0;
-                        if (ulong.TryParse(mention, out memberID))
-                        {
-                            if (allMembers.Any(x => x.Id == memberID))
-                            {
-                                await category.AddOverwriteAsync(allMembers.First(x => x.Id == memberID), Permissions.SendMessages, Permissions.None);
-                                instance.userIDs.Add(memberID);
-                            }
-                        }
-                    }
-                    await e.RespondAsync("Users added to instance with ID: " + instance.id + "!");
-                    SaveData(7);
-                }
-                else
-                {
-                    await e.RespondAsync("This RP has completed.");
-                }
-            }
-            else
-            {
-                await e.RespondAsync("Use your RP ID.");
+                await e.RespondAsync("Enter a valid channel ID.");
             }
         }
 
         [Command("end"), Description("Command to end a roleplay."), RequireRolesAttribute("Staff")]
-        public async Task EndRolePlay(CommandContext e, [Description("Quote your Roleplay ID given on creation of your instance (also on the name of the category).")]int rpID)
+        public async Task End(CommandContext e, [Description("Quote the ID at the beginning of the channel name.")]int rpID)
         {
             InstanceObject.RootObject instance = InstanceList.FirstOrDefault(x => x.id == rpID);
             if (instance != null)
             {
-                DiscordChannel category = e.Guild.GetChannel(instance.categoryID);
-                IReadOnlyList<DiscordOverwrite> Overwrites = category.PermissionOverwrites;
-                List<DiscordOverwrite> OverwriteList = new List<DiscordOverwrite>(Overwrites);
-                foreach (DiscordOverwrite overwrite in OverwriteList)
-                {
-                    try
-                    {
-                        await category.UpdateOverwriteAsync(overwrite, Permissions.ReadMessageHistory, Permissions.SendMessages);
-                    }
-                    catch
-                    {
 
-                    }
-                }
+                DiscordChannel c = e.Guild.GetChannel(instance.channelID);
+                await c.AddOverwriteAsync(e.Guild.EveryoneRole, Permissions.ReadMessageHistory, Permissions.SendMessages);
                 instance.active = false;
-                    
+
                 SaveData(7);
                 await e.RespondAsync("Instance closed.");
             }
             else
             {
-                await e.RespondAsync("Use your RP ID.");
+                await e.RespondAsync("Use the ID at the beginning of the channel name.");
             }
         }
 
-        [Command("destroy"), Description("Command to delete a roleplay category."), RequireRolesAttribute("Administrator")]
-        public async Task Destroy(CommandContext e, [Description("Quote your Roleplay ID given on creation of your instance (also on the name of the category).")]int rpID)
+        [Command("destroy"), Description("Command to delete an instance."), RequireRolesAttribute("Administrator")]
+        public async Task Destroy(CommandContext e, [Description("Quote the ID at the beginning of the channel name.")]int rpID)
         {
             InstanceObject.RootObject instance = InstanceList.FirstOrDefault(x => x.id == rpID);
             if (instance != null)
             {
-                foreach (ulong test in instance.channelIDs)
-                {
-                    await e.Guild.GetChannel(test).DeleteAsync();
-                }
-                await e.Guild.GetChannel(instance.categoryID).DeleteAsync();
-                Console.WriteLine(instance.categoryID);
+                DiscordChannel c = e.Guild.GetChannel(instance.channelID);
+                await c.DeleteAsync();
                 InstanceList.Remove(instance);
-
                 SaveData(7);
                 await e.RespondAsync("Instance destroyed.");
             }
             else
             {
-                await e.RespondAsync("Use your RP ID.");
+                await e.RespondAsync("Use the ID at the beginning of the channel name.");
             }
         }
 
@@ -205,7 +84,7 @@ namespace RPBot
         public async Task AddTemplate(CommandContext e, [Description("Name of channel for template.")]string name, [Description("All text to be displayed at the start of the instance. Send in multiple messages, as the character limit is 2000. If there is more than one message, end the message with '¬' and start the next message with '¬'."), RemainingText] string content)
         {
             List<string> ContentList = new List<string>();
-            ContentList.Add(content.Replace("¬",""));
+            ContentList.Add(content.Replace("¬", ""));
             if (content.Contains("¬"))
             {
                 var interactivity = e.Client.GetInteractivityModule();

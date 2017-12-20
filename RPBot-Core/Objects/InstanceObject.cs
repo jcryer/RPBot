@@ -10,23 +10,17 @@ namespace RPBot
     {
         public class RootObject
         {
-            public RootObject(int id, string name, ulong categoryID, List<ulong> channelIDs, List<int> channelTemplateIDs, List<ulong> userIDs)
+            public RootObject(int id, ulong channelID, int channelTemplateID)
             {
                 this.id = id;
-                this.name = name;
-                this.categoryID = categoryID;
-                this.channelIDs = channelIDs;
-                this.channelTemplateIDs = channelTemplateIDs;
-                this.userIDs = userIDs;
+                this.channelID = channelID;
+                this.channelTemplateID = channelTemplateID;
                 active = true;
             }
 
             public int id { get; set; }
-            public string name { get; set; }
-            public ulong categoryID { get; set; }
-            public List<ulong> channelIDs { get; set; }
-            public List<int> channelTemplateIDs { get; set; }
-            public List<ulong> userIDs { get; set; }
+            public ulong channelID { get; set; }
+            public int channelTemplateID { get; set; }
             public bool active{ get; set; }
         }
 

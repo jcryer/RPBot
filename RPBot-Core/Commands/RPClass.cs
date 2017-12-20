@@ -32,6 +32,7 @@ namespace RPBot
         public static DiscordChannel RogueRankingChannel;
         public static DiscordChannel StatsChannel;
         public static DiscordChannel ApprovalsCategory;
+        public static DiscordChannel InstanceCategory;
         public static DiscordRole StaffRole;
         public static DiscordRole HelpfulRole;
         public static DiscordRole PunishedRole;

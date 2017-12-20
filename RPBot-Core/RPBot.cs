@@ -241,6 +241,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                     VillainRankingChannel = e.Guild.GetChannel(315048584007385093);
                     RogueRankingChannel = e.Guild.GetChannel(371782656716832769);
                     ApprovalsCategory = e.Guild.GetChannel(389160226944712705);
+                    InstanceCategory = e.Guild.GetChannel(391971392733839360);
                     StatsChannel = e.Guild.GetChannel(312964092748890114);
                     StaffRole = e.Guild.GetRole(313845882841858048);
                     HelpfulRole = e.Guild.GetRole(312979390516559885);
