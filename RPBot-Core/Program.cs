@@ -31,7 +31,15 @@ namespace RPBot
             RPClass.LoadData();
             var cfg = new Config();
             var json = string.Empty;
-            if (!File.Exists("config.json"))
+            if (File.Exists("config.json"))
+            {
+                json = File.ReadAllText("config.json", new UTF8Encoding(false));
+            }
+            else if (File.Exists("../../config.json"))
+            {
+                json = File.ReadAllText("../../config.json", new UTF8Encoding(false));
+            }
+            else
             {
                 json = JsonConvert.SerializeObject(cfg);
                 File.WriteAllText("config.json", json, new UTF8Encoding(false));
@@ -40,8 +48,7 @@ namespace RPBot
 
                 return;
             }
-
-            json = File.ReadAllText("config.json", new UTF8Encoding(false));
+            
             cfg = JsonConvert.DeserializeObject<Config>(json);
 
             var tskl = new List<Task>();

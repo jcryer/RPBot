@@ -285,24 +285,37 @@ namespace RPBot
             Console.ReadLine();
         }
 
-        [Command("say"),  Description("Tell the bot what to say"), RequirePermissions(Permissions.ManageChannels)]
+        [Command("space"),  Description("Spaces text out")]
+        public async Task Space(CommandContext e, [Description("How many spaces between each char")] int space, [RemainingText, Description("What to say?")] string text)
+        {
+            if (string.IsNullOrEmpty(text))
+            {
+                await e.RespondAsync("You didn't give anything to say!");
+                return;
+            }
+            if (space < 1 || space > 10)
+            {
+                await e.RespondAsync("Cancerous amount of spaces, idiot.");
+                return;
+            } 
+            string retVal = "";
+            text = text.Replace(" ", "");
+            foreach (char c in text)
+            {
+                retVal += c;
+                for (int i = 0; i < space; i++)
+                {
+                    retVal += " ";
+                }
+            }
+            await e.RespondAsync(retVal);
+        }
+
+        [Command("say"), Description("Tell the bot what to say"), RequirePermissions(Permissions.ManageChannels)]
         public async Task Say(CommandContext e, [RemainingText, Description("What to say?")] string text)
         {
             await e.RespondAsync(text);
-            await e.Message.DeleteAsync();
-        }
-
-        [Command("fuckingleavetheserver"), Description("Tell the bot what to say"), RequirePermissions(Permissions.ManageChannels)]
-        public async Task pfft(CommandContext e)
-        {
-            await e.RespondAsync("fuck off ho");
-        }
-        [Command("blankslate"), Description("His favourite passtime.")]
-        public async Task BlankSlate(CommandContext e)
-        {
-            await e.RespondAsync("https://memegenerator.net/img/images/400x/4895865.jpg");
-            await e.Message.DeleteAsync();
-
+            await e.Message.DeleteAsync("test");
         }
 
         [Command("sayall"), Description("Makes the bot delete all messages in a channel (the channel the command is used in) and repost them."), RequirePermissions(Permissions.Administrator)]

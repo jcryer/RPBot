@@ -48,6 +48,8 @@ namespace RPBot
             Discord.Ready += this.Discord_Ready;
             Discord.GuildAvailable += this.Discord_GuildAvailable;
             Discord.MessageCreated += this.Discord_MessageCreated;
+            Discord.MessageDeleted += this.Discord_MessageDeleted;
+
             Discord.MessageReactionAdded += this.Discord_MessageReactionAdd;
             Discord.MessageReactionsCleared += this.Discord_MessageReactionRemoveAll;
             Discord.PresenceUpdated += this.Discord_PresenceUpdate;
@@ -180,8 +182,6 @@ namespace RPBot
             process.Start();
             Environment.Exit(-1);
             await Task.Delay(0);
-            await Task.Delay(0);
-
         }
 
         private async Task Discord_GuildMemberAdded(GuildMemberAddEventArgs e)
@@ -194,9 +194,17 @@ Then, once you have decided the character(and filled out the template), ask for 
 Be sure to checkout the " + e.Guild.Channels.First(x => x.Id == 346944357351555072).Mention + @"!
 
 Hope you enjoy your time here " + e.Member.Mention + "!");
+
             await e.Member.SendMessageAsync("", embed: b);
             await e.Guild.Channels.First(x => x.Id == 312918289988976653).SendMessageAsync("", embed: b);
 
+            DiscordEmbedBuilder c = new DiscordEmbedBuilder();
+            c.Title = "Member Joined";
+            c.AddField("Member", e.Member.DisplayName + e.Member.Discriminator + " (" + e.Member.Id + ")", true);
+            c.AddField("Timestamp", e.Member.JoinedAt.ToString(), true);
+            c.Color = DiscordColor.Green;
+
+            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: c);
         }
 
         private async Task Discord_GuildMemberRemoved(GuildMemberRemoveEventArgs e)
@@ -206,6 +214,13 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
             b.AddField("Bye " + e.Member.DisplayName, "We didn't like them anyway.");
             await e.Guild.Channels.First(x => x.Id == 312918289988976653).SendMessageAsync("", embed: b);
 
+            DiscordEmbedBuilder c = new DiscordEmbedBuilder();
+            c.Title = "Member Left";
+            c.AddField("Member", e.Member.DisplayName + e.Member.Discriminator + " (" + e.Member.Id + ")", true);
+            c.AddField("Timestamp", DateTime.Now.ToString(), true);
+            c.Color = DiscordColor.Red;
+
+            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: c);
         }
 
         public async Task Discord_GuildAvailable(GuildCreateEventArgs e)
@@ -225,7 +240,25 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
         {
             return Task.Delay(0);
         }
-        
+
+        private async Task Discord_MessageDeleted(MessageDeleteEventArgs e)
+        {
+            if (e.Message.Author != e.Client.CurrentUser)
+            {
+                DiscordEmbedBuilder b = new DiscordEmbedBuilder();
+                b.Title = "Message Deleted";
+                b.AddField("Member", e.Message.Author.Username + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true);
+                b.AddField("Channel", e.Message.Channel.Name, true);
+                b.AddField("Message Timestamp", e.Message.CreationTimestamp.ToString(), true);
+                b.AddField("Deletion Timestamp", e.Message.Timestamp.ToString(), true);
+                b.AddField("Message", e.Message.Content, false);
+                b.Color = DiscordColor.Orange;
+
+
+                await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
+            }
+        }
+
         public async Task Discord_MessageCreated(MessageCreateEventArgs e)
         {
             if (Program.firstRun)

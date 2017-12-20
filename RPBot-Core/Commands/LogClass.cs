@@ -2,6 +2,7 @@
 using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
+using DSharpPlus.Interactivity;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ namespace RPBot
     {
         [Command("log"), Description("Admin log command (testing)"), RequireRolesAttribute("Staff", "Bot-Test")]
         [Hidden]
-        public async Task Log(CommandContext e)
+        public async Task Log(CommandContext e, [RemainingText, Description("Description of the log")] string desc)
         {
             List<DiscordMessage> messageList = new List<DiscordMessage>();
             List<LogObject.Message> logObjectList = new List<LogObject.Message>();
@@ -35,34 +36,21 @@ namespace RPBot
                     messageList.AddRange(await e.Channel.GetMessagesAsync(100, before: messageList.Last().Id));
                     break;
                 }
-                if (iter % 100 == 0)
-                {
-                    await e.RespondAsync("Messages so far: " + iter * 100);
-                }
                 iter++;
             }
             messageList.Reverse();
-            /*
-                            foreach (DiscordMessage m in msgList)
-                            {
-                                logArray.Add(new LogObject.RootObject(m.Id, m.Author.Username, m.Content, m.ChannelId));
-                            }
-                            string output = JsonConvert.SerializeObject(logArray);
-                            string logFile = "logs/" + DateTime.Now.ToString("MM_dd_yy-H_mm_ss") + "(" + e.Channel.Id + ")" + ".txt";
-                            File.WriteAllText(logFile, output);
-                            await e.RespondWithFileAsync(logFile, "Log dump complete! Messages: " + logArray.Count());
-            */
+
             List<DiscordMember> allMembers = new List<DiscordMember>();
             allMembers.AddRange(await e.Guild.GetAllMembersAsync());
 
             List<DiscordChannel> allChannels = new List<DiscordChannel>();
             allChannels.AddRange(await e.Guild.GetChannelsAsync());
 
-            foreach (DiscordMessage dm in messageList)
+            foreach (DiscordMessage message in messageList)
             {
-                if (dm.MessageType == MessageType.Default)
+                if (message.MessageType == MessageType.Default)
                 {
-                    string content = dm.Content;
+                    string content = message.Content;
                     Regex ItemRegex = new Regex(@"(<[#@!]+\d+>)+");
                     foreach (Match ItemMatch in ItemRegex.Matches(content))
                     {
@@ -73,7 +61,7 @@ namespace RPBot
                             try
                             {
                                 DiscordMember d = allMembers.First(x => x.Id == ulongNum);
-                                content = content.Replace(ItemMatch.Value, "**@" + d.Nickname + "**");
+                                content = content.Replace(ItemMatch.Value, "**@" + d.DisplayName + "**");
                             }
                             catch { }
                         }
@@ -91,25 +79,24 @@ namespace RPBot
                             content = content.Replace(ItemMatch.Value, "");
                         }
                     }
-                    try
-                    {
-                        DiscordMember member = allMembers.First(x => x.Id == dm.Author.Id);
-                        logObjectList.Add(new LogObject.Message(member.Nickname, member.Color.ToString(), dm.Author.AvatarUrl, dm.Timestamp, CommonMarkConverter.Convert(content), dm.Author.IsBot));
-                    }
+                        DiscordMember member = allMembers.First(x => x.Id == message.Author.Id);
+                        logObjectList.Add(new LogObject.Message(member.DisplayName, member.Color.ToString(), message.Author.AvatarUrl, message.Timestamp, CommonMarkConverter.Convert(content), message.Author.IsBot));
+                   /* }
                     catch
                     {
-                        logObjectList.Add(new LogObject.Message(dm.Author.Username, DiscordColor.Gray.ToString(), dm.Author.AvatarUrl, dm.Timestamp, CommonMarkConverter.Convert(content), dm.Author.IsBot));
-                    }
+                        logObjectList.Add(new LogObject.Message(message.Author.Username, DiscordColor.Gray.ToString(), message.Author.AvatarUrl, message.Timestamp, CommonMarkConverter.Convert(content), message.Author.IsBot));
+                    }*/
                 }
             }
                 
             string returnedHTML = CreateMessage(logObjectList);
 
-            string HTMLResponse = File.ReadAllText("template.html");
-            HTMLResponse = HTMLResponse.Replace("TOPICHERE", "test").Replace("CHANNELHERE", e.Channel.Name).Replace("CONTENTHERE", returnedHTML);
-
-            File.WriteAllText("resp.html", HTMLResponse);
-            await e.RespondWithFileAsync("resp.html", "Data dump complete!");
+            string HTMLResponse = File.ReadAllText("Data/template.html");
+            HTMLResponse = HTMLResponse.Replace("TOPICHERE", desc).Replace("CHANNELHERE", e.Channel.Name).Replace("CONTENTHERE", returnedHTML);
+            string folderName = DateTime.Now.ToString("hh-mm-ss_dd-mm-yyyy");
+            Directory.CreateDirectory(folderName);
+            File.WriteAllText(folderName + "/response.html", HTMLResponse);
+            await e.RespondAsync("Done!");
             //string output = JsonConvert.SerializeObject(htmlArray);
             //string logFile = "logs/" + DateTime.Now.ToString("MM_dd_yy-H_mm_ss") + "(" + e.Channel.Id + ")" + ".txt";
             //File.WriteAllText(logFile, output);

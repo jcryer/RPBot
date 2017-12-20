@@ -889,7 +889,7 @@
   {
     "UserData": {
       "userID": 286222030997684226,
-      "username": "Praetoria",
+      "username": "🎄Praetoria🎄",
       "role": 1,
       "status": 1,
       "money": 45500,
@@ -3149,8 +3149,8 @@
   {
     "UserData": {
       "userID": 199228787383205889,
-      "username": "Vers",
-      "role": 0,
+      "username": "Eros",
+      "role": 1,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -3329,7 +3329,7 @@
   {
     "UserData": {
       "userID": 375710268442804236,
-      "username": "Lumine",
+      "username": "Jess Miracle",
       "role": 1,
       "status": 1,
       "money": 0,
@@ -3369,7 +3369,7 @@
   {
     "UserData": {
       "userID": 357185928629846017,
-      "username": "Stiles🤞😍",
+      "username": "Stiles🔥",
       "role": 0,
       "status": 1,
       "money": 0,
