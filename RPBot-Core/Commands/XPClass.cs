@@ -21,7 +21,7 @@ namespace RPBot
                 UserObject.RootObject userData = Users.Find(x => x.UserData.userID == user.Id);
                 userData.xp += xpNum;
                 if (userData.xp < 0) userData.xp = 0;
-
+                await AddOrUpdateUsers(e.Guild, true);
                 await UpdateStats(StatsChannel);
                 SaveData(1);
                 await e.RespondAsync("Stat changed.");
