@@ -24,7 +24,6 @@ namespace RPBot
                 
                 await UpdateStats(StatsChannel);
                 SaveData(1);
-                await e.RespondAsync("Stat changed.");
                 UserObject.RootObject newUserData = Users.Find(x => x.UserData.userID == user.Id);
                 switch (newUserData.UserData.role)
                 {
@@ -37,7 +36,13 @@ namespace RPBot
                     case 3:
                         await UpdatePlayerRanking(e.Guild, 3);
                         break;
+                    case 0:
+                        await UpdatePlayerRanking(e.Guild, 1);
+                        await UpdatePlayerRanking(e.Guild, 2);
+                        await UpdatePlayerRanking(e.Guild, 3);
+                        break;
                 }
+                await e.RespondAsync("Stat changed.");
             }
         }
         [Command("update"), Description("Updates saved data")]
