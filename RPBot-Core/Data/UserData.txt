@@ -45,7 +45,7 @@
     "UserData": {
       "userID": 126070623855312896,
       "username": "Jay Sea 🎄🎅❄☃🎁🕯",
-      "role": 2,
+      "role": 0,
       "status": 1,
       "money": 999782000,
       "resolvedCases": 0,

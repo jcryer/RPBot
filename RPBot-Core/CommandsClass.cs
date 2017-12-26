@@ -448,11 +448,31 @@ namespace RPBot
         [Group("emoji", CanInvokeWithoutSubcommand = true), Aliases("e"), Description("Approval commands")]
         class EmojiClass
         {
-            public async Task ExecuteGroupAsync(CommandContext e, string emoji)
+            public async Task ExecuteGroupAsync(CommandContext e, [RemainingText] string emoji)
             {
+                
                 await e.RespondAsync(DiscordEmoji.FromName(e.Client, ":" + emoji + ":"));
             }
 
+            [Command("bee"), Description("BEE MOVIE!"), RequireRolesAttribute("Administrator")]
+            public async Task Bee(CommandContext e, [RemainingText]string emoji)
+            {
+                string response = "";
+                string[] emojiLines = emoji.Split("\u000A");
+                foreach (string emojiLine in emojiLines)
+                {
+                    Console.WriteLine(emojiLine);
+                    string emojiLineEdited = emojiLine.Replace("::", ":").TrimStart(':').TrimEnd(':');
+                    string[] emojis = emojiLineEdited.Split(':');
+                    foreach (string emote in emojis)
+                    {
+                        Console.WriteLine(emote);
+                        response += DiscordEmoji.FromName(e.Client, ":" + emote + ":");
+                    }
+                    response += "\n";
+                }
+                await e.RespondAsync(response);
+            }
             [Command("list"), Description("List of all emoji!")]
             public async Task JoinList(CommandContext e)
             {
