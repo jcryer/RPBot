@@ -36,6 +36,7 @@ namespace RPBot
         public static DiscordRole StaffRole;
         public static DiscordRole HelpfulRole;
         public static DiscordRole PunishedRole;
+        public static DiscordGuild RPGuild;
 
         public static bool Restarted = false;
 

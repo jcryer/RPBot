@@ -1330,7 +1330,7 @@
     "UserData": {
       "userID": 322120939850563584,
       "username": "Dark Star",
-      "role": 3,
+      "role": 2,
       "status": 1,
       "money": 13000,
       "resolvedCases": 0,
@@ -1529,7 +1529,7 @@
   {
     "UserData": {
       "userID": 245774738050252803,
-      "username": "Ice Spirit 🕊 ✡🕯✡",
+      "username": "Ice Spirit 🕊",
       "role": 1,
       "status": 1,
       "money": 0,
@@ -1690,7 +1690,7 @@
     "UserData": {
       "userID": 376563261317054474,
       "username": "Asuka Akihiro",
-      "role": 1,
+      "role": 2,
       "status": 1,
       "money": 1500,
       "resolvedCases": 0,
@@ -2609,7 +2609,7 @@
   {
     "UserData": {
       "userID": 295371406747631616,
-      "username": "Celadon",
+      "username": "Dead Fish",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -2769,8 +2769,8 @@
   {
     "UserData": {
       "userID": 321501319095517185,
-      "username": "Vendetta",
-      "role": 3,
+      "username": "Durante",
+      "role": 0,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -2969,7 +2969,7 @@
   {
     "UserData": {
       "userID": 241973301260320768,
-      "username": "Check",
+      "username": "Check ✓",
       "role": 2,
       "status": 1,
       "money": 0,
@@ -3050,7 +3050,7 @@
     "UserData": {
       "userID": 362299393547698176,
       "username": "Infamous Metalico",
-      "role": 3,
+      "role": 2,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -3149,8 +3149,8 @@
   {
     "UserData": {
       "userID": 199228787383205889,
-      "username": "Eros",
-      "role": 1,
+      "username": "Vers",
+      "role": 0,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -3309,7 +3309,7 @@
   {
     "UserData": {
       "userID": 201731211796676608,
-      "username": "🎄🎁The Joker🎁🎄",
+      "username": "🎆🎇The Joker🎆🎇",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3369,7 +3369,7 @@
   {
     "UserData": {
       "userID": 357185928629846017,
-      "username": "Stiles🔥",
+      "username": "Stiles🔥 (Wolf's Bro)",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3489,7 +3489,7 @@
   {
     "UserData": {
       "userID": 333494746376962048,
-      "username": "Yaoi",
+      "username": "Just A Kid",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3610,6 +3610,86 @@
     "UserData": {
       "userID": 360092700592177152,
       "username": "Ben Johnson",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 163049193970073600,
+      "username": "Magikarp",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 224629811128041473,
+      "username": "Shaed",
+      "role": 3,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 340415465971253248,
+      "username": "JFritz",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 118485885531455493,
+      "username": "Mark",
       "role": 0,
       "status": 1,
       "money": 0,

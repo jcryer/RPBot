@@ -186,54 +186,76 @@ namespace RPBot
 
         private async Task Discord_GuildMemberAdded(GuildMemberAddEventArgs e)
         {
-            DiscordEmbedBuilder b = new DiscordEmbedBuilder();
-            b.Title = "Welcome!";
-            b.AddField("Welcome to the Heroes & Villains RP Server, " + e.Member.Username + "!",@"
+            if (e.Guild == RPClass.RPGuild)
+            {
+                DiscordEmbedBuilder b = new DiscordEmbedBuilder();
+                b.Title = "Welcome!";
+                b.AddField("Welcome to the Heroes & Villains RP Server, " + e.Member.Username + "!", @"
 Please read " + e.Guild.Channels.First(x => x.Id == 345307678261772289).Mention + @" then go for " + e.Guild.Channels.First(x => x.Id == 386672328672804864).Mention + @", followed by " + e.Guild.Channels.First(x => x.Id == 314972495432384513).Mention + @". 
 Then, once you have decided the character(and filled out the template), ask for the Unapproved role in " + e.Guild.Channels.First(x => x.Id == 314972495432384513).Mention + @" and post in  " + e.Guild.Channels.First(x => x.Id == 314849025968832523).Mention + @". If you have any questions ask in " + e.Guild.Channels.First(x => x.Id == 315272713570615296).Mention + @"
 Be sure to checkout the " + e.Guild.Channels.First(x => x.Id == 346944357351555072).Mention + @"!
 
 Hope you enjoy your time here " + e.Member.Mention + "!");
 
-            await e.Member.SendMessageAsync("", embed: b);
-            await e.Guild.Channels.First(x => x.Id == 312918289988976653).SendMessageAsync("", embed: b);
+                await e.Member.SendMessageAsync("", embed: b);
+                await e.Guild.Channels.First(x => x.Id == 312918289988976653).SendMessageAsync("", embed: b);
 
-            DiscordEmbedBuilder c = new DiscordEmbedBuilder();
-            c.Title = "Member Joined";
-            c.AddField("Member", e.Member.DisplayName + e.Member.Discriminator + " (" + e.Member.Id + ")", true);
-            c.AddField("Timestamp", e.Member.JoinedAt.ToString(), true);
-            c.Color = DiscordColor.Green;
+                DiscordEmbedBuilder c = new DiscordEmbedBuilder();
+                c.Title = "Member Joined";
+                c.AddField("Member", e.Member.DisplayName + e.Member.Discriminator + " (" + e.Member.Id + ")", true);
+                c.AddField("Timestamp", e.Member.JoinedAt.ToString(), true);
+                c.Color = DiscordColor.Green;
 
-            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: c);
+                await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: c);
+            }
         }
 
         private async Task Discord_GuildMemberRemoved(GuildMemberRemoveEventArgs e)
         {
-            DiscordEmbedBuilder b = new DiscordEmbedBuilder();
-            b.Title = "Goodbye!";
-            b.AddField("Bye " + e.Member.DisplayName, "We didn't like them anyway.");
-            await e.Guild.Channels.First(x => x.Id == 312918289988976653).SendMessageAsync("", embed: b);
+            if (e.Guild == RPClass.RPGuild)
+            {
+                DiscordEmbedBuilder b = new DiscordEmbedBuilder();
+                b.Title = "Goodbye!";
+                b.AddField("Bye " + e.Member.DisplayName, "We didn't like them anyway.");
+                await e.Guild.Channels.First(x => x.Id == 312918289988976653).SendMessageAsync("", embed: b);
 
-            DiscordEmbedBuilder c = new DiscordEmbedBuilder();
-            c.Title = "Member Left";
-            c.AddField("Member", e.Member.DisplayName + e.Member.Discriminator + " (" + e.Member.Id + ")", true);
-            c.AddField("Timestamp", DateTime.Now.ToString(), true);
-            c.Color = DiscordColor.Red;
+                DiscordEmbedBuilder c = new DiscordEmbedBuilder();
+                c.Title = "Member Left";
+                c.AddField("Member", e.Member.DisplayName + e.Member.Discriminator + " (" + e.Member.Id + ")", true);
+                c.AddField("Timestamp", DateTime.Now.ToString(), true);
+                c.Color = DiscordColor.Red;
 
-            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: c);
+                await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: c);
+            }
         }
 
         public async Task Discord_GuildAvailable(GuildCreateEventArgs e)
         {
-            if (RPClass.Restarted)
+            if (e.Guild.Id == 312918289988976653)
             {
-                DiscordChannel c = e.Guild.GetChannel(329655620120608769);
-                DiscordMember me = await e.Guild.GetMemberAsync(126070623855312896);
-                await c.SendMessageAsync("Restarted successfully, " + me.Mention + "!");
+                if (RPClass.Restarted)
+                {
+                    DiscordChannel c = e.Guild.GetChannel(329655620120608769);
+                    DiscordMember me = await e.Guild.GetMemberAsync(126070623855312896);
+                    await c.SendMessageAsync("Restarted successfully, " + me.Mention + "!");
+                }
+                GuildRankingChannel = e.Guild.GetChannel(312964153197330433);
+                PlayerRankingChannel = e.Guild.GetChannel(315048564525105153);
+                VillainRankingChannel = e.Guild.GetChannel(315048584007385093);
+                RogueRankingChannel = e.Guild.GetChannel(371782656716832769);
+                ApprovalsCategory = e.Guild.GetChannel(389160226944712705);
+                InstanceCategory = e.Guild.GetChannel(391971392733839360);
+                StatsChannel = e.Guild.GetChannel(312964092748890114);
+                StaffRole = e.Guild.GetRole(313845882841858048);
+                HelpfulRole = e.Guild.GetRole(312979390516559885);
+                PunishedRole = e.Guild.GetRole(379163684276142091);
+                RPClass.RPGuild = e.Guild;
+
+                await AddOrUpdateUsers(RPGuild, true);
             }
             this.GameGuard = new Timer(TimerCallback, null, TimeSpan.FromMinutes(0), TimeSpan.FromMinutes(15));
 
-            this.Discord.DebugLogger.LogMessage(LogLevel.Info, "DSPlus Test", $"Guild available: {e.Guild.Name}", DateTime.Now);
+            this.Discord.DebugLogger.LogMessage(LogLevel.Info, "DSPlus", $"Guild available: {e.Guild.Name}", DateTime.Now);
         }
 
         private Task Discord_PresenceUpdate(PresenceUpdateEventArgs e)
@@ -243,92 +265,82 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
 
         private async Task Discord_MessageDeleted(MessageDeleteEventArgs e)
         {
-            if (e.Message.Author != e.Client.CurrentUser)
-            {
-                DiscordEmbedBuilder b = new DiscordEmbedBuilder();
-                b.Title = "Message Deleted";
-                b.AddField("Member", e.Message.Author.Username + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true);
-                b.AddField("Channel", e.Message.Channel.Name, true);
-                b.AddField("Message Timestamp", e.Message.CreationTimestamp.ToString(), true);
-                b.AddField("Deletion Timestamp", e.Message.Timestamp.ToString(), true);
-                b.AddField("Message", e.Message.Content, false);
-                b.Color = DiscordColor.Orange;
+            if (e.Guild == RPClass.RPGuild) {
+                if (e.Message.Author != e.Client.CurrentUser)
+                {
+                    DiscordEmbedBuilder b = new DiscordEmbedBuilder();
+                    b.Title = "Message Deleted";
+                    b.AddField("Member", e.Message.Author.Username + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true);
+                    b.AddField("Channel", e.Message.Channel.Name, true);
+                    b.AddField("Message Timestamp", e.Message.CreationTimestamp.ToString(), true);
+                    b.AddField("Deletion Timestamp", e.Message.Timestamp.ToString(), true);
+                    b.AddField("Message", e.Message.Content, false);
+                    b.Color = DiscordColor.Orange;
 
 
-                await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
+                    await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
+                }
             }
         }
 
         public async Task Discord_MessageCreated(MessageCreateEventArgs e)
         {
+            if (e.Guild == RPClass.RPGuild) { 
             if (Program.firstRun)
             {
                 try
                 {
-                    DiscordGuild RPGuild = Discord.Guilds.First(x => x.Key == 312918289988976653).Value;
                     firstRun = false;
                     Thread myNewThread = new Thread(async () => await UpdateClock(e, Discord));
                     myNewThread.Start();
-                    GuildRankingChannel = e.Guild.GetChannel(312964153197330433);
-                    PlayerRankingChannel = e.Guild.GetChannel(315048564525105153);
-                    VillainRankingChannel = e.Guild.GetChannel(315048584007385093);
-                    RogueRankingChannel = e.Guild.GetChannel(371782656716832769);
-                    ApprovalsCategory = e.Guild.GetChannel(389160226944712705);
-                    InstanceCategory = e.Guild.GetChannel(391971392733839360);
-                    StatsChannel = e.Guild.GetChannel(312964092748890114);
-                    StaffRole = e.Guild.GetRole(313845882841858048);
-                    HelpfulRole = e.Guild.GetRole(312979390516559885);
-                    PunishedRole = e.Guild.GetRole(379163684276142091);
-
-                    await AddOrUpdateUsers(RPGuild, true);
                 }
                 catch { }
             }
-            if (!e.Message.Content.StartsWith("!"))
-            {
-                if (SpeechList.Any(x => x.id == e.Author.Id) && !e.Message.Content.StartsWith("*"))
+                if (!e.Message.Content.StartsWith("!"))
                 {
-                    SpeechObject.RootObject savedName = SpeechList.First(x => x.id == e.Author.Id);
-                    await e.Message.DeleteAsync();
-                    await e.Channel.SendMessageAsync("__**" + savedName.name + "**__: " + e.Message.Content);
-                }
-                else if (e.Message.Content.StartsWith("~") && !(e.Message.Content[1] == '~'))
-                {
-                    try
+                    if (SpeechList.Any(x => x.id == e.Author.Id) && !e.Message.Content.StartsWith("*"))
                     {
-                        string[] msg = e.Message.Content.Split(new char[] { ' ' }, 2);
-                        await e.Message.RespondAsync("__**" + msg[0].Replace("~", "") + "**__: " + msg[1]);
+                        SpeechObject.RootObject savedName = SpeechList.First(x => x.id == e.Author.Id);
                         await e.Message.DeleteAsync();
+                        await e.Channel.SendMessageAsync("__**" + savedName.name + "**__: " + e.Message.Content);
                     }
-                    catch
+                    else if (e.Message.Content.StartsWith("~") && !(e.Message.Content[1] == '~'))
                     {
-
-                    }
-                }
-                if (slowModeTime > 0 && e.Message.ChannelId == 312918289988976653)
-                {
-                    var u = slowModeList.FirstOrDefault(x => x.Key == e.Message.Author);
-                    if (u.Key != null)
-                    {
-
-                        if (Math.Abs((u.Value - DateTime.Now).TotalSeconds) <= 3)
+                        try
                         {
-                            if (!(e.Author as DiscordMember).Roles.Any(x => x.Name == "Administrator"))
+                            string[] msg = e.Message.Content.Split(new char[] { ' ' }, 2);
+                            await e.Message.RespondAsync("__**" + msg[0].Replace("~", "") + "**__: " + msg[1]);
+                            await e.Message.DeleteAsync();
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+                    if (slowModeTime > 0 && e.Message.ChannelId == 312918289988976653)
+                    {
+                        var u = slowModeList.FirstOrDefault(x => x.Key == e.Message.Author);
+                        if (u.Key != null)
+                        {
+
+                            if (Math.Abs((u.Value - DateTime.Now).TotalSeconds) <= 3)
                             {
-                                await e.Message.DeleteAsync();
+                                if (!(e.Author as DiscordMember).Roles.Any(x => x.Name == "Administrator"))
+                                {
+                                    await e.Message.DeleteAsync();
+                                }
+                            }
+                            else
+                            {
+                                slowModeList[e.Message.Author as DiscordMember] = DateTime.Now;
                             }
                         }
                         else
                         {
-                            slowModeList[e.Message.Author as DiscordMember] = DateTime.Now;
+                            slowModeList.Add(e.Message.Author as DiscordMember, DateTime.Now);
                         }
                     }
-                    else
-                    {
-                        slowModeList.Add(e.Message.Author as DiscordMember, DateTime.Now);
-                    }
                 }
-                
             }
         }
 
@@ -480,7 +492,8 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
             embed.AddField("Stack trace", $"```cs\n{st}\n```");
             embed.AddField("Source", e.Exception.Source);
             embed.AddField("Message", e.Exception.Message);
-           // await e.Context.RespondAsync("", embed: embed);
+            // await e.Context.RespondAsync("", embed: embed);
+            await Task.Delay(0);
         }
 
         private async Task CommandsNextService_CommandExecuted(CommandExecutionEventArgs e)

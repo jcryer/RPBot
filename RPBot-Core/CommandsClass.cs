@@ -442,7 +442,24 @@ namespace RPBot
                 SaveData(8);
             }
         }
+        [Command("emoji"), Aliases("e"), Description("Attempts to print the given emoji.")]
+        public async Task Emoji(CommandContext e, string emoji)
+        {
+            var Emojis = new List<DiscordEmoji>();
+            foreach (DiscordGuild g in e.Client.Guilds.Values)
+            {
+                Emojis.AddRange(g.Emojis);
+            }
+            DiscordEmoji discordEmoji = Emojis.FirstOrDefault(x => x.GetDiscordName() == emoji);
+            if (discordEmoji != null)
+            {
+                await e.RespondAsync(discordEmoji);
+            }
+            else
+            {
+                await e.RespondAsync(emoji);
+            }
+           // await e.RespondAsync(Emojis.PickRandom());
+        }
     }
-
-
 }
