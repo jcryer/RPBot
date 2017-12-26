@@ -442,24 +442,62 @@ namespace RPBot
                 SaveData(8);
             }
         }
-        [Command("emoji"), Aliases("e"), Description("Attempts to print the given emoji.")]
-        public async Task Emoji(CommandContext e, string emoji)
+
+        [Group("emoji", CanInvokeWithoutSubcommand = true), Aliases("e"), Description("Approval commands")]
+        class EmojiClass
         {
-            var Emojis = new List<DiscordEmoji>();
-            foreach (DiscordGuild g in e.Client.Guilds.Values)
+            public async Task ExecuteGroupAsync(CommandContext e, string emoji)
             {
-                Emojis.AddRange(g.Emojis);
+                await e.RespondAsync(DiscordEmoji.FromName(e.Client, ":" + emoji + ":"));
             }
-            DiscordEmoji discordEmoji = Emojis.FirstOrDefault(x => x.GetDiscordName() == emoji);
-            if (discordEmoji != null)
+
+            [Command("list"), Description("List of all emoji!")]
+            public async Task JoinList(CommandContext e)
             {
-                await e.RespondAsync(discordEmoji);
+                var interactivity = e.Client.GetInteractivityModule();
+                List<Page> interactivityPages = new List<Page>();
+
+                Page p = new Page();
+                DiscordEmbedBuilder b = new DiscordEmbedBuilder()
+                .WithColor(new DiscordColor("4169E1"))
+                .WithFooter("Heroes & Villains")
+                .WithTimestamp(DateTime.UtcNow);
+                bool even = false;
+                foreach (DiscordGuild g in e.Client.Guilds.Values)
+                {
+                    even = false;
+                    b.Title = g.Name;
+                    foreach (DiscordEmoji d in g.Emojis)
+                    {
+                        if (!even)
+                        {
+                            b.AddField(DiscordEmoji.FromName(e.Client, d.GetDiscordName()) + " - " + d.Name, "-");
+                        }
+                        else
+                        {
+                            b.Fields.Last().Value = DiscordEmoji.FromName(e.Client, d.GetDiscordName()) + " - " + d.Name;
+                        }
+                        even = !even;
+                        if (b.Fields.Count >= 20)
+                        {
+                            p.Embed = b;
+                            interactivityPages.Add(p);
+                            p = new Page();
+                            b.ClearFields();
+                            even = false;
+                        }
+                    }
+                    p.Embed = b;
+                    interactivityPages.Add(p);
+                    p = new Page();
+                    b.ClearFields();
+                }
+
+                await interactivity.SendPaginatedMessage(e.Channel, e.Member, interactivityPages, timeoutoverride: TimeSpan.FromSeconds(60));
+
             }
-            else
-            {
-                await e.RespondAsync(emoji);
-            }
-           // await e.RespondAsync(Emojis.PickRandom());
+
         }
+        
     }
 }

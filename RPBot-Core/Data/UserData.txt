@@ -2769,8 +2769,8 @@
   {
     "UserData": {
       "userID": 321501319095517185,
-      "username": "Durante",
-      "role": 0,
+      "username": "Apollo",
+      "role": 3,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -3149,8 +3149,8 @@
   {
     "UserData": {
       "userID": 199228787383205889,
-      "username": "Vers",
-      "role": 0,
+      "username": "Eros",
+      "role": 1,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
