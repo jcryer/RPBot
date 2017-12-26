@@ -11,23 +11,45 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
+    [Group("xp", CanInvokeWithoutSubcommand = true), Description("Admin command to give XP"), RequireRolesAttribute("Staff")]
     class XPClass : RPClass
     {
-        [Command("xp"), Description("Admin command to give XP"), RequireRolesAttribute("Staff", "Bot-Test")]
-        public async Task XP(CommandContext e, [Description("User to change stats of")] DiscordMember user, [Description("How much you wish to change it by")] int xpNum)
+        public async Task ExecuteGroupAsync(CommandContext e, [Description("User to change stats of")] DiscordMember user, [Description("How much you wish to change it by")] int xpNum)
         {
             if (xpNum != 0)
             {
                 UserObject.RootObject userData = Users.Find(x => x.UserData.userID == user.Id);
                 userData.xp += xpNum;
                 if (userData.xp < 0) userData.xp = 0;
-                await AddOrUpdateUsers(e.Guild, true);
+                
                 await UpdateStats(StatsChannel);
                 SaveData(1);
                 await e.RespondAsync("Stat changed.");
-                await UpdatePlayerRanking(e.Guild, 1);
-                await UpdatePlayerRanking(e.Guild, 2);
+                UserObject.RootObject newUserData = Users.Find(x => x.UserData.userID == user.Id);
+                switch (newUserData.UserData.role)
+                {
+                    case 1:
+                        await UpdatePlayerRanking(e.Guild, 1);
+                        break;
+                    case 2:
+                        await UpdatePlayerRanking(e.Guild, 2);
+                        break;
+                    case 3:
+                        await UpdatePlayerRanking(e.Guild, 3);
+                        break;
+                }
             }
+        }
+        [Command("update"), Description("Updates saved data")]
+        public async Task Update(CommandContext e)
+        {
+            await AddOrUpdateUsers(e.Guild, true);
+            await UpdateStats(StatsChannel);
+            await UpdatePlayerRanking(e.Guild, 1);
+            await UpdatePlayerRanking(e.Guild, 2);
+            await UpdatePlayerRanking(e.Guild, 3);
+            SaveData(-1);
+
         }
 
         // Non-Command Methods

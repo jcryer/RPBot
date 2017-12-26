@@ -45,14 +45,14 @@
     "UserData": {
       "userID": 126070623855312896,
       "username": "Jay Sea 🎄🎅❄☃🎁🕯",
-      "role": 3,
+      "role": 2,
       "status": 1,
       "money": 999862000,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 250,
+    "xp": 252,
     "InvData": {
       "items": [
         24,
