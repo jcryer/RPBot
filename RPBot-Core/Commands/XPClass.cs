@@ -49,10 +49,6 @@ namespace RPBot
         public async Task Update(CommandContext e)
         {
             await AddOrUpdateUsers(e.Guild, true);
-            await UpdateStats(StatsChannel);
-            await UpdatePlayerRanking(e.Guild, 1);
-            await UpdatePlayerRanking(e.Guild, 2);
-            await UpdatePlayerRanking(e.Guild, 3);
             SaveData(-1);
 
         }

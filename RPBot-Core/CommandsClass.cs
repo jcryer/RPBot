@@ -357,7 +357,9 @@ namespace RPBot
         {
             if (Users.Any(x => x.UserData.username == whotodelete))
             {
-                Users.Remove(Users.First(x => x.UserData.username == whotodelete));
+                UserObject.RootObject user = Users.First(x => x.UserData.username == whotodelete);
+                Users.Remove(user);
+                Guilds.First(x => x.id == user.UserData.guildID).userIDs.Remove(user.UserData.userID);
                 SaveData(-1);
                 await e.RespondAsync("User removed.");
             }

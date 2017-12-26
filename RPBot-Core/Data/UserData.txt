@@ -7,10 +7,10 @@
       "status": 1,
       "money": 1560000,
       "resolvedCases": 0,
-      "crimesCommitted": 0,
+      "crimesCommitted": 201,
       "guildID": 0
     },
-    "xp": 20590,
+    "xp": 21540,
     "InvData": {
       "items": [
         25
@@ -27,12 +27,12 @@
       "username": "Amari Nile 🍫",
       "role": 1,
       "status": 1,
-      "money": 1044500,
+      "money": 1037000,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 925,
+    "xp": 1375,
     "InvData": {
       "items": []
     },
@@ -45,18 +45,19 @@
     "UserData": {
       "userID": 126070623855312896,
       "username": "Jay Sea 🎄🎅❄☃🎁🕯",
-      "role": 2,
+      "role": 1,
       "status": 1,
-      "money": 999862000,
+      "money": 999782000,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 252,
+    "xp": 2,
     "InvData": {
       "items": [
         24,
-        26
+        26,
+        25
       ]
     },
     "ModData": {
@@ -106,56 +107,16 @@
   },
   {
     "UserData": {
-      "userID": 152193703312621568,
-      "username": "Drystan Flamel",
-      "role": 1,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
       "userID": 164069879069147146,
       "username": "Chi-ha Sensha",
       "role": 1,
       "status": 1,
-      "money": 650000,
+      "money": 0,
       "resolvedCases": 0,
       "crimesCommitted": 2,
       "guildID": 0
     },
-    "xp": 1785,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 175897323325358082,
-      "username": "Titanic",
-      "role": 1,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
+    "xp": 1121,
     "InvData": {
       "items": []
     },
@@ -255,7 +216,7 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 3890,
+    "xp": 4315,
     "InvData": {
       "items": []
     },
@@ -291,31 +252,11 @@
       "role": 1,
       "status": 1,
       "money": 200000,
-      "resolvedCases": 0,
+      "resolvedCases": 100,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 13040,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 219450563803217942,
-      "username": "Black Fang",
-      "role": 1,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 250,
+    "xp": 13190,
     "InvData": {
       "items": []
     },
@@ -350,12 +291,12 @@
       "username": "Ookami",
       "role": 2,
       "status": 1,
-      "money": 17000,
+      "money": 39500,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 613,
+    "xp": 1155,
     "InvData": {
       "items": []
     },
@@ -370,12 +311,12 @@
       "username": "🐲Lark🐲",
       "role": 2,
       "status": 1,
-      "money": 699140,
+      "money": 698739,
       "resolvedCases": 0,
-      "crimesCommitted": 0,
+      "crimesCommitted": 16,
       "guildID": 0
     },
-    "xp": 2700,
+    "xp": 3389,
     "InvData": {
       "items": [
         26
@@ -418,26 +359,6 @@
       "guildID": 0
     },
     "xp": 2250,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 308797272332697600,
-      "username": "X",
-      "role": 1,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
     "InvData": {
       "items": []
     },
@@ -517,7 +438,7 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 1008,
+    "xp": 1088,
     "InvData": {
       "items": []
     },
@@ -572,12 +493,12 @@
       "username": "Tyranica",
       "role": 2,
       "status": 1,
-      "money": 55000,
+      "money": 44000,
       "resolvedCases": 0,
-      "crimesCommitted": 0,
+      "crimesCommitted": 6,
       "guildID": 0
     },
-    "xp": 2335,
+    "xp": 2678,
     "InvData": {
       "items": []
     },
@@ -612,12 +533,12 @@
       "username": "Doting Baron ⚔",
       "role": 1,
       "status": 1,
-      "money": 45601,
-      "resolvedCases": 0,
+      "money": 20601,
+      "resolvedCases": 2,
       "crimesCommitted": 0,
       "guildID": 1
     },
-    "xp": 1713,
+    "xp": 3305,
     "InvData": {
       "items": []
     },
@@ -648,36 +569,16 @@
   },
   {
     "UserData": {
-      "userID": 338144746868310017,
-      "username": "Kurohime Kage",
-      "role": 2,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
       "userID": 315318484022067202,
       "username": "Misty (Hyrule)",
       "role": 2,
       "status": 1,
-      "money": 119700,
+      "money": 271700,
       "resolvedCases": 0,
-      "crimesCommitted": 0,
+      "crimesCommitted": 1,
       "guildID": 0
     },
-    "xp": 1708,
+    "xp": 2583,
     "InvData": {
       "items": []
     },
@@ -692,12 +593,12 @@
       "username": "Blank Slate",
       "role": 3,
       "status": 1,
-      "money": 55187,
+      "money": 2766,
       "resolvedCases": 0,
-      "crimesCommitted": 0,
+      "crimesCommitted": 1,
       "guildID": 0
     },
-    "xp": 1363,
+    "xp": 1888,
     "InvData": {
       "items": []
     },
@@ -788,36 +689,16 @@
   },
   {
     "UserData": {
-      "userID": 358338709407399936,
-      "username": "Tsuyoi Amari",
-      "role": 1,
-      "status": 1,
-      "money": 11500,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 478,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
       "userID": 237928154273021952,
       "username": "Essence",
       "role": 1,
       "status": 1,
-      "money": 48000,
-      "resolvedCases": 0,
+      "money": 4000,
+      "resolvedCases": 2,
       "crimesCommitted": 0,
-      "guildID": 0
+      "guildID": 1
     },
-    "xp": 80,
+    "xp": 2245,
     "InvData": {
       "items": []
     },
@@ -892,17 +773,17 @@
       "username": "Praetoria",
       "role": 1,
       "status": 1,
-      "money": 45500,
-      "resolvedCases": 0,
+      "money": 39500,
+      "resolvedCases": 2,
       "crimesCommitted": 0,
       "guildID": 1
     },
-    "xp": 2450,
+    "xp": 3505,
     "InvData": {
       "items": []
     },
     "ModData": {
-      "isMuted": false,
+      "isMuted": true,
       "muteDuration": "00:00:00"
     }
   },
@@ -911,26 +792,6 @@
       "userID": 287043288790204416,
       "username": "ThorbenFP",
       "role": 0,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 250,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 237728944705503232,
-      "username": "Haze Hampton",
-      "role": 1,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -1017,7 +878,7 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 775,
+    "xp": 785,
     "InvData": {
       "items": []
     },
@@ -1035,9 +896,9 @@
       "money": 20000,
       "resolvedCases": 0,
       "crimesCommitted": 0,
-      "guildID": 0
+      "guildID": 1
     },
-    "xp": 310,
+    "xp": 2040,
     "InvData": {
       "items": []
     },
@@ -1058,26 +919,6 @@
       "guildID": 0
     },
     "xp": 250,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 330286508466765835,
-      "username": "Jishaku",
-      "role": 1,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
     "InvData": {
       "items": []
     },
@@ -1137,27 +978,7 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 823,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": true,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 315108903283195904,
-      "username": "Narancia Loota",
-      "role": 1,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 250,
+    "xp": 998,
     "InvData": {
       "items": []
     },
@@ -1171,26 +992,6 @@
       "userID": 183386925187596288,
       "username": "Usagi",
       "role": 0,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 250,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 371251055129788416,
-      "username": "Kuroshi Burado",
-      "role": 2,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -1292,12 +1093,12 @@
       "username": "Tasha Ramanez 🎄",
       "role": 3,
       "status": 1,
-      "money": 0,
+      "money": 50000,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 250,
+    "xp": 1280,
     "InvData": {
       "items": []
     },
@@ -1334,10 +1135,10 @@
       "status": 1,
       "money": 13000,
       "resolvedCases": 0,
-      "crimesCommitted": 0,
+      "crimesCommitted": 1,
       "guildID": 0
     },
-    "xp": 890,
+    "xp": 950,
     "InvData": {
       "items": []
     },
@@ -1457,7 +1258,7 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 970,
+    "xp": 1100,
     "InvData": {
       "items": []
     },
@@ -1517,7 +1318,7 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 1585,
+    "xp": 1035,
     "InvData": {
       "items": []
     },
@@ -1532,12 +1333,12 @@
       "username": "Ice Spirit 🕊",
       "role": 1,
       "status": 1,
-      "money": 0,
+      "money": 10000,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 330,
+    "xp": 645,
     "InvData": {
       "items": []
     },
@@ -1552,12 +1353,12 @@
       "username": "Celsius ❄",
       "role": 1,
       "status": 1,
-      "money": 0,
+      "money": 5000,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 1
     },
-    "xp": 863,
+    "xp": 1113,
     "InvData": {
       "items": []
     },
@@ -1574,30 +1375,10 @@
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
-      "crimesCommitted": 0,
+      "crimesCommitted": 1,
       "guildID": 0
     },
-    "xp": 1190,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 372520178073862144,
-      "username": "Couteaux",
-      "role": 2,
-      "status": 1,
-      "money": 499500,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 1123,
+    "xp": 1115,
     "InvData": {
       "items": []
     },
@@ -1612,52 +1393,12 @@
       "username": "Orion ☯",
       "role": 1,
       "status": 1,
-      "money": 54501,
-      "resolvedCases": 0,
+      "money": 78191,
+      "resolvedCases": 2,
       "crimesCommitted": 0,
       "guildID": 1
     },
-    "xp": 1593,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 162597717271379968,
-      "username": "Cliff Abbott",
-      "role": 1,
-      "status": 1,
-      "money": 17000,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 323,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 248284560909926400,
-      "username": "Rosa ❀",
-      "role": 1,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 1
-    },
-    "xp": 800,
+    "xp": 3305,
     "InvData": {
       "items": []
     },
@@ -1697,12 +1438,12 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 465,
+    "xp": 595,
     "InvData": {
       "items": []
     },
     "ModData": {
-      "isMuted": false,
+      "isMuted": true,
       "muteDuration": "00:00:00"
     }
   },
@@ -1712,17 +1453,17 @@
       "username": "V",
       "role": 2,
       "status": 1,
-      "money": 0,
+      "money": 100000,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 310,
+    "xp": 665,
     "InvData": {
       "items": []
     },
     "ModData": {
-      "isMuted": false,
+      "isMuted": true,
       "muteDuration": "00:00:00"
     }
   },
@@ -1788,46 +1529,6 @@
   },
   {
     "UserData": {
-      "userID": 241740046766440448,
-      "username": "Nathaniel Greeney",
-      "role": 1,
-      "status": 1,
-      "money": 7000,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 635,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 255068123286208513,
-      "username": "Luna",
-      "role": 1,
-      "status": 1,
-      "money": 2000,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 603,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
       "userID": 341191268614799360,
       "username": "TurNina",
       "role": 0,
@@ -1873,11 +1574,11 @@
       "role": 1,
       "status": 1,
       "money": 3800,
-      "resolvedCases": 0,
+      "resolvedCases": 1,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 355,
+    "xp": 595,
     "InvData": {
       "items": []
     },
@@ -1972,12 +1673,12 @@
       "username": "Dreadknight",
       "role": 2,
       "status": 1,
-      "money": 56000,
+      "money": 55000,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 1383,
+    "xp": 1819,
     "InvData": {
       "items": []
     },
@@ -1997,7 +1698,7 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 250,
+    "xp": 1055,
     "InvData": {
       "items": []
     },
@@ -2018,26 +1719,6 @@
       "guildID": 0
     },
     "xp": 250,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 298904029449289730,
-      "username": "Heavy Weather",
-      "role": 2,
-      "status": 1,
-      "money": 20001,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 793,
     "InvData": {
       "items": []
     },
@@ -2077,7 +1758,7 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 250,
+    "xp": 1135,
     "InvData": {
       "items": []
     },
@@ -2192,12 +1873,12 @@
       "username": "Hiro Tate",
       "role": 1,
       "status": 1,
-      "money": 45000,
+      "money": 39500,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 1205,
+    "xp": 1870,
     "InvData": {
       "items": []
     },
@@ -2288,36 +1969,16 @@
   },
   {
     "UserData": {
-      "userID": 255814165803958273,
-      "username": "Thresher Spike",
-      "role": 3,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 1115,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
       "userID": 304799301710774274,
       "username": "Weaver",
       "role": 1,
       "status": 1,
-      "money": 0,
+      "money": 1000,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 250,
+    "xp": 320,
     "InvData": {
       "items": []
     },
@@ -2332,12 +1993,12 @@
       "username": "Tasha Tacteritus",
       "role": 1,
       "status": 1,
-      "money": 0,
+      "money": 500,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 580,
+    "xp": 665,
     "InvData": {
       "items": []
     },
@@ -2388,26 +2049,6 @@
   },
   {
     "UserData": {
-      "userID": 381150064539729921,
-      "username": "Maevery",
-      "role": 3,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 820,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
       "userID": 372749370866663424,
       "username": "Honkers",
       "role": 0,
@@ -2422,27 +2063,7 @@
       "items": []
     },
     "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 310838849729331210,
-      "username": "Kaitlyn Bueschlin",
-      "role": 3,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 250,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
+      "isMuted": true,
       "muteDuration": "00:00:00"
     }
   },
@@ -2452,12 +2073,12 @@
       "username": "Blake Nemsus ☠",
       "role": 1,
       "status": 1,
-      "money": 0,
+      "money": 500,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 263,
+    "xp": 1203,
     "InvData": {
       "items": []
     },
@@ -2491,26 +2112,6 @@
       "userID": 382353918039949313,
       "username": "ray Longmore",
       "role": 1,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 250,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 382354526033674241,
-      "username": "La Muerta",
-      "role": 2,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -2628,8 +2229,8 @@
   },
   {
     "UserData": {
-      "userID": 285586166139453440,
-      "username": "TannerFuckingDedInside2017",
+      "userID": 362400039085146112,
+      "username": "PILL",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -2648,9 +2249,29 @@
   },
   {
     "UserData": {
-      "userID": 203310530146861056,
-      "username": "Monsoon",
+      "userID": 241973301260320768,
+      "username": "Check ✓",
       "role": 2,
+      "status": 1,
+      "money": 15500,
+      "resolvedCases": 0,
+      "crimesCommitted": 2,
+      "guildID": 0
+    },
+    "xp": 780,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": true,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 346413033179971597,
+      "username": "Guren",
+      "role": 0,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -2692,12 +2313,12 @@
       "username": "Kira",
       "role": 1,
       "status": 1,
-      "money": 0,
+      "money": 2000,
       "resolvedCases": 0,
       "crimesCommitted": 0,
-      "guildID": 0
+      "guildID": 1
     },
-    "xp": 0,
+    "xp": 1590,
     "InvData": {
       "items": []
     },
@@ -2708,48 +2329,8 @@
   },
   {
     "UserData": {
-      "userID": 346413033179971597,
-      "username": "Guren",
-      "role": 0,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 198349325330284545,
-      "username": "Hiroshi Hayate",
-      "role": 1,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 362400039085146112,
-      "username": "thicc cunt",
+      "userID": 379383499897044993,
+      "username": "Eoki",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -2772,12 +2353,12 @@
       "username": "Apollo",
       "role": 3,
       "status": 1,
-      "money": 0,
+      "money": 10000,
       "resolvedCases": 0,
-      "crimesCommitted": 0,
+      "crimesCommitted": 1,
       "guildID": 0
     },
-    "xp": 0,
+    "xp": 1265,
     "InvData": {
       "items": []
     },
@@ -2788,28 +2369,8 @@
   },
   {
     "UserData": {
-      "userID": 325095759773040640,
-      "username": "Hyakutake",
-      "role": 1,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 183670950997262336,
-      "username": "Critical Health (Ra Thor)",
+      "userID": 123089696887799808,
+      "username": "Zorod",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -2828,16 +2389,16 @@
   },
   {
     "UserData": {
-      "userID": 222720284757721088,
-      "username": "Jouta",
-      "role": 1,
+      "userID": 187027544711757824,
+      "username": "Stray",
+      "role": 3,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 0,
+    "xp": 1360,
     "InvData": {
       "items": []
     },
@@ -2888,6 +2449,46 @@
   },
   {
     "UserData": {
+      "userID": 262330418617909249,
+      "username": "neathergrasp",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 312923138704932864,
+      "username": "Pyro",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
       "userID": 275956043635228672,
       "username": "HussainQureshi",
       "role": 0,
@@ -2908,16 +2509,16 @@
   },
   {
     "UserData": {
-      "userID": 379383499897044993,
-      "username": "Eoki",
-      "role": 0,
+      "userID": 132293968497999872,
+      "username": "Aoryu",
+      "role": 2,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 0,
+    "xp": 805,
     "InvData": {
       "items": []
     },
@@ -2948,16 +2549,16 @@
   },
   {
     "UserData": {
-      "userID": 132293968497999872,
-      "username": "Aoryu",
-      "role": 2,
+      "userID": 325095759773040640,
+      "username": "Hyakutake",
+      "role": 1,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 0,
+    "xp": 1015,
     "InvData": {
       "items": []
     },
@@ -2968,49 +2569,9 @@
   },
   {
     "UserData": {
-      "userID": 241973301260320768,
-      "username": "Check ✓",
-      "role": 2,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 262330418617909249,
-      "username": "neathergrasp",
+      "userID": 183670950997262336,
+      "username": "Critical Health (Ra Thor)",
       "role": 0,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 187027544711757824,
-      "username": "Stray",
-      "role": 3,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -3048,9 +2609,49 @@
   },
   {
     "UserData": {
-      "userID": 362299393547698176,
-      "username": "Infamous Metalico",
-      "role": 2,
+      "userID": 285586166139453440,
+      "username": "TannerFuckingDedInside2017",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 198349325330284545,
+      "username": "Hiroshi Hayate",
+      "role": 1,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 770,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 335821436029632523,
+      "username": "HumanBeing16",
+      "role": 0,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -3088,8 +2689,8 @@
   },
   {
     "UserData": {
-      "userID": 308272251457765379,
-      "username": "Serious_Dante",
+      "userID": 153627427967336449,
+      "username": "YourMomsChestHair",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3108,8 +2709,8 @@
   },
   {
     "UserData": {
-      "userID": 153627427967336449,
-      "username": "YourMomsChestHair",
+      "userID": 329715465427484684,
+      "username": "Christmas Ree",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3118,6 +2719,26 @@
       "guildID": 0
     },
     "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 362299393547698176,
+      "username": "Infamous Metalico",
+      "role": 2,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 780,
     "InvData": {
       "items": []
     },
@@ -3157,59 +2778,19 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 0,
+    "xp": 955,
     "InvData": {
       "items": []
     },
     "ModData": {
-      "isMuted": false,
+      "isMuted": true,
       "muteDuration": "00:00:00"
     }
   },
   {
     "UserData": {
-      "userID": 382621786506002433,
-      "username": "Doctor Who",
-      "role": 0,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 344119080015364098,
-      "username": "Little Gil",
-      "role": 0,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 373823814519488513,
-      "username": "Ant",
+      "userID": 308272251457765379,
+      "username": "Serious_Dante",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3248,9 +2829,189 @@
   },
   {
     "UserData": {
-      "userID": 312022550932619265,
-      "username": "Inferno",
+      "userID": 389590546810929173,
+      "username": "Silver Mantis",
       "role": 3,
+      "status": 1,
+      "money": 19500,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 880,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 382621786506002433,
+      "username": "Doctor Who",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 387317945224658944,
+      "username": "Harley quinn",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 344119080015364098,
+      "username": "Little Gil",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 360042820402282507,
+      "username": "Yuuri nikiforov/lukanikiforov",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 239750748160655361,
+      "username": "Fujiko Akizuki",
+      "role": 1,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 852,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 273144784477224960,
+      "username": "po",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 371993440826949643,
+      "username": "Kenta",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 327977044061192203,
+      "username": "Sir Randomizer",
+      "role": 2,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 1,
+      "guildID": 0
+    },
+    "xp": 785,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 313306010699694081,
+      "username": "TehRedPanda222",
+      "role": 0,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -3277,47 +3038,7 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 351161828174331907,
-      "username": "West Wind",
-      "role": 1,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 201731211796676608,
-      "username": "🎆🎇The Joker🎆🎇",
-      "role": 0,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
+    "xp": 750,
     "InvData": {
       "items": []
     },
@@ -3337,6 +3058,26 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
+    "xp": 855,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 333494746376962048,
+      "username": "Just A Kid",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
     "xp": 0,
     "InvData": {
       "items": []
@@ -3348,8 +3089,28 @@
   },
   {
     "UserData": {
-      "userID": 273144784477224960,
-      "username": "po",
+      "userID": 312022550932619265,
+      "username": "Inferno",
+      "role": 3,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 765,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 356183363880484876,
+      "username": "Wolfie",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3408,8 +3169,28 @@
   },
   {
     "UserData": {
-      "userID": 239750748160655361,
-      "username": "Fujiko Akizuki",
+      "userID": 201731211796676608,
+      "username": "🎆🎇The Joker🎆🎇",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 351161828174331907,
+      "username": "West Wind",
       "role": 1,
       "status": 1,
       "money": 0,
@@ -3417,7 +3198,7 @@
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 0,
+    "xp": 790,
     "InvData": {
       "items": []
     },
@@ -3428,9 +3209,9 @@
   },
   {
     "UserData": {
-      "userID": 389590546810929173,
-      "username": "Silver Mantis",
-      "role": 3,
+      "userID": 355770784045858816,
+      "username": "Atsuhiro Sako",
+      "role": 0,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
@@ -3448,8 +3229,28 @@
   },
   {
     "UserData": {
-      "userID": 385897317728911381,
-      "username": "Michael Meker",
+      "userID": 263853210001735683,
+      "username": "Artic",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 373823814519488513,
+      "username": "Ant",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3488,108 +3289,8 @@
   },
   {
     "UserData": {
-      "userID": 333494746376962048,
-      "username": "Just A Kid",
-      "role": 0,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 313306010699694081,
-      "username": "TehRedPanda222",
-      "role": 0,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 355770784045858816,
-      "username": "Atsuhiro Sako",
-      "role": 0,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 356183363880484876,
-      "username": "Wolfie",
-      "role": 0,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 327977044061192203,
-      "username": "Sir Randomizer",
-      "role": 2,
-      "status": 1,
-      "money": 0,
-      "resolvedCases": 0,
-      "crimesCommitted": 0,
-      "guildID": 0
-    },
-    "xp": 0,
-    "InvData": {
-      "items": []
-    },
-    "ModData": {
-      "isMuted": false,
-      "muteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "userID": 387317945224658944,
-      "username": "Harley quinn",
+      "userID": 385897317728911381,
+      "username": "Michael Meker",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3628,8 +3329,8 @@
   },
   {
     "UserData": {
-      "userID": 163049193970073600,
-      "username": "Magikarp",
+      "userID": 118485885531455493,
+      "username": "Mark",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3652,12 +3353,12 @@
       "username": "Shaed",
       "role": 3,
       "status": 1,
-      "money": 0,
+      "money": 50000,
       "resolvedCases": 0,
       "crimesCommitted": 0,
       "guildID": 0
     },
-    "xp": 0,
+    "xp": 850,
     "InvData": {
       "items": []
     },
@@ -3688,9 +3389,29 @@
   },
   {
     "UserData": {
-      "userID": 118485885531455493,
-      "username": "Mark",
+      "userID": 163049193970073600,
+      "username": "Magikarp",
       "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 358338709407399936,
+      "username": "Tsuyoi Amari",
+      "role": 1,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,
