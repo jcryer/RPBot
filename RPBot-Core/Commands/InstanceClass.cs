@@ -15,7 +15,7 @@ namespace RPBot
     [Group("instance"), Description("Instance commands")]
     class InstanceClass : RPClass
     {
-        [Command("add"), Description("Command to create a new location instance."), RequireRolesAttribute("Staff", "Bot-Test")]
+        [Command("add"), Description("Command to create a new location instance."), RequireRolesAttribute("Staff")]
         public async Task Add(CommandContext e, [Description("Give the ID of the channel you wish to create from the !instance channels command.")]int channelID)
         {
             InstanceObject.ChannelTemplate template = ChannelTemplates.FirstOrDefault(x => x.id == channelID);

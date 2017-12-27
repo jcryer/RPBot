@@ -771,7 +771,7 @@
     "UserData": {
       "userID": 286222030997684226,
       "username": "Praetoria",
-      "role": 1,
+      "role": 2,
       "status": 1,
       "money": 39500,
       "resolvedCases": 2,
@@ -2210,7 +2210,7 @@
   {
     "UserData": {
       "userID": 295371406747631616,
-      "username": "Dead Fish",
+      "username": "Clam",
       "role": 0,
       "status": 1,
       "money": 0,
@@ -3412,6 +3412,46 @@
       "userID": 358338709407399936,
       "username": "Tsuyoi Amari",
       "role": 1,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 150767260464709632,
+      "username": "Chreas",
+      "role": 0,
+      "status": 1,
+      "money": 0,
+      "resolvedCases": 0,
+      "crimesCommitted": 0,
+      "guildID": 0
+    },
+    "xp": 0,
+    "InvData": {
+      "items": []
+    },
+    "ModData": {
+      "isMuted": false,
+      "muteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "userID": 327187060819755009,
+      "username": "Noel Bunny.",
+      "role": 0,
       "status": 1,
       "money": 0,
       "resolvedCases": 0,

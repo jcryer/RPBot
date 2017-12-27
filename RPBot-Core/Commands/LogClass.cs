@@ -16,7 +16,7 @@ namespace RPBot
 {
     class LogClass : RPClass
     {
-        [Command("log"), Description("Admin log command (testing)"), RequireRolesAttribute("Staff", "Bot-Test")]
+        [Command("log"), Description("Admin log command (testing)"), RequireRolesAttribute("Staff")]
         [Hidden]
         public async Task Log(CommandContext e, [RemainingText, Description("Description of the log")] string desc)
         {
@@ -27,24 +27,19 @@ namespace RPBot
             messageList.AddRange(await e.Channel.GetMessagesAsync(100));
             while (true)
             {
-                if (messageList.Count == (100 * iter))
+                messageList.AddRange(await e.Channel.GetMessagesAsync(100, before: messageList.Last().Id));
+
+                if (messageList.Count != (100 * iter))
                 {
-                    messageList.AddRange(await e.Channel.GetMessagesAsync(100, before: messageList.Last().Id));
-                }
-                else
-                {
-                    messageList.AddRange(await e.Channel.GetMessagesAsync(100, before: messageList.Last().Id));
                     break;
                 }
                 iter++;
             }
             messageList.Reverse();
 
-            List<DiscordMember> allMembers = new List<DiscordMember>();
-            allMembers.AddRange(await e.Guild.GetAllMembersAsync());
+            var allMembers = await e.Guild.GetAllMembersAsync();
 
-            List<DiscordChannel> allChannels = new List<DiscordChannel>();
-            allChannels.AddRange(await e.Guild.GetChannelsAsync());
+            var allChannels = await e.Guild.GetChannelsAsync();
 
             foreach (DiscordMessage message in messageList)
             {
@@ -81,11 +76,6 @@ namespace RPBot
                     }
                         DiscordMember member = allMembers.First(x => x.Id == message.Author.Id);
                         logObjectList.Add(new LogObject.Message(member.DisplayName, member.Color.ToString(), message.Author.AvatarUrl, message.Timestamp, CommonMarkConverter.Convert(content), message.Author.IsBot));
-                   /* }
-                    catch
-                    {
-                        logObjectList.Add(new LogObject.Message(message.Author.Username, DiscordColor.Gray.ToString(), message.Author.AvatarUrl, message.Timestamp, CommonMarkConverter.Convert(content), message.Author.IsBot));
-                    }*/
                 }
             }
                 
@@ -93,14 +83,12 @@ namespace RPBot
 
             string HTMLResponse = File.ReadAllText("Data/template.html");
             HTMLResponse = HTMLResponse.Replace("TOPICHERE", desc).Replace("CHANNELHERE", e.Channel.Name).Replace("CONTENTHERE", returnedHTML);
-            string folderName = DateTime.Now.ToString("hh-mm-ss_dd-mm-yyyy");
-            Directory.CreateDirectory(folderName);
-            File.WriteAllText(folderName + "/response.html", HTMLResponse);
-            await e.RespondAsync("Done!");
-            //string output = JsonConvert.SerializeObject(htmlArray);
-            //string logFile = "logs/" + DateTime.Now.ToString("MM_dd_yy-H_mm_ss") + "(" + e.Channel.Id + ")" + ".txt";
-            //File.WriteAllText(logFile, output);
-            //await e.RespondWithFileAsync(logFile, "Log dump complete! Messages: " + htmlArray.Count());
+            string fileName = e.Channel.Name + "_" + DateTime.Now.ToString("dd - mm - yyyy");
+            File.WriteAllText("../../var/www/html/" + fileName, HTMLResponse);
+            await e.RespondAsync("Done! File name: " + fileName + "\n" + "http://51.15.222.156/" + fileName);
+            string output = JsonConvert.SerializeObject(messageList);
+            string logFile = "logs/" + DateTime.Now.ToString("MM_dd_yy-H_mm_ss") + "(" + e.Channel.Id + ")" + ".txt";
+            File.WriteAllText(logFile, output);
         }
 
         public static string CreateMessage(List<LogObject.Message> logObjectList)
@@ -113,7 +101,6 @@ namespace RPBot
                 HTMLList += m.fontColour + "\" > " + m.username + "</font><span></span><span class=\"timestamp\">" + m.timestamp.ToString() + "</span><span class=\"timestamp-small\">" + m.timestamp.ToString("mm:ss") + "</span></span>";
                 HTMLList += "<span class=\"text\"><div> " + m.content.Replace("<p>","").Replace("</p>","") + "</div> </span> </div></div>";
             }
-
             return HTMLList;
         }
     }

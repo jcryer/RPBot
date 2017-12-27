@@ -59,21 +59,21 @@ namespace RPBot
         [Group("slowmode"), Description("Slowmode commands")]
         class Slowmode
         {
-            [Command("on"), Description("Admin command to make OOC chill tf out"), RequireRolesAttribute("Administrator", "Bot-Test")]
+            [Command("on"), Description("Admin command to make OOC chill tf out"), RequireRolesAttribute("Administrator")]
             public async Task On(CommandContext e, [Description("Amount of time required between each message (seconds)")] int limitTime)
             {
                 slowModeTime = limitTime;
                 await e.RespondAsync("Slowmode activated, with " + limitTime + " seconds between each message.");
             }
 
-            [Command("off"), Description("Admin command to disable slow mode"), RequireRolesAttribute("Administrator", "Bot-Test")]
+            [Command("off"), Description("Admin command to disable slow mode"), RequireRolesAttribute("Administrator")]
             public async Task Off(CommandContext e)
             {
                 slowModeTime = -1;
                 await e.RespondAsync("Slowmode disabled.");
             }
         }
-        [Command("cases"), Description("Admin cases command."), RequireRolesAttribute("Staff", "Bot-Test")]
+        [Command("cases"), Description("Admin cases command."), RequireRolesAttribute("Staff")]
         public async Task Cases(CommandContext e, [Description("Select a user.")] DiscordMember user, [Description("Number to increase or decrease cases resolved by")] string caseNum)
         {
             RPClass.Users.First(x => x.UserData.userID == user.Id).UserData.resolvedCases += int.Parse(caseNum);
@@ -89,7 +89,7 @@ namespace RPBot
             await e.RespondAsync("Cases updated.");
         }
 
-        [Command("crimes"), Description("Admin cases command."), RequireRolesAttribute("Staff", "Bot-Test")]
+        [Command("crimes"), Description("Admin cases command."), RequireRolesAttribute("Staff")]
         public async Task Crimes(CommandContext e, [Description("Select a user.")] DiscordMember user, [Description("Number to increase or decrease crimes committed by")] string crimeNum)
         {
             RPClass.Users.First(x => x.UserData.userID == user.Id).UserData.crimesCommitted += int.Parse(crimeNum);
@@ -105,7 +105,7 @@ namespace RPBot
             await e.RespondAsync("Crimes updated.");
         }
 
-        [Command("name"), Description("Command for users to change their RP name temporarily"), RequireRolesAttribute("Staff", "Bot-Test")]
+        [Command("name"), Description("Command for users to change their RP name temporarily"), RequireRolesAttribute("Staff")]
         public async Task Name(CommandContext e, [Description("What to call yourself")] string name = "")
         {
             DiscordMessage x;
@@ -154,7 +154,7 @@ namespace RPBot
             await e.RespondWithFileAsync("UserData.txt", "Json file of all user data!\nRoles: 1 = Hero, 2 = Villain, 3 = Rogue\nStatus: 1 = Alive, 2 = Dead");
         }
 
-        [Command("sudo"), Description("Execute a command as if you're another user"), RequireRolesAttribute("Staff", "Bot-Test")]
+        [Command("sudo"), Description("Execute a command as if you're another user"), RequireRolesAttribute("Staff")]
         public async Task SudoAsync(CommandContext e, [Description("User to Sudo")]DiscordUser user, [RemainingText, Description("Command to execute")] string command = "help")
         {
             await e.CommandsNext.SudoAsync(user, e.Channel, command);
@@ -196,7 +196,7 @@ namespace RPBot
             await ctx.RespondAsync("", embed: b.Build());
         }
 
-        [Command("purge"), Aliases("p"), Description("Admin purge command"), RequireRolesAttribute("Staff", "Bot-Test")]
+        [Command("purge"), Aliases("p"), Description("Admin purge command"), RequireRolesAttribute("Staff")]
         public async Task PurgeAsync(CommandContext e, [Description("Number of messages to purge (Max 100)")] int limit)
         {
             var i = 0;
@@ -215,7 +215,7 @@ namespace RPBot
 
         }
 
-        [Command("clean"), Aliases("c"), Description("Cleans up all commands in channel"), RequireRolesAttribute("Staff", "Bot-Test")]
+        [Command("clean"), Aliases("c"), Description("Cleans up all commands in channel"), RequireRolesAttribute("Staff")]
         public async Task CleanAsync(CommandContext e)
         {
             var prefix = "!";
@@ -234,7 +234,7 @@ namespace RPBot
             await e.Message.DeleteAsync();
         }
 
-        [Command("restart"),  Description("Admin restart command"), RequireRolesAttribute("Staff", "Bot-Test")]
+        [Command("restart"),  Description("Admin restart command"), RequireRolesAttribute("Staff")]
         public async Task Restart(CommandContext e)
         {
             SaveData(-1);
@@ -254,7 +254,7 @@ namespace RPBot
             await Task.Delay(0);
         }
 
-        [Command("update"), Description("Admin update command"), RequireRolesAttribute("Administrator", "Bot-Test")]
+        [Command("update"), Description("Admin update command"), RequireRolesAttribute("Administrator")]
         public async Task Update(CommandContext e)
         {
             await e.RespondAsync("Restarting. Wish me luck!");
@@ -341,10 +341,13 @@ namespace RPBot
             foreach (DiscordMessage m in messageList)
             {
                 string ret = m.Content;
-                if (ret.Contains(whattodelete))
+
+                if (!(whattodelete == "" && whattosetto == ""))
                 {
-                    Console.WriteLine("e.e");
-                    ret = ret.Replace(whattodelete, whattosetto);
+                    if (ret.Contains(whattodelete))
+                    {
+                        ret = ret.Replace(whattodelete, whattosetto);
+                    }
                 }
                 await e.RespondAsync(ret);
             }
@@ -352,7 +355,7 @@ namespace RPBot
 
         }
 
-        [Command("removeuser"), Description("Makes the bot delete a user that has left the server (Name in statsheets, copied exactly)."), RequireRolesAttribute("Staff", "Bot-Test")]
+        [Command("removeuser"), Description("Makes the bot delete a user that has left the server (Name in statsheets, copied exactly)."), RequireRolesAttribute("Staff")]
         public async Task RemoveUser(CommandContext e, [RemainingText] string whotodelete = "")
         {
             if (Users.Any(x => x.UserData.username == whotodelete))
@@ -405,7 +408,7 @@ namespace RPBot
         [Group("approval"), Description("Approval commands")]
         class ApprovalClass
         {
-            [Command("add"), Description("Command to create a new approval instance."), RequireRolesAttribute("Staff", "Bot-Test")]
+            [Command("add"), Description("Command to create a new approval instance."), RequireRolesAttribute("Staff")]
             public async Task AddApproval(CommandContext e, [Description("Mention the user you will be approving.")]DiscordMember m)
             {
                 Regex rgx = new Regex("[^a-zA-Z0-9-]");
@@ -420,7 +423,7 @@ namespace RPBot
                 await e.RespondAsync("Approval instance created.");
             }
 
-            [Command("remove"), Description("Command to remove an approval instance. Execute this command in the instance you wish to remove, or mention the user the approval instance is for."), RequireRolesAttribute("Staff", "Bot-Test")]
+            [Command("remove"), Description("Command to remove an approval instance. Execute this command in the instance you wish to remove, or mention the user the approval instance is for."), RequireRolesAttribute("Staff")]
             public async Task RemoveApproval(CommandContext e, [Description("Mention the user the approval instance is for, or execute the command in the instance you wish to remove.")] DiscordMember m = null)
             {
 
