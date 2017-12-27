@@ -83,14 +83,14 @@ namespace RPBot
 
             string HTMLResponse = File.ReadAllText("Data/template.html");
             HTMLResponse = HTMLResponse.Replace("TOPICHERE", desc).Replace("CHANNELHERE", e.Channel.Name).Replace("CONTENTHERE", returnedHTML);
-            string fileName = e.Channel.Name + "_" + DateTime.Now.ToString("dd-mm-yyyy");
+            string fileName = e.Channel.Name + "_" + DateTime.Now.ToString("dd-MM-yyyy");
             File.WriteAllText("../../var/www/html/logs/" + fileName, HTMLResponse);
             string logList = File.ReadAllText("../../var/www/html/logs/loglist.csv");
             File.WriteAllText("../../var/www/html/logs/loglist.csv", logList + "," + fileName);
-            await e.RespondAsync("Done! File name: " + fileName + "\n" + "http://51.15.222.156/" + fileName);
             string output = JsonConvert.SerializeObject(messageList);
-            string logFile = "logs/" + DateTime.Now.ToString("MM_dd_yy-H_mm_ss") + "(" + e.Channel.Name + ")" + ".txt";
+            string logFile = "logs/" + DateTime.Now.ToString("dd_MM_yy-H_mm_ss") + "(" + e.Channel.Name + ")" + ".txt";
             File.WriteAllText(logFile, output);
+            await e.RespondAsync("Done! File name: " + fileName + "\n" + "http://51.15.222.156/wrapper.html");
         }
 
         public static string CreateMessage(List<LogObject.Message> logObjectList)
