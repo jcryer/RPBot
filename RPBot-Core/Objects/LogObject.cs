@@ -12,36 +12,36 @@ namespace RPBot
         {
             public RootObject(ulong id, string name, string content, ulong channelID)
             {
-                this.id = id;
-                this.name = name;
-                this.content = content;
-                this.channelID = channelID;
+                this.Id = id;
+                this.Name = name;
+                this.Content = content;
+                this.ChannelID = channelID;
             }
 
-            public ulong id { get; set; }
-            public string name { get; set; }
-            public string content { get; set; }
-            public ulong channelID { get; set; }
+            public ulong Id { get; set; }
+            public string Name { get; set; }
+            public string Content { get; set; }
+            public ulong ChannelID { get; set; }
         }
 
         public class Message
         {
             public Message (string username, string fontColour, string avatar, DateTimeOffset timestamp, string content, bool isBot)
             {
-                this.username = username;
-                this.fontColour = fontColour;
-                this.avatar = avatar;
-                this.timestamp = timestamp;
-                this.content = content;
-                this.isBot = isBot;
+                this.Username = username;
+                this.FontColour = fontColour;
+                this.Avatar = avatar;
+                this.Timestamp = timestamp;
+                this.Content = content;
+                this.IsBot = isBot;
             }
 
-            public string username { get; set; }
-            public string fontColour { get; set; }
-            public string avatar { get; set; }
-            public DateTimeOffset timestamp { get; set; }
-            public string content { get; set; }
-            public bool isBot { get; set; }
+            public string Username { get; set; }
+            public string FontColour { get; set; }
+            public string Avatar { get; set; }
+            public DateTimeOffset Timestamp { get; set; }
+            public string Content { get; set; }
+            public bool IsBot { get; set; }
         }
     }
 }

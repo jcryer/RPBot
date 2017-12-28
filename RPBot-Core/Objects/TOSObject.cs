@@ -29,64 +29,67 @@ namespace RPBot
     {
         public class RootObject
         {
-            public List<UserObject> players { get; set; }
-            public bool active { get; set; }
-            public bool started { get; set; }
-            public DateTime timer { get; set; }
+            public List<UserObject> Players { get; set; }
+            public bool Active { get; set; }
+            public bool Started { get; set; }
+            public DateTime Timer { get; set; }
             
             public RootObject()
             {
-                players = new List<UserObject>();
+                Players = new List<UserObject>();
             }
             public async Task DisplayData(CommandContext e, bool Roles)
             {
-                DiscordEmbedBuilder embed = new DiscordEmbedBuilder();
-
-                foreach (UserObject user in players)
+                DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
                 {
-                    string statusString = user.status == 0 ? "Alive" : user.status == 1 ? "Dead" : "ERROR, Please report this to jcryer.";
-                    string playerNumString = user.playerNum == -1 ? "N/A" : user.status >= 0 ? user.playerNum.ToString() : "ERROR, Please report this to jcryer.";
-                    string roleType = user.role == 1 ? "Villain" : user.role == 2 ? "Medic" : user.role == 3 ? "Spy" : user.role == 4 ? "Joker" : user.role == 5 ? "Hero" : "ERROR, Please report this to jcryer.";
+                    Color = DiscordColor.Blue,
+                    Title = "Town of Salem"
+                }
+                .WithFooter("Heroes & Villains");
+
+                foreach (UserObject user in Players)
+                {
+                    string statusString = user.Status == 0 ? "Alive" : user.Status == 1 ? "Dead" : "ERROR, Please report this to jcryer.";
+                    string playerNumString = user.PlayerNum == -1 ? "N/A" : user.Status >= 0 ? user.PlayerNum.ToString() : "ERROR, Please report this to jcryer.";
+                    string roleType = user.Role == 1 ? "Villain" : user.Role == 2 ? "Medic" : user.Role == 3 ? "Spy" : user.Role == 4 ? "Joker" : user.Role == 5 ? "Hero" : "ERROR, Please report this to jcryer.";
 
                     if (Roles)
                     {
-                        embed.AddField(user.username, "Role: " + roleType);
+                        embed.AddField(user.Username, "Role: " + roleType);
                     }
                     else
                     {
-                        embed.AddField(user.username, "Player number: " + playerNumString + Environment.NewLine + "Status: " + statusString);
+                        embed.AddField(user.Username, "Player number: " + playerNumString + Environment.NewLine + "Status: " + statusString);
                     }
                 }
-                embed.Color = DiscordColor.Blue;
-                embed.Title = "Town of Salem";
-                embed.WithFooter("Heroes & Villains");
-
+                
                 await e.RespondAsync("", embed: embed);
             }
 
             public async Task DisplayData(DiscordDmChannel d, bool Roles)
             {
-                DiscordEmbedBuilder embed = new DiscordEmbedBuilder();
-
-
-                foreach (UserObject user in players)
+                DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
                 {
-                    string statusString = user.status == 0 ? "Alive" : user.status == 1 ? "Dead" : "ERROR, Please report this to Jcryer.";
-                    string playerNumString = user.playerNum == -1 ? "N/A" : user.status >= 0 ? user.playerNum.ToString() : "ERROR, Please report this to Jcryer.";
-                    string roleType = user.role == 1 ? "Villain" : user.role == 2 ? "Medic" : user.role == 3 ? "Spy" : user.role == 4 ? "Joker" : user.role == 5 ? "Hero" : "ERROR, Please report this to Jcryer.";
+                    Color = DiscordColor.Blue,
+                    Title = "Town of Salem"
+                }
+                .WithFooter("Heroes & Villains");
+
+                foreach (UserObject user in Players)
+                {
+                    string statusString = user.Status == 0 ? "Alive" : user.Status == 1 ? "Dead" : "ERROR, Please report this to Jcryer.";
+                    string playerNumString = user.PlayerNum == -1 ? "N/A" : user.Status >= 0 ? user.PlayerNum.ToString() : "ERROR, Please report this to Jcryer.";
+                    string roleType = user.Role == 1 ? "Villain" : user.Role == 2 ? "Medic" : user.Role == 3 ? "Spy" : user.Role == 4 ? "Joker" : user.Role == 5 ? "Hero" : "ERROR, Please report this to Jcryer.";
 
                     if (Roles)
                     {
-                        embed.AddField(user.username,"Role: " + roleType);
+                        embed.AddField(user.Username,"Role: " + roleType);
                     }
                     else
                     {
-                        embed.AddField(user.username, "Player number: " + playerNumString + Environment.NewLine + "Status: " + statusString);
+                        embed.AddField(user.Username, "Player number: " + playerNumString + Environment.NewLine + "Status: " + statusString);
                     }
                 }
-                embed.Color = DiscordColor.Blue;
-                embed.Title = "Town of Salem";
-                embed.WithFooter("Heroes & Villains");
 
                 await d.SendMessageAsync("", embed: embed);
             }
@@ -95,8 +98,8 @@ namespace RPBot
             {
 
                 await e.RespondAsync("Game started.");
-                started = true;
-                int Total = players.Count;
+                Started = true;
+                int Total = Players.Count;
                 int playerNumIncrement = Total;
 
                 int Villains = Convert.ToInt32(Math.Floor((float)(Total / 4)));
@@ -108,58 +111,58 @@ namespace RPBot
 
                 for (int i = 0; i < Villains; i++)
                 {
-                    List<UserObject> usersLeft = players.Where(x => x.role < 0).ToList();
-                    int r = Program.random.Next(usersLeft.Count(x => x.role < 0));
-                    usersLeft[r].role = 1;
+                    List<UserObject> usersLeft = Players.Where(x => x.Role < 0).ToList();
+                    int r = Program.random.Next(usersLeft.Count(x => x.Role < 0));
+                    usersLeft[r].Role = 1;
                 }
                 for (int i = 0; i < Medics; i++)
                 {
-                    List<UserObject> usersLeft = players.Where(x => x.role < 0).ToList();
-                    int r = Program.random.Next(usersLeft.Count(x => x.role < 0));
-                    usersLeft[r].role = 2;
+                    List<UserObject> usersLeft = Players.Where(x => x.Role < 0).ToList();
+                    int r = Program.random.Next(usersLeft.Count(x => x.Role < 0));
+                    usersLeft[r].Role = 2;
                 }
                 for (int i = 0; i < Spies; i++)
                 {
-                    List<UserObject> usersLeft = players.Where(x => x.role < 0).ToList();
-                    int r = Program.random.Next(usersLeft.Count(x => x.role < 0));
-                    usersLeft[r].role = 3;
+                    List<UserObject> usersLeft = Players.Where(x => x.Role < 0).ToList();
+                    int r = Program.random.Next(usersLeft.Count(x => x.Role < 0));
+                    usersLeft[r].Role = 3;
                 }
                 for (int i = 0; i < Joker; i++)
                 {
-                    List<UserObject> usersLeft = players.Where(x => x.role < 0).ToList();
-                    int r = Program.random.Next(usersLeft.Count(x => x.role < 0));
-                    usersLeft[r].role = 4;
+                    List<UserObject> usersLeft = Players.Where(x => x.Role < 0).ToList();
+                    int r = Program.random.Next(usersLeft.Count(x => x.Role < 0));
+                    usersLeft[r].Role = 4;
                 }
                 for (int i = 0; i < Heroes; i++)
                 {
-                    List<UserObject> usersLeft = players.Where(x => x.role < 0).ToList();
-                    int r = Program.random.Next(usersLeft.Count(x => x.role < 0));
-                    usersLeft[r].role = 5;
+                    List<UserObject> usersLeft = Players.Where(x => x.Role < 0).ToList();
+                    int r = Program.random.Next(usersLeft.Count(x => x.Role < 0));
+                    usersLeft[r].Role = 5;
                 }
                 List<int> numberList = Enumerable.Range(0, Total).ToList();
                 for (int i = 0; i < Total; i++)
                 {
                     int rnd = numberList.PickRandom();
-                    players[i].playerNum = rnd;
+                    Players[i].PlayerNum = rnd;
                     numberList.Remove(rnd);
                 }
-                players = players.OrderBy(x => x.playerNum).ToList();
+                Players = Players.OrderBy(x => x.PlayerNum).ToList();
 
                 try
                 {
-                    foreach (UserObject userData in players)
+                    foreach (UserObject userData in Players)
                     {
                         DiscordMember user = await e.Guild.GetMemberAsync(userData.ID);
                         DiscordDmChannel dm = await user.CreateDmChannelAsync();
-                        string roleType = userData.role == 1 ? "Villain" : userData.role == 2 ? "Medic" : userData.role == 3 ? "Spy" : userData.role == 4 ? "Joker" : userData.role == 5 ? "Hero" : "ERROR, Please report this to Jcryer.";
-                        if (userData.role == 1)
+                        string roleType = userData.Role == 1 ? "Villain" : userData.Role == 2 ? "Medic" : userData.Role == 3 ? "Spy" : userData.Role == 4 ? "Joker" : userData.Role == 5 ? "Hero" : "ERROR, Please report this to Jcryer.";
+                        if (userData.Role == 1)
                         {
-                            if (players.Count(x => x.role == 1) > 1)
+                            if (Players.Count(x => x.Role == 1) > 1)
                             {
                                 await dm.SendMessageAsync("Hi! your role is: Villain, and the other Villains are: ");
-                                foreach (UserObject a in players.FindAll(x => x.role == 1 && x.ID != user.Id))
+                                foreach (UserObject a in Players.FindAll(x => x.Role == 1 && x.ID != user.Id))
                                 {
-                                    await dm.SendMessageAsync(a.username);
+                                    await dm.SendMessageAsync(a.Username);
                                 }
                             }
                             else
@@ -181,17 +184,17 @@ namespace RPBot
         public class UserObject
         {
             public ulong ID { get; set; }
-            public string username { get; set; }
-            public int role { get; set; }
-            public int status { get; set; }
-            public int playerNum { get; set; }
+            public string Username { get; set; }
+            public int Role { get; set; }
+            public int Status { get; set; }
+            public int PlayerNum { get; set; }
 
             public UserObject(ulong ID, string username, int role, int status)
             {
                 this.ID = ID;
-                this.username = username;
-                this.role = role;
-                this.status = status;
+                this.Username = username;
+                this.Role = role;
+                this.Status = status;
             }
         }
     }

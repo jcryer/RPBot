@@ -12,12 +12,12 @@ namespace RPBot
         {
             public RootObject(ulong id, string name)
             {
-                this.id = id;
-                this.name = name;
+                this.Id = id;
+                this.Name = name;
             }
 
-            public ulong id { get; set; }
-            public string name { get; set; }
+            public ulong Id { get; set; }
+            public string Name { get; set; }
         }
     }
 }

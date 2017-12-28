@@ -20,8 +20,8 @@ namespace RPBot
     {
         private Config Config { get; }
         public DiscordClient Discord;
-        private CommandsNextModule CommandsNextService { get; }
-		private InteractivityModule InteractivityService { get; }
+        private CommandsNextExtension CommandsNextService { get; }
+		private InteractivityExtension InteractivityService { get; }
         private Timer GameGuard { get; set; }
 
         public RPBot(Config cfg, int shardid)
@@ -61,7 +61,7 @@ namespace RPBot
             // commandsnext config and the commandsnext service itself
             var cncfg = new CommandsNextConfiguration
             {
-                StringPrefix = this.Config.CommandPrefix,
+                StringPrefixes = new List<string>() { Config.CommandPrefix, "" },
                 EnableDms = true,
                 EnableMentionPrefix = true,
                 CaseSensitive = false
@@ -140,8 +140,7 @@ namespace RPBot
 
         private async Task Discord_Ready(ReadyEventArgs e)
         {
-            await Discord.UpdateStatusAsync(new DiscordGame("God"));
-
+            await Task.Delay(0);
 
         }
 
@@ -188,9 +187,11 @@ namespace RPBot
         {
             if (e.Guild == RPClass.RPGuild)
             {
-                DiscordEmbedBuilder b = new DiscordEmbedBuilder();
-                b.Title = "Welcome!";
-                b.AddField("Welcome to the Heroes & Villains RP Server, " + e.Member.Username + "!", @"
+                DiscordEmbedBuilder b = new DiscordEmbedBuilder
+                {
+                    Title = "Welcome!"
+                }
+                .AddField("Welcome to the Heroes & Villains RP Server, " + e.Member.Username + "!", @"
 Please read " + e.Guild.Channels.First(x => x.Id == 345307678261772289).Mention + @" then go for " + e.Guild.Channels.First(x => x.Id == 386672328672804864).Mention + @", followed by " + e.Guild.Channels.First(x => x.Id == 314972495432384513).Mention + @". 
 Then, once you have decided the character(and filled out the template), ask for the Unapproved role in " + e.Guild.Channels.First(x => x.Id == 314972495432384513).Mention + @" and post in  " + e.Guild.Channels.First(x => x.Id == 314849025968832523).Mention + @". If you have any questions ask in " + e.Guild.Channels.First(x => x.Id == 315272713570615296).Mention + @"
 Be sure to checkout the " + e.Guild.Channels.First(x => x.Id == 346944357351555072).Mention + @"!
@@ -200,11 +201,13 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 await e.Member.SendMessageAsync("", embed: b);
                 await e.Guild.Channels.First(x => x.Id == 312918289988976653).SendMessageAsync("", embed: b);
 
-                DiscordEmbedBuilder c = new DiscordEmbedBuilder();
-                c.Title = "Member Joined";
-                c.AddField("Member", e.Member.DisplayName + e.Member.Discriminator + " (" + e.Member.Id + ")", true);
-                c.AddField("Timestamp", e.Member.JoinedAt.ToString(), true);
-                c.Color = DiscordColor.Green;
+                DiscordEmbedBuilder c = new DiscordEmbedBuilder
+                {
+                    Title = "Member Joined",
+                    Color = DiscordColor.Green
+                }
+                .AddField("Member", e.Member.DisplayName + e.Member.Discriminator + " (" + e.Member.Id + ")", true)
+                .AddField("Timestamp", e.Member.JoinedAt.ToString(), true);
 
                 await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: c);
             }
@@ -214,16 +217,20 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
         {
             if (e.Guild == RPClass.RPGuild)
             {
-                DiscordEmbedBuilder b = new DiscordEmbedBuilder();
-                b.Title = "Goodbye!";
-                b.AddField("Bye " + e.Member.DisplayName, "We didn't like them anyway.");
+                DiscordEmbedBuilder b = new DiscordEmbedBuilder
+                {
+                    Title = "Goodbye!"
+                }
+                .AddField("Bye " + e.Member.DisplayName, "We didn't like them anyway.");
                 await e.Guild.Channels.First(x => x.Id == 312918289988976653).SendMessageAsync("", embed: b);
 
-                DiscordEmbedBuilder c = new DiscordEmbedBuilder();
-                c.Title = "Member Left";
-                c.AddField("Member", e.Member.DisplayName + e.Member.Discriminator + " (" + e.Member.Id + ")", true);
-                c.AddField("Timestamp", DateTime.Now.ToString(), true);
-                c.Color = DiscordColor.Red;
+                DiscordEmbedBuilder c = new DiscordEmbedBuilder
+                {
+                    Title = "Member Left",
+                    Color = DiscordColor.Red
+                }
+                .AddField("Member", e.Member.DisplayName + e.Member.Discriminator + " (" + e.Member.Id + ")", true)
+                .AddField("Timestamp", DateTime.UtcNow.ToString(), true);
 
                 await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: c);
             }
@@ -255,7 +262,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
             }
             this.GameGuard = new Timer(TimerCallback, null, TimeSpan.FromMinutes(0), TimeSpan.FromMinutes(15));
 
-            this.Discord.DebugLogger.LogMessage(LogLevel.Info, "DSPlus", $"Guild available: {e.Guild.Name}", DateTime.Now);
+            this.Discord.DebugLogger.LogMessage(LogLevel.Info, "DSPlus", $"Guild available: {e.Guild.Name}", DateTime.UtcNow);
         }
 
         private Task Discord_PresenceUpdate(PresenceUpdateEventArgs e)
@@ -268,17 +275,25 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
             if (e.Guild == RPClass.RPGuild) {
                 if (e.Message.Author != e.Client.CurrentUser)
                 {
-                    DiscordEmbedBuilder b = new DiscordEmbedBuilder();
-                    b.Title = "Message Deleted";
-                    b.AddField("Member", e.Message.Author.Username + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true);
-                    b.AddField("Channel", e.Message.Channel.Name, true);
-                    b.AddField("Message Timestamp", e.Message.CreationTimestamp.ToString(), true);
-                    b.AddField("Deletion Timestamp", e.Message.Timestamp.ToString(), true);
-                    b.AddField("Message", e.Message.Content, false);
-                    b.Color = DiscordColor.Orange;
-
-
-                    await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
+                    try
+                    {
+                        if (!e.Message.Content.StartsWith("!"))
+                        {
+                            DiscordEmbedBuilder b = new DiscordEmbedBuilder
+                            {
+                                Title = "Message Deleted",
+                                Color = DiscordColor.Orange
+                            }
+                            .AddField("Member", e.Message.Author.Username + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
+                            .AddField("Channel", e.Message.Channel.Name, true)
+                            .AddField("Message Timestamp", e.Message.CreationTimestamp.ToString(), true)
+                            .AddField("Deletion Timestamp", e.Message.Timestamp.ToString(), true)
+                            .AddField("Message", e.Message.Content, false);
+                            
+                            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
+                        }
+                    }
+                    catch { }
                 }
             }
         }
@@ -298,11 +313,11 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
             }
                 if (!e.Message.Content.StartsWith("!"))
                 {
-                    if (SpeechList.Any(x => x.id == e.Author.Id) && !e.Message.Content.StartsWith("*"))
+                    if (SpeechList.Any(x => x.Id == e.Author.Id) && !e.Message.Content.StartsWith("*"))
                     {
-                        SpeechObject.RootObject savedName = SpeechList.First(x => x.id == e.Author.Id);
+                        SpeechObject.RootObject savedName = SpeechList.First(x => x.Id == e.Author.Id);
                         await e.Message.DeleteAsync();
-                        await e.Channel.SendMessageAsync("__**" + savedName.name + "**__: " + e.Message.Content);
+                        await e.Channel.SendMessageAsync("__**" + savedName.Name + "**__: " + e.Message.Content);
                     }
                     else if (e.Message.Content.StartsWith("~") && !(e.Message.Content[1] == '~'))
                     {
@@ -323,7 +338,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                         if (u.Key != null)
                         {
 
-                            if (Math.Abs((u.Value - DateTime.Now).TotalSeconds) <= 3)
+                            if (Math.Abs((u.Value - DateTime.UtcNow).TotalSeconds) <= 3)
                             {
                                 if (!(e.Author as DiscordMember).Roles.Any(x => x.Name == "Administrator"))
                                 {
@@ -332,12 +347,12 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                             }
                             else
                             {
-                                slowModeList[e.Message.Author as DiscordMember] = DateTime.Now;
+                                slowModeList[e.Message.Author as DiscordMember] = DateTime.UtcNow;
                             }
                         }
                         else
                         {
-                            slowModeList.Add(e.Message.Author as DiscordMember, DateTime.Now);
+                            slowModeList.Add(e.Message.Author as DiscordMember, DateTime.UtcNow);
                         }
                     }
                 }
@@ -346,7 +361,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
 
         private async Task Discord_MessageReactionAdd(MessageReactionAddEventArgs e)
         {
-            if (!e.User.IsBot && ItemsList.Any(x => x.messageID == e.Message.Id))
+            if (!e.User.IsBot && ItemsList.Any(x => x.MessageID == e.Message.Id))
             {
                 DiscordMessage msgToDelete = e.Message;
                 if (e.Emoji.Name == "📥")
@@ -356,32 +371,33 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                     DiscordMessage test = await e.Channel.GetMessageAsync(e.Message.Id);
                     await test.DeleteReactionAsync(DiscordEmoji.FromName(e.Client as DiscordClient, ":inbox_tray:"), l);
 
-                    UserObject.RootObject user = Users.First(x => x.UserData.userID == e.User.Id);
-                    ShopObject.RootObject item = ItemsList.First(x => x.messageID == e.Message.Id);
-                    if (user.UserData.money >= item.price)
+                    UserObject.RootObject user = Users.First(x => x.UserData.UserID == e.User.Id);
+                    ShopObject.RootObject item = ItemsList.First(x => x.MessageID == e.Message.Id);
+                    if (user.UserData.Money >= item.Price)
                     {
-                        if (!user.InvData.items.Any(x => x == item.id))
+                        if (!user.InvData.Items.Any(x => x == item.Id))
                         {
 
-                            if (item.availability == -1 || item.availability > 0)
+                            if (item.Availability == -1 || item.Availability > 0)
                             {
-                                msgToDelete = await e.Channel.SendMessageAsync("Item bought! Congratulations " + user.UserData.username + "!");
-                                if (item.availability != -1)
+                                msgToDelete = await e.Channel.SendMessageAsync("Item bought! Congratulations " + user.UserData.Username + "!");
+                                if (item.Availability != -1)
                                 {
-                                    item.availability -= 1;
+                                    item.Availability -= 1;
                                 }
-                                user.UserData.money -= item.price;
-                                user.InvData.items.Add(item.id);
+                                user.UserData.Money -= item.Price;
+                                user.InvData.Items.Add(item.Id);
 
-                                DiscordEmbedBuilder embed = new DiscordEmbedBuilder();
-                                
-                                if (item.availability != -1) embed.AddField("$" + item.price + " - " + item.availability + " left in stock",item.description);
-                                else embed.AddField("$" + item.price + " - ∞ left in stock", item.description);
-                                embed.WithTitle(item.emoji + " " + item.name);
-
-                                embed.Color = new DiscordColor("4169E1");
-                                embed.WithFooter("Heroes & Villains");
-                                embed.WithTimestamp(DateTime.UtcNow);
+                                DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
+                                {
+                                    Color = new DiscordColor("4169E1"),
+                                    Timestamp = DateTime.UtcNow,
+                                    Title = item.Emoji + " " + item.Name
+                                }
+                                .WithFooter("Heroes & Villains");
+                          
+                                if (item.Availability != -1) embed.AddField("$" + item.Price + " - " + item.Availability + " left in stock",item.Description);
+                                else embed.AddField("$" + item.Price + " - ∞ left in stock", item.Description);
 
                                 await test.ModifyAsync("", embed: embed);
                             }
@@ -404,25 +420,23 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 {
                     await e.Message.DeleteReactionAsync(DiscordEmoji.FromUnicode(e.Client as DiscordClient, "📤"), await e.Channel.Guild.GetMemberAsync(e.User.Id));
 
-                    UserObject.RootObject user = Users.First(x => x.UserData.userID == e.User.Id);
-                    ShopObject.RootObject item = ItemsList.First(x => x.messageID == e.Message.Id);
-                    if (user.InvData.items.Any(x => x == item.id))
+                    UserObject.RootObject user = Users.First(x => x.UserData.UserID == e.User.Id);
+                    ShopObject.RootObject item = ItemsList.First(x => x.MessageID == e.Message.Id);
+                    if (user.InvData.Items.Any(x => x == item.Id))
                     {
-                        user.UserData.money += item.price / 2;
-                        user.InvData.items.Remove(user.InvData.items.First(y => y == item.id));
-                        if (item.availability != -1) item.availability += 1;
-                        msgToDelete = await e.Channel.SendMessageAsync("Item sold! Congratulations " + user.UserData.username + "!");
+                        user.UserData.Money += item.Price / 2;
+                        user.InvData.Items.Remove(user.InvData.Items.First(y => y == item.Id));
+                        if (item.Availability != -1) item.Availability += 1;
+                        msgToDelete = await e.Channel.SendMessageAsync("Item sold! Congratulations " + user.UserData.Username + "!");
 
-                        DiscordEmbedBuilder embed = new DiscordEmbedBuilder();
-
-                        embed.AddField("$" + item.price + " - " + item.availability + " left in stock", item.description);
-
-
-                        embed.WithTitle(item.emoji + " " + item.name);
-
-                        embed.Color = new DiscordColor("4169E1");
-                        embed.WithFooter("Heroes & Villains");
-                        embed.WithTimestamp(DateTime.UtcNow);
+                        DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
+                        {
+                            Color = new DiscordColor("4169E1"),
+                            Timestamp = DateTime.UtcNow,
+                            Title = item.Emoji + " " + item.Name
+                        }
+                        .WithFooter("Heroes & Villains")
+                        .AddField("$" + item.Price + " - " + item.Availability + " left in stock", item.Description);
 
                         await e.Message.ModifyAsync("", embed: embed);
                     }
@@ -444,11 +458,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
 
         private void TimerCallback(object _)
         {
-            try
-            {
-                this.Discord.UpdateStatusAsync(new DiscordGame("God")).GetAwaiter().GetResult();
-            }
-            catch (Exception) { }
+
         }
 
         private bool IsCommandMethod(MethodInfo method, Type return_type, params Type[] arg_types)
@@ -472,7 +482,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
             if (e.Exception is CommandNotFoundException)
                 return;
 
-            Discord.DebugLogger.LogMessage(LogLevel.Error, "CommandsNext", $"{e.Exception.GetType()}: {e.Exception.Message}", DateTime.Now);
+            Discord.DebugLogger.LogMessage(LogLevel.Error, "CommandsNext", $"{e.Exception.GetType()}: {e.Exception.Message}", DateTime.UtcNow);
             
             var ms = e.Exception.Message;
             var st = e.Exception.StackTrace;
@@ -480,18 +490,18 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
             ms = ms.Length > 1000 ? ms.Substring(0, 1000) : ms;
             st = st.Length > 1000 ? st.Substring(0, 1000) : st;
 
-            DiscordEmbedBuilder embed = new DiscordEmbedBuilder();
-
-            embed.WithTitle("You failure at life");
-            embed.WithDescription("You fucked it up, didn't you. You are a mess. You are a disgrace. There's a door, use it and never come back,you miserable piece of shit.");
-            embed.Color = new DiscordColor(0xFF0000);
-            embed.WithFooter("Heroes & Villains");
-            embed.WithTimestamp(DateTime.UtcNow);
-
-            embed.AddField("Command errored", $"```{e.Exception.GetType()} occured when executing `{ e.Command.Name }`.\n" + ms + "```");
-            embed.AddField("Stack trace", $"```cs\n{st}\n```");
-            embed.AddField("Source", e.Exception.Source);
-            embed.AddField("Message", e.Exception.Message);
+            DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
+            {
+                Title = "You failure at life.",
+                Description = "You fucked it up, didn't you. You are a mess. You are a disgrace. There's a door, use it and never come back,you miserable piece of shit.",
+                Color = new DiscordColor(0xFF0000),
+                Timestamp = DateTime.UtcNow
+            }
+            .WithFooter("Heroes & Villains")
+            .AddField("Command errored", $"```{e.Exception.GetType()} occured when executing `{ e.Command.Name }`.\n" + ms + "```")
+            .AddField("Stack trace", $"```cs\n{st}\n```")
+            .AddField("Source", e.Exception.Source)
+            .AddField("Message", e.Exception.Message);
             // await e.Context.RespondAsync("", embed: embed);
             await Task.Delay(0);
         }
@@ -499,7 +509,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
         private async Task CommandsNextService_CommandExecuted(CommandExecutionEventArgs e)
         {
             await RPClass.AddOrUpdateUsers(e.Context.Guild, false);
-            Discord.DebugLogger.LogMessage(LogLevel.Info, "CommandsNext", $"{e.Context.User.Username} executed {e.Command.Name} in {e.Context.Channel.Name}", DateTime.Now);
+            Discord.DebugLogger.LogMessage(LogLevel.Info, "CommandsNext", $"{e.Context.User.Username} executed {e.Command.Name} in {e.Context.Channel.Name}", DateTime.UtcNow);
         }
     }
 }

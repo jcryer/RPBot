@@ -13,13 +13,13 @@ namespace RPBot
             public RootObject(UserData userData, int xp, InvData invData)
             {
                 UserData = userData;
-                this.xp = xp;
+                this.Xp = xp;
                 InvData = invData;
                 this.ModData = new ModData();
             }
 
             public UserData UserData { get; set; }
-            public int xp { get; set; }
+            public int Xp { get; set; }
             public InvData InvData { get; set; }
             public ModData ModData { get; set; }
         }
@@ -28,44 +28,44 @@ namespace RPBot
         {
             public UserData(ulong userID, string username, int role, int status, int money, int resolvedCases, int crimesCommitted, int guildID)
             {
-                this.userID = userID;   
-                this.username = username;
-                this.role = role;
-                this.status = status;
-                this.money = money;
-                this.resolvedCases = resolvedCases;
-                this.crimesCommitted = crimesCommitted;
-                this.guildID = guildID;
+                this.UserID = userID;   
+                this.Username = username;
+                this.Role = role;
+                this.Status = status;
+                this.Money = money;
+                this.ResolvedCases = resolvedCases;
+                this.CrimesCommitted = crimesCommitted;
+                this.GuildID = guildID;
             }
 
-            public ulong userID { get; set; }
-            public string username { get; set; }
-            public int role { get; set; }
-            public int status { get; set; }
-            public int money { get; set; }
-            public int resolvedCases { get; set; }
-            public int crimesCommitted { get; set; }
-            public int guildID { get; set; }
+            public ulong UserID { get; set; }
+            public string Username { get; set; }
+            public int Role { get; set; }
+            public int Status { get; set; }
+            public int Money { get; set; }
+            public int ResolvedCases { get; set; }
+            public int CrimesCommitted { get; set; }
+            public int GuildID { get; set; }
         }
 
         public class InvData
         {
             public InvData(List<int> items)
             {
-                this.items = items;
+                this.Items = items;
             }
 
-            public List<int> items { get; set; }
+            public List<int> Items { get; set; }
         }
 
         public class ModData
         {
             public ModData ()
             {
-                this.isMuted = false;
+                this.IsMuted = false;
             }
-            public bool isMuted { get; set; }
-            public TimeSpan muteDuration { get; set; }
+            public bool IsMuted { get; set; }
+            public TimeSpan MuteDuration { get; set; }
         }
     }
 }

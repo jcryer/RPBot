@@ -15,27 +15,27 @@ namespace RPBot
     [Description("All Money Commands")]
     class MoneyClass : RPClass
     { 
-        [Command("give"), Description("Command for admins to give out currency to users."), RequireRolesAttribute("Staff")]
+        [Command("give"), Description("Command for admins to give out currency to users."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Give(CommandContext e, [Description("Who to award the money to")] DiscordMember user, [Description("Amount of money to award")] int money = -1)
         {
             if (money > 0)
             {
-                RPClass.Users.Find(x => x.UserData.userID == user.Id).UserData.money += money;
-                UserObject.RootObject a = RPClass.Users.Find(x => x.UserData.userID == user.Id);
-                await e.RespondAsync("User: " + a.UserData.username + " now has $" + a.UserData.money);
+                RPClass.Users.Find(x => x.UserData.UserID == user.Id).UserData.Money += money;
+                UserObject.RootObject a = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
+                await e.RespondAsync("User: " + a.UserData.Username + " now has $" + a.UserData.Money);
                 RPClass.SaveData(1);
             }
         }
         
-        [Command("take"), Description("Command for admins to take currency from users."), RequireRolesAttribute("Staff")]
+        [Command("take"), Description("Command for admins to take currency from users."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Take(CommandContext e, [Description("Who to take the money from")] DiscordMember user, [Description("Amount of money to take")] int money = -1)
         {
             if (money > 0)
             {
-                UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.userID == user.Id);
-                userData.UserData.money -= money;
-                if (userData.UserData.money < 0) userData.UserData.money = 0;
-                await e.RespondAsync("User: " + userData.UserData.username + " now has $" + userData.UserData.money);
+                UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
+                userData.UserData.Money -= money;
+                if (userData.UserData.Money < 0) userData.UserData.Money = 0;
+                await e.RespondAsync("User: " + userData.UserData.Username + " now has $" + userData.UserData.Money);
                 RPClass.SaveData(1);
             }
         }
@@ -45,15 +45,15 @@ namespace RPBot
 
             if (money > 0 )
             {
-                if (RPClass.Users.Find(x => x.UserData.userID == e.Message.Author.Id).UserData.money >= money)
+                if (RPClass.Users.Find(x => x.UserData.UserID == e.Message.Author.Id).UserData.Money >= money)
                 {
-                    RPClass.Users.Find(x => x.UserData.userID == user.Id).UserData.money += money;
-                    RPClass.Users.Find(x => x.UserData.userID == e.Message.Author.Id).UserData.money -= money;
-                    UserObject.RootObject a = RPClass.Users.Find(x => x.UserData.userID == user.Id);
-                    UserObject.RootObject b = RPClass.Users.Find(x => x.UserData.userID == e.Message.Author.Id);
+                    RPClass.Users.Find(x => x.UserData.UserID == user.Id).UserData.Money += money;
+                    RPClass.Users.Find(x => x.UserData.UserID == e.Message.Author.Id).UserData.Money -= money;
+                    UserObject.RootObject a = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
+                    UserObject.RootObject b = RPClass.Users.Find(x => x.UserData.UserID == e.Message.Author.Id);
 
-                    await e.RespondAsync("User: " + a.UserData.username + " now has $" + a.UserData.money);
-                    await e.RespondAsync("User: " + b.UserData.username + " now has $" + b.UserData.money);
+                    await e.RespondAsync("User: " + a.UserData.Username + " now has $" + a.UserData.Money);
+                    await e.RespondAsync("User: " + b.UserData.Username + " now has $" + b.UserData.Money);
 
                     RPClass.SaveData(1);
                 }
@@ -66,11 +66,12 @@ namespace RPBot
         [Command("balance"), Aliases("bal"), Description("Prints the user's current balance.")]
         public async Task Balance(CommandContext e, [Description("Use all keyword to see everyone's balance (Admin only), or @mention someone to view their balance")] string all = "")
         {
-            DiscordEmbedBuilder embed = new DiscordEmbedBuilder();
-
-            embed.Color = new DiscordColor("4169E1");
-            embed.WithFooter("Heroes & Villains");
-            embed.WithTimestamp(DateTime.UtcNow);
+            DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
+            {
+                Color = new DiscordColor("4169E1"),
+                Timestamp = DateTime.UtcNow
+            }
+            .WithFooter("Heroes & Villains");
 
             if (all == "all" && e.Member.Roles.Any(x => x == StaffRole))
             {
@@ -78,27 +79,22 @@ namespace RPBot
                 {
                     if (embed.Fields.Count < 25)
                     {
-                        embed.AddField(userData.UserData.username, "Money: $" + userData.UserData.money);
+                        embed.AddField(userData.UserData.Username, "Money: $" + userData.UserData.Money);
                     }
                     else
                     {
                         await e.Channel.SendMessageAsync("", embed: embed);
                         await Task.Delay(500);
                         embed.ClearFields();
-
-                        embed.Color = new DiscordColor("4169E1");
-                        embed.WithFooter("Heroes & Villains");
-                        embed.WithTimestamp(DateTime.UtcNow);
                     }
                 }
             }
             else if (!string.IsNullOrWhiteSpace(all))
             {
                 all = all.Replace("<", "").Replace(">", "").Replace("@", "").Replace("!", "");
-                ulong userNum = 0;
-                if (ulong.TryParse(all, out userNum))
+                if (ulong.TryParse(all, out ulong userNum))
                 {
-                    embed.AddField(RPClass.Users.First(x => x.UserData.userID == userNum).UserData.username, "Money: $" + RPClass.Users.First(x => x.UserData.userID == userNum).UserData.money);
+                    embed.AddField(RPClass.Users.First(x => x.UserData.UserID == userNum).UserData.Username, "Money: $" + RPClass.Users.First(x => x.UserData.UserID == userNum).UserData.Money);
                 }
                 else
                 {
@@ -107,9 +103,9 @@ namespace RPBot
             }
             else
             {
-                UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.userID == e.Member.Id);
+                UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.UserID == e.Member.Id);
 
-                embed.AddField(userData.UserData.username,"Money: $" + userData.UserData.money);
+                embed.AddField(userData.UserData.Username,"Money: $" + userData.UserData.Money);
             }
             await e.Channel.SendMessageAsync("", embed: embed);
 

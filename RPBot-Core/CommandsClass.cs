@@ -23,7 +23,7 @@ namespace RPBot
         [Command("roll"), Description("Dice roll command!")]
         public async Task Roll(CommandContext e, [Description("Number of sides of the dice")] int numSides = 0, [Description("Number of rolls to do")] int numRolls = 0)
         {
-            var interactivity = e.Client.GetInteractivityModule();
+            var interactivity = e.Client.GetInteractivity();
 
             if (numSides > 0 && numRolls > 0)
             {
@@ -59,29 +59,29 @@ namespace RPBot
         [Group("slowmode"), Description("Slowmode commands")]
         class Slowmode
         {
-            [Command("on"), Description("Admin command to make OOC chill tf out"), RequireRolesAttribute("Administrator")]
+            [Command("on"), Description("Admin command to make OOC chill tf out"), RequireRoles(RoleCheckMode.Any, "Administrator")]
             public async Task On(CommandContext e, [Description("Amount of time required between each message (seconds)")] int limitTime)
             {
                 slowModeTime = limitTime;
                 await e.RespondAsync("Slowmode activated, with " + limitTime + " seconds between each message.");
             }
 
-            [Command("off"), Description("Admin command to disable slow mode"), RequireRolesAttribute("Administrator")]
+            [Command("off"), Description("Admin command to disable slow mode"), RequireRoles(RoleCheckMode.Any, "Administrator")]
             public async Task Off(CommandContext e)
             {
                 slowModeTime = -1;
                 await e.RespondAsync("Slowmode disabled.");
             }
         }
-        [Command("cases"), Description("Admin cases command."), RequireRolesAttribute("Staff")]
+        [Command("cases"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Cases(CommandContext e, [Description("Select a user.")] DiscordMember user, [Description("Number to increase or decrease cases resolved by")] string caseNum)
         {
-            RPClass.Users.First(x => x.UserData.userID == user.Id).UserData.resolvedCases += int.Parse(caseNum);
-            if (RPClass.Users.First(x => x.UserData.userID == user.Id).UserData.resolvedCases < 0)
-                RPClass.Users.First(x => x.UserData.userID == user.Id).UserData.resolvedCases = 0;
+            RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.ResolvedCases += int.Parse(caseNum);
+            if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.ResolvedCases < 0)
+                RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.ResolvedCases = 0;
 
-            if (RPClass.Users.First(x => x.UserData.userID == user.Id).UserData.role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
-            else if (RPClass.Users.First(x => x.UserData.userID == user.Id).UserData.role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
+            if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
+            else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
             await XPClass.UpdateGuildRanking(e.Guild);
 
             RPClass.SaveData(1);
@@ -89,15 +89,15 @@ namespace RPBot
             await e.RespondAsync("Cases updated.");
         }
 
-        [Command("crimes"), Description("Admin cases command."), RequireRolesAttribute("Staff")]
+        [Command("crimes"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Crimes(CommandContext e, [Description("Select a user.")] DiscordMember user, [Description("Number to increase or decrease crimes committed by")] string crimeNum)
         {
-            RPClass.Users.First(x => x.UserData.userID == user.Id).UserData.crimesCommitted += int.Parse(crimeNum);
-            if (RPClass.Users.First(x => x.UserData.userID == user.Id).UserData.crimesCommitted < 0)
-                RPClass.Users.First(x => x.UserData.userID == user.Id).UserData.crimesCommitted = 0;
+            RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.CrimesCommitted += int.Parse(crimeNum);
+            if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.CrimesCommitted < 0)
+                RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.CrimesCommitted = 0;
 
-            if (RPClass.Users.First(x => x.UserData.userID == user.Id).UserData.role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
-            else if (RPClass.Users.First(x => x.UserData.userID == user.Id).UserData.role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
+            if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
+            else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
             await XPClass.UpdateGuildRanking(e.Guild);
 
             RPClass.SaveData(1);
@@ -105,13 +105,13 @@ namespace RPBot
             await e.RespondAsync("Crimes updated.");
         }
 
-        [Command("name"), Description("Command for users to change their RP name temporarily"), RequireRolesAttribute("Staff")]
+        [Command("name"), Description("Command for users to change their RP name temporarily"), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Name(CommandContext e, [Description("What to call yourself")] string name = "")
         {
             DiscordMessage x;
             if (name == "off")
             {
-                SpeechObject.RootObject savedName = RPClass.SpeechList.FirstOrDefault(y => y.id == e.Member.Id);
+                SpeechObject.RootObject savedName = RPClass.SpeechList.FirstOrDefault(y => y.Id == e.Member.Id);
                 if (savedName != null)
                 {
                     RPClass.SpeechList.Remove(savedName);
@@ -128,7 +128,7 @@ namespace RPBot
             }
             else if (name != "")
             {
-                SpeechObject.RootObject savedName = RPClass.SpeechList.FirstOrDefault(y => y.id == e.Member.Id);
+                SpeechObject.RootObject savedName = RPClass.SpeechList.FirstOrDefault(y => y.Id == e.Member.Id);
                 if (savedName != null)
                 {
                     RPClass.SpeechList.Remove(savedName);
@@ -154,7 +154,7 @@ namespace RPBot
             await e.RespondWithFileAsync("UserData.txt", "Json file of all user data!\nRoles: 1 = Hero, 2 = Villain, 3 = Rogue\nStatus: 1 = Alive, 2 = Dead");
         }
 
-        [Command("sudo"), Description("Execute a command as if you're another user"), RequireRolesAttribute("Staff")]
+        [Command("sudo"), Description("Execute a command as if you're another user"), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task SudoAsync(CommandContext e, [Description("User to Sudo")]DiscordUser user, [RemainingText, Description("Command to execute")] string command = "help")
         {
             await e.CommandsNext.SudoAsync(user, e.Channel, command);
@@ -163,19 +163,21 @@ namespace RPBot
         [Command("serverinfo"), Description("Gets info about current server")]
         public async Task GuildInfo(CommandContext ctx)
         {
-            var b = new DiscordEmbedBuilder();
-            b.WithTitle($"{ctx.Guild.Name} ({ctx.Guild.Id})")
-                .WithDescription($"Guild owned by {ctx.Guild.Owner.Username}#{ctx.Guild.Owner.Discriminator} (ID: {ctx.Guild.Owner.Id})")
-                .WithThumbnailUrl(ctx.Guild.IconUrl)
-                .AddField("Channel count", $"{ctx.Guild.Channels.Count}", true)
-                .AddField("AFK Timeout", $"{ctx.Guild.AfkTimeout}", true)
-                .AddField("Region", ctx.Guild.RegionId, true)
-                .AddField("Role Count", $"{ctx.Guild.Roles.Count}", true)
-                .AddField("Large?", ctx.Guild.IsLarge ? "Yes" : "No", true)
-                .AddField("Icon Url", ctx.Guild.IconUrl, false)
-                .WithFooter("Creation Date:", ctx.Guild.IconUrl)
-                .WithTimestamp(ctx.Guild.CreationTimestamp)
-                .WithColor(new DiscordColor("4169E1"));
+            var b = new DiscordEmbedBuilder()
+            {
+                Title = $"{ctx.Guild.Name} ({ctx.Guild.Id})",
+                Description = $"Guild owned by {ctx.Guild.Owner.Username}#{ctx.Guild.Owner.Discriminator} (ID: {ctx.Guild.Owner.Id})",
+                ThumbnailUrl = ctx.Guild.IconUrl,
+                Timestamp = ctx.Guild.CreationTimestamp,
+                Color = new DiscordColor("4169E1")
+            }
+            .WithFooter("Creation Date:", ctx.Guild.IconUrl)
+            .AddField("Channel count", $"{ctx.Guild.Channels.Count}", true)
+            .AddField("AFK Timeout", $"{ctx.Guild.AfkTimeout}", true)
+            .AddField("Region", ctx.Guild.VoiceRegion.Id, true)
+            .AddField("Role Count", $"{ctx.Guild.Roles.Count}", true)
+            .AddField("Large?", ctx.Guild.IsLarge ? "Yes" : "No", true)
+            .AddField("Icon Url", ctx.Guild.IconUrl, false);
 
             await ctx.RespondAsync("", embed: b.Build());
         }
@@ -183,24 +185,25 @@ namespace RPBot
         [Command("userinfo"), Description("Gets info about user")]
         public async Task UserInfo(CommandContext ctx, [Description("User to get info about")] DiscordMember m)
         {
-            var b = new DiscordEmbedBuilder();
-            string Title = m.Username;
-            b.WithTitle(m.Username + " ~ " + m.Nickname)
-                .WithDescription("Current Status: " + m.Presence.Status.ToString())
-                .WithThumbnailUrl(m.AvatarUrl)
-                .AddField("Joined Discord on: ", m.CreationTimestamp.ToString("dd MMMM yyyy H:mm:ss") + "\n(" + DateTimeOffset.Now.Subtract(m.CreationTimestamp).Days + " days ago)", true)
-                .AddField("Joined this Server on: ", m.JoinedAt.ToString("dd MMMM yyyy H:mm:ss") + "\n(" + DateTimeOffset.Now.Subtract(m.JoinedAt).Days + " days ago)", true)
-                .AddField("Roles: ", string.Join(",", m.Roles.Select(x => x.Name)), true)
-                .WithFooter("User ID:" + m.Id)
-                .WithColor(new DiscordColor("4169E1"));
+            var b = new DiscordEmbedBuilder()
+            {
+                Title = m.Username + " ~ " + m.Nickname,
+                Description = "Current Status: " + m.Presence.Status.ToString(),
+                ThumbnailUrl = m.AvatarUrl,
+                Color = new DiscordColor("4169E1")
+            }
+            .WithFooter("User ID:" + m.Id)
+            .AddField("Joined Discord on: ", m.CreationTimestamp.ToString("dd MMMM yyyy H:mm:ss") + "\n(" + DateTimeOffset.Now.Subtract(m.CreationTimestamp).Days + " days ago)", true)
+            .AddField("Joined this Server on: ", m.JoinedAt.ToString("dd MMMM yyyy H:mm:ss") + "\n(" + DateTimeOffset.Now.Subtract(m.JoinedAt).Days + " days ago)", true)
+            .AddField("Roles: ", string.Join(",", m.Roles.Select(x => x.Name)), true);
+
             await ctx.RespondAsync("", embed: b.Build());
         }
 
-        [Command("purge"), Aliases("p"), Description("Admin purge command"), RequireRolesAttribute("Staff")]
+        [Command("purge"), Aliases("p"), Description("Admin purge command"), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task PurgeAsync(CommandContext e, [Description("Number of messages to purge (Max 100)")] int limit)
         {
-            var i = 0;
-            var ms = await e.Channel.GetMessagesAsync(limit, e.Message.Id);
+            var ms = await e.Channel.GetMessagesBeforeAsync(e.Message, limit);
             var deletThis = new List<DiscordMessage>();
             foreach (var m in ms)
             {
@@ -208,18 +211,18 @@ namespace RPBot
             }
             if (deletThis.Any())
                 await e.Channel.DeleteMessagesAsync(deletThis, "Purged messages.");
-            var resp = await e.RespondAsync($"Latest messages deleted.");
+            var resp = await e.RespondAsync("Latest messages deleted.");
             await Task.Delay(2000);
             await resp.DeleteAsync("Purge command executed.");
             await e.Message.DeleteAsync();
 
         }
 
-        [Command("clean"), Aliases("c"), Description("Cleans up all commands in channel"), RequireRolesAttribute("Staff")]
+        [Command("clean"), Aliases("c"), Description("Cleans up all commands in channel"), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task CleanAsync(CommandContext e)
         {
             var prefix = "!";
-            var ms = await e.Channel.GetMessagesAsync(100, e.Message.Id);
+            var ms = await e.Channel.GetMessagesBeforeAsync(e.Message, 100);
             var delet_this = new List<DiscordMessage>();
             foreach (var m in ms)
             {
@@ -234,7 +237,7 @@ namespace RPBot
             await e.Message.DeleteAsync();
         }
 
-        [Command("restart"),  Description("Admin restart command"), RequireRolesAttribute("Staff")]
+        [Command("restart"),  Description("Admin restart command"), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Restart(CommandContext e)
         {
             SaveData(-1);
@@ -254,7 +257,7 @@ namespace RPBot
             await Task.Delay(0);
         }
 
-        [Command("update"), Description("Admin update command"), RequireRolesAttribute("Administrator")]
+        [Command("update"), Description("Admin update command"), RequireRoles(RoleCheckMode.Any, "Administrator")]
         public async Task Update(CommandContext e)
         {
             await e.RespondAsync("Restarting. Wish me luck!");
@@ -281,7 +284,7 @@ namespace RPBot
             WebClient client = new WebClient();
             String json = client.DownloadString("https://icanhazdadjoke.com/slack");
             JokeObject.RootObject obj = JsonConvert.DeserializeObject<JokeObject.RootObject>(json);
-            await e.RespondAsync(obj.attachments[0].text);
+            await e.RespondAsync(obj.Attachments[0].Text);
             Console.ReadLine();
         }
 
@@ -325,10 +328,10 @@ namespace RPBot
             List<DiscordMessage> messageList = new List<DiscordMessage>();
 
             int iter = 1;
-            messageList.AddRange(await e.Channel.GetMessagesAsync(100));
+            messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(e.Message, 100));
             while (true)
             {
-                messageList.AddRange(await e.Channel.GetMessagesAsync(100, before: messageList.Last().Id));
+                messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last(), 100));
 
                 if (messageList.Count != (100 * iter))
                 {
@@ -355,14 +358,44 @@ namespace RPBot
 
         }
 
-        [Command("removeuser"), Description("Makes the bot delete a user that has left the server (Name in statsheets, copied exactly)."), RequireRolesAttribute("Staff")]
+        [Command("countall"), Description("Makes the bot count all messages in a channel."), RequirePermissions(Permissions.Administrator)]
+        public async Task CountAll(CommandContext e)
+        {
+            int answer = 0;
+
+            var messageList = await e.Channel.GetMessagesBeforeAsync(e.Message, 100);
+            answer += messageList.Count;
+            while (true)
+            {
+                messageList = await e.Channel.GetMessagesBeforeAsync(messageList.Last(), 100);
+
+                if (messageList.Count != (100))
+                {
+                    answer += messageList.Count;
+                    break;
+
+                }
+                else
+                {
+                    answer += 100;
+                }
+                if (answer % 10000 == 0)
+                {
+                    await e.Member.SendMessageAsync(answer.ToString());
+                }
+            }
+            await e.RespondAsync(answer.ToString());
+
+        }
+
+        [Command("removeuser"), Description("Makes the bot delete a user that has left the server (Name in statsheets, copied exactly)."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task RemoveUser(CommandContext e, [RemainingText] string whotodelete = "")
         {
-            if (Users.Any(x => x.UserData.username == whotodelete))
+            if (Users.Any(x => x.UserData.Username == whotodelete))
             {
-                UserObject.RootObject user = Users.First(x => x.UserData.username == whotodelete);
+                UserObject.RootObject user = Users.First(x => x.UserData.Username == whotodelete);
                 Users.Remove(user);
-                Guilds.First(x => x.id == user.UserData.guildID).userIDs.Remove(user.UserData.userID);
+                Guilds.First(x => x.Id == user.UserData.GuildID).UserIDs.Remove(user.UserData.UserID);
                 SaveData(-1);
                 await e.RespondAsync("User removed.");
             }
@@ -375,16 +408,18 @@ namespace RPBot
         [Command("joinlist"), Description("List of who joined when.")]
         public async Task JoinList(CommandContext e)
         {
-            var interactivity = e.Client.GetInteractivityModule();
+            var interactivity = e.Client.GetInteractivity();
             List<Page> interactivityPages = new List<Page>();
 
             var members = await e.Guild.GetAllMembersAsync();
             members = members.OrderBy(x => x.JoinedAt).ToList();
             Page p = new Page();
             DiscordEmbedBuilder b = new DiscordEmbedBuilder()
-            .WithColor(new DiscordColor("4169E1"))
-            .WithFooter("Heroes & Villains")
-            .WithTimestamp(DateTime.UtcNow);
+            {
+                Color = new DiscordColor("4169E1"),
+                Timestamp = DateTime.UtcNow
+            }
+            .WithFooter("Heroes & Villains");
 
             for (int i = 1; i <= members.Count(); i++)
             {
@@ -394,10 +429,7 @@ namespace RPBot
                     p.Embed = b;
                     interactivityPages.Add(p);
                     p = new Page();
-                    b = new DiscordEmbedBuilder()
-                        .WithColor(new DiscordColor("4169E1"))
-                        .WithFooter("Heroes & Villains")
-                        .WithTimestamp(DateTime.UtcNow);
+                    b.ClearFields();
                 }
             }
 
@@ -408,7 +440,7 @@ namespace RPBot
         [Group("approval"), Description("Approval commands")]
         class ApprovalClass
         {
-            [Command("add"), Description("Command to create a new approval instance."), RequireRolesAttribute("Staff")]
+            [Command("add"), Description("Command to create a new approval instance."), RequireRoles(RoleCheckMode.Any, "Staff")]
             public async Task AddApproval(CommandContext e, [Description("Mention the user you will be approving.")]DiscordMember m)
             {
                 Regex rgx = new Regex("[^a-zA-Z0-9-]");
@@ -423,7 +455,7 @@ namespace RPBot
                 await e.RespondAsync("Approval instance created.");
             }
 
-            [Command("remove"), Description("Command to remove an approval instance. Execute this command in the instance you wish to remove, or mention the user the approval instance is for."), RequireRolesAttribute("Staff")]
+            [Command("remove"), Description("Command to remove an approval instance. Execute this command in the instance you wish to remove, or mention the user the approval instance is for."), RequireRoles(RoleCheckMode.Any, "Staff")]
             public async Task RemoveApproval(CommandContext e, [Description("Mention the user the approval instance is for, or execute the command in the instance you wish to remove.")] DiscordMember m = null)
             {
 
@@ -457,7 +489,7 @@ namespace RPBot
                 await e.RespondAsync(DiscordEmoji.FromName(e.Client, ":" + emoji + ":"));
             }
 
-            [Command("bee"), Description("BEE MOVIE!"), RequireRolesAttribute("Administrator")]
+            [Command("bee"), Description("BEE MOVIE!"), RequireRoles(RoleCheckMode.Any, "Administrator")]
             public async Task Bee(CommandContext e, [RemainingText]string emoji)
             {
                 string response = "";
@@ -479,14 +511,17 @@ namespace RPBot
             [Command("list"), Description("List of all emoji!")]
             public async Task JoinList(CommandContext e)
             {
-                var interactivity = e.Client.GetInteractivityModule();
+                var interactivity = e.Client.GetInteractivity();
                 List<Page> interactivityPages = new List<Page>();
 
                 Page p = new Page();
+
                 DiscordEmbedBuilder b = new DiscordEmbedBuilder()
-                .WithColor(new DiscordColor("4169E1"))
-                .WithFooter("Heroes & Villains")
-                .WithTimestamp(DateTime.UtcNow);
+                {
+                    Color = new DiscordColor("4169E1"),
+                    Timestamp = DateTime.UtcNow
+                }
+                .WithFooter("Heroes & Villains");
                 bool even = false;
                 foreach (DiscordGuild g in e.Client.Guilds.Values)
                 {

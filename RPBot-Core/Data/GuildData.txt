@@ -1,9 +1,9 @@
 [
   {
-    "id": 1,
-    "name": "Sol Invictus",
-    "status": 1,
-    "userIDs": [
+    "Id": 1,
+    "Name": "Sol Invictus",
+    "Status": 1,
+    "UserIDs": [
       199996479161630720,
       286222030997684226,
       366410578388058113,

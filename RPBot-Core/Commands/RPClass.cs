@@ -176,17 +176,17 @@ namespace RPBot
                 {
                     role = 3;
                 }
-                if (!Users.Any(x => x.UserData.userID == user.Id))
+                if (!Users.Any(x => x.UserData.UserID == user.Id))
                 {
                     Users.Add(new UserObject.RootObject(new UserObject.UserData(user.Id, user.DisplayName, role, 1, 0, 0, 0, 0), 0, new UserObject.InvData(new List<int>())));
                 }
-                if (Users.Find(x => x.UserData.userID == user.Id).UserData.username != user.DisplayName)
+                if (Users.Find(x => x.UserData.UserID == user.Id).UserData.Username != user.DisplayName)
                 {
-                    Users.Find(x => x.UserData.userID == user.Id).UserData.username = user.DisplayName;
+                    Users.Find(x => x.UserData.UserID == user.Id).UserData.Username = user.DisplayName;
                 }
-                if (Users.Find(x => x.UserData.userID == user.Id).UserData.role != role)
+                if (Users.Find(x => x.UserData.UserID == user.Id).UserData.Role != role)
                 {
-                    Users.Find(x => x.UserData.userID == user.Id).UserData.role = role;
+                    Users.Find(x => x.UserData.UserID == user.Id).UserData.Role = role;
                 }
             }
             if (update)
@@ -206,42 +206,36 @@ namespace RPBot
             DiscordGuild RPGuild = e.Guild;
             List<DiscordChannel> RPChannels = new List<DiscordChannel>(await e.Guild.GetChannelsAsync());
             DiscordChannel AnnouncementChannel = RPChannels.First(x => x.Id == 312918289988976653);
-            DateTime y = DateTime.Now.AddHours(-4);
+            DateTime y = DateTime.UtcNow.AddHours(-4);
             while (true)
             {
-				await d.UpdateStatusAsync(new DiscordGame(DateTime.Now.DayOfWeek + " " + DateTime.Now.Hour + ":" + DateTime.Now.Minute.ToString("00")));
+				await d.UpdateStatusAsync(new DiscordActivity("Time pass: " + DateTime.UtcNow.Hour + ":" + DateTime.UtcNow.Minute.ToString("00"), ActivityType.Watching)); 
 
                 string TimePhase = "";
-                if (DateTime.Now.Minute == 0 && DateTime.Now.Hour == 6 && y.AddHours(2) < DateTime.Now)
+                if (DateTime.UtcNow.Minute == 0 && DateTime.UtcNow.Hour == 6 && y.AddHours(2) < DateTime.UtcNow)
                 {
-                    TimePhase = "It is now dawn, on " + DateTime.Now.DayOfWeek;
-                    y = DateTime.Now;
+                    TimePhase = "It is now dawn, on " + DateTime.UtcNow.DayOfWeek;
+                    y = DateTime.UtcNow;
 					await AnnouncementChannel.SendMessageAsync(TimePhase);
                 }
-                else if (DateTime.Now.Minute == 0 && DateTime.Now.Hour == 12 && y.AddHours(2) < DateTime.Now)
+                else if (DateTime.UtcNow.Minute == 0 && DateTime.UtcNow.Hour == 12 && y.AddHours(2) < DateTime.UtcNow)
                 {
-                    TimePhase = "It is now midday, on " + DateTime.Now.DayOfWeek;
-                    y = DateTime.Now;
+                    TimePhase = "It is now midday, on " + DateTime.UtcNow.DayOfWeek;
+                    y = DateTime.UtcNow;
                     await AnnouncementChannel.SendMessageAsync(TimePhase);
 
                 }
-                else if (DateTime.Now.Minute == 0 && DateTime.Now.Hour == 18 && y.AddHours(2) < DateTime.Now)
+                else if (DateTime.UtcNow.Minute == 0 && DateTime.UtcNow.Hour == 18 && y.AddHours(2) < DateTime.UtcNow)
                 {
                     
-                    TimePhase = "It is now dusk, on " + DateTime.Now.DayOfWeek;
-                    y = DateTime.Now;
+                    TimePhase = "It is now dusk, on " + DateTime.UtcNow.DayOfWeek;
+                    y = DateTime.UtcNow;
                     await AnnouncementChannel.SendMessageAsync(TimePhase);
                     
                 }
 
                 await Task.Delay(45000);
             }
-        }
-        public async Task LogAsync(CommandContext e)
-        {
-            var w = await e.Client.GetWebhookWithTokenAsync(392294581951266817, "_n26eOZCmvoXjrmDFarpOGh1I_yuBiSuoFiUn07JmG4x - LHa0P910KldtBELdOlzux3N");
-            DiscordEmbedBuilder b = new DiscordEmbedBuilder();
-            b.Title = "Message Deleted";
         }
     }
 }

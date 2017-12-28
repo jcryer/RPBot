@@ -9,9 +9,6 @@ E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\RPBot-Core.runti
 E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\RPBot-Core.dll
 E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\RPBot-Core.pdb
 E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\CommonMark.dll
-E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\DSharpPlus.CommandsNext.dll
-E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\DSharpPlus.dll
-E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\DSharpPlus.Interactivity.dll
 E:\Desktop\Coding\Bots\RPBot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.csprojResolveAssemblyReference.cache
 E:\Desktop\Coding\Bots\RPBot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.csproj.CoreCompileInputs.cache
 E:\Desktop\Coding\Bots\RPBot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.AssemblyInfoInputs.cache

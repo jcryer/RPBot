@@ -12,29 +12,29 @@ namespace RPBot
         {
             public RootObject(int id, ulong channelID, int channelTemplateID)
             {
-                this.id = id;
-                this.channelID = channelID;
-                this.channelTemplateID = channelTemplateID;
-                active = true;
+                this.Id = id;
+                this.ChannelID = channelID;
+                this.ChannelTemplateID = channelTemplateID;
+                Active = true;
             }
 
-            public int id { get; set; }
-            public ulong channelID { get; set; }
-            public int channelTemplateID { get; set; }
-            public bool active{ get; set; }
+            public int Id { get; set; }
+            public ulong ChannelID { get; set; }
+            public int ChannelTemplateID { get; set; }
+            public bool Active{ get; set; }
         }
 
         public class ChannelTemplate
         {
-            public int id { get; set; }
-            public string name { get; set; }
-            public List<string> content { get; set; }
+            public int Id { get; set; }
+            public string Name { get; set; }
+            public List<string> Content { get; set; }
 
             public ChannelTemplate(int id, string name, List<string> content)
             {
-                this.id = id;
-                this.name = name;
-                this.content = content;
+                this.Id = id;
+                this.Name = name;
+                this.Content = content;
             }
         }
     }

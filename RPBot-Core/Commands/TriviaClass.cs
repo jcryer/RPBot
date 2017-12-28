@@ -74,7 +74,7 @@ namespace RPBot
             }
             Random rnd = new Random();
 
-            var interactivity = e.Client.GetInteractivityModule();
+            var interactivity = e.Client.GetInteractivity();
             Dictionary<DiscordUser, int> gameData = new Dictionary<DiscordUser, int>();
             List<string> triviaList = new List<string>(triviaData);
             await Task.Delay(1000);

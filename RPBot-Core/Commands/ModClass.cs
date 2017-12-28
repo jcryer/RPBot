@@ -13,17 +13,17 @@ namespace RPBot
 {
     class ModClass : RPClass
     {
-        [Command("punish"), Description("Command for staff to give out the Punished role."), RequireRolesAttribute("Staff", "Helpful people")]
+        [Command("punish"), Description("Command for staff to give out the Punished role."), RequireRoles(RoleCheckMode.Any, "Staff", "Helpful people")]
         public async Task Punish(CommandContext e, [Description("Member to be muted")] DiscordMember user)
         {
             try
             {
                 DiscordMember member = await e.Guild.GetMemberAsync(user.Id);
-                UserObject.RootObject userObject = Users.First(x => x.UserData.userID == user.Id);
+                UserObject.RootObject userObject = Users.First(x => x.UserData.UserID == user.Id);
 
-                if (userObject.ModData.isMuted)
+                if (userObject.ModData.IsMuted)
                 {
-                    userObject.ModData.isMuted = false;
+                    userObject.ModData.IsMuted = false;
                     await member.RevokeRoleAsync(PunishedRole);
                     await e.RespondAsync("User unmuted.");
 
@@ -32,11 +32,11 @@ namespace RPBot
                 {
                     //if (string.IsNullOrWhiteSpace(duration))
                     //{
-                    userObject.ModData.isMuted = true;
+                    userObject.ModData.IsMuted = true;
                     await member.GrantRoleAsync(PunishedRole);
                     await e.RespondAsync("User muted.");
 
-                    userObject.ModData.muteDuration = new TimeSpan();
+                    userObject.ModData.MuteDuration = new TimeSpan();
                     //}
                     /*
                     else

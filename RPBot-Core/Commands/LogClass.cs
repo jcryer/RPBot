@@ -16,7 +16,7 @@ namespace RPBot
 {
     class LogClass : RPClass
     {
-        [Command("log"), Description("Admin log command (testing)"), RequireRolesAttribute("Staff")]
+        [Command("log"), Description("Admin log command (testing)"), RequireRoles(RoleCheckMode.Any, "Staff")]
         [Hidden]
         public async Task Log(CommandContext e, [RemainingText, Description("Description of the log")] string desc)
         {
@@ -24,10 +24,10 @@ namespace RPBot
             List<LogObject.Message> logObjectList = new List<LogObject.Message>();
 
             int iter = 1;
-            messageList.AddRange(await e.Channel.GetMessagesAsync(100));
+            messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(e.Message, 100));
             while (true)
             {
-                messageList.AddRange(await e.Channel.GetMessagesAsync(100, before: messageList.Last().Id));
+                messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last(), 100));
 
                 if (messageList.Count != (100 * iter))
                 {
@@ -49,9 +49,8 @@ namespace RPBot
                     Regex ItemRegex = new Regex(@"(<[#@!]+\d+>)+");
                     foreach (Match ItemMatch in ItemRegex.Matches(content))
                     {
-                        ulong ulongNum = 0;
                         Console.WriteLine(ItemMatch.Value);
-                        if (ulong.TryParse(ItemMatch.Value.Replace("<", "").Replace(">", "").Replace("@", "").Replace("!", ""), out ulongNum))
+                        if (ulong.TryParse(ItemMatch.Value.Replace("<", "").Replace(">", "").Replace("@", "").Replace("!", ""), out ulong ulongNum))
                         {
                             try
                             {
@@ -83,12 +82,12 @@ namespace RPBot
 
             string HTMLResponse = File.ReadAllText("Data/template.html");
             HTMLResponse = HTMLResponse.Replace("TOPICHERE", desc).Replace("CHANNELHERE", e.Channel.Name).Replace("CONTENTHERE", returnedHTML);
-            string fileName = e.Channel.Name + "_" + DateTime.Now.ToString("dd-MM-yyyy");
+            string fileName = e.Channel.Name + "_" + DateTime.UtcNow.ToString("dd-MM-yyyy");
             File.WriteAllText("../../var/www/html/logs/" + fileName, HTMLResponse);
             string logList = File.ReadAllText("../../var/www/html/logs/loglist.csv");
             File.WriteAllText("../../var/www/html/logs/loglist.csv", logList + "," + fileName);
             string output = JsonConvert.SerializeObject(messageList);
-            string logFile = "logs/" + DateTime.Now.ToString("dd_MM_yy-H_mm_ss") + "(" + e.Channel.Name + ")" + ".txt";
+            string logFile = "logs/" + DateTime.UtcNow.ToString("dd_MM_yy-H_mm_ss") + "(" + e.Channel.Name + ")" + ".txt";
             File.WriteAllText(logFile, output);
             await e.RespondAsync("Done! File name: " + fileName + "\n" + "http://51.15.222.156/wrapper.html");
         }
@@ -99,9 +98,9 @@ namespace RPBot
             foreach (LogObject.Message m in logObjectList)
             {
                 HTMLList += "<div class=\"message DEFAULT\"> <div class=\"author\"><img class=\"avatar\" src=\"";
-                HTMLList += m.avatar + "\"></div><div class=\"content\"><span class=\"name\"><font color = \"";
-                HTMLList += m.fontColour + "\" > " + m.username + "</font><span></span><span class=\"timestamp\">" + m.timestamp.ToString() + "</span><span class=\"timestamp-small\">" + m.timestamp.ToString("mm:ss") + "</span></span>";
-                HTMLList += "<span class=\"text\"><div> " + m.content.Replace("<p>","").Replace("</p>","") + "</div> </span> </div></div>";
+                HTMLList += m.Avatar + "\"></div><div class=\"content\"><span class=\"name\"><font color = \"";
+                HTMLList += m.FontColour + "\" > " + m.Username + "</font><span></span><span class=\"timestamp\">" + m.Timestamp.ToString() + "</span><span class=\"timestamp-small\">" + m.Timestamp.ToString("mm:ss") + "</span></span>";
+                HTMLList += "<span class=\"text\"><div> " + m.Content.Replace("<p>","").Replace("</p>","") + "</div> </span> </div></div>";
             }
             return HTMLList;
         }

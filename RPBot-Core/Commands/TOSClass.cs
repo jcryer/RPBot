@@ -37,7 +37,7 @@ namespace RPBot
             if (active && !TOSData.started && TOSData.players.Count >= 4)
             {
                 StartGame(e);
-                TOSData.timer = DateTime.Now;
+                TOSData.timer = DateTime.UtcNow;
                 TOSData.started = true;
                 Thread game = new Thread(() => ProcessTurn(e, 2));
                 game.Start();

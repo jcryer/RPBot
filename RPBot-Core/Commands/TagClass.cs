@@ -12,9 +12,9 @@ namespace RPBot
     {
         public async Task ExecuteGroupAsync(CommandContext e, [RemainingText] string tagName)
         {
-            if (TagsList.Exists(x => x.name == tagName.ToLower()))
+            if (TagsList.Exists(x => x.Name == tagName.ToLower()))
             {
-                await e.RespondAsync(TagsList.Find(x => x.name == tagName.ToLower()).content);
+                await e.RespondAsync(TagsList.Find(x => x.Name == tagName.ToLower()).Content);
             }
             else
             {
@@ -24,7 +24,7 @@ namespace RPBot
         [Command("add"), Description("Adds a tag.")]
         public async Task Add(CommandContext e, [Description("Name of the tag (in speech marks)")] string tagName, [RemainingText, Description("Tag info")] string text)
         {
-            if (TagsList.Exists(x => x.name == tagName.ToLower()))
+            if (TagsList.Exists(x => x.Name == tagName.ToLower()))
             {
                 await e.RespondAsync("A tag already exists with that name.");
                 return;
@@ -46,7 +46,7 @@ namespace RPBot
             string retVal = "```\n";
             foreach (TagObject.RootObject t in TagsList)
             {
-                retVal += t.name + "\n";
+                retVal += t.Name + "\n";
                 if (retVal.Length > 1500)
                 {
                     await e.RespondAsync(retVal + "```");
@@ -57,12 +57,12 @@ namespace RPBot
 
         }
 
-        [Command("remove"), Description("Adds a tag."), RequireRolesAttribute("Staff")]
+        [Command("remove"), Description("Adds a tag."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Remove(CommandContext e, [Description("Name of the tag "), RemainingText] string tagName)
         {
-            if (TagsList.Exists(x => x.name == tagName.ToLower()))
+            if (TagsList.Exists(x => x.Name == tagName.ToLower()))
             {
-                TagsList.Remove(TagsList.Find(x => x.name == tagName.ToLower()));
+                TagsList.Remove(TagsList.Find(x => x.Name == tagName.ToLower()));
                 await e.RespondAsync("Tag: " + tagName + " removed.");
                 SaveData(9);
             }
