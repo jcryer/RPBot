@@ -1,8 +1,3 @@
-E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\Dependencies\CommonMark.dll
-E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\Dependencies\DSharpPlus.CommandsNext.dll
-E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\Dependencies\DSharpPlus.dll
-E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\Dependencies\DSharpPlus.Interactivity.dll
-E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\Dependencies\Newtonsoft.Json.dll
 E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\RPBot-Core.deps.json
 E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\RPBot-Core.runtimeconfig.json
 E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\RPBot-Core.runtimeconfig.dev.json
@@ -35,3 +30,10 @@ C:\Users\jcryer\Desktop\RP-Bot\RPBot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Co
 C:\Users\jcryer\Desktop\RP-Bot\RPBot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.AssemblyInfo.cs
 C:\Users\jcryer\Desktop\RP-Bot\RPBot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.dll
 C:\Users\jcryer\Desktop\RP-Bot\RPBot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.pdb
+E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\DSharpPlus.dll
+E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\DSharpPlus.CommandsNext.dll
+E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\DSharpPlus.Interactivity.dll
+E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\DSharpPlus.VoiceNext.dll
+E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Desktop\Coding\Bots\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\Newtonsoft.Json.dll
