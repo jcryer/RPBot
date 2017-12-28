@@ -69,7 +69,7 @@ namespace RPBot
 
             SortedUsers = Users.OrderByDescending(x => x.Xp).ToList();
             
-            List<DiscordMessage> msgs = new List<DiscordMessage>(await c.GetMessagesBeforeAsync(await c.GetMessageAsync(c.LastMessageId), 5));
+            List<DiscordMessage> msgs = new List<DiscordMessage>(await c.GetMessagesAroundAsync(await c.GetMessageAsync(c.LastMessageId), 5));
             foreach (DiscordMessage msg in msgs)
             {
                 await msg.DeleteAsync();
@@ -124,7 +124,7 @@ namespace RPBot
 			else if (type == 2) SortedUsers = Users.Where(x => x.UserData.Role == 2).OrderByDescending(x => (x.Xp)).ToList();
             else if (type == 3) SortedUsers = Users.Where(x => x.UserData.Role == 3).OrderByDescending(x => (x.Xp)).ToList();
 
-            List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesBeforeAsync(await RankingChannel.GetMessageAsync(RankingChannel.LastMessageId), 100));
+            List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAroundAsync(await RankingChannel.GetMessageAsync(RankingChannel.LastMessageId), 100));
 			foreach (DiscordMessage msg in msgs)
 			{
                 await msg.DeleteAsync();
@@ -199,7 +199,7 @@ namespace RPBot
                 GuildsNew.Add(new GuildObject.RootObject(0, guild.Name, guild.Status, new List<ulong>() { ulong.Parse(stats.ToString()), ulong.Parse(totalStats.ToString()) }));
             }
             List<GuildObject.RootObject> SortedGuilds = GuildsNew.OrderByDescending(x => x.UserIDs[0]).ToList();
-            List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesBeforeAsync(await RankingChannel.GetMessageAsync(RankingChannel.LastMessageId), 100));
+            List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAroundAsync(await RankingChannel.GetMessageAsync(RankingChannel.LastMessageId), 100));
             foreach (DiscordMessage msg in msgs)
             {
                 await msg.DeleteAsync();

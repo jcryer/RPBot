@@ -20,6 +20,7 @@ namespace RPBot
         [Hidden]
         public async Task Log(CommandContext e, [RemainingText, Description("Description of the log")] string desc)
         {
+            await e.Message.DeleteAsync();
             List<DiscordMessage> messageList = new List<DiscordMessage>();
             List<LogObject.Message> logObjectList = new List<LogObject.Message>();
 

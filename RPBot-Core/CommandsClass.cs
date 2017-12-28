@@ -358,35 +358,7 @@ namespace RPBot
 
         }
 
-        [Command("countall"), Description("Makes the bot count all messages in a channel."), RequirePermissions(Permissions.Administrator)]
-        public async Task CountAll(CommandContext e)
-        {
-            int answer = 0;
-
-            var messageList = await e.Channel.GetMessagesBeforeAsync(e.Message, 100);
-            answer += messageList.Count;
-            while (true)
-            {
-                messageList = await e.Channel.GetMessagesBeforeAsync(messageList.Last(), 100);
-
-                if (messageList.Count != (100))
-                {
-                    answer += messageList.Count;
-                    break;
-
-                }
-                else
-                {
-                    answer += 100;
-                }
-                if (answer % 10000 == 0)
-                {
-                    await e.Member.SendMessageAsync(answer.ToString());
-                }
-            }
-            await e.RespondAsync(answer.ToString());
-
-        }
+      
 
         [Command("removeuser"), Description("Makes the bot delete a user that has left the server (Name in statsheets, copied exactly)."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task RemoveUser(CommandContext e, [RemainingText] string whotodelete = "")

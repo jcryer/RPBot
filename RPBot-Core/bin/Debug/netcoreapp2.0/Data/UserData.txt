@@ -1,0 +1,3490 @@
+[
+  {
+    "UserData": {
+      "UserID": 124102469646024704,
+      "Username": "Nightmare",
+      "Role": 2,
+      "Status": 1,
+      "Money": 1560000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 201,
+      "GuildID": 0
+    },
+    "Xp": 21540,
+    "InvData": {
+      "Items": [
+        25
+      ]
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 124924700781576192,
+      "Username": "Amari Nile 🍫",
+      "Role": 1,
+      "Status": 1,
+      "Money": 1037000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1375,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 126070623855312896,
+      "Username": "Jay Sea 🎄🎅❄☃🎁🕯",
+      "Role": 0,
+      "Status": 1,
+      "Money": 999782000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 3,
+    "InvData": {
+      "Items": [
+        24,
+        26,
+        25
+      ]
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 130073333332049921,
+      "Username": "pihead",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 130477928239726593,
+      "Username": "The Dreamer",
+      "Role": 3,
+      "Status": 1,
+      "Money": 670000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 2675,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 164069879069147146,
+      "Username": "Chi-ha Sensha",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 2,
+      "GuildID": 0
+    },
+    "Xp": 1121,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 186963548008611840,
+      "Username": "Eolosix",
+      "Role": 1,
+      "Status": 1,
+      "Money": 150000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 6600,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 190986345265496064,
+      "Username": "Aki",
+      "Role": 1,
+      "Status": 1,
+      "Money": 520000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 500,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 192287928611766281,
+      "Username": "📖  Gēmu Shishō  📖",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 195305022542708738,
+      "Username": "iZeus",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 198458539046338560,
+      "Username": "Psion",
+      "Role": 1,
+      "Status": 1,
+      "Money": 724500,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 4315,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 209336913713299467,
+      "Username": "TentacleDex",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 213036391083278336,
+      "Username": "SteamShock",
+      "Role": 1,
+      "Status": 1,
+      "Money": 200000,
+      "ResolvedCases": 100,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 13190,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 220431078387613696,
+      "Username": "Xames",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 238309088260390912,
+      "Username": "Ookami",
+      "Role": 2,
+      "Status": 1,
+      "Money": 39500,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1155,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 242720599158423554,
+      "Username": "🐲Lark🐲",
+      "Role": 2,
+      "Status": 1,
+      "Money": 698739,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 16,
+      "GuildID": 0
+    },
+    "Xp": 3389,
+    "InvData": {
+      "Items": [
+        26
+      ]
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 303224678183469066,
+      "Username": "Sir Fappyton",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 303667109072994327,
+      "Username": "Moku",
+      "Role": 1,
+      "Status": 1,
+      "Money": 80000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 2250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 326789520567828480,
+      "Username": "Squad",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 255495870915674114,
+      "Username": "ninja",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 259681474276622336,
+      "Username": "nevalate",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 273996974813085696,
+      "Username": "Kinetico",
+      "Role": 1,
+      "Status": 1,
+      "Money": 669500,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1088,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 350975997790650379,
+      "Username": "Forkus the Pastamancer",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 285030525578772491,
+      "Username": "Random Guy In A Pub",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 182959413018099712,
+      "Username": "Tyranica",
+      "Role": 2,
+      "Status": 1,
+      "Money": 44000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 6,
+      "GuildID": 0
+    },
+    "Xp": 2678,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 188658056228372483,
+      "Username": "Tyler",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 199996479161630720,
+      "Username": "Doting Baron ⚔",
+      "Role": 1,
+      "Status": 1,
+      "Money": 20601,
+      "ResolvedCases": 2,
+      "CrimesCommitted": 0,
+      "GuildID": 1
+    },
+    "Xp": 3305,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 307894571113906176,
+      "Username": "Raza",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 315318484022067202,
+      "Username": "Misty (Hyrule)",
+      "Role": 2,
+      "Status": 1,
+      "Money": 271700,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 1,
+      "GuildID": 0
+    },
+    "Xp": 2583,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 112392146782318592,
+      "Username": "Blank Slate",
+      "Role": 3,
+      "Status": 1,
+      "Money": 2766,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 1,
+      "GuildID": 0
+    },
+    "Xp": 1888,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 316236361399140360,
+      "Username": "mimi",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 340581981106470923,
+      "Username": "Tobi",
+      "Role": 1,
+      "Status": 1,
+      "Money": 2000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 470,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 256360848782655488,
+      "Username": "Hans Schultz",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 361330975353077781,
+      "Username": "Cyclops",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 237928154273021952,
+      "Username": "Essence",
+      "Role": 1,
+      "Status": 1,
+      "Money": 4000,
+      "ResolvedCases": 2,
+      "CrimesCommitted": 0,
+      "GuildID": 1
+    },
+    "Xp": 2245,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 269924664401330177,
+      "Username": "Hay Reaper",
+      "Role": 2,
+      "Status": 1,
+      "Money": 150000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1188,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 115482786223095817,
+      "Username": "Moo",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 206876434076139520,
+      "Username": "Orpheus",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 286222030997684226,
+      "Username": "Praetoria",
+      "Role": 2,
+      "Status": 1,
+      "Money": 39500,
+      "ResolvedCases": 2,
+      "CrimesCommitted": 0,
+      "GuildID": 1
+    },
+    "Xp": 3505,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": true,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 287043288790204416,
+      "Username": "ThorbenFP",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 279012148733018113,
+      "Username": "rikachan",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 144860863541673984,
+      "Username": "Dezco",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 287605811180601354,
+      "Username": "some dumbass",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 271794986230611969,
+      "Username": "Blyat man",
+      "Role": 3,
+      "Status": 1,
+      "Money": 20000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 785,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 369622772684685324,
+      "Username": "Vulcan 🌋",
+      "Role": 1,
+      "Status": 1,
+      "Money": 20000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 1
+    },
+    "Xp": 2040,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 370570140154068992,
+      "Username": "Roruminna",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 202662389848604672,
+      "Username": "Kami",
+      "Role": 3,
+      "Status": 1,
+      "Money": 5000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 295531898158055426,
+      "Username": "KuRo",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 267725165863895046,
+      "Username": "Jōseph Shiraīyūki",
+      "Role": 1,
+      "Status": 1,
+      "Money": 10000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 998,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 183386925187596288,
+      "Username": "Usagi",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 107147806489194496,
+      "Username": "concorde",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 371732151797940224,
+      "Username": "GL!TCH",
+      "Role": 1,
+      "Status": 1,
+      "Money": 5000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 375,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 235386972665806848,
+      "Username": "Wolfy",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 163382919187005440,
+      "Username": "MirIstKlarDassIchEinWeebBin",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 362875280467165184,
+      "Username": "Tasha Ramanez 🎄",
+      "Role": 3,
+      "Status": 1,
+      "Money": 50000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1280,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 74209235763728384,
+      "Username": "Gen",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 322120939850563584,
+      "Username": "Dark Star",
+      "Role": 2,
+      "Status": 1,
+      "Money": 13000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 1,
+      "GuildID": 0
+    },
+    "Xp": 950,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 87301076860018688,
+      "Username": "tice_the_betrayer",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 244561703956774913,
+      "Username": "Jyri",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 169917238856515584,
+      "Username": "D0-Z1ng 0ff",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 296357285133942794,
+      "Username": "BANG",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 194165149307895808,
+      "Username": "Bakie",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 314419885369196544,
+      "Username": "The Cartoonist",
+      "Role": 2,
+      "Status": 1,
+      "Money": 27000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1100,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 99302228170379264,
+      "Username": "DeviantWarlock",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 155738961325719552,
+      "Username": "Pvt.Jimbink",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 280686912107315200,
+      "Username": "Don Mistress",
+      "Role": 3,
+      "Status": 1,
+      "Money": 75451,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1035,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 245774738050252803,
+      "Username": "Ice Spirit 🕊",
+      "Role": 1,
+      "Status": 1,
+      "Money": 10000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 645,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 365185286977749002,
+      "Username": "Celsius ❄",
+      "Role": 1,
+      "Status": 1,
+      "Money": 5000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 1
+    },
+    "Xp": 1113,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 265339750792167434,
+      "Username": "Ayre",
+      "Role": 3,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 1,
+      "GuildID": 0
+    },
+    "Xp": 1115,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 366410578388058113,
+      "Username": "Orion ☯",
+      "Role": 1,
+      "Status": 1,
+      "Money": 78191,
+      "ResolvedCases": 2,
+      "CrimesCommitted": 0,
+      "GuildID": 1
+    },
+    "Xp": 3305,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 314943859597770753,
+      "Username": "Djinn",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 376563261317054474,
+      "Username": "Asuka Akihiro",
+      "Role": 2,
+      "Status": 1,
+      "Money": 1500,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 595,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": true,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 313024849314578442,
+      "Username": "V",
+      "Role": 2,
+      "Status": 1,
+      "Money": 100000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 665,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": true,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 376839865058328577,
+      "Username": "C U L T U R E",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 377505705030057986,
+      "Username": "Chino (Performer)",
+      "Role": 2,
+      "Status": 1,
+      "Money": 27000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 808,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 125016217504317440,
+      "Username": "Red",
+      "Role": 1,
+      "Status": 1,
+      "Money": 2000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 525,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 341191268614799360,
+      "Username": "TurNina",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 245310894265860097,
+      "Username": "Firey1236543",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 365938029640024064,
+      "Username": "Kyoko",
+      "Role": 1,
+      "Status": 1,
+      "Money": 3800,
+      "ResolvedCases": 1,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 595,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 323134175727190026,
+      "Username": "Corn Syrup",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 140703482624737280,
+      "Username": "Dante Bio",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 164621404497641472,
+      "Username": "Harutora Alseiv",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 267102769184243713,
+      "Username": "Depressionisgood",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 64751081975975936,
+      "Username": "Dreadknight",
+      "Role": 2,
+      "Status": 1,
+      "Money": 55000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1819,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 293078603892260894,
+      "Username": "Pandora Takashi",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1055,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 145617434278232074,
+      "Username": "Lediga1",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 108687429199749120,
+      "Username": "equmag",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 310863110951010306,
+      "Username": "Artemis",
+      "Role": 3,
+      "Status": 1,
+      "Money": 50000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1135,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 296986423238590465,
+      "Username": "Bob",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 264346804089257994,
+      "Username": "NICEN",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 184155542657171456,
+      "Username": "Yasai Tanaka",
+      "Role": 1,
+      "Status": 1,
+      "Money": 8800,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 613,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 197526475719573504,
+      "Username": "Yuu",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 377894853192843265,
+      "Username": "kossisboss",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 366350762437246981,
+      "Username": "Hiro Tate",
+      "Role": 1,
+      "Status": 1,
+      "Money": 39500,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1870,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 308126436177477635,
+      "Username": "Honey_17",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 126079927693869057,
+      "Username": "testtest",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 229344744206106624,
+      "Username": "Lucias Cliffhanger",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 374570626519924740,
+      "Username": "pidge",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 304799301710774274,
+      "Username": "Weaver",
+      "Role": 1,
+      "Status": 1,
+      "Money": 1000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 320,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 360260373611282432,
+      "Username": "Tasha Tacteritus",
+      "Role": 1,
+      "Status": 1,
+      "Money": 500,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 665,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 306066066835111937,
+      "Username": "Harada",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 196829032615116801,
+      "Username": "Username",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 372749370866663424,
+      "Username": "Honkers",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": true,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 296875172198350848,
+      "Username": "Blake Nemsus ☠",
+      "Role": 1,
+      "Status": 1,
+      "Money": 500,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1203,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 223098966923935745,
+      "Username": "Jid",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 382353918039949313,
+      "Username": "ray Longmore",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 192096248050876427,
+      "Username": "Iris Hollyhock",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 295,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 221576298743595009,
+      "Username": "Valkyraii",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 331220967885897729,
+      "Username": "Lizzie",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 191994612443906048,
+      "Username": "Satsi Retaffer",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 295371406747631616,
+      "Username": "Clam",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 250,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 362400039085146112,
+      "Username": "PILL",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 241973301260320768,
+      "Username": "Check ✓",
+      "Role": 2,
+      "Status": 1,
+      "Money": 15500,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 2,
+      "GuildID": 0
+    },
+    "Xp": 780,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": true,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 346413033179971597,
+      "Username": "Guren",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 340475311130935296,
+      "Username": "fairyprincess101",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 209011880696479744,
+      "Username": "Kira",
+      "Role": 1,
+      "Status": 1,
+      "Money": 2000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 1
+    },
+    "Xp": 1590,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 379383499897044993,
+      "Username": "Eoki",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 321501319095517185,
+      "Username": "Apollo",
+      "Role": 3,
+      "Status": 1,
+      "Money": 10000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 1,
+      "GuildID": 0
+    },
+    "Xp": 1265,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 123089696887799808,
+      "Username": "Zorod",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 187027544711757824,
+      "Username": "Stray",
+      "Role": 3,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1360,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 385466620337979394,
+      "Username": "anothertest",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 387317837502611456,
+      "Username": "susmon",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 262330418617909249,
+      "Username": "neathergrasp",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 312923138704932864,
+      "Username": "Pyro",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 275956043635228672,
+      "Username": "HussainQureshi",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 132293968497999872,
+      "Username": "Aoryu",
+      "Role": 2,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 805,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 298259737357844491,
+      "Username": "Len",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 325095759773040640,
+      "Username": "Hyakutake",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 1015,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 183670950997262336,
+      "Username": "Critical Health (Ra Thor)",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 231870735063187456,
+      "Username": "Ugly Red Hat",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 285586166139453440,
+      "Username": "TannerFuckingDedInside2017",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 198349325330284545,
+      "Username": "Hiroshi Hayate",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 770,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 335821436029632523,
+      "Username": "HumanBeing16",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 291880529194778625,
+      "Username": "kitten",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 153627427967336449,
+      "Username": "YourMomsChestHair",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 329715465427484684,
+      "Username": "Christmas Ree",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 362299393547698176,
+      "Username": "Infamous Metalico",
+      "Role": 2,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 780,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 210062873282478080,
+      "Username": "Gemn Explosion Murder (Brosuke)",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 199228787383205889,
+      "Username": "Eros",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 955,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": true,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 308272251457765379,
+      "Username": "Serious_Dante",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 254789676089606144,
+      "Username": "XBullet_01",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 389590546810929173,
+      "Username": "Silver Mantis",
+      "Role": 3,
+      "Status": 1,
+      "Money": 19500,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 880,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 382621786506002433,
+      "Username": "Doctor Who",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 387317945224658944,
+      "Username": "Harley quinn",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 344119080015364098,
+      "Username": "Little Gil",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 360042820402282507,
+      "Username": "Yuuri nikiforov/lukanikiforov",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 239750748160655361,
+      "Username": "Fujiko Akizuki",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 852,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 273144784477224960,
+      "Username": "po",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 371993440826949643,
+      "Username": "Kenta",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 327977044061192203,
+      "Username": "Sir Randomizer",
+      "Role": 2,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 1,
+      "GuildID": 0
+    },
+    "Xp": 785,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 313306010699694081,
+      "Username": "TehRedPanda222",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 382533339770388481,
+      "Username": "Hale Sylon",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 750,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 375710268442804236,
+      "Username": "Jess Miracle",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 855,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 333494746376962048,
+      "Username": "Just A Kid",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 312022550932619265,
+      "Username": "Inferno",
+      "Role": 3,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 765,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 356183363880484876,
+      "Username": "Wolfie",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 357185928629846017,
+      "Username": "Stiles🔥 (Wolf's Bro)",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 304477569330446348,
+      "Username": "ItsAWildWalrus",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 201731211796676608,
+      "Username": "🎆🎇The Joker🎆🎇",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 351161828174331907,
+      "Username": "West Wind",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 790,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 355770784045858816,
+      "Username": "Atsuhiro Sako",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 263853210001735683,
+      "Username": "Artic",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 373823814519488513,
+      "Username": "Ant",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 289796804176773131,
+      "Username": "Aladdinnn",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 385897317728911381,
+      "Username": "Michael Meker",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 360092700592177152,
+      "Username": "Ben Johnson",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 118485885531455493,
+      "Username": "Mark",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 224629811128041473,
+      "Username": "Shaed",
+      "Role": 3,
+      "Status": 1,
+      "Money": 50000,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 850,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 340415465971253248,
+      "Username": "JFritz",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 163049193970073600,
+      "Username": "Magikarp",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 358338709407399936,
+      "Username": "Tsuyoi Amari",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 150767260464709632,
+      "Username": "Chreas",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 327187060819755009,
+      "Username": "Judith Remming",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 58917839020494848,
+      "Username": "Silver Lion",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  }
+]
