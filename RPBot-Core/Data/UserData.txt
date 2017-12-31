@@ -1430,7 +1430,7 @@
   {
     "UserData": {
       "UserID": 376563261317054474,
-      "Username": "Asuka Akihiro",
+      "Username": "Nyx",
       "Role": 2,
       "Status": 1,
       "Money": 1500,
@@ -2290,7 +2290,7 @@
   {
     "UserData": {
       "UserID": 340475311130935296,
-      "Username": "fairyprincess101",
+      "Username": "Username",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -2610,8 +2610,8 @@
   {
     "UserData": {
       "UserID": 285586166139453440,
-      "Username": "TannerFuckingDedInside2017",
-      "Role": 0,
+      "Username": "Kinzoku Dangan",
+      "Role": 1,
       "Status": 1,
       "Money": 0,
       "ResolvedCases": 0,
@@ -3070,7 +3070,7 @@
   {
     "UserData": {
       "UserID": 333494746376962048,
-      "Username": "Just A Kid",
+      "Username": "Deku[Female]",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -3430,7 +3430,7 @@
   {
     "UserData": {
       "UserID": 150767260464709632,
-      "Username": "Chreas",
+      "Username": "ᴄʜʀᴇᴀs",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -3472,6 +3472,26 @@
       "UserID": 58917839020494848,
       "Username": "Silver Lion",
       "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 158284124770140161,
+      "Username": "Nanas",
+      "Role": 0,
       "Status": 1,
       "Money": 0,
       "ResolvedCases": 0,

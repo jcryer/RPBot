@@ -321,6 +321,35 @@ namespace RPBot
             await e.Message.DeleteAsync("test");
         }
 
+
+        [Command("embed"), Description("Allows you to make the bot say messages in an embed\n**Usage:**\n`!embed <Title>:<Description>:<Field 1 Title>:<Field 1 Description>:` etc."), RequirePermissions(Permissions.ManageChannels)]
+        public async Task Embed(CommandContext e, [RemainingText, Description("What to say?")] string text)
+        {
+            DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
+            {
+                Color = new DiscordColor("4169E1"),
+                Timestamp = DateTime.UtcNow,
+                ThumbnailUrl = e.Client.CurrentUser.AvatarUrl
+            }
+            .WithFooter("Heroes & Villains");
+
+            string[] textSplit = text.Split(':');
+
+            embed.Title = !string.IsNullOrWhiteSpace(textSplit[0]) ? textSplit[0] : "N/A";
+            embed.Description = !string.IsNullOrWhiteSpace(textSplit[1]) ? textSplit[1] : "N/A";
+            bool first = true;
+            foreach (string embedInfo in textSplit.Skip(2))
+            {
+                if (first) 
+                    embed.AddField(embedInfo, "N/A");
+                else
+                    embed.Fields.Last().Value = embedInfo;
+                first = !first;
+            }
+            await e.RespondAsync(embed: embed);
+            await e.Message.DeleteAsync();
+        }
+
         [Command("sayall"), Description("Makes the bot delete all messages in a channel (the channel the command is used in) and repost them."), RequirePermissions(Permissions.Administrator)]
         public async Task SayAll(CommandContext e, string whattodelete = "", string whattosetto = "")
         {
