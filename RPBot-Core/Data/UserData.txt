@@ -44,7 +44,7 @@
   {
     "UserData": {
       "UserID": 126070623855312896,
-      "Username": "Jay Sea 🎄🎅❄☃🎁🕯",
+      "Username": "jcryer",
       "Role": 0,
       "Status": 1,
       "Money": 999782000,
@@ -1090,7 +1090,7 @@
   {
     "UserData": {
       "UserID": 362875280467165184,
-      "Username": "Tasha Ramanez 🎄",
+      "Username": "Tasha Ramanez 😈",
       "Role": 3,
       "Status": 1,
       "Money": 50000,
@@ -2350,8 +2350,8 @@
   {
     "UserData": {
       "UserID": 321501319095517185,
-      "Username": "Apollo",
-      "Role": 3,
+      "Username": "Enki",
+      "Role": 2,
       "Status": 1,
       "Money": 10000,
       "ResolvedCases": 0,
@@ -3430,7 +3430,7 @@
   {
     "UserData": {
       "UserID": 150767260464709632,
-      "Username": "ᴄʜʀᴇᴀs",
+      "Username": "ʟɪʟ ʏᴜʀɪ",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -3491,6 +3491,46 @@
     "UserData": {
       "UserID": 158284124770140161,
       "Username": "Nanas",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 200523267113484288,
+      "Username": "Sapper",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "InvData": {
+      "Items": []
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 207830454089285632,
+      "Username": "I am Shurima's dawn",
       "Role": 0,
       "Status": 1,
       "Money": 0,

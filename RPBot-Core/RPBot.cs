@@ -57,6 +57,7 @@ namespace RPBot
             Discord.GuildMemberAdded += this.Discord_GuildMemberAdded;
             Discord.GuildMemberRemoved += this.Discord_GuildMemberRemoved;
             Discord.SocketErrored += this.Discord_SocketError;
+            Discord.VoiceStateUpdated += this.Discord_VoiceStateUpdated;
 
             // commandsnext config and the commandsnext service itself
             var cncfg = new CommandsNextConfiguration
@@ -140,6 +141,13 @@ namespace RPBot
 
         private async Task Discord_Ready(ReadyEventArgs e)
         {
+            await Task.Delay(0);
+
+        }
+
+        private async Task Discord_VoiceStateUpdated(VoiceStateUpdateEventArgs e)
+        {
+            
             await Task.Delay(0);
 
         }
