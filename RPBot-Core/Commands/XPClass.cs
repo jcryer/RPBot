@@ -125,12 +125,15 @@ namespace RPBot
 			if (type == 1) SortedUsers = Users.Where(x => x.UserData.Role == 1).OrderByDescending(x => (x.Xp)).ToList();
 			else if (type == 2) SortedUsers = Users.Where(x => x.UserData.Role == 2).OrderByDescending(x => (x.Xp)).ToList();
             else if (type == 3) SortedUsers = Users.Where(x => x.UserData.Role == 3).OrderByDescending(x => (x.Xp)).ToList();
-
-            List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAroundAsync(await RankingChannel.GetMessageAsync(RankingChannel.LastMessageId), 100));
-			foreach (DiscordMessage msg in msgs)
-			{
-                await msg.DeleteAsync();
-			}
+            try
+            {
+                List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAroundAsync(await RankingChannel.GetMessageAsync(RankingChannel.LastMessageId), 100));
+                foreach (DiscordMessage msg in msgs)
+                {
+                    await msg.DeleteAsync();
+                }
+            }
+            catch { }
 
             int countNum = 1;
 			foreach (UserObject.RootObject user in SortedUsers)
@@ -211,11 +214,14 @@ namespace RPBot
                 }
             }
             List<GuildObject.RootObject> SortedGuilds = GuildsNew.OrderByDescending(x => x.UserIDs[0]).ToList();
-            List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAroundAsync(await RankingChannel.GetMessageAsync(RankingChannel.LastMessageId), 100));
-            foreach (DiscordMessage msg in msgs)
-            {
-                await msg.DeleteAsync();
+            try { 
+                List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAroundAsync(await RankingChannel.GetMessageAsync(RankingChannel.LastMessageId), 100));
+                foreach (DiscordMessage msg in msgs)
+                {
+                    await msg.DeleteAsync();
+                }
             }
+            catch { }
 
             int countNum = 1;
             foreach (GuildObject.RootObject guild in SortedGuilds)
