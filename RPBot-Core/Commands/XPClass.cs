@@ -244,7 +244,7 @@ namespace RPBot
                     value = "```";
                 }
 
-                value += (countNum.ToString().PadRight(longestCount) + "| " + guild.Name.PadRight(longestName) + "| " + (guild.Status == 1 ? "Active" : guild.Status == 2 ? "Inactive" : "Error").PadRight(longestStatus) + "| " + guild.UserIDs[1].ToString().PadRight(longestStats) + "| " + GuildRank + "\n");
+                value += (countNum.ToString().PadRight(longestCount) + "| " + guild.Name.PadRight(longestName) + "| " + (guild.Status == 1 ? "Active" : guild.Status == 2 ? "Inactive" : "Error").PadRight(longestStatus) + "| " + guild.UserIDs[0].ToString().PadRight(longestStats) + "| " + GuildRank + "\n");
                 countNum += 1;
 
             }
