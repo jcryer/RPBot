@@ -76,7 +76,6 @@ namespace RPBot
             this.CommandsNextService.RegisterCommands<MoneyClass>();
             this.CommandsNextService.RegisterCommands<CommandsClass>();
 
-            this.CommandsNextService.RegisterCommands<ItemClass>();
             this.CommandsNextService.RegisterCommands<XPClass>();
             this.CommandsNextService.RegisterCommands<InstanceClass>();
             this.CommandsNextService.RegisterCommands<GuildClass>();
@@ -367,99 +366,12 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
             }
         }
 
-        private async Task Discord_MessageReactionAdd(MessageReactionAddEventArgs e)
+        private Task Discord_MessageReactionAdd(MessageReactionAddEventArgs e)
         {
-            if (!e.User.IsBot && ItemsList.Any(x => x.MessageID == e.Message.Id))
-            {
-                DiscordMessage msgToDelete = e.Message;
-                if (e.Emoji.Name == "📥")
-                {
-                    DiscordMember l = await e.Channel.Guild.GetMemberAsync(e.User.Id);
-                     
-                    DiscordMessage test = await e.Channel.GetMessageAsync(e.Message.Id);
-                    await test.DeleteReactionAsync(DiscordEmoji.FromName(e.Client as DiscordClient, ":inbox_tray:"), l);
-
-                    UserObject.RootObject user = Users.First(x => x.UserData.UserID == e.User.Id);
-                    ShopObject.RootObject item = ItemsList.First(x => x.MessageID == e.Message.Id);
-                    if (user.UserData.Money >= item.Price)
-                    {
-                        if (!user.InvData.Items.Any(x => x == item.Id))
-                        {
-
-                            if (item.Availability == -1 || item.Availability > 0)
-                            {
-                                msgToDelete = await e.Channel.SendMessageAsync("Item bought! Congratulations " + user.UserData.Username + "!");
-                                if (item.Availability != -1)
-                                {
-                                    item.Availability -= 1;
-                                }
-                                user.UserData.Money -= item.Price;
-                                user.InvData.Items.Add(item.Id);
-
-                                DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
-                                {
-                                    Color = new DiscordColor("4169E1"),
-                                    Timestamp = DateTime.UtcNow,
-                                    Title = item.Emoji + " " + item.Name
-                                }
-                                .WithFooter("Heroes & Villains");
-                          
-                                if (item.Availability != -1) embed.AddField("$" + item.Price + " - " + item.Availability + " left in stock",item.Description);
-                                else embed.AddField("$" + item.Price + " - ∞ left in stock", item.Description);
-
-                                await test.ModifyAsync("", embed: embed);
-                            }
-                            else
-                            {
-                                msgToDelete = await e.Channel.SendMessageAsync("This item is out of stock.");
-                            }
-                        }
-                        else
-                        {
-                            msgToDelete = await e.Channel.SendMessageAsync("You already own this item.");
-                        }
-                    }
-                    else
-                    {
-                        msgToDelete = await e.Channel.SendMessageAsync("You do not have enough money.");
-                    }
-                }
-                else if (e.Emoji.Name == "📤")
-                {
-                    await e.Message.DeleteReactionAsync(DiscordEmoji.FromUnicode(e.Client as DiscordClient, "📤"), await e.Channel.Guild.GetMemberAsync(e.User.Id));
-
-                    UserObject.RootObject user = Users.First(x => x.UserData.UserID == e.User.Id);
-                    ShopObject.RootObject item = ItemsList.First(x => x.MessageID == e.Message.Id);
-                    if (user.InvData.Items.Any(x => x == item.Id))
-                    {
-                        user.UserData.Money += item.Price / 2;
-                        user.InvData.Items.Remove(user.InvData.Items.First(y => y == item.Id));
-                        if (item.Availability != -1) item.Availability += 1;
-                        msgToDelete = await e.Channel.SendMessageAsync("Item sold! Congratulations " + user.UserData.Username + "!");
-
-                        DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
-                        {
-                            Color = new DiscordColor("4169E1"),
-                            Timestamp = DateTime.UtcNow,
-                            Title = item.Emoji + " " + item.Name
-                        }
-                        .WithFooter("Heroes & Villains")
-                        .AddField("$" + item.Price + " - " + item.Availability + " left in stock", item.Description);
-
-                        await e.Message.ModifyAsync("", embed: embed);
-                    }
-                    else
-                    {
-                        msgToDelete = await e.Channel.SendMessageAsync("You do not own that item.");
-                    }
-                }
-                await Task.Delay(3500);
-                await msgToDelete.DeleteAsync();
-                SaveData(1);
-            }
+            return Task.Delay(0);
         }
 
-        private /*async*/ Task Discord_MessageReactionRemoveAll(MessageReactionsClearEventArgs e)
+        private Task Discord_MessageReactionRemoveAll(MessageReactionsClearEventArgs e)
         {
             return Task.Delay(0);
         }

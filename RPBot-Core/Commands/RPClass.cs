@@ -16,7 +16,6 @@ namespace RPBot
     class RPClass : Program
     {
         public static List<UserObject.RootObject> Users = new List<UserObject.RootObject>();
-        public static List<ShopObject.RootObject> ItemsList = new List<ShopObject.RootObject>();
         public static List<GuildObject.RootObject> Guilds = new List<GuildObject.RootObject>();
         public static List<SpeechObject.RootObject> SpeechList = new List<SpeechObject.RootObject>();
         public static List<InstanceObject.RootObject> InstanceList = new List<InstanceObject.RootObject>();
@@ -45,7 +44,6 @@ namespace RPBot
             if (saveType == -1)
             {
                 SaveData(1);
-                SaveData(2);
                 SaveData(3);
                 SaveData(4);
                 SaveData(6);
@@ -58,12 +56,6 @@ namespace RPBot
                 string output = JsonConvert.SerializeObject(Users, Formatting.Indented);
               
                 File.WriteAllText("Data/UserData.txt", output);
-            }
-			else if (saveType == 2)
-            {
-                string output = JsonConvert.SerializeObject(ItemsList, Formatting.Indented);
-
-                File.WriteAllText("Data/ShopData.txt", output);
             }
             else if (saveType == 3)
             {
@@ -101,27 +93,21 @@ namespace RPBot
 
         public static void LoadData()
         {
-            if (!File.Exists("Data/TagsList.txt"))
-            {
-                File.Create("Data/TagsList.txt");
-
-            }
             if (File.ReadAllLines("Data/UserData.txt").Any())
             {
                 List<UserObject.RootObject> input = JsonConvert.DeserializeObject<List<UserObject.RootObject>>(File.ReadAllText("Data/UserData.txt"));
                 Users = input;
-
+                var ListToDelete = new List<UserObject.RootObject>();
+                foreach (UserObject.RootObject r in Users)
+                {
+                    if (r.Xp <= 250) ListToDelete.Add(r);
+                }
+                if (ListToDelete.Any()) Users.RemoveAll(x => ListToDelete.Contains(x));
             }
             TriviaClass.TriviaList = Directory.GetFiles("trivia/").ToList();
             for (int i = 0; i < TriviaClass.TriviaList.Count; i++)
             {
                 TriviaClass.TriviaList[i] = TriviaClass.TriviaList[i].Replace(".txt", "").Replace("trivia/", "");
-            }
-
-            if (File.ReadAllLines("Data/ShopData.txt").Any())
-            {
-                List<ShopObject.RootObject> input = JsonConvert.DeserializeObject<List<ShopObject.RootObject>>(File.ReadAllText("Data/ShopData.txt"));
-                ItemsList = input;
             }
             if (File.ReadAllLines("Data/GuildData.txt").Any())
             {
@@ -160,7 +146,6 @@ namespace RPBot
             List<DiscordMember> AllUsers = new List<DiscordMember>(await guild.GetAllMembersAsync());
             AllUsers.RemoveAll(x => x.IsBot);
             List<DiscordChannel> Channels = new List<DiscordChannel>(await guild.GetChannelsAsync());
-
             foreach (DiscordMember user in AllUsers)
             {
                 int role = 0;
@@ -187,6 +172,10 @@ namespace RPBot
                 if (Users.Find(x => x.UserData.UserID == user.Id).UserData.Role != role)
                 {
                     Users.Find(x => x.UserData.UserID == user.Id).UserData.Role = role;
+                }
+                if (Users.Find(x => x.UserData.UserID == user.Id).Xp <= 250)
+                {
+                    Users.Remove(Users.Find(x => x.UserData.UserID == user.Id));
                 }
             }
             if (update)

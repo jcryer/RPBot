@@ -120,7 +120,7 @@ namespace RPBot
             {
                 while (true)
                 {
-                    messageList.AddRange(await e.Channel.GetMessagesAfterAsync(messageList.Last(), 100));
+                    messageList.AddRange(await e.Channel.GetMessagesAfterAsync(messageList.First(), 100));
 
                     if (messageList.Count != (100 * iter))
                     {

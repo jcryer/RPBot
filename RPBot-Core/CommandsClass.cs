@@ -15,6 +15,8 @@ using DSharpPlus.Entities;
 using Newtonsoft.Json;
 using System.Diagnostics;
 using System.Reflection;
+using Newtonsoft.Json.Linq;
+using System.Net.Http;
 
 namespace RPBot
 {
@@ -281,11 +283,12 @@ namespace RPBot
         [Command("joke"), Description("Random joke command.")]
         public async Task Joke(CommandContext e)
         {
-            WebClient client = new WebClient();
-            String json = client.DownloadString("https://icanhazdadjoke.com/slack");
-            JokeObject.RootObject obj = JsonConvert.DeserializeObject<JokeObject.RootObject>(json);
-            await e.RespondAsync(obj.Attachments[0].Text);
-            Console.ReadLine();
+            using (HttpClient client = new HttpClient())
+            {
+                string response = await client.GetStringAsync("https://icanhazdadjoke.com/slack");
+                dynamic obj = JObject.Parse(response);
+                await e.RespondAsync(obj.Attachments[0].Text);
+            }
         }
 
         [Command("space"),  Description("Spaces text out")]

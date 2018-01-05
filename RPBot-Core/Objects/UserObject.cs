@@ -14,13 +14,13 @@ namespace RPBot
             {
                 UserData = userData;
                 this.Xp = xp;
-                InvData = invData;
+             //   InvData = invData;
                 this.ModData = new ModData();
             }
 
             public UserData UserData { get; set; }
             public int Xp { get; set; }
-            public InvData InvData { get; set; }
+          //  public InvData InvData { get; set; }
             public ModData ModData { get; set; }
         }
 
