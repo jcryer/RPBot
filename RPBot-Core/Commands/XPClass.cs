@@ -2,6 +2,7 @@
 using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
+using DSharpPlus.Interactivity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,6 +52,56 @@ namespace RPBot
             await AddOrUpdateUsers(e.Guild, true);
             SaveData(-1);
 
+        }
+        
+        [Command("bulk"), Description("Staff command to give multiple people XP (Better for bot).")]
+        public async Task Bulk (CommandContext e)
+        {
+
+            await e.RespondAsync("Change stats by typing `<mention> <xp amount>.\nTo end this process and save, type `stop`.");
+            var interactivity = e.Client.GetInteractivity();
+
+            AnotherMessage:
+            
+            var msg = await interactivity.WaitForMessageAsync(x => x.Author == e.Member, TimeSpan.FromSeconds(120));
+            if (msg != null)
+            {
+                if (msg.Message.Content == "stop")
+                {
+                    await UpdateStats(StatsChannel);
+                    SaveData(1);
+                    await UpdatePlayerRanking(e.Guild, 1);
+                    await UpdatePlayerRanking(e.Guild, 2);
+                    await UpdatePlayerRanking(e.Guild, 3);
+                    await e.RespondAsync("Stats updated.");
+                }
+                else
+                {
+                    try
+                    {
+                        string[] args = msg.Message.Content.Split(" ");
+                        DiscordMember member = await e.CommandsNext.ConvertArgument(args[0], e, typeof(DiscordMember)) as DiscordMember;
+                        UserObject.RootObject userData = Users.Find(x => x.UserData.UserID == member.Id);
+                        userData.Xp += int.Parse(args[1]);
+                        if (userData.Xp < 0) userData.Xp = 0;
+                        await e.RespondAsync("Stat changed. \nSend another, by typing `-<mention> <xp amount>`.\nTo end this process, type `stop`.");
+                    }
+                    catch
+                    {
+                        await e.RespondAsync("No user found, or xp was in invalid format.");
+                    }
+                    goto AnotherMessage;
+                }
+            }
+            else
+            {
+                await UpdateStats(StatsChannel);
+                SaveData(1);
+                await UpdatePlayerRanking(e.Guild, 1);
+                await UpdatePlayerRanking(e.Guild, 2);
+                await UpdatePlayerRanking(e.Guild, 3);
+                await e.RespondAsync("Stats updated.");
+            }
         }
 
         // Non-Command Methods

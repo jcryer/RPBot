@@ -35,23 +35,6 @@
   },
   {
     "UserData": {
-      "UserID": 126070623855312896,
-      "Username": "jcryer",
-      "Role": 0,
-      "Status": 1,
-      "Money": 999782000,
-      "ResolvedCases": 1,
-      "CrimesCommitted": 0,
-      "GuildID": 0
-    },
-    "Xp": 10000,
-    "ModData": {
-      "IsMuted": false,
-      "MuteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
       "UserID": 130477928239726593,
       "Username": "The Dreamer",
       "Role": 3,
