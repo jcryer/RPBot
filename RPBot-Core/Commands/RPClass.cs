@@ -24,7 +24,7 @@ namespace RPBot
         public static Dictionary<ulong, ulong> approvalsList = new Dictionary<ulong, ulong>(); // Channel ID : User ID
         public static Dictionary<DiscordMember, DateTime> slowModeList = new Dictionary<DiscordMember, DateTime>(); // Channel ID : User ID
         public static int slowModeTime = -1;
-        public static TOSObject.RootObject TOSData = new TOSObject.RootObject();
+        public static SVObject.RootObject SVData = new SVObject.RootObject();
         public static DiscordChannel GuildRankingChannel;
         public static DiscordChannel PlayerRankingChannel;
         public static DiscordChannel VillainRankingChannel;
@@ -32,6 +32,7 @@ namespace RPBot
         public static DiscordChannel StatsChannel;
         public static DiscordChannel ApprovalsCategory;
         public static DiscordChannel InstanceCategory;
+        public static DiscordChannel GameChannel;
         public static DiscordRole StaffRole;
         public static DiscordRole HelpfulRole;
         public static DiscordRole PunishedRole;

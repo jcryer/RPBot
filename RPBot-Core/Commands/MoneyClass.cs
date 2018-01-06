@@ -83,7 +83,7 @@ namespace RPBot
                     }
                     else
                     {
-                        await e.Channel.SendMessageAsync("", embed: embed);
+                        await e.RespondAsync("", embed: embed);
                         await Task.Delay(500);
                         embed.ClearFields();
                     }
@@ -107,7 +107,7 @@ namespace RPBot
 
                 embed.AddField(userData.UserData.Username,"Money: $" + userData.UserData.Money);
             }
-            await e.Channel.SendMessageAsync("", embed: embed);
+            await e.RespondAsync("", embed: embed);
 
         }
         

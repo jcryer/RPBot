@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-   
+   // DEPRECATED - COMMENTED OUT IN RPBOT.CS
     [Group("instance"), Description("Instance commands")]
     class InstanceClass : RPClass
     {

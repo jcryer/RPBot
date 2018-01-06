@@ -77,13 +77,15 @@ namespace RPBot
             this.CommandsNextService.RegisterCommands<CommandsClass>();
 
             this.CommandsNextService.RegisterCommands<XPClass>();
-            this.CommandsNextService.RegisterCommands<InstanceClass>();
+        //    this.CommandsNextService.RegisterCommands<InstanceClass>();
             this.CommandsNextService.RegisterCommands<GuildClass>();
 
             this.CommandsNextService.RegisterCommands<LogClass>();
             this.CommandsNextService.RegisterCommands<TriviaClass>();
             this.CommandsNextService.RegisterCommands<ModClass>();
             this.CommandsNextService.RegisterCommands<TagClass>();
+            this.CommandsNextService.RegisterCommands<SVClass>();
+
 
             InteractivityConfiguration icfg = new InteractivityConfiguration();
 			this.InteractivityService = Discord.UseInteractivity(icfg);
@@ -263,6 +265,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 StaffRole = e.Guild.GetRole(313845882841858048);
                 HelpfulRole = e.Guild.GetRole(312979390516559885);
                 PunishedRole = e.Guild.GetRole(379163684276142091);
+                GameChannel = e.Guild.GetChannel(395882029738360832);
                 RPClass.RPGuild = e.Guild;
 
                 await AddOrUpdateUsers(RPGuild, true);

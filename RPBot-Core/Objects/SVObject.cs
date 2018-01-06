@@ -25,8 +25,19 @@ namespace RPBot
             return source.OrderBy(x => Guid.NewGuid());
         }
     }
-    class TOSObject
+    class SVObject
     {
+        public class VoteObject
+        {
+            public SVObject.UserObject user;
+            public int voteNum;
+
+            public VoteObject(SVObject.UserObject user, int voteNum)
+            {
+                this.user = user;
+                this.voteNum = voteNum;
+            }
+        }
         public class RootObject
         {
             public List<UserObject> Players { get; set; }
@@ -43,7 +54,7 @@ namespace RPBot
                 DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
                 {
                     Color = DiscordColor.Blue,
-                    Title = "Town of Salem"
+                    Title = "Secret Villain™"
                 }
                 .WithFooter("Heroes & Villains");
 
@@ -71,7 +82,7 @@ namespace RPBot
                 DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
                 {
                     Color = DiscordColor.Blue,
-                    Title = "Town of Salem"
+                    Title = "Secret Villain™"
                 }
                 .WithFooter("Heroes & Villains");
 
@@ -107,7 +118,7 @@ namespace RPBot
                 int Spies = Convert.ToInt32(Math.Floor((float)(Villains / 2)));
                 int Joker = Convert.ToInt32(Math.Floor((float)(Total / 6)));
                 int Heroes = Total - Villains - Medics - Spies - Joker;
-                await e.RespondAsync("```There are " + Total + " players in this game, meaning there will be:" + Environment.NewLine + Villains + " Villain(s)," + Environment.NewLine + Medics + " Medic(s)," + Environment.NewLine + Spies + " Spies," + Environment.NewLine + Joker + " Joker(s)," + Environment.NewLine + Heroes + " Heroes.```");
+                await e.RespondAsync("```There are " + Total + " players in this game, meaning there will be:\n" + Villains + " Villain(s),\n" + Medics + " Medic(s),\n" + Spies + " Spies,\n" + Joker + " Joker(s),\n" + Heroes + " Heroes.```");
 
                 for (int i = 0; i < Villains; i++)
                 {
@@ -167,7 +178,7 @@ namespace RPBot
                             }
                             else
                             {
-                                await dm.SendMessageAsync("Hi! your role is: Assassin.");
+                                await dm.SendMessageAsync("Hi! your role is: Villain.");
                             }
                         }
                         else
