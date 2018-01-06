@@ -13,6 +13,7 @@ using DSharpPlus.EventArgs;
 using DSharpPlus.Entities;
 using DSharpPlus.Net.WebSocket;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace RPBot
 {
@@ -296,10 +297,41 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                             }
                             .AddField("Member", e.Message.Author.Username + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
                             .AddField("Channel", e.Message.Channel.Name, true)
-                            .AddField("Message Timestamp", e.Message.CreationTimestamp.ToString(), true)
+                            .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
                             .AddField("Deletion Timestamp", e.Message.Timestamp.ToString(), true)
-                            .AddField("Message", e.Message.Content, false);
+                            .AddField("Message", e.Message.Content, false)
+                            .AddField("Attachments", string.Join("\n", e.Message.Attachments.Select(x => x.Url)), false);
                             
+                            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
+                        }
+                    }
+                    catch { }
+                }
+            }
+        }
+
+        private async Task Discord_MessageUpdated(MessageUpdateEventArgs e)
+        {
+            if (e.Guild == RPClass.RPGuild)
+            {
+                if (e.Message.Author != e.Client.CurrentUser)
+                {
+                    try
+                    {
+                        if (!e.Message.Content.StartsWith("!"))
+                        {
+                            DiscordEmbedBuilder b = new DiscordEmbedBuilder
+                            {
+                                Title = "Message Edited",
+                                Color = DiscordColor.Blue
+                            }
+                            .AddField("Member", e.Message.Author.Username + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
+                            .AddField("Channel", e.Message.Channel.Name, true)
+                            .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
+                            .AddField("Edit Timestamp", e.Message.EditedTimestamp.ToString(), true)
+                            .AddField("New Message", e.Message.Content, false)
+                            .AddField("Attachments", string.Join("\n", e.Message.Attachments.Select(x => x.Url)), false);
+
                             await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
                         }
                     }
@@ -342,27 +374,55 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
 
                         }
                     }
-                    if (slowModeTime > 0 && e.Message.ChannelId == 312918289988976653)
+                    if (e.Message.ChannelId == 312918289988976653)
                     {
-                        var u = slowModeList.FirstOrDefault(x => x.Key == e.Message.Author);
-                        if (u.Key != null)
+                        Regex ItemRegex = new Regex(@"\.(png|gif|jpg|jpeg|tiff|webp)");
+                        if (ItemRegex.IsMatch(e.Message.Content) || e.Message.Attachments.Any())
                         {
-
-                            if (Math.Abs((u.Value - DateTime.UtcNow).TotalSeconds) <= 3)
+                            var u = imageList.FirstOrDefault(x => x.Key == e.Message.Author);
+                            if (u.Key != null)
                             {
-                                if (!(e.Author as DiscordMember).Roles.Any(x => x.Name == "Administrator"))
+
+                                if (Math.Abs((u.Value - DateTime.UtcNow).TotalSeconds) <= 60)
                                 {
-                                    await e.Message.DeleteAsync();
+                                    if (!(e.Author as DiscordMember).Roles.Any(x => x.Name == "Administrator"))
+                                    {
+                                        await e.Message.DeleteAsync();
+                                    }
+                                }
+                                else
+                                {
+                                    imageList[e.Message.Author as DiscordMember] = DateTime.UtcNow;
                                 }
                             }
                             else
                             {
-                                slowModeList[e.Message.Author as DiscordMember] = DateTime.UtcNow;
+                                imageList.Add(e.Message.Author as DiscordMember, DateTime.UtcNow);
                             }
                         }
-                        else
+
+                        if (slowModeTime > 0)
                         {
-                            slowModeList.Add(e.Message.Author as DiscordMember, DateTime.UtcNow);
+                            var u = slowModeList.FirstOrDefault(x => x.Key == e.Message.Author);
+                            if (u.Key != null)
+                            {
+
+                                if (Math.Abs((u.Value - DateTime.UtcNow).TotalSeconds) <= slowModeTime)
+                                {
+                                    if (!(e.Author as DiscordMember).Roles.Any(x => x.Name == "Administrator"))
+                                    {
+                                        await e.Message.DeleteAsync();
+                                    }
+                                }
+                                else
+                                {
+                                    slowModeList[e.Message.Author as DiscordMember] = DateTime.UtcNow;
+                                }
+                            }
+                            else
+                            {
+                                slowModeList.Add(e.Message.Author as DiscordMember, DateTime.UtcNow);
+                            }
                         }
                     }
                 }

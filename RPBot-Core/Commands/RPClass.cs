@@ -22,7 +22,8 @@ namespace RPBot
         public static List<InstanceObject.ChannelTemplate> ChannelTemplates = new List<InstanceObject.ChannelTemplate>();
         public static List<TagObject.RootObject> TagsList = new List<TagObject.RootObject>();
         public static Dictionary<ulong, ulong> approvalsList = new Dictionary<ulong, ulong>(); // Channel ID : User ID
-        public static Dictionary<DiscordMember, DateTime> slowModeList = new Dictionary<DiscordMember, DateTime>(); // Channel ID : User ID
+        public static Dictionary<DiscordMember, DateTime> slowModeList = new Dictionary<DiscordMember, DateTime>(); //  Member : Timeout
+        public static Dictionary<DiscordMember, DateTime> imageList = new Dictionary<DiscordMember, DateTime>(); // Member : Timeout
         public static int slowModeTime = -1;
         public static SVObject.RootObject SVData = new SVObject.RootObject();
         public static DiscordChannel GuildRankingChannel;
