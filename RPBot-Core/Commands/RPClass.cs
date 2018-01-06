@@ -174,10 +174,6 @@ namespace RPBot
                 {
                     Users.Find(x => x.UserData.UserID == user.Id).UserData.Role = role;
                 }
-                if (Users.Find(x => x.UserData.UserID == user.Id).Xp <= 250)
-                {
-                    Users.Remove(Users.Find(x => x.UserData.UserID == user.Id));
-                }
             }
             if (update)
             {

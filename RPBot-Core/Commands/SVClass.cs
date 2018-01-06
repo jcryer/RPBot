@@ -340,6 +340,7 @@ namespace RPBot
                             {
                                 if (PlayerKilled != PlayerKilling)
                                 {
+                                    UsedAbility.Add(PlayerKilling);
                                     await e.RespondAsync("Player " + PlayerKilled.Username + " will be assassinated.");
 
 
