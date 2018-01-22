@@ -86,7 +86,9 @@ namespace RPBot
             this.CommandsNextService.RegisterCommands<ModClass>();
             this.CommandsNextService.RegisterCommands<TagClass>();
             this.CommandsNextService.RegisterCommands<SVClass>();
+            this.CommandsNextService.RegisterCommands<WikiClass>();
 
+            WikiClass.InitWiki();
 
             InteractivityConfiguration icfg = new InteractivityConfiguration();
 			this.InteractivityService = Discord.UseInteractivity(icfg);
@@ -299,9 +301,8 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                             .AddField("Channel", e.Message.Channel.Name, true)
                             .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
                             .AddField("Deletion Timestamp", e.Message.Timestamp.ToString(), true)
-                            .AddField("Message", e.Message.Content, false)
-                            .AddField("Attachments", string.Join("\n", e.Message.Attachments.Select(x => x.Url)), false);
-                            
+                            .AddField("Message", !string.IsNullOrWhiteSpace(e.Message.Content) ? e.Message.Content : "-" , false)
+                            .AddField("Attachments", e.Message.Attachments.Any() ? string.Join("\n", e.Message.Attachments.Select(x => x.Url)) : "-", false);
                             await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
                         }
                     }
@@ -330,7 +331,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                             .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
                             .AddField("Edit Timestamp", e.Message.EditedTimestamp.ToString(), true)
                             .AddField("New Message", e.Message.Content, false)
-                            .AddField("Attachments", string.Join("\n", e.Message.Attachments.Select(x => x.Url)), false);
+                            .AddField("Attachments", e.Message.Attachments.Any() ? string.Join("\n", e.Message.Attachments.Select(x => x.Url)) : "-", false);
 
                             await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
                         }
@@ -376,6 +377,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                     }
                     if (e.Message.ChannelId == 312918289988976653)
                     {
+                        
                         Regex ItemRegex = new Regex(@"\.(png|gif|jpg|jpeg|tiff|webp)");
                         if (ItemRegex.IsMatch(e.Message.Content) || e.Message.Attachments.Any())
                         {

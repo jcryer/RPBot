@@ -162,27 +162,7 @@ namespace RPBot
             await e.CommandsNext.SudoAsync(user, e.Channel, command);
         }
 
-        [Command("serverinfo"), Description("Gets info about current server")]
-        public async Task GuildInfo(CommandContext ctx)
-        {
-            var b = new DiscordEmbedBuilder()
-            {
-                Title = $"{ctx.Guild.Name} ({ctx.Guild.Id})",
-                Description = $"Guild owned by {ctx.Guild.Owner.Username}#{ctx.Guild.Owner.Discriminator} (ID: {ctx.Guild.Owner.Id})",
-                ThumbnailUrl = ctx.Guild.IconUrl,
-                Timestamp = ctx.Guild.CreationTimestamp,
-                Color = new DiscordColor("4169E1")
-            }
-            .WithFooter("Creation Date:", ctx.Guild.IconUrl)
-            .AddField("Channel count", $"{ctx.Guild.Channels.Count}", true)
-            .AddField("AFK Timeout", $"{ctx.Guild.AfkTimeout}", true)
-            .AddField("Region", ctx.Guild.VoiceRegion.Id, true)
-            .AddField("Role Count", $"{ctx.Guild.Roles.Count}", true)
-            .AddField("Large?", ctx.Guild.IsLarge ? "Yes" : "No", true)
-            .AddField("Icon Url", ctx.Guild.IconUrl, false);
-
-            await ctx.RespondAsync("", embed: b.Build());
-        }
+        
 
         [Command("userinfo"), Description("Gets info about user")]
         public async Task UserInfo(CommandContext ctx, [Description("User to get info about")] DiscordMember m)
@@ -205,7 +185,7 @@ namespace RPBot
         [Command("purge"), Aliases("p"), Description("Admin purge command"), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task PurgeAsync(CommandContext e, [Description("Number of messages to purge (Max 100)")] int limit)
         {
-            var ms = await e.Channel.GetMessagesBeforeAsync(e.Message, limit);
+            var ms = await e.Channel.GetMessagesBeforeAsync(e.Message.Id, limit);
             var deletThis = new List<DiscordMessage>();
             foreach (var m in ms)
             {
@@ -224,7 +204,7 @@ namespace RPBot
         public async Task CleanAsync(CommandContext e)
         {
             var prefix = "!";
-            var ms = await e.Channel.GetMessagesBeforeAsync(e.Message, 100);
+            var ms = await e.Channel.GetMessagesBeforeAsync(e.Message.Id, 100);
             var delet_this = new List<DiscordMessage>();
             foreach (var m in ms)
             {
@@ -360,10 +340,10 @@ namespace RPBot
             List<DiscordMessage> messageList = new List<DiscordMessage>();
 
             int iter = 1;
-            messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(e.Message, 100));
+            messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(e.Message.Id, 100));
             while (true)
             {
-                messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last(), 100));
+                messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last().Id, 100));
 
                 if (messageList.Count != (100 * iter))
                 {

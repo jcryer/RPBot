@@ -22,3 +22,5 @@ E:\Desktop\Coding\Bots\RPBot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.Assem
 E:\Desktop\Coding\Bots\RPBot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.AssemblyInfo.cs
 E:\Desktop\Coding\Bots\RPBot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.dll
 E:\Desktop\Coding\Bots\RPBot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.pdb
+C:\Users\jcryer\Desktop\RP-Bot\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\DotNetWikiBot.dll
+C:\Users\jcryer\Desktop\RP-Bot\RPBot\RPBot-Core\bin\Debug\netcoreapp2.0\DotNetWikiBot.pdb
