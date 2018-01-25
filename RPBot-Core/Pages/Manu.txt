@@ -1,0 +1,25 @@
+﻿<p style="text-align:right;">{{Roleplay Info W/ Age (Revised)
+|title1=Manu Wong
+|image1=[[File:Tiberium_concept2020Tiberium_scientist.png|thumb]]
+|civilian_name=Manu Wong
+|relatives=Unkown
+|affiliation=Civilian, Scientist at Avalon Research
+|marital_status=Single
+|age=52
+|date_of_birth=?/?/1967
+|place_of_birth=Korea
+|species=Human
+|gender=Male
+|height=6"0
+|weight=154 lbs
+|eye_color=Black
+}}</p>
+==​Mentality==
+serious and dry. lacking humor or the ability to comprehend it. is always occupied with work 24/7 and rarely ever does anything else.
+==​Quirk==
+N/A
+==​History==
+next to nothing is known about him since he is always behind closed doors.
+[[Category:NPC]]
+[[Category:Civilian]]
+[[Category:Avalon Researcher]]

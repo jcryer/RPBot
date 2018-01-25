@@ -1,0 +1,25 @@
+﻿<p style="text-align:right;">{{Roleplay Info W/ Age (Revised)
+|title1=Adrian Montolivo
+|image1=[[File:1309230405815.png|thumb]]
+|civilian_name=Adrian Montolivo
+|relatives=Orphan
+|affiliation=Civilian, Roboticist at Avalon Research
+|marital_status=Single
+|age=40
+|date_of_birth=?/?/1979
+|place_of_birth=WayHaven
+|species=Human
+|gender=Male
+|height=5"9
+|weight=148 lbs
+|eye_color=Blue
+}}</p>
+==​Mentality==
+thrill seeking, witty, shrewd and competitive.
+==​Quirk==
+magnetizes minute objects
+==​History==
+An academy genius at colbridge, he followed the path that was expected of him and now works under the careful eye of Azuma as a specialist in robotics and cybernetics at Avalon research.
+[[Category:NPC]]
+[[Category:Civilian]]
+[[Category:Avalon Researcher]]

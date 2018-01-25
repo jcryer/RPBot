@@ -1,0 +1,23 @@
+﻿{{Character
+|image = Mai.jpg
+|civilian_name = Mai Tatsumaru
+|relatives = [[Kai|Kai Tatsumaru]] (brother)
+|affiliation = Academy Student, 2nd Year Academy Student
+
+4th year(Post-time skip)
+|marital = None
+|gender = Female
+|age = 17
+|date_of_birth = 6/8/2002}}
+
+== Personality ==
+Twin sister of Kai with a similar attitude as her brother but she knows when to act up and when not to.
+
+A smart and conniving young girl.
+
+==Quirk==
+Her quirk is also similar to her brother's but she can do something her brother can't and that is the [[w:c:powerlisting:Chameleo Physiology|Chameleon's camouflage]].
+[[Category:NPC]]
+[[Category:NPC Academy Students]]
+[[Category:4th Year Student]]
+[[Category:All Characters]]

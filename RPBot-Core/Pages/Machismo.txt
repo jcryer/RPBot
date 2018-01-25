@@ -1,0 +1,25 @@
+﻿<p style="text-align:right;">{{Roleplay Info W/ Age (Revised)
+|title1=Machismo
+|image1=[[File:9ed2048a79d504b84c12f1e4fe3d007a.png|thumb]]
+|civilian_name=Tom Hanks
+|relatives=Unkown
+|affiliation=villain, A-rank
+|marital_status=Single
+|age=33
+|date_of_birth=?/?/1986
+|place_of_birth=WayHaven
+|species=Human
+|gender=Male
+|height=7"6
+|weight=485 lbs +
+|eye_color=Grey
+}}</p>
+==​Mentality==
+Tenacity, willpower, fortitude, pride and loyalty all make up this bulky beast of a man.
+==​Quirk==
+Concrete: like Mammoth, he is able to coat himself in layers of unnaturally thick dermal armour augmenting size and strength to immense levels but reducing his speed as an effect. His dermal armour is a concrete-like substance of very high density and one that takes large amounts of stamina to harden and maintain. at his maximum density, he can keep multiple layers of armour on for an extended period of 60 minutes.
+==​History==
+Tom graduated the hero academy but became convinced that it wasn't as much fun as he'd expected trading the life of a salaried hero for that of protector and guardian of top dealers and leaders of the blackmarket/underworld. He is the most sought after bouncer, personal/property bodyguard and sentry to Wayhaven's worst of the worst.
+[[Category:NPC]]
+[[Category:Villains]]
+[[Category:NPC Villains]]

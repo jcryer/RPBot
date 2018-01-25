@@ -1,0 +1,34 @@
+﻿== Guilds ==
+Guilds are groups of characters that fight together. For heroes, imagine it as a company versus going at it by yourself. For villains, imagine it as a way to not die, align yourself with a powerful guild and you won't be squashed the moment you start gaining power.
+
+=== <u>Guild Creation Prereqs</u> ===
+* Reasonable amount of Role-play activity
+* Pro Rank and reputation with substantial earnings
+* At least, 4 active members to join the Guild upon creation.
+* Registration with the appointed bodies (Heroes use their HQ while Villains will need permission Staff members)
+* Percentage Wage agreement between owner and members (to be submitted to and approved by the appointed bodies/individuals)
+'''<u>Template:</u>'''
+
+<nowiki>**</nowiki>NAME:**
+
+<nowiki>**</nowiki>LEADER:**
+
+<nowiki>**</nowiki>DEPUTY:**
+
+<nowiki>**</nowiki>MEMBERS' LIST:**
+
+<nowiki>**</nowiki>GUILD DESCRIPTION:**
+
+<nowiki>**</nowiki>LOGO/EMBLEM:**
+
+<nowiki>**</nowiki>GUILD GOAL/PURPOSE:**
+
+<nowiki>**</nowiki>MEMBERS' AVERAGE WAGES:**
+
+<nowiki>**</nowiki>RESOURCES/PROPERTY:**
+
+<nowiki>**</nowiki>POTENTIAL HQ:**
+
+<nowiki>**</nowiki>MEMBERS' AVERAGE RANKING:**
+
+'''''*Guild creation fee is $20k*'''''

@@ -1,0 +1,24 @@
+﻿<p style="text-align:right;">{{Roleplay Info W/ Age (Revised)
+|title1=Sanchez, the Bartender
+|image1=[[File:3e0f6e5ce34c39ada9d0ef8dfe9a3c2d--npc-rpg-villager-bara.png|thumb]]
+|civilian_name=Sanchez
+|relatives=Beatrice (wife)
+|affiliation=Civilian
+|marital_status=Married
+|age=52
+|date_of_birth=?/?/1967
+|place_of_birth=Uruguay
+|species=Human
+|gender=Male
+|height=6"4
+|weight=242 lbs
+|eye_color=Black
+}}</p>
+==​Mentality==
+Jolly, hospitable and charming.
+==​Quirk==
+Possesses the ability to make organic substances of little mass taste better.
+==​History==
+As a young man with little education and no wealth, he left his hometown and came to WayHaven to find some work. Now, he owns the most prominent restaurant/pub/bar in the city.
+[[Category:NPC]]
+[[Category:Civilian]]

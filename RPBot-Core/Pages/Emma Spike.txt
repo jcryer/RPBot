@@ -1,0 +1,28 @@
+﻿{{Character
+|pagetitle=Spiky
+|image=[[File:928cce006cac671bcae99316ab737924--anime-oc-anime-manga.jpg|thumb]]
+|civilian_name=Emma Spike
+|relatives=None
+|affiliation=Hero, Academy Student (1st year)
+|marital_status=Single
+|age=15
+|date_of_birth=2/4/2004
+|place_of_birth=WayHaven
+|species=Human
+|gender=Female
+|height=5'6
+|weight=119 lbs
+|eye_color=Blue
+}}
+==Personality==
+Really warm to people she trusts but is unsure of those she doesn't know. Usually likes to spend time alone reading or listening to music.
+==Backstory==
+Lost her dad in an accident involving a villain. That pushed her to become a hero so others won't lose people close to them.
+==Quirk==
+She can sharpen and extend her fingers. Those fingers also become hard as steel. She can extend 1 finger up to 1 meter. Her drawback is that fingers are the only thing she can extend and sharpen. Her body overall is normal.
+
+'''Example:''' She can combine her 2 fingers and turn them into a meter long sword.
+[[Category:NPC]]
+[[Category:NPC Academy Students]]
+[[Category:1st Year Student]]
+[[Category:All Characters]]

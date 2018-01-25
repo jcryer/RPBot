@@ -1,0 +1,51 @@
+﻿{{Guild
+|headercolor = #060400
+|headerfontcolor = #FFE344
+|image = SolInvictus.png
+|leader = [[Doting Baron]] (Active)
+
+|deputy = 
+|members = [[Doting Baron]] (Active)
+
+[[Orion]] (Active)
+
+[[Hiro Tate]] (Active)
+
+[[Celsius]] (Active)
+
+[[Essence]] (Active)
+
+[[Kira]] (Active)
+
+[[Rosa]] (NPC)
+
+|formermembers = [[SteamShock]] (Temporary: In wake of Doting's capture)
+
+[[Pastella]] (Deceased)
+
+[[StarForger]] (Deceased)
+
+[[Overdose]] (Deceased)
+
+[[Vulcan]] (Deceased)
+}}
+
+
+'''Sol Invictus''' (/soːl inˈwik.tus/ Latin: "Unconquered Sun") is a ragtag group of heroes that survived Nightmare's attack on Colbridge Academy, now seeking to restore order, and restore the public's faith in heroes.
+
+=== Purpose ===
+Restore order and protect the innocent.
+
+== Average Wages ==
+85% cut
+
+== Resources ==
+Whatever the members have at their disposal.
+
+== Headquarters ==
+[[Sol Invictus Garage|Doting Baron's Garage]]
+
+== Strength ==
+
+D
+[[Category:Guilds]]

@@ -1,0 +1,37 @@
+﻿<p style="text-align:right;">{{Roleplay Info W/ Age (Revised)
+|title1=GL!TCH
+|image1=[[File:81d4d99ddf6eeb52e5487282dad3496b.jpg|thumb]]
+|civilian_name=Hakku Guritchi
+|relatives=Brother & Sister (both missing)
+|affiliation=Hero, Academy Student
+|marital_status=Single
+|age=18
+|date_of_birth=2/19/2001
+|place_of_birth=Tokyo, Japan
+|species=Human
+|gender=Male
+|height=6'5
+|weight=198 lbs
+|eye_color=Green (when hacking yellow sparks appear in them)
+}}</p>
+==Personality==
+Really quiet, always focused on the task at hand. Usually only speaks when out of the technology so almost never.
+==History==
+Hakku got interested in hacking from an early age, his father was a criminal and his mother wasn't there for him during childhood. After their uncle (their only parental figure) died, his brother and sister went missing and Hakku got back into hacking to find them.
+==​Resources==
+===Equipment/Weaponry===
+He does always have a knife with him but his real weapon is his hacking skills.
+==​Quirk==
+'''[[w:c:powerlisting:Data Manipulation|Hack]]: '''Can hack things with his mind. A firewall takes a lot of concentration to hack with his mind but is a possibility. A small firewall, like a password, takes around 2 min. To hack a medium firewall it would take around 4 min, and a big one like a bank account takes around 6 min. He can hack anything from a distance of 20 meters.
+
+'''Drawback:''' He can only hack one device at a time, if he does more he will get to many databases for his brain to handle and get really bad headaches.
+
+'''Example:''' once he hacks he can see a holographic screen in front of him so he can see all cameras nearby and clips from the drone.
+
+'''Offensive:''' he can hack a computer to malfunction and explode.
+
+'''Defensive:''' he can hack a road block to stop cars or start a collision.
+[[Category:OC]]
+[[Category:OC Academy Students]]
+[[Category:4th Year Student]]
+[[Category:All Characters]]

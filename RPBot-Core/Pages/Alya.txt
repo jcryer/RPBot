@@ -1,0 +1,31 @@
+﻿<p style="text-align:right;">{{Roleplay Info W/ Age (Revised)
+|title1=Alya Sidana
+|image1=[[File:Psira_1.png|thumb]]
+|civilian_name=Alya Sidana
+|relatives=Viaan Sidana (brother), Mr. Sidana (father), Mrs. Sidana (mother)
+|affiliation=Civilian
+|marital_status=Single
+|age=15
+|date_of_birth=11/14/2004
+|place_of_birth=WayHaven
+|species=Human
+|gender=Female
+|height=5"3
+|weight=114 lbs
+|eye_color=Brown
+}}</p>
+==​Mentality==
+Soft spoken, shy, reserved and always tries too hard.
+==​Quirk==
+Primary- Quirk amplification: She can increase the energy level of any quirk in the range of 5-20% by direct contact between her and the quirk user. This quirk activates on will, preventing her from randomly enhancing quirks of anybody she touches.
+Secondary- asthenic telekinesis: She can perform feats of telekinesis like her brother but is heavily limited. She can lift a maximum of 40Kg, multitask upto 3 tasks and her maximum energy shield tier is green; all of these, without using her primary quirk. She can increase these limits upto 25% dependingmax lift 35kg... so 25% of 35kg is 8.75kg..that means net inc. in weight is 43.75kg
+25% of 3 tasks= <1 thus not practically feasible.
+max shield tier is green, 25,000N limit.
+after 25% amplification= 31,250 (greenish yellow)
+after 25% exhaustion time amplification= 31.25minutes on how she uses her primary quirk.
+==​History==
+Alya is the second born in the Sidana family. Like his older brother, she was thought to be born quirkless. When she was six years old, she had triggered a fellow pre-schooler to exponentially increase his explosion quirk by just touching him. This incident shed light on her latent quirk which had manifested around that time. When she was 12 (Prior to timeskip) She was indirectly exposed to the psionic fumes which led to Viaan, her elder brother, manifesting telekinesis. She had discovered she could weakly pull small objects out of her reach towards herself, but kept it all a secret.
+During the Alien invasion, Alya was able to protect her parents from the second and third world engine laser blasts by making a small yet powerful barrier, which was further amplfied by her genetic quirk. This exposed her secret secondary quirk.
+Alya is now in her final year in middle school and wishes to follow her brother's footsteps and pursue Heroics & Disaster management course in WayHaven Academy.
+[[Category:NPC]]
+[[Category:Civilian]]

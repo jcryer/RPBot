@@ -1,0 +1,39 @@
+﻿==General==
+Read these rules. If there is anything even ''remotely'' confusing take it up with me, @Raven#4608. 
+==Character Page==
+*'''[[Template:Character|Infobox]]''' - Use the Character infobox ONLY. Any others will either not work or are outdated.
+*'''Personality''' - Personality/Mentality section. (Heading)
+*'''Backstory''' - Backstory AKA History section. (Heading)
+*'''Resources '''- Resources section. (Heading)
+**'''Equipment/Weaponry''' - Guns/Swords/Armor that kind of stuff
+**'''Specializations''' - Combat, other training, hacking....
+*'''Quirk''' - The power. (Heading)
+**'''Versatility''' - The explanation of the quirk, and how flexible it is. (Heading 2)
+**'''Example''' - Only to be used for an actual example. If it's an explanation of the quirk, do NOT put it under example (even if the user did)
+
+=== Marking a person as deceased: Put them in the Deceased category. Add the template:===
+*Type this at the top: <nowiki>{{Deceased}}</nowiki>
+*It will look like this: {{Deceased}}
+==Categories, take one from each:==
+*[[:Category:All Characters|All Characters]](every Character page MUST have this. If it doesn't, assume it still needs to be reformatted)
+* [[:Category:OC|OC]], [[:Category:NPC|NPC]]
+* [[:Category:Villains|Villains]], [[:Category:Rogues|Rogues]], [[:Category:Heroes|Heroes]]
+* [[:Category:OC Villains|OC Villains]], [[:Category:OC Rogues|OC Rogues]], [[:Category:OC Heroes|OC Heroes]], [[:Category:NPC Villains|NPC Villains]], [[:Category:NPC Rogues|NPC Rogues]], [[:Category:NPC Heroes|NPC Heroes]]
+* (If applicable) [[:Category:1st Year Student|1st Year Student]], [[:Category:2nd Year Student|2nd Year Student]], [[:Category:3rd Year Student|3rd Year Student]], [[:Category:4th Year Student|4th Year Student]]
+** 4th Year Students are typically [[:Category:Sidekick|Sidekicks]] as well, there are some special cases.
+== Images ==
+*They should always, ALWAYS start with the person's character. 
+*Don't use spaces, or special characters like ['] or [-]
+*Add 1,2,3 or add a descriptor like Suit or Sword or both!
+*Replacing images? https://youtu.be/4cc7wYm7ekg
+
+== Guild Page ==
+*'''Infobox''' - Use Guild infobox ONLY. Don't use character, what are you thinking?
+*'''NAME''' - The name of the guild, and what the guild is.
+**'''Purpose''' - Purpose section
+*'''Wages''' - Percentage cut of wages
+*'''Resources '''- Resouces/Property section.
+*'''Headquarters''' - HQ
+*'''Strength '''- Average ranking
+==Places==
+Do not touch these pages. If some information is wrong, go directly to @Raven#4608.

@@ -1,0 +1,25 @@
+﻿<p style="text-align:right;">{{Roleplay Info W/ Age (Revised)
+|title1=King
+|image1=[[File:Bfe1bf48169890296569be3586b24f24.png|thumb]]
+|civilian_name=Daniel (Danny) King
+|relatives=Unkown
+|affiliation=Hero
+|marital_status=Single
+|age=33
+|date_of_birth=?/?/1986
+|place_of_birth=WayHaven
+|species=Mutant
+|gender=Male
+|height=6"5
+|weight=1058 lbs
+|eye_color=Amber
+}}</p>
+==​Mentality==
+Competitive, stubborn, strong willpower and rage. Likes to have everything, and is a very sore loser.
+==​Quirk==
+'''Tiger Physiology;''' heightened senses, unreasonably sharp claws, agility, speed, super strength, enhanced hearing, smell and vision.
+==​History==
+Always wanted to be the top hero and worked his ass off to achieve it. Despite being in the top 10, he is enraged by the fact that he has not made it to the absolute top of it all. An encounter with villains while in the academy strengthened his resolve against them and he does not hold back or think twice when up against them.
+[[Category:NPC]]
+[[Category:NPC Heroes]]
+[[Category:Heroes]]

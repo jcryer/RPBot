@@ -1,0 +1,26 @@
+﻿<p style="text-align:right;">{{Roleplay Info W/ Age (Revised)
+|title1=Bunker
+|image1=[[File:6b5ce74422b5e2e57c6f2bfd95e6da34.png|thumb]]
+|civilian_name=Michael Keane
+|relatives=Parents (unkown)
+|affiliation=Villain, A-rank
+|marital_status=Single
+|age=24
+|date_of_birth=?/?/1995
+|place_of_birth=WayHaven
+|species=Human
+|gender=Male
+|height=6"0
+|weight=141 lbs
+|eye_color=Brown
+}}</p>
+==​Mentality==
+Always the life of the party, the over-confident, brash Keane is often the loudest person in any gathering. He has a propensity to crack jokes in the most dire of situations and the most unusual times. 
+==​Quirk==
+Construction: he can create and manipulate 2 million blocks of energy which decrease in number but increase in strength as their sizes increase. He wields them with a high level of skill and speed and uses them to augment his actions, granting him strength, speed and even flight.
+==​History==
+Born with a powerful quirk but did not realize his potential until his late teens. He failed the entrance exam into WHA and was left dejected. He opted to drop out of academics entirely and became a goon in various gangs, working first as a bank robber and then a body guard as he climbed the ladder of " success" At 18, his quirk reached the power it always looked like it had, and his value in the underbelly of the city sky-rocketed. Now he commands groups of his own, working for whoever is willing to pay and carrying out tasks from high-level break-ins and robberies to assassinations and murders with high efficiency and a joke to match.
+
+[[Category:NPC]]
+[[Category:Villains]]
+[[Category:NPC Villains]]

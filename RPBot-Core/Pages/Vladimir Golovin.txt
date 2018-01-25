@@ -1,0 +1,26 @@
+﻿{{Roleplay_Info_W/_Age_(Revised)|title1 = Vladimir Golovin|image1 = [[File:WolfRh.png|thumb]]|civilian_name = Vladimir 'Vlad' Golovin|relatives = Unknown|affiliation = Rogue (Volch'ya Staya), A-rank|marital_status = Single|age = 33|date_of_birth = 03/12/1986|place_of_birth = WayHaven|species = Human|gender = Male|height = 5'8, 172cm|weight = 76 KG, 167 lbs|eye_color = Blue}} 
+Bartender and bouncer of the [[WayHaven|Matryoshka Troika]] restaurant (located in the Providence market district) and right hand man of the leader of the [[Volch'ya Staya]]. A stern, yet friendly face. He keeps his customers happy by keeping trouble out.
+
+==Personality<nowiki/>==
+Loyal and protective. Zealous for his cause, which is the cause of the family. The Staya means everything to him.
+
+== Resources ==
+Runs the bar at the '[[WayHaven|Matryoshka Troika]]' restaurant. Relatively well off. Has a good car and nice house.
+
+<br />
+== Abilities ==
+=== '''Quirk''' ===
+
+'''Lycantrophy''' - Allows the user to transform into a man/wolf hybrid, increasing their senses, strength and agility. The original owner of the quirk (Boris) can infect others (if quirkless) by giving them their blood. They will not attack their leader or each other, but have no way to distinct friend from foe otherwise
+
+'''Equipment/Weaponry'''
+A Makarov (9mm pistol).
+
+=== '''Specialization''' ===
+Bartending, CQC, gathering intel and firearms.
+
+=== '''Versatility''' ===
+Can only transform once an in-game day.
+[[Category:NPC]]
+[[Category:NPC Rogues]]
+[[Category:Rogues]]

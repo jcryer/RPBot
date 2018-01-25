@@ -1,0 +1,35 @@
+﻿{{Character
+|civilian_name= Tasha Tectretius
+|affiliation= Student
+|marital_status= Single
+|age= 15
+||species= Human
+|gender= Female
+|height= 4'5
+||hair_color = Blond, messy
+|eye_color= Blue|image = Tasha.png|place_of_birth = Wayhaven|weight = 70 lbs}}
+
+==Personality==
+Cold, Manipulative
+
+==Backstory==
+An orphan girl whose parents died shortly after she was born, Tasha left the orphanage suddenly one night, after deciding to try and work to earn a comfortable and easy life. Hardworking, Tasha had a somewhat twisted personality. Not afraid to step on others if it benefits her. After hearing about the Hero Academy, Tasha realized it may be her best chance at earning a comfortable life, and decided to sign up.
+
+She is currently suffereing stage 3 lung cancer.
+==Resources==
+Almost nothing.
+
+===Equipment/Weaponry===
+Street clothes and an antique rifle when possible. The rifle allows her to control the aim of her quirk drastically better.
+
+===Specializations===
+Long range combat.
+
+==Quirk==
+Blessed Light
+
+Example: Can fire a power ball of light that creates a large explosion upon impact. Can be aimed and fired out of her rifle similar to a bullet. However she must have a weapon to use it, and the type of firearm changes how it comes out. Example: Automatic weapon = Less power, higher fire rate. At this time she can only create a large enough explosion with her quirk to break concrete.
+[[Category:1st Year Student]]
+[[Category:OC]]
+[[Category:OC Academy Students]]
+[[Category:All Characters]]

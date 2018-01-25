@@ -1,0 +1,24 @@
+﻿<p style="text-align:right;">{{Roleplay Info W/ Age (Revised)
+|title1=Beatrice
+|image1=[[File:4ce551388346ac805d25d7cb59e6fd1c.png|thumb]]
+|civilian_name=Beatrice
+|relatives=Sanchez (husband)
+|affiliation=Civilian
+|marital_status=Married
+|age=48
+|date_of_birth=?/?/1971
+|place_of_birth=Uruguay
+|species=Human
+|gender=Female
+|height=5"9
+|weight=154 lbs
+|eye_color=Jade
+}}</p>
+==​Mentality==
+Cheerful and kind. Empathic and warm hearted
+==​Quirk==
+N/A
+==​History==
+Learnt to cook as a young girl and always wanted a restaurant. Grew up with sanchez, moved with him to WayHaven where they got married and established the Capes n' cowls.
+[[Category:NPC]]
+[[Category:Civilian]]

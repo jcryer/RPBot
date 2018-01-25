@@ -1,0 +1,28 @@
+﻿<p style="text-align:right;">{{Roleplay Info W/ Age (Revised)
+|title1=HandGun
+|image1=[[File:Images.jpg|thumb]]
+|civilian_name=Riley Caliber
+|relatives=2 little sisters
+|affiliation=Hero, Academy Student (1st year)
+|marital_status=Boyfriend (dating 1 year)
+|age=15
+|date_of_birth=3/1/2004
+|place_of_birth=WayHaven
+|species=Human
+|gender=Female
+|height=5'10
+|weight=132 lbs
+|eye_color=Brown
+}}</p>
+==​Personality==
+Really wild and loud. Likes to party and is really outgoing overall. Once she gets anrgry really it's really hard for her to calm down.
+==​Backstory==
+<p style="font-weight:normal;">Always thought of herself as awesome and number 1. That's why she wants to show everyone that her dreams aren't just thoughts.</p>
+==​Quirk==
+She can turns her body parts in to weapons. As of now only thing she can do is turn her [[w:c:powerlisting:Weapon Hands|hands]] in to pistols. Right one in to magnum and left one in to Normal handgun. Her drawback is that once she turns her hand in to a gun and empties all bullets her hand will automatically turn back and she has to wait some time (4 mintues) to turn it back.
+
+'''Example:''' She can turn her right hand in to Magnum and fire all the bullets. Then her hand turns back and she has to wait before using it again.
+[[Category:NPC]]
+[[Category:NPC Academy Students]]
+[[Category:1st Year Student]]
+[[Category:All Characters]]

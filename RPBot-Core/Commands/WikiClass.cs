@@ -24,15 +24,15 @@ namespace RPBot
         string[] images =
                         {
            //     "File:ChihaSenshaTank.png",
-"File:ChihaSensha.png",
-"File:Check.png",
-"File:CheckWeapon.png",
+//"File:ChihaSensha.png",
+//"File:Check.png",
+/*"File:CheckWeapon.png",
 "File:Neptune1.png",
 "File:Neptune2.png",
 "File:Havoc.jpg",
 "File:TyranicaEye.png",
-"File:TyranicaCivil.png",
-"File:TyranicaAngkor2.gif",
+"File:TyranicaCivil.png",*/
+/*"File:TyranicaAngkor2.gif",
 "File:TyranicaAngkor1.jpg",
 "File:Tyranica3.png",
 "File:Tyranica2.png",
@@ -64,8 +64,8 @@ namespace RPBot
 "File:Kira.png",
 "File:Armor.png",
 "File:Tasha.jpg",
-"File:Tasha's_gun.jpg",
-"File:Fujiko_Akizuki.jpg",
+"File:Tasha's_gun.jpg",*/
+/*"File:Fujiko_Akizuki.jpg",
 "File:Hyakutake.png",
 "File:Asuka.jpg",
 "File:WHMap.png",
@@ -199,7 +199,7 @@ namespace RPBot
 "File:ChinoMask.png",
 "File:Chinopfp.jpg",
 "File:E2c503204a4db60f44cf753635d6f73b-png.jpg",
-"File:Asuka.JPG",
+"File:Asuka.jpg",
 "File:Joker7.png",
 "File:JokerDiana.png",
 "File:Joker18.png",
@@ -305,7 +305,7 @@ namespace RPBot
 "File:Wolfleader.png",
 "File:Wi_Eye.png",
 "File:SpiceOwner.png",
-"File:PI.jpg",
+"File:privateinvestigator.jpg",
 "File:Lyon.png",
 "File:Uzi.gif",
 "File:Tin_grenade.png",
@@ -335,7 +335,7 @@ namespace RPBot
 "File:Screenshot_6.png",
 "File:Screenshot_1.png",
 "File:Original.jpg",
-"File:O.png",
+"File:Ooo.png",
 "File:Project.jpg",
 "File:REDESIGNsmh.jpg",
 "File:Environment_concept_harbour_by_anarki3000-d2zcwda.jpg",
@@ -346,6 +346,7 @@ namespace RPBot
 "File:C20110907_sd2020_01_cs1w1_290x.png",
 "File:Aff46c8e0fe42f92ee43bee8310bb33a--art-and-illustration-illustrations.png",
 "File:Lark's_Goons.png",
+"File:Lark's_Blood_Transformation.png",
 "File:Rin.png",
 "File:Musa.png",
 "File:Lark7.png",
@@ -353,7 +354,6 @@ namespace RPBot
 "File:Lark5.png",
 "File:Lark4.png",
 "File:Haemokinetic_Constructs.gif",
-"File:Lark's_Blood_Transformation.png",
 "File:Lark3.png",
 "File:Lark2.png",
 "File:Lark1.png",
@@ -508,7 +508,7 @@ namespace RPBot
 "File:Nightmare.gif",
 "File:Nightmare_taking_his_mask_off.gif",
 "File:Nightmare.jpg",
-"File:X.png",
+"File:Xxx.png",
 "File:Mokusatsu.png",
 "File:Drystan.png",
 "File:Not_available.jpg",
@@ -525,7 +525,7 @@ namespace RPBot
 "File:Mai.jpg",
 "File:Kai.jpg",
 "File:EJwVzMsNwyAMANBdGAAT85HJNoggghQCws6p6u5tru_wPupZl9rVKTJ5Bzga57EOzTJWqkXXMepV0mys8-iQRFI-e7mFwW6OXDToYyCy6NH-yRvajMXgTMAQKELrbzPvqr4_vy8hzw.jpeg",
-"File:705204.jpg"
+"File:705204.jpg"*/
             };
 
         public static void InitWiki()
@@ -561,7 +561,7 @@ namespace RPBot
             WikiFields.Add("Enter Quirk Example text", example);
         }
 
-        [Command("testing")]
+        [Command("test")]
         public async Task TestAsync(CommandContext e, string characterName)
         {
             Wiki.Page page = new Wiki.Page(WikiSite);
@@ -645,14 +645,17 @@ namespace RPBot
             }
         }
 
-        [Command("aaa")]
+        [Command("uploadtest"), RequirePermissions(DSharpPlus.Permissions.Administrator)]
         public async Task aaa(CommandContext e)
         {
 
 
-            //          PageList p = new PageList(WikiSite);
-            //  foreach (string cat in categories) {
-            //   p.FillFromAllPages("", 0, true, 1000);
+            PageList p = new PageList(WikiSite);
+            p.FillAndLoadFromFiles("Pages");
+            // p.FillFromAllPages("", 0, true, 1000);
+            //p.LoadWithMetadata();
+            //p.SaveToFiles("Pages");
+            p.Save();
             //limit=500&user=&title=Special%3AListFiles&
             //        var x = WikiSite.GetApiQueryResult("user=", "title=Special:ListFiles", 1000);
 
@@ -662,15 +665,16 @@ namespace RPBot
             //WikiSite.fil
 
            // string[] images = Directory.GetFiles("Images");
-            int count = 0;
+           /* int count = 0;
             foreach (string imageName in images)
             {
+                
                 count++;
-                Wiki.Page l = new Wiki.Page(WikiSite, "File:" + imageName);
+                Wiki.Page l = new Wiki.Page(WikiSite, imageName);
                 l.UploadImageFromWeb("http://51.15.222.156/wiki/" + imageName.Replace("File:", ""), "N/A", "N/A", "N/A");
                 Console.WriteLine(count);
-                Console.ReadLine();
-            }
+            }*/
+            await e.RespondAsync("Done!");
         }
     }
 }

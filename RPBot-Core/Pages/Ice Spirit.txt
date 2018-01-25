@@ -1,0 +1,54 @@
+﻿{{Character
+|image = IceSpirit.jpg
+|civilian_name = Raven Satou
+|relatives = Ivy Satou (Mother, Deceased)
+
+Souma Satou (Father, Now Deceased)
+|affiliation = Hero
+|marital_status = [[V|In a Relationship]]
+|age = 24
+|date_of_birth = 7/6/1995
+|place_of_birth = London, UK
+|species = Human
+|gender = Female
+|height = 5'3, 160cm
+|weight = 115 lbs, 52 kg
+|hair_color = Dark Brown
+|eye_color = Icy Blue
+}}
+
+
+
+==Personality==
+A shy extrovert. She likes talking, but is often too shy to talk in large groups. Touched by romantic acts of pretty much any kind by her boyfriend, [[V]]incent. Her focus isn't awesome, so she's distracted by other things happening on the battlefield.
+
+==Backstory==
+Father has a form of Density Manipulation on himself. Mother had the ability to cool her hands like an ice pack. She would use them to cool fevers and nurse bruises. She was a pediatrician. Her father was who pushed her to become a hero despite her wishes to be a math teacher. Her father was the one who decided she was to attend the Hero Academy in London. She loved the thought of teaching the next generation, and found teaching to be very noble.  
+
+She earned a Bachelor of Arts, Mathematics Education and Bachelor of Science, Computer Information during the 4 years her father let her go to University before becoming a Pro. She became a hero as he wished but also took a part-time job as a humble cyber security personnel for Vincent’s company. 
+
+One day she found a major breach in Plasmius’s data holdings and when no one would believe her, she took it to the CEO, Vincent Plasmius. He charmed her and they started going out, unfortunately her father disapproved of his influence in her, with her mind less on heroism. They had a falling out and when Vincent’s job moved him to WayHaven after two years of dating, Raven went with him.
+==Resources==
+She works in the company that Vincent owns, Plasmius Enterprises, as the network security head and the pay is high
+
+===Equipment/Weaponry===
+Staff that she can make intangible with her.
+
+===Specializations===
+Computer whiz, about as smart as a professional programmer (which she is). Great at hand to hand combat, due to the physicality of her quirk
+
+==Quirk==
+[[w:c:powerlisting:Intangibility|Ghosting]]
+
+She, and anything she is holding, can ghost through tangible things, elements/energy bolts when she focuses. Due to her mother’s quirk her body temperature is naturally 1 degree Celsius lower, all temperature related medical information to her is relative to that. (The cold is her public quirk). The coldness does not do anything, if anything it messes with doctors, there is no combat benefit to this.
+
+===Drawbacks===
+
+If she loses focus she gets stuck, if she loses concentration in with her head middle of an object she blacks out for hour. She can’t phase through living objects, anything she can't control. Basically anything heavier or larger than she can carry than she can lift (like 30 lbs or 13 kg), more things than she can carry, anything that's struggling and moving, or anything that is too unweildy. Anything pushing these limits, deducts from her length of time she can stay phased (phasing a human takes away half her time).
+
+If she’d not paying attention, she can’t phase through things. (If someone snuck up behind her they could hit her through conventional means). She can stay phased for up to 5 turns (10 minutes) and it takes her 2 turns (4 minutes) to recover from that. If she stays phased for any shorter than 5 turns, it only takes 1 turn to recover.
+[[Category:Heroes]]
+[[Category:OC Heroes]]
+[[Category:OC]]
+[[Category:All Characters]]
+[[Category:Academy Staff]]

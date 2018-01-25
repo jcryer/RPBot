@@ -1,0 +1,20 @@
+﻿{{Character
+|image = Kai.jpg
+|civilian_name = Kai Tatsumaru
+|relatives = [[Mai|Mai Tatsumaru]] (sister)
+|affiliation = Academy Student 
+2nd Year Academy Student, 4th year(Post-time skip)
+|marital = 
+|gender = Male
+|age = 17
+|date_of_birth = 6/8/2002}}
+
+== Personality ==
+A brash, headstrong and cocky student who will do anything for and to protect his twin sister.
+
+== Quirk ==
+He was born with the [[w:c:powerlisting:Reptilian Physiology|properties of reptiles]], such as scaly skin, a long tongue etc.
+[[Category:NPC]]
+[[Category:NPC Academy Students]]
+[[Category:4th Year Student]]
+[[Category:All Characters]]

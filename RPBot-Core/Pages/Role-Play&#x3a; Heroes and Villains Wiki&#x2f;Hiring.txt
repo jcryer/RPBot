@@ -1,0 +1,35 @@
+﻿== Hiring ==
+Any person can hire another. Guilds tend to make missions for their members. Members tend to seek missions themselves by deciding to hunt/go after someone or something. Everything is done through Role-play. Most Guilds create Mission boards for the members. Players can also hire players.
+
+Guilds are paid more, however, Guilds have the agreements to take pay the members a percentage of the income they bring in from each mission and apply. If a member was paid $25,000, and his Guild got $50,000, an agreement of 50% profit dispersal would earn the player another $25,000.
+
+'''Name:''' Name of the mission. It does not have to be flashy.
+
+'''Rank:''' Using the list above give the rank of the mission. Interactive Missions are “B” Rank missions only. Events are “A” and “S” Rank missions only.
+
+'''IIC Length:''' Predetermined Inactive In Character. Players are allowed to skip posting order of a member who misses the deadline to post. This keeps missions from stalling and allows them to run smoothly. Average IIC length is 1 day.
+
+'''Difficulty:''' Missions are separated into 3 types of difficulty; easy, moderate, and hard. This allows players to determine if they wish to take the mission, and have an estimate of how difficult the mission will be.
+
+'''Objective:''' A brief explanation of what the mission consists of. The objective does not have to be more than a sentence long. Are you saving a princess? Are you destroying a dragon? Do you need to find a cat?
+
+'''Description:''' Step by step of what the mission is about. Give detailed information of what is expected for the mission to be a success.
+
+'''Reward:''' Use the list above in Mission Ranks and Rewards to determine the reward of the mission.
+
+'''<u>Template:</u>'''
+
+<nowiki>**</nowiki>Name:** 
+
+<nowiki>**</nowiki>Rank:** 
+
+<nowiki>**</nowiki>IIC Length:** 
+
+<nowiki>**</nowiki>Difficulty:** 
+
+<nowiki>**</nowiki>Objective:** 
+
+<nowiki>**</nowiki>Description:**  
+
+<nowiki>**</nowiki>Reward:** 
+[[Category:Main Page]]

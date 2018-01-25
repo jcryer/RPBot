@@ -1,0 +1,25 @@
+﻿<p style="text-align:right;">{{Roleplay Info W/ Age (Revised)
+|title1=Jairophyll
+|image1=[[File:942b1b6fbc3e6e9e594aac064795cf38--character-concept-art-character-design.png|thumb]]
+|civilian_name=Jairo Jade
+|relatives=Orphan
+|affiliation=Hero
+|marital_status=Single
+|age=28
+|date_of_birth=?/?/1991
+|place_of_birth=WayHaven
+|species=Mutant
+|gender=Male
+|height=6"1
+|weight=141 lbs
+|eye_color=Brown
+}}</p>
+==​Mentality==
+Nonchalant, dispassionate and anti-hero-like. He prefers to avoid altercations only taking part when he will benefit from it.
+==​Quirk==
+Plant physiology(yes, a sentient plant)
+==​History==
+Orpaned before he was old enough to see, he grew up feeling alone and bullied. Graduated WHA as a hot prospect and despite his personality, is one who many respect and fear.
+[[Category:NPC]]
+[[Category:NPC Heroes]]
+[[Category:Heroes]]
