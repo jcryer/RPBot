@@ -37,10 +37,14 @@ namespace RPBot
                     case 3:
                         await UpdatePlayerRanking(e.Guild, 3);
                         break;
+                    case 4:
+                        await UpdatePlayerRanking(e.Guild, 4);
+                        break;
                     case 0:
                         await UpdatePlayerRanking(e.Guild, 1);
                         await UpdatePlayerRanking(e.Guild, 2);
                         await UpdatePlayerRanking(e.Guild, 3);
+                        await UpdatePlayerRanking(e.Guild, 4);
                         break;
                 }
                 await e.RespondAsync("Stat changed.");
@@ -50,8 +54,7 @@ namespace RPBot
         public async Task Update(CommandContext e)
         {
             await AddOrUpdateUsers(e.Guild, true);
-            SaveData(-1);
-
+            await e.RespondAsync("Done!");
         }
         
         [Command("bulk"), Description("Staff command to give multiple people XP (Better for bot).")]
@@ -73,6 +76,8 @@ namespace RPBot
                     await UpdatePlayerRanking(e.Guild, 1);
                     await UpdatePlayerRanking(e.Guild, 2);
                     await UpdatePlayerRanking(e.Guild, 3);
+                    await UpdatePlayerRanking(e.Guild, 4);
+
                     await e.RespondAsync("Stats updated.");
                 }
                 else
@@ -100,6 +105,8 @@ namespace RPBot
                 await UpdatePlayerRanking(e.Guild, 1);
                 await UpdatePlayerRanking(e.Guild, 2);
                 await UpdatePlayerRanking(e.Guild, 3);
+                await UpdatePlayerRanking(e.Guild, 4);
+
                 await e.RespondAsync("Stats updated.");
             }
         }
@@ -119,13 +126,16 @@ namespace RPBot
             List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
 
             SortedUsers = Users.OrderByDescending(x => x.Xp).ToList();
-            
-            List<DiscordMessage> msgs = new List<DiscordMessage>(await c.GetMessagesAroundAsync(c.LastMessageId, 5));
-            foreach (DiscordMessage msg in msgs)
+            try
             {
-                await msg.DeleteAsync();
-                await Task.Delay(500);
+                List<DiscordMessage> msgs = new List<DiscordMessage>(await c.GetMessagesAsync(100));
+                foreach (DiscordMessage msg in msgs)
+                {
+                    await msg.DeleteAsync();
+                    await Task.Delay(500);
+                }
             }
+            catch { }
             foreach (UserObject.RootObject user in SortedUsers)
             {
                 if (user.Xp > 0)
@@ -148,16 +158,19 @@ namespace RPBot
 
             if (type == 2) RankingChannel = RPClass.VillainRankingChannel;
             else if (type == 3) RankingChannel = RPClass.RogueRankingChannel;
+            else if (type == 4) RankingChannel = RPClass.AcademyRankingChannel;
 
-			int longestName = 0;
+            int longestName = 0;
+            var l = Users;
             if (type == 1) longestName = Users.Where(x => x.UserData.Role == 1).Max(x => x.UserData.Username.Length) + 1;
             else if (type == 2) longestName = Users.Where(x => x.UserData.Role == 2).Max(x => x.UserData.Username.Length) + 1;
             else if (type == 3) longestName = Users.Where(x => x.UserData.Role == 3).Max(x => x.UserData.Username.Length) + 1;
-            
+            else if (type == 4) longestName = Users.Where(x => x.UserData.Role == 4).Max(x => x.UserData.Username.Length) + 1;
+
             int longestCount = 5;
 			int longestStatus = 7;
 			int longestStats = 7;
-            if (type == 3) longestStats = 13;
+            if (type == 3 || type == 4) longestStats = 13;
             int longestGuild = 6;
             if (Guilds.Any()) longestGuild = Guilds.Max(x => x.Name.Length) + 1;
 
@@ -176,23 +189,25 @@ namespace RPBot
 			if (type == 1) SortedUsers = Users.Where(x => x.UserData.Role == 1).OrderByDescending(x => (x.Xp)).ToList();
 			else if (type == 2) SortedUsers = Users.Where(x => x.UserData.Role == 2).OrderByDescending(x => (x.Xp)).ToList();
             else if (type == 3) SortedUsers = Users.Where(x => x.UserData.Role == 3).OrderByDescending(x => (x.Xp)).ToList();
+            else if (type == 4) SortedUsers = Users.Where(x => x.UserData.Role == 4).OrderByDescending(x => (x.Xp)).ToList();
+
             try
             {
-                List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAroundAsync(RankingChannel.LastMessageId, 100));
+                List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAsync(100));
                 foreach (DiscordMessage msg in msgs)
                 {
                     await msg.DeleteAsync();
+                    await Task.Delay(500);
                 }
             }
             catch { }
-
             int countNum = 1;
 			foreach (UserObject.RootObject user in SortedUsers)
 			{
                 string UserStats = "";
                 if (type == 1) UserStats += user.UserData.ResolvedCases;
                 else if (type == 2) UserStats += user.UserData.CrimesCommitted;
-                else if (type == 3) UserStats += user.UserData.ResolvedCases + user.UserData.CrimesCommitted;
+                else if (type == 3 || type == 4) UserStats += user.UserData.ResolvedCases + user.UserData.CrimesCommitted;
 
                 int rank = user.Xp;
                 string UserRank = "S1";
@@ -265,15 +280,16 @@ namespace RPBot
                 }
             }
             List<GuildObject.RootObject> SortedGuilds = GuildsNew.OrderByDescending(x => x.UserIDs[0]).ToList();
-            try { 
-                List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAroundAsync(RankingChannel.LastMessageId, 100));
+            try
+            {
+                List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAsync(100));
                 foreach (DiscordMessage msg in msgs)
                 {
                     await msg.DeleteAsync();
+                    await Task.Delay(500);
                 }
             }
             catch { }
-
             int countNum = 1;
             foreach (GuildObject.RootObject guild in SortedGuilds)
             {

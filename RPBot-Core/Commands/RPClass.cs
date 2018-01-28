@@ -30,6 +30,7 @@ namespace RPBot
         public static DiscordChannel PlayerRankingChannel;
         public static DiscordChannel VillainRankingChannel;
         public static DiscordChannel RogueRankingChannel;
+        public static DiscordChannel AcademyRankingChannel;
         public static DiscordChannel StatsChannel;
         public static DiscordChannel ApprovalsCategory;
         public static DiscordChannel InstanceCategory;
@@ -38,6 +39,7 @@ namespace RPBot
         public static DiscordRole HelpfulRole;
         public static DiscordRole PunishedRole;
         public static DiscordGuild RPGuild;
+        public static Extensions.SlidingBuffer<KeyValuePair<ulong, string>> MessageBuffer = new Extensions.SlidingBuffer<KeyValuePair<ulong, string>>(500);
 
         public static bool Restarted = false;
 
@@ -99,12 +101,6 @@ namespace RPBot
             {
                 List<UserObject.RootObject> input = JsonConvert.DeserializeObject<List<UserObject.RootObject>>(File.ReadAllText("Data/UserData.txt"));
                 Users = input;
-                var ListToDelete = new List<UserObject.RootObject>();
-                foreach (UserObject.RootObject r in Users)
-                {
-                    if (r.Xp <= 250) ListToDelete.Add(r);
-                }
-                if (ListToDelete.Any()) Users.RemoveAll(x => ListToDelete.Contains(x));
             }
             TriviaClass.TriviaList = Directory.GetFiles("trivia/").ToList();
             for (int i = 0; i < TriviaClass.TriviaList.Count; i++)
@@ -151,17 +147,28 @@ namespace RPBot
             foreach (DiscordMember user in AllUsers)
             {
                 int role = 0;
-                if (user.Roles.Any(x => x.Id == 312980663638818817 || x.Id == 312981984790052866 || x.Id == 312980292086530048))
+                /*312980663638818817 = Pro Hero
+                 * 312981984790052866 = Sidekick
+                 * 312980292086530048 = Academy Student
+                 312982325908471808 = Villain
+                 317915877775245312 = Rogue
+                 
+                 */
+                if (user.Roles.Any(x => x.Id == 312980663638818817))
                 {
                     role = 1;
                 }
-                else if (user.Roles.Any(x => x.Id == 312982325908471808 || x.Id == 312982262310502401))
+                else if (user.Roles.Any(x => x.Id == 312982325908471808))
                 {
                     role = 2;
                 }
                 else if (user.Roles.Any(x => x.Id == 317915877775245312))
                 {
                     role = 3;
+                }
+                else if (user.Roles.Any(x => x.Id == 312981984790052866 || x.Id == 312980292086530048))
+                {
+                    role = 4;
                 }
                 if (!Users.Any(x => x.UserData.UserID == user.Id))
                 {
@@ -183,6 +190,7 @@ namespace RPBot
                 await XPClass.UpdatePlayerRanking(guild, 1);
                 await XPClass.UpdatePlayerRanking(guild, 2);
                 await XPClass.UpdatePlayerRanking(guild, 3);
+                await XPClass.UpdatePlayerRanking(guild, 4);
 
             }
             SaveData(-1);
@@ -194,6 +202,7 @@ namespace RPBot
             List<DiscordChannel> RPChannels = new List<DiscordChannel>(await e.Guild.GetChannelsAsync());
             DiscordChannel AnnouncementChannel = RPChannels.First(x => x.Id == 312918289988976653);
             DateTime y = DateTime.UtcNow.AddHours(-4);
+
             while (true)
             {
 				await d.UpdateStatusAsync(new DiscordActivity("Time pass: " + DateTime.UtcNow.Hour + ":" + DateTime.UtcNow.Minute.ToString("00"), ActivityType.Watching)); 
@@ -218,9 +227,16 @@ namespace RPBot
                     TimePhase = "It is now dusk, on " + DateTime.UtcNow.DayOfWeek;
                     y = DateTime.UtcNow;
                     await AnnouncementChannel.SendMessageAsync(TimePhase);
-                    
                 }
 
+                else if (DateTime.UtcNow.Minute == 0 && (DateTime.UtcNow.Hour == 0 || DateTime.UtcNow.Hour == 24) && y.AddHours(2) < DateTime.UtcNow)
+                {
+
+                    TimePhase = "It is now midnight, on " + DateTime.UtcNow.DayOfWeek;
+                    y = DateTime.UtcNow;
+                    await AnnouncementChannel.SendMessageAsync(TimePhase);
+
+                }
                 await Task.Delay(45000);
             }
         }

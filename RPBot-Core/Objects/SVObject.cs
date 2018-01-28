@@ -25,6 +25,7 @@ namespace RPBot
             return source.OrderBy(x => Guid.NewGuid());
         }
     }
+
     class SVObject
     {
         public class VoteObject

@@ -25,10 +25,10 @@ namespace RPBot
             List<LogObject.Message> logObjectList = new List<LogObject.Message>();
 
             int iter = 1;
-            messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(e.Message.Id, 100));
+            messageList.AddRange(await e.Channel.GetMessagesAsync(100));
             while (true)
             {
-                messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last().Id, 100));
+                messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last(), 100));
 
                 if (messageList.Count != (100 * iter))
                 {
@@ -115,12 +115,12 @@ namespace RPBot
             List<LogObject.Message> logObjectList = new List<LogObject.Message>();
 
             int iter = 1;
-            messageList.AddRange(await e.Channel.GetMessagesAfterAsync(messageId, 100));
+            messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(await e.Channel.GetMessageAsync(messageId), 100));
             if (messageList.Count == 100)
             {
                 while (true)
                 {
-                    messageList.AddRange(await e.Channel.GetMessagesAfterAsync(messageList.First().Id, 100));
+                    messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last(), 100));
 
                     if (messageList.Count != (100 * iter))
                     {

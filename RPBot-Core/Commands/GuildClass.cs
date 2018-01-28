@@ -34,6 +34,9 @@ namespace RPBot
                 Guilds.Remove(Guilds.First(x => x.Name == guildName));
                 await XPClass.UpdatePlayerRanking(e.Guild, 1);
                 await XPClass.UpdatePlayerRanking(e.Guild, 2);
+                await XPClass.UpdatePlayerRanking(e.Guild, 3);
+                await XPClass.UpdatePlayerRanking(e.Guild, 4);
+
                 await XPClass.UpdateGuildRanking(e.Guild);
 
                 SaveData(3);
@@ -87,6 +90,9 @@ namespace RPBot
                 Users.First(x => x.UserData.UserID == user.Id).UserData.GuildID = Guilds.First(x => x.Name == guildName).Id;
                 if (Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
                 else if (Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
+                else if (Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 3) await XPClass.UpdatePlayerRanking(e.Guild, 3);
+                else if (Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 4) await XPClass.UpdatePlayerRanking(e.Guild, 4);
+
                 await XPClass.UpdateGuildRanking(e.Guild);
                 SaveData(3);
                 SaveData(1);
@@ -108,6 +114,9 @@ namespace RPBot
                 Users.First(x => x.UserData.UserID == user.Id).UserData.GuildID = 0;
                 if (Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
                 else if (Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
+                else if (Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 3) await XPClass.UpdatePlayerRanking(e.Guild, 3);
+                else if (Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 4) await XPClass.UpdatePlayerRanking(e.Guild, 4);
+
                 await XPClass.UpdateGuildRanking(e.Guild);
 
                 SaveData(3);

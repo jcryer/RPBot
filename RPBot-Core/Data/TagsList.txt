@@ -12,7 +12,7 @@
     "Content": "https://cdn.discordapp.com/attachments/369971498074505234/392424745779462146/20171218_161528.png"
   },
   {
-    "Name": "omg",
-    "Content": "http://i0.kym-cdn.com/photos/images/original/000/972/842/1aa.gif"
+    "Name": "xpbroke",
+    "Content": "Okay fuckos, let's sit down and learn a lesson here.\n1. No, your xp is not broken.\n2. Shut up, no it's not.\n3. No, the bot isn't buggy.\n\nJ.C. has two versions of the bot code. One version sits on a server far away from him and lives out it's life there, listening and replying to you idiots. The *other* version sits on his computer, and is only used when he adds something new to the bot! \n\nThe version that is always used has the latest data on all of your stats! The version that is on his computer has old versions of the stats ;(\n\nWhen he runs the bot from his computer, the bot prints the old version of the stats. However, as soon as he moves the new awesome code to the server, it will use the new, updated version of the stats! Yay! \n\nLEAVE HIM ALONE."
   }
 ]
