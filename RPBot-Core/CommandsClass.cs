@@ -441,7 +441,7 @@ namespace RPBot
             await e.RespondAsync(retVal);
         }
 
-        [Command("say"), Description("Tell the bot what to say"), RequirePermissions(Permissions.ManageChannels)]
+        [Command("say"), Description("Tell the bot what to say"), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Say(CommandContext e, [RemainingText, Description("What to say?")] string text)
         {
             await e.RespondAsync(text);
@@ -449,7 +449,7 @@ namespace RPBot
         }
 
 
-        [Command("embed"), Description("Allows you to make the bot say messages in an embed\n**Usage:**\n`!embed <Title>:<Description>:<Field 1 Title>:<Field 1 Description>:` etc."), RequirePermissions(Permissions.ManageChannels)]
+        [Command("embed"), Description("Allows you to make the bot say messages in an embed\n**Usage:**\n`!embed <Title>:<Description>:<Field 1 Title>:<Field 1 Description>:` etc."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Embed(CommandContext e, [RemainingText, Description("What to say?")] string text)
         {
             DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
@@ -477,7 +477,7 @@ namespace RPBot
             await e.Message.DeleteAsync();
         }
 
-        [Command("sayall"), Description("Makes the bot delete all messages in a channel (the channel the command is used in) and repost them."), RequirePermissions(Permissions.Administrator)]
+        [Command("sayall"), Description("Makes the bot delete all messages in a channel (the channel the command is used in) and repost them."), RequireRoles(RoleCheckMode.Any, "Administrator")]
         public async Task SayAll(CommandContext e, string whattodelete = "", string whattosetto = "")
         {
             await e.Message.DeleteAsync();

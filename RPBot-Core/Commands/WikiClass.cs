@@ -324,7 +324,7 @@ namespace RPBot
             await embedMessage.DeleteAsync();
         }
 
-        [Command("uploadtest"), RequirePermissions(DSharpPlus.Permissions.Administrator)]
+        [Command("uploadtest"), RequireRoles(RoleCheckMode.Any, "Administrator")]
         public async Task aaa(CommandContext e)
         {
 
