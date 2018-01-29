@@ -60,7 +60,7 @@ namespace RPBot
         }
 
         [Group("slowmode"), Description("Slowmode commands")]
-        class Slowmode
+        class Slowmode : BaseCommandModule
         {
             [Command("on"), Description("Admin command to make OOC chill tf out"), RequireRoles(RoleCheckMode.Any, "Administrator")]
             public async Task On(CommandContext e, [Description("Amount of time required between each message (seconds)")] int limitTime)
@@ -218,7 +218,7 @@ namespace RPBot
         }
 
         [Group("purge", CanInvokeWithoutSubcommand = true), Aliases("p"), RequireRoles(RoleCheckMode.Any, "Staff")]
-        class Purge
+        class Purge : BaseCommandModule
         {
             [Description("Delete an amount of messages from the current channel.")]
             public async Task ExecuteGroupAsync(CommandContext ctx, [Description("Amount of messages to remove (max 100)")]int limit = 50,
@@ -566,7 +566,7 @@ namespace RPBot
         }
 
         [Group("approval"), Description("Approval commands")]
-        class ApprovalClass
+        class ApprovalClass : BaseCommandModule
         {
             [Command("add"), Description("Command to create a new approval instance."), RequireRoles(RoleCheckMode.Any, "Staff")]
             public async Task AddApproval(CommandContext e, [Description("Mention the user you will be approving.")]DiscordMember m)
@@ -609,7 +609,7 @@ namespace RPBot
         }
 
         [Group("emoji", CanInvokeWithoutSubcommand = true), Aliases("e"), Description("Approval commands")]
-        class EmojiClass
+        class EmojiClass : BaseCommandModule
         {
             public async Task ExecuteGroupAsync(CommandContext e, [RemainingText] string emoji)
             {
