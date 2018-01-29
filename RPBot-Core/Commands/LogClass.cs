@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    class LogClass : RPClass
+    class LogClass : BaseCommandModule
     {
         [Command("log"), Description("Admin log command (testing)"), RequireRoles(RoleCheckMode.Any, "Staff")]
         [Hidden]
@@ -28,7 +28,7 @@ namespace RPBot
             messageList.AddRange(await e.Channel.GetMessagesAsync(100));
             while (true)
             {
-                messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last(), 100));
+                messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last().Id, 100));
 
                 if (messageList.Count != (100 * iter))
                 {
@@ -108,19 +108,19 @@ namespace RPBot
 
         [Command("logfrom"), Description("Admin log command (testing)"), RequireRoles(RoleCheckMode.Any, "Staff")]
         [Hidden]
-        public async Task LogFrom(CommandContext e, ulong messageId, [RemainingText, Description("Description of the log")] string desc)
+        public async Task LogFrom(CommandContext e, DiscordMessage msg, [RemainingText, Description("Description of the log")] string desc)
         {
             await e.Message.DeleteAsync();
             List<DiscordMessage> messageList = new List<DiscordMessage>();
             List<LogObject.Message> logObjectList = new List<LogObject.Message>();
 
             int iter = 1;
-            messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(await e.Channel.GetMessageAsync(messageId), 100));
+            messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(msg.Id, 100));
             if (messageList.Count == 100)
             {
                 while (true)
                 {
-                    messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last(), 100));
+                    messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last().Id, 100));
 
                     if (messageList.Count != (100 * iter))
                     {

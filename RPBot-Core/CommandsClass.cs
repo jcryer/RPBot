@@ -20,7 +20,7 @@ using System.Net.Http;
 
 namespace RPBot
 {
-    class CommandsClass : RPClass
+    class CommandsClass : BaseCommandModule
     {
         [Command("roll"), Description("Dice roll command!")]
         public async Task Roll(CommandContext e, [Description("Number of sides of the dice")] int numSides = 0, [Description("Number of rolls to do")] int numRolls = 0)
@@ -38,7 +38,7 @@ namespace RPBot
                 string ans = name + " rolled: (";
                 for (int i = 0; i < numRolls; i++)
                 {
-                    int roll = random.Next(1, numSides + 1);
+                    int roll = RPClass.Random.Next(1, numSides + 1);
                     total += roll;
                     ans += roll + "+";
                 }
@@ -55,7 +55,7 @@ namespace RPBot
         public async Task Choose(CommandContext e, [Description("List of variables separated by commas.")] string choiceList)
         {
             string[] Choices = choiceList.Split(',');
-            int randomChoice = random.Next(0, Choices.Length);
+            int randomChoice = RPClass.Random.Next(0, Choices.Length);
             await e.RespondAsync("Hmm. I choose... " + Choices[randomChoice]);
         }
 
@@ -65,14 +65,14 @@ namespace RPBot
             [Command("on"), Description("Admin command to make OOC chill tf out"), RequireRoles(RoleCheckMode.Any, "Administrator")]
             public async Task On(CommandContext e, [Description("Amount of time required between each message (seconds)")] int limitTime)
             {
-                slowModeTime = limitTime;
+                RPClass.slowModeTime = limitTime;
                 await e.RespondAsync("Slowmode activated, with " + limitTime + " seconds between each message.");
             }
 
             [Command("off"), Description("Admin command to disable slow mode"), RequireRoles(RoleCheckMode.Any, "Administrator")]
             public async Task Off(CommandContext e)
             {
-                slowModeTime = -1;
+                RPClass.slowModeTime = -1;
                 await e.RespondAsync("Slowmode disabled.");
             }
         }
@@ -225,7 +225,7 @@ namespace RPBot
                 [Description("Amount of messages to skip")]int skip = 0)
             {
                 var i = 0;
-                var ms = await ctx.Channel.GetMessagesBeforeAsync(ctx.Message, limit);
+                var ms = await ctx.Channel.GetMessagesAsync(limit);
                 var deletThis = new List<DiscordMessage>();
                 foreach (var m in ms)
                 {
@@ -246,7 +246,7 @@ namespace RPBot
             public async Task PurgeFromAsync(CommandContext ctx, [Description("Message to delete from")]DiscordMessage message,
             [Description("Amount of messages to remove (max 100)")]int limit = 50)
             {
-                var ms = await ctx.Channel.GetMessagesBeforeAsync(message, limit);
+                var ms = await ctx.Channel.GetMessagesBeforeAsync(message.Id, limit);
                 await ctx.Channel.DeleteMessagesAsync(ms);
                 await Task.Delay(2000);
                 await ctx.Message.DeleteAsync();
@@ -257,7 +257,7 @@ namespace RPBot
                 [Description("Message to delete to (furthest message)")]DiscordMessage to)
             {
                 var deletThis = new List<DiscordMessage>();
-                var ms = (await ctx.Channel.GetMessagesBeforeAsync(from, 100));
+                var ms = (await ctx.Channel.GetMessagesBeforeAsync(from.Id, 100));
                 bool found = false;
                 while (true)
                 {
@@ -276,7 +276,7 @@ namespace RPBot
                     }
                     if (found == true)
                         break;
-                    ms = await ctx.Channel.GetMessagesBeforeAsync(deletThis.Last(), 100);
+                    ms = await ctx.Channel.GetMessagesBeforeAsync(deletThis.Last().Id, 100);
 
                 }
                 if (found)
@@ -302,7 +302,7 @@ namespace RPBot
             [Description("Amount of messages to remove (max 100)")]int limit = 50, [Description("Amount of messages to skip")]int skip = 0)
             {
                 var i = 0;
-                var ms = await ctx.Channel.GetMessagesBeforeAsync(ctx.Message, limit);
+                var ms = await ctx.Channel.GetMessagesAsync(limit);
                 var deletThis = new List<DiscordMessage>();
                 foreach (var m in ms)
                 {
@@ -323,7 +323,7 @@ namespace RPBot
             [Command("commands"), Description("Purge RPBot's messages."), Aliases("c", "self", "own", "clean")]
             public async Task CleanAsync(CommandContext ctx)
             {
-                var ms = await ctx.Channel.GetMessagesBeforeAsync(ctx.Message, 100);
+                var ms = await ctx.Channel.GetMessagesAsync();
                 var deletThis = ms.Where(m => m.Author.Id == ctx.Client.CurrentUser.Id || m.Content.StartsWith("!"))
                     .ToList();
                 if (deletThis.Any())
@@ -337,7 +337,7 @@ namespace RPBot
             [Command("bots"), Description("Purge messages from all bots in this channel"), Aliases("b", "bot")]
             public async Task PurgeBotsAsync(CommandContext ctx)
             {
-                var ms = await ctx.Channel.GetMessagesBeforeAsync(ctx.Message, 100);
+                var ms = await ctx.Channel.GetMessagesAsync();
                 var deletThis = ms.Where(m => m.Author.IsBot || m.Content.StartsWith("!"))
                     .ToList();
                 if (deletThis.Any())
@@ -351,7 +351,7 @@ namespace RPBot
             [Command("images"), Description("Purge messages with images or attachments on them."), Aliases("i", "imgs", "img")]
             public async Task PurgeImagesAsync(CommandContext ctx)
             {
-                var ms = await ctx.Channel.GetMessagesBeforeAsync(ctx.Message, 100);
+                var ms = await ctx.Channel.GetMessagesAsync();
                 Regex ImageRegex = new Regex(@"\.(png|gif|jpg|jpeg|tiff|webp)");
                 var deleteThis = ms.Where(m => ImageRegex.IsMatch(m.Content) || m.Attachments.Any()).ToList();
                 if (deleteThis.Any())
@@ -366,7 +366,7 @@ namespace RPBot
         [Command("restart"),  Description("Admin restart command"), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Restart(CommandContext e)
         {
-            SaveData(-1);
+            RPClass.SaveData(-1);
             var process = new Process()
             {
                 StartInfo = new ProcessStartInfo
@@ -387,7 +387,7 @@ namespace RPBot
         public async Task Update(CommandContext e)
         {
             await e.RespondAsync("Restarting. Wish me luck!");
-            SaveData(-1);
+            RPClass.SaveData(-1);
             var process = new Process()
             {
                 StartInfo = new ProcessStartInfo
@@ -484,10 +484,10 @@ namespace RPBot
             List<DiscordMessage> messageList = new List<DiscordMessage>();
 
             int iter = 1;
-            messageList.AddRange(await e.Channel.GetMessagesAsync(100));
+            messageList.AddRange(await e.Channel.GetMessagesAsync());
             while (true)
             {
-                messageList.AddRange(await e.Channel.GetMessagesAsync(100));
+                messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last().Id, 100));
 
                 if (messageList.Count != (100 * iter))
                 {
@@ -519,12 +519,12 @@ namespace RPBot
         [Command("removeuser"), Description("Makes the bot delete a user that has left the server (Name in statsheets, copied exactly)."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task RemoveUser(CommandContext e, [RemainingText] string whotodelete = "")
         {
-            if (Users.Any(x => x.UserData.Username == whotodelete))
+            if (RPClass.Users.Any(x => x.UserData.Username == whotodelete))
             {
-                UserObject.RootObject user = Users.First(x => x.UserData.Username == whotodelete);
-                Users.Remove(user);
-                Guilds.First(x => x.Id == user.UserData.GuildID).UserIDs.Remove(user.UserData.UserID);
-                SaveData(-1);
+                UserObject.RootObject user = RPClass.Users.First(x => x.UserData.Username == whotodelete);
+                RPClass.Users.Remove(user);
+                RPClass.Guilds.First(x => x.Id == user.UserData.GuildID).UserIDs.Remove(user.UserData.UserID);
+                RPClass.SaveData(-1);
                 await e.RespondAsync("User removed.");
             }
             else
@@ -573,13 +573,13 @@ namespace RPBot
             {
                 Regex rgx = new Regex("[^a-zA-Z0-9-]");
                 string name = rgx.Replace(m.DisplayName, "");
-                DiscordChannel c = await e.Guild.CreateChannelAsync(name, ChannelType.Text, parent: ApprovalsCategory);
+                DiscordChannel c = await e.Guild.CreateChannelAsync(name, ChannelType.Text, parent: RPClass.ApprovalsCategory);
                 await c.AddOverwriteAsync(m, Permissions.SendMessages, Permissions.None);
                 await c.AddOverwriteAsync(e.Guild.EveryoneRole, Permissions.ReadMessageHistory, Permissions.SendMessages);
 
-                approvalsList.Add(c.Id, m.Id);
+                RPClass.approvalsList.Add(c.Id, m.Id);
 
-                SaveData(8);
+                RPClass.SaveData(8);
                 await e.RespondAsync("Approval instance created.");
             }
 
@@ -589,22 +589,22 @@ namespace RPBot
 
                 if (m != null)
                 {
-                    if (approvalsList.ContainsValue(m.Id))
+                    if (RPClass.approvalsList.ContainsValue(m.Id))
                     {
-                        DiscordChannel d = e.Guild.GetChannel(approvalsList.First(x => x.Value == m.Id).Key);
-                        approvalsList.Remove(d.Id);
+                        DiscordChannel d = e.Guild.GetChannel(RPClass.approvalsList.First(x => x.Value == m.Id).Key);
+                        RPClass.approvalsList.Remove(d.Id);
                         await d.DeleteAsync();
                     }
                 }
                 else
                 {
-                    if (approvalsList.ContainsKey(e.Channel.Id))
+                    if (RPClass.approvalsList.ContainsKey(e.Channel.Id))
                     {
                         await e.Channel.DeleteAsync();
-                        approvalsList.Remove(e.Channel.Id);
+                        RPClass.approvalsList.Remove(e.Channel.Id);
                     }
                 }
-                SaveData(8);
+                RPClass.SaveData(8);
             }
         }
 

@@ -6,6 +6,8 @@
       "Role": 1,
       "Status": 1,
       "Money": 1560000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 201,
       "GuildID": 0
@@ -19,10 +21,12 @@
   {
     "UserData": {
       "UserID": 124924700781576192,
-      "Username": "Amari Nile 🍫",
-      "Role": 4,
+      "Username": "Amari Nile",
+      "Role": 1,
       "Status": 1,
       "Money": 997000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -40,6 +44,8 @@
       "Role": 3,
       "Status": 1,
       "Money": 670000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -57,6 +63,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 2,
       "GuildID": 0
@@ -74,6 +82,8 @@
       "Role": 1,
       "Status": 1,
       "Money": 150000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -88,9 +98,11 @@
     "UserData": {
       "UserID": 190986345265496064,
       "Username": "Aki",
-      "Role": 4,
+      "Role": 1,
       "Status": 1,
       "Money": 520000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -105,9 +117,11 @@
     "UserData": {
       "UserID": 198458539046338560,
       "Username": "Psion",
-      "Role": 4,
+      "Role": 1,
       "Status": 1,
       "Money": 724500,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 2,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -125,6 +139,8 @@
       "Role": 1,
       "Status": 1,
       "Money": 200000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 100,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -142,6 +158,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 72500,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -159,6 +177,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 698739,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 17,
       "GuildID": 2
@@ -176,6 +196,8 @@
       "Role": 1,
       "Status": 1,
       "Money": 80000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -190,9 +212,11 @@
     "UserData": {
       "UserID": 273996974813085696,
       "Username": "Kinetico",
-      "Role": 4,
+      "Role": 1,
       "Status": 1,
       "Money": 669500,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -210,6 +234,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 44000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 6,
       "GuildID": 0
@@ -223,10 +249,12 @@
   {
     "UserData": {
       "UserID": 199996479161630720,
-      "Username": "Doting Baron ⚔",
+      "Username": "Doting Baron",
       "Role": 1,
       "Status": 1,
       "Money": 35601,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 4,
       "CrimesCommitted": 0,
       "GuildID": 1
@@ -240,10 +268,12 @@
   {
     "UserData": {
       "UserID": 315318484022067202,
-      "Username": "Violetta",
+      "Username": "Yako",
       "Role": 3,
       "Status": 1,
       "Money": 271200,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 1,
       "GuildID": 0
@@ -261,6 +291,8 @@
       "Role": 3,
       "Status": 1,
       "Money": 45266,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 1,
       "GuildID": 0
@@ -278,6 +310,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 2000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -291,10 +325,12 @@
   {
     "UserData": {
       "UserID": 237928154273021952,
-      "Username": "Essence/Vengeance",
-      "Role": 1,
+      "Username": "Savitar",
+      "Role": 2,
       "Status": 1,
       "Money": 4000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 2,
       "CrimesCommitted": 0,
       "GuildID": 1
@@ -312,6 +348,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 150000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -325,10 +363,12 @@
   {
     "UserData": {
       "UserID": 286222030997684226,
-      "Username": "Sargeras",
-      "Role": 2,
+      "Username": "StarForger",
+      "Role": 1,
       "Status": 1,
       "Money": 54500,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 2,
       "CrimesCommitted": 1,
       "GuildID": 2
@@ -346,6 +386,8 @@
       "Role": 3,
       "Status": 1,
       "Money": 20000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -359,10 +401,12 @@
   {
     "UserData": {
       "UserID": 369622772684685324,
-      "Username": "Vulcan 🌋",
+      "Username": "Tenebris",
       "Role": 1,
       "Status": 1,
       "Money": 20000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 1
@@ -380,6 +424,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 10000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -394,9 +440,11 @@
     "UserData": {
       "UserID": 371732151797940224,
       "Username": "GL!TCH",
-      "Role": 4,
+      "Role": 1,
       "Status": 1,
       "Money": 5000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -410,10 +458,12 @@
   {
     "UserData": {
       "UserID": 362875280467165184,
-      "Username": "Tasha Ramanez 😈",
-      "Role": 3,
+      "Username": "Golden Dragon (Alexander)",
+      "Role": 1,
       "Status": 1,
       "Money": 50000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -427,10 +477,12 @@
   {
     "UserData": {
       "UserID": 322120939850563584,
-      "Username": "White Star",
+      "Username": "Shadow Star",
       "Role": 3,
       "Status": 1,
       "Money": 10500,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 3,
       "GuildID": 0
@@ -448,6 +500,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 27000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -465,6 +519,8 @@
       "Role": 3,
       "Status": 1,
       "Money": 100451,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -478,10 +534,12 @@
   {
     "UserData": {
       "UserID": 245774738050252803,
-      "Username": "Ice Spirit 🕊",
+      "Username": "Ice Spirit",
       "Role": 1,
       "Status": 1,
       "Money": 10000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -495,10 +553,12 @@
   {
     "UserData": {
       "UserID": 365185286977749002,
-      "Username": "Celsius ❄",
+      "Username": "Celsius",
       "Role": 1,
       "Status": 1,
       "Money": 5000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 1
@@ -512,10 +572,12 @@
   {
     "UserData": {
       "UserID": 265339750792167434,
-      "Username": "Ayre",
-      "Role": 3,
+      "Username": "Bermuda",
+      "Role": 2,
       "Status": 1,
       "Money": 5000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 1,
       "GuildID": 0
@@ -529,10 +591,12 @@
   {
     "UserData": {
       "UserID": 366410578388058113,
-      "Username": "Orion ☯",
+      "Username": "Orion",
       "Role": 1,
       "Status": 1,
       "Money": 78191,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 3,
       "CrimesCommitted": 0,
       "GuildID": 1
@@ -550,6 +614,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 1500,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 1,
       "GuildID": 2
@@ -567,6 +633,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 100000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -584,6 +652,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 27000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -601,6 +671,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 2000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -618,6 +690,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 3800,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 1,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -635,6 +709,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 69500,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 2,
       "GuildID": 2
@@ -652,6 +728,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -669,6 +747,8 @@
       "Role": 3,
       "Status": 1,
       "Money": 50000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -686,6 +766,8 @@
       "Role": 1,
       "Status": 1,
       "Money": 39500,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -703,6 +785,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 500,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -716,10 +800,12 @@
   {
     "UserData": {
       "UserID": 296875172198350848,
-      "Username": "Blake Nemsus ☠",
-      "Role": 4,
+      "Username": "M.A.D",
+      "Role": 2,
       "Status": 1,
       "Money": 500,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -737,6 +823,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -750,10 +838,12 @@
   {
     "UserData": {
       "UserID": 241973301260320768,
-      "Username": "Check ✓",
+      "Username": "Check",
       "Role": 2,
       "Status": 1,
       "Money": 30000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 2,
       "GuildID": 2
@@ -771,6 +861,8 @@
       "Role": 1,
       "Status": 1,
       "Money": 27000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 1
@@ -784,10 +876,12 @@
   {
     "UserData": {
       "UserID": 321501319095517185,
-      "Username": "Enki",
-      "Role": 2,
+      "Username": "Slowki",
+      "Role": 3,
       "Status": 1,
       "Money": 10000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 1,
       "GuildID": 0
@@ -801,10 +895,12 @@
   {
     "UserData": {
       "UserID": 187027544711757824,
-      "Username": "Stray",
-      "Role": 3,
+      "Username": "Sadra Pathan",
+      "Role": 2,
       "Status": 1,
       "Money": 14000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -822,6 +918,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -839,6 +937,8 @@
       "Role": 1,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -856,6 +956,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -873,6 +975,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -890,6 +994,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 15000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -907,6 +1013,8 @@
       "Role": 1,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -924,6 +1032,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 32983,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -941,6 +1051,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -958,6 +1070,8 @@
       "Role": 2,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 1,
       "GuildID": 0
@@ -975,6 +1089,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -988,10 +1104,12 @@
   {
     "UserData": {
       "UserID": 375710268442804236,
-      "Username": "Jess Miracle",
+      "Username": "Lumine",
       "Role": 4,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1009,6 +1127,8 @@
       "Role": 3,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1026,6 +1146,8 @@
       "Role": 1,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1043,6 +1165,8 @@
       "Role": 3,
       "Status": 1,
       "Money": 83000,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1056,10 +1180,12 @@
   {
     "UserData": {
       "UserID": 358338709407399936,
-      "Username": "Tsuyoi Amari 💥",
+      "Username": "Tsuyoi Amari",
       "Role": 4,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1077,6 +1203,8 @@
       "Role": 1,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1094,6 +1222,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1111,6 +1241,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1128,6 +1260,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1145,6 +1279,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1162,6 +1298,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1175,10 +1313,12 @@
   {
     "UserData": {
       "UserID": 254789676089606144,
-      "Username": "that r-R-rO-Oy-Y guy",
+      "Username": "Xbullshiet_01",
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1196,6 +1336,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1209,10 +1351,12 @@
   {
     "UserData": {
       "UserID": 158284124770140161,
-      "Username": "Nanas",
-      "Role": 0,
+      "Username": "Equilibrium",
+      "Role": 1,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1226,10 +1370,12 @@
   {
     "UserData": {
       "UserID": 150767260464709632,
-      "Username": "Havoc",
-      "Role": 2,
+      "Username": "Faox",
+      "Role": 1,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1247,6 +1393,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1264,6 +1412,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1281,6 +1431,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1298,6 +1450,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1315,6 +1469,8 @@
       "Role": 4,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1332,6 +1488,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1349,6 +1507,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1366,6 +1526,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1383,6 +1545,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1396,10 +1560,12 @@
   {
     "UserData": {
       "UserID": 192287928611766281,
-      "Username": "📖  Gēmu Shishō  📖",
+      "Username": "DarthTyrael",
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1417,6 +1583,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1430,10 +1598,12 @@
   {
     "UserData": {
       "UserID": 331220967885897729,
-      "Username": "Lizzie",
+      "Username": "Melody",
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1451,6 +1621,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1468,6 +1640,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1485,6 +1659,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1498,10 +1674,12 @@
   {
     "UserData": {
       "UserID": 357185928629846017,
-      "Username": "Du yu know de wae?",
+      "Username": "Stiles🤞❤(Wolf's Bro)",
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1519,6 +1697,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1536,6 +1716,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1553,6 +1735,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1570,6 +1754,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1587,6 +1773,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1604,6 +1792,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1621,6 +1811,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1638,6 +1830,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1655,6 +1849,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1672,6 +1868,8 @@
       "Role": 3,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1689,6 +1887,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1706,6 +1906,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1723,6 +1925,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1736,10 +1940,12 @@
   {
     "UserData": {
       "UserID": 295371406747631616,
-      "Username": "Clam",
+      "Username": "Celadon",
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1757,6 +1963,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1774,6 +1982,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1791,6 +2001,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1805,9 +2017,11 @@
     "UserData": {
       "UserID": 397688951382474752,
       "Username": "Haunter",
-      "Role": 0,
+      "Role": 3,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1825,6 +2039,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1842,6 +2058,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1855,10 +2073,12 @@
   {
     "UserData": {
       "UserID": 375102509330464768,
-      "Username": "uchiha sasuke",
-      "Role": 0,
+      "Username": "Wandering Swordsman",
+      "Role": 3,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1876,6 +2096,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1893,6 +2115,8 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1906,10 +2130,12 @@
   {
     "UserData": {
       "UserID": 213497301262401537,
-      "Username": "Audryx",
-      "Role": 0,
+      "Username": "Freja Holmström",
+      "Role": 3,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1923,10 +2149,12 @@
   {
     "UserData": {
       "UserID": 391094002474156059,
-      "Username": "NobodyKnows",
-      "Role": 0,
+      "Username": "Kin Tenshin",
+      "Role": 4,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1940,10 +2168,12 @@
   {
     "UserData": {
       "UserID": 382476761750831104,
-      "Username": "☆KENDOU ITSUKA ♡",
-      "Role": 0,
+      "Username": "Yukimi",
+      "Role": 4,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0
@@ -1961,6 +2191,730 @@
       "Role": 0,
       "Status": 1,
       "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 344274343804534794,
+      "Username": "Cherno",
+      "Role": 4,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 246750147466231808,
+      "Username": "Hirase Mami",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 266935768981831690,
+      "Username": "Killua (YT GoldenEyes)",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 397615459911860224,
+      "Username": "The Night Ops Mech",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 320753398901112832,
+      "Username": "sans",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 356495039582699524,
+      "Username": "2dmp",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 222662196939718656,
+      "Username": "Gabriel Parzival",
+      "Role": 4,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 405390329890471952,
+      "Username": "Karnak",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 399441223816970241,
+      "Username": "Eijirou Kirishima",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 235581033662251008,
+      "Username": "Sneky God of Chaos",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 377840678056755211,
+      "Username": "𝓩𝓲𝓰𝓱𝓽♂",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 307505240406753280,
+      "Username": "Augustus Camerus",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 266426312095170560,
+      "Username": "Dabi",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 277032252465086464,
+      "Username": "Seventh Sanctum",
+      "Role": 2,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 384321675933777930,
+      "Username": "Ahegao",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 305210478471151616,
+      "Username": "piper",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 388681351781679105,
+      "Username": "Ishitori Kabai",
+      "Role": 4,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 247387080437661696,
+      "Username": "Fire Angel",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 303324042255925251,
+      "Username": "MemeWalker™",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 251794524446261269,
+      "Username": "Sol",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 273148822543400971,
+      "Username": "Scarlett",
+      "Role": 2,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 132720331810013184,
+      "Username": "bee_the_squigger",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 370997900362383370,
+      "Username": "⚡💥ⓈⒽⒾⓉⓈⓊⓃⒶ💥⚡",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 375806164103069700,
+      "Username": "DandyDonut",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 368586342034046987,
+      "Username": "hayato",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 258616660183744523,
+      "Username": "Panda",
+      "Role": 3,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 323043695106719755,
+      "Username": "kaneki-ken",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 381973209844809730,
+      "Username": "Cosmic Justin",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 299918489211109378,
+      "Username": "[1DFP] Flo_Schreiber",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 395369970172821505,
+      "Username": "Katsuki Bakugou",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 234319272376139777,
+      "Username": "Omega",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 373727267593125888,
+      "Username": "Elfredo Rodrigo",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 208069169239818240,
+      "Username": "Pdie",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 189699423993856002,
+      "Username": "Urazek",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 275397087485755392,
+      "Username": "Marina",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 246536367771877376,
+      "Username": "blackari",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 398935515824652299,
+      "Username": "⎝ XFaction ⎠",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 246639171899359232,
+      "Username": "Eel",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
       "ResolvedCases": 0,
       "CrimesCommitted": 0,
       "GuildID": 0

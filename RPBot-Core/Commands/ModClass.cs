@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    class ModClass : RPClass
+    class ModClass : BaseCommandModule
     {
         [Command("punish"), Description("Command for staff to give out the Punished role."), RequireRoles(RoleCheckMode.Any, "Staff", "Helpful people")]
         public async Task Punish(CommandContext e, [Description("Member to be muted")] DiscordMember user)
@@ -19,12 +19,12 @@ namespace RPBot
             try
             {
                 DiscordMember member = await e.Guild.GetMemberAsync(user.Id);
-                UserObject.RootObject userObject = Users.First(x => x.UserData.UserID == user.Id);
+                UserObject.RootObject userObject = RPClass.Users.First(x => x.UserData.UserID == user.Id);
 
                 if (userObject.ModData.IsMuted)
                 {
                     userObject.ModData.IsMuted = false;
-                    await member.RevokeRoleAsync(PunishedRole);
+                    await member.RevokeRoleAsync(RPClass.PunishedRole);
                     await e.RespondAsync("User unmuted.");
 
                 }
@@ -33,7 +33,7 @@ namespace RPBot
                     //if (string.IsNullOrWhiteSpace(duration))
                     //{
                     userObject.ModData.IsMuted = true;
-                    await member.GrantRoleAsync(PunishedRole);
+                    await member.GrantRoleAsync(RPClass.PunishedRole);
                     await e.RespondAsync("User muted.");
 
                     userObject.ModData.MuteDuration = new TimeSpan();
@@ -55,12 +55,12 @@ namespace RPBot
                         }
                     }*/
                 }
-                SaveData(1);
+                RPClass.SaveData(1);
 
             }
             catch
             {
-                await e.RespondAsync("No guild found with that name. Are you sure you typed it in correctly?");
+                await e.RespondAsync("NO");
             }
         }
     }

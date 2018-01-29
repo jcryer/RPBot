@@ -13,19 +13,19 @@ using System.Threading.Tasks;
 namespace RPBot
 {
     [Group("xp", CanInvokeWithoutSubcommand = true), Description("Admin command to give XP"), RequireRoles(RoleCheckMode.Any, "Staff")]
-    class XPClass : RPClass
+    class XPClass : BaseCommandModule
     {
         public async Task ExecuteGroupAsync(CommandContext e, [Description("User to change stats of")] DiscordMember user, [Description("How much you wish to change it by")] int xpNum)
         {
             if (xpNum != 0)
             {
-                UserObject.RootObject userData = Users.Find(x => x.UserData.UserID == user.Id);
+                UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
                 userData.Xp += xpNum;
                 if (userData.Xp < 0) userData.Xp = 0;
                 
-                await UpdateStats(StatsChannel);
-                SaveData(1);
-                UserObject.RootObject newUserData = Users.Find(x => x.UserData.UserID == user.Id);
+                await UpdateStats(RPClass.StatsChannel);
+                RPClass.SaveData(1);
+                UserObject.RootObject newUserData = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
                 switch (newUserData.UserData.Role)
                 {
                     case 1:
@@ -53,7 +53,7 @@ namespace RPBot
         [Command("update"), Description("Updates saved data")]
         public async Task Update(CommandContext e)
         {
-            await AddOrUpdateUsers(e.Guild, true);
+            await RPClass.AddOrUpdateUsers(e.Guild, true);
             await e.RespondAsync("Done!");
         }
         
@@ -71,8 +71,8 @@ namespace RPBot
             {
                 if (msg.Message.Content == "stop")
                 {
-                    await UpdateStats(StatsChannel);
-                    SaveData(1);
+                    await UpdateStats(RPClass.StatsChannel);
+                    RPClass.SaveData(1);
                     await UpdatePlayerRanking(e.Guild, 1);
                     await UpdatePlayerRanking(e.Guild, 2);
                     await UpdatePlayerRanking(e.Guild, 3);
@@ -86,7 +86,7 @@ namespace RPBot
                     {
                         string[] args = msg.Message.Content.Split(" ");
                         DiscordMember member = await e.CommandsNext.ConvertArgument(args[0], e, typeof(DiscordMember)) as DiscordMember;
-                        UserObject.RootObject userData = Users.Find(x => x.UserData.UserID == member.Id);
+                        UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.UserID == member.Id);
                         userData.Xp += int.Parse(args[1]);
                         if (userData.Xp < 0) userData.Xp = 0;
                         await e.RespondAsync("Stat changed. \nSend another, by typing `-<mention> <xp amount>`.\nTo end this process, type `stop`.");
@@ -100,8 +100,8 @@ namespace RPBot
             }
             else
             {
-                await UpdateStats(StatsChannel);
-                SaveData(1);
+                await UpdateStats(RPClass.StatsChannel);
+                RPClass.SaveData(1);
                 await UpdatePlayerRanking(e.Guild, 1);
                 await UpdatePlayerRanking(e.Guild, 2);
                 await UpdatePlayerRanking(e.Guild, 3);
@@ -115,7 +115,7 @@ namespace RPBot
         public static async Task UpdateStats(DiscordChannel c)
         {
             int longestName = 1;
-            if (Users.Any()) longestName = Users.Where(x => x.Xp > 0).Max(x => x.UserData.Username.Length) + 1;
+            if (RPClass.Users.Any()) longestName = RPClass.Users.Where(x => x.Xp > 0).Max(x => x.UserData.Username.Length) + 1;
             int longestXP = 5;
 
             string Name = "Name".PadRight(longestName) + "| ";
@@ -125,7 +125,7 @@ namespace RPBot
 
             List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
 
-            SortedUsers = Users.OrderByDescending(x => x.Xp).ToList();
+            SortedUsers = RPClass.Users.OrderByDescending(x => x.Xp).ToList();
             try
             {
                 List<DiscordMessage> msgs = new List<DiscordMessage>(await c.GetMessagesAsync(100));
@@ -161,18 +161,18 @@ namespace RPBot
             else if (type == 4) RankingChannel = RPClass.AcademyRankingChannel;
 
             int longestName = 0;
-            var l = Users;
-            if (type == 1) longestName = Users.Where(x => x.UserData.Role == 1).Max(x => x.UserData.Username.Length) + 1;
-            else if (type == 2) longestName = Users.Where(x => x.UserData.Role == 2).Max(x => x.UserData.Username.Length) + 1;
-            else if (type == 3) longestName = Users.Where(x => x.UserData.Role == 3).Max(x => x.UserData.Username.Length) + 1;
-            else if (type == 4) longestName = Users.Where(x => x.UserData.Role == 4).Max(x => x.UserData.Username.Length) + 1;
+            var l = RPClass.Users;
+            if (type == 1) longestName = RPClass.Users.Where(x => x.UserData.Role == 1).Max(x => x.UserData.Username.Length) + 1;
+            else if (type == 2) longestName = RPClass.Users.Where(x => x.UserData.Role == 2).Max(x => x.UserData.Username.Length) + 1;
+            else if (type == 3) longestName = RPClass.Users.Where(x => x.UserData.Role == 3).Max(x => x.UserData.Username.Length) + 1;
+            else if (type == 4) longestName = RPClass.Users.Where(x => x.UserData.Role == 4).Max(x => x.UserData.Username.Length) + 1;
 
             int longestCount = 5;
 			int longestStatus = 7;
 			int longestStats = 7;
             if (type == 3 || type == 4) longestStats = 13;
             int longestGuild = 6;
-            if (Guilds.Any()) longestGuild = Guilds.Max(x => x.Name.Length) + 1;
+            if (RPClass.Guilds.Any()) longestGuild = RPClass.Guilds.Max(x => x.Name.Length) + 1;
 
             string Count = "Rank".PadRight(longestCount) + "| ";
 			string Name = "Name".PadRight(longestName) + "| ";
@@ -186,10 +186,10 @@ namespace RPBot
 			value += "```" + Count + Name + Status + Stats + Guild + Rank + "\n----------------------------------------------------------------\n";
 			List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
 
-			if (type == 1) SortedUsers = Users.Where(x => x.UserData.Role == 1).OrderByDescending(x => (x.Xp)).ToList();
-			else if (type == 2) SortedUsers = Users.Where(x => x.UserData.Role == 2).OrderByDescending(x => (x.Xp)).ToList();
-            else if (type == 3) SortedUsers = Users.Where(x => x.UserData.Role == 3).OrderByDescending(x => (x.Xp)).ToList();
-            else if (type == 4) SortedUsers = Users.Where(x => x.UserData.Role == 4).OrderByDescending(x => (x.Xp)).ToList();
+			if (type == 1) SortedUsers = RPClass.Users.Where(x => x.UserData.Role == 1).OrderByDescending(x => (x.Xp)).ToList();
+			else if (type == 2) SortedUsers = RPClass.Users.Where(x => x.UserData.Role == 2).OrderByDescending(x => (x.Xp)).ToList();
+            else if (type == 3) SortedUsers = RPClass.Users.Where(x => x.UserData.Role == 3).OrderByDescending(x => (x.Xp)).ToList();
+            else if (type == 4) SortedUsers = RPClass.Users.Where(x => x.UserData.Role == 4).OrderByDescending(x => (x.Xp)).ToList();
 
             try
             {
@@ -228,7 +228,7 @@ namespace RPBot
 
                 string UserGuild = "";
 				if (user.UserData.GuildID == 0) UserGuild += "N/A";
-				else UserGuild += Guilds.First(x => x.Id == user.UserData.GuildID && x.UserIDs.Contains(user.UserData.UserID)).Name;
+				else UserGuild += RPClass.Guilds.First(x => x.Id == user.UserData.GuildID && x.UserIDs.Contains(user.UserData.UserID)).Name;
 
 				if (value.Length > 1500)
 				{
@@ -246,7 +246,7 @@ namespace RPBot
             DiscordChannel RankingChannel = RPClass.GuildRankingChannel;
             int longestCount = 5;
             int longestName = 10;
-            if (Guilds.Any()) longestName = Guilds.Max(x => x.Name.Length) + 1;
+            if (RPClass.Guilds.Any()) longestName = RPClass.Guilds.Max(x => x.Name.Length) + 1;
             int longestStatus = 10;
             int longestStats = 13;
 
@@ -258,7 +258,7 @@ namespace RPBot
             string value = "```" + Count + Name + Status + Stats  + Rank + "\n--------------------------------------------------------------------\n";
 
             List<GuildObject.RootObject> GuildsNew = new List<GuildObject.RootObject>();
-            foreach (GuildObject.RootObject guild in Guilds)
+            foreach (GuildObject.RootObject guild in RPClass.Guilds)
             {
                 int stats = 0;
                 int xp = 0;
@@ -267,7 +267,7 @@ namespace RPBot
                 {
                     foreach (ulong num in guild.UserIDs)
                     {
-                        user = Users.FirstOrDefault(x => x.UserData.UserID == num);
+                        user = RPClass.Users.FirstOrDefault(x => x.UserData.UserID == num);
                         if (user != null)
                         {
                             xp += user.Xp;

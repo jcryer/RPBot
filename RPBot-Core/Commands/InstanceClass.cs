@@ -13,22 +13,22 @@ namespace RPBot
 {
    // DEPRECATED - COMMENTED OUT IN RPBOT.CS
     [Group("instance"), Description("Instance commands")]
-    class InstanceClass : RPClass
+    class InstanceClass : BaseCommandModule
     {
         [Command("add"), Description("Command to create a new location instance."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Add(CommandContext e, [Description("Give the ID of the channel you wish to create from the !instance channels command.")]int channelID)
         {
-            InstanceObject.ChannelTemplate template = ChannelTemplates.FirstOrDefault(x => x.Id == channelID);
+            InstanceObject.ChannelTemplate template = RPClass.ChannelTemplates.FirstOrDefault(x => x.Id == channelID);
             if (template != null)
             {
                 int instanceID = 1;
-                if (InstanceList.Count > 0)
+                if (RPClass.InstanceList.Count > 0)
                 {
-                    instanceID = InstanceList.Last().Id + 1;
+                    instanceID = RPClass.InstanceList.Last().Id + 1;
                 }
 
-                DiscordChannel c = await e.Guild.CreateChannelAsync(instanceID + "-" + template.Name, ChannelType.Text, parent: InstanceCategory);
-                InstanceList.Add(new InstanceObject.RootObject(instanceID, c.Id, template.Id));
+                DiscordChannel c = await e.Guild.CreateChannelAsync(instanceID + "-" + template.Name, ChannelType.Text, parent: RPClass.InstanceCategory);
+                RPClass.InstanceList.Add(new InstanceObject.RootObject(instanceID, c.Id, template.Id));
                 if (template.Content.Count > 0)
                 {
                     foreach (string content in template.Content)
@@ -36,7 +36,7 @@ namespace RPBot
                         await c.SendMessageAsync(content);
                     }
                 }
-                SaveData(7);
+                RPClass.SaveData(7);
                 await e.RespondAsync("Channel: " + template.Name + " created with ID: " + instanceID + ".");
             }
             else
@@ -48,7 +48,7 @@ namespace RPBot
         [Command("end"), Description("Command to end a roleplay."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task End(CommandContext e, [Description("Quote the ID at the beginning of the channel name.")]int rpID)
         {
-            InstanceObject.RootObject instance = InstanceList.FirstOrDefault(x => x.Id == rpID);
+            InstanceObject.RootObject instance = RPClass.InstanceList.FirstOrDefault(x => x.Id == rpID);
             if (instance != null)
             {
 
@@ -56,7 +56,7 @@ namespace RPBot
                 await c.AddOverwriteAsync(e.Guild.EveryoneRole, Permissions.ReadMessageHistory, Permissions.SendMessages);
                 instance.Active = false;
 
-                SaveData(7);
+                RPClass.SaveData(7);
                 await e.RespondAsync("Instance closed.");
             }
             else
@@ -68,13 +68,13 @@ namespace RPBot
         [Command("destroy"), Description("Command to delete an instance."), RequireRoles(RoleCheckMode.Any, "Administrator")]
         public async Task Destroy(CommandContext e, [Description("Quote the ID at the beginning of the channel name.")]int rpID)
         {
-            InstanceObject.RootObject instance = InstanceList.FirstOrDefault(x => x.Id == rpID);
+            InstanceObject.RootObject instance = RPClass.InstanceList.FirstOrDefault(x => x.Id == rpID);
             if (instance != null)
             {
                 DiscordChannel c = e.Guild.GetChannel(instance.ChannelID);
                 await c.DeleteAsync();
-                InstanceList.Remove(instance);
-                SaveData(7);
+                RPClass.InstanceList.Remove(instance);
+                RPClass.SaveData(7);
                 await e.RespondAsync("Instance destroyed.");
             }
             else
@@ -109,22 +109,22 @@ namespace RPBot
                     }
                     else
                     {
-                        ChannelTemplates.Add(new InstanceObject.ChannelTemplate(ChannelTemplates.Count + 1, name, ContentList));
-                        SaveData(6);
+                        RPClass.ChannelTemplates.Add(new InstanceObject.ChannelTemplate(RPClass.ChannelTemplates.Count + 1, name, ContentList));
+                        RPClass.SaveData(6);
                         await e.RespondAsync("Template added and saved.");
                     }
                 }
                 else
                 {
-                    ChannelTemplates.Add(new InstanceObject.ChannelTemplate(ChannelTemplates.Count + 1, name, ContentList));
-                    SaveData(6);
+                    RPClass.ChannelTemplates.Add(new InstanceObject.ChannelTemplate(RPClass.ChannelTemplates.Count + 1, name, ContentList));
+                    RPClass.SaveData(6);
                     await e.RespondAsync("Template added and saved.");
                 }
             }
             else
             {
-                ChannelTemplates.Add(new InstanceObject.ChannelTemplate(ChannelTemplates.Count + 1, name, ContentList));
-                SaveData(6);
+                RPClass.ChannelTemplates.Add(new InstanceObject.ChannelTemplate(RPClass.ChannelTemplates.Count + 1, name, ContentList));
+                RPClass.SaveData(6);
                 await e.RespondAsync("Template added and saved.");
             }
         }
@@ -137,7 +137,7 @@ namespace RPBot
                 Timestamp = DateTime.UtcNow
             }
             .WithFooter("Heroes & Villains");
-            foreach (InstanceObject.ChannelTemplate c in ChannelTemplates)
+            foreach (InstanceObject.ChannelTemplate c in RPClass.ChannelTemplates)
             {
                 if (embed.Fields.Count > 24)
                 {

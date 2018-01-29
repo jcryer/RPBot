@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace RPBot
 {
     [Group("trivia"), Description("Trivia Commands")]
-    public class TriviaClass
+    public class TriviaClass : BaseCommandModule
     {
         public static List<string> TriviaList;
         public static bool active = false;

@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 namespace RPBot
 {
     [Group("tag", CanInvokeWithoutSubcommand = true), Aliases("t"), Description("Commands to manage tags")]
-    class TagClass : RPClass
+    class TagClass : BaseCommandModule
     {
         public async Task ExecuteGroupAsync(CommandContext e, [RemainingText] string tagName)
         {
-            if (TagsList.Exists(x => x.Name == tagName.ToLower()))
+            if (RPClass.TagsList.Exists(x => x.Name == tagName.ToLower()))
             {
-                await e.RespondAsync(TagsList.Find(x => x.Name == tagName.ToLower()).Content);
+                await e.RespondAsync(RPClass.TagsList.Find(x => x.Name == tagName.ToLower()).Content);
             }
             else
             {
@@ -24,7 +24,7 @@ namespace RPBot
         [Command("add"), Description("Adds a tag.")]
         public async Task Add(CommandContext e, [Description("Name of the tag (in speech marks)")] string tagName, [RemainingText, Description("Tag info")] string text)
         {
-            if (TagsList.Exists(x => x.Name == tagName.ToLower()))
+            if (RPClass.TagsList.Exists(x => x.Name == tagName.ToLower()))
             {
                 await e.RespondAsync("A tag already exists with that name.");
                 return;
@@ -35,16 +35,16 @@ namespace RPBot
                 return;
             }
 
-            TagsList.Add(new TagObject.RootObject(tagName.ToLower(), text));
+            RPClass.TagsList.Add(new TagObject.RootObject(tagName.ToLower(), text));
             await e.RespondAsync("Tag: " + tagName + " added.");
-            SaveData(9);
+            RPClass.SaveData(9);
         }
 
         [Command("list"), Description("Lists all tags.")]
         public async Task List(CommandContext e)
         {
             string retVal = "```\n";
-            foreach (TagObject.RootObject t in TagsList)
+            foreach (TagObject.RootObject t in RPClass.TagsList)
             {
                 retVal += t.Name + "\n";
                 if (retVal.Length > 1500)
@@ -60,11 +60,11 @@ namespace RPBot
         [Command("remove"), Description("Adds a tag."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Remove(CommandContext e, [Description("Name of the tag "), RemainingText] string tagName)
         {
-            if (TagsList.Exists(x => x.Name == tagName.ToLower()))
+            if (RPClass.TagsList.Exists(x => x.Name == tagName.ToLower()))
             {
-                TagsList.Remove(TagsList.Find(x => x.Name == tagName.ToLower()));
+                RPClass.TagsList.Remove(RPClass.TagsList.Find(x => x.Name == tagName.ToLower()));
                 await e.RespondAsync("Tag: " + tagName + " removed.");
-                SaveData(9);
+                RPClass.SaveData(9);
             }
             else
             {

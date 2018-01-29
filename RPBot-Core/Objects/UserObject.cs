@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    partial class UserObject
+    class UserObject
     {
         public class RootObject
         {
@@ -14,13 +14,13 @@ namespace RPBot
             {
                 UserData = userData;
                 this.Xp = xp;
-             //   InvData = invData;
+                //   InvData = invData;
                 this.ModData = new ModData();
             }
 
             public UserData UserData { get; set; }
             public int Xp { get; set; }
-          //  public InvData InvData { get; set; }
+            //  public InvData InvData { get; set; }
             public ModData ModData { get; set; }
         }
 
@@ -28,7 +28,7 @@ namespace RPBot
         {
             public UserData(ulong userID, string username, int role, int status, int money, int resolvedCases, int crimesCommitted, int guildID)
             {
-                this.UserID = userID;   
+                this.UserID = userID;
                 this.Username = username;
                 this.Role = role;
                 this.Status = status;
@@ -43,6 +43,8 @@ namespace RPBot
             public int Role { get; set; }
             public int Status { get; set; }
             public int Money { get; set; }
+            public int MeritPoints { get; set; }
+            public int BloodPoints { get; set; }
             public int ResolvedCases { get; set; }
             public int CrimesCommitted { get; set; }
             public int GuildID { get; set; }
@@ -60,7 +62,7 @@ namespace RPBot
 
         public class ModData
         {
-            public ModData ()
+            public ModData()
             {
                 this.IsMuted = false;
             }

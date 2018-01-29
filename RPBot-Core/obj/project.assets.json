@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "DSharpPlus/4.0.0-beta-00399": {
+      "DSharpPlus/4.0.0-beta-00417": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
@@ -18,10 +18,10 @@
           "lib/netstandard2.0/DSharpPlus.dll": {}
         }
       },
-      "DSharpPlus.CommandsNext/4.0.0-beta-00399": {
+      "DSharpPlus.CommandsNext/4.0.0-beta-00417": {
         "type": "package",
         "dependencies": {
-          "DSharpPlus": "4.0.0-beta-00399",
+          "DSharpPlus": "4.0.0-beta-00417",
           "Microsoft.Extensions.DependencyInjection": "2.0.0"
         },
         "compile": {
@@ -31,10 +31,10 @@
           "lib/netstandard2.0/DSharpPlus.CommandsNext.dll": {}
         }
       },
-      "DSharpPlus.Interactivity/4.0.0-beta-00399": {
+      "DSharpPlus.Interactivity/4.0.0-beta-00417": {
         "type": "package",
         "dependencies": {
-          "DSharpPlus": "4.0.0-beta-00399"
+          "DSharpPlus": "4.0.0-beta-00417"
         },
         "compile": {
           "lib/netstandard2.0/DSharpPlus.Interactivity.dll": {}
@@ -43,10 +43,10 @@
           "lib/netstandard2.0/DSharpPlus.Interactivity.dll": {}
         }
       },
-      "DSharpPlus.VoiceNext/4.0.0-beta-00399": {
+      "DSharpPlus.VoiceNext/4.0.0-beta-00417": {
         "type": "package",
         "dependencies": {
-          "DSharpPlus": "4.0.0-beta-00399"
+          "DSharpPlus": "4.0.0-beta-00417"
         },
         "compile": {
           "lib/netstandard2.0/DSharpPlus.VoiceNext.dll": {}
@@ -1709,12 +1709,12 @@
     }
   },
   "libraries": {
-    "DSharpPlus/4.0.0-beta-00399": {
-      "sha512": "gMRqScCnUxhgrFI+XoMyFEkUbBM0lIDTakIyE1xLm170K2fhLBVxF6jq74Yoq55rujinXXNgAOAZ8YohPQ4J9Q==",
+    "DSharpPlus/4.0.0-beta-00417": {
+      "sha512": "hWtpwtHvKuEkEjELwgr4tRvAKlsVPq/UuKNGgV8Rtu1JJLPqrS7jEzgQEN6M9lirM5azgUwxJC76piFeIVBoZg==",
       "type": "package",
-      "path": "dsharpplus/4.0.0-beta-00399",
+      "path": "dsharpplus/4.0.0-beta-00417",
       "files": [
-        "dsharpplus.4.0.0-beta-00399.nupkg.sha512",
+        "dsharpplus.4.0.0-beta-00417.nupkg.sha512",
         "dsharpplus.nuspec",
         "lib/net45/DSharpPlus.dll",
         "lib/net45/DSharpPlus.xml",
@@ -1730,12 +1730,12 @@
         "lib/netstandard2.0/DSharpPlus.xml"
       ]
     },
-    "DSharpPlus.CommandsNext/4.0.0-beta-00399": {
-      "sha512": "+IdGpIkRkMaXTYUrlBB8K5oN083e7jDOBe6nRX5WWNS3Xvlv2VHCJuQnLsWZwHlWEkQxVeZKLCxTRjOmiE+tSA==",
+    "DSharpPlus.CommandsNext/4.0.0-beta-00417": {
+      "sha512": "shBbj4ydXJq8vSHNtfhW1DZOemzNKIm2ZAUoAItcP/YbFGBAOadtuYc/3aBVmnXXXiPrfZ7jw6+lXFLYjl3i8w==",
       "type": "package",
-      "path": "dsharpplus.commandsnext/4.0.0-beta-00399",
+      "path": "dsharpplus.commandsnext/4.0.0-beta-00417",
       "files": [
-        "dsharpplus.commandsnext.4.0.0-beta-00399.nupkg.sha512",
+        "dsharpplus.commandsnext.4.0.0-beta-00417.nupkg.sha512",
         "dsharpplus.commandsnext.nuspec",
         "lib/net45/DSharpPlus.CommandsNext.dll",
         "lib/net45/DSharpPlus.CommandsNext.xml",
@@ -1751,12 +1751,12 @@
         "lib/netstandard2.0/DSharpPlus.CommandsNext.xml"
       ]
     },
-    "DSharpPlus.Interactivity/4.0.0-beta-00399": {
-      "sha512": "r9QL83m0yU8hhjHb3n61A6JFOhJodUwcphTH1tOwyijYuTARuF+A0KwegXj86lGOjh2YY2zXM2/fbwlzGLjedA==",
+    "DSharpPlus.Interactivity/4.0.0-beta-00417": {
+      "sha512": "Isj2Ucjz5/JdVOrzd74ZSeT10e48mEP+/p+TTSFHS5SY+vruWYynMipV9IsOVDCGIrykTB6vr3e6EcyNIuLCuQ==",
       "type": "package",
-      "path": "dsharpplus.interactivity/4.0.0-beta-00399",
+      "path": "dsharpplus.interactivity/4.0.0-beta-00417",
       "files": [
-        "dsharpplus.interactivity.4.0.0-beta-00399.nupkg.sha512",
+        "dsharpplus.interactivity.4.0.0-beta-00417.nupkg.sha512",
         "dsharpplus.interactivity.nuspec",
         "lib/net45/DSharpPlus.Interactivity.dll",
         "lib/net45/DSharpPlus.Interactivity.xml",
@@ -1772,12 +1772,12 @@
         "lib/netstandard2.0/DSharpPlus.Interactivity.xml"
       ]
     },
-    "DSharpPlus.VoiceNext/4.0.0-beta-00399": {
-      "sha512": "T0w0iyW/WCNkWtJ65wtms4dw3uWW1u632uKV63uD6HLSo6SItQyUK/u4fFkV9z5YrcCHSUOLc36+on8gYw1BMA==",
+    "DSharpPlus.VoiceNext/4.0.0-beta-00417": {
+      "sha512": "I8Bfw1eMk0g2PWpU+DeYPYq7+21dkZJNulMjL5gVI8YHi7t3sB1BUBroZ8/DbkaT/B0a0fzY/CdYKQic343VKA==",
       "type": "package",
-      "path": "dsharpplus.voicenext/4.0.0-beta-00399",
+      "path": "dsharpplus.voicenext/4.0.0-beta-00417",
       "files": [
-        "dsharpplus.voicenext.4.0.0-beta-00399.nupkg.sha512",
+        "dsharpplus.voicenext.4.0.0-beta-00417.nupkg.sha512",
         "dsharpplus.voicenext.nuspec",
         "lib/net45/DSharpPlus.VoiceNext.dll",
         "lib/net45/DSharpPlus.VoiceNext.xml",
@@ -5863,16 +5863,16 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "DSharpPlus >= 4.0.0-beta-00399",
-      "DSharpPlus.CommandsNext >= 4.0.0-beta-00399",
-      "DSharpPlus.Interactivity >= 4.0.0-beta-00399",
-      "DSharpPlus.VoiceNext >= 4.0.0-beta-00399",
+      "DSharpPlus >= 4.0.0-beta-00417",
+      "DSharpPlus.CommandsNext >= 4.0.0-beta-00417",
+      "DSharpPlus.Interactivity >= 4.0.0-beta-00417",
+      "DSharpPlus.VoiceNext >= 4.0.0-beta-00417",
       "Microsoft.NETCore.App >= 2.0.0",
       "Newtonsoft.Json >= 10.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Joseph\\.nuget\\packages\\": {},
+    "C:\\Users\\jcryer\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -5881,17 +5881,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\Desktop\\Coding\\Bots\\RPBot\\RPBot-Core\\RPBot-Core.csproj",
+      "projectUniqueName": "C:\\Users\\jcryer\\Desktop\\RP-Bot\\RPBot\\RPBot-Core\\RPBot-Core.csproj",
       "projectName": "RPBot-Core",
-      "projectPath": "E:\\Desktop\\Coding\\Bots\\RPBot\\RPBot-Core\\RPBot-Core.csproj",
-      "packagesPath": "C:\\Users\\Joseph\\.nuget\\packages\\",
-      "outputPath": "E:\\Desktop\\Coding\\Bots\\RPBot\\RPBot-Core\\obj\\",
+      "projectPath": "C:\\Users\\jcryer\\Desktop\\RP-Bot\\RPBot\\RPBot-Core\\RPBot-Core.csproj",
+      "packagesPath": "C:\\Users\\jcryer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jcryer\\Desktop\\RP-Bot\\RPBot\\RPBot-Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Joseph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jcryer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5918,11 +5918,11 @@
         "dependencies": {
           "DSharpPlus.Interactivity": {
             "target": "Package",
-            "version": "4.0.0-beta-00399"
+            "version": "4.0.0-beta-00417"
           },
           "DSharpPlus.CommandsNext": {
             "target": "Package",
-            "version": "4.0.0-beta-00399"
+            "version": "4.0.0-beta-00417"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
@@ -5931,7 +5931,7 @@
           },
           "DSharpPlus": {
             "target": "Package",
-            "version": "4.0.0-beta-00399"
+            "version": "4.0.0-beta-00417"
           },
           "Newtonsoft.Json": {
             "target": "Package",
@@ -5939,7 +5939,7 @@
           },
           "DSharpPlus.VoiceNext": {
             "target": "Package",
-            "version": "4.0.0-beta-00399"
+            "version": "4.0.0-beta-00417"
           }
         },
         "imports": [

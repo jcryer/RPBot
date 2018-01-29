@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace RPBot
 {
     [Group("sv")]
-    class SVClass : RPClass
+    class SVClass : BaseCommandModule
     {
         public static bool active = false;
         public static bool processing = false;
@@ -49,11 +49,11 @@ namespace RPBot
         {
             if (phase % 2 == 0)
             {
-                SVObject.UserObject PlayerVoting = SVData.Players.FirstOrDefault(x => x.ID == e.Message.Author.Id);
+                SVObject.UserObject PlayerVoting = RPClass.SVData.Players.FirstOrDefault(x => x.ID == e.Message.Author.Id);
 
-                if (PlayerVoting != null && SVData.Players.Exists(x => x.ID == e.Message.Author.Id && x.Status == 0) && !UsedAbility.Contains(PlayerVoting))
+                if (PlayerVoting != null && RPClass.SVData.Players.Exists(x => x.ID == e.Message.Author.Id && x.Status == 0) && !UsedAbility.Contains(PlayerVoting))
                 {
-                    SVObject.UserObject PlayerVoted = SVData.Players.First(x => x.PlayerNum == playerNum);
+                    SVObject.UserObject PlayerVoted = RPClass.SVData.Players.First(x => x.PlayerNum == playerNum);
                     if (PlayerVoted != PlayerVoting && PlayerVoted.Status == 0)
                     {
                         await e.RespondAsync("You have voted for " + PlayerVoted.Username + ".");
@@ -81,7 +81,7 @@ namespace RPBot
         {
             if (!active)
             {
-                SVData = new SVObject.RootObject();
+                RPClass.SVData = new SVObject.RootObject();
                 active = true;
                 await e.RespondAsync("Welcome to Secret Villain™! New game starting...\n\nTo sign up, please use the command !sv join");
             }
@@ -94,20 +94,20 @@ namespace RPBot
         [Command("start"), Description("Starts the Secret Villain™ game."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Start(CommandContext e)
         {
-            if (active && !SVData.Started && SVData.Players.Count >= 4)
+            if (active && !RPClass.SVData.Started && RPClass.SVData.Players.Count >= 4)
             {
-                await SVData.StartGame(e);
-                SVData.Timer = DateTime.UtcNow;
-                SVData.Started = true;
+                await RPClass.SVData.StartGame(e);
+                RPClass.SVData.Timer = DateTime.UtcNow;
+                RPClass.SVData.Started = true;
                 Thread t = new Thread(()=> ProcessTurn(e, 1));
                 t.Start();
             }
-            else if (active && !SVData.Started && SVData.Players.Count < 4)
+            else if (active && !RPClass.SVData.Started && RPClass.SVData.Players.Count < 4)
             {
                 await e.RespondAsync("Not enough players to begin the game.");
             }
 
-            else if (active && SVData.Started)
+            else if (active && RPClass.SVData.Started)
             {
                 await e.RespondAsync("Game already started.");
             }
@@ -120,9 +120,9 @@ namespace RPBot
         [Command("stop"), Description("Stops the active Secret Villain™ game."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Stop(CommandContext e)
         {
-            if (active && !SVData.Started)
+            if (active && !RPClass.SVData.Started)
             {
-                SVData = new SVObject.RootObject();
+                RPClass.SVData = new SVObject.RootObject();
                 active = false;
                 await e.RespondAsync("Secret Villain™ game prematurely ended.");
                 
@@ -136,26 +136,26 @@ namespace RPBot
         [Command("join"), Description("Adds you to the Secret Villain™ game.")]
         public async Task Join(CommandContext e)
         {
-            if (active && !SVData.Started)
+            if (active && !RPClass.SVData.Started)
             {
-                if (SVData.Players.Any(x => x.ID == e.Member.Id))
+                if (RPClass.SVData.Players.Any(x => x.ID == e.Member.Id))
                 {
                     await e.RespondAsync("You are already in the Secret Villain™ game, " + e.Member.DisplayName);
                 }
                 else
                 {
-                    SVData.Players.Add(new SVObject.UserObject(e.Member.Id, e.Member.DisplayName, -1, 0));
+                    RPClass.SVData.Players.Add(new SVObject.UserObject(e.Member.Id, e.Member.DisplayName, -1, 0));
                     await e.RespondAsync("Added " + e.Member.DisplayName + " to the Secret Villain™ game.");
                 }
             }
-            else if (SVData.Started)
+            else if (RPClass.SVData.Started)
             {
                 await e.RespondAsync("The game has already begun. Sorry!");
             }
             else
             {
                 await Create(e);
-                SVData.Players.Add(new SVObject.UserObject(e.Member.Id, e.Member.DisplayName, -1, 0));
+                RPClass.SVData.Players.Add(new SVObject.UserObject(e.Member.Id, e.Member.DisplayName, -1, 0));
                 await e.RespondAsync("Added " + e.Member.DisplayName + " to the Secret Villain™ game.");
             }
         }
@@ -163,9 +163,9 @@ namespace RPBot
         [Command("info"), Description("Prints info on the currently active Secret Villain™ game.")]
         public async Task Info(CommandContext e)
         {
-            if (active || !SVData.Started)
+            if (active || !RPClass.SVData.Started)
             {
-                await SVData.DisplayData(e, false);
+                await RPClass.SVData.DisplayData(e, false);
             }
             else
             {
@@ -177,9 +177,9 @@ namespace RPBot
         {
             DiscordChannel Channel = RPClass.GameChannel;
             processing = true;
-            while (SVData != null)
+            while (RPClass.SVData != null)
             {
-                if (SVData.Timer.AddMinutes(dayModifier) < DateTime.Now || phase == 0)
+                if (RPClass.SVData.Timer.AddMinutes(dayModifier) < DateTime.Now || phase == 0)
                 {
                     phase += 1;
                     if (phase % 2 == 0)
@@ -198,25 +198,25 @@ namespace RPBot
                         {
                             await Channel.SendMessageAsync("__**Secret Villain™**__\n\n*It is now the day phase! Nobody was killed by the Villains this round.*");
                         }
-                        foreach (SVObject.UserObject PlayerData in SVData.Players)
+                        foreach (SVObject.UserObject PlayerData in RPClass.SVData.Players)
                         {
                             if (Deaths.Contains(PlayerData) && !Protected.Contains(PlayerData))
                             {
                                 PlayerData.Status = 1;
                             }
                         }
-                        if (SVData.Players.Count(x => x.Role == 1 && x.Status == 0) >= SVData.Players.Count(x => (x.Role == 2 || x.Role == 3 || x.Role == 5) && x.Status == 0))
+                        if (RPClass.SVData.Players.Count(x => x.Role == 1 && x.Status == 0) >= RPClass.SVData.Players.Count(x => (x.Role == 2 || x.Role == 3 || x.Role == 5) && x.Status == 0))
                         {
                             await Channel.SendMessageAsync("__**Secret Villain™**__\n\n*The Villains turn on the helpless Heroes, and assassinate them all.* \n __**The Villains have won!**__");
-                            await SVData.DisplayData(e, true);
+                            await RPClass.SVData.DisplayData(e, true);
 
                             await EndGame(e);
 
                         }
-                        else if (SVData.Players.Count(x => x.Role == 1 && x.Status == 0) == 0)
+                        else if (RPClass.SVData.Players.Count(x => x.Role == 1 && x.Status == 0) == 0)
                         {
                             await Channel.SendMessageAsync("__**Secret Villain™**__\n\n*The Heroes turn on the final remaining Villain, killing them with anger and hatred.* __**The Heroes have won!**__");
-                            await SVData.DisplayData(e, true);
+                            await RPClass.SVData.DisplayData(e, true);
 
                             await EndGame(e);
                         }
@@ -231,12 +231,12 @@ namespace RPBot
                     {
                         string MedicText = "";
                         string SpyText = "";
-                        if (SVData.Players.Any(x => x.Role == 2 && x.Status == 0))
+                        if (RPClass.SVData.Players.Any(x => x.Role == 2 && x.Status == 0))
                         {
                             MedicText = "\n# Medic, PM me who you wish to protect using the command !sv protect PLAYERNUM.";
 
                         }
-                        if (SVData.Players.Any(x => x.Role == 3 && x.Status == 0))
+                        if (RPClass.SVData.Players.Any(x => x.Role == 3 && x.Status == 0))
                         {
                             SpyText = "\n+ Spy, PM me who you wish to find out about using the command !sv find PLAYERNUM.";
 
@@ -275,28 +275,28 @@ namespace RPBot
                             }
                         }
                         await Channel.SendMessageAsync(string.Format("```diff\n- Villains, PM me your next kill using the command !sv kill PLAYERNUM. {0} {1}``` \n *To get the player numbers, please use the command* **!sv info.**", MedicText, SpyText));
-                        foreach (SVObject.UserObject PlayerData in SVData.Players)
+                        foreach (SVObject.UserObject PlayerData in RPClass.SVData.Players)
                         {
                             if (Deaths.Contains(PlayerData))
                             {
                                 PlayerData.Status = 1;
                             }
                         }
-                        if (SVData.Players.Count(x => x.Role == 1 && x.Status == 0) >= SVData.Players.Count(x => (x.Role == 2 || x.Role == 3 || x.Role == 5) && x.Status == 0))
+                        if (RPClass.SVData.Players.Count(x => x.Role == 1 && x.Status == 0) >= RPClass.SVData.Players.Count(x => (x.Role == 2 || x.Role == 3 || x.Role == 5) && x.Status == 0))
                         {
                             await Channel.SendMessageAsync("__**Secret Villain™**__\n\n*The Villains turn on the helpless Heroes, and assassinate them all.* \n__**The Villains have won!**__");
-                            await SVData.DisplayData(e, true);
+                            await RPClass.SVData.DisplayData(e, true);
                             await EndGame(e);
 
                         }
-                        else if (SVData.Players.Count(x => x.Role == 1 && x.Status == 0) == 0)
+                        else if (RPClass.SVData.Players.Count(x => x.Role == 1 && x.Status == 0) == 0)
                         {
                             await Channel.SendMessageAsync("__**Secret Villain™**__\n\n*The Heroes turn on the final remaining Villain, killing them with anger and hatred.* \n__**The shinobi have won!**__");
-                            await SVData.DisplayData(e, true);
+                            await RPClass.SVData.DisplayData(e, true);
 
                             await EndGame(e);
                         }
-                        else if (Deaths.Contains(SVData.Players.Find(x => x.Role == 4 && x.Status == 1)))
+                        else if (Deaths.Contains(RPClass.SVData.Players.Find(x => x.Role == 4 && x.Status == 1)))
                         {
                             await Channel.SendMessageAsync("__**Secret Villain™**__\n\n__**The Joker has won**__, *as he was killed by the shinobi.*");
                         }
@@ -306,7 +306,7 @@ namespace RPBot
                         Votes.Clear();
 
                     }
-                    SVData.Timer = DateTime.Now;
+                    RPClass.SVData.Timer = DateTime.Now;
                 }
                 await Task.Delay(60000);
             }
@@ -318,7 +318,7 @@ namespace RPBot
             UsedAbility.Clear();
             Protected.Clear();
             Votes.Clear();
-            SVData = new SVObject.RootObject();
+            RPClass.SVData = new SVObject.RootObject();
             active = false;
             processing = false;
             await Task.Delay(0);
@@ -330,12 +330,12 @@ namespace RPBot
                 if (role == 1)
                 {
 
-                    if (SVData.Players.Exists(x => x.ID == e.Message.Author.Id && x.Role == 1))
+                    if (RPClass.SVData.Players.Exists(x => x.ID == e.Message.Author.Id && x.Role == 1))
                     {
-                        SVObject.UserObject PlayerKilling = SVData.Players.First(x => x.ID == e.Message.Author.Id);
+                        SVObject.UserObject PlayerKilling = RPClass.SVData.Players.First(x => x.ID == e.Message.Author.Id);
                         if (!UsedAbility.Contains(PlayerKilling))
                         {
-                            SVObject.UserObject PlayerKilled = SVData.Players.FirstOrDefault(x => x.PlayerNum == playerNum);
+                            SVObject.UserObject PlayerKilled = RPClass.SVData.Players.FirstOrDefault(x => x.PlayerNum == playerNum);
                             if (PlayerKilled != null)
                             {
                                 if (PlayerKilled != PlayerKilling)
@@ -344,7 +344,7 @@ namespace RPBot
                                     await e.RespondAsync("Player " + PlayerKilled.Username + " will be assassinated.");
 
 
-                                    foreach (SVObject.UserObject a in SVData.Players.FindAll(x => x.Role == 1 && x.ID != e.Message.Author.Id))
+                                    foreach (SVObject.UserObject a in RPClass.SVData.Players.FindAll(x => x.Role == 1 && x.ID != e.Message.Author.Id))
                                     {
                                         DiscordMember user = await e.Guild.GetMemberAsync(a.ID);
                                         await user.SendMessageAsync(a.Username + " just voted to kill " + PlayerKilled.Username + ".");
@@ -366,12 +366,12 @@ namespace RPBot
                 else if (role == 2)
                 {
 
-                    if (SVData.Players.Exists(x => x.ID == e.Message.Author.Id && x.Role == 2))
+                    if (RPClass.SVData.Players.Exists(x => x.ID == e.Message.Author.Id && x.Role == 2))
                     {
-                        SVObject.UserObject PlayerSearching = SVData.Players.First(x => x.ID == e.Message.Author.Id);
+                        SVObject.UserObject PlayerSearching = RPClass.SVData.Players.First(x => x.ID == e.Message.Author.Id);
                         if (!UsedAbility.Contains(PlayerSearching))
                         {
-                            SVObject.UserObject PlayerSearched = SVData.Players.FirstOrDefault(x => x.PlayerNum == playerNum);
+                            SVObject.UserObject PlayerSearched = RPClass.SVData.Players.FirstOrDefault(x => x.PlayerNum == playerNum);
                             if (PlayerSearched != null)
                             {
                                 if (PlayerSearched != PlayerSearching)
@@ -394,12 +394,12 @@ namespace RPBot
                 }
                 else if (role == 3)
                 {
-                    if (SVData.Players.Exists(x => x.ID == e.Message.Author.Id && x.Role == 3))
+                    if (RPClass.SVData.Players.Exists(x => x.ID == e.Message.Author.Id && x.Role == 3))
                     {
-                        SVObject.UserObject PlayerSearching = SVData.Players.First(x => x.ID == e.Message.Author.Id);
+                        SVObject.UserObject PlayerSearching = RPClass.SVData.Players.First(x => x.ID == e.Message.Author.Id);
                         if (!UsedAbility.Contains(PlayerSearching))
                         {
-                            SVObject.UserObject PlayerSearched = SVData.Players.FirstOrDefault(x => x.PlayerNum == playerNum);
+                            SVObject.UserObject PlayerSearched = RPClass.SVData.Players.FirstOrDefault(x => x.PlayerNum == playerNum);
                             if (PlayerSearched != null)
                             {
                                 if (PlayerSearched != PlayerSearching)

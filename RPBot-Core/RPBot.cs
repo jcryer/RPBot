@@ -17,7 +17,7 @@ using System.Text.RegularExpressions;
 
 namespace RPBot
 {
-    internal sealed class RPBot : RPClass
+    internal sealed class RPBot
     {
         private Config Config { get; }
         public DiscordClient Discord;
@@ -70,24 +70,24 @@ namespace RPBot
                 CaseSensitive = false
             };
 
-
             this.CommandsNextService = Discord.UseCommandsNext(cncfg);
             this.CommandsNextService.CommandErrored += this.CommandsNextService_CommandErrored;
             this.CommandsNextService.CommandExecuted += this.CommandsNextService_CommandExecuted;
 
-            this.CommandsNextService.RegisterCommands<MoneyClass>();
-            this.CommandsNextService.RegisterCommands<CommandsClass>();
-
-            this.CommandsNextService.RegisterCommands<XPClass>();
-        //    this.CommandsNextService.RegisterCommands<InstanceClass>();
-            this.CommandsNextService.RegisterCommands<GuildClass>();
-
-            this.CommandsNextService.RegisterCommands<LogClass>();
-            this.CommandsNextService.RegisterCommands<TriviaClass>();
-            this.CommandsNextService.RegisterCommands<ModClass>();
-            this.CommandsNextService.RegisterCommands<TagClass>();
-            this.CommandsNextService.RegisterCommands<SVClass>();
-
+            CommandsNextService.RegisterCommands(typeof(XPClass));
+            //    this.CommandsNextService.RegisterCommands<InstanceClass>();
+            CommandsNextService.RegisterCommands(typeof(MoneyClass));
+            CommandsNextService.RegisterCommands(typeof(CommandsClass));
+            CommandsNextService.RegisterCommands(typeof(GuildClass));
+            CommandsNextService.RegisterCommands(typeof(BloodClass));
+            CommandsNextService.RegisterCommands(typeof(MeritClass));
+            CommandsNextService.RegisterCommands(typeof(LogClass));
+            CommandsNextService.RegisterCommands(typeof(TriviaClass));
+            CommandsNextService.RegisterCommands(typeof(ModClass));
+            CommandsNextService.RegisterCommands(typeof(TagClass));
+            CommandsNextService.RegisterCommands(typeof(SVClass));
+            CommandsNextService.RegisterCommands(typeof(WikiClass));
+            WikiClass.InitWiki();
 
             InteractivityConfiguration icfg = new InteractivityConfiguration();
 			this.InteractivityService = Discord.UseInteractivity(icfg);
@@ -157,7 +157,7 @@ namespace RPBot
 
         private async Task Discord_SocketClose(SocketCloseEventArgs e)
         {
-            SaveData(-1);
+            RPClass.SaveData(-1);
             var process = new Process()
             {
                 StartInfo = new ProcessStartInfo
@@ -177,7 +177,7 @@ namespace RPBot
 
         private async Task Discord_SocketError(SocketErrorEventArgs e)
         {
-            SaveData(-1);
+            RPClass.SaveData(-1);
             var process = new Process()
             {
                 StartInfo = new ProcessStartInfo
@@ -257,21 +257,21 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                     DiscordMember me = await e.Guild.GetMemberAsync(126070623855312896);
                     await c.SendMessageAsync("Restarted successfully, " + me.Mention + "!");
                 }
-                GuildRankingChannel = e.Guild.GetChannel(312964153197330433);
-                PlayerRankingChannel = e.Guild.GetChannel(315048564525105153);
-                VillainRankingChannel = e.Guild.GetChannel(315048584007385093);
-                RogueRankingChannel = e.Guild.GetChannel(371782656716832769);
-                AcademyRankingChannel = e.Guild.GetChannel(402966763022712843);
-                ApprovalsCategory = e.Guild.GetChannel(389160226944712705);
-                InstanceCategory = e.Guild.GetChannel(391971392733839360);
-                StatsChannel = e.Guild.GetChannel(312964092748890114);
-                StaffRole = e.Guild.GetRole(313845882841858048);
-                HelpfulRole = e.Guild.GetRole(312979390516559885);
-                PunishedRole = e.Guild.GetRole(379163684276142091);
-                GameChannel = e.Guild.GetChannel(395882029738360832);
+                RPClass.GuildRankingChannel = e.Guild.GetChannel(312964153197330433);
+                RPClass.PlayerRankingChannel = e.Guild.GetChannel(315048564525105153);
+                RPClass.VillainRankingChannel = e.Guild.GetChannel(315048584007385093);
+                RPClass.RogueRankingChannel = e.Guild.GetChannel(371782656716832769);
+                RPClass.AcademyRankingChannel = e.Guild.GetChannel(402966763022712843);
+                RPClass.ApprovalsCategory = e.Guild.GetChannel(389160226944712705);
+                RPClass.InstanceCategory = e.Guild.GetChannel(391971392733839360);
+                RPClass.StatsChannel = e.Guild.GetChannel(312964092748890114);
+                RPClass.StaffRole = e.Guild.GetRole(313845882841858048);
+                RPClass.HelpfulRole = e.Guild.GetRole(312979390516559885);
+                RPClass.PunishedRole = e.Guild.GetRole(379163684276142091);
+                RPClass.GameChannel = e.Guild.GetChannel(395882029738360832);
                 RPClass.RPGuild = e.Guild;
 
-                await AddOrUpdateUsers(RPGuild, true);
+                await RPClass.AddOrUpdateUsers(RPClass.RPGuild, true);
             }
             this.GameGuard = new Timer(TimerCallback, null, TimeSpan.FromMinutes(0), TimeSpan.FromMinutes(15));
 
@@ -332,9 +332,9 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                             .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
                             .AddField("Edit Timestamp", e.Message.EditedTimestamp.ToString(), true);
 
-                            if (MessageBuffer.Any(x => x.Key == e.Message.Id))
+                            if (RPClass.MessageBuffer.Any(x => x.Key == e.Message.Id))
                             {
-                                var m = MessageBuffer.First(x => x.Key == e.Message.Id);
+                                var m = RPClass.MessageBuffer.First(x => x.Key == e.Message.Id);
                                 embed.AddField("Old Message", !string.IsNullOrWhiteSpace(m.Value) ? m.Value : "-", false);
                                 m = new KeyValuePair<ulong, string>(e.Message.Id, e.Message.Content);
                             }
@@ -352,23 +352,23 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
 
         public async Task Discord_MessageCreated(MessageCreateEventArgs e)
         {
-            MessageBuffer.Add(new KeyValuePair<ulong, string>(e.Message.Id, e.Message.Content));
+            RPClass.MessageBuffer.Add(new KeyValuePair<ulong, string>(e.Message.Id, e.Message.Content));
             if (e.Guild == RPClass.RPGuild) { 
                 if (Program.firstRun)
                 {
                     try
                     {
-                        firstRun = false;
-                        Thread myNewThread = new Thread(async () => await UpdateClock(e, Discord));
+                        RPClass.FirstRun = false;
+                        Thread myNewThread = new Thread(async () => await RPClass.UpdateClock(e, Discord));
                         myNewThread.Start();
                     }
                     catch { }
                 }
                 if (!e.Message.Content.StartsWith("!"))
                 {
-                    if (SpeechList.Any(x => x.Id == e.Author.Id) && !e.Message.Content.StartsWith("*"))
+                    if (RPClass.SpeechList.Any(x => x.Id == e.Author.Id) && !e.Message.Content.StartsWith("*"))
                     {
-                        SpeechObject.RootObject savedName = SpeechList.First(x => x.Id == e.Author.Id);
+                        SpeechObject.RootObject savedName = RPClass.SpeechList.First(x => x.Id == e.Author.Id);
                         await e.Message.DeleteAsync();
                         await e.Channel.SendMessageAsync("__**" + savedName.Name + "**__: " + e.Message.Content);
                     }
@@ -390,7 +390,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                         Regex ItemRegex = new Regex(@"\.(png|gif|jpg|jpeg|tiff|webp)");
                         if (ItemRegex.IsMatch(e.Message.Content) || e.Message.Attachments.Any())
                         {
-                            var u = imageList.FirstOrDefault(x => x.Key == e.Message.Author);
+                            var u = RPClass.imageList.FirstOrDefault(x => x.Key == e.Message.Author);
                             if (u.Key != null)
                             {
 
@@ -403,22 +403,22 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                                 }
                                 else
                                 {
-                                    imageList[e.Message.Author as DiscordMember] = DateTime.UtcNow;
+                                    RPClass.imageList[e.Message.Author as DiscordMember] = DateTime.UtcNow;
                                 }
                             }
                             else
                             {
-                                imageList.Add(e.Message.Author as DiscordMember, DateTime.UtcNow);
+                                RPClass.imageList.Add(e.Message.Author as DiscordMember, DateTime.UtcNow);
                             }
                         }
 
-                        if (slowModeTime > 0)
+                        if (RPClass.slowModeTime > 0)
                         {
-                            var u = slowModeList.FirstOrDefault(x => x.Key == e.Message.Author);
+                            var u = RPClass.slowModeList.FirstOrDefault(x => x.Key == e.Message.Author);
                             if (u.Key != null)
                             {
 
-                                if (Math.Abs((u.Value - DateTime.UtcNow).TotalSeconds) <= slowModeTime)
+                                if (Math.Abs((u.Value - DateTime.UtcNow).TotalSeconds) <= RPClass.slowModeTime)
                                 {
                                     if (!(e.Author as DiscordMember).Roles.Any(x => x.Name == "Administrator"))
                                     {
@@ -427,12 +427,12 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                                 }
                                 else
                                 {
-                                    slowModeList[e.Message.Author as DiscordMember] = DateTime.UtcNow;
+                                    RPClass.slowModeList[e.Message.Author as DiscordMember] = DateTime.UtcNow;
                                 }
                             }
                             else
                             {
-                                slowModeList.Add(e.Message.Author as DiscordMember, DateTime.UtcNow);
+                                RPClass.slowModeList.Add(e.Message.Author as DiscordMember, DateTime.UtcNow);
                             }
                         }
                     }

@@ -1,25 +1,26 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "fc62f075b72bd408ed6db9d0152003e36e286c0b"
+    "signature": "e6234ba17e469d2e5528e09010e7c94575cdb9ed"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "RPBot-Core/1.0.0": {
         "dependencies": {
-          "DSharpPlus": "4.0.0-beta-00399",
-          "DSharpPlus.CommandsNext": "4.0.0-beta-00399",
-          "DSharpPlus.Interactivity": "4.0.0-beta-00399",
-          "DSharpPlus.VoiceNext": "4.0.0-beta-00399",
+          "DSharpPlus": "4.0.0-beta-00417",
+          "DSharpPlus.CommandsNext": "4.0.0-beta-00417",
+          "DSharpPlus.Interactivity": "4.0.0-beta-00417",
+          "DSharpPlus.VoiceNext": "4.0.0-beta-00417",
           "Newtonsoft.Json": "10.0.3",
-          "CommonMark": "0.1.0.0"
+          "CommonMark": "0.1.0.0",
+          "DotNetWikiBot": "1.0.0.0"
         },
         "runtime": {
           "RPBot-Core.dll": {}
         }
       },
-      "DSharpPlus/4.0.0-beta-00399": {
+      "DSharpPlus/4.0.0-beta-00417": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
           "System.Net.Http": "4.3.3",
@@ -31,26 +32,26 @@
           "lib/netstandard2.0/DSharpPlus.dll": {}
         }
       },
-      "DSharpPlus.CommandsNext/4.0.0-beta-00399": {
+      "DSharpPlus.CommandsNext/4.0.0-beta-00417": {
         "dependencies": {
-          "DSharpPlus": "4.0.0-beta-00399",
+          "DSharpPlus": "4.0.0-beta-00417",
           "Microsoft.Extensions.DependencyInjection": "2.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/DSharpPlus.CommandsNext.dll": {}
         }
       },
-      "DSharpPlus.Interactivity/4.0.0-beta-00399": {
+      "DSharpPlus.Interactivity/4.0.0-beta-00417": {
         "dependencies": {
-          "DSharpPlus": "4.0.0-beta-00399"
+          "DSharpPlus": "4.0.0-beta-00417"
         },
         "runtime": {
           "lib/netstandard2.0/DSharpPlus.Interactivity.dll": {}
         }
       },
-      "DSharpPlus.VoiceNext/4.0.0-beta-00399": {
+      "DSharpPlus.VoiceNext/4.0.0-beta-00417": {
         "dependencies": {
-          "DSharpPlus": "4.0.0-beta-00399"
+          "DSharpPlus": "4.0.0-beta-00417"
         },
         "runtime": {
           "lib/netstandard2.0/DSharpPlus.VoiceNext.dll": {}
@@ -1050,6 +1051,11 @@
         "runtime": {
           "CommonMark.dll": {}
         }
+      },
+      "DotNetWikiBot/1.0.0.0": {
+        "runtime": {
+          "DotNetWikiBot.dll": {}
+        }
       }
     }
   },
@@ -1059,33 +1065,33 @@
       "serviceable": false,
       "sha512": ""
     },
-    "DSharpPlus/4.0.0-beta-00399": {
+    "DSharpPlus/4.0.0-beta-00417": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gMRqScCnUxhgrFI+XoMyFEkUbBM0lIDTakIyE1xLm170K2fhLBVxF6jq74Yoq55rujinXXNgAOAZ8YohPQ4J9Q==",
-      "path": "dsharpplus/4.0.0-beta-00399",
-      "hashPath": "dsharpplus.4.0.0-beta-00399.nupkg.sha512"
+      "sha512": "sha512-hWtpwtHvKuEkEjELwgr4tRvAKlsVPq/UuKNGgV8Rtu1JJLPqrS7jEzgQEN6M9lirM5azgUwxJC76piFeIVBoZg==",
+      "path": "dsharpplus/4.0.0-beta-00417",
+      "hashPath": "dsharpplus.4.0.0-beta-00417.nupkg.sha512"
     },
-    "DSharpPlus.CommandsNext/4.0.0-beta-00399": {
+    "DSharpPlus.CommandsNext/4.0.0-beta-00417": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+IdGpIkRkMaXTYUrlBB8K5oN083e7jDOBe6nRX5WWNS3Xvlv2VHCJuQnLsWZwHlWEkQxVeZKLCxTRjOmiE+tSA==",
-      "path": "dsharpplus.commandsnext/4.0.0-beta-00399",
-      "hashPath": "dsharpplus.commandsnext.4.0.0-beta-00399.nupkg.sha512"
+      "sha512": "sha512-shBbj4ydXJq8vSHNtfhW1DZOemzNKIm2ZAUoAItcP/YbFGBAOadtuYc/3aBVmnXXXiPrfZ7jw6+lXFLYjl3i8w==",
+      "path": "dsharpplus.commandsnext/4.0.0-beta-00417",
+      "hashPath": "dsharpplus.commandsnext.4.0.0-beta-00417.nupkg.sha512"
     },
-    "DSharpPlus.Interactivity/4.0.0-beta-00399": {
+    "DSharpPlus.Interactivity/4.0.0-beta-00417": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-r9QL83m0yU8hhjHb3n61A6JFOhJodUwcphTH1tOwyijYuTARuF+A0KwegXj86lGOjh2YY2zXM2/fbwlzGLjedA==",
-      "path": "dsharpplus.interactivity/4.0.0-beta-00399",
-      "hashPath": "dsharpplus.interactivity.4.0.0-beta-00399.nupkg.sha512"
+      "sha512": "sha512-Isj2Ucjz5/JdVOrzd74ZSeT10e48mEP+/p+TTSFHS5SY+vruWYynMipV9IsOVDCGIrykTB6vr3e6EcyNIuLCuQ==",
+      "path": "dsharpplus.interactivity/4.0.0-beta-00417",
+      "hashPath": "dsharpplus.interactivity.4.0.0-beta-00417.nupkg.sha512"
     },
-    "DSharpPlus.VoiceNext/4.0.0-beta-00399": {
+    "DSharpPlus.VoiceNext/4.0.0-beta-00417": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-T0w0iyW/WCNkWtJ65wtms4dw3uWW1u632uKV63uD6HLSo6SItQyUK/u4fFkV9z5YrcCHSUOLc36+on8gYw1BMA==",
-      "path": "dsharpplus.voicenext/4.0.0-beta-00399",
-      "hashPath": "dsharpplus.voicenext.4.0.0-beta-00399.nupkg.sha512"
+      "sha512": "sha512-I8Bfw1eMk0g2PWpU+DeYPYq7+21dkZJNulMjL5gVI8YHi7t3sB1BUBroZ8/DbkaT/B0a0fzY/CdYKQic343VKA==",
+      "path": "dsharpplus.voicenext/4.0.0-beta-00417",
+      "hashPath": "dsharpplus.voicenext.4.0.0-beta-00417.nupkg.sha512"
     },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",
@@ -1690,6 +1696,11 @@
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
     },
     "CommonMark/0.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DotNetWikiBot/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

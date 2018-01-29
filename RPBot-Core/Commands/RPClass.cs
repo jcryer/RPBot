@@ -13,7 +13,7 @@ using DSharpPlus.EventArgs;
 
 namespace RPBot
 {
-    class RPClass : Program
+    static class RPClass
     {
         public static List<UserObject.RootObject> Users = new List<UserObject.RootObject>();
         public static List<GuildObject.RootObject> Guilds = new List<GuildObject.RootObject>();
@@ -39,6 +39,9 @@ namespace RPBot
         public static DiscordRole HelpfulRole;
         public static DiscordRole PunishedRole;
         public static DiscordGuild RPGuild;
+        public static Random Random = new Random();
+
+        public static bool FirstRun = false;
         public static Extensions.SlidingBuffer<KeyValuePair<ulong, string>> MessageBuffer = new Extensions.SlidingBuffer<KeyValuePair<ulong, string>>(500);
 
         public static bool Restarted = false;
