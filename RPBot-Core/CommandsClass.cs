@@ -239,7 +239,6 @@ namespace RPBot
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
-                await ctx.Message.DeleteAsync();
             }
 
             [Command("from"), Description("Delete an amount of messages from a specified message"), Aliases("f", "fr")]
@@ -317,7 +316,6 @@ namespace RPBot
                 var resp = await ctx.RespondAsync($"Latest messages by {user?.Mention} (ID:{user?.Id}) deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
-                await ctx.Message.DeleteAsync();
             }
 
             [Command("commands"), Description("Purge RPBot's messages."), Aliases("c", "self", "own", "clean")]
@@ -331,7 +329,6 @@ namespace RPBot
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
-                await ctx.Message.DeleteAsync();
             }
 
             [Command("bots"), Description("Purge messages from all bots in this channel"), Aliases("b", "bot")]
@@ -345,7 +342,6 @@ namespace RPBot
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
-                await ctx.Message.DeleteAsync();
             }
 
             [Command("images"), Description("Purge messages with images or attachments on them."), Aliases("i", "imgs", "img")]
@@ -359,7 +355,6 @@ namespace RPBot
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
-                await ctx.Message.DeleteAsync();
             }
         }
 
@@ -514,8 +509,6 @@ namespace RPBot
 
         }
 
-      
-
         [Command("removeuser"), Description("Makes the bot delete a user that has left the server (Name in statsheets, copied exactly)."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task RemoveUser(CommandContext e, [RemainingText] string whotodelete = "")
         {
@@ -533,38 +526,6 @@ namespace RPBot
             }
         }
 
-        [Command("joinlist"), Description("List of who joined when.")]
-        public async Task JoinList(CommandContext e)
-        {
-            var interactivity = e.Client.GetInteractivity();
-            List<Page> interactivityPages = new List<Page>();
-
-            var members = await e.Guild.GetAllMembersAsync();
-            members = members.OrderBy(x => x.JoinedAt).ToList();
-            Page p = new Page();
-            DiscordEmbedBuilder b = new DiscordEmbedBuilder()
-            {
-                Color = new DiscordColor("4169E1"),
-                Timestamp = DateTime.UtcNow
-            }
-            .WithFooter("Heroes & Villains");
-
-            for (int i = 1; i <= members.Count(); i++)
-            {
-                b.Description += i + ": " + members[i-1].DisplayName + " - " + members[i-1].JoinedAt.ToString("dd MMMM yyyy (H:mm:ss)") + "\n";
-                if (i % 10 == 0 && i != 0)
-                {
-                    p.Embed = b;
-                    interactivityPages.Add(p);
-                    p = new Page();
-                    b.ClearFields();
-                }
-            }
-
-            await interactivity.SendPaginatedMessage(e.Channel, e.Member, interactivityPages, timeoutoverride: TimeSpan.FromSeconds(60));
-            
-        }
-
         [Group("approval"), Description("Approval commands")]
         class ApprovalClass : BaseCommandModule
         {
@@ -576,35 +537,7 @@ namespace RPBot
                 DiscordChannel c = await e.Guild.CreateChannelAsync(name, ChannelType.Text, parent: RPClass.ApprovalsCategory);
                 await c.AddOverwriteAsync(m, Permissions.SendMessages, Permissions.None);
                 await c.AddOverwriteAsync(e.Guild.EveryoneRole, Permissions.ReadMessageHistory, Permissions.SendMessages);
-
-                RPClass.approvalsList.Add(c.Id, m.Id);
-
-                RPClass.SaveData(8);
-                await e.RespondAsync("Approval instance created.");
-            }
-
-            [Command("remove"), Description("Command to remove an approval instance. Execute this command in the instance you wish to remove, or mention the user the approval instance is for."), RequireRoles(RoleCheckMode.Any, "Staff")]
-            public async Task RemoveApproval(CommandContext e, [Description("Mention the user the approval instance is for, or execute the command in the instance you wish to remove.")] DiscordMember m = null)
-            {
-
-                if (m != null)
-                {
-                    if (RPClass.approvalsList.ContainsValue(m.Id))
-                    {
-                        DiscordChannel d = e.Guild.GetChannel(RPClass.approvalsList.First(x => x.Value == m.Id).Key);
-                        RPClass.approvalsList.Remove(d.Id);
-                        await d.DeleteAsync();
-                    }
-                }
-                else
-                {
-                    if (RPClass.approvalsList.ContainsKey(e.Channel.Id))
-                    {
-                        await e.Channel.DeleteAsync();
-                        RPClass.approvalsList.Remove(e.Channel.Id);
-                    }
-                }
-                RPClass.SaveData(8);
+                await e.RespondAsync("Channel created!\n" + c.Mention);
             }
         }
 

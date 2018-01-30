@@ -310,7 +310,6 @@ namespace RPBot
                 if (rank <= 2000) GuildRank = "D2";
                 if (rank <= 1250) GuildRank = "D3";
 
-
                 if (value.Length > 1500)
                 {
                     await RankingChannel.SendMessageAsync(value + "```");

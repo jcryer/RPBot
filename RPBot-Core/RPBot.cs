@@ -60,6 +60,7 @@ namespace RPBot
             Discord.GuildMemberRemoved += this.Discord_GuildMemberRemoved;
             Discord.SocketErrored += this.Discord_SocketError;
             Discord.VoiceStateUpdated += this.Discord_VoiceStateUpdated;
+            Discord.ClientErrored += this.Discord_ClientErrored;
 
             // commandsnext config and the commandsnext service itself
             var cncfg = new CommandsNextConfiguration
@@ -157,6 +158,13 @@ namespace RPBot
 
         private async Task Discord_SocketClose(SocketCloseEventArgs e)
         {
+            try
+            {
+                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Restarting: Socket Close - " + e.Client.CurrentApplication.Owner.Mention);
+            }
+            catch
+            {
+            }
             RPClass.SaveData(-1);
             var process = new Process()
             {
@@ -172,11 +180,44 @@ namespace RPBot
             process.Start();
             Environment.Exit(-1);
             await Task.Delay(0);
+        }
 
+        private async Task Discord_ClientErrored(ClientErrorEventArgs e)
+        {
+            try
+            {
+                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Restarting: Client Error - " + e.Client.CurrentApplication.Owner.Mention);
+            }
+            catch
+            {
+            }
+            RPClass.SaveData(-1);
+            var process = new Process()
+            {
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = "/bin/bash",
+                    Arguments = $"-c \"dotnet RPBot-Core.dll\"",
+                    RedirectStandardOutput = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true,
+                }
+            };
+            process.Start();
+            Environment.Exit(-1);
+            await Task.Delay(0);
+            
         }
 
         private async Task Discord_SocketError(SocketErrorEventArgs e)
         {
+            try
+            {
+                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Restarting: Socket Error - " + e.Client.CurrentApplication.Owner.Mention);
+            }
+            catch
+            {
+            }
             RPClass.SaveData(-1);
             var process = new Process()
             {
