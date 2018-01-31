@@ -160,7 +160,7 @@ namespace RPBot
         {
             try
             {
-                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Restarting: Socket Close - " + e.Client.CurrentApplication.Owner.Mention);
+                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Restarting: Socket Close");
             }
             catch
             {
@@ -186,7 +186,7 @@ namespace RPBot
         {
             try
             {
-                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Restarting: Client Error - " + e.Client.CurrentApplication.Owner.Mention);
+                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Restarting: Client Error");
             }
             catch
             {
@@ -213,7 +213,7 @@ namespace RPBot
         {
             try
             {
-                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Restarting: Socket Error - " + e.Client.CurrentApplication.Owner.Mention);
+                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Restarting: Socket Error");
             }
             catch
             {
