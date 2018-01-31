@@ -41,7 +41,7 @@ namespace RPBot
         public static DiscordGuild RPGuild;
         public static Random Random = new Random();
 
-        public static bool FirstRun = false;
+        public static bool FirstRun = true;
         public static Extensions.SlidingBuffer<KeyValuePair<ulong, string>> MessageBuffer = new Extensions.SlidingBuffer<KeyValuePair<ulong, string>>(500);
 
         public static bool Restarted = false;
@@ -238,7 +238,6 @@ namespace RPBot
                     TimePhase = "It is now midnight, on " + DateTime.UtcNow.DayOfWeek;
                     y = DateTime.UtcNow;
                     await AnnouncementChannel.SendMessageAsync(TimePhase);
-
                 }
                 await Task.Delay(45000);
             }

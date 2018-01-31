@@ -17,7 +17,6 @@ namespace RPBot
     {
 
         public static string token;
-        public static bool firstRun = true;
         public static Random random = new Random();
 
         public static void Main(string[] args) => new Program().Run(args).GetAwaiter().GetResult();

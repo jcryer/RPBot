@@ -395,7 +395,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
         {
             RPClass.MessageBuffer.Add(new KeyValuePair<ulong, string>(e.Message.Id, e.Message.Content));
             if (e.Guild == RPClass.RPGuild) { 
-                if (Program.firstRun)
+                if (RPClass.FirstRun)
                 {
                     try
                     {
