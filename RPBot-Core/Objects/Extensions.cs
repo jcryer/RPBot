@@ -48,5 +48,12 @@ namespace RPBot
 
             return chunks;
         }
+
+        public static string RandomString(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+              .Select(s => s[RPClass.Random.Next(s.Length)]).ToArray());
+        }
     }
 }

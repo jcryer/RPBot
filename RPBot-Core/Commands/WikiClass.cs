@@ -29,55 +29,55 @@ namespace RPBot
                 if (message != "-") page.text += Environment.NewLine + "== Personality ==" + Environment.NewLine + message;
             };
 
-            WikiFields.Add(new List<string> { "Personality", "Please enter personality text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be blank." }, Personality);
+            WikiFields.Add(new List<string> { "Personality", "Please enter personality text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be omitted." }, Personality);
 
             Action<string, Wiki.Page> Backstory = (string message, Wiki.Page page) =>
             {
                 if (message != "-") page.text += Environment.NewLine + "== Backstory ==" + Environment.NewLine + message;
             };
 
-            WikiFields.Add(new List<string> { "Backstory", "Please enter backstory text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be blank." }, Backstory);
+            WikiFields.Add(new List<string> { "Backstory", "Please enter backstory text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be omitted." }, Backstory);
 
             Action<string, Wiki.Page> Resources = (string message, Wiki.Page page) =>
             {
                 if (message != "-") page.text += Environment.NewLine + "== Resources ==" + Environment.NewLine + message;
             };
 
-            WikiFields.Add(new List<string> { "Resources", "Please enter resources text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be blank." }, Resources);
+            WikiFields.Add(new List<string> { "Resources", "Please enter resources text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be omitted." }, Resources);
 
             Action<string, Wiki.Page> Equipment = (string message, Wiki.Page page) =>
             {
                 if (message != "-") page.text += Environment.NewLine + "=== Equipment/Weaponry ===" + Environment.NewLine + message;
             };
 
-            WikiFields.Add(new List<string> { "Equipment", "Please enter Equipment text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be blank." }, Equipment);
+            WikiFields.Add(new List<string> { "Equipment", "Please enter Equipment text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be omitted." }, Equipment);
 
             Action<string, Wiki.Page> Specialisations = (string message, Wiki.Page page) =>
             {
                 if (message != "-") page.text += Environment.NewLine + "=== Specializations ===" + Environment.NewLine + message;
             };
 
-            WikiFields.Add(new List<string> { "Specialisations", "Please enter Specialisations text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be blank." }, Specialisations);
+            WikiFields.Add(new List<string> { "Specialisations", "Please enter Specialisations text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be omitted." }, Specialisations);
 
             Action<string, Wiki.Page> Quirk = (string message, Wiki.Page page) =>
             {
                 if (message != "-") page.text += Environment.NewLine + "== Quirk ==" + Environment.NewLine + message;
             };
-            WikiFields.Add(new List<string> { "Quirk", "Please enter Quirk text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be blank." }, Quirk);
+            WikiFields.Add(new List<string> { "Quirk", "Please enter Quirk text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be omitted." }, Quirk);
 
             Action<string, Wiki.Page> Versatility = (string message, Wiki.Page page) =>
             {
                 if (message != "-") page.text += Environment.NewLine + "=== Versatility ===" + Environment.NewLine + message;
             };
 
-            WikiFields.Add(new List<string> { "Versatility", "Please enter Quirk Versatility text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be blank." }, Versatility);
+            WikiFields.Add(new List<string> { "Versatility", "Please enter Quirk Versatility text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be omitted." }, Versatility);
 
             Action<string, Wiki.Page> Example = (string message, Wiki.Page page) =>
             {
                 if (message != "-") page.text += Environment.NewLine + "=== Example ===" + Environment.NewLine + message;
             };
 
-            WikiFields.Add(new List<string> { "Example", "Please enter Quirk Example text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be blank." }, Example);
+            WikiFields.Add(new List<string> { "Example", "Please enter Quirk Example text. To send over 2000 characters, add a `¬` at the end of each message that *isn't* the final message.\nSend `-` if the field should be omitted." }, Example);
         }
 
         [Command("addoc")]
@@ -171,7 +171,7 @@ namespace RPBot
             
             foreach (var infoBoxField in InfoBox.Fields)
             {
-                await mainMessage.ModifyAsync(infoBoxField.Question + "\nSend `-` if the field should be blank.");
+                await mainMessage.ModifyAsync(infoBoxField.Question + "\nSend `-` if the field should be omitted.");
                 Failed:
                 var msg = await interactivity.WaitForMessageAsync(x => x.Author == e.Member, TimeSpan.FromSeconds(120));
                 if (msg != null)

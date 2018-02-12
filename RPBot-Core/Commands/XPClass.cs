@@ -209,22 +209,7 @@ namespace RPBot
                 else if (type == 2) UserStats += user.UserData.CrimesCommitted;
                 else if (type == 3 || type == 4) UserStats += user.UserData.ResolvedCases + user.UserData.CrimesCommitted;
 
-                int rank = user.Xp;
-                string UserRank = "S1";
-                if (rank <= 30500) UserRank = "S2";
-                if (rank <= 25500) UserRank = "S3";
-                if (rank <= 20500) UserRank = "A1";
-                if (rank <= 17500) UserRank = "A2";
-                if (rank <= 15000) UserRank = "A3";
-                if (rank <= 12500) UserRank = "B1";
-                if (rank <= 10500) UserRank = "B2";
-                if (rank <= 8500) UserRank = "B3";
-                if (rank <= 6500) UserRank = "C1";
-                if (rank <= 5000) UserRank = "C2";
-                if (rank <= 3750) UserRank = "C3";
-                if (rank <= 2500) UserRank = "D1";
-                if (rank <= 2000) UserRank = "D2";
-                if (rank <= 1250) UserRank = "D3";
+                string UserRank = user.GetRank();
 
                 string UserGuild = "";
 				if (user.UserData.GuildID == 0) UserGuild += "N/A";

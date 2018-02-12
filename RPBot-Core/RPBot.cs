@@ -88,6 +88,8 @@ namespace RPBot
             CommandsNextService.RegisterCommands(typeof(TagClass));
             CommandsNextService.RegisterCommands(typeof(SVClass));
             CommandsNextService.RegisterCommands(typeof(WikiClass));
+            CommandsNextService.RegisterCommands(typeof(StatsClass));
+
             WikiClass.InitWiki();
 
             InteractivityConfiguration icfg = new InteractivityConfiguration();

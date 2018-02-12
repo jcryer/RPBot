@@ -13,6 +13,17 @@
       "GuildID": 0
     },
     "Xp": 21790,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -32,6 +43,17 @@
       "GuildID": 0
     },
     "Xp": 1465,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -51,6 +73,17 @@
       "GuildID": 0
     },
     "Xp": 2675,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -70,6 +103,17 @@
       "GuildID": 0
     },
     "Xp": 1306,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -89,6 +133,17 @@
       "GuildID": 0
     },
     "Xp": 6600,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -108,6 +163,17 @@
       "GuildID": 0
     },
     "Xp": 1250,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -116,8 +182,8 @@
   {
     "UserData": {
       "UserID": 198458539046338560,
-      "Username": "Psion",
-      "Role": 1,
+      "Username": "ᵤₛₑᵣ ₙₒₜ ᶠₒᵤₙᵈ",
+      "Role": 0,
       "Status": 1,
       "Money": 724500,
       "MeritPoints": 0,
@@ -127,6 +193,17 @@
       "GuildID": 0
     },
     "Xp": 4385,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -146,6 +223,17 @@
       "GuildID": 0
     },
     "Xp": 13355,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -165,6 +253,17 @@
       "GuildID": 0
     },
     "Xp": 1245,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -184,6 +283,17 @@
       "GuildID": 2
     },
     "Xp": 4054,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -203,6 +313,17 @@
       "GuildID": 0
     },
     "Xp": 2250,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -222,6 +343,17 @@
       "GuildID": 0
     },
     "Xp": 1198,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -231,7 +363,7 @@
     "UserData": {
       "UserID": 182959413018099712,
       "Username": "Tyranica",
-      "Role": 2,
+      "Role": 3,
       "Status": 1,
       "Money": 44000,
       "MeritPoints": 0,
@@ -241,6 +373,17 @@
       "GuildID": 0
     },
     "Xp": 2898,
+    "Stats": {
+      "Melee": 8,
+      "Ranged": 17,
+      "Mobility": 14,
+      "Dodge": 11,
+      "Durability": 8,
+      "Utility": 2,
+      "Healing": 2,
+      "Influence": 3,
+      "Potential": 21
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -260,6 +403,17 @@
       "GuildID": 1
     },
     "Xp": 3502,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -268,8 +422,8 @@
   {
     "UserData": {
       "UserID": 315318484022067202,
-      "Username": "Yako",
-      "Role": 3,
+      "Username": "thr3vie/Hyrule",
+      "Role": 0,
       "Status": 1,
       "Money": 271200,
       "MeritPoints": 0,
@@ -279,6 +433,17 @@
       "GuildID": 0
     },
     "Xp": 2833,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -298,6 +463,17 @@
       "GuildID": 0
     },
     "Xp": 2133,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -317,6 +493,17 @@
       "GuildID": 0
     },
     "Xp": 1220,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -325,7 +512,7 @@
   {
     "UserData": {
       "UserID": 237928154273021952,
-      "Username": "Savitar",
+      "Username": "Slicer",
       "Role": 2,
       "Status": 1,
       "Money": 4000,
@@ -336,6 +523,17 @@
       "GuildID": 1
     },
     "Xp": 2325,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -355,6 +553,17 @@
       "GuildID": 0
     },
     "Xp": 1188,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -374,6 +583,17 @@
       "GuildID": 2
     },
     "Xp": 4010,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -382,7 +602,7 @@
   {
     "UserData": {
       "UserID": 271794986230611969,
-      "Username": "Blyat man",
+      "Username": "Blyat Man",
       "Role": 3,
       "Status": 1,
       "Money": 20000,
@@ -393,6 +613,17 @@
       "GuildID": 0
     },
     "Xp": 785,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -401,7 +632,7 @@
   {
     "UserData": {
       "UserID": 369622772684685324,
-      "Username": "Tenebris",
+      "Username": "Judgement",
       "Role": 1,
       "Status": 1,
       "Money": 20000,
@@ -412,6 +643,17 @@
       "GuildID": 1
     },
     "Xp": 2160,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -431,6 +673,17 @@
       "GuildID": 0
     },
     "Xp": 1038,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -450,6 +703,17 @@
       "GuildID": 0
     },
     "Xp": 1125,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -458,8 +722,8 @@
   {
     "UserData": {
       "UserID": 362875280467165184,
-      "Username": "Golden Dragon (Alexander)",
-      "Role": 1,
+      "Username": "Warrior",
+      "Role": 0,
       "Status": 1,
       "Money": 50000,
       "MeritPoints": 0,
@@ -469,6 +733,17 @@
       "GuildID": 0
     },
     "Xp": 1510,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -477,8 +752,8 @@
   {
     "UserData": {
       "UserID": 322120939850563584,
-      "Username": "Shadow Star",
-      "Role": 3,
+      "Username": "Professor Star",
+      "Role": 1,
       "Status": 1,
       "Money": 10500,
       "MeritPoints": 0,
@@ -488,6 +763,17 @@
       "GuildID": 0
     },
     "Xp": 1215,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -507,6 +793,17 @@
       "GuildID": 0
     },
     "Xp": 1100,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -526,6 +823,17 @@
       "GuildID": 0
     },
     "Xp": 1270,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -545,6 +853,17 @@
       "GuildID": 0
     },
     "Xp": 1530,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -564,6 +883,17 @@
       "GuildID": 1
     },
     "Xp": 1113,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -583,6 +913,17 @@
       "GuildID": 0
     },
     "Xp": 1365,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -602,6 +943,17 @@
       "GuildID": 1
     },
     "Xp": 3425,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -621,6 +973,17 @@
       "GuildID": 2
     },
     "Xp": 1595,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": true,
       "MuteDuration": "00:00:00"
@@ -640,6 +1003,17 @@
       "GuildID": 0
     },
     "Xp": 1695,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": true,
       "MuteDuration": "00:00:00"
@@ -659,6 +1033,17 @@
       "GuildID": 0
     },
     "Xp": 808,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -678,6 +1063,17 @@
       "GuildID": 0
     },
     "Xp": 1275,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -697,6 +1093,17 @@
       "GuildID": 0
     },
     "Xp": 1345,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -705,8 +1112,8 @@
   {
     "UserData": {
       "UserID": 64751081975975936,
-      "Username": "Dreadknight",
-      "Role": 2,
+      "Username": "Altair",
+      "Role": 3,
       "Status": 1,
       "Money": 69500,
       "MeritPoints": 0,
@@ -716,6 +1123,17 @@
       "GuildID": 2
     },
     "Xp": 2359,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -735,6 +1153,17 @@
       "GuildID": 0
     },
     "Xp": 1055,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -754,6 +1183,17 @@
       "GuildID": 0
     },
     "Xp": 1135,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -773,6 +1213,17 @@
       "GuildID": 0
     },
     "Xp": 2045,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -792,6 +1243,17 @@
       "GuildID": 0
     },
     "Xp": 1475,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -811,6 +1273,17 @@
       "GuildID": 0
     },
     "Xp": 1203,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -830,6 +1303,17 @@
       "GuildID": 0
     },
     "Xp": 1045,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -849,6 +1333,17 @@
       "GuildID": 2
     },
     "Xp": 1845,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": true,
       "MuteDuration": "00:00:00"
@@ -868,6 +1363,17 @@
       "GuildID": 1
     },
     "Xp": 1805,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -876,8 +1382,8 @@
   {
     "UserData": {
       "UserID": 321501319095517185,
-      "Username": "Slowki",
-      "Role": 3,
+      "Username": "Meraki",
+      "Role": 1,
       "Status": 1,
       "Money": 10000,
       "MeritPoints": 0,
@@ -887,6 +1393,17 @@
       "GuildID": 0
     },
     "Xp": 1015,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -906,6 +1423,17 @@
       "GuildID": 0
     },
     "Xp": 1620,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -925,6 +1453,17 @@
       "GuildID": 0
     },
     "Xp": 855,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -944,6 +1483,17 @@
       "GuildID": 0
     },
     "Xp": 1015,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -963,6 +1513,17 @@
       "GuildID": 0
     },
     "Xp": 800,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -982,6 +1543,17 @@
       "GuildID": 0
     },
     "Xp": 770,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -990,8 +1562,8 @@
   {
     "UserData": {
       "UserID": 362299393547698176,
-      "Username": "Infamous Metalico",
-      "Role": 2,
+      "Username": "Shock Wave",
+      "Role": 3,
       "Status": 1,
       "Money": 15000,
       "MeritPoints": 0,
@@ -1001,6 +1573,17 @@
       "GuildID": 0
     },
     "Xp": 985,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1020,6 +1603,17 @@
       "GuildID": 0
     },
     "Xp": 955,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1039,6 +1633,17 @@
       "GuildID": 0
     },
     "Xp": 1075,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1058,6 +1663,17 @@
       "GuildID": 0
     },
     "Xp": 942,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1077,6 +1693,17 @@
       "GuildID": 0
     },
     "Xp": 835,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1096,6 +1723,17 @@
       "GuildID": 0
     },
     "Xp": 750,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1115,6 +1753,17 @@
       "GuildID": 0
     },
     "Xp": 940,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1134,6 +1783,17 @@
       "GuildID": 0
     },
     "Xp": 765,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1153,6 +1813,17 @@
       "GuildID": 0
     },
     "Xp": 885,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1172,6 +1843,17 @@
       "GuildID": 0
     },
     "Xp": 1125,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1191,6 +1873,17 @@
       "GuildID": 0
     },
     "Xp": 750,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1210,6 +1903,17 @@
       "GuildID": 0
     },
     "Xp": 855,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1229,6 +1933,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1248,6 +1963,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1267,6 +1993,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1286,6 +2023,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1305,6 +2053,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1313,7 +2072,7 @@
   {
     "UserData": {
       "UserID": 254789676089606144,
-      "Username": "Xbullshiet_01",
+      "Username": "XBullshiet_01",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -1324,6 +2083,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1343,6 +2113,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1362,6 +2143,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1371,7 +2163,7 @@
     "UserData": {
       "UserID": 150767260464709632,
       "Username": "Faox",
-      "Role": 1,
+      "Role": 0,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -1381,6 +2173,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1400,6 +2203,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1419,6 +2233,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1438,6 +2263,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1457,6 +2293,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1476,6 +2323,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1495,6 +2353,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1514,6 +2383,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1522,7 +2402,7 @@
   {
     "UserData": {
       "UserID": 201731211796676608,
-      "Username": "The Joker",
+      "Username": "Darth Vader",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -1533,6 +2413,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1552,6 +2443,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1571,6 +2473,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1590,6 +2503,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1609,6 +2533,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1628,6 +2563,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1647,6 +2593,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1666,6 +2623,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1674,7 +2642,7 @@
   {
     "UserData": {
       "UserID": 357185928629846017,
-      "Username": "Stiles🤞❤(Wolf's Bro)",
+      "Username": "Lil 'Stiles😍",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -1685,6 +2653,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1693,8 +2672,8 @@
   {
     "UserData": {
       "UserID": 126070623855312896,
-      "Username": "jcryer",
-      "Role": 0,
+      "Username": "Daedalus",
+      "Role": 1,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -1704,6 +2683,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 17,
+      "Ranged": 14,
+      "Mobility": 12,
+      "Dodge": 7,
+      "Durability": 3,
+      "Utility": 1,
+      "Healing": 21,
+      "Influence": 21,
+      "Potential": 8
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1723,6 +2713,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1742,6 +2743,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1761,6 +2773,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1780,6 +2803,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1799,6 +2833,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1818,6 +2863,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1837,6 +2893,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1856,6 +2923,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1875,6 +2953,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1883,7 +2972,7 @@
   {
     "UserData": {
       "UserID": 308272251457765379,
-      "Username": "Serious_Dante",
+      "Username": "Dante",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -1894,6 +2983,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1913,6 +3013,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1932,6 +3043,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1951,6 +3073,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1970,6 +3103,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -1989,6 +3133,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2008,6 +3163,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2027,6 +3193,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2046,6 +3223,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2065,6 +3253,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2073,7 +3272,7 @@
   {
     "UserData": {
       "UserID": 375102509330464768,
-      "Username": "Wandering Swordsman",
+      "Username": "Wondering Swordsman",
       "Role": 3,
       "Status": 1,
       "Money": 0,
@@ -2084,6 +3283,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2103,6 +3313,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2122,6 +3343,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2141,6 +3373,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2160,6 +3403,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2179,6 +3433,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2198,6 +3463,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2217,6 +3493,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2236,6 +3523,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2244,7 +3542,7 @@
   {
     "UserData": {
       "UserID": 266935768981831690,
-      "Username": "Killua (YT GoldenEyes)",
+      "Username": "Killua Zoldyck",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -2255,6 +3553,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2274,6 +3583,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2293,6 +3613,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2312,6 +3643,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2331,6 +3673,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2350,6 +3703,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2358,7 +3722,7 @@
   {
     "UserData": {
       "UserID": 399441223816970241,
-      "Username": "Eijirou Kirishima",
+      "Username": "Eijirou/Katsuki",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -2369,6 +3733,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2388,6 +3763,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2407,6 +3793,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2426,6 +3823,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2445,6 +3853,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2464,6 +3883,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2472,7 +3902,7 @@
   {
     "UserData": {
       "UserID": 384321675933777930,
-      "Username": "Ahegao",
+      "Username": "Kat Nestel",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -2483,6 +3913,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2491,7 +3932,7 @@
   {
     "UserData": {
       "UserID": 305210478471151616,
-      "Username": "piper",
+      "Username": "🍰🍐",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -2502,6 +3943,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2521,6 +3973,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2529,7 +3992,7 @@
   {
     "UserData": {
       "UserID": 247387080437661696,
-      "Username": "Fire Angel",
+      "Username": "Sylvestris",
       "Role": 1,
       "Status": 1,
       "Money": 0,
@@ -2540,6 +4003,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2559,6 +4033,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2578,6 +4063,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2597,6 +4093,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2616,6 +4123,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2635,6 +4153,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2654,6 +4183,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2673,6 +4213,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2692,6 +4243,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2711,6 +4273,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2730,6 +4303,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2749,6 +4333,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2768,6 +4363,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2776,8 +4382,8 @@
   {
     "UserData": {
       "UserID": 234319272376139777,
-      "Username": "Omega",
-      "Role": 0,
+      "Username": "Blood Sin",
+      "Role": 3,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2787,6 +4393,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2795,7 +4412,7 @@
   {
     "UserData": {
       "UserID": 373727267593125888,
-      "Username": "Elfredo Rodrigo",
+      "Username": "Urek Mazinno",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -2806,6 +4423,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2825,6 +4453,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2844,6 +4483,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2863,6 +4513,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2882,6 +4543,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2901,6 +4573,17 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"
@@ -2909,7 +4592,37 @@
   {
     "UserData": {
       "UserID": 246639171899359232,
-      "Username": "Eel",
+      "Username": "Blue Streak",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 408013387801559060,
+      "Username": "Hater Dabber",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -2920,6 +4633,1097 @@
       "GuildID": 0
     },
     "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 410804344909201408,
+      "Username": "IceyHeart2002",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 230301411034791936,
+      "Username": "Musicalmess",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 175897323325358082,
+      "Username": "Vice",
+      "Role": 3,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 337283221760770050,
+      "Username": "🎧Daft punk  The DJ🎧",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 353533810924716032,
+      "Username": "ActiveSilence",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 199033828348657664,
+      "Username": "Devon Redwyne",
+      "Role": 4,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 290160854987702275,
+      "Username": "Batcat",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 260189002039164939,
+      "Username": "Toast",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 411682400578437120,
+      "Username": "OBODY GAL (☆KENDOU ITSUKA☆)",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 406950073092800522,
+      "Username": "rock lee",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 407955625033596928,
+      "Username": "Goku black",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 162597717271379968,
+      "Username": "Jeff Harvey",
+      "Role": 3,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 358907314503417856,
+      "Username": "CrimsonUzu/Rorschach",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 201877836401868800,
+      "Username": "El Chapo",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 374182382686830594,
+      "Username": "Batcat",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 410221896190394391,
+      "Username": "Dante/dad",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 380560480181288960,
+      "Username": "butchtheamazing",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 277241879098294282,
+      "Username": "biting",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 127919222616621056,
+      "Username": "Bahamut Incarnate",
+      "Role": 3,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 384872004182081540,
+      "Username": "Fallen",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 291880529194778625,
+      "Username": "donut",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 219098218963664897,
+      "Username": "Caustic",
+      "Role": 3,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 262057758449205250,
+      "Username": "JunAkira",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 407984418418982927,
+      "Username": "Kidd",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 190274924101763072,
+      "Username": "Lucky Breaker Rabbit",
+      "Role": 4,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 223583953435623425,
+      "Username": "Karma Armia",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 320713870199226368,
+      "Username": "Stando_One",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 332996526106214401,
+      "Username": "OriginalXD",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 139089329988435968,
+      "Username": "Bind",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 8,
+      "Ranged": 17,
+      "Mobility": 14,
+      "Dodge": 11,
+      "Durability": 8,
+      "Utility": 2,
+      "Healing": 2,
+      "Influence": 3,
+      "Potential": 21
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 345532908443795457,
+      "Username": "⚡Denki Kaminari/Dan Da God⚡",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 329676806875643904,
+      "Username": "Hitomi",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 408297792570916905,
+      "Username": "Nothing",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 224980204349685760,
+      "Username": "onigiri",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 400007993753731089,
+      "Username": "Gala",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 370013531984232449,
+      "Username": "angery oreo",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00"
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 234985429684846592,
+      "Username": "Shadplays12 (741,121,110)",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
     "ModData": {
       "IsMuted": false,
       "MuteDuration": "00:00:00"

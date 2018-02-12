@@ -98,8 +98,8 @@ namespace RPBot
             string HTMLList = "";
             foreach (LogObject.Message m in logObjectList)
             {
-                HTMLList += "<div class=\"message DEFAULT\"> <div class=\"author\"><img class=\"avatar\" src=\"";
-                HTMLList += m.Avatar + "\"></div><div class=\"content\"><span class=\"name\"><font color = \"";
+                HTMLList += "<div class=\"message DEFAULT\">";
+                HTMLList += "<div class=\"content\"><span class=\"name\"><font color = \"";
                 HTMLList += m.FontColour + "\" > " + m.Username + "</font><span></span><span class=\"timestamp\">" + m.Timestamp.ToString() + "</span><span class=\"timestamp-small\">" + m.Timestamp.ToString("mm:ss") + "</span></span>";
                 HTMLList += "<span class=\"text\"><div> " + m.Content.Replace("<p>","").Replace("</p>","") + "</div> </span> </div></div>";
             }
