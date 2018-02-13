@@ -76,7 +76,7 @@ namespace RPBot
 
         public static string BuildGraph(int[] stats, char rank, string name)
         {
-            using (Image<Rgba32> img = Image.Load("Dependencies/template.png"))
+            using (Image<Rgba32> img = Image.Load("Data/template.png"))
             {
                 IPath userGraph = BuildPath(stats);
 
@@ -104,8 +104,8 @@ namespace RPBot
                     .DrawText(name, SystemFonts.CreateFont("Calligraphic", 90, FontStyle.Bold), Rgba32.Black, new PointF(50, 15)));
 
                 string fileName = Extensions.RandomString(5);
-                img.Save($"Dependencies/{fileName}.png");
-                return $"Dependencies/{fileName}.png";
+                img.Save($"Data/{fileName}.png");
+                return $"Data/{fileName}.png";
             }
         }
 
