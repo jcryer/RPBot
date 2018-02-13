@@ -34,8 +34,13 @@ namespace RPBot
                 await e.RespondAsync("Fail. This is awkward.");
                 return;
             }
+            if (user.Stats.Dodge == 0)
+            {
+                await e.RespondAsync("Fail. No data yet in system.");
+                return;
+            }
             string response = BuildGraph(user.Stats.GetList(), user.GetRank().First(), user.UserData.Username);
-            await e.RespondWithFileAsync(response, "test");
+            await e.RespondWithFileAsync(response, $"Your current rank: {user.GetRank()}");
             File.Delete(response);
         }
 
