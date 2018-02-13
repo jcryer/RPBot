@@ -79,7 +79,6 @@ namespace RPBot
             using (Image<Rgba32> img = Image.Load("Data/template.png"))
             {
                 IPath userGraph = BuildPath(stats);
-
                 var DRanks = RPClass.Users.Where(x => x.GetRank().Contains(rank)).Where(x => x.Stats.Melee != 0).Select(x => x.Stats.GetList());
 
                 int[] total = new int[9];
@@ -100,8 +99,7 @@ namespace RPBot
                     x.Fill(Brushes.Percent20(Rgba32.Red), rankGraph)
                     .Draw(Rgba32.Red, 6, rankGraph)
                     .Fill(Brushes.Percent20(Rgba32.Blue), userGraph)
-                    .Draw(Rgba32.Blue, 6, userGraph)
-                    .DrawText(name, SystemFonts.CreateFont("Arial", 90, FontStyle.Bold), Rgba32.Black, new PointF(50, 15)));
+                    .Draw(Rgba32.Blue, 6, userGraph));
 
                 string fileName = Extensions.RandomString(5);
                 img.Save($"Data/{fileName}.png");
