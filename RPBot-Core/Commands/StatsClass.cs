@@ -101,7 +101,7 @@ namespace RPBot
                     .Draw(Rgba32.Red, 6, rankGraph)
                     .Fill(Brushes.Percent20(Rgba32.Blue), userGraph)
                     .Draw(Rgba32.Blue, 6, userGraph)
-                    .DrawText(name, SystemFonts.CreateFont("Calligraphic", 90, FontStyle.Bold), Rgba32.Black, new PointF(50, 15)));
+                    .DrawText(name, SystemFonts.CreateFont("Arial", 90, FontStyle.Bold), Rgba32.Black, new PointF(50, 15)));
 
                 string fileName = Extensions.RandomString(5);
                 img.Save($"Data/{fileName}.png");
