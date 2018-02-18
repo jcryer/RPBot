@@ -422,7 +422,7 @@
   {
     "UserData": {
       "UserID": 199996479161630720,
-      "Username": "Doting Baron",
+      "Username": "Fuckrs Boe",
       "Role": 1,
       "Status": 1,
       "Money": 0,
@@ -4832,7 +4832,7 @@
   {
     "UserData": {
       "UserID": 286222030997684226,
-      "Username": "StarFaggot",
+      "Username": "StarFuck",
       "Role": 1,
       "Status": 1,
       "Money": 0,

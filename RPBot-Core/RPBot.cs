@@ -16,6 +16,7 @@ using System.Diagnostics;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using System.IO;
+using PasteSharp;
 
 namespace RPBot
 {
@@ -263,7 +264,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                     Title = "Member Joined",
                     Color = DiscordColor.Green
                 }
-                .AddField("Member", e.Member.DisplayName + e.Member.Discriminator + " (" + e.Member.Id + ")", true)
+                .AddField("Member", e.Member.DisplayName + "#" + e.Member.Discriminator + " (" + e.Member.Id + ")", true)
                 .AddField("Timestamp", e.Member.JoinedAt.ToString(), true);
 
                 await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: c);
@@ -286,7 +287,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                     Title = "Member Left",
                     Color = DiscordColor.Red
                 }
-                .AddField("Member", e.Member.DisplayName + e.Member.Discriminator + " (" + e.Member.Id + ")", true)
+                .AddField("Member", e.Member.DisplayName + "#" + e.Member.Discriminator + " (" + e.Member.Id + ")", true)
                 .AddField("Timestamp", DateTime.UtcNow.ToString(), true);
 
                 await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: c);
@@ -343,14 +344,14 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                                 Title = "Message Deleted",
                                 Color = DiscordColor.Red
                             }
-                            .AddField("Member", e.Message.Author.Username + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
+                            .AddField("Member", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
                             .AddField("Channel", e.Message.Channel.Name, true)
                             .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
                             .AddField("Deletion Timestamp", e.Message.Timestamp.ToString(), true)
                             .AddField("Message", e.Message.Content.Any() ? e.Message.Content : "-", false)
                             .AddField("Attachments", e.Message.Attachments.Any() ? string.Join("\n", e.Message.Attachments.Select(x => x.Url)) : "-", false);
 
-                                await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
+                            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
                         }
                     }
                     catch { }
@@ -373,7 +374,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                                 Title = "Message Edited",
                                 Color = DiscordColor.Orange
                             }
-                            .AddField("Member", e.Message.Author.Username + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
+                            .AddField("Member", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
                             .AddField("Channel", e.Message.Channel.Name, true)
                             .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
                             .AddField("Edit Timestamp", e.Message.EditedTimestamp.ToString(), true);
@@ -405,6 +406,8 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                     try
                     {
                         RPClass.FirstRun = false;
+                        RPClass.PastebinClient = new PasteSharpClient("3b2b211e3132a233b50a1f9a42fc3103");
+
                         Thread myNewThread = new Thread(async () => await RPClass.UpdateClock(e, Discord));
                         myNewThread.Start();
                     }

@@ -514,6 +514,15 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "PasteSharpCore/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/PasteSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/PasteSharp.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
@@ -3273,6 +3282,16 @@
         "newtonsoft.json.10.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "PasteSharpCore/1.1.0": {
+      "sha512": "gCqGmmeDb7VIbWo1lKWTYAXxVWkEbMsiPIkg1wyXGgnP4L3Xn8VNWsjgCmaL4YYvuK0dwzu4w7Gsot7hW5oCgQ==",
+      "type": "package",
+      "path": "pastesharpcore/1.1.0",
+      "files": [
+        "lib/netcoreapp2.0/PasteSharp.dll",
+        "pastesharpcore.1.1.0.nupkg.sha512",
+        "pastesharpcore.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -7706,6 +7725,7 @@
       "Microsoft.CodeAnalysis.Scripting >= 2.6.1",
       "Microsoft.NETCore.App >= 2.0.0",
       "Newtonsoft.Json >= 10.0.3",
+      "PasteSharpCore >= 1.1.0",
       "SixLabors.ImageSharp >= 1.0.0-beta0002",
       "SixLabors.ImageSharp.Drawing >= 1.0.0-beta0002"
     ]
@@ -7783,6 +7803,10 @@
           "Microsoft.CodeAnalysis.CSharp.Scripting": {
             "target": "Package",
             "version": "2.6.1"
+          },
+          "PasteSharpCore": {
+            "target": "Package",
+            "version": "1.1.0"
           },
           "SixLabors.ImageSharp.Drawing": {
             "target": "Package",

@@ -22,6 +22,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.Extensions.DependencyInjection;
+using PasteSharp.Config;
 
 namespace RPBot
 {
@@ -232,9 +233,14 @@ namespace RPBot
         class Purge : BaseCommandModule
         {
             [Description("Delete an amount of messages from the current channel.")]
-            public async Task ExecuteGroupAsync(CommandContext ctx, [Description("Amount of messages to remove (max 100)")]int limit = 50,
+            public async Task ExecuteGroupAsync(CommandContext ctx, [Description("Amount of messages to remove (max 100)")]int limit = -1,
                 [Description("Amount of messages to skip")]int skip = 0)
             {
+                if (limit == -1)
+                {
+                    await ctx.RespondAsync("NO. GOD. NO.");
+                    return;
+                }
                 var i = 0;
                 var ms = await ctx.Channel.GetMessagesAsync(limit);
                 var deletThis = new List<DiscordMessage>();
@@ -250,16 +256,35 @@ namespace RPBot
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
+
+                string paste = "";
+                foreach (var m in deletThis)
+                {
+                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                }
+                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
             }
 
             [Command("from"), Description("Delete an amount of messages from a specified message"), Aliases("f", "fr")]
             public async Task PurgeFromAsync(CommandContext ctx, [Description("Message to delete from")]DiscordMessage message,
-            [Description("Amount of messages to remove (max 100)")]int limit = 50)
+            [Description("Amount of messages to remove (max 100)")]int limit = -1)
             {
+                if (limit == -1)
+                {
+                    await ctx.RespondAsync("NO. GOD. NO.");
+                    return;
+                }
                 var ms = await ctx.Channel.GetMessagesBeforeAsync(message.Id, limit);
                 await ctx.Channel.DeleteMessagesAsync(ms);
                 await Task.Delay(2000);
                 await ctx.Message.DeleteAsync();
+
+                string paste = "";
+                foreach (var m in ms)
+                {
+                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                }
+                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
             }
 
             [Command("fromto"), Description("Delete all messages between two specified messages")]
@@ -305,12 +330,24 @@ namespace RPBot
                 }
                 await Task.Delay(2000);
                 await ctx.Message.DeleteAsync();
+
+                string paste = "";
+                foreach (var m in deletThis)
+                {
+                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                }
+                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
             }
 
             [Command("user"), Description("Delete an amount of messages by an user."), Aliases("u", "pu")]
             public async Task PurgeUserAsync(CommandContext ctx, [Description("User to delete messages from")]DiscordUser user,
-            [Description("Amount of messages to remove (max 100)")]int limit = 50, [Description("Amount of messages to skip")]int skip = 0)
+            [Description("Amount of messages to remove (max 100)")]int limit = -1, [Description("Amount of messages to skip")]int skip = 0)
             {
+                if (limit == -1)
+                {
+                    await ctx.RespondAsync("NO. GOD. NO.");
+                    return;
+                }
                 var i = 0;
                 var ms = await ctx.Channel.GetMessagesAsync(limit);
                 var deletThis = new List<DiscordMessage>();
@@ -327,6 +364,13 @@ namespace RPBot
                 var resp = await ctx.RespondAsync($"Latest messages by {user?.Mention} (ID:{user?.Id}) deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
+
+                string paste = "";
+                foreach (var m in deletThis)
+                {
+                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                }
+                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
             }
 
             [Command("commands"), Description("Purge RPBot's messages."), Aliases("c", "self", "own", "clean")]
@@ -340,6 +384,13 @@ namespace RPBot
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
+
+                string paste = "";
+                foreach (var m in deletThis)
+                {
+                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                }
+                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
             }
 
             [Command("bots"), Description("Purge messages from all bots in this channel"), Aliases("b", "bot")]
@@ -353,6 +404,13 @@ namespace RPBot
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
+
+                string paste = "";
+                foreach (var m in deletThis)
+                {
+                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                }
+                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
             }
 
             [Command("images"), Description("Purge messages with images or attachments on them."), Aliases("i", "imgs", "img")]
@@ -366,6 +424,13 @@ namespace RPBot
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
+
+                string paste = "";
+                foreach (var m in deleteThis)
+                {
+                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                }
+                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
             }
         }
 
@@ -451,7 +516,18 @@ namespace RPBot
         public async Task Say(CommandContext e, [RemainingText, Description("What to say?")] string text)
         {
             await e.RespondAsync(text);
-            await e.Message.DeleteAsync("test");
+
+            DiscordEmbedBuilder b = new DiscordEmbedBuilder
+            {
+                Title = "Say Executed",
+                Color = DiscordColor.CornflowerBlue
+            }
+            .AddField("By", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
+            .AddField("Channel", e.Message.Channel.Name, true)
+            .AddField("Message", e.Message.Content, false);
+
+            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b.Build());
+            await e.Message.DeleteAsync();
         }
 
 
@@ -526,11 +602,12 @@ namespace RPBot
             if (RPClass.Users.Any(x => x.UserData.Username == whotodelete))
             {
                 UserObject.RootObject user = RPClass.Users.First(x => x.UserData.Username == whotodelete);
-                RPClass.Users.Remove(user);
+
                 if (RPClass.Guilds.Any(x => x.Id == user.UserData.GuildID))
                 {
                     RPClass.Guilds.First(x => x.Id == user.UserData.GuildID).UserIDs.Remove(user.UserData.UserID);
                 }
+                RPClass.Users.Remove(user);
                 RPClass.SaveData(-1);
                 await e.RespondAsync("User removed.");
             }
@@ -825,6 +902,20 @@ namespace RPBot
 
             }
 
+        }
+
+        public static async Task PurgeLog(CommandContext e, string pastebinLink)
+        {
+            DiscordEmbedBuilder b = new DiscordEmbedBuilder
+            {
+                Title = $"Messages Purged",
+                Color = DiscordColor.Red
+            }
+            .AddField("By", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
+            .AddField("Channel", e.Message.Channel.Name, true)
+            .AddField("Messages", pastebinLink, false);
+
+            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b.Build());
         }
         
     }

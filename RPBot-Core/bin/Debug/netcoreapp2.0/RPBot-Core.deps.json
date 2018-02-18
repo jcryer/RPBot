@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "29fe6c4e5986418a13ef5a0ba73eb5379656d227"
+    "signature": "7c966a3cc0222e1d58bad6708cd029298981e1d0"
   },
   "compilationOptions": {},
   "targets": {
@@ -16,6 +16,7 @@
           "Microsoft.CodeAnalysis.CSharp.Scripting": "2.6.1",
           "Microsoft.CodeAnalysis.Scripting": "2.6.1",
           "Newtonsoft.Json": "10.0.3",
+          "PasteSharpCore": "1.1.0",
           "SixLabors.ImageSharp": "1.0.0-beta0002",
           "SixLabors.ImageSharp.Drawing": "1.0.0-beta0002",
           "CommonMark": "0.1.0.0",
@@ -255,6 +256,11 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PasteSharpCore/1.1.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/PasteSharp.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -1743,6 +1749,13 @@
       "sha512": "sha512-wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
       "path": "newtonsoft.json/10.0.3",
       "hashPath": "newtonsoft.json.10.0.3.nupkg.sha512"
+    },
+    "PasteSharpCore/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gCqGmmeDb7VIbWo1lKWTYAXxVWkEbMsiPIkg1wyXGgnP4L3Xn8VNWsjgCmaL4YYvuK0dwzu4w7Gsot7hW5oCgQ==",
+      "path": "pastesharpcore/1.1.0",
+      "hashPath": "pastesharpcore.1.1.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",
