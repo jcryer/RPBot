@@ -267,7 +267,7 @@ namespace RPBot
 
             [Command("from"), Description("Delete an amount of messages from a specified message"), Aliases("f", "fr")]
             public async Task PurgeFromAsync(CommandContext ctx, [Description("Message to delete from")]DiscordMessage message,
-            [Description("Amount of messages to remove (max 100)")]int limit = -1)
+            [Description("Amount of messages to remove (max 100)")]int limit = 50)
             {
                 if (limit == -1)
                 {
@@ -341,7 +341,7 @@ namespace RPBot
 
             [Command("user"), Description("Delete an amount of messages by an user."), Aliases("u", "pu")]
             public async Task PurgeUserAsync(CommandContext ctx, [Description("User to delete messages from")]DiscordUser user,
-            [Description("Amount of messages to remove (max 100)")]int limit = -1, [Description("Amount of messages to skip")]int skip = 0)
+            [Description("Amount of messages to remove (max 100)")]int limit = 50, [Description("Amount of messages to skip")]int skip = 0)
             {
                 if (limit == -1)
                 {
