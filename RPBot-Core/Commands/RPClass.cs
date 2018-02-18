@@ -21,6 +21,7 @@ namespace RPBot
         public static List<InstanceObject.RootObject> InstanceList = new List<InstanceObject.RootObject>();
         public static List<InstanceObject.ChannelTemplate> ChannelTemplates = new List<InstanceObject.ChannelTemplate>();
         public static List<TagObject.RootObject> TagsList = new List<TagObject.RootObject>();
+        public static Elements Elements = new Elements();
         public static Dictionary<ulong, ulong> approvalsList = new Dictionary<ulong, ulong>(); // Channel ID : User ID
         public static Dictionary<DiscordMember, DateTime> slowModeList = new Dictionary<DiscordMember, DateTime>(); //  Member : Timeout
         public static Dictionary<DiscordMember, DateTime> imageList = new Dictionary<DiscordMember, DateTime>(); // Member : Timeout
@@ -40,10 +41,11 @@ namespace RPBot
         public static DiscordRole PunishedRole;
         public static DiscordGuild RPGuild;
         public static Random Random = new Random();
-
+        
         public static bool FirstRun = true;
         public static Extensions.SlidingBuffer<KeyValuePair<ulong, string>> MessageBuffer = new Extensions.SlidingBuffer<KeyValuePair<ulong, string>>(500);
-
+        //             await msg.ModifyAsync($"```Executing rootkit...{Environment.NewLine}Utilising backdoor...{Environment.NewLine}Injecting codebase...```");
+        public static string[] CodeList = new string[] { "Executing rootkit", "Utilising backdoor", "Injecting codebase", "Bypassing security system", "Setting up self-protection firewall", "Decrypting data files"};
         public static bool Restarted = false;
 
         public static void SaveData(int saveType)

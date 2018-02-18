@@ -1,7 +1,10 @@
 ﻿using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
+using DSharpPlus.Entities;
+using DSharpPlus.Interactivity;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -43,17 +46,45 @@ namespace RPBot
         [Command("list"), Description("Lists all tags.")]
         public async Task List(CommandContext e)
         {
-            string retVal = "```\n";
-            foreach (TagObject.RootObject t in RPClass.TagsList)
+            var interactivity = e.Client.GetInteractivity();
+            List<Page> interactivityPages = new List<Page>();
+
+            Page p = new Page();
+
+            DiscordEmbedBuilder b = new DiscordEmbedBuilder()
             {
-                retVal += t.Name + "\n";
-                if (retVal.Length > 1500)
+                Color = new DiscordColor("4169E1"),
+                Timestamp = DateTime.UtcNow
+            }
+            .WithFooter("Heroes & Villains");
+            bool even = false;
+            foreach (TagObject.RootObject t in RPClass.TagsList)
+            {                
+                if (!even)
                 {
-                    await e.RespondAsync(retVal + "```");
-                    retVal = "```\n";
+                    b.AddField(t.Name, "-");
+                }
+                else
+                {
+                    b.Fields.Last().Value = t.Name;
+                }
+                even = !even;
+                if (b.Fields.Count >= 10 && !even)
+                {
+                    p.Embed = b;
+                    interactivityPages.Add(p);
+                    p = new Page();
+                    b.ClearFields();
+                    even = false;
                 }
             }
-            await e.RespondAsync(retVal + "```");
+            p.Embed = b;
+            interactivityPages.Add(p);
+            p = new Page();
+            b.ClearFields();
+            await interactivity.SendPaginatedMessage(e.Channel, e.Member, interactivityPages, timeoutoverride: TimeSpan.FromSeconds(60));
+
+
 
         }
 

@@ -14,6 +14,8 @@ using DSharpPlus.Entities;
 using DSharpPlus.Net.WebSocket;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace RPBot
 {
@@ -90,8 +92,9 @@ namespace RPBot
             CommandsNextService.RegisterCommands(typeof(WikiClass));
             CommandsNextService.RegisterCommands(typeof(StatsClass));
 
-            WikiClass.InitWiki();
+           // WikiClass.InitWiki();
 
+            RPClass.Elements = JsonConvert.DeserializeObject<Elements>(File.ReadAllText("Data/Elements.txt"));
             InteractivityConfiguration icfg = new InteractivityConfiguration();
 			this.InteractivityService = Discord.UseInteractivity(icfg);
         }

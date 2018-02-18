@@ -1,7 +1,143 @@
 [
   {
-    "Name": "test",
-    "Content": "wooo"
+    "Name": "depression",
+    "Content": "I have crippling depression"
+  },
+  {
+    "Name": "shine",
+    "Content": "SHINEEEEEE KUSO NEEERDO GAAAA"
+  },
+  {
+    "Name": "ora",
+    "Content": "ORAORAORAORAORAORAORA ??"
+  },
+  {
+    "Name": "astra",
+    "Content": "BORN TO DIE / WORLD IS A FUCK / KILL EM ALL 2019 / I AM TRASH MAN / 410,757,864,530 DEAD VILLAINS"
+  },
+  {
+    "Name": "lyon",
+    "Content": "Will you marry me?"
+  },
+  {
+    "Name": "goodpost",
+    "Content": "Haha, pretty cool conversation, guys!\nBut is there an oc that could even possibly EVEN TOUCH Doting Baron? Let alone defeat him. And I�m not talking about quirkless cane-wielding Doting Baron. I�m not talking about two-legged quirkless fencing Doting Baron either. Hell, I�m not even talking about 100-man strong two-legged fencing Doting Baron with the tightly packed pike square and longbow firing lines (with swiss mercenary discipline and being capable of both anti-infantry and anti-cavalry combat), equipped with his hardwood cane, spectral Knight, control of Arsenica and Sol Invictus, with Professor Layton�s DNA implanted in him so he has incredible puzzle-solving ability and can perform deductions that almost break the meta while being an expert in both fencing and renaissance warfare."
+  },
+  {
+    "Name": "illusion",
+    "Content": "Sorry Baron, but nice dream you have"
+  },
+  {
+    "Name": "killaqueen",
+    "Content": "***\"KILLA KUWEEN!!!! DAI SAN BAKUGAN: [BAITO ZA DUSTO]!!!!!***"
+  },
+  {
+    "Name": "lyra",
+    "Content": "#Feminism Marches on"
+  },
+  {
+    "Name": "osiris",
+    "Content": "Yah Osiris!"
+  },
+  {
+    "Name": "purge",
+    "Content": "not on my Christian server!!"
+  },
+  {
+    "Name": "orion",
+    "Content": "To be fair, you have to have a very high IQ to understand Rick and Morty. The humour is extremely subtle, and without a solid grasp of theoretical physics most of the jokes will go over a typical viewer�s head. There�s also Rick�s nihilistic outlook, which is deftly woven into his characterisation- his personal philosophy draws heavily from Narodnaya Volya literature, for instance. The fans understand this stuff; they have the intellectual capacity to truly appreciate the depths of these jokes, to realise that they�re not just funny- they say something deep about LIFE. As a consequence people who dislike Rick & Morty truly ARE idiots- of course they wouldn�t appreciate, for instance, the humour in Rick�s existential catchphrase �Wubba Lubba Dub Dub,� which itself is a cryptic reference to Turgenev�s Russian epic Fathers and Sons. I�m smirking right now just imagining one of those addlepated simpletons scratching their heads in confusion as Dan Harmon�s genius wit unfolds itself on their television screens. What fools.. how I pity them. ??\n\nAnd yes, by the way, i DO have a Rick & Morty tattoo. And no, you cannot see it. It�s for the ladies� eyes only- and even then they have to demonstrate that they�re within 5 IQ points of my own (preferably lower) beforehand. Nothin personnel kid ??"
+  },
+  {
+    "Name": "difficult",
+    "Content": "https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/23595924_918818898507563_895906379531812864_n.jpg"
+  },
+  {
+    "Name": "boner",
+    "Content": "http://i0.kym-cdn.com/photos/images/facebook/000/916/037/070.png"
+  },
+  {
+    "Name": "literallyorion",
+    "Content": "\"If you think I'm just a foolish kid ruled by his emotions, that's fine. Following Baron's path would have been too childish, the whispering of fools who don't know hatred. If anyone else tries to ridicule the way I live, I'll slaughter everyone they ever cared about. And then maybe they'll understand what it's like to taste... a little of my hatred\""
+  },
+  {
+    "Name": "navyseal",
+    "Content": "What the fuck did you just fucking say about me, you little bitch? I�ll have you know I graduated top of my class in the Navy Seals, and I�ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I�m the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You�re fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that�s just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little �clever� comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn�t, you didn�t, and now you�re paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You�re fucking dead, kiddo."
+  },
+  {
+    "Name": "ban",
+    "Content": "***THE BANHAMMER HAS SPOKEN***"
+  },
+  {
+    "Name": "info",
+    "Content": "Read <#345307678261772289> \nRead  <#386672328672804864> \nRead <#314972495432384513>  pins\nAsk questions in <#315272713570615296>"
+  },
+  {
+    "Name": "larkquote",
+    "Content": "\"I will LITERALLY rape you now\" -Lark 2017"
+  },
+  {
+    "Name": "wiki",
+    "Content": "WE HAVE A WIKI - <#346944357351555072> \nhttp://roleplay-heroes-and-villains.wikia.com/wiki/Role-Play:_Heroes_and_Villains_Wiki"
+  },
+  {
+    "Name": "confused",
+    "Content": "http://i0.kym-cdn.com/entries/icons/facebook/000/018/489/nick-young-confused-face-300x256_nqlyaa.jpg"
+  },
+  {
+    "Name": "refuse",
+    "Content": "https://vignette.wikia.nocookie.net/cardfight/images/e/e6/But_I_Refuse.png/revision/latest?cb=20160524034303"
+  },
+  {
+    "Name": "gg",
+    "Content": "gg m8"
+  },
+  {
+    "Name": "culture",
+    "Content": "http://i3.kym-cdn.com/photos/images/newsfeed/001/236/841/075.jpg"
+  },
+  {
+    "Name": "bs",
+    "Content": "Objection! https://www.google.nl/search?q=objection&client=ms-android-tmobile-nl&prmd=ivn&source=lnms&tbm=isch&sa=X&ved=0ahUKEwinyoT4jZLYAhVXOMAKHQcgAnEQ_AUIESgB#"
+  },
+  {
+    "Name": "no",
+    "Content": "https://pics.me.me/its-a-no-from-me-11978250.png"
+  },
+  {
+    "Name": "ree",
+    "Content": "***TRIGGERED***"
+  },
+  {
+    "Name": "oof",
+    "Content": "***O O F***"
+  },
+  {
+    "Name": "joseph",
+    "Content": "Depression"
+  },
+  {
+    "Name": "legit",
+    "Content": "https://media.discordapp.net/attachments/345352512108232705/392413524535803914/animated4.gif"
+  },
+  {
+    "Name": "run",
+    "Content": "**NIGERUNDAYOOOOO!!!!!!**"
+  },
+  {
+    "Name": "darkstar",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/392417851396325406/20171218_154801.png"
+  },
+  {
+    "Name": "nightmare",
+    "Content": "https://media.discordapp.net/attachments/345352512108232705/392415757755088897/dsd.png"
+  },
+  {
+    "Name": "stray",
+    "Content": "??"
+  },
+  {
+    "Name": "bad",
+    "Content": "Dab"
   },
   {
     "Name": "honkers",
@@ -12,7 +148,1103 @@
     "Content": "https://cdn.discordapp.com/attachments/369971498074505234/392424745779462146/20171218_161528.png"
   },
   {
+    "Name": "pranked",
+    "Content": "https://vignette.wikia.nocookie.net/thefutureofeuropes/images/3/38/36865-you-just-got-pranked-bro.gif/revision/latest?cb=20160411223044"
+  },
+  {
+    "Name": "police",
+    "Content": "http://memes.ucoz.com/_nw/51/49603735.jpg"
+  },
+  {
+    "Name": "kira",
+    "Content": "\"Fuck YOU cold weather, Shove it up ya ass and cough it out. ***I HOPE YOU DIE***\""
+  },
+  {
+    "Name": "greenjay",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/392583038912954368/unknown.png"
+  },
+  {
+    "Name": "lolicon",
+    "Content": "https://media.discordapp.net/attachments/329655620120608769/392599370765172739/unknown.png"
+  },
+  {
+    "Name": "lark'spants",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/392604721279533056/image.png"
+  },
+  {
+    "Name": "edgy",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/392699152670130176/image.png?width=343&height=300"
+  },
+  {
+    "Name": "life",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/392751868616638475/image.jpg"
+  },
+  {
+    "Name": "nice",
+    "Content": "https://s-media-cache-ak0.pinimg.com/236x/d4/36/56/d436569f70e1734d90c04d0f625dc242.jpg"
+  },
+  {
+    "Name": "rip",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/393179760651403264/20171213_042405.jpg"
+  },
+  {
+    "Name": "kiraquote",
+    "Content": "\"***BEGONE......THO-***.....wait...Im a thot myself...D-do I leave?\""
+  },
+  {
+    "Name": "ctok",
+    "Content": "Kira the the mutherF-ing pimp getting all the ladies and gentleman just by being herself."
+  },
+  {
+    "Name": "banned",
+    "Content": "__**OMAE WA MOU....BANNEDIRU**__ <:hyperthonk:378605315425304587> <:hyperthonk:378605315425304587>"
+  },
+  {
+    "Name": "bestanswer",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/393511690425335809/image.png"
+  },
+  {
+    "Name": "orion_convo_starter",
+    "Content": "\"Blake Fuck You\"\n~Orion 2017"
+  },
+  {
+    "Name": "hotdog",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/393605859277668373/image.jpg"
+  },
+  {
+    "Name": "who",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/393607005303996419/image.jpg"
+  },
+  {
+    "Name": "sad",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/393607463846281226/image.jpg"
+  },
+  {
+    "Name": "dead",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/393607900666265603/image.jpg"
+  },
+  {
+    "Name": "seal",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/393608244112785408/image.jpg"
+  },
+  {
+    "Name": "facepalm",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/393608371456180225/facepalmlm7.jpg"
+  },
+  {
+    "Name": "stop",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/393606692845387777/17c6c790880b1fc380f4dbb6f93ff0ce0969425b_hq.jpg"
+  },
+  {
+    "Name": "rustled",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/393611867811086338/image.jpg"
+  },
+  {
+    "Name": "sleep",
+    "Content": "?? ???? ??"
+  },
+  {
+    "Name": "nani",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/393787648935854081/image.jpg"
+  },
+  {
+    "Name": "anadeath",
+    "Content": "//Ah....but you, Kaz....You made me so, so happy. All those emotions.....Sadness, happiness, anger...You taught me what it meant to be human.//\n\n//But most imporantly....You taught me what love was.//\n\n//And I couldn't have died in a better way than to be held...in your arms.//"
+  },
+  {
+    "Name": "od",
+    "Content": "With the last of his strength he looks at the sky and whispers\n\n\"I'm sorry sis.......seems like this useless brother is going first....I'll wait for you at the gate......\" he stops resisting the closing of his eyes and falls down with a small sad smile on his face."
+  },
+  {
+    "Name": "bassedven",
+    "Content": "\"It takes a special kind of bravery to sleep with any of Eunice's OCs\nand for that we salute Ven.\" - Lark 2017"
+  },
+  {
+    "Name": "salute",
+    "Content": "https://i.ytimg.com/vi/zxlK11qaC7s/maxresdefault.jpg"
+  },
+  {
+    "Name": "lifehasmeaning",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/393853850320240643/image.png"
+  },
+  {
+    "Name": "fine",
+    "Content": "You know, you walk out the door. You see someone that you know, and they ask you how you are, and you just have to say that you�re fine, when you�re not really fine, but you just can�t get into it because they would never understand."
+  },
+  {
+    "Name": "blake:",
+    "Content": "Kinky"
+  },
+  {
+    "Name": "blake",
+    "Content": "You disgrace"
+  },
+  {
+    "Name": "both",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/393897537343586305/image.jpg"
+  },
+  {
+    "Name": "oreos:",
+    "Content": "do you want some Oreos?"
+  },
+  {
+    "Name": "�title�.",
+    "Content": "Then �text you want or image link.�"
+  },
+  {
+    "Name": "asuka",
+    "Content": "no one cares gtfo"
+  },
+  {
+    "Name": "tsu.",
+    "Content": "\"Whatever tickles your pickle.\""
+  },
+  {
+    "Name": "blasuka",
+    "Content": "feed me oreos :)"
+  },
+  {
+    "Name": "stray.",
+    "Content": "https://ci.memecdn.com/5581879.jpg"
+  },
+  {
+    "Name": "tyranica",
+    "Content": "https://cdn.discordapp.com/attachments/372531937308311552/393976510639505419/ezgif.com-gif-maker_82.gif"
+  },
+  {
+    "Name": "potato",
+    "Content": "Friends are like potatoes.\nIf you eat them, they die."
+  },
+  {
+    "Name": "triple_gay",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/393978430733025280/bb6.jpg"
+  },
+  {
+    "Name": "excuses",
+    "Content": "it was kill or be killed, there was nothing I could do, I had to kill them, one of them was even an NPC so it doesn't count"
+  },
+  {
+    "Name": "osisis",
+    "Content": "Yahla Yahlakbar!"
+  },
+  {
+    "Name": "truth.",
+    "Content": "Baron > Osiris > H&V > Plus Ultra\n\n\nDeal with it"
+  },
+  {
+    "Name": "tsu_counter",
+    "Content": "https://cdn.discordapp.com/attachments/64751569295384576/394165682926911489/unknown.png"
+  },
+  {
+    "Name": "siscon",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/394164352455933952/20171223_112731.png"
+  },
+  {
+    "Name": "ha",
+    "Content": ":GWtogaPagChomp:"
+  },
+  {
+    "Name": "jojothink",
+    "Content": "<:seriousthonk:378655573924642827>"
+  },
+  {
+    "Name": "kira2",
+    "Content": "�Breathes.  Gets called a thot.�"
+  },
+  {
+    "Name": "gay",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/394223725471334400/image.jpg"
+  },
+  {
+    "Name": "baka",
+    "Content": "**BAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAKABAAAAAAAAAAAAKA ONII-CHAN NO ECCHI**"
+  },
+  {
+    "Name": "nightmarequote",
+    "Content": "\"Watch as I grab Tyrancia by the pussy. Like my mentor, Trump.\" -Nightmare 2017."
+  },
+  {
+    "Name": "kira3",
+    "Content": "*When you have so many people you run into and have crushes on you don�t know what to do.*"
+  },
+  {
+    "Name": "tsuquote",
+    "Content": "�Someone does something� Tsu: **REEEEE**"
+  },
+  {
+    "Name": "love_of_my_life",
+    "Content": "KYOKO MY BOI"
+  },
+  {
+    "Name": "silver",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/394231432807186442/image.jpg"
+  },
+  {
+    "Name": "shia",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/394280006244892672/image.jpg"
+  },
+  {
+    "Name": "modquote",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/394507511081861124/image.jpg"
+  },
+  {
+    "Name": "basedgod",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/394507654967590912/image.jpg"
+  },
+  {
+    "Name": "lonelynight",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/394507753088876554/image.jpg"
+  },
+  {
+    "Name": "stfu",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/394508673323499523/image.jpg"
+  },
+  {
+    "Name": "orion4",
+    "Content": "�Fuck you orion.� -Slate 2017"
+  },
+  {
+    "Name": "fast",
+    "Content": "�black level speed� -Essence 2017"
+  },
+  {
+    "Name": "toomuchfreetime",
+    "Content": "https://cdn.discordapp.com/attachments/64751569295384576/394626855245971476/unknown.png"
+  },
+  {
+    "Name": "ss",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/394638981825822721/Minori_Kushieda_-_Inactive.png"
+  },
+  {
+    "Name": "cships",
+    "Content": "https://i.pinimg.com/736x/76/1b/d2/761bd26e290fb940ed2d94125c3f44f4--sam-dean-johnlock.jpg"
+  },
+  {
+    "Name": "sail",
+    "Content": "http://images.memes.com/meme/825957"
+  },
+  {
+    "Name": "darkstar2",
+    "Content": "i dont kill I just relieve people of their lives"
+  },
+  {
+    "Name": "say",
+    "Content": "!say !say !say !say !say Merry Christmas, JC"
+  },
+  {
+    "Name": "s",
+    "Content": "!t s motherf"
+  },
+  {
+    "Name": "christmas",
+    "Content": "<:christmas1:394772913993285642><:christmas2:394772914156601344><:christmas3:394772914018320394><:christmas4:394772913703878657>\n<:christmas5:394772914026577920><:christmas6:394772913854611478><:christmas7:394772914131697664><:christmas8:394772914114920451> \n<:christmas9:394772914291081216><:christmas10:394772914315984896><:christmas11:394772914358059008><:christmas12:394772914466979840>\n<:christmas13:394772914471436288><:christmas14:394772915255771146><:christmas15:394772914546933760><:christmas16:394772914538545152>"
+  },
+  {
+    "Name": "don",
+    "Content": "because you can't spell apperently lol"
+  },
+  {
+    "Name": "seriously_strange",
+    "Content": "Anything is possible in a world... so seriously strange."
+  },
+  {
+    "Name": "srankdarkstar",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/395287571166658560/DarkStarSRank.PNG"
+  },
+  {
+    "Name": "spam",
+    "Content": "Ya spam, ya get the **B A N**"
+  },
+  {
+    "Name": "once_in_lifetime",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/395319018271145984/unknown.png"
+  },
+  {
+    "Name": "seth",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/395383044602593281/seth_being_a_jerk.jpg"
+  },
+  {
+    "Name": "steps",
+    "Content": "https://media.discordapp.net/attachments/364985094852837377/395439897227558912/e9ef76736073abd818d8440b4da5dd18.jpg"
+  },
+  {
+    "Name": "larksdefeat",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/395709105588797441/Screenshot_3.png"
+  },
+  {
+    "Name": "robdyke1",
+    "Content": "\"Experimentation, an effective way to learn about the world around us and everything in it- But the thirst for knowledge can become a sinister game when the ends justify the means.\""
+  },
+  {
+    "Name": "top1",
+    "Content": "\"Everyone gather around for a show, watch as this man disappears as we know, do me a favor and try to ignore as you watch him fall through a bleeding trap door.\""
+  },
+  {
+    "Name": "blank",
+    "Content": "\"His dark sweaty * starts to transfer the * into her *\""
+  },
+  {
+    "Name": "rosesareredvioletsareblue",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/396444613860261888/image.png"
+  },
+  {
+    "Name": "triplegay",
+    "Content": "https://cdn.discordapp.com/attachments/319364460185780224/396749868758204427/034.png"
+  },
+  {
+    "Name": "trash_knight",
+    "Content": "There was once a very strong knight, he had many arms and he would try to help as many as he can. But at night, it was another story. he rummages in the trash cans and bins like the hobo he truly is. It was only when the moon shone where he could unleash his true form, the trash knight"
+  },
+  {
+    "Name": "lionvscheck",
+    "Content": "Then, one day it was dark and the town was quiet. He continued with his night time activities before a young woman confronted him, declairing \"I am check, the trash collecter and you will tremble beneath my wrath!\". Shocked, he quickly jumping in a nearby dumpster, throwing trash at her with check defending herself well. It was a tough battle but eventually trash knight won, and tales of his legacy is still passed on today"
+  },
+  {
+    "Name": "lark",
+    "Content": "As Lark gets pushed off, he inhales the gas and immediately feels something wrong with his pp\n\nLark jumps off the back off the truck and races away into the woods screaming.\n\n\"I need **OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK!!!**\""
+  },
+  {
+    "Name": "oak",
+    "Content": "https://media.giphy.com/media/cm6I48iyEYpMs/giphy.gif"
+  },
+  {
+    "Name": "top2",
+    "Content": "\"I know my soul's freezing, hell's hot for good reason so please-e-e-e... Take me.\""
+  },
+  {
+    "Name": "apollo",
+    "Content": "apollo the mechanophiliac aka car ??er"
+  },
+  {
+    "Name": "duckiefuckie",
+    "Content": "https://media.discordapp.net/attachments/369971498074505234/397416746442686475/image.png"
+  },
+  {
+    "Name": "prank",
+    "Content": "�It was just a prank bro!�"
+  },
+  {
+    "Name": "ultrafrunkstinct",
+    "Content": "\"ALEXO SUOER SYIAN YLTRA INDTICT\" - Essence 2018"
+  },
+  {
+    "Name": "lewd",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/397934877179248643/image.png"
+  },
+  {
+    "Name": "gluck",
+    "Content": "```\nI can't\nMy colibratipn\nOn my phone\nIs fucked\nGuxk phones\n```\nis corrected to:\n```\nI can't my calibration on my phone Is fucked gluck phones\n```\nAnd is then interpreted as:\n```\nGluck = Christoph Willibald Gluck, from the royal chivalric order.\n```\n\nWith emotions of:\n```\nSadness: Indicates a feeling of loss and disadvantage. When a person can be observed to be quiet, less energetic and withdrawn, it may be inferred that sadness exists.\n```\n\nand\n\n```\nAnger: Evoked due to injustice, conflict, humiliation, negligence or betrayal. If anger is active, the individual attacks the target, verbally or physically. If anger is passive, the person silently sulks and feels tension and hostility.\n\n```"
+  },
+  {
+    "Name": "dio",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/398170900068827137/image.jpg"
+  },
+  {
+    "Name": "lady_shu",
+    "Content": "https://memegenerator.net/img/instances/500x/46204594/mlady.jpg"
+  },
+  {
+    "Name": "questionable",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/398238764587024404/image.png"
+  },
+  {
+    "Name": "sweat",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/398271151626780702/image.jpg"
+  },
+  {
+    "Name": "popcorn",
+    "Content": "https://giphy.com/gifs/thriller-EIndPd19dL1sY"
+  },
+  {
+    "Name": "shurima",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/398528945424695306/20180104_123108.png"
+  },
+  {
+    "Name": "lark_roast",
+    "Content": "God just picked the worst possible creature he created to  give to your parents as a child but decided they deserve worse so he sent you instead"
+  },
+  {
+    "Name": "caught",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/399051037442441227/71785955174cc4bed4f902bd449451a8--drawing-meme-drawing-stuff.jpg"
+  },
+  {
+    "Name": "thebiggay",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/399111627661639681/image.jpg"
+  },
+  {
+    "Name": "thetrial",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/399111722851500032/PW_officialart_1.png"
+  },
+  {
+    "Name": "naive",
+    "Content": "`\nJoseph Shiraiyuki - Today at 9:02 PM\nIf nightmare dies this world will become more safe`"
+  },
+  {
+    "Name": "liam_nee-san",
+    "Content": "\"Onii-chan... I don't know who you are. I don't know what you want. If you are looking for anime, I can tell you I don't have subscription. But what I do have are a very particular set of skills, skills I have acquired over a very long gaming career. Skills that make me a nightmare for people like you, baka! If you let my daughter go now, that'll be the end of it. I will not look for you, I will not pursue you. But if you don't, I will look for you, I will find you, and I will kill you.\""
+  },
+  {
+    "Name": "weebmare",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/399306185750216705/Screenshot_6.png"
+  },
+  {
+    "Name": "darthraise",
+    "Content": "https://cdn.discordapp.com/attachments/301631649978777610/399354004812857344/image.png"
+  },
+  {
+    "Name": "whitestarendsworld",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/399355295194939392/Whitestarkopie.png"
+  },
+  {
+    "Name": "osiristhewise",
+    "Content": "```\n\"Did you ever hear the tragedy of Lord Osiris the Magnificent?\"\n\n- \"No?\"\n\"I thought not. It�s not a story the Heroes would tell you. It�s a Villain legend. Lord Osiris was an A-rank Villain, so powerful and so insane he could use his Quirk to influence the dead to create soldiers� He had such a knowledge of the great beyond, but he couldn't even keep the ones he cared about from dying.\"\n\n-\"He could actually raise people from death?\"\n\"The dark side of the Quirks is a pathway to many abilities some consider to be unnatural. \"\n\n-\"What happened to him?\"\n\"He became so powerful� the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, his desire to become a God made him challenge an actual deity, who destroyed him for his ignorance. Ironic. He could raise others from death, but not himself.\"\n\n-\"Is it possible to learn this power?\"\n\"Not from a -Hero-\"\n```"
+  },
+  {
+    "Name": "caesarpun1",
+    "Content": "If JoJo Bizzare Adventures was a Pokemon game, I guess Caesar would be considered a rock type....\n\n\n***Ba Dum Tss***"
+  },
+  {
+    "Name": "triggered",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/399608773699829780/image.jpg"
+  },
+  {
+    "Name": "triplegreat",
+    "Content": "https://cdn.discordapp.com/attachments/362474826218340354/399682022806650880/triplegreat.png"
+  },
+  {
+    "Name": "imsorrysir",
+    "Content": "https://www.youtube.com/watch?v=mxbzhNqPre4"
+  },
+  {
+    "Name": "blake_convo_ender",
+    "Content": "\"Orion ?  ??\" Blake 2018"
+  },
+  {
+    "Name": "trippyhorse",
+    "Content": "https://media.discordapp.net/attachments/369971498074505234/399844163081732096/Omg_yes.gif"
+  },
+  {
+    "Name": "tidepods",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/399980822394044432/my-mom-trying-to-get-me-to-spit-up-all-29842605.png?width=265&height=300"
+  },
+  {
+    "Name": "begonethot",
+    "Content": "**Begone** ????? **Thot**"
+  },
+  {
+    "Name": "curegay",
+    "Content": "https://cdn.discordapp.com/attachments/362474826218340354/400130744921489408/1e.jpg"
+  },
+  {
+    "Name": "infinitegay",
+    "Content": "https://cdn.discordapp.com/attachments/362474826218340354/400130365362012180/1d.jpg"
+  },
+  {
+    "Name": "gayshield",
+    "Content": "https://cdn.discordapp.com/attachments/362474826218340354/400130261293072406/image-6-2.jpg"
+  },
+  {
+    "Name": "gaynuke",
+    "Content": "https://cdn.discordapp.com/attachments/362474826218340354/400130827515854878/1f.jpg"
+  },
+  {
+    "Name": "proximitygay",
+    "Content": "https://cdn.discordapp.com/attachments/362474826218340354/400132359183400961/1c.jpg"
+  },
+  {
+    "Name": "nogay",
+    "Content": "https://cdn.discordapp.com/attachments/362474826218340354/400147473810849802/nolongergay.jpg"
+  },
+  {
+    "Name": "colbridgememe",
+    "Content": "https://78.media.tumblr.com/251995a436e223b80dbf1e35d9074652/tumblr_orqwr2mJtm1woub1mo1_500.jpg"
+  },
+  {
+    "Name": "all_pissed",
+    "Content": "http://i.imgur.com/h7VzjZr.png"
+  },
+  {
+    "Name": "silver_mantis",
+    "Content": "STFU"
+  },
+  {
+    "Name": "delet_this",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/400853296237248512/unknown.png"
+  },
+  {
+    "Name": "dewey",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/400911160771084288/Capturar.PNG"
+  },
+  {
+    "Name": "tyra",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/401437374988681226/image.jpg"
+  },
+  {
+    "Name": "dotingbaron2",
+    "Content": "\"Are we continuing our training?\""
+  },
+  {
+    "Name": "lmao",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/402275197454909450/unknown.png"
+  },
+  {
+    "Name": "westwind",
+    "Content": "**DONT SAY YOUR NOT SPECIAL, EVERYONE IS SPECIAL ALL YOUR JUST DOING IS DOUBTING NOT YOURSELF!**"
+  },
+  {
+    "Name": "flower",
+    "Content": "***Lark: Fucking idiots. Kira's like a sister to me. A li'l autistic flower that needs protecting.***"
+  },
+  {
+    "Name": "poof",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/402606429615161345/unknown.png"
+  },
+  {
     "Name": "xpbroke",
     "Content": "Okay fuckos, let's sit down and learn a lesson here.\n1. No, your xp is not broken.\n2. Shut up, no it's not.\n3. No, the bot isn't buggy.\n\nJ.C. has two versions of the bot code. One version sits on a server far away from him and lives out it's life there, listening and replying to you idiots. The *other* version sits on his computer, and is only used when he adds something new to the bot! \n\nThe version that is always used has the latest data on all of your stats! The version that is on his computer has old versions of the stats ;(\n\nWhen he runs the bot from his computer, the bot prints the old version of the stats. However, as soon as he moves the new awesome code to the server, it will use the new, updated version of the stats! Yay! \n\nLEAVE HIM ALONE."
+  },
+  {
+    "Name": "understandable",
+    "Content": "why are all the admins bullies"
+  },
+  {
+    "Name": "bus",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/403201442766127104/unknown.png"
+  },
+  {
+    "Name": "nepdab",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/404365343125929994/Screenshot_1.png"
+  },
+  {
+    "Name": "baronxorion",
+    "Content": "\"i want to be able to taste baron's dick from a distance\" -mitch in VC 2018"
+  },
+  {
+    "Name": "orionhappy",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/404640158361845780/unknown.png"
+  },
+  {
+    "Name": "oriontongue",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/404840744130445322/OrionTongue.PNG"
+  },
+  {
+    "Name": "meem",
+    "Content": "<:reversefingerfuns:402197234525143050> <:fingerfuns:402141851815116800> \n           <:upfingerfuns:402195654517981185>"
+  },
+  {
+    "Name": "ziah",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/405002633221505026/ziah.png"
+  },
+  {
+    "Name": "cayzirus",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/405007880912240651/IMG_20180122_223618.jpg"
+  },
+  {
+    "Name": "jess_love",
+    "Content": "https://cdn.discordapp.com/attachments/405011017345794052/405011057501798400/IMG_20180122_224854.jpg"
+  },
+  {
+    "Name": "breadballs",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/405044876426739723/unknown.png"
+  },
+  {
+    "Name": "omg",
+    "Content": "http://i0.kym-cdn.com/photos/images/original/000/972/842/1aa.gif"
+  },
+  {
+    "Name": "enki",
+    "Content": "I porked my own sister on a joke"
+  },
+  {
+    "Name": "enki1",
+    "Content": "the R18 incest guy"
+  },
+  {
+    "Name": "hiro",
+    "Content": "Most useless hero, still not a meme"
+  },
+  {
+    "Name": "orionishere",
+    "Content": "https://cdn.discordapp.com/attachments/405152881855954945/405152927234261002/giphy.gif"
+  },
+  {
+    "Name": "whenyougetxp",
+    "Content": "https://cdn.discordapp.com/attachments/405152881855954945/405154077257760769/unnamed.gif"
+  },
+  {
+    "Name": "orionquote3",
+    "Content": "i'm a fuckin furry"
+  },
+  {
+    "Name": "jess",
+    "Content": "https://cdn.discordapp.com/attachments/405152881855954945/405298644208582666/received_1541705825951005.gif"
+  },
+  {
+    "Name": "trejo",
+    "Content": "https://cdn.discordapp.com/attachments/329655620120608769/405439107003842580/image.jpg"
+  },
+  {
+    "Name": "havoc",
+    "Content": "https://cdn.discordapp.com/attachments/300348001531199489/405569668070375438/med_1480889361_00032.jpg"
+  },
+  {
+    "Name": "tsu",
+    "Content": "Tsu VS Blank \nBlank: \"Suck it.\"\nTsu: \"Suck what? you got nothing. Suck your own microdick.\"\nBlank: \"I'd break my neck\"\nTsu: \"Why do you think I'm suggesting it.\""
+  },
+  {
+    "Name": "minenow",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/405604353076887554/Screenshot_3-3.png"
+  },
+  {
+    "Name": "davewtf",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/405715353700794369/unknown-1.png"
+  },
+  {
+    "Name": "alex",
+    "Content": "https://cdn.discordapp.com/attachments/405815099467628544/405843815748993025/image.jpg"
+  },
+  {
+    "Name": "realisation",
+    "Content": "https://cdn.discordapp.com/attachments/367025640286715924/405950542225866758/psioneverybody.PNG"
+  },
+  {
+    "Name": "kinky",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/406054006516088832/unknown.png"
+  },
+  {
+    "Name": "incest",
+    "Content": "https://cdn.discordapp.com/attachments/405364614151274498/406006005466529793/Screenshot_25.png"
+  },
+  {
+    "Name": "dab",
+    "Content": "How to dab on the haters\n\n    Lift your arms out to your sides. Raise up both of your arms so they are going straight out from your shoulders. Then, bend one arm in towards your body, as if you are preparing to sneeze into your sleeve. Keep the other arm straight.\n\n    Tuck your head down. Next tuck your forehead down towards the arm that is bent and touch your forehead to your elbow area as if you are sneezing into your sleeve or dabbing sweat off of your brow. Keep the other arm straight. Straighten out your arm after you dab your forehead on it.\n\n    Bang your head into your elbow. After you bring your head in towards your elbow, you can do a quick head bang motion (or two) before you straighten out your arm and switch sides.[5] Just quickly jolt your head forward towards your elbow. Head banging is generally considered safe, but keep in mind that is can cause injuries if you do it too hard. You can always skip the head bang motion if you have concerns.\n\n    Switch sides. You can repeat the dab multiple times on one side or switch sides. If you switch sides, then repeat the same dab movement on the other side with your other arm. For example, if you started by dabbing on your left side, then switch over to your right side. Keep switching back and forth along with the music.\n\n    Move around. You can do the dab movement with your upper body and move your lower body however you like. You can hop around, walk around, or wiggle your hips. You can also do other moves in between dabs, such as waving your fists in the air or moving your arms from side to side in front of you. Add your own flair and just try to make your hater's feel worse about themselves."
+  },
+  {
+    "Name": "dread",
+    "Content": ">Be dread\n\n>Go visit old man\n\n>Talk with him\n\n>Shoot yourself in front of him\n\n>Give him heart attack\n\n>then dab on his dead corpse because you didn't die\n\n>be like dread"
+  },
+  {
+    "Name": "dreadjoke",
+    "Content": "Dreadknight turns around and smiles at Baron.\n\n\"My congratulations Mr.Doting Baron, it seems that you are smarter then I gave you credit for. So if you won't try to kill me, then I'll just have to frame you.\"\n\nShe shrugs and reaches for something in her pockets\n\n\"I don't care if I have to die in order to get rid of your little guild for Master Lark.\"\n\nShe grabbed her handgun and held it to her temple\n\n\"Goodbye and...I win.\"\n\nShe pulled the trigger, causing a gunshot to echo through the house"
+  },
+  {
+    "Name": "development",
+    "Content": "https://cdn.discordapp.com/attachments/367025640286715924/406312737103151105/development.PNG"
+  },
+  {
+    "Name": "justgayogre",
+    "Content": "https://media.discordapp.net/attachments/369971498074505234/406069481698230273/unknown.png"
+  },
+  {
+    "Name": "cherrypoppers",
+    "Content": "https://media.discordapp.net/attachments/369971498074505234/406397448785756190/unknown.png"
+  },
+  {
+    "Name": "factual",
+    "Content": "https://gyazo.com/50cca22ef46debc30d46ae1bbef63004"
+  },
+  {
+    "Name": "pervert",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/406593200409673749/IMG_20180127_073604.jpg"
+  },
+  {
+    "Name": "development2",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/406599698514837504/IMG_20180127_080153.jpg"
+  },
+  {
+    "Name": "earthquake",
+    "Content": "-an earthquake collects up as many civilians as he can, putting them in a safe area and performing first-aid on them. He does as much as he can, at least stabilising them by dealing with their critical injuries. Knowing that there's more people to be saved, he continues to dash around and collect more civilians, rounding them up in the same area as before. He is a lot better at gathering people quickly, so decides to leave most of the healing up to the available medics-"
+  },
+  {
+    "Name": "teamlol",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/406625187287793664/unknown.png"
+  },
+  {
+    "Name": "teamcool",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/406628689816584192/unknown.png"
+  },
+  {
+    "Name": "teamcocks",
+    "Content": "https://cdn.discordapp.com/attachments/345352512108232705/406629381641994240/IMG_20180126_205940.jpg"
+  },
+  {
+    "Name": "rekt",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/406773140413218828/image.png"
+  },
+  {
+    "Name": "liar",
+    "Content": "https://cdn.discordapp.com/attachments/190492896015810571/406774072853397505/unknown.png"
+  },
+  {
+    "Name": "faceofmercy",
+    "Content": "https://media.discordapp.net/attachments/346040986289438731/406889039401189378/fate-zero-19c.jpg?width=841&height=474"
+  },
+  {
+    "Name": "caesar",
+    "Content": "***SSSSSSSSSHHHHHHHHHHHHIIIIIIIIIZZZZZZZZZAAAAAAAAA*** https://cdn.discordapp.com/attachments/338758927925903374/406972648501805062/JPEG_20180127_194109.jpg"
+  },
+  {
+    "Name": "alphatyra",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/406973708297699328/Screenshot_1.png"
+  },
+  {
+    "Name": "villainball",
+    "Content": "He scoffs and waves a hand, cutting through the air. �First of all, for your sake, I�m going to ignore the minion thing, but stop with that fucking attitude.� He looks from stray to seven. �And you, homeboy, you don�t ask someone �the hell you want?� Cause you�re not in the �Fuck you� position. That position is where you�re safe enough to say �fuck you� and get away with it. You�re in the �stupid dumb Fuck no one knows or cares about� position, bout to transition to the �dead motherfucker� position. Ya feel me?� He lays it out, his hands motioning and helping him say his words."
+  },
+  {
+    "Name": "i_win",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/405818197611380769/unknown.png"
+  },
+  {
+    "Name": "alphaaf",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/406997762241200129/Screenshot_5.png"
+  },
+  {
+    "Name": "team_powerpuff",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/407182323453394944/IMG_20180128_223635.jpg"
+  },
+  {
+    "Name": "joseph's_struggle",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/407310667805097988/b3616fc2392d9e2aec9c34d4c41e1920a574161c1ce7250f27a39569150d3195.png"
+  },
+  {
+    "Name": "lark2",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/407323188549386257/StriderOtaku_-_Google_Chrome_1_19_2018_7_22_47_PM.png?width=400&height=216"
+  },
+  {
+    "Name": "lolipolice",
+    "Content": "http://i.imgur.com/Jvl2hcc.png"
+  },
+  {
+    "Name": "muhpron",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/407383696316956673/Screenshot_3.png"
+  },
+  {
+    "Name": "penisscar",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/407795535777628170/image.jpg"
+  },
+  {
+    "Name": "foxydick",
+    "Content": "https://media.discordapp.net/attachments/369971498074505234/407952938334420993/unknown.png"
+  },
+  {
+    "Name": "newangkor",
+    "Content": "https://cdn.discordapp.com/attachments/407961837108199424/407961938304172033/nebula_qui_by_sheylu-d9idabg.png"
+  },
+  {
+    "Name": "atfield",
+    "Content": "http://4.bp.blogspot.com/-PpWIjw3E0II/USFo4zitTRI/AAAAAAAAA5o/QgLST6XEe_E/s1600/3608e024-s.jpg\n\nTyranica Breaching Neptune's AT (Anti Thot) Field, 2021 (Colorized)"
+  },
+  {
+    "Name": "blindworld",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/408031578682556426/20180130_174908.png"
+  },
+  {
+    "Name": "jcfirstrp",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/408069882849263616/unknown.png"
+  },
+  {
+    "Name": "nocrabs",
+    "Content": "https://cdn.discordapp.com/attachments/404108476835430401/408317795692970015/unknown.png"
+  },
+  {
+    "Name": "inspiration",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/408642360503697409/image.png"
+  },
+  {
+    "Name": "lick",
+    "Content": "https://media.discordapp.net/attachments/369971498074505234/408644635314094080/unknown.png"
+  },
+  {
+    "Name": "pact",
+    "Content": "**TO EVERYONE HATING ON PACTS**\n\nPacts actually are balanced due to the following things:\n-You literally lose control over a good part of your OC which is rather annoying at times and one of the biggest possible drawbacks\n\n-You got close to 0 versatility. (ex. I don't even have super strength if I did I would have killed baron instead of being beded.)\n\n-Easy to counter due to the 0 versatility\n\n-Quirkless if you ever lose the pact + anyone can steal you\n\nPacts are fun to rp:\n-creates bonds without having to force relationships/family ties.\n\n-actually loyal OC's\n\n-little personality twist"
+  },
+  {
+    "Name": "baseddave",
+    "Content": "\"How could I forget?\"\nAlistair casts his mind back to the morning he'd first met the girl. Funny how he hadn't thought much of her obsession. It had all been there. All along.\n\nHe was just blind. And, if he was honest, quite cowardly.\n\n\"Everyone has good in them. Even Nightmare.\"\n\n\"But he didn't stop. Not on his own.\"\nAlistair's gaze softens. Small, warm stars of sunlight dance in his eyes. A new dawn.\n\nIn the clearing of the park, under the shade of an old oak, the world fell silent.\n\nAnd the man of sunshine spoke again to the night.\n\n\"I truly hope Tyranica is different.\""
+  },
+  {
+    "Name": "stopped",
+    "Content": "https://www.youtube.com/watch?v=tA8LjcpjjKQ"
+  },
+  {
+    "Name": "unlimitedbedworks",
+    "Content": "**I am the bone of my bed,\nPillow is my body, and asspull is my blood,\nI have created over a thousand beds,\nUnknown to women.\nNor known to men.\nHave withstood pain to create many beds.\nYet, these old men will never sleep anywhere.\nSo, as I pray, UNLIMITED BED WORKS** \n\nhttps://res-4.cloudinary.com/made-com/image/upload/b_transparent,c_pad,d_made.svg,dpr_1.0,f_auto,h_500,q_auto:best,w_965/v4/catalog/product/asset/b/9/9/f/b99f546a380fb760b073834129a34ee57b5b8a38_Landsdowne_UBS_160cm_Grey_Walnut_LB1.jpg"
+  },
+  {
+    "Name": "bulletspeed",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/409521476773871617/Screenshot_14.png"
+  },
+  {
+    "Name": "smartguy",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/409835401277341697/unknown.png?width=400&height=213"
+  },
+  {
+    "Name": "voodooyou",
+    "Content": "https://media.discordapp.net/attachments/369971498074505234/409879918537867264/Unnamed___-_Krita_2_4_2018_8_16_10_PM.png?width=360&height=186"
+  },
+  {
+    "Name": "metaldeath",
+    "Content": "Gets quirk taken away, gets dismembered, shot in the only limb remaining, gets pinned to the wall by a fucking light lance through abdomen, and then gets his throat torn out.\n\nBut not before breaking off a tooth and spitting it out at the guy who took away his quirk. ??"
+  },
+  {
+    "Name": "pancake",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/410897896012251147/pancake.PNG"
+  },
+  {
+    "Name": "realorion",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/410950371348054027/download_8.jpeg"
+  },
+  {
+    "Name": "cat/panda",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/410949990630948875/images_67.jpeg"
+  },
+  {
+    "Name": "realonion",
+    "Content": "https://cdn.discordapp.com/attachments/312918289988976653/410951666247139328/image.jpg"
+  },
+  {
+    "Name": "morningwood",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/410952751682551828/Screenshot_13.png"
+  },
+  {
+    "Name": "hiroquote",
+    "Content": "\"Hiro is an edgy fuck\" - Hiro Tate 2018"
+  },
+  {
+    "Name": "sandra",
+    "Content": "Fuck Off it's SADRA"
+  },
+  {
+    "Name": "notdeep",
+    "Content": "http://i.imgur.com/ssBshkn.jpg"
+  },
+  {
+    "Name": "pisesed",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/411365276265873418/pisesed.PNG"
+  },
+  {
+    "Name": "kinkytyra",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/411436540892545024/image.png"
+  },
+  {
+    "Name": "all_rage",
+    "Content": "https://pre00.deviantart.net/842d/th/pre/f/2018/038/d/5/all_might_enraged_by_anythingguy-dc2hf0s.png"
+  },
+  {
+    "Name": "bet",
+    "Content": "Tyra: I�ll do it it! Bet?  Blank: BET! Tyra: BET! Blank: NO BALLS! BET! Tyra: B E T!   *Tyra does the thing*. �BET�"
+  },
+  {
+    "Name": "feminist",
+    "Content": "why? whats wrong about a color? should it be a more \"manly\" color? like men are stronger than women? do you hate women? are you a rapist? you should be ashamed for opressing women like that asshole."
+  },
+  {
+    "Name": "copypasta",
+    "Content": "today in school we had a substitute teacher in one of my classes and i pulled an epic prank on the whole class. when he had to leave the classroom for a few minutes, i went up to the whiteboard and wrote TROLOLOLOL in all caps (**for those of you who dont know, this is the catchphrase of the Troll Face from Rage Comics**). It took up like half the white board <a:xd:400474296134402048> By the time he got back, I was sitting at my desk pretending that nothign happened, but all my stupid classmates were staring at me (they didn't get the reference). When the sub asked \"who wrote this?\" i was trying really hard not to laugh and i stood up while making the same facial expression as the Troll Face meme and I asked \"problem?\" I was expecting AT LEAST one of my classmates to laugh, but nobody did (like i said earlier, they didn't get the reference). still standing, i thought of a new joke. I made the facial expression of Doge (a different internet meme) and I said \"much troll, very epic\" so everyone would get that it was a joke about the Troll Face. To my surprise, not a single person laughed, and after a few seconds of me waiting for everyone to get the joke, a kid said \"sit down faggot.\" I asked if he went on the **Four-Chan** forums because they made up that word, but he just looked at me like I was the stupid one. By now, pretty much the whole class was yelling at me to sit down and shut up. I took this opportunity to make a **Four-Chan reference**, so as a joke, I yelled \"FUCKING NORMIES\" (because that's what **Four-Chan** calls people who dont get memes) and ran circles round the desks with my arms behind my back like in anime <a:xd:400474296134402048> I got a lunch detention from the sub but it was worth it because i got to troll the whole class."
+  },
+  {
+    "Name": "kinketico",
+    "Content": "I have no tags <<:dabe:407120701720494080>407120701720494080>"
+  },
+  {
+    "Name": "furryblank",
+    "Content": "https://cdn.discordapp.com/attachments/312918289988976653/411430461429121034/Screenshot_20180209-023409.png"
+  },
+  {
+    "Name": "punish",
+    "Content": "!Punish <@!237928154273021952>"
+  },
+  {
+    "Name": "gypsie",
+    "Content": "https://media.discordapp.net/attachments/369971498074505234/412869747193937920/unknown.png?width=400&height=269"
+  },
+  {
+    "Name": "weak",
+    "Content": "https://media.discordapp.net/attachments/312918289988976653/412877512729690113/9k.png"
+  },
+  {
+    "Name": "alexvsbaron",
+    "Content": "**\"A knight alone cannot stand against a Baron.\"**\n\n***\"You are right, a knight will never beat a Baron.\"\n\nLuckily for me, I recently got named the new head of my house.\"\n\n\"Duke Alexandria of Germany at your service.\"***"
+  },
+  {
+    "Name": "tyrabodyref",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/413017909858664449/20180213_115305.jpg"
+  },
+  {
+    "Name": "dingdong",
+    "Content": "https://media.discordapp.net/attachments/313105923008757760/413062172256501761/fuck-s-my-ding-dong-29199401.png?width=291&height=300"
+  },
+  {
+    "Name": "opinion",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/413063658633953280/e47459957fd22e4cc4faac1a81f28cef.png?width=300&height=300"
+  },
+  {
+    "Name": "noodle",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/413065687570055169/hqdefault.png?width=400&height=300"
+  },
+  {
+    "Name": "duck",
+    "Content": "http://i0.kym-cdn.com/photos/images/facebook/001/273/647/a7d.jpg"
+  },
+  {
+    "Name": "yamero",
+    "Content": "http://i0.kym-cdn.com/photos/images/facebook/001/250/127/046.jpg"
+  },
+  {
+    "Name": "masaka",
+    "Content": "http://i0.kym-cdn.com/photos/images/facebook/001/250/137/31e.jpg"
+  },
+  {
+    "Name": "nanidog",
+    "Content": "http://i0.kym-cdn.com/photos/images/newsfeed/001/176/898/7b7.jpg"
+  },
+  {
+    "Name": "shinei",
+    "Content": "https://i.ytimg.com/vi/7B68_G4E_oE/hqdefault.jpg"
+  },
+  {
+    "Name": "urusai",
+    "Content": "http://goboiano.com/wp-content/uploads/2017/02/14316826_166665383737744_8961633816096548209_n-300x300.jpg"
+  },
+  {
+    "Name": "neptune",
+    "Content": "https://media.discordapp.net/attachments/312918289988976653/413068979867746317/darsheel-thats-right-bitches-5-april-at-20-19-darsheel-first-18551669.png?width=193&height=300"
+  },
+  {
+    "Name": "konoyaro",
+    "Content": "https://i.imgur.com/AdvqgOo.jpg"
+  },
+  {
+    "Name": "korosu",
+    "Content": "https://pbs.twimg.com/media/C2ZJOF4WgAAE85-.jpg"
+  },
+  {
+    "Name": "kimochi",
+    "Content": "https://2static1.fjcdn.com/thumbnails/comments/Dont+know+about+the+design+but+hentaihaven+has+some+dank+_df8fe4e9cd47612f1e9075951b4d1e85.jpg"
+  },
+  {
+    "Name": "kisama",
+    "Content": "http://i0.kym-cdn.com/photos/images/newsfeed/001/161/162/675"
+  },
+  {
+    "Name": "naruhodo",
+    "Content": "https://2static4.fjcdn.com/thumbnails/comments/Gt+homeless+gt+pretty+girl+gt+_ab4ed07da941c2ea4e32891fc35399cf.jpg"
+  },
+  {
+    "Name": "nigerou",
+    "Content": "https://2static4.fjcdn.com/comments/Weeb+animals+_53177c99b485b9466401d289c2378dde.jpg"
+  },
+  {
+    "Name": "yamete",
+    "Content": "http://i0.kym-cdn.com/photos/images/newsfeed/001/250/378/0f6.jpg"
+  },
+  {
+    "Name": "bakayaro",
+    "Content": "https://pbs.twimg.com/media/C3LjO5VXAAExnUG.jpg"
+  },
+  {
+    "Name": "sadra_porn",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/413166196184055808/unknown.png"
+  },
+  {
+    "Name": "coconut",
+    "Content": "THERE IS A FUCKING COCONUT IN MY PANTS AND IT HURTS!!!"
+  },
+  {
+    "Name": "tied_up",
+    "Content": "https://cdn.discordapp.com/attachments/312918289988976653/413286446267367425/av.png"
+  },
+  {
+    "Name": "nepban",
+    "Content": "https://media.discordapp.net/attachments/378770557757423617/413429652837761026/unknown.png?width=400&height=194"
+  },
+  {
+    "Name": "sol_invictus",
+    "Content": "Hello!"
+  },
+  {
+    "Name": "silver_porn",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/413525671403585537/what.PNG"
+  },
+  {
+    "Name": "sadra_snakes",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/413566198803071017/snakes.PNG"
+  },
+  {
+    "Name": "furraki",
+    "Content": "https://cdn.discordapp.com/attachments/312918289988976653/413580001498234891/image.png"
+  },
+  {
+    "Name": "cancandra",
+    "Content": "https://cdn.discordapp.com/attachments/312918289988976653/413583829844885514/unknown.png"
+  },
+  {
+    "Name": "kinetilove",
+    "Content": "https://cdn.discordapp.com/attachments/312918289988976653/413619013399347210/Screenshot_2018-02-15-00-53-26-1.png"
+  },
+  {
+    "Name": "pedoforger",
+    "Content": "https://cdn.discordapp.com/attachments/322086886073958410/413689699262136320/unknown.png"
+  },
+  {
+    "Name": "bestfight",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/413746898218909706/the_king.png https://cdn.discordapp.com/attachments/369971498074505234/413746945048182784/the_knight.png"
+  },
+  {
+    "Name": "baronsmart",
+    "Content": "https://cdn.discordapp.com/attachments/64751569295384576/413818403778854932/unknown.png"
+  },
+  {
+    "Name": "yako_warning",
+    "Content": "https://cdn.discordapp.com/attachments/313105923008757760/413827502335590403/unknown.png"
+  },
+  {
+    "Name": "dream",
+    "Content": "https://cdn.discordapp.com/attachments/64751569295384576/414132648579956746/unknown.png"
+  },
+  {
+    "Name": "neptune_vs_honkers",
+    "Content": "https://cdn.discordapp.com/attachments/312918289988976653/414168774720356362/a859d3a4-334b-4cb6-a783-3872c59d165b.gif"
+  },
+  {
+    "Name": "senkarisbody",
+    "Content": "https://cdn.discordapp.com/attachments/365277089034665986/414169004005916682/received_1500643296683685.jpeg"
+  },
+  {
+    "Name": "stray_death",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/414252942728888340/Screenshot_26.png"
+  },
+  {
+    "Name": "bedworksda",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/414259483049721876/bedworksda.PNG"
+  },
+  {
+    "Name": "tiddie",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/414362333205495809/IMG_20180217_180748.jpg"
+  },
+  {
+    "Name": "sagesuccs",
+    "Content": "https://cdn.discordapp.com/attachments/313105923008757760/414401125517885440/unknown.png"
+  },
+  {
+    "Name": "dreams",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/414404693968814101/IMG_20180217_205559.jpg"
+  },
+  {
+    "Name": "nepnepnotacuck",
+    "Content": "https://cdn.discordapp.com/attachments/369971498074505234/414407640999919617/unknown.png"
+  },
+  {
+    "Name": "kira_death",
+    "Content": "https://cdn.discordapp.com/attachments/378770557757423617/414469594254934018/Screenshot_27.png"
+  },
+  {
+    "Name": "theultimatemove",
+    "Content": "***THE ULTIMATE MOVE.***\n\nWE TIE ORION TO ASTRA'S BALLS. YES? RIGHT? RIGHT. NEXT, WE USE KIRA'S QUIRK TO MAKE A JAVELIN WITH ORION'S COCK. WE LAUNCH ORION AND ASTRA'S BALL TO THE ENEMY, AND PIERCE THEM. \n\n**INSTANT VICTORY.**"
+  },
+  {
+    "Name": "approved",
+    "Content": "https://cdn.discordapp.com/attachments/329655620120608769/414564102531317760/giphy_4.gif"
   }
 ]

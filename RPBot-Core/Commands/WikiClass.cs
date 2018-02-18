@@ -21,8 +21,7 @@ namespace RPBot
 
         public static void InitWiki()
         {
-             WikiSite = new Wiki.Site("http://roleplay-heroes-and-villains.wikia.com", "jcryer", "Gracie3038");
-            //  WikiSite = new Wiki.Site("http://heroes-and-villains-rp.wikia.com", "jcryer", "Gracie3038");
+             WikiSite = new Wiki.Site("http://roleplay-heroes-and-villains.wikia.com", "", "");
 
             Action<string, Wiki.Page> Personality = (string message, Wiki.Page page) =>
             {
