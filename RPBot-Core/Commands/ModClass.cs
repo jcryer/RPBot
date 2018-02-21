@@ -9,7 +9,7 @@ namespace RPBot
 {
     class ModClass : BaseCommandModule
     {
-        [Command("punish"), Description("Command for staff to give out the Punished role."), RequireRoles(RoleCheckMode.Any, "Staff", "Helpful people"), IsMuted]
+        [Command("punish"), Description("Command for staff to give out the Punished role."), RequireRoles(RoleCheckMode.Any, "Staff", "Helpful people")]
         public async Task Punish(CommandContext e, [Description("Member to be muted")] DiscordMember user)
         {
             try
