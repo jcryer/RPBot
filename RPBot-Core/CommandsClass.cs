@@ -611,6 +611,12 @@ namespace RPBot
             }
         }
 
+        [Command("giveadmin"), RequireRoles(RoleCheckMode.Any, "Administrator")]
+        public async Task GiveAdmin(CommandContext e, DiscordMember member)
+        {
+            await member.GrantRoleAsync(e.Guild.GetRole(312961839359328266));
+        }
+
         [Group("approval"), Description("Approval commands"), IsMuted]
         class ApprovalClass : BaseCommandModule
         {

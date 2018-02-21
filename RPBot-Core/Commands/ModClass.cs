@@ -50,14 +50,15 @@ namespace RPBot
                 {
                     userObject.ModData.IsMuted = false;
                     await user.ReplaceRolesAsync(userObject.ModData.Roles);
-                    await e.RespondAsync("User ultimuted.");
+                    await e.RespondAsync("User un-ultimuted.");
 
                 }
                 else
                 {
                     userObject.ModData.IsMuted = true;
+                    userObject.ModData.Roles = user.Roles.ToList();
                     await user.ReplaceRolesAsync(new List<DiscordRole>() { RPClass.PunishedRole });
-                    await e.RespondAsync("User un-ultimuted.");
+                    await e.RespondAsync("User ultimuted.");
                 }
                 RPClass.SaveData(1);
 
