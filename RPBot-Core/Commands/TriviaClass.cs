@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("trivia"), Description("Trivia Commands")]
+    [Group("trivia"), Description("Trivia Commands"), IsMuted]
     public class TriviaClass : BaseCommandModule
     {
         public static List<string> TriviaList;

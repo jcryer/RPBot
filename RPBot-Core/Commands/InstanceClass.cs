@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace RPBot
 {
    // DEPRECATED - COMMENTED OUT IN RPBOT.CS
-    [Group("instance"), Description("Instance commands")]
+    [Group("instance"), Description("Instance commands"), IsMuted]
     class InstanceClass : BaseCommandModule
     {
         [Command("add"), Description("Command to create a new location instance."), RequireRoles(RoleCheckMode.Any, "Staff")]

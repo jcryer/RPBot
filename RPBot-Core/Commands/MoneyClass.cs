@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("money")]
+    [Group("money"), IsMuted]
     [Description("All Money Commands")]
     class MoneyClass : BaseCommandModule
     {
@@ -113,7 +113,7 @@ namespace RPBot
 
     }
 
-    [Group("blood")]
+    [Group("blood"), IsMuted]
     [Description("All Blood Point Commands")]
     class BloodClass : BaseCommandModule
     {
@@ -214,7 +214,7 @@ namespace RPBot
         }
 
     }
-    [Group("merit")]
+    [Group("merit"), IsMuted]
     [Description("All Merit Point Commands")]
     class MeritClass : BaseCommandModule
     {

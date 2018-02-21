@@ -1,6 +1,10 @@
-﻿using System.Collections;
+﻿using DSharpPlus.CommandsNext;
+using DSharpPlus.CommandsNext.Attributes;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace RPBot
 {
@@ -54,6 +58,19 @@ namespace RPBot
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             return new string(Enumerable.Repeat(chars, length)
               .Select(s => s[RPClass.Random.Next(s.Length)]).ToArray());
+        }
+
+    }
+
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+    public sealed class IsMuted : CheckBaseAttribute
+    {
+        public override Task<bool> ExecuteCheckAsync(CommandContext ctx, bool help)
+        {
+            if (ctx.Member.Roles.Contains(RPClass.PunishedRole))
+                return Task.FromResult(false);
+                
+            return Task.FromResult(true);
         }
     }
 

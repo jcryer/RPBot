@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("guild"), Description("Guild commands")]
+    [Group("guild"), Description("Guild commands"), IsMuted]
     class GuildClass : BaseCommandModule
     {
 

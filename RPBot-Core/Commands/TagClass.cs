@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("tag", CanInvokeWithoutSubcommand = true), Aliases("t"), Description("Commands to manage tags")]
+    [Group("tag", CanInvokeWithoutSubcommand = true), Aliases("t"), Description("Commands to manage tags"), IsMuted]
     class TagClass : BaseCommandModule
     {
         public async Task ExecuteGroupAsync(CommandContext e, [RemainingText] string tagName)

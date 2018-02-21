@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DSharpPlus.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -133,6 +134,7 @@ namespace RPBot
             }
             public bool IsMuted { get; set; }
             public TimeSpan MuteDuration { get; set; }
+            public List<DiscordRole> Roles { get; set; }
         }
     }
 }

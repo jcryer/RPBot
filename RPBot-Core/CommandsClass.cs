@@ -28,7 +28,7 @@ namespace RPBot
 {
     class CommandsClass : BaseCommandModule
     {
-        [Command("roll"), Description("Dice roll command!")]
+        [Command("roll"), Description("Dice roll command!"), IsMuted]
         public async Task Roll(CommandContext e, [Description("Number of sides of the dice")] int numSides = 0, [Description("Number of rolls to do")] int numRolls = 0)
         {
             var test = await e.Guild.GetInvitesAsync();
@@ -57,7 +57,7 @@ namespace RPBot
             }
         }
 
-        [Command("choose"), Description("Command to choose one of the variables given.")]
+        [Command("choose"), Description("Command to choose one of the variables given."), IsMuted]
         public async Task Choose(CommandContext e, [Description("List of variables separated by commas.")] string choiceList)
         {
             string[] Choices = choiceList.Split(',');
@@ -65,7 +65,7 @@ namespace RPBot
             await e.RespondAsync("Hmm. I choose... " + Choices[randomChoice]);
         }
 
-        [Group("slowmode"), Description("Slowmode commands")]
+        [Group("slowmode"), Description("Slowmode commands"), IsMuted]
         class Slowmode : BaseCommandModule
         {
             [Command("on"), Description("Admin command to make OOC chill tf out"), RequireRoles(RoleCheckMode.Any, "Administrator")]
@@ -82,7 +82,7 @@ namespace RPBot
                 await e.RespondAsync("Slowmode disabled.");
             }
         }
-        [Command("cases"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("cases"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task Cases(CommandContext e, [Description("Select a user.")] DiscordMember user, [Description("Number to increase or decrease cases resolved by")] string caseNum)
         {
             RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.ResolvedCases += int.Parse(caseNum);
@@ -101,7 +101,7 @@ namespace RPBot
             await e.RespondAsync("Cases updated.");
         }
 
-        [Command("crimes"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("crimes"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task Crimes(CommandContext e, [Description("Select a user.")] DiscordMember user, [Description("Number to increase or decrease crimes committed by")] string crimeNum)
         {
             RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.CrimesCommitted += int.Parse(crimeNum);
@@ -120,7 +120,7 @@ namespace RPBot
             await e.RespondAsync("Crimes updated.");
         }
 
-        [Command("name"), Description("Command for users to change their RP name temporarily"), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("name"), Description("Command for users to change their RP name temporarily"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task Name(CommandContext e, [Description("What to call yourself")] string name = "")
         {
             DiscordMessage x;
@@ -162,26 +162,20 @@ namespace RPBot
                 await x.DeleteAsync();
             }
         }
-        [Command("json"), Description("Admin json file command")]
+        [Command("json"), Description("Admin json file command"), IsMuted]
         public async Task Json(CommandContext e)
         {
             RPClass.SaveData(1);
             await e.RespondWithFileAsync("UserData.txt", "Json file of all user data!\nRoles: 1 = Hero, 2 = Villain, 3 = Rogue\nStatus: 1 = Alive, 2 = Dead");
         }
 
-        [Command("sudo"), Description("Execute a command as if you're another user"), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("sudo"), Description("Execute a command as if you're another user"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task SudoAsync(CommandContext e, [Description("User to Sudo")]DiscordUser user, [RemainingText, Description("Command to execute")] string command = "help")
         {
             await e.CommandsNext.SudoAsync(user, e.Channel, command);
         }
 
-        [Command("fuck"), Description("SHIT"), RequireOwner]
-        public async Task FuckAsync(CommandContext e)
-        {
-            await e.Guild.Roles.First(x => x.Name == "Staff").DeleteAsync();
-        }
-
-        [Command("serverinfo"), Description("Gets info about current server")]
+        [Command("serverinfo"), Description("Gets info about current server"), IsMuted]
         public async Task GuildInfo(CommandContext ctx)
         {
             var members = await ctx.Guild.GetAllMembersAsync();
@@ -204,7 +198,7 @@ namespace RPBot
             await ctx.RespondAsync("", embed: b.Build());
         }
 
-        [Command("userinfo"), Description("Gets info about user")]
+        [Command("userinfo"), Description("Gets info about user"), IsMuted]
         public async Task UserInfo(CommandContext ctx, [Description("User to get info about")] DiscordMember m = null)
         {
             if (m == null)
@@ -229,7 +223,7 @@ namespace RPBot
             await ctx.RespondAsync("", embed: b.Build());
         }
 
-        [Group("purge", CanInvokeWithoutSubcommand = true), Aliases("p"), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Group("purge", CanInvokeWithoutSubcommand = true), Aliases("p"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         class Purge : BaseCommandModule
         {
             [Description("Delete an amount of messages from the current channel.")]
@@ -434,7 +428,7 @@ namespace RPBot
             }
         }
 
-        [Command("restart"),  Description("Admin restart command"), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("restart"),  Description("Admin restart command"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task Restart(CommandContext e)
         {
             RPClass.SaveData(-1);
@@ -454,7 +448,7 @@ namespace RPBot
             await Task.Delay(0);
         }
 
-        [Command("update"), Description("Admin update command"), RequireRoles(RoleCheckMode.Any, "Administrator")]
+        [Command("update"), Description("Admin update command"), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
         public async Task Update(CommandContext e)
         {
             await e.RespondAsync("Restarting. Wish me luck!");
@@ -475,7 +469,7 @@ namespace RPBot
             await Task.Delay(0);
         }
 
-        [Command("joke"), Description("Random joke command.")]
+        [Command("joke"), Description("Random joke command."), IsMuted]
         public async Task Joke(CommandContext e)
         {
             using (HttpClient client = new HttpClient())
@@ -486,7 +480,7 @@ namespace RPBot
             }
         }
 
-        [Command("space"),  Description("Spaces text out")]
+        [Command("space"),  Description("Spaces text out"), IsMuted]
         public async Task Space(CommandContext e, [Description("How many spaces between each char")] int space, [RemainingText, Description("What to say?")] string text)
         {
             if (string.IsNullOrEmpty(text))
@@ -512,7 +506,7 @@ namespace RPBot
             await e.RespondAsync(retVal);
         }
 
-        [Command("say"), Description("Tell the bot what to say"), RequireRoles(RoleCheckMode.Any, "Staff", "Game Masters")]
+        [Command("say"), Description("Tell the bot what to say"), RequireRoles(RoleCheckMode.Any, "Staff", "Game Masters"), IsMuted]
         public async Task Say(CommandContext e, [RemainingText, Description("What to say?")] string text)
         {
             await e.RespondAsync(text);
@@ -531,7 +525,7 @@ namespace RPBot
         }
 
 
-        [Command("embed"), Description("Allows you to make the bot say messages in an embed\n**Usage:**\n`!embed <Title>:<Description>:<Field 1 Title>:<Field 1 Description>:` etc."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("embed"), Description("Allows you to make the bot say messages in an embed\n**Usage:**\n`!embed <Title>:<Description>:<Field 1 Title>:<Field 1 Description>:` etc."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task Embed(CommandContext e, [RemainingText, Description("What to say?")] string text)
         {
             DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
@@ -559,7 +553,7 @@ namespace RPBot
             await e.Message.DeleteAsync();
         }
 
-        [Command("sayall"), Description("Makes the bot delete all messages in a channel (the channel the command is used in) and repost them."), RequireRoles(RoleCheckMode.Any, "Administrator")]
+        [Command("sayall"), Description("Makes the bot delete all messages in a channel (the channel the command is used in) and repost them."), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
         public async Task SayAll(CommandContext e, string whattodelete = "", string whattosetto = "")
         {
             await e.Message.DeleteAsync();
@@ -596,7 +590,7 @@ namespace RPBot
 
         }
 
-        [Command("removeuser"), Description("Makes the bot delete a user that has left the server (Name in statsheets, copied exactly)."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("removeuser"), Description("Makes the bot delete a user that has left the server (Name in statsheets, copied exactly)."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task RemoveUser(CommandContext e, [RemainingText] string whotodelete = "")
         {
             if (RPClass.Users.Any(x => x.UserData.Username == whotodelete))
@@ -617,7 +611,7 @@ namespace RPBot
             }
         }
 
-        [Group("approval"), Description("Approval commands")]
+        [Group("approval"), Description("Approval commands"), IsMuted]
         class ApprovalClass : BaseCommandModule
         {
             [Command("add"), Description("Command to create a new approval instance."), RequireRoles(RoleCheckMode.Any, "Staff")]
@@ -632,7 +626,7 @@ namespace RPBot
             }
         }
 
-        [Command("element"), Description("Returns specific periodic table information"), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("element"), Description("Returns specific periodic table information"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task AddApproval(CommandContext ctx, [RemainingText] string element)
         {
             element = element.ToLower();
@@ -760,7 +754,7 @@ namespace RPBot
               await msg.ModifyAsync(embed: embed.Build()).ConfigureAwait(false);
           }*/
 
-        [Command("eval"), Description("Evaluates a snippet of C# code, in context."), RequireOwner]
+        [Command("eval"), Description("Evaluates a snippet of C# code, in context."), RequireOwner, IsMuted]
         public async Task EvaluateAsync(CommandContext ctx, [RemainingText, Description("Code to evaluate.")] string code)
         {
             await ctx.Message.DeleteAsync();
@@ -825,7 +819,7 @@ namespace RPBot
 
 
 
-        [Group("emoji", CanInvokeWithoutSubcommand = true), Aliases("e"), Description("Approval commands")]
+        [Group("emoji", CanInvokeWithoutSubcommand = true), Aliases("e"), Description("Emoji commands"), IsMuted]
         class EmojiClass : BaseCommandModule
         {
             public async Task ExecuteGroupAsync(CommandContext e, [RemainingText] string emoji)

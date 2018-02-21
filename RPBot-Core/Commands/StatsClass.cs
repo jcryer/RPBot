@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("stats")]
+    [Group("stats"), IsMuted]
     class StatsClass : BaseCommandModule
     {
         public static IReadOnlyCollection<PointF> Points = new List<PointF>() { new PointF(0, -618), new PointF(409, -467), new PointF(629, -88), new PointF(553, 337), new PointF(220, 618), new PointF(-220, 618), new PointF(-553, 337), new PointF(-629, -88), new PointF(-409, -467) };

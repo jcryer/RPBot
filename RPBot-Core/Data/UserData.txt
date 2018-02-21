@@ -26,7 +26,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -56,7 +57,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -86,7 +88,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -116,7 +119,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -146,7 +150,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -176,7 +181,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -206,7 +212,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -236,7 +243,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -266,7 +274,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -296,14 +305,15 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 362875280467165184,
-      "Username": "Alendra Sharpen",
-      "Role": 1,
+      "Username": "Lynxia (Alendra)",
+      "Role": 3,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -326,7 +336,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -356,7 +367,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -386,7 +398,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -416,13 +429,14 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 199996479161630720,
-      "Username": "Fuckrs Boe",
+      "Username": "Doting Baron",
       "Role": 1,
       "Status": 1,
       "Money": 0,
@@ -446,7 +460,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -476,7 +491,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -506,14 +522,15 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 164069879069147146,
-      "Username": "Chi-ha Sensha",
-      "Role": 4,
+      "Username": "Tokoro Kensha",
+      "Role": 3,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -536,7 +553,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -566,7 +584,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -596,7 +615,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -626,7 +646,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -656,7 +677,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -686,7 +708,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -716,7 +739,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -746,7 +770,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -776,7 +801,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -806,7 +832,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -836,7 +863,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -866,7 +894,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -896,7 +925,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -926,7 +956,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -956,7 +987,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -986,7 +1018,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1016,13 +1049,14 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 266935768981831690,
-      "Username": "Killua~「Lee」",
+      "Username": "Killua~「Lee」™",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -1046,7 +1080,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1076,7 +1111,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1106,7 +1142,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1136,7 +1173,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1166,7 +1204,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1196,7 +1235,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1226,7 +1266,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1256,7 +1297,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1286,7 +1328,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1316,7 +1359,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1346,7 +1390,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1376,7 +1421,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1406,7 +1452,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1436,7 +1483,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1466,7 +1514,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1496,7 +1545,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1526,7 +1576,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1556,7 +1607,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1586,7 +1638,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1616,7 +1669,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1646,7 +1700,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1676,13 +1731,14 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 399441223816970241,
-      "Username": "Eijirou or Katsuki",
+      "Username": "Eijirou Kirishima",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -1706,7 +1762,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1736,7 +1793,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1766,7 +1824,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1796,7 +1855,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1826,7 +1886,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1856,7 +1917,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1886,13 +1948,14 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 358907314503417856,
-      "Username": "Uzu/Twice (Jin)/Haru",
+      "Username": "Haru Son of Lala",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -1916,7 +1979,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1946,7 +2010,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -1976,7 +2041,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2006,7 +2072,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2036,14 +2103,15 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 192287928611766281,
-      "Username": "Darth Tyrael",
-      "Role": 0,
+      "Username": "Ellri",
+      "Role": 1,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2066,7 +2134,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2096,7 +2165,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2126,7 +2196,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2156,7 +2227,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2186,7 +2258,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2216,7 +2289,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2246,7 +2320,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2276,7 +2351,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2306,7 +2382,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2336,7 +2413,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2366,7 +2444,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2396,7 +2475,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2426,7 +2506,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2456,7 +2537,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2486,13 +2568,14 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 410221896190394391,
-      "Username": "Dante/dad",
+      "Username": "Dante",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -2516,7 +2599,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2546,7 +2630,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2576,7 +2661,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2606,7 +2692,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2636,7 +2723,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2666,7 +2754,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2696,7 +2785,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2726,7 +2816,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2756,7 +2847,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2786,7 +2878,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2816,7 +2909,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2846,7 +2940,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2876,7 +2971,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2906,7 +3002,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2936,7 +3033,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2966,7 +3064,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -2996,7 +3095,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3026,7 +3126,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3056,7 +3157,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3086,7 +3188,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3116,7 +3219,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3146,7 +3250,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3176,7 +3281,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3206,13 +3312,45 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 389590546810929173,
-      "Username": "Silver Mantis",
+      "Username": "WireFrame",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 273148822543400971,
+      "Username": "Maki",
       "Role": 2,
       "Status": 1,
       "Money": 0,
@@ -3236,37 +3374,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 273148822543400971,
-      "Username": "Toko Unity",
-      "Role": 0,
-      "Status": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "ResolvedCases": 0,
-      "CrimesCommitted": 0,
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3296,7 +3405,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3326,7 +3436,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3356,7 +3467,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3386,14 +3498,15 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 320713870199226368,
-      "Username": "Stando_One",
-      "Role": 0,
+      "Username": "Lucky Dragon",
+      "Role": 4,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -3416,7 +3529,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3446,7 +3560,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3476,7 +3591,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3506,7 +3622,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3536,7 +3653,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3566,7 +3684,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3596,7 +3715,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3626,7 +3746,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3656,7 +3777,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3686,7 +3808,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3716,7 +3839,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3746,7 +3870,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3776,13 +3901,14 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 345532908443795457,
-      "Username": "⚡Toriku Tunnel/Dan Da God⚡",
+      "Username": "🔥Kazuto Kirigaya~kun🔥",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -3806,7 +3932,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3836,7 +3963,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3866,7 +3994,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3896,7 +4025,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3926,7 +4056,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3956,7 +4087,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -3986,7 +4118,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4016,7 +4149,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4046,7 +4180,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4076,7 +4211,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4106,7 +4242,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4136,7 +4273,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4166,7 +4304,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4196,7 +4335,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4226,7 +4366,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4256,7 +4397,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4286,7 +4428,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4316,7 +4459,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4346,7 +4490,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4376,13 +4521,14 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 373727267593125888,
-      "Username": "H_",
+      "Username": "γιηΞ検索",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -4406,7 +4552,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4436,7 +4583,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4466,7 +4614,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4496,7 +4645,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4526,7 +4676,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4556,7 +4707,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4586,7 +4738,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4616,14 +4769,15 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 187027544711757824,
       "Username": "Sadra Pathan",
-      "Role": 2,
+      "Role": 3,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -4646,7 +4800,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4676,7 +4831,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4706,7 +4862,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4736,13 +4893,14 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 370013531984232449,
-      "Username": "angery oreo",
+      "Username": "happy oreo🌸",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -4766,13 +4924,14 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 246536367771877376,
-      "Username": "blackari",
+      "Username": "EiYu-kari YakumOh",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -4796,7 +4955,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4826,13 +4986,14 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 286222030997684226,
-      "Username": "StarFuck",
+      "Username": "StarForger",
       "Role": 1,
       "Status": 1,
       "Money": 0,
@@ -4856,7 +5017,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4886,7 +5048,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4916,7 +5079,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -4946,13 +5110,14 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 246639171899359232,
-      "Username": "Blue Steak",
+      "Username": "Blue Streak",
       "Role": 1,
       "Status": 1,
       "Money": 0,
@@ -4976,7 +5141,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -5006,14 +5172,15 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
     "UserData": {
       "UserID": 351955028459913227,
       "Username": "Kagami Taiga",
-      "Role": 4,
+      "Role": 2,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -5036,7 +5203,8 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   },
   {
@@ -5066,7 +5234,318 @@
     },
     "ModData": {
       "IsMuted": false,
-      "MuteDuration": "00:00:00"
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 58279543764422656,
+      "Username": "marevitae",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 58277187530268672,
+      "Username": "Silverlocks",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 265574495736037386,
+      "Username": "Cursed Child",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 282378792134246400,
+      "Username": "lets go boys",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 415247467878285313,
+      "Username": "Kamaie",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 336468205910360065,
+      "Username": "Teku-Chan",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 368586342034046987,
+      "Username": "Omm Kumo(hayato)",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 224157321855631360,
+      "Username": "OrphicAsher",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 408063153503600640,
+      "Username": "𝕻𝖊𝖙𝖊",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 144860863541673984,
+      "Username": "Dezco",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
     }
   }
 ]

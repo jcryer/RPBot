@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("sv")]
+    [Group("sv"), IsMuted]
     class SVClass : BaseCommandModule
     {
         public static bool active = false;

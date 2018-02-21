@@ -16,7 +16,7 @@ namespace RPBot
 {
     class LogClass : BaseCommandModule
     {
-        [Command("log"), Description("Admin log command (testing)"), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("log"), Description("Admin log command (testing)"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         [Hidden]
         public async Task Log(CommandContext e, [RemainingText, Description("Description of the log")] string desc)
         {
@@ -106,7 +106,7 @@ namespace RPBot
             return HTMLList;
         }
 
-        [Command("logfrom"), Description("Admin log command (testing)"), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("logfrom"), Description("Admin log command (testing)"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         [Hidden]
         public async Task LogFrom(CommandContext e, DiscordMessage msg, [RemainingText, Description("Description of the log")] string desc)
         {

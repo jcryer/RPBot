@@ -12,7 +12,7 @@ using DotNetWikiBot;
 
 namespace RPBot
 {
-    [Group("wiki")]
+    [Group("wiki"), IsMuted]
     class WikiClass : BaseCommandModule
     {
         public static Dictionary<List<string>, Action<string, Wiki.Page>> WikiFields = new Dictionary<List<string>, Action<string, Wiki.Page>>();
