@@ -1118,7 +1118,7 @@
   {
     "UserData": {
       "UserID": 150767260464709632,
-      "Username": "Skelly",
+      "Username": "Smelly",
       "Role": 2,
       "Status": 1,
       "Money": 0,
@@ -1676,7 +1676,7 @@
   {
     "UserData": {
       "UserID": 201731211796676608,
-      "Username": "Darth Vader",
+      "Username": "Goku Black",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -1955,7 +1955,7 @@
   {
     "UserData": {
       "UserID": 358907314503417856,
-      "Username": "Haru Son of Lala",
+      "Username": "Haru Son of Lala/Zuzu",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -2389,8 +2389,8 @@
   {
     "UserData": {
       "UserID": 277032252465086464,
-      "Username": "Seventh Sanctum",
-      "Role": 2,
+      "Username": "Netzach",
+      "Role": 3,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2916,8 +2916,8 @@
   {
     "UserData": {
       "UserID": 265339750792167434,
-      "Username": "Queen",
-      "Role": 2,
+      "Username": "One-Eyed",
+      "Role": 3,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2947,8 +2947,8 @@
   {
     "UserData": {
       "UserID": 369622772684685324,
-      "Username": "Judgement",
-      "Role": 1,
+      "Username": "Sick",
+      "Role": 0,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -4497,7 +4497,7 @@
   {
     "UserData": {
       "UserID": 198458539046338560,
-      "Username": "ᵤₛₑᵣ ₙₒₜ ᶠₒᵤₙᵈ",
+      "Username": "Psion",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -4900,7 +4900,7 @@
   {
     "UserData": {
       "UserID": 370013531984232449,
-      "Username": "happy oreo🌸",
+      "Username": "ɦɑppi ѳʀɛѳ",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -5521,6 +5521,316 @@
     "UserData": {
       "UserID": 144860863541673984,
       "Username": "Dezco",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 417067937946402826,
+      "Username": "Tatsumaki",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 330547853464174592,
+      "Username": "Derpy Is Salty",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 392756979115753483,
+      "Username": "fly",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 191601991842004992,
+      "Username": "Mr.X",
+      "Role": 2,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 397894750470144011,
+      "Username": "JJ Johnson",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 156138162572361728,
+      "Username": "Floofy Neko",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 382761848220549123,
+      "Username": "DeltaTheHunter",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 378800715264688129,
+      "Username": "Matthew",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 392123818749067265,
+      "Username": "tigerlily",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": false,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 202607054198800384,
+      "Username": "josh - milky",
       "Role": 0,
       "Status": 1,
       "Money": 0,

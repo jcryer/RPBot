@@ -434,7 +434,15 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
 
                         }
                     }
-                    if (e.Message.ChannelId == 312918289988976653)
+                    else if (e.Message.Content.ToLower().Contains("you won't"))
+                    {
+                        await e.Message.RespondAsync("No balls");
+                    }
+                    else if (e.Message.Content.ToLower().Contains("no balls"))
+                    {
+                        await e.Message.RespondAsync("^^");
+                    }
+                    if (e.Message.ChannelId == 312918289988976653 && e.Author.Id != 313107775943213056)
                     {
                         Regex ItemRegex = new Regex(@"\.(png|gif|jpg|jpeg|tiff|webp)");
                         if (ItemRegex.IsMatch(e.Message.Content) || e.Message.Attachments.Any())
