@@ -28,17 +28,17 @@ namespace RPBot
             {
                 int rank = Xp;
                 string UserRank = "S1";
-                if (rank <= 30500) UserRank = "S2";
-                if (rank <= 25500) UserRank = "S3";
-                if (rank <= 20500) UserRank = "A1";
-                if (rank <= 17500) UserRank = "A2";
-                if (rank <= 15000) UserRank = "A3";
-                if (rank <= 12500) UserRank = "B1";
-                if (rank <= 10500) UserRank = "B2";
-                if (rank <= 8500) UserRank = "B3";
-                if (rank <= 6500) UserRank = "C1";
-                if (rank <= 5000) UserRank = "C2";
-                if (rank <= 3750) UserRank = "C3";
+                if (rank <= 16000) UserRank = "S2";
+                if (rank <= 14000) UserRank = "S3";
+                if (rank <= 12000) UserRank = "A1";
+                if (rank <= 10500) UserRank = "A2";
+                if (rank <= 9250) UserRank = "A3";
+                if (rank <= 8000) UserRank = "B1";
+                if (rank <= 7000) UserRank = "B2";
+                if (rank <= 6000) UserRank = "B3";
+                if (rank <= 5000) UserRank = "C1";
+                if (rank <= 4000) UserRank = "C2";
+                if (rank <= 3250) UserRank = "C3";
                 if (rank <= 2500) UserRank = "D1";
                 if (rank <= 2000) UserRank = "D2";
                 if (rank <= 1250) UserRank = "D3";
