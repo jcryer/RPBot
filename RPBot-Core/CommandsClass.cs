@@ -530,13 +530,16 @@ namespace RPBot
         {
             DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
             {
-                Color = DiscordColor.Black
+                Color = DiscordColor.CornflowerBlue,
+                Timestamp = DateTime.Now
             };
             string[] textSplit = text.Split(':');
 
             embed.Title = !string.IsNullOrWhiteSpace(textSplit[0]) ? textSplit[0] : "N/A";
+            embed.Description = !string.IsNullOrWhiteSpace(textSplit[1]) ? textSplit[0] : "N/A";
+
             bool first = true;
-            foreach (string embedInfo in textSplit.Skip(1))
+            foreach (string embedInfo in textSplit.Skip(2))
             {
                 if (first) 
                     embed.AddField(embedInfo, "N/A");
