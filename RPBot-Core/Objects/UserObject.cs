@@ -130,9 +130,9 @@ namespace RPBot
         {
             public ModData()
             {
-                this.IsMuted = false;
+                this.IsMuted = 0;
             }
-            public bool IsMuted { get; set; }
+            public int IsMuted { get; set; }
             public TimeSpan MuteDuration { get; set; }
             public List<DiscordRole> Roles { get; set; }
         }

@@ -16,16 +16,21 @@ namespace RPBot
             {
                 UserObject.RootObject userObject = RPClass.Users.First(x => x.UserData.UserID == user.Id);
 
-                if (userObject.ModData.IsMuted)
+                if (userObject.ModData.IsMuted == 2)
                 {
-                    userObject.ModData.IsMuted = false;
+                    await e.RespondAsync("Fail: user is ultimuted.");
+                    return;
+                }
+                else if (userObject.ModData.IsMuted == 1)
+                {
+                    userObject.ModData.IsMuted = 0;
                     await user.RevokeRoleAsync(RPClass.PunishedRole);
                     await e.RespondAsync("User unmuted.");
 
                 }
                 else
                 {
-                    userObject.ModData.IsMuted = true;
+                    userObject.ModData.IsMuted = 1;
                     await user.GrantRoleAsync(RPClass.PunishedRole);
                     await e.RespondAsync("User muted.");
                 }
@@ -46,16 +51,22 @@ namespace RPBot
                 
                 UserObject.RootObject userObject = RPClass.Users.First(x => x.UserData.UserID == user.Id);
 
-                if (userObject.ModData.IsMuted)
+                if (userObject.ModData.IsMuted == 2)
                 {
-                    userObject.ModData.IsMuted = false;
+                    userObject.ModData.IsMuted = 0;
                     await user.ReplaceRolesAsync(userObject.ModData.Roles);
                     await e.RespondAsync("User un-ultimuted.");
 
                 }
+                else if (userObject.ModData.IsMuted == 1)
+                {
+                    userObject.ModData.IsMuted = 0;
+                    await user.RevokeRoleAsync(RPClass.PunishedRole);
+                    await e.RespondAsync("User unmuted.");
+                }
                 else
                 {
-                    userObject.ModData.IsMuted = true;
+                    userObject.ModData.IsMuted = 2;
                     userObject.ModData.Roles = user.Roles.ToList();
                     await user.ReplaceRolesAsync(new List<DiscordRole>() { RPClass.PunishedRole });
                     await e.RespondAsync("User ultimuted.");

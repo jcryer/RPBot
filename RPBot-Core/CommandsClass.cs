@@ -530,18 +530,13 @@ namespace RPBot
         {
             DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
             {
-                Color = new DiscordColor("4169E1"),
-                Timestamp = DateTime.UtcNow,
-                ThumbnailUrl = e.Client.CurrentUser.AvatarUrl
-            }
-            .WithFooter("Heroes & Villains");
-
+                Color = DiscordColor.Black
+            };
             string[] textSplit = text.Split(':');
 
             embed.Title = !string.IsNullOrWhiteSpace(textSplit[0]) ? textSplit[0] : "N/A";
-            embed.Description = !string.IsNullOrWhiteSpace(textSplit[1]) ? textSplit[1] : "N/A";
             bool first = true;
-            foreach (string embedInfo in textSplit.Skip(2))
+            foreach (string embedInfo in textSplit.Skip(1))
             {
                 if (first) 
                     embed.AddField(embedInfo, "N/A");
@@ -611,7 +606,7 @@ namespace RPBot
             }
         }
 
-        [Command("giveadmin"), RequireRoles(RoleCheckMode.Any, "Administrator")]
+        [Command("giveadmin"), RequireOwner]
         public async Task GiveAdmin(CommandContext e, DiscordMember member)
         {
             await member.GrantRoleAsync(e.Guild.GetRole(312961839359328266));
@@ -641,7 +636,6 @@ namespace RPBot
                 await ctx.RespondAsync("Failed - search using the chemical symbol or element name.");
                 return;
             }
-            // colour
             DiscordEmbedBuilder b = new DiscordEmbedBuilder()
             {
                 Color = new DiscordColor("4169E1"),
@@ -665,165 +659,6 @@ namespace RPBot
             .AddField("Summary", e.summary ?? "-", false);
             await ctx.RespondAsync(embed: b.Build());
         }
-
-        /*  [Command("eval"), Description("Evaluates a snippet of C# code, in context."), RequireOwner]
-          public async Task EvaluateAsync(CommandContext ctx, [RemainingText, Description("Code to evaluate.")] string code)
-          {
-              var cs1 = code.IndexOf("```") + 3;
-              cs1 = code.IndexOf('\n', cs1) + 1;
-              var cs2 = code.LastIndexOf("```");
-
-              if (cs1 == -1 || cs2 == -1)
-                  throw new ArgumentException("You need to wrap the code into a code block.", nameof(code));
-
-              code = code.Substring(cs1, cs2 - cs1);
-
-              var embed = new DiscordEmbedBuilder
-              {
-                  Title = "Evaluating...",
-                  Color = new DiscordColor("4169E1")
-              };
-              var msg = await ctx.RespondAsync("", embed: embed.Build()).ConfigureAwait(false);
-
-              var globals = new EvaluationEnvironment(ctx);
-              var sopts = ScriptOptions.Default
-                  .WithImports("System", "System.Collections.Generic", "System.Diagnostics", "System.Linq", "System.Net.Http", "System.Net.Http.Headers", "System.Reflection", "System.Text",
-                               "System.Threading.Tasks", "DSharpPlus", "DSharpPlus.CommandsNext", "DSharpPlus.Entities", "DSharpPlus.EventArgs", "DSharpPlus.Exceptions")
-                  .WithReferences(AppDomain.CurrentDomain.GetAssemblies().Where(xa => !xa.IsDynamic && !string.IsNullOrWhiteSpace(xa.Location)));
-
-              var sw1 = Stopwatch.StartNew();
-              var cs = CSharpScript.Create(code, sopts, typeof(EvaluationEnvironment));
-              var csc = cs.Compile();
-              sw1.Stop();
-
-              if (csc.Any(xd => xd.Severity == DiagnosticSeverity.Error))
-              {
-                  embed = new DiscordEmbedBuilder
-                  {
-                      Title = "Compilation failed",
-                      Description = string.Concat("Compilation failed after ", sw1.ElapsedMilliseconds.ToString("#,##0"), "ms with ", csc.Length.ToString("#,##0"), " errors."),
-                      Color = new DiscordColor("4169E1")
-                  };
-                  foreach (var xd in csc.Take(3))
-                  {
-                      var ls = xd.Location.GetLineSpan();
-                      embed.AddField(string.Concat("Error at ", ls.StartLinePosition.Line.ToString("#,##0"), ", ", ls.StartLinePosition.Character.ToString("#,##0")), Formatter.InlineCode(xd.GetMessage()), false);
-                  }
-                  if (csc.Length > 3)
-                  {
-                      embed.AddField("Some errors ommited", string.Concat((csc.Length - 3).ToString("#,##0"), " more errors not displayed"), false);
-                  }
-                  await msg.ModifyAsync(embed: embed.Build()).ConfigureAwait(false);
-                  return;
-              }
-
-              Exception rex = null;
-              ScriptState<object> css = null;
-              var sw2 = Stopwatch.StartNew();
-              try
-              {
-                  css = await cs.RunAsync(globals).ConfigureAwait(false);
-                  rex = css.Exception;
-              }
-              catch (Exception ex)
-              {
-                  rex = ex;
-              }
-              sw2.Stop();
-
-              if (rex != null)
-              {
-                  embed = new DiscordEmbedBuilder
-                  {
-                      Title = "Execution failed",
-                      Description = string.Concat("Execution failed after ", sw2.ElapsedMilliseconds.ToString("#,##0"), "ms with `", rex.GetType(), ": ", rex.Message, "`."),
-                      Color = new DiscordColor("4169E1"),
-                  };
-                  await msg.ModifyAsync(embed: embed.Build()).ConfigureAwait(false);
-                  return;
-              }
-
-              // execution succeeded
-              embed = new DiscordEmbedBuilder
-              {
-                  Title = "Evaluation successful",
-                  Color = new DiscordColor("4169E1"),
-              };
-
-              embed.AddField("Result", css.ReturnValue != null ? css.ReturnValue.ToString() : "No value returned", false)
-                  .AddField("Compilation time", string.Concat(sw1.ElapsedMilliseconds.ToString("#,##0"), "ms"), true)
-                  .AddField("Execution time", string.Concat(sw2.ElapsedMilliseconds.ToString("#,##0"), "ms"), true);
-
-              if (css.ReturnValue != null)
-                  embed.AddField("Return type", css.ReturnValue.GetType().ToString(), true);
-
-              await msg.ModifyAsync(embed: embed.Build()).ConfigureAwait(false);
-          }*/
-
-        [Command("eval"), Description("Evaluates a snippet of C# code, in context."), RequireOwner, IsMuted]
-        public async Task EvaluateAsync(CommandContext ctx, [RemainingText, Description("Code to evaluate.")] string code)
-        {
-            await ctx.Message.DeleteAsync();
-            List<string> codeStuff = RPClass.CodeList.ToList();
-
-            var cs1 = code.IndexOf("```") + 3;
-            cs1 = code.IndexOf('\n', cs1) + 1;
-            var cs2 = code.LastIndexOf("```");
-
-            if (cs1 == -1 || cs2 == -1)
-                throw new ArgumentException("You need to wrap the code into a code block.", nameof(code));
-
-            code = code.Substring(cs1, cs2 - cs1);
-
-            var msg = await ctx.RespondAsync("```========SECURE CONNECTION ESTABLISHED========```");
-
-            string response = "```========SECURE CONNECTION ESTABLISHED========" + Environment.NewLine;
-            for (int i = 0; i < 3; i++)
-            {
-                string x = codeStuff.PickRandom();
-                response += x;
-                codeStuff.Remove(x);
-                int numDots = RPClass.Random.Next(3, 8);
-                for (int j = 0; j < numDots; j++)
-                {
-                    response += ".";
-                    await msg.ModifyAsync(response + "```");
-                    await Task.Delay(500);
-                }
-                response += Environment.NewLine;
-            }
-
-            var globals = new EvaluationEnvironment(ctx);
-            var sopts = ScriptOptions.Default
-                .WithImports("System", "System.Collections.Generic", "System.Diagnostics", "System.Linq", "System.Net.Http", "System.Net.Http.Headers", "System.Reflection", "System.Text",
-                             "System.Threading.Tasks", "DSharpPlus", "DSharpPlus.CommandsNext", "DSharpPlus.Entities", "DSharpPlus.EventArgs", "DSharpPlus.Exceptions")
-                .WithReferences(AppDomain.CurrentDomain.GetAssemblies().Where(xa => !xa.IsDynamic && !string.IsNullOrWhiteSpace(xa.Location)));
-
-            var sw1 = Stopwatch.StartNew();
-            var cs = CSharpScript.Create(code, sopts, typeof(EvaluationEnvironment));
-            var csc = cs.Compile();
-            sw1.Stop();
-
-            Exception rex = null;
-            ScriptState<object> css = null;
-            var sw2 = Stopwatch.StartNew();
-            try
-            {
-                css = await cs.RunAsync(globals).ConfigureAwait(false);
-                rex = css.Exception;
-            }
-            catch (Exception ex)
-            {
-                rex = ex;
-            }
-            sw2.Stop();
-            // execution succeeded
-            string compilation = string.Concat(sw1.ElapsedMilliseconds.ToString("#,##0"), "ms");
-            string execution = string.Concat(sw2.ElapsedMilliseconds.ToString("#,##0"), "ms");
-            await msg.ModifyAsync($"{response}Response: {css.ReturnValue.ToString()}```");
-        }
-
-
 
         [Group("emoji", CanInvokeWithoutSubcommand = true), Aliases("e"), Description("Emoji commands"), IsMuted]
         class EmojiClass : BaseCommandModule
@@ -918,22 +753,5 @@ namespace RPBot
             await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b.Build());
         }
         
-    }
-    public sealed class EvaluationEnvironment
-    {
-        public CommandContext Context { get; }
-
-        public DiscordMessage Message => this.Context.Message;
-        public DiscordChannel Channel => this.Context.Channel;
-        public DiscordGuild Guild => this.Context.Guild;
-        public DiscordUser User => this.Context.User;
-        public DiscordMember Member => this.Context.Member;
-        public DiscordClient Client => this.Context.Client;
-        public HttpClient Http => this.Context.Services.GetService<HttpClient>();
-
-        public EvaluationEnvironment(CommandContext ctx)
-        {
-            this.Context = ctx;
-        }
     }
 }
