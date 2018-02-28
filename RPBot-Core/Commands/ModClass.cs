@@ -93,6 +93,7 @@ namespace RPBot
         public async Task pls(CommandContext e, DiscordMember m)
         {
             await m.RevokeRoleAsync(RPClass.RPLockRole);
+            await e.RespondAsync("REEEE");
         }
         [Command("rplock"), Description("Command for admins to hide all channels from a user and remove their roles"), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
         public async Task RPLock(CommandContext e, [Description("Member to be muted")] DiscordMember user)
