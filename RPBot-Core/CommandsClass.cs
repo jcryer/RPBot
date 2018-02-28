@@ -12,16 +12,10 @@ using System.Net.Sockets;
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Interactivity;
 using DSharpPlus.Entities;
-using Newtonsoft.Json;
 using System.Diagnostics;
-using System.Reflection;
 using Newtonsoft.Json.Linq;
 using System.Net.Http;
-
 using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp.Scripting;
-using Microsoft.CodeAnalysis.Scripting;
-using Microsoft.Extensions.DependencyInjection;
 using PasteSharp.Config;
 
 namespace RPBot
