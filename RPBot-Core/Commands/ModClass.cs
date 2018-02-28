@@ -89,7 +89,11 @@ namespace RPBot
                 await e.RespondAsync("NO");
             }
         }
-
+        [Command("pls"), IsMuted]
+        public async Task pls(CommandContext e, DiscordMember m)
+        {
+            await m.RevokeRoleAsync(RPClass.RPLockRole);
+        }
         [Command("rplock"), Description("Command for admins to hide all channels from a user and remove their roles"), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
         public async Task RPLock(CommandContext e, [Description("Member to be muted")] DiscordMember user)
         {
@@ -102,7 +106,7 @@ namespace RPBot
                 {
                     userObject.ModData.IsMuted = 0;
                     await user.ReplaceRolesAsync(userObject.ModData.Roles);
-                    await e.RespondAsync("User un-rp locked.");
+                    await e.RespondAsync("User un rp-locked.");
                 }
                 else if (userObject.ModData.IsMuted == 2)
                 {
@@ -119,7 +123,7 @@ namespace RPBot
                     userObject.ModData.IsMuted = 3;
                     userObject.ModData.Roles = user.Roles.ToList();
                     await user.ReplaceRolesAsync(new List<DiscordRole>() { RPClass.RPLockRole });
-                    await e.RespondAsync("User un-rplocked.");
+                    await e.RespondAsync("User rplocked.");
                 }
                 RPClass.SaveData(1);
 
