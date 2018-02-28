@@ -315,6 +315,8 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 RPClass.StaffRole = e.Guild.GetRole(313845882841858048);
                 RPClass.HelpfulRole = e.Guild.GetRole(312979390516559885);
                 RPClass.PunishedRole = e.Guild.GetRole(379163684276142091);
+                RPClass.AdminRole = e.Guild.GetRole(312961839359328266);
+                RPClass.RPLockRole = e.Guild.GetRole(418246854854180864);
                 RPClass.GameChannel = e.Guild.GetChannel(395882029738360832);
                 RPClass.RPGuild = e.Guild;
 

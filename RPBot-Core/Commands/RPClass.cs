@@ -40,6 +40,9 @@ namespace RPBot
         public static DiscordRole StaffRole;
         public static DiscordRole HelpfulRole;
         public static DiscordRole PunishedRole;
+        public static DiscordRole AdminRole;
+        public static DiscordRole RPLockRole;
+
         public static DiscordGuild RPGuild;
         public static Random Random = new Random();
         public static PasteSharpClient PastebinClient;

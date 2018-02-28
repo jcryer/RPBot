@@ -1,6 +1,7 @@
 ﻿using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
+using DSharpPlus.Interactivity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,12 @@ namespace RPBot
             {
                 UserObject.RootObject userObject = RPClass.Users.First(x => x.UserData.UserID == user.Id);
 
-                if (userObject.ModData.IsMuted == 2)
+                if (userObject.ModData.IsMuted == 3)
+                {
+                    await e.RespondAsync("Fail: user is RP Locked.");
+                    return;
+                }
+                else if (userObject.ModData.IsMuted == 2)
                 {
                     await e.RespondAsync("Fail: user is ultimuted.");
                     return;
@@ -51,7 +57,12 @@ namespace RPBot
                 
                 UserObject.RootObject userObject = RPClass.Users.First(x => x.UserData.UserID == user.Id);
 
-                if (userObject.ModData.IsMuted == 2)
+                if (userObject.ModData.IsMuted == 3)
+                {
+                    await e.RespondAsync("Fail: user is RP Locked.");
+                    return;
+                }
+                else if (userObject.ModData.IsMuted == 2)
                 {
                     userObject.ModData.IsMuted = 0;
                     await user.ReplaceRolesAsync(userObject.ModData.Roles);
@@ -70,6 +81,84 @@ namespace RPBot
                     userObject.ModData.Roles = user.Roles.ToList();
                     await user.ReplaceRolesAsync(new List<DiscordRole>() { RPClass.PunishedRole });
                     await e.RespondAsync("User ultimuted.");
+                }
+                RPClass.SaveData(1);
+
+            }
+            catch
+            {
+                await e.RespondAsync("NO");
+            }
+        }
+
+        [Command("rplock"), Description("Command for admins to hide all channels from a user and remove their roles"), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
+        public async Task RPLock(CommandContext e, [Description("Member to be muted")] DiscordMember user)
+        {
+            var interactivity = e.Client.GetInteractivity();
+            
+            try
+            {
+
+                UserObject.RootObject userObject = RPClass.Users.First(x => x.UserData.UserID == user.Id);
+
+                if (userObject.ModData.IsMuted == 3)
+                {
+                    var msg = await e.RespondAsync($"{RPClass.AdminRole.Mention} - please turn the key to unlock user.");
+
+                    await msg.CreateReactionAsync(DiscordEmoji.FromUnicode("🔑"));
+
+                    var ctx = await interactivity.WaitForMessageReactionAsync(x => x == DiscordEmoji.FromUnicode("🔑"), msg);
+
+                    if (ctx != null)
+                    {
+                        if (ctx.User != e.User)
+                        {
+                            await e.RespondAsync("Key turned. Proceeding.");
+                            userObject.ModData.IsMuted = 0;
+                            await user.ReplaceRolesAsync(userObject.ModData.Roles);
+                            await e.RespondAsync("User un-rp locked.");
+                        }
+                    }
+                    else
+                    {
+                        await e.RespondAsync("Key not turned. Exiting process.");
+                        return;
+                    }
+                }
+                else if (userObject.ModData.IsMuted == 2)
+                {
+                    await e.RespondAsync("Fail: user is RP Locked.");
+                    return;
+                }
+                else if (userObject.ModData.IsMuted == 1)
+                {
+                    await e.RespondAsync("Fail: user is RP Locked.");
+                    return;
+                }
+                else
+                {
+                    var msg = await e.RespondAsync($"{RPClass.AdminRole.Mention} - please turn the key to lock user.");
+
+                    await msg.CreateReactionAsync(DiscordEmoji.FromUnicode("🔑"));
+
+                    var ctx = await interactivity.WaitForMessageReactionAsync(x => x == DiscordEmoji.FromUnicode("🔑"), msg);
+
+                    if (ctx != null)
+                    {
+                        if (ctx.User != e.User)
+                        {
+                            userObject.ModData.IsMuted = 3;
+                            userObject.ModData.Roles = user.Roles.ToList();
+                            await user.ReplaceRolesAsync(new List<DiscordRole>() { RPClass.PunishedRole });
+                            await e.RespondAsync("User un-rplocked.");
+                        }
+                    }
+                    else
+                    {
+                        await e.RespondAsync("Key not turned. Exiting process.");
+                        return;
+                    }
+
                 }
                 RPClass.SaveData(1);
 
