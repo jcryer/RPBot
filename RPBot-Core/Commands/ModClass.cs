@@ -49,7 +49,7 @@ namespace RPBot
             }
         }*/
 
-        [Command("ultimatemute"), Aliases("ultmute", "ultimatepunish", "upunish", "umute", "um", "up", "ultimute"), Description("Command for admins to temporarily strip away a user's ranks when muted."), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
+        [Command("ultimatemute"), Aliases("ultmute", "ultimatepunish", "upunish", "umute", "um", "up", "ultimute"), Description("Command for admins to temporarily strip away a user's ranks when muted."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task UltimateMute(CommandContext e, [Description("Member to be muted")] DiscordMember user)
         {
             try
