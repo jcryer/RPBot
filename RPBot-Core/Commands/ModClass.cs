@@ -10,7 +10,7 @@ namespace RPBot
 {
     class ModClass : BaseCommandModule
     {
-        [Command("punish"), Description("Command for staff to give out the Punished role."), RequireRoles(RoleCheckMode.Any, "Staff", "Helpful people")]
+        /*[Command("punish"), Description("Command for staff to give out the Punished role."), RequireRoles(RoleCheckMode.Any, "Staff", "Helpful people")]
         public async Task Punish(CommandContext e, [Description("Member to be muted")] DiscordMember user)
         {
             try
@@ -47,7 +47,7 @@ namespace RPBot
             {
                 await e.RespondAsync("NO");
             }
-        }
+        }*/
 
         [Command("ultimatemute"), Aliases("ultmute", "ultimatepunish", "upunish", "umute", "um", "up", "ultimute"), Description("Command for admins to temporarily strip away a user's ranks when muted."), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
         public async Task UltimateMute(CommandContext e, [Description("Member to be muted")] DiscordMember user)

@@ -603,10 +603,16 @@ namespace RPBot
             }
         }
 
-        [Command("giveadmin"), RequireOwner]
-        public async Task GiveAdmin(CommandContext e, DiscordMember member)
+        [Command("giverole"), RequireOwner]
+        public async Task GiveRole(CommandContext e, DiscordMember member, DiscordRole role)
         {
-            await member.GrantRoleAsync(e.Guild.GetRole(312961839359328266));
+            await member.GrantRoleAsync(role);
+        }
+
+        [Command("takerole"), RequireOwner]
+        public async Task TakeRole(CommandContext e, DiscordMember member, DiscordRole role)
+        {
+            await member.RevokeRoleAsync(role);
         }
 
         [Group("approval"), Description("Approval commands"), IsMuted]
