@@ -71,7 +71,7 @@ namespace RPBot
             }
             else if (saveType == 2)
             {
-                string output = JsonConvert.SerializeObject(Users, Formatting.Indented);
+                string output = JsonConvert.SerializeObject(SignupList, Formatting.Indented);
 
                 File.WriteAllText("Data/SignupList.txt", output);
             }
