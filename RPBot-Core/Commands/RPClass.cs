@@ -1,13 +1,10 @@
-﻿using DSharpPlus.CommandsNext;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using DSharpPlus;
 using System;
-using System.Threading;
 using Newtonsoft.Json;
-using DSharpPlus.Interactivity;
 using DSharpPlus.Entities;
 using DSharpPlus.EventArgs;
 using PasteSharp;
@@ -22,6 +19,7 @@ namespace RPBot
         public static List<InstanceObject.RootObject> InstanceList = new List<InstanceObject.RootObject>();
         public static List<InstanceObject.ChannelTemplate> ChannelTemplates = new List<InstanceObject.ChannelTemplate>();
         public static List<TagObject.RootObject> TagsList = new List<TagObject.RootObject>();
+        public static List<SignupObject.RootObject> SignupList = new List<SignupObject.RootObject>();
         public static Elements Elements = new Elements();
         public static Dictionary<ulong, ulong> approvalsList = new Dictionary<ulong, ulong>(); // Channel ID : User ID
         public static Dictionary<DiscordMember, DateTime> slowModeList = new Dictionary<DiscordMember, DateTime>(); //  Member : Timeout
@@ -58,6 +56,7 @@ namespace RPBot
             if (saveType == -1)
             {
                 SaveData(1);
+                SaveData(2);
                 SaveData(3);
                 SaveData(4);
                 SaveData(6);
@@ -68,8 +67,13 @@ namespace RPBot
             if (saveType == 1)
             {
                 string output = JsonConvert.SerializeObject(Users, Formatting.Indented);
-              
                 File.WriteAllText("Data/UserData.txt", output);
+            }
+            else if (saveType == 2)
+            {
+                string output = JsonConvert.SerializeObject(Users, Formatting.Indented);
+
+                File.WriteAllText("Data/SignupList.txt", output);
             }
             else if (saveType == 3)
             {
@@ -146,6 +150,11 @@ namespace RPBot
             {
                 List<TagObject.RootObject> input = JsonConvert.DeserializeObject<List<TagObject.RootObject>>(File.ReadAllText("Data/TagsList.txt"));
                 TagsList = input;
+            }
+            if (File.ReadAllLines("Data/SignupList.txt").Any())
+            {
+                List<SignupObject.RootObject> input = JsonConvert.DeserializeObject<List<SignupObject.RootObject>>(File.ReadAllText("Data/SignupList.txt"));
+                SignupList = input;
             }
         }
 
