@@ -25,6 +25,18 @@ namespace RPBot
             await e.RespondAsync($"Event signup setup! Please, join using the command: `!event join {id}`.");
         }
 
+        [Command("destroy"), Description("Destroys an event signup"), RequireRoles(RoleCheckMode.Any, "Staff")]
+        public async Task Destroy(CommandContext e, [RemainingText]string id)
+        {
+            if (!RPClass.SignupList.Any(x => x.Id == id))
+            {
+                await e.RespondAsync("Fail: No event exists with that ID.");
+                return;
+            };
+            RPClass.SignupList.Remove(new SignupObject.RootObject(id));
+            await e.RespondAsync($"Event signup `{id}` destroyed.");
+        }
+
         [Command("join"), Description("Command to join an event")]
         public async Task Join(CommandContext e, [RemainingText]string id)
         {
@@ -55,7 +67,7 @@ namespace RPBot
                 await e.RespondAsync($"You are not signed up to event: {id}");
                 return;
             }
-            RPClass.SignupList.First(x => x.Id == id).UserIDs.Add(e.Message.Author.Id);
+            RPClass.SignupList.First(x => x.Id == id).UserIDs.Remove(e.Message.Author.Id);
             await e.RespondAsync($"You have now been removed from the event: {id}");
         }
 
@@ -77,7 +89,7 @@ namespace RPBot
             {
                 Color = new DiscordColor("4169E1"),
                 Timestamp = DateTime.UtcNow,
-                Title = id
+                Title = "Event: " + id
             }
             .WithFooter("Heroes & Villains");
 
