@@ -13,6 +13,7 @@ namespace RPBot
             public RootObject(string id)
             {
                 this.Id = id;
+                UserIDs = new List<ulong>();
             }
             public string Id { get; private set; }
             public List<ulong> UserIDs { get; set; }
