@@ -92,8 +92,9 @@ namespace RPBot
             CommandsNextService.RegisterCommands(typeof(SVClass));
             CommandsNextService.RegisterCommands(typeof(WikiClass));
             CommandsNextService.RegisterCommands(typeof(StatsClass));
+            CommandsNextService.RegisterCommands(typeof(SignupClass));
 
-           // WikiClass.InitWiki();
+            // WikiClass.InitWiki();
 
             RPClass.Elements = JsonConvert.DeserializeObject<Elements>(File.ReadAllText("Data/Elements.txt"));
             InteractivityConfiguration icfg = new InteractivityConfiguration();
