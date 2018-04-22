@@ -169,6 +169,12 @@ namespace RPBot
             await e.CommandsNext.SudoAsync(user, e.Channel, command);
         }
 
+        [Command("colour"), Description("REEEEE"), RequireRoles(RoleCheckMode.Any), RequireOwner]
+        public async Task ColourAsync(CommandContext e, DiscordRole role, [RemainingText, Description("Hex Code")] string colour)
+        {
+            await role.UpdateAsync(color: new DiscordColor(colour));
+        }
+
         [Command("serverinfo"), Description("Gets info about current server"), IsMuted]
         public async Task GuildInfo(CommandContext ctx)
         {
