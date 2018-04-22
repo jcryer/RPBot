@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using DSharpPlus.CommandsNext;
 using System.Net.Sockets;
 using DSharpPlus.CommandsNext.Attributes;
+using DSharpPlus.CommandsNext.Converters;
 using DSharpPlus.Interactivity;
 using DSharpPlus.Entities;
 using System.Diagnostics;
@@ -169,7 +170,7 @@ namespace RPBot
             await e.CommandsNext.SudoAsync(user, e.Channel, command);
         }
 
-        [Command("colour"), Description("REEEEE"), RequireRoles(RoleCheckMode.Any), RequireOwner]
+        [Command("colour"), Description("REEEEE")]
         public async Task ColourAsync(CommandContext e, DiscordRole role, [RemainingText, Description("Hex Code")] string colour)
         {
             await role.UpdateAsync(color: new DiscordColor(colour));
