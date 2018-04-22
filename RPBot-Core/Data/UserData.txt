@@ -343,8 +343,8 @@
   {
     "UserData": {
       "UserID": 199996479161630720,
-      "Username": "Arbiter ♛",
-      "Role": 2,
+      "Username": "Boris Bodrov",
+      "Role": 3,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -437,7 +437,7 @@
     "UserData": {
       "UserID": 144865936699162624,
       "Username": "Hat Man",
-      "Role": 1,
+      "Role": 0,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -1025,8 +1025,8 @@
   {
     "UserData": {
       "UserID": 321501319095517185,
-      "Username": "Enki",
-      "Role": 3,
+      "Username": "Pun",
+      "Role": 4,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2141,8 +2141,8 @@
   {
     "UserData": {
       "UserID": 139089329988435968,
-      "Username": "Shit OC Machine Broke",
-      "Role": 0,
+      "Username": "K.K.",
+      "Role": 4,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2234,7 +2234,7 @@
   {
     "UserData": {
       "UserID": 241973301260320768,
-      "Username": "Re:Check",
+      "Username": "Re:Angel",
       "Role": 3,
       "Status": 1,
       "Money": 0,
@@ -2699,7 +2699,7 @@
   {
     "UserData": {
       "UserID": 187027544711757824,
-      "Username": "Lalahon",
+      "Username": "Caster",
       "Role": 2,
       "Status": 1,
       "Money": 0,
