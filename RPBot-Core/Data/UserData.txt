@@ -437,7 +437,7 @@
     "UserData": {
       "UserID": 144865936699162624,
       "Username": "Hat Man",
-      "Role": 0,
+      "Role": 1,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -1298,7 +1298,41 @@
     "ModData": {
       "IsMuted": 0,
       "MuteDuration": "00:00:00",
-      "Roles": null
+      "Roles": [
+        {
+          "color": 0,
+          "name": "Staff",
+          "hoist": false,
+          "position": 25,
+          "permissions": 470281296,
+          "managed": false,
+          "mentionable": true,
+          "Mention": "<@&415936404598685721>",
+          "id": 415936404598685721
+        },
+        {
+          "color": 3066993,
+          "name": "Administrator",
+          "hoist": false,
+          "position": 28,
+          "permissions": 2146958463,
+          "managed": false,
+          "mentionable": true,
+          "Mention": "<@&312961839359328266>",
+          "id": 312961839359328266
+        },
+        {
+          "color": 0,
+          "name": "Game Masters",
+          "hoist": true,
+          "position": 24,
+          "permissions": 139280,
+          "managed": false,
+          "mentionable": true,
+          "Mention": "<@&367421656408260618>",
+          "id": 367421656408260618
+        }
+      ]
     }
   },
   {
