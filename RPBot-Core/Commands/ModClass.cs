@@ -49,7 +49,7 @@ namespace RPBot
             }
         }*/
 
-        [Command("ultimatemute"), Aliases("ultmute", "ultimatepunish", "upunish", "umute", "um", "up", "ultimute"), Description("Command for admins to temporarily strip away a user's ranks when muted."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
+        [Command("ultimatemute"), Aliases("ultmute", "ultimatepunish", "upunish", "umute", "um", "up", "ultimute", "begone"), Description("Command for admins to temporarily strip away a user's ranks when muted."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task UltimateMute(CommandContext e, [Description("Member to be muted")] DiscordMember user)
         {
             try
@@ -76,10 +76,15 @@ namespace RPBot
                 }
                 else
                 {
+                    if (user.Roles.Any(x => x == RPClass.AdminRole) && !e.Member.Roles.Any(x => x == RPClass.AdminRole))
+                    {
+                        await e.RespondAsync("Admins are the master race, leave us alone.");
+                        return;
+                    }
                     userObject.ModData.IsMuted = 2;
                     userObject.ModData.Roles = user.Roles.ToList();
                     await user.ReplaceRolesAsync(new List<DiscordRole>() { RPClass.PunishedRole });
-                    await e.RespondAsync("User ultimuted.");
+                    await e.RespondAsync("User ultimuted.\nhttps://media1.tenor.com/images/11f718f111612ed75213e03d6c0425b1/tenor.gif?itemid=9173391");
                 }
                 RPClass.SaveData(1);
 
