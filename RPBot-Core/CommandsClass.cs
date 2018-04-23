@@ -210,6 +210,10 @@ namespace RPBot
                 JoinDate = new DateTime(2017, 5, 13, 14, 11, 19);
             else if (m.Id == 242720599158423554)
                 JoinDate = ctx.Guild.CreationTimestamp.DateTime;
+            else if (m.Id == 286222030997684226)
+                JoinDate = new DateTime(2017, 10, 11, 19, 12, 32);
+            else if (m.Id == 221576298743595009)
+                JoinDate = new DateTime(2017, 11, 24, 18, 2, 13);
             var b = new DiscordEmbedBuilder()
             {
                 Title = $"{m.DisplayName}#{m.Discriminator}",
