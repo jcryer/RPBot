@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using DSharpPlus;
 using Newtonsoft.Json;
 using DSharpPlus.CommandsNext.Exceptions;
+using System.Net.Sockets;
 
 namespace RPBot
 {
@@ -23,7 +24,7 @@ namespace RPBot
 
         private async Task Run(string[] args)
         {
-            if (args.Any())
+           if (args.Any())
             {
                 RPClass.Restarted = true;
             }
@@ -62,6 +63,61 @@ namespace RPBot
             await Task.Delay(-1);
         }
 
-        
+        public static void Listener()
+        {
+            while (true)
+            {
+                try
+                {
+                    IPAddress localaddress = IPAddress.Any;
+                    IPEndPoint endpoint = new IPEndPoint(localaddress, 80);
+                    Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+                    socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, 1);
+
+                    socket.Bind(endpoint);
+                    socket.Listen(10);
+
+                    Socket clientsocket = socket.Accept();
+                    clientsocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, 1);
+
+                    byte[] buffer = new byte[1024];
+                    int receivelength = clientsocket.Receive(buffer, 1024, SocketFlags.None);
+                    string requeststring = Encoding.UTF8.GetString(buffer, 0, receivelength);
+
+
+                    try
+                    {
+                        string query = requeststring.Split(' ')[1].TrimStart('/');
+                        
+                         Console.WriteLine(query);
+                    }
+                    catch 
+                    {
+                    }
+
+                    string responseBody = "<b>aaaaaaaaaaaah\ntest</b>";
+
+                    string statusLine = "HTTP/1.1 200 OK\r\n";
+                    string responseHeader = "Content-Type: text/html\r\n";
+
+                    clientsocket.Send(Encoding.UTF8.GetBytes(statusLine));
+                    clientsocket.Send(Encoding.UTF8.GetBytes(responseHeader));
+                    clientsocket.Send(Encoding.UTF8.GetBytes("\r\n"));
+                    clientsocket.Send(Encoding.UTF8.GetBytes(responseBody));
+
+                    socket.Close();
+                    socket.Dispose();
+                    clientsocket.Close();
+                    clientsocket.Dispose();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message + "\n\n" + e.StackTrace + "\n\n" + e.InnerException + "\n\n" + e.Source);
+
+                }
+            }
+        }
+
+
     }
 }

@@ -11,46 +11,7 @@ namespace RPBot
 {
     class ModClass : BaseCommandModule
     {
-        /*[Command("punish"), Description("Command for staff to give out the Punished role."), RequireRoles(RoleCheckMode.Any, "Staff", "Helpful people")]
-        public async Task Punish(CommandContext e, [Description("Member to be muted")] DiscordMember user)
-        {
-            try
-            {
-                UserObject.RootObject userObject = RPClass.Users.First(x => x.UserData.UserID == user.Id);
-
-                if (userObject.ModData.IsMuted == 3)
-                {
-                    await e.RespondAsync("Fail: user is RP Locked.");
-                    return;
-                }
-                else if (userObject.ModData.IsMuted == 2)
-                {
-                    await e.RespondAsync("Fail: user is ultimuted.");
-                    return;
-                }
-                else if (userObject.ModData.IsMuted == 1)
-                {
-                    userObject.ModData.IsMuted = 0;
-                    await user.RevokeRoleAsync(RPClass.PunishedRole);
-                    await e.RespondAsync("User unmuted.");
-
-                }
-                else
-                {
-                    userObject.ModData.IsMuted = 1;
-                    await user.GrantRoleAsync(RPClass.PunishedRole);
-                    await e.RespondAsync("User muted.");
-                }
-                RPClass.SaveData(1);
-
-            }
-            catch
-            {
-                await e.RespondAsync("NO");
-            }
-        }*/
-
-        [Command("ultimatemute"), Aliases("ultmute", "ultimatepunish", "upunish", "umute", "um", "up", "ultimute", "begone"), Description("Command for admins to temporarily strip away a user's ranks when muted."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
+        [Command("mute"), Aliases("ultmute", "ultimatepunish", "upunish", "umute", "um", "up", "ultimute", "begone", "punish"), Description("Command for admins to temporarily strip away a user's ranks when muted."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task UltimateMute(CommandContext e, [Description("Member to be muted")] DiscordMember user, bool silent = false)
         {
             try
@@ -83,7 +44,7 @@ namespace RPBot
                     userObject.ModData.Roles = user.Roles.ToList();
                     await user.ReplaceRolesAsync(new List<DiscordRole>() { RPClass.PunishedRole });
                     if (!silent)
-                        await e.RespondAsync("User ultimuted.\nhttps://media1.tenor.com/images/11f718f111612ed75213e03d6c0425b1/tenor.gif?itemid=9173391");
+                        await e.RespondAsync("User ultimuted.");
                 }
                 RPClass.SaveData(1);
 
