@@ -74,8 +74,16 @@ namespace RPBot
                             content = content.Replace(ItemMatch.Value, "");
                         }
                     }
-                        DiscordMember member = allMembers.First(x => x.Id == message.Author.Id);
+                    DiscordMember member = allMembers.FirstOrDefault(x => x.Id == message.Author.Id);
+                    if (member == null)
+                    {
+                        logObjectList.Add(new LogObject.Message(message.Author.Username, "#000000", "N/A", message.Timestamp, CommonMarkConverter.Convert(content), message.Author.IsBot));
+
+                    }
+                    else
+                    {
                         logObjectList.Add(new LogObject.Message(member.DisplayName, member.Color.ToString(), message.Author.AvatarUrl, message.Timestamp, CommonMarkConverter.Convert(content), message.Author.IsBot));
+                    }
                 }
             }
                 

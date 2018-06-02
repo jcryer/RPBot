@@ -60,6 +60,20 @@ namespace RPBot
             await e.RespondAsync("Hmm. I choose... " + Choices[randomChoice]);
         }
 
+        [Command("listinactive"), Description("Test."), IsMuted]
+        public async Task LI(CommandContext e)
+        {
+            string list = "```";
+            foreach (var x in await e.Guild.GetAllMembersAsync())
+            {
+                if (x.Roles.Count() == 0)
+                {
+                    list += $"\n{x.Username} - {x.JoinedAt.ToString()}";
+                }
+            }
+            await e.RespondAsync(list + "\n```");
+        }
+
         [Group("slowmode"), Description("Slowmode commands"), IsMuted]
         class Slowmode : BaseCommandModule
         {

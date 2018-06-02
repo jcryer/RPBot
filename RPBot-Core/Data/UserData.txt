@@ -2,8 +2,8 @@
   {
     "UserData": {
       "UserID": 64751081975975936,
-      "Username": "Nova Griffin",
-      "Role": 4,
+      "Username": "Jupiter",
+      "Role": 2,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -219,8 +219,8 @@
   {
     "UserData": {
       "UserID": 322120939850563584,
-      "Username": "Shaman",
-      "Role": 3,
+      "Username": "Agent Zero",
+      "Role": 2,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -281,7 +281,7 @@
   {
     "UserData": {
       "UserID": 289978831350136833,
-      "Username": "Epixelator",
+      "Username": "ePixelator",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -343,8 +343,8 @@
   {
     "UserData": {
       "UserID": 199996479161630720,
-      "Username": "Boris Bodrov",
-      "Role": 3,
+      "Username": "Arbiter",
+      "Role": 2,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -870,8 +870,8 @@
   {
     "UserData": {
       "UserID": 382533339770388481,
-      "Username": "Hale Sylon",
-      "Role": 4,
+      "Username": "Shatter",
+      "Role": 3,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -1025,8 +1025,8 @@
   {
     "UserData": {
       "UserID": 321501319095517185,
-      "Username": "Pun",
-      "Role": 4,
+      "Username": "Midas",
+      "Role": 2,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -1119,7 +1119,7 @@
     "UserData": {
       "UserID": 375710268442804236,
       "Username": "Lumine",
-      "Role": 4,
+      "Role": 1,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -1273,7 +1273,7 @@
   {
     "UserData": {
       "UserID": 192287928611766281,
-      "Username": "Darth Tyrael",
+      "Username": "Osiris - The Great Devourer",
       "Role": 0,
       "Status": 1,
       "Money": 0,
@@ -1431,8 +1431,8 @@
   {
     "UserData": {
       "UserID": 296875172198350848,
-      "Username": "Bucket",
-      "Role": 3,
+      "Username": "UpChuck",
+      "Role": 2,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -1586,7 +1586,7 @@
   {
     "UserData": {
       "UserID": 351955028459913227,
-      "Username": "Kagami Taiga",
+      "Username": "Brick",
       "Role": 2,
       "Status": 1,
       "Money": 0,
@@ -1648,8 +1648,8 @@
   {
     "UserData": {
       "UserID": 369622772684685324,
-      "Username": "Vonya",
-      "Role": 2,
+      "Username": "Midnight Tiger",
+      "Role": 3,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -1710,7 +1710,7 @@
   {
     "UserData": {
       "UserID": 376563261317054474,
-      "Username": "Ecstasy",
+      "Username": "Flora",
       "Role": 3,
       "Status": 1,
       "Money": 0,
@@ -1772,7 +1772,7 @@
   {
     "UserData": {
       "UserID": 388681351781679105,
-      "Username": "Chulalongkorn-Hitler-Michael",
+      "Username": "Ishitori Kabai",
       "Role": 4,
       "Status": 1,
       "Money": 0,
@@ -1803,8 +1803,8 @@
   {
     "UserData": {
       "UserID": 247387080437661696,
-      "Username": "Calibur",
-      "Role": 3,
+      "Username": "Static",
+      "Role": 1,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -1896,7 +1896,7 @@
   {
     "UserData": {
       "UserID": 389590546810929173,
-      "Username": "Maximilian",
+      "Username": "Zeke",
       "Role": 3,
       "Status": 1,
       "Money": 0,
@@ -2082,8 +2082,8 @@
   {
     "UserData": {
       "UserID": 237928154273021952,
-      "Username": "Caprisun",
-      "Role": 2,
+      "Username": "Achilles",
+      "Role": 1,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2113,8 +2113,8 @@
   {
     "UserData": {
       "UserID": 253946322804015104,
-      "Username": "Sarcophagus",
-      "Role": 4,
+      "Username": "Spike",
+      "Role": 3,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2175,8 +2175,8 @@
   {
     "UserData": {
       "UserID": 139089329988435968,
-      "Username": "K.K.",
-      "Role": 4,
+      "Username": "Glowstick",
+      "Role": 1,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2268,8 +2268,8 @@
   {
     "UserData": {
       "UserID": 241973301260320768,
-      "Username": "Re:Angel",
-      "Role": 3,
+      "Username": "Marin",
+      "Role": 1,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2330,8 +2330,8 @@
   {
     "UserData": {
       "UserID": 280686912107315200,
-      "Username": "Don Mistress",
-      "Role": 3,
+      "Username": "SilvaGilva",
+      "Role": 4,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2454,8 +2454,8 @@
   {
     "UserData": {
       "UserID": 234319272376139777,
-      "Username": "Omega",
-      "Role": 0,
+      "Username": "Stigma",
+      "Role": 2,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2548,7 +2548,7 @@
     "UserData": {
       "UserID": 437237473878343691,
       "Username": "7",
-      "Role": 3,
+      "Role": 4,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2640,7 +2640,7 @@
   {
     "UserData": {
       "UserID": 392123818749067265,
-      "Username": "Kasumi",
+      "Username": "Elena Slyer",
       "Role": 4,
       "Status": 1,
       "Money": 0,
@@ -2702,8 +2702,8 @@
   {
     "UserData": {
       "UserID": 366350762437246981,
-      "Username": "Hiro Tate",
-      "Role": 1,
+      "Username": "Red Flare",
+      "Role": 2,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2733,8 +2733,8 @@
   {
     "UserData": {
       "UserID": 187027544711757824,
-      "Username": "Caster",
-      "Role": 2,
+      "Username": "Ravenstone",
+      "Role": 0,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2795,8 +2795,8 @@
   {
     "UserData": {
       "UserID": 400007993753731089,
-      "Username": "Praetoria",
-      "Role": 1,
+      "Username": "Gaytoria",
+      "Role": 0,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2921,6 +2921,781 @@
       "UserID": 375102509330464768,
       "Username": "Wondering Swordsman",
       "Role": 3,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 362299393547698176,
+      "Username": "9",
+      "Role": 4,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 425748875358371842,
+      "Username": "Moon-y",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 343665884579233793,
+      "Username": "kateass",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 285496656470867988,
+      "Username": "Eamon",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 95705085316698112,
+      "Username": "Neetshot",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 342960669370613760,
+      "Username": "Jest",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 346413033179971597,
+      "Username": "Ares",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 377555255371759619,
+      "Username": "trashacan",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 312557500828221440,
+      "Username": "Docu",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 365517085469704193,
+      "Username": "Lexi",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 299930861103480842,
+      "Username": "Hermes",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 378472352213630977,
+      "Username": "dreiyahbanana",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 392756979115753483,
+      "Username": "fly",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 145185976283693056,
+      "Username": "Nathaniel",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 238309088260390912,
+      "Username": "Susanoo",
+      "Role": 1,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 365938029640024064,
+      "Username": "Leo",
+      "Role": 4,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 237622058383572992,
+      "Username": "Warriorbadger",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 132217176965775360,
+      "Username": "Reldin",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 395792549685755905,
+      "Username": "Frostbite",
+      "Role": 3,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 435620946406014996,
+      "Username": "Queue",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 292032014851375106,
+      "Username": "Me.lamy",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 419088532502478849,
+      "Username": "eMiya Desu",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 340729390088323072,
+      "Username": "Kelly McFurlend",
+      "Role": 4,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 298553590933618689,
+      "Username": "N    U    T",
+      "Role": 0,
+      "Status": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "ResolvedCases": 0,
+      "CrimesCommitted": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 207865809580589056,
+      "Username": "Mau ni",
+      "Role": 0,
       "Status": 1,
       "Money": 0,
       "MeritPoints": 0,
