@@ -110,6 +110,15 @@ namespace RPBot
             await e.RespondAsync("Cases updated.");
         }
 
+        [Command("hackban"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
+        public async Task HackBan(CommandContext e,[Description("User ID")] ulong userId)
+        {
+
+            await e.Guild.BanMemberAsync(userId, 7, "");
+
+            await e.RespondAsync($"Hackbanned ID: {userId}");
+        }
+
         [Command("crimes"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task Crimes(CommandContext e, [Description("Select a user.")] DiscordMember user, [Description("Number to increase or decrease crimes committed by")] string crimeNum)
         {
