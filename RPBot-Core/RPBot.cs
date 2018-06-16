@@ -371,27 +371,30 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                     {
                         if (!e.Message.Content.StartsWith("!"))
                         {
-                            DiscordEmbedBuilder embed = new DiscordEmbedBuilder
+                            if (e.Channel.Id != 419128665549570049)
                             {
-                                Title = "Message Edited",
-                                Color = DiscordColor.Orange
-                            }
-                            .AddField("Member", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
-                            .AddField("Channel", e.Message.Channel.Name, true)
-                            .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
-                            .AddField("Edit Timestamp", e.Message.EditedTimestamp.ToString(), true);
+                                DiscordEmbedBuilder embed = new DiscordEmbedBuilder
+                                {
+                                    Title = "Message Edited",
+                                    Color = DiscordColor.Orange
+                                }
+                                .AddField("Member", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
+                                .AddField("Channel", e.Message.Channel.Name, true)
+                                .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
+                                .AddField("Edit Timestamp", e.Message.EditedTimestamp.ToString(), true);
 
-                            if (RPClass.MessageBuffer.Any(x => x.Key == e.Message.Id))
-                            {
-                                var m = RPClass.MessageBuffer.First(x => x.Key == e.Message.Id);
-                                embed.AddField("Old Message", !string.IsNullOrWhiteSpace(m.Value) ? m.Value : "-", false);
-                                m = new KeyValuePair<ulong, string>(e.Message.Id, e.Message.Content);
-                            }
+                                if (RPClass.MessageBuffer.Any(x => x.Key == e.Message.Id))
+                                {
+                                    var m = RPClass.MessageBuffer.First(x => x.Key == e.Message.Id);
+                                    embed.AddField("Old Message", !string.IsNullOrWhiteSpace(m.Value) ? m.Value : "-", false);
+                                    m = new KeyValuePair<ulong, string>(e.Message.Id, e.Message.Content);
+                                }
 
-                            embed.AddField("New Message", e.Message.Content.Any() ? e.Message.Content : "-", false)
-                            .AddField("Attachments", e.Message.Attachments.Any() ? string.Join("\n", e.Message.Attachments.Select(x => x.Url)) : "-", false);
-                            
-                            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: embed);
+                                embed.AddField("New Message", e.Message.Content.Any() ? e.Message.Content : "-", false)
+                                .AddField("Attachments", e.Message.Attachments.Any() ? string.Join("\n", e.Message.Attachments.Select(x => x.Url)) : "-", false);
+
+                                await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: embed);
+                            }
                         }
                     }
                     catch { }
