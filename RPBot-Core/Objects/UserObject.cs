@@ -48,12 +48,11 @@ namespace RPBot
 
         public class UserData
         {
-            public UserData(ulong userID, string username, int role, int status, int money, int resolvedCases, int crimesCommitted, int guildID)
+            public UserData(ulong userID, string username, int role, int money, int resolvedCases, int crimesCommitted, int guildID)
             {
                 this.UserID = userID;
                 this.Username = username;
                 this.Role = role;
-                this.Status = status;
                 this.Money = money;
                 this.ResolvedCases = resolvedCases;
                 this.CrimesCommitted = crimesCommitted;

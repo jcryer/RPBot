@@ -191,7 +191,7 @@ namespace RPBot
                 }
                 if (!Users.Any(x => x.UserData.UserID == user.Id))
                 {
-                    Users.Add(new UserObject.RootObject(new UserObject.UserData(user.Id, user.DisplayName, role, 1, 0, 0, 0, 0), 0, new UserObject.InvData(new List<int>())));
+                    Users.Add(new UserObject.RootObject(new UserObject.UserData(user.Id, user.DisplayName, role, 0, 0, 0, 0), 0, new UserObject.InvData(new List<int>())));
                 }
                 if (Users.Find(x => x.UserData.UserID == user.Id).UserData.Username != user.DisplayName)
                 {

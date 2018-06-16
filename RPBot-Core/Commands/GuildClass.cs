@@ -16,7 +16,7 @@ namespace RPBot
         [Command("create"), Description("Command for admins to create a guild."), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task Create(CommandContext e, [RemainingText, Description("Name of new Guild")] string guildName)
         {
-            RPClass.Guilds.Add(new GuildObject.RootObject(1 + RPClass.Guilds.Count, guildName, 1, new List<ulong>()));
+            RPClass.Guilds.Add(new GuildObject.RootObject(1 + RPClass.Guilds.Count, guildName, new List<ulong>()));
             await XPClass.UpdateGuildRanking(e.Guild);
             RPClass.SaveData(3);
             await e.RespondAsync("Guild created.");
@@ -47,37 +47,6 @@ namespace RPBot
             catch
             {
                 await e.RespondAsync("No guild found with that name. Are you sure you typed it in correctly?");
-            }
-        }
-
-        [Command("changestatus"), Description("Command for admins to change a guild's status."), RequireRoles(RoleCheckMode.Any, "Staff")]
-        public async Task ChangeStatus(CommandContext e, [Description("Name of guild whose status will be changed.")] string guildName, [Description("Status to set the guild to (1 for Active, 2 for Inactive")] string status = null)
-        {
-            if (status != null)
-            {
-                if (int.TryParse(status, out int statusInt) && (statusInt == 1 || statusInt == 2))
-                {
-                    try
-                    {
-                        RPClass.Guilds.First(x => x.Name == guildName).Status = statusInt;
-                        await XPClass.UpdateGuildRanking(e.Guild);
-                        RPClass.SaveData(3);
-                        await e.RespondAsync("Guild status changed.");
-                    }
-                    catch
-                    {
-                        await e.RespondAsync("No guild found with that name. Are you sure you typed it in correctly?");
-                    }
-                }
-                else
-                {
-                    await e.RespondAsync("Use 1 for Active or 2 for Inactive.");
-                }
-            }
-
-            else
-            {
-                await e.RespondAsync("Specify the new status - 1 for Active or 2 for Inactive.");
             }
         }
 

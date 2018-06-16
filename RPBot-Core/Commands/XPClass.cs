@@ -249,7 +249,7 @@ namespace RPBot
                         }
                     }
                     xp = (xp / guild.UserIDs.Count);
-                    GuildsNew.Add(new GuildObject.RootObject(0, guild.Name, guild.Status, new List<ulong>() { (ulong)stats, (ulong)xp }));
+                    GuildsNew.Add(new GuildObject.RootObject(0, guild.Name, new List<ulong>() { (ulong)stats, (ulong)xp }));
 
                 }
             }
