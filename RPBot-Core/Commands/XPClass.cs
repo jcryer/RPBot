@@ -160,20 +160,17 @@ namespace RPBot
             else if (type == 3) RankingChannel = RPClass.RogueRankingChannel;
             else if (type == 4) RankingChannel = RPClass.AcademyRankingChannel;
 
-            int longestName = 0;
-            var l = RPClass.Users;
-            if (type == 1) longestName = RPClass.Users.Where(x => x.UserData.Role == 1).Max(x => x.UserData.Username.Length) + 1;
-            else if (type == 2) longestName = RPClass.Users.Where(x => x.UserData.Role == 2).Max(x => x.UserData.Username.Length) + 1;
-            else if (type == 3) longestName = RPClass.Users.Where(x => x.UserData.Role == 3).Max(x => x.UserData.Username.Length) + 1;
-            else if (type == 4) longestName = RPClass.Users.Where(x => x.UserData.Role == 4).Max(x => x.UserData.Username.Length) + 1;
+            int longestName = RPClass.Users.Where(x => x.UserData.Role == type).Max(x => x.UserData.Username.Length) + 1;
 
             int longestCount = 5;
 			int longestStats = 7;
-            if (type == 3 || type == 4) longestStats = 13;
-            int longestGuild = 6;
-            if (RPClass.Guilds.Any()) longestGuild = RPClass.Guilds.Max(x => x.Name.Length) + 1;
+            if (type == 3) longestStats = 13;
+            int longestGuild = 
+                RPClass.Guilds.Where(x => x.UserIDs.Intersect(RPClass.Users.Where(y => y.UserData.Role == type).Select(y => y.UserData.UserID)).Any())
+                .Select(x => x.Name.Length).DefaultIfEmpty(5)
+                .Max() + 1;
 
-            string Count = "Rank".PadRight(longestCount) + "| ";
+            string Count = "Pos".PadRight(longestCount) + "| ";
 			string Name = "Name".PadRight(longestName) + "| ";
 			string Stats = "Cases".PadRight(longestStats) + "| ";
             if (type == 2) Stats = "Crimes".PadRight(longestStats) + "| ";
@@ -181,14 +178,10 @@ namespace RPBot
 			string Guild = "Guild".PadRight(longestGuild) + "| ";
 			string Rank = "Rank";
 			string value = "";
-			value += "```" + Count + Name + Stats + Guild + Rank + "\n------------------------------------------------------\n";
+			value += $"```{Count}{Name}{Stats}{Guild}{Rank}\n{new string('-', $"{Count}{Name}{Stats}{Guild}{Rank}".Length)}\n";
 			List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
 
-			if (type == 1) SortedUsers = RPClass.Users.Where(x => x.UserData.Role == 1).OrderByDescending(x => (x.Xp)).ToList();
-			else if (type == 2) SortedUsers = RPClass.Users.Where(x => x.UserData.Role == 2).OrderByDescending(x => (x.Xp)).ToList();
-            else if (type == 3) SortedUsers = RPClass.Users.Where(x => x.UserData.Role == 3).OrderByDescending(x => (x.Xp)).ToList();
-            else if (type == 4) SortedUsers = RPClass.Users.Where(x => x.UserData.Role == 4).OrderByDescending(x => (x.Xp)).ToList();
-
+			SortedUsers = RPClass.Users.Where(x => x.UserData.Role == type).OrderByDescending(x => (x.Xp)).ToList();
             try
             {
                 List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAsync(100));
@@ -232,11 +225,11 @@ namespace RPBot
             if (RPClass.Guilds.Any()) longestName = RPClass.Guilds.Max(x => x.Name.Length) + 1;
             int longestStats = 13;
 
-            string Count = "Rank".PadRight(longestCount) + "| ";
+            string Count = "Pos".PadRight(longestCount) + "| ";
             string Name = "Name".PadRight(longestName) + "| ";
             string  Stats = "Cases/Crimes".PadRight(longestStats) + "| ";
             string Rank = "Rank";
-            string value = "```" + Count + Name + Stats  + Rank + "\n--------------------------------------------------------------------\n";
+            string value = $"```{Count}{Name}{Stats}{Rank}\n{new string('-', $"{Count}{Name}{Stats}{Rank}".Length)}\n";
 
             List<GuildObject.RootObject> GuildsNew = new List<GuildObject.RootObject>();
             foreach (GuildObject.RootObject guild in RPClass.Guilds)
