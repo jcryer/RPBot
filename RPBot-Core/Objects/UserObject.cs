@@ -11,10 +11,9 @@ namespace RPBot
     {
         public class RootObject
         {
-            public RootObject(UserData userData, int xp, InvData invData)
+            public RootObject(UserData userData, InvData invData)
             {
                 UserData = userData;
-                this.Xp = xp;
                 Stats = new StatData();
                 this.ModData = new ModData();
             }
@@ -44,30 +43,64 @@ namespace RPBot
                 if (rank <= 1250) UserRank = "D3";
                 return UserRank;
             }
+
+            public int GetBounty(int type)
+            {
+                char rank = GetRank()[0];
+
+                int points = 0;
+                if (type == 1) points = UserData.Fame;
+                else points = UserData.Infamy;
+                int Bounty = 0;
+
+                if (points > 250) return 150;
+                if (points < 1) return 0;
+                if (rank == 'S') return 250;
+                if (rank == 'A') Bounty = 35;
+                if (rank == 'B') Bounty = 25;
+                if (rank == 'C') Bounty = 15;
+                if (rank == 'D') Bounty = 5;
+
+                if (points <= 25) return Bounty + 5;
+                if (points <= 50) return Bounty + 15;
+                if (points <= 100) return Bounty + 25;
+                if (points <= 150) return Bounty + 35;
+                if (points <= 200) return Bounty + 45;
+                if (points <= 250) return Bounty + 55;
+
+                return 0;
+            }
         }
 
         public class UserData
         {
-            public UserData(ulong userID, string username, int role, int money, int resolvedCases, int crimesCommitted, int guildID)
+            public UserData(ulong userID, string username, int role)
             {
                 this.UserID = userID;
                 this.Username = username;
                 this.Role = role;
-                this.Money = money;
-                this.ResolvedCases = resolvedCases;
-                this.CrimesCommitted = crimesCommitted;
-                this.GuildID = guildID;
+                Money = 0;
+                MeritPoints = 0;
+                BloodPoints = 0;
+                Cases = 0;
+                Crimes = 0;
+                Fame = 0;
+                Infamy = 0;
+                Comment = "";
+                GuildID = 0;
             }
 
             public ulong UserID { get; set; }
             public string Username { get; set; }
             public int Role { get; set; }
-            public int Status { get; set; }
             public int Money { get; set; }
             public int MeritPoints { get; set; }
             public int BloodPoints { get; set; }
-            public int ResolvedCases { get; set; }
-            public int CrimesCommitted { get; set; }
+            public int Cases { get; set; }
+            public int Crimes { get; set; }
+            public int Fame { get; set; }
+            public int Infamy { get; set; }
+            public string Comment { get; set; }
             public int GuildID { get; set; }
         }
 
@@ -117,9 +150,9 @@ namespace RPBot
 
         public class InvData
         {
-            public InvData(List<int> items)
+            public InvData()
             {
-                this.Items = items;
+                Items = new List<int>();
             }
 
             public List<int> Items { get; set; }

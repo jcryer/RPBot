@@ -96,7 +96,6 @@ namespace RPBot
 
             // WikiClass.InitWiki();
 
-            RPClass.Elements = JsonConvert.DeserializeObject<Elements>(File.ReadAllText("Data/Elements.txt"));
             InteractivityConfiguration icfg = new InteractivityConfiguration();
 			this.InteractivityService = Discord.UseInteractivity(icfg);
         }
@@ -312,6 +311,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 RPClass.ApprovalsCategory = e.Guild.GetChannel(389160226944712705);
                 RPClass.InstanceCategory = e.Guild.GetChannel(391971392733839360);
                 RPClass.StatsChannel = e.Guild.GetChannel(312964092748890114);
+                RPClass.FameChannel = e.Guild.GetChannel(465218787768270848);
                 RPClass.StaffRole = e.Guild.GetRole(313845882841858048);
                 RPClass.HelpfulRole = e.Guild.GetRole(312979390516559885);
                 RPClass.PunishedRole = e.Guild.GetRole(379163684276142091);

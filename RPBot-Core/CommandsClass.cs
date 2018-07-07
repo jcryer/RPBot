@@ -23,6 +23,38 @@ namespace RPBot
 {
     class CommandsClass : BaseCommandModule
     {
+        [Command("fame"), Description("Staff commands to edit user fame"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
+        public async Task Fame(CommandContext e, [Description("User to change fame of")] DiscordMember user, [Description("How much you wish to change it by")] int fameNum)
+        {
+            if (fameNum != 0)
+            {
+                UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
+                userData.UserData.Fame += fameNum;
+                if (userData.UserData.Fame < 0) userData.UserData.Fame = 0;
+
+                await Extensions.UpdateFameAndInfamy(e.Guild, 0);
+                RPClass.SaveData(1);
+
+                await e.RespondAsync("Stat changed.");
+            }
+        }
+
+        [Command("infamy"), Description("Staff commands to edit user infamy"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
+        public async Task Infamy(CommandContext e, [Description("User to change fame of")] DiscordMember user, [Description("How much you wish to change it by")] int infamyNum)
+        {
+            if (infamyNum != 0)
+            {
+                UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
+                userData.UserData.Infamy += infamyNum;
+                if (userData.UserData.Infamy < 0) userData.UserData.Infamy = 0;
+
+                await Extensions.UpdateFameAndInfamy(e.Guild, 0);
+                RPClass.SaveData(1);
+
+                await e.RespondAsync("Stat changed.");
+            }
+        }
+
         [Command("roll"), Description("Dice roll command!"), IsMuted]
         public async Task Roll(CommandContext e, [Description("Number of sides of the dice")] int numSides = 0, [Description("Number of rolls to do")] int numRolls = 0)
         {
@@ -94,9 +126,9 @@ namespace RPBot
         [Command("cases"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task Cases(CommandContext e, [Description("Select a user.")] DiscordMember user, [Description("Number to increase or decrease cases resolved by")] string caseNum)
         {
-            RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.ResolvedCases += int.Parse(caseNum);
-            if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.ResolvedCases < 0)
-                RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.ResolvedCases = 0;
+            RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Cases += int.Parse(caseNum);
+            if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Cases < 0)
+                RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Cases = 0;
 
             if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
             else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
@@ -122,9 +154,9 @@ namespace RPBot
         [Command("crimes"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task Crimes(CommandContext e, [Description("Select a user.")] DiscordMember user, [Description("Number to increase or decrease crimes committed by")] string crimeNum)
         {
-            RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.CrimesCommitted += int.Parse(crimeNum);
-            if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.CrimesCommitted < 0)
-                RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.CrimesCommitted = 0;
+            RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Crimes += int.Parse(crimeNum);
+            if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Crimes < 0)
+                RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Crimes = 0;
 
             if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
             else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
@@ -662,39 +694,6 @@ namespace RPBot
                 await c.AddOverwriteAsync(e.Guild.EveryoneRole, Permissions.ReadMessageHistory, Permissions.SendMessages);
                 await e.RespondAsync("Channel created!\n" + c.Mention);
             }
-        }
-
-        [Command("element"), Description("Returns specific periodic table information"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
-        public async Task AddApproval(CommandContext ctx, [RemainingText] string element)
-        {
-            element = element.ToLower();
-            Element e = RPClass.Elements.elements.FirstOrDefault(x => x.symbol.ToLower() == element || x.name.ToLower() == element);
-            if (e == null) {
-                await ctx.RespondAsync("Failed - search using the chemical symbol or element name.");
-                return;
-            }
-            DiscordEmbedBuilder b = new DiscordEmbedBuilder()
-            {
-                Color = new DiscordColor("4169E1"),
-                Timestamp = DateTime.UtcNow
-            }
-            .WithFooter("Avalon Research")
-            .WithTitle(e.name ?? "-")
-            .WithDescription("Symbol: " + e.symbol ?? "-")
-            .AddField("Appearance", e.appearance ?? "-", true)
-            .AddField("Atomic Mass", e.atomic_mass.ToString() ?? "-", true)
-            .AddField("Melting Point", e.melt == null ? "-" : e.melt.ToString(), true)
-            .AddField("Boiling point", e.boil == null ? "-" : e.boil.ToString(), true)
-            .AddField("Category", e.category ?? "-", true)
-            .AddField("Discovered By", e.discovered_by ?? "-", true)
-            .AddField("Molar Heat", e.molar_heat == null ? "-" : e.molar_heat.ToString(), true)
-            .AddField("Named By", e.named_by ?? "-", true)
-            .AddField("Atomic Number", e.number.ToString() ?? "-", true)
-            .AddField("Period", e.period.ToString() ?? "-", true)
-            .AddField("Phase", e.phase ?? "-", true)
-            .AddField("Shells", string.Join(", ", e.shells) ?? "-", true)
-            .AddField("Summary", e.summary ?? "-", false);
-            await ctx.RespondAsync(embed: b.Build());
         }
 
         [Group("emoji", CanInvokeWithoutSubcommand = true), Aliases("e"), Description("Emoji commands"), IsMuted]

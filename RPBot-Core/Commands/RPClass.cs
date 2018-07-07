@@ -20,7 +20,6 @@ namespace RPBot
         public static List<InstanceObject.ChannelTemplate> ChannelTemplates = new List<InstanceObject.ChannelTemplate>();
         public static List<TagObject.RootObject> TagsList = new List<TagObject.RootObject>();
         public static List<SignupObject.RootObject> SignupList = new List<SignupObject.RootObject>();
-        public static Elements Elements = new Elements();
         public static Dictionary<ulong, ulong> approvalsList = new Dictionary<ulong, ulong>(); // Channel ID : User ID
         public static Dictionary<DiscordMember, DateTime> slowModeList = new Dictionary<DiscordMember, DateTime>(); //  Member : Timeout
         public static Dictionary<DiscordMember, DateTime> imageList = new Dictionary<DiscordMember, DateTime>(); // Member : Timeout
@@ -35,6 +34,7 @@ namespace RPBot
         public static DiscordChannel ApprovalsCategory;
         public static DiscordChannel InstanceCategory;
         public static DiscordChannel GameChannel;
+        public static DiscordChannel FameChannel;
         public static DiscordRole StaffRole;
         public static DiscordRole HelpfulRole;
         public static DiscordRole PunishedRole;
@@ -191,7 +191,7 @@ namespace RPBot
                 }
                 if (!Users.Any(x => x.UserData.UserID == user.Id))
                 {
-                    Users.Add(new UserObject.RootObject(new UserObject.UserData(user.Id, user.DisplayName, role, 0, 0, 0, 0), 0, new UserObject.InvData(new List<int>())));
+                    Users.Add(new UserObject.RootObject(new UserObject.UserData(user.Id, user.DisplayName, role), new UserObject.InvData()));
                 }
                 if (Users.Find(x => x.UserData.UserID == user.Id).UserData.Username != user.DisplayName)
                 {

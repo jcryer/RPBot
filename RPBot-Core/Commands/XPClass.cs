@@ -196,9 +196,9 @@ namespace RPBot
 			foreach (UserObject.RootObject user in SortedUsers)
 			{
                 string UserStats = "";
-                if (type == 1) UserStats += user.UserData.ResolvedCases;
-                else if (type == 2) UserStats += user.UserData.CrimesCommitted;
-                else if (type == 3 || type == 4) UserStats += user.UserData.ResolvedCases + user.UserData.CrimesCommitted;
+                if (type == 1) UserStats += user.UserData.Cases;
+                else if (type == 2) UserStats += user.UserData.Crimes;
+                else if (type == 3 || type == 4) UserStats += user.UserData.Cases + user.UserData.Crimes;
 
                 string UserRank = user.GetRank();
 
@@ -245,7 +245,7 @@ namespace RPBot
                         if (user != null)
                         {
                             xp += user.Xp;
-                            stats += user.UserData.ResolvedCases + user.UserData.CrimesCommitted;
+                            stats += user.UserData.Cases + user.UserData.Crimes;
                         }
                     }
                     xp = (xp / guild.UserIDs.Count);
