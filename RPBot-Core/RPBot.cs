@@ -93,6 +93,9 @@ namespace RPBot
             CommandsNextService.RegisterCommands(typeof(WikiClass));
             CommandsNextService.RegisterCommands(typeof(StatsClass));
             CommandsNextService.RegisterCommands(typeof(SignupClass));
+            CommandsNextService.RegisterCommands(typeof(FameClass));
+            CommandsNextService.RegisterCommands(typeof(InfamyClass));
+
 
             // WikiClass.InitWiki();
 

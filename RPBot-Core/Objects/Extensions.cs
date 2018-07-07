@@ -23,10 +23,10 @@ namespace RPBot
                         await msg.DeleteAsync();
                         await Task.Delay(500);
                     }
-                    await RPClass.FameChannel.SendMessageAsync("**========== Hero HQ Board ==========**");
-                    await UpdateFameAndInfamy(e, 1);
-                    await RPClass.FameChannel.SendMessageAsync("**========== Black Market Board ==========**");
+                    await RPClass.FameChannel.SendMessageAsync("**========== Hero HQ Bounty Board ==========**");
                     await UpdateFameAndInfamy(e, 2);
+                    await RPClass.FameChannel.SendMessageAsync("**========== Black Market Bounty Board ==========**");
+                    await UpdateFameAndInfamy(e, 1);
                 }
                 catch { }
                 return;
@@ -42,6 +42,11 @@ namespace RPBot
             int longestFame = 5;
             if (type == 2) longestFame = 7;
             int longestBounty = 7;
+
+            int longestComment = 8;
+
+            if (type == 1) longestComment = RPClass.Users.Where(x => x.UserData.Fame > 0).Max(x => x.UserData.FameComment.Length) + 1;
+            else longestComment = RPClass.Users.Where(x => x.UserData.Infamy > 0).Max(x => x.UserData.InfamyComment.Length) + 1;
 
             string Count = "Pos".PadRight(longestFame) + "| ";
             string Name = "Name".PadRight(longestName) + "| ";
@@ -59,18 +64,20 @@ namespace RPBot
             foreach (UserObject.RootObject user in SortedUsers)
             {
                 string FameOrInfamy = "";
-
+                
                 if (type == 1) FameOrInfamy += user.UserData.Fame;
                 else FameOrInfamy += user.UserData.Infamy;
 
                 string FinalBounty = user.GetBounty(type).ToString();
 
+                string FinalComment = user.UserData.FameComment;
+                if (type == 2) FinalComment = user.UserData.InfamyComment;
                 if (value.Length > 1500)
                 {
                     await FameChannel.SendMessageAsync(value + "```");
                     value = "```";
                 }
-                value += (countNum.ToString().PadRight(longestFame) + "| " + user.UserData.Username.PadRight(longestName) + "| " + FameOrInfamy.PadRight(longestFame) + "| " + FinalBounty.PadRight(longestBounty) + "| " + user.UserData.Comment + "\n");
+                value += (countNum.ToString().PadRight(longestFame) + "| " + user.UserData.Username.PadRight(longestName) + "| " + FameOrInfamy.PadRight(longestFame) + "| " + FinalBounty.PadRight(longestBounty) + "| " + FinalComment + "\n");
                 countNum += 1;
             }
             await FameChannel.SendMessageAsync(value + "```");

@@ -23,38 +23,6 @@ namespace RPBot
 {
     class CommandsClass : BaseCommandModule
     {
-        [Command("fame"), Description("Staff commands to edit user fame"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
-        public async Task Fame(CommandContext e, [Description("User to change fame of")] DiscordMember user, [Description("How much you wish to change it by")] int fameNum)
-        {
-            if (fameNum != 0)
-            {
-                UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
-                userData.UserData.Fame += fameNum;
-                if (userData.UserData.Fame < 0) userData.UserData.Fame = 0;
-
-                await Extensions.UpdateFameAndInfamy(e.Guild, 0);
-                RPClass.SaveData(1);
-
-                await e.RespondAsync("Stat changed.");
-            }
-        }
-
-        [Command("infamy"), Description("Staff commands to edit user infamy"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
-        public async Task Infamy(CommandContext e, [Description("User to change fame of")] DiscordMember user, [Description("How much you wish to change it by")] int infamyNum)
-        {
-            if (infamyNum != 0)
-            {
-                UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
-                userData.UserData.Infamy += infamyNum;
-                if (userData.UserData.Infamy < 0) userData.UserData.Infamy = 0;
-
-                await Extensions.UpdateFameAndInfamy(e.Guild, 0);
-                RPClass.SaveData(1);
-
-                await e.RespondAsync("Stat changed.");
-            }
-        }
-
         [Command("roll"), Description("Dice roll command!"), IsMuted]
         public async Task Roll(CommandContext e, [Description("Number of sides of the dice")] int numSides = 0, [Description("Number of rolls to do")] int numRolls = 0)
         {

@@ -86,7 +86,9 @@ namespace RPBot
                 Crimes = 0;
                 Fame = 0;
                 Infamy = 0;
-                Comment = "";
+                FameComment = "";
+                InfamyComment = "";
+
                 GuildID = 0;
             }
 
@@ -100,7 +102,9 @@ namespace RPBot
             public int Crimes { get; set; }
             public int Fame { get; set; }
             public int Infamy { get; set; }
-            public string Comment { get; set; }
+            public string FameComment { get; set; }
+            public string InfamyComment { get; set; }
+
             public int GuildID { get; set; }
         }
 
