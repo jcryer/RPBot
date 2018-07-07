@@ -55,7 +55,7 @@ namespace RPBot
             string Bounty = "Bounty".PadRight(longestBounty) + "| ";
             string Comment = "Comment";
             string value = "";
-            value += $"```{Count}{Name}{Fame}{Bounty}{Comment}\n{new string('-', $"{Count}{Name}{Fame}{Bounty}{Comment}".Length)}\n";
+            value += $"```{Count}{Name}{Fame}{Bounty}{Comment}\n{new string('-', $"{Count}{Name}{Fame}{Bounty}".Length + longestComment)}\n";
             List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
             if (type == 1) SortedUsers = RPClass.Users.Where(x => x.UserData.Fame > 0).OrderByDescending(x => (x.UserData.Fame)).ToList();
             else SortedUsers = RPClass.Users.Where(x => x.UserData.Infamy > 0).OrderByDescending(x => (x.UserData.Infamy)).ToList();
