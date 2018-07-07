@@ -82,13 +82,10 @@ namespace RPBot
                 Money = 0;
                 MeritPoints = 0;
                 BloodPoints = 0;
-                Cases = 0;
-                Crimes = 0;
                 Fame = 0;
                 Infamy = 0;
                 FameComment = "";
                 InfamyComment = "";
-
                 GuildID = 0;
             }
 
@@ -98,8 +95,6 @@ namespace RPBot
             public int Money { get; set; }
             public int MeritPoints { get; set; }
             public int BloodPoints { get; set; }
-            public int Cases { get; set; }
-            public int Crimes { get; set; }
             public int Fame { get; set; }
             public int Infamy { get; set; }
             public string FameComment { get; set; }

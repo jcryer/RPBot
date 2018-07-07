@@ -91,24 +91,6 @@ namespace RPBot
                 await e.RespondAsync("Slowmode disabled.");
             }
         }
-        [Command("cases"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
-        public async Task Cases(CommandContext e, [Description("Select a user.")] DiscordMember user, [Description("Number to increase or decrease cases resolved by")] string caseNum)
-        {
-            RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Cases += int.Parse(caseNum);
-            if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Cases < 0)
-                RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Cases = 0;
-
-            if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
-            else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
-            else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 3) await XPClass.UpdatePlayerRanking(e.Guild, 3);
-            else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 4) await XPClass.UpdatePlayerRanking(e.Guild, 4);
-
-            await XPClass.UpdateGuildRanking(e.Guild);
-
-            RPClass.SaveData(1);
-
-            await e.RespondAsync("Cases updated.");
-        }
 
         [Command("hackban"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
         public async Task HackBan(CommandContext e,[Description("User ID")] ulong userId)
@@ -117,25 +99,6 @@ namespace RPBot
             await e.Guild.BanMemberAsync(userId, 7, "");
 
             await e.RespondAsync($"Hackbanned ID: {userId}");
-        }
-
-        [Command("crimes"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
-        public async Task Crimes(CommandContext e, [Description("Select a user.")] DiscordMember user, [Description("Number to increase or decrease crimes committed by")] string crimeNum)
-        {
-            RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Crimes += int.Parse(crimeNum);
-            if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Crimes < 0)
-                RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Crimes = 0;
-
-            if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 1) await XPClass.UpdatePlayerRanking(e.Guild, 1);
-            else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 2) await XPClass.UpdatePlayerRanking(e.Guild, 2);
-            else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 3) await XPClass.UpdatePlayerRanking(e.Guild, 3);
-            else if (RPClass.Users.First(x => x.UserData.UserID == user.Id).UserData.Role == 4) await XPClass.UpdatePlayerRanking(e.Guild, 4);
-
-            await XPClass.UpdateGuildRanking(e.Guild);
-
-            RPClass.SaveData(1);
-
-            await e.RespondAsync("Crimes updated.");
         }
 
         [Command("name"), Description("Command for users to change their RP name temporarily"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]

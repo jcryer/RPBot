@@ -163,8 +163,6 @@ namespace RPBot
             int longestName = RPClass.Users.Where(x => x.UserData.Role == type).Max(x => x.UserData.Username.Length) + 1;
 
             int longestCount = 5;
-			int longestStats = 7;
-            if (type == 3) longestStats = 13;
             int longestGuild = 
                 RPClass.Guilds.Where(x => x.UserIDs.Intersect(RPClass.Users.Where(y => y.UserData.Role == type).Select(y => y.UserData.UserID)).Any())
                 .Select(x => x.Name.Length).DefaultIfEmpty(5)
@@ -172,13 +170,10 @@ namespace RPBot
 
             string Count = "Pos".PadRight(longestCount) + "| ";
 			string Name = "Name".PadRight(longestName) + "| ";
-			string Stats = "Cases".PadRight(longestStats) + "| ";
-            if (type == 2) Stats = "Crimes".PadRight(longestStats) + "| ";
-            else if (type == 3) Stats = "Cases/Crimes".PadRight(longestStats) + "| ";
 			string Guild = "Guild".PadRight(longestGuild) + "| ";
 			string Rank = "Rank";
 			string value = "";
-			value += $"```{Count}{Name}{Stats}{Guild}{Rank}\n{new string('-', $"{Count}{Name}{Stats}{Guild}{Rank}".Length)}\n";
+			value += $"```{Count}{Name}{Guild}{Rank}\n{new string('-', $"{Count}{Name}{Guild}{Rank}".Length)}\n";
 			List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
 
 			SortedUsers = RPClass.Users.Where(x => x.UserData.Role == type).OrderByDescending(x => (x.Xp)).ToList();
@@ -195,11 +190,6 @@ namespace RPBot
             int countNum = 1;
 			foreach (UserObject.RootObject user in SortedUsers)
 			{
-                string UserStats = "";
-                if (type == 1) UserStats += user.UserData.Cases;
-                else if (type == 2) UserStats += user.UserData.Crimes;
-                else if (type == 3 || type == 4) UserStats += user.UserData.Cases + user.UserData.Crimes;
-
                 string UserRank = user.GetRank();
 
                 string UserGuild = "";
@@ -211,7 +201,7 @@ namespace RPBot
 					await RankingChannel.SendMessageAsync(value + "```");
 					value = "```";
 				}
-                value += (countNum.ToString().PadRight(longestCount) + "| " +  user.UserData.Username.PadRight(longestName) + "| " + UserStats.PadRight(longestStats) + "| " + UserGuild.PadRight(longestGuild) + "| " + UserRank + "\n");
+                value += (countNum.ToString().PadRight(longestCount) + "| " +  user.UserData.Username.PadRight(longestName) + "| " + UserGuild.PadRight(longestGuild) + "| " + UserRank + "\n");
                 countNum += 1;
             }
             await RankingChannel.SendMessageAsync(value + "```");
@@ -223,18 +213,15 @@ namespace RPBot
             int longestCount = 5;
             int longestName = 10;
             if (RPClass.Guilds.Any()) longestName = RPClass.Guilds.Max(x => x.Name.Length) + 1;
-            int longestStats = 13;
 
             string Count = "Pos".PadRight(longestCount) + "| ";
             string Name = "Name".PadRight(longestName) + "| ";
-            string  Stats = "Cases/Crimes".PadRight(longestStats) + "| ";
             string Rank = "Rank";
-            string value = $"```{Count}{Name}{Stats}{Rank}\n{new string('-', $"{Count}{Name}{Stats}{Rank}".Length)}\n";
+            string value = $"```{Count}{Name}{Rank}\n{new string('-', $"{Count}{Name}{Rank}".Length)}\n";
 
             List<GuildObject.RootObject> GuildsNew = new List<GuildObject.RootObject>();
             foreach (GuildObject.RootObject guild in RPClass.Guilds)
             {
-                int stats = 0;
                 int xp = 0;
                 UserObject.RootObject user;
                 if (guild.UserIDs.Count > 0)
@@ -245,11 +232,10 @@ namespace RPBot
                         if (user != null)
                         {
                             xp += user.Xp;
-                            stats += user.UserData.Cases + user.UserData.Crimes;
                         }
                     }
                     xp = (xp / guild.UserIDs.Count);
-                    GuildsNew.Add(new GuildObject.RootObject(0, guild.Name, new List<ulong>() { (ulong)stats, (ulong)xp }));
+                    GuildsNew.Add(new GuildObject.RootObject(0, guild.Name, new List<ulong>() { (ulong)xp }));
 
                 }
             }
@@ -267,7 +253,7 @@ namespace RPBot
             int countNum = 1;
             foreach (GuildObject.RootObject guild in SortedGuilds)
             {
-                ulong rank = guild.UserIDs[1];
+                ulong rank = guild.UserIDs[0];
                 RPClass.Users.Where(x => x.UserData.GuildID == guild.Id);
                 string GuildRank = "S1";
                 if (rank <= 16000) GuildRank = "S2";
@@ -291,7 +277,7 @@ namespace RPBot
                     value = "```";
                 }
 
-                value += (countNum.ToString().PadRight(longestCount) + "| " + guild.Name.PadRight(longestName) + "| " + guild.UserIDs[0].ToString().PadRight(longestStats) + "| " + GuildRank + "\n");
+                value += (countNum.ToString().PadRight(longestCount) + "| " + guild.Name.PadRight(longestName) + "| " + GuildRank + "\n");
                 countNum += 1;
 
             }
