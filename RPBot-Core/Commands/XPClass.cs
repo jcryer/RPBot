@@ -162,7 +162,9 @@ namespace RPBot
 
             int longestName = RPClass.Users.Where(x => x.UserData.Role == type).Max(x => x.UserData.Username.Length) + 1;
 
-            int longestCount = 5;
+            int longestCount = 4;
+            int longestFame = 5;
+            int longestInfamy = 7;
             int longestGuild = 
                 RPClass.Guilds.Where(x => x.UserIDs.Intersect(RPClass.Users.Where(y => y.UserData.Role == type).Select(y => y.UserData.UserID)).Any())
                 .Select(x => x.Name.Length).DefaultIfEmpty(5)
@@ -170,10 +172,12 @@ namespace RPBot
 
             string Count = "Pos".PadRight(longestCount) + "| ";
 			string Name = "Name".PadRight(longestName) + "| ";
+            string Fame = "Fame | ";
+            string Infamy = "Infamy | ";
 			string Guild = "Guild".PadRight(longestGuild) + "| ";
 			string Rank = "Rank";
 			string value = "";
-			value += $"```{Count}{Name}{Guild}{Rank}\n{new string('-', $"{Count}{Name}{Guild}{Rank}".Length)}\n";
+			value += $"```{Count}{Name}{Fame}{Infamy}{Guild}{Rank}\n{new string('-', $"{Count}{Name}{Fame}{Infamy}{Guild}{Rank}".Length)}\n";
 			List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
 
 			SortedUsers = RPClass.Users.Where(x => x.UserData.Role == type).OrderByDescending(x => (x.Xp)).ToList();
@@ -201,7 +205,7 @@ namespace RPBot
 					await RankingChannel.SendMessageAsync(value + "```");
 					value = "```";
 				}
-                value += (countNum.ToString().PadRight(longestCount) + "| " +  user.UserData.Username.PadRight(longestName) + "| " + UserGuild.PadRight(longestGuild) + "| " + UserRank + "\n");
+                value += (countNum.ToString().PadRight(longestCount) + "| " +  user.UserData.Username.PadRight(longestName) + "| " + user.UserData.Fame.ToString().PadRight(longestFame) + "| " + user.UserData.Infamy.ToString().PadRight(longestInfamy) + "| " + UserGuild.PadRight(longestGuild) + "| " + UserRank + "\n");
                 countNum += 1;
             }
             await RankingChannel.SendMessageAsync(value + "```");
@@ -216,13 +220,17 @@ namespace RPBot
 
             string Count = "Pos".PadRight(longestCount) + "| ";
             string Name = "Name".PadRight(longestName) + "| ";
+            string Fame = "Fame | ";
+            string Infamy = "Infamy | ";
             string Rank = "Rank";
-            string value = $"```{Count}{Name}{Rank}\n{new string('-', $"{Count}{Name}{Rank}".Length)}\n";
+            string value = $"```{Count}{Name}{Fame}{Infamy}{Rank}\n{new string('-', $"{Count}{Name}{Fame}{Infamy}{Rank}".Length)}\n";
 
             List<GuildObject.RootObject> GuildsNew = new List<GuildObject.RootObject>();
             foreach (GuildObject.RootObject guild in RPClass.Guilds)
             {
                 int xp = 0;
+                int fame = 0;
+                int infamy = 0;
                 UserObject.RootObject user;
                 if (guild.UserIDs.Count > 0)
                 {
@@ -232,10 +240,12 @@ namespace RPBot
                         if (user != null)
                         {
                             xp += user.Xp;
+                            fame += user.UserData.Fame;
+                            infamy += user.UserData.Infamy;
                         }
                     }
                     xp = (xp / guild.UserIDs.Count);
-                    GuildsNew.Add(new GuildObject.RootObject(0, guild.Name, new List<ulong>() { (ulong)xp }));
+                    GuildsNew.Add(new GuildObject.RootObject(0, guild.Name, new List<ulong>() { (ulong)xp, (ulong)fame, (ulong)infamy }));
 
                 }
             }
@@ -277,7 +287,7 @@ namespace RPBot
                     value = "```";
                 }
 
-                value += (countNum.ToString().PadRight(longestCount) + "| " + guild.Name.PadRight(longestName) + "| " + GuildRank + "\n");
+                value += (countNum.ToString().PadRight(longestCount) + "| " + guild.Name.PadRight(longestName) + "| " + guild.UserIDs[1].ToString().PadRight(5) + "| " + guild.UserIDs[2].ToString().PadRight(7) + "| " +  GuildRank + "\n");
                 countNum += 1;
 
             }

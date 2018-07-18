@@ -27,9 +27,18 @@ namespace RPBot
         }
 
         [Command("comment"), Description("Adds or replaces bounty comment")]
-        public async Task Comment(CommandContext e, [Description("User to change comment of")] DiscordMember user, [RemainingText] string comment)
+        public async Task Comment(CommandContext e, [Description("User to change comment of")] DiscordMember user, [RemainingText, Description("Comment for bounty, put '-' for no comment.")] string comment)
         {
+            if (comment == "-") comment = " ";
             RPClass.Users.Find(x => x.UserData.UserID == user.Id).UserData.FameComment = comment;
+            await Extensions.UpdateFameAndInfamy(e.Guild, 0);
+            RPClass.SaveData(1);
+            await e.RespondAsync("Done!");
+        }
+
+        [Command("update"), Description("Updates Fame/Infamy Board")]
+        public async Task Update(CommandContext e)
+        {
             await Extensions.UpdateFameAndInfamy(e.Guild, 0);
             RPClass.SaveData(1);
             await e.RespondAsync("Done!");
@@ -55,9 +64,18 @@ namespace RPBot
         }
 
         [Command("comment"), Description("Adds or replaces bounty comment")]
-        public async Task Comment(CommandContext e, [Description("User to change comment of")] DiscordMember user, [RemainingText] string comment)
+        public async Task Comment(CommandContext e, [Description("User to change comment of")] DiscordMember user, [RemainingText, Description("Comment for bounty, put '-' for no comment.")] string comment)
         {
+            if (comment == "-") comment = " ";
             RPClass.Users.Find(x => x.UserData.UserID == user.Id).UserData.InfamyComment = comment;
+            await Extensions.UpdateFameAndInfamy(e.Guild, 0);
+            RPClass.SaveData(1);
+            await e.RespondAsync("Done!");
+        }
+
+        [Command("update"), Description("Updates Fame/Infamy Board")]
+        public async Task Update(CommandContext e)
+        {
             await Extensions.UpdateFameAndInfamy(e.Guild, 0);
             RPClass.SaveData(1);
             await e.RespondAsync("Done!");
