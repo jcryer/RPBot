@@ -48,6 +48,8 @@ namespace RPBot
             if (type == 1) longestComment = RPClass.Users.Where(x => x.UserData.Fame > 0).Max(x => x.UserData.FameComment.Length) + 1;
             else longestComment = RPClass.Users.Where(x => x.UserData.Infamy > 0).Max(x => x.UserData.InfamyComment.Length) + 1;
 
+            if (longestComment < 8) longestComment = 8;
+
             string Count = "Pos".PadRight(longestFame) + "| ";
             string Name = "Name".PadRight(longestName) + "| ";
             string Fame = "Fame".PadRight(longestFame) + "| ";
