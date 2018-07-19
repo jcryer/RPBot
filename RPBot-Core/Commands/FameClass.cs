@@ -1,9 +1,7 @@
 ﻿using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace RPBot
@@ -39,6 +37,11 @@ namespace RPBot
         [Command("update"), Description("Updates Fame/Infamy Board")]
         public async Task Update(CommandContext e)
         {
+            var members = await e.Guild.GetAllMembersAsync();
+            foreach (var user in RPClass.Users.Where(x => x.UserData.Fame > 0 || x.UserData.Infamy > 0)) 
+            {
+                await Extensions.UpdateFameAndInfamyRoles(user.UserData.Fame, user.UserData.Infamy, members.First(x => x.Id == user.UserData.UserID));
+            }
             await Extensions.UpdateFameAndInfamy(0);
             RPClass.SaveData(1);
             await e.RespondAsync("Done!");
@@ -76,6 +79,11 @@ namespace RPBot
         [Command("update"), Description("Updates Fame/Infamy Board")]
         public async Task Update(CommandContext e)
         {
+            var members = await e.Guild.GetAllMembersAsync();
+            foreach (var user in RPClass.Users.Where(x => x.UserData.Fame > 0 || x.UserData.Infamy > 0))
+            {
+                await Extensions.UpdateFameAndInfamyRoles(user.UserData.Fame, user.UserData.Infamy, members.First(x => x.Id == user.UserData.UserID));
+            }
             await Extensions.UpdateFameAndInfamy(0);
             RPClass.SaveData(1);
             await e.RespondAsync("Done!");
