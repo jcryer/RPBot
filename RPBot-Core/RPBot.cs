@@ -323,6 +323,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 RPClass.RPLockRole = e.Guild.GetRole(418246854854180864);
                 FameRoles.Init(e.Guild);
                 RPClass.RPGuild = e.Guild;
+
                 await RPClass.AddOrUpdateUsers(RPClass.RPGuild, true);
             }
             this.GameGuard = new Timer(TimerCallback, null, TimeSpan.FromMinutes(0), TimeSpan.FromMinutes(15));
@@ -342,21 +343,24 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 {
                     try
                     {
-                        if (!e.Message.Content.StartsWith("!"))
+                        if (e.Channel.Id != 419128665549570049)
                         {
-                            DiscordEmbedBuilder b = new DiscordEmbedBuilder
+                            if (!e.Message.Content.StartsWith("!"))
                             {
-                                Title = "Message Deleted",
-                                Color = DiscordColor.Red
-                            }
-                            .AddField("Member", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
-                            .AddField("Channel", e.Message.Channel.Name, true)
-                            .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
-                            .AddField("Deletion Timestamp", e.Message.Timestamp.ToString(), true)
-                            .AddField("Message", e.Message.Content.Any() ? e.Message.Content : "-", false)
-                            .AddField("Attachments", e.Message.Attachments.Any() ? string.Join("\n", e.Message.Attachments.Select(x => x.Url)) : "-", false);
+                                DiscordEmbedBuilder b = new DiscordEmbedBuilder
+                                {
+                                    Title = "Message Deleted",
+                                    Color = DiscordColor.Red
+                                }
+                                .AddField("Member", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
+                                .AddField("Channel", e.Message.Channel.Name, true)
+                                .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
+                                .AddField("Deletion Timestamp", e.Message.Timestamp.ToString(), true)
+                                .AddField("Message", e.Message.Content.Any() ? e.Message.Content : "-", false)
+                                .AddField("Attachments", e.Message.Attachments.Any() ? string.Join("\n", e.Message.Attachments.Select(x => x.Url)) : "-", false);
 
-                            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
+                                await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
+                            }
                         }
                     }
                     catch { }
@@ -384,16 +388,9 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                                 .AddField("Member", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
                                 .AddField("Channel", e.Message.Channel.Name, true)
                                 .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
-                                .AddField("Edit Timestamp", e.Message.EditedTimestamp.ToString(), true);
-
-                                if (RPClass.MessageBuffer.Any(x => x.Key == e.Message.Id))
-                                {
-                                    var m = RPClass.MessageBuffer.First(x => x.Key == e.Message.Id);
-                                    embed.AddField("Old Message", !string.IsNullOrWhiteSpace(m.Value) ? m.Value : "-", false);
-                                    m = new KeyValuePair<ulong, string>(e.Message.Id, e.Message.Content);
-                                }
-
-                                embed.AddField("New Message", e.Message.Content.Any() ? e.Message.Content : "-", false)
+                                .AddField("Edit Timestamp", e.Message.EditedTimestamp.ToString(), true)
+                                .AddField("Old Message", e.MessageBefore.Content.Any() ? e.MessageBefore.Content : "-", false)
+                                .AddField("New Message", e.Message.Content.Any() ? e.Message.Content : "-", false)
                                 .AddField("Attachments", e.Message.Attachments.Any() ? string.Join("\n", e.Message.Attachments.Select(x => x.Url)) : "-", false);
 
                                 await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: embed);
@@ -407,7 +404,6 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
 
         public async Task Discord_MessageCreated(MessageCreateEventArgs e)
         {
-            RPClass.MessageBuffer.Add(new KeyValuePair<ulong, string>(e.Message.Id, e.Message.Content));
             if (e.Guild == RPClass.RPGuild) { 
                 if (RPClass.FirstRun)
                 {

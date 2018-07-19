@@ -35,10 +35,7 @@
           "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard2.0/DSharpPlus.dll": {
-            "assemblyVersion": "4.0.0.417",
-            "fileVersion": "4.0.0.417"
-          }
+          "lib/netstandard2.0/DSharpPlus.dll": {}
         }
       },
       "DSharpPlus.CommandsNext/4.0.0-beta-00417": {
@@ -47,10 +44,7 @@
           "Microsoft.Extensions.DependencyInjection": "2.0.0"
         },
         "runtime": {
-          "lib/netstandard2.0/DSharpPlus.CommandsNext.dll": {
-            "assemblyVersion": "4.0.0.417",
-            "fileVersion": "4.0.0.417"
-          }
+          "lib/netstandard2.0/DSharpPlus.CommandsNext.dll": {}
         }
       },
       "DSharpPlus.Interactivity/4.0.0-beta-00417": {
@@ -58,10 +52,7 @@
           "DSharpPlus": "4.0.0-beta-00417"
         },
         "runtime": {
-          "lib/netstandard2.0/DSharpPlus.Interactivity.dll": {
-            "assemblyVersion": "4.0.0.417",
-            "fileVersion": "4.0.0.417"
-          }
+          "lib/netstandard2.0/DSharpPlus.Interactivity.dll": {}
         }
       },
       "DSharpPlus.VoiceNext/4.0.0-beta-00417": {
@@ -69,10 +60,7 @@
           "DSharpPlus": "4.0.0-beta-00417"
         },
         "runtime": {
-          "lib/netstandard2.0/DSharpPlus.VoiceNext.dll": {
-            "assemblyVersion": "4.0.0.417",
-            "fileVersion": "4.0.0.417"
-          }
+          "lib/netstandard2.0/DSharpPlus.VoiceNext.dll": {}
         }
       },
       "Microsoft.CodeAnalysis/2.6.1": {
@@ -125,10 +113,7 @@
           "System.Xml.XmlDocument": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CodeAnalysis.dll": {
-            "assemblyVersion": "2.6.0.0",
-            "fileVersion": "2.6.1.62414"
-          }
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp/2.6.1": {
@@ -136,10 +121,7 @@
           "Microsoft.CodeAnalysis.Common": "2.6.1"
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.dll": {
-            "assemblyVersion": "2.6.0.0",
-            "fileVersion": "2.6.1.62414"
-          }
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Scripting/2.6.1": {
@@ -148,10 +130,7 @@
           "Microsoft.CodeAnalysis.Scripting.Common": "2.6.1"
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.Scripting.dll": {
-            "assemblyVersion": "2.6.0.0",
-            "fileVersion": "2.6.1.62414"
-          }
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.Scripting.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.6.1": {
@@ -160,10 +139,7 @@
           "Microsoft.CodeAnalysis.Workspaces.Common": "2.6.1"
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
-            "assemblyVersion": "2.6.0.0",
-            "fileVersion": "2.6.1.62414"
-          }
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Scripting/2.6.1": {
@@ -196,10 +172,7 @@
           "System.Threading.Tasks": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CodeAnalysis.Scripting.dll": {
-            "assemblyVersion": "2.6.0.0",
-            "fileVersion": "2.6.1.62414"
-          }
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.Scripting.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.VisualBasic/2.6.1": {
@@ -207,10 +180,7 @@
           "Microsoft.CodeAnalysis.Common": "2.6.1"
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.dll": {
-            "assemblyVersion": "2.6.0.0",
-            "fileVersion": "2.6.1.62414"
-          }
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.VisualBasic.Workspaces/2.6.1": {
@@ -219,10 +189,7 @@
           "Microsoft.CodeAnalysis.Workspaces.Common": "2.6.1"
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {
-            "assemblyVersion": "2.6.0.0",
-            "fileVersion": "2.6.1.62414"
-          }
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Workspaces.Common/2.6.1": {
@@ -236,10 +203,7 @@
           "System.Threading.Tasks.Parallel": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll": {
-            "assemblyVersion": "2.6.0.0",
-            "fileVersion": "2.6.1.62414"
-          }
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll": {}
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -267,18 +231,12 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.17205"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.17205"
-          }
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
       "Microsoft.NETCore.Targets/1.1.0": {},
@@ -297,18 +255,12 @@
           "System.Xml.XmlDocument": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.3/Newtonsoft.Json.dll": {
-            "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.3.21018"
-          }
+          "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
       "PasteSharpCore/1.1.0": {
         "runtime": {
-          "lib/netcoreapp2.0/PasteSharp.dll": {
-            "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.0.0"
-          }
+          "lib/netcoreapp2.0/PasteSharp.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -440,10 +392,7 @@
       },
       "SixLabors.Core/1.0.0-beta0004": {
         "runtime": {
-          "lib/netcoreapp2.0/SixLabors.Core.dll": {
-            "assemblyVersion": "0.1.0.0",
-            "fileVersion": "0.1.0.0"
-          }
+          "lib/netcoreapp2.0/SixLabors.Core.dll": {}
         }
       },
       "SixLabors.Fonts/1.0.0-beta0003": {
@@ -452,10 +401,7 @@
           "System.Collections.Immutable": "1.4.0"
         },
         "runtime": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "lib/netstandard2.0/SixLabors.Fonts.dll": {}
         }
       },
       "SixLabors.ImageSharp/1.0.0-beta0002": {
@@ -466,10 +412,7 @@
           "System.Runtime.CompilerServices.Unsafe": "4.4.0"
         },
         "runtime": {
-          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "lib/netstandard2.0/SixLabors.ImageSharp.dll": {}
         }
       },
       "SixLabors.ImageSharp.Drawing/1.0.0-beta0002": {
@@ -480,10 +423,7 @@
           "SixLabors.Shapes.Text": "1.0.0-beta0003"
         },
         "runtime": {
-          "lib/netstandard2.0/SixLabors.ImageSharp.Drawing.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "lib/netstandard2.0/SixLabors.ImageSharp.Drawing.dll": {}
         }
       },
       "SixLabors.Shapes/1.0.0-beta0003": {
@@ -492,10 +432,7 @@
           "System.Buffers": "4.4.0"
         },
         "runtime": {
-          "lib/netstandard2.0/SixLabors.Shapes.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "lib/netstandard2.0/SixLabors.Shapes.dll": {}
         }
       },
       "SixLabors.Shapes.Text/1.0.0-beta0003": {
@@ -504,10 +441,7 @@
           "SixLabors.Shapes": "1.0.0-beta0003"
         },
         "runtime": {
-          "lib/netstandard2.0/SixLabors.Shapes.Text.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "lib/netstandard2.0/SixLabors.Shapes.Text.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -604,10 +538,7 @@
           "System.Runtime": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.0/System.Composition.AttributedModel.dll": {
-            "assemblyVersion": "1.0.31.0",
-            "fileVersion": "4.6.24705.1"
-          }
+          "lib/netstandard1.0/System.Composition.AttributedModel.dll": {}
         }
       },
       "System.Composition.Convention/1.0.31": {
@@ -626,10 +557,7 @@
           "System.Threading": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.0/System.Composition.Convention.dll": {
-            "assemblyVersion": "1.0.31.0",
-            "fileVersion": "4.6.24705.1"
-          }
+          "lib/netstandard1.0/System.Composition.Convention.dll": {}
         }
       },
       "System.Composition.Hosting/1.0.31": {
@@ -649,10 +577,7 @@
           "System.Threading": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.0/System.Composition.Hosting.dll": {
-            "assemblyVersion": "1.0.31.0",
-            "fileVersion": "4.6.24705.1"
-          }
+          "lib/netstandard1.0/System.Composition.Hosting.dll": {}
         }
       },
       "System.Composition.Runtime/1.0.31": {
@@ -667,10 +592,7 @@
           "System.Runtime": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.0/System.Composition.Runtime.dll": {
-            "assemblyVersion": "1.0.31.0",
-            "fileVersion": "4.6.24705.1"
-          }
+          "lib/netstandard1.0/System.Composition.Runtime.dll": {}
         }
       },
       "System.Composition.TypedParts/1.0.31": {
@@ -691,10 +613,7 @@
           "System.Runtime.Extensions": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.0/System.Composition.TypedParts.dll": {
-            "assemblyVersion": "1.0.31.0",
-            "fileVersion": "4.6.24705.1"
-          }
+          "lib/netstandard1.0/System.Composition.TypedParts.dll": {}
         }
       },
       "System.Console/4.3.0": {
@@ -918,23 +837,16 @@
           "System.Runtime.CompilerServices.Unsafe": "4.4.0"
         },
         "runtime": {
-          "lib/netstandard2.0/System.Memory.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25405.1"
-          }
+          "lib/netstandard2.0/System.Memory.dll": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.0/System.Memory.dll": {
             "rid": "unix",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25405.1"
+            "assetType": "runtime"
           },
           "runtimes/win/lib/netcoreapp2.0/System.Memory.dll": {
             "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25405.1"
+            "assetType": "runtime"
           }
         }
       },
@@ -1211,10 +1123,7 @@
       },
       "System.Runtime.CompilerServices.Unsafe/4.4.0": {
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "assemblyVersion": "4.0.3.0",
-            "fileVersion": "0.0.0.0"
-          }
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Runtime.Extensions/4.3.0": {
@@ -1526,15 +1435,11 @@
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard1.3/System.Text.Encoding.CodePages.dll": {
             "rid": "unix",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.24705.1"
+            "assetType": "runtime"
           },
           "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll": {
             "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.24705.1"
+            "assetType": "runtime"
           }
         }
       },
@@ -1682,18 +1587,12 @@
       },
       "CommonMark/0.1.0.0": {
         "runtime": {
-          "CommonMark.dll": {
-            "assemblyVersion": "0.1.0.0",
-            "fileVersion": "0.1.0.0"
-          }
+          "CommonMark.dll": {}
         }
       },
       "DotNetWikiBot/1.0.0.0": {
         "runtime": {
-          "DotNetWikiBot.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "DotNetWikiBot.dll": {}
         }
       }
     }
@@ -1847,7 +1746,7 @@
     "Newtonsoft.Json/10.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
+      "sha512": "sha512-wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
       "path": "newtonsoft.json/10.0.3",
       "hashPath": "newtonsoft.json.10.0.3.nupkg.sha512"
     },

@@ -165,13 +165,13 @@ namespace RPBot
             Beacon = g.GetRole(465801273359204353);
             Protector = g.GetRole(465801245274275841);
             Admired = g.GetRole(465801213288644608);
-            Jeff = g.GetRole(465801179360657409);
+            Smalltime = g.GetRole(465801179360657409);
             Anonymous = g.GetRole(465801097274195969);
-            Smalltime = g.GetRole(469291000939020368);
+            Criminal = g.GetRole(469291000939020368);
             Notorious = g.GetRole(465801297023729665);
             Menace = g.GetRole(465801324785827843);
             Terror = g.GetRole(465801345786576896);
-            AllRoles = new List<DiscordRole>() { Beacon, Protector, Admired, Jeff, Anonymous, Smalltime, Notorious, Menace, Terror };
+            AllRoles = new List<DiscordRole>() { Beacon, Protector, Admired, Smalltime, Anonymous, Criminal, Notorious, Menace, Terror };
         }
 
         public static List<DiscordRole> GetRequiredRoles (int fame, int infamy, bool hero)
@@ -180,7 +180,7 @@ namespace RPBot
             if (fame > 250) roles.Add(Beacon);
             else if (fame > 50) roles.Add(Protector);
             else if (fame > 25) roles.Add(Admired);
-            else if (fame > 5) roles.Add(Jeff);
+            else if (fame > 5) roles.Add(Smalltime);
             else if (fame > 0) roles.Add(Anonymous);
 
             if (!hero)
@@ -188,7 +188,7 @@ namespace RPBot
                 if (infamy > 250) roles.Add(Terror);
                 else if (infamy > 50) roles.Add(Menace);
                 else if (infamy > 25) roles.Add(Notorious);
-                else if (infamy > 5) roles.Add(Smalltime);
+                else if (infamy > 5) roles.Add(Criminal);
                 else if (infamy > 0) roles.Add(Anonymous);
             }
 
@@ -205,9 +205,9 @@ namespace RPBot
         public static DiscordRole Beacon;
         public static DiscordRole Protector;
         public static DiscordRole Admired;
-        public static DiscordRole Jeff;
-        public static DiscordRole Anonymous;
         public static DiscordRole Smalltime;
+        public static DiscordRole Anonymous;
+        public static DiscordRole Criminal;
         public static DiscordRole Notorious;
         public static DiscordRole Menace;
         public static DiscordRole Terror;
