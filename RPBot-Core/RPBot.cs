@@ -307,7 +307,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                     await c.SendMessageAsync("Restarted successfully, " + me.Mention + "!");
                 }
                 RPClass.GuildRankingChannel = e.Guild.GetChannel(312964153197330433);
-                RPClass.PlayerRankingChannel = e.Guild.GetChannel(315048564525105153);
+                RPClass.HeroRankingChannel = e.Guild.GetChannel(315048564525105153);
                 RPClass.VillainRankingChannel = e.Guild.GetChannel(315048584007385093);
                 RPClass.RogueRankingChannel = e.Guild.GetChannel(371782656716832769);
                 RPClass.AcademyRankingChannel = e.Guild.GetChannel(402966763022712843);
@@ -323,7 +323,6 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 RPClass.RPLockRole = e.Guild.GetRole(418246854854180864);
                 FameRoles.Init(e.Guild);
                 RPClass.RPGuild = e.Guild;
-
                 await RPClass.AddOrUpdateUsers(RPClass.RPGuild, true);
             }
             this.GameGuard = new Timer(TimerCallback, null, TimeSpan.FromMinutes(0), TimeSpan.FromMinutes(15));

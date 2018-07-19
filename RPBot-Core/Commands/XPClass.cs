@@ -154,7 +154,7 @@ namespace RPBot
 
         public static async Task UpdatePlayerRanking(DiscordGuild e, int type)
 		{
-			DiscordChannel RankingChannel = RPClass.PlayerRankingChannel;
+			DiscordChannel RankingChannel = RPClass.HeroRankingChannel;
 
             if (type == 2) RankingChannel = RPClass.VillainRankingChannel;
             else if (type == 3) RankingChannel = RPClass.RogueRankingChannel;

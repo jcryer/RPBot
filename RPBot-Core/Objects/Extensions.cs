@@ -11,9 +11,9 @@ namespace RPBot
 {
     public static class Extensions
     {
-        public static async Task UpdateFameAndInfamyRoles(int fame, int infamy, DiscordMember user)
+        public static async Task UpdateFameAndInfamyRoles(int fame, int infamy, DiscordMember user, bool hero)
         {
-            var userRoles = FameRoles.SetUserRoles(user.Roles.ToList(), FameRoles.GetRequiredRoles(fame, infamy));
+            var userRoles = FameRoles.SetUserRoles(user.Roles.ToList(), FameRoles.GetRequiredRoles(fame, infamy, hero));
 
             if (userRoles != user.Roles.ToList())
             {
@@ -69,7 +69,7 @@ namespace RPBot
             value += $"```{Count}{Name}{Fame}{Bounty}{Comment}\n{new string('-', $"{Count}{Name}{Fame}{Bounty}".Length + longestComment)}\n";
             List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
             if (type == 1) SortedUsers = RPClass.Users.Where(x => x.UserData.Fame > 0).OrderByDescending(x => (x.UserData.Fame)).ToList();
-            else SortedUsers = RPClass.Users.Where(x => x.UserData.Infamy > 0).OrderByDescending(x => (x.UserData.Infamy)).ToList();
+            else SortedUsers = RPClass.Users.Where(x => x.UserData.Infamy > 0 && x.UserData.Role != 1).OrderByDescending(x => (x.UserData.Infamy)).ToList();
 
             int countNum = 1;
             foreach (UserObject.RootObject user in SortedUsers)
@@ -174,7 +174,7 @@ namespace RPBot
             AllRoles = new List<DiscordRole>() { Beacon, Protector, Admired, Jeff, Anonymous, Smalltime, Notorious, Menace, Terror };
         }
 
-        public static List<DiscordRole> GetRequiredRoles (int fame, int infamy)
+        public static List<DiscordRole> GetRequiredRoles (int fame, int infamy, bool hero)
         {
             List<DiscordRole> roles = new List<DiscordRole>();
             if (fame > 250) roles.Add(Beacon);
@@ -183,11 +183,14 @@ namespace RPBot
             else if (fame > 5) roles.Add(Jeff);
             else if (fame > 0) roles.Add(Anonymous);
 
-            if (infamy > 250) roles.Add(Terror);
-            else if (infamy > 50) roles.Add(Menace);
-            else if (infamy > 25) roles.Add(Notorious);
-            else if (infamy > 5) roles.Add(Smalltime);
-            else if (infamy > 0) roles.Add(Anonymous);
+            if (!hero)
+            {
+                if (infamy > 250) roles.Add(Terror);
+                else if (infamy > 50) roles.Add(Menace);
+                else if (infamy > 25) roles.Add(Notorious);
+                else if (infamy > 5) roles.Add(Smalltime);
+                else if (infamy > 0) roles.Add(Anonymous);
+            }
 
             return roles.Distinct().ToList();
         }

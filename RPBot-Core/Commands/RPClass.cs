@@ -26,7 +26,7 @@ namespace RPBot
         public static int slowModeTime = -1;
         public static SVObject.RootObject SVData = new SVObject.RootObject();
         public static DiscordChannel GuildRankingChannel;
-        public static DiscordChannel PlayerRankingChannel;
+        public static DiscordChannel HeroRankingChannel;
         public static DiscordChannel VillainRankingChannel;
         public static DiscordChannel RogueRankingChannel;
         public static DiscordChannel AcademyRankingChannel;

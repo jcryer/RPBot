@@ -16,7 +16,7 @@ namespace RPBot
                 UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
                 userData.UserData.Fame += fameNum;
                 if (userData.UserData.Fame < 0) userData.UserData.Fame = 0;
-                await Extensions.UpdateFameAndInfamyRoles(userData.UserData.Fame, userData.UserData.Infamy, user);
+                await Extensions.UpdateFameAndInfamyRoles(userData.UserData.Fame, userData.UserData.Infamy, user, userData.UserData.Role == 1 ? true : false);
                 await Extensions.UpdateFameAndInfamy(0);
                 RPClass.SaveData(1);
 
@@ -40,7 +40,7 @@ namespace RPBot
             var members = await e.Guild.GetAllMembersAsync();
             foreach (var user in RPClass.Users.Where(x => x.UserData.Fame > 0 || x.UserData.Infamy > 0)) 
             {
-                await Extensions.UpdateFameAndInfamyRoles(user.UserData.Fame, user.UserData.Infamy, members.First(x => x.Id == user.UserData.UserID));
+                await Extensions.UpdateFameAndInfamyRoles(user.UserData.Fame, user.UserData.Infamy, members.First(x => x.Id == user.UserData.UserID), user.UserData.Role == 1 ? true : false);
             }
             await Extensions.UpdateFameAndInfamy(0);
             RPClass.SaveData(1);
@@ -58,7 +58,7 @@ namespace RPBot
                 UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
                 userData.UserData.Infamy += infamyNum;
                 if (userData.UserData.Infamy < 0) userData.UserData.Infamy = 0;
-                await Extensions.UpdateFameAndInfamyRoles(userData.UserData.Fame, userData.UserData.Infamy, user);
+                await Extensions.UpdateFameAndInfamyRoles(userData.UserData.Fame, userData.UserData.Infamy, user, userData.UserData.Role == 1 ? true : false);
                 await Extensions.UpdateFameAndInfamy(0);
                 RPClass.SaveData(1);
 
@@ -82,7 +82,7 @@ namespace RPBot
             var members = await e.Guild.GetAllMembersAsync();
             foreach (var user in RPClass.Users.Where(x => x.UserData.Fame > 0 || x.UserData.Infamy > 0))
             {
-                await Extensions.UpdateFameAndInfamyRoles(user.UserData.Fame, user.UserData.Infamy, members.First(x => x.Id == user.UserData.UserID));
+                await Extensions.UpdateFameAndInfamyRoles(user.UserData.Fame, user.UserData.Infamy, members.First(x => x.Id == user.UserData.UserID), user.UserData.Role == 1 ? true : false);
             }
             await Extensions.UpdateFameAndInfamy(0);
             RPClass.SaveData(1);
