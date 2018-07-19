@@ -315,12 +315,13 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 RPClass.InstanceCategory = e.Guild.GetChannel(391971392733839360);
                 RPClass.StatsChannel = e.Guild.GetChannel(312964092748890114);
                 RPClass.FameChannel = e.Guild.GetChannel(465218787768270848);
+                RPClass.GameChannel = e.Guild.GetChannel(395882029738360832);
                 RPClass.StaffRole = e.Guild.GetRole(313845882841858048);
                 RPClass.HelpfulRole = e.Guild.GetRole(312979390516559885);
                 RPClass.PunishedRole = e.Guild.GetRole(379163684276142091);
                 RPClass.AdminRole = e.Guild.GetRole(312961839359328266);
                 RPClass.RPLockRole = e.Guild.GetRole(418246854854180864);
-                RPClass.GameChannel = e.Guild.GetChannel(395882029738360832);
+                FameRoles.Init(e.Guild);
                 RPClass.RPGuild = e.Guild;
 
                 await RPClass.AddOrUpdateUsers(RPClass.RPGuild, true);

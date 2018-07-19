@@ -18,8 +18,8 @@ namespace RPBot
                 UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
                 userData.UserData.Fame += fameNum;
                 if (userData.UserData.Fame < 0) userData.UserData.Fame = 0;
-
-                await Extensions.UpdateFameAndInfamy(e.Guild, 0);
+                await Extensions.UpdateFameAndInfamyRoles(userData.UserData.Fame, userData.UserData.Infamy, user);
+                await Extensions.UpdateFameAndInfamy(0);
                 RPClass.SaveData(1);
 
                 await e.RespondAsync("Stat changed.");
@@ -31,7 +31,7 @@ namespace RPBot
         {
             if (comment == "-") comment = " ";
             RPClass.Users.Find(x => x.UserData.UserID == user.Id).UserData.FameComment = comment;
-            await Extensions.UpdateFameAndInfamy(e.Guild, 0);
+            await Extensions.UpdateFameAndInfamy(0);
             RPClass.SaveData(1);
             await e.RespondAsync("Done!");
         }
@@ -39,7 +39,7 @@ namespace RPBot
         [Command("update"), Description("Updates Fame/Infamy Board")]
         public async Task Update(CommandContext e)
         {
-            await Extensions.UpdateFameAndInfamy(e.Guild, 0);
+            await Extensions.UpdateFameAndInfamy(0);
             RPClass.SaveData(1);
             await e.RespondAsync("Done!");
         }
@@ -55,8 +55,8 @@ namespace RPBot
                 UserObject.RootObject userData = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
                 userData.UserData.Infamy += infamyNum;
                 if (userData.UserData.Infamy < 0) userData.UserData.Infamy = 0;
-
-                await Extensions.UpdateFameAndInfamy(e.Guild, 0);
+                await Extensions.UpdateFameAndInfamyRoles(userData.UserData.Fame, userData.UserData.Infamy, user);
+                await Extensions.UpdateFameAndInfamy(0);
                 RPClass.SaveData(1);
 
                 await e.RespondAsync("Stat changed.");
@@ -68,7 +68,7 @@ namespace RPBot
         {
             if (comment == "-") comment = " ";
             RPClass.Users.Find(x => x.UserData.UserID == user.Id).UserData.InfamyComment = comment;
-            await Extensions.UpdateFameAndInfamy(e.Guild, 0);
+            await Extensions.UpdateFameAndInfamy(0);
             RPClass.SaveData(1);
             await e.RespondAsync("Done!");
         }
@@ -76,7 +76,7 @@ namespace RPBot
         [Command("update"), Description("Updates Fame/Infamy Board")]
         public async Task Update(CommandContext e)
         {
-            await Extensions.UpdateFameAndInfamy(e.Guild, 0);
+            await Extensions.UpdateFameAndInfamy(0);
             RPClass.SaveData(1);
             await e.RespondAsync("Done!");
         }

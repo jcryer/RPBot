@@ -47,8 +47,6 @@ namespace RPBot
         
         public static bool FirstRun = true;
         public static Extensions.SlidingBuffer<KeyValuePair<ulong, string>> MessageBuffer = new Extensions.SlidingBuffer<KeyValuePair<ulong, string>>(500);
-        //             await msg.ModifyAsync($"```Executing rootkit...{Environment.NewLine}Utilising backdoor...{Environment.NewLine}Injecting codebase...```");
-        public static string[] CodeList = new string[] { "Executing rootkit", "Utilising backdoor", "Injecting codebase", "Bypassing security system", "Setting up self-protection firewall", "Decrypting data files"};
         public static bool Restarted = false;
 
         public static void SaveData(int saveType)

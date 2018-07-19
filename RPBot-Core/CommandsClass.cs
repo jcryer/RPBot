@@ -439,7 +439,7 @@ namespace RPBot
             await Task.Delay(0);
         }
 
-        [Command("update"), Description("Admin update command"), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
+        [Command("update"), Description("Admin update command"), RequireOwner]
         public async Task Update(CommandContext e)
         {
             await e.RespondAsync("Restarting. Wish me luck!");

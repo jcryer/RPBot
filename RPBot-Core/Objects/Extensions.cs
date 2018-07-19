@@ -11,7 +11,17 @@ namespace RPBot
 {
     public static class Extensions
     {
-        public static async Task UpdateFameAndInfamy(DiscordGuild e, int type)
+        public static async Task UpdateFameAndInfamyRoles(int fame, int infamy, DiscordMember user)
+        {
+            var userRoles = FameRoles.SetUserRoles(user.Roles.ToList(), FameRoles.GetRequiredRoles(fame, infamy));
+
+            if (userRoles != user.Roles.ToList())
+            {
+                await user.ReplaceRolesAsync(userRoles);
+            }
+        }
+
+        public static async Task UpdateFameAndInfamy(int type)
         {
             if (type == 0)
             {
@@ -24,14 +34,13 @@ namespace RPBot
                         await Task.Delay(500);
                     }
                     await RPClass.FameChannel.SendMessageAsync("**========== Hero HQ Bounty Board ==========**");
-                    await UpdateFameAndInfamy(e, 2);
+                    await UpdateFameAndInfamy(2);
                     await RPClass.FameChannel.SendMessageAsync("**========== Black Market Bounty Board ==========**");
-                    await UpdateFameAndInfamy(e, 1);
+                    await UpdateFameAndInfamy(1);
                 }
                 catch { }
                 return;
             }
-
 
             DiscordChannel FameChannel = RPClass.FameChannel;
 
@@ -147,5 +156,59 @@ namespace RPBot
                 
             return Task.FromResult(true);
         }
+    }
+
+    public static class FameRoles
+    {
+        public static void Init(DiscordGuild g)
+        {
+            Beacon = g.GetRole(465801273359204353);
+            Protector = g.GetRole(465801245274275841);
+            Admired = g.GetRole(465801213288644608);
+            Jeff = g.GetRole(465801179360657409);
+            Anonymous = g.GetRole(465801097274195969);
+            Smalltime = g.GetRole(469291000939020368);
+            Notorious = g.GetRole(465801297023729665);
+            Menace = g.GetRole(465801324785827843);
+            Terror = g.GetRole(465801345786576896);
+            AllRoles = new List<DiscordRole>() { Beacon, Protector, Admired, Jeff, Anonymous, Smalltime, Notorious, Menace, Terror };
+        }
+
+        public static List<DiscordRole> GetRequiredRoles (int fame, int infamy)
+        {
+            List<DiscordRole> roles = new List<DiscordRole>();
+            if (fame > 250) roles.Add(Beacon);
+            else if (fame > 50) roles.Add(Protector);
+            else if (fame > 25) roles.Add(Admired);
+            else if (fame > 5) roles.Add(Jeff);
+            else if (fame > 0) roles.Add(Anonymous);
+
+            if (infamy > 250) roles.Add(Terror);
+            else if (infamy > 50) roles.Add(Menace);
+            else if (infamy > 25) roles.Add(Notorious);
+            else if (infamy > 5) roles.Add(Smalltime);
+            else if (infamy > 0) roles.Add(Anonymous);
+
+            return roles.Distinct().ToList();
+        }
+
+        public static List<DiscordRole> SetUserRoles (List<DiscordRole> userRoles, List<DiscordRole> requiredRoles)
+        {
+            userRoles = userRoles.Except(AllRoles).ToList();
+            userRoles.AddRange(requiredRoles);
+            return userRoles;
+        }
+
+        public static DiscordRole Beacon;
+        public static DiscordRole Protector;
+        public static DiscordRole Admired;
+        public static DiscordRole Jeff;
+        public static DiscordRole Anonymous;
+        public static DiscordRole Smalltime;
+        public static DiscordRole Notorious;
+        public static DiscordRole Menace;
+        public static DiscordRole Terror;
+
+        public static List<DiscordRole> AllRoles;
     }
 }
