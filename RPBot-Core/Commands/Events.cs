@@ -50,7 +50,6 @@ namespace RPBot
                 var participant = Participants.First(x => x.UserId == user.Id);
                 participant.Health -= health;
                 if (participant.Health < 0) participant.Health = 0;
-                aa
                 // Update scoreboard
                 // Check if user is dead
                 // Save file

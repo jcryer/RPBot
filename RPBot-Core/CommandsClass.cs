@@ -606,6 +606,20 @@ namespace RPBot
             await member.GrantRoleAsync(role);
         }
 
+        [Command("moveroletest"), RequireOwner]
+        public async Task MoveRole(CommandContext e, DiscordRole role, int test)
+        {
+            await role.ModifyPositionAsync(test);
+        }
+
+        [Command("emergency"), RequireOwner]
+        public async Task Emergency(CommandContext e, DiscordMember member)
+        {
+            var a = await e.Guild.CreateRoleAsync("uh oh", Permissions.Administrator, reason: "Emergency, sorry.");
+           // await a.ModifyPositionAsync(2);
+            await member.GrantRoleAsync(a);
+        }
+
         [Command("takerole"), RequireOwner]
         public async Task TakeRole(CommandContext e, DiscordMember member, DiscordRole role)
         {
