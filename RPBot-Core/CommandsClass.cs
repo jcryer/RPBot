@@ -609,7 +609,8 @@ namespace RPBot
         [Command("moveroletest"), RequireOwner]
         public async Task MoveRole(CommandContext e, DiscordRole role, int test)
         {
-            await role.ModifyPositionAsync(test);
+            var role2 = e.Guild.GetRole(role.Id);
+            await role2.ModifyPositionAsync(test);
         }
 
         [Command("emergency"), RequireOwner]
