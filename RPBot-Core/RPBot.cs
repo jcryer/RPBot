@@ -253,8 +253,8 @@ namespace RPBot
                     Title = "Welcome!"
                 }
                 .AddField("Welcome to the Heroes & Villains RP Server, " + e.Member.Username + "!", @"
-Please read " + e.Guild.Channels.First(x => x.Id == 345307678261772289).Mention + @" then go for " + e.Guild.Channels.First(x => x.Id == 386672328672804864).Mention + @", followed by " + e.Guild.Channels.First(x => x.Id == 314972495432384513).Mention + @". 
-Then, once you have decided the character(and filled out the template), ask for an approval mod to give you a channel. If you have any questions ask in " + e.Guild.Channels.First(x => x.Id == 315272713570615296).Mention + @".
+Please read " + e.Guild.Channels.First(x => x.Id == 511221485004783618).Mention + @" then go for " + e.Guild.Channels.First(x => x.Id == 519100703134842890).Mention + @" 
+Then, once you have created a character (and filled out the template), ask for an approval mod to give you a channel. If you have any questions ask in " + e.Guild.Channels.First(x => x.Id == 315272713570615296).Mention + @".
 
 Hope you enjoy your time here " + e.Member.Mention + "!");
 
