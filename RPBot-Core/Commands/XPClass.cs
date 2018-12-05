@@ -266,20 +266,20 @@ namespace RPBot
                 ulong rank = guild.UserIDs[0];
                 RPClass.Users.Where(x => x.UserData.GuildID == guild.Id);
                 string GuildRank = "S1";
-                if (rank <= 16000) GuildRank = "S2";
-                if (rank <= 14000) GuildRank = "S3";
-                if (rank <= 12000) GuildRank = "A1";
-                if (rank <= 10500) GuildRank = "A2";
-                if (rank <= 9250) GuildRank = "A3";
-                if (rank <= 8000) GuildRank = "B1";
-                if (rank <= 7000) GuildRank = "B2";
-                if (rank <= 6000) GuildRank = "B3";
-                if (rank <= 5000) GuildRank = "C1";
-                if (rank <= 4000) GuildRank = "C2";
-                if (rank <= 3250) GuildRank = "C3";
-                if (rank <= 2500) GuildRank = "D1";
-                if (rank <= 2000) GuildRank = "D2";
-                if (rank <= 1250) GuildRank = "D3";
+                if (rank < 10000) GuildRank = "S2";
+                if (rank < 9000) GuildRank = "S3";
+                if (rank < 8000) GuildRank = "A1";
+                if (rank < 7000) GuildRank = "A2";
+                if (rank < 6000) GuildRank = "A3";
+                if (rank < 5500) GuildRank = "B1";
+                if (rank < 5000) GuildRank = "B2";
+                if (rank < 4500) GuildRank = "B3";
+                if (rank < 4000) GuildRank = "C1";
+                if (rank < 3000) GuildRank = "C2";
+                if (rank < 2500) GuildRank = "C3";
+                if (rank < 2000) GuildRank = "D1";
+                if (rank < 1000) GuildRank = "D2";
+                if (rank < 500) GuildRank = "D3";
 
                 if (value.Length > 1500)
                 {
