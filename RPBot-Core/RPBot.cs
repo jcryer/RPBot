@@ -250,14 +250,15 @@ namespace RPBot
             {
                 DiscordEmbedBuilder b = new DiscordEmbedBuilder()
                 .AddField($"Welcome, {e.Member.Username}!",
-$@"Welcome to the Heroes & Villains Discord Server, {e.Member.Mention}!\nFirst things first, please read the <#511221485004783618> to see how we run things here.
+$@"Welcome to the Heroes & Villains Discord Server, {e.Member.Mention}!
+First things first, please read the <#511221485004783618> to see how we run things here.
 Once you've done that, then head over to <#463498007514710016> to get some help for your OC and ask for an approval channel.
 To learn more about the lore and the Server, then browse through <#366574305418543105> or head over to our Wiki and have a look through the pages!
 
 https://roleplay-heroes-and-villains.wikia.com/wiki/Role-Play:_Heroes_and_Villains_Wiki
 
 We hope you enjoy your stay!")
-            .WithFooter("Heroes & Villains Discord Server").WithColor(DiscordColor.Blue);
+            .WithFooter("Heroes & Villains Discord Server").WithColor(DiscordColor.CornflowerBlue);
 
                 await e.Member.SendMessageAsync("", embed: b);
                 await e.Guild.Channels.First(x => x.Id == 312918289988976653).SendMessageAsync("", embed: b);
