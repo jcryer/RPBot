@@ -21,9 +21,6 @@ namespace RPBot
         public static List<TagObject.RootObject> TagsList = new List<TagObject.RootObject>();
         public static List<SignupObject.RootObject> SignupList = new List<SignupObject.RootObject>();
         public static Dictionary<ulong, ulong> approvalsList = new Dictionary<ulong, ulong>(); // Channel ID : User ID
-        public static Dictionary<DiscordMember, DateTime> slowModeList = new Dictionary<DiscordMember, DateTime>(); //  Member : Timeout
-        public static Dictionary<DiscordMember, DateTime> imageList = new Dictionary<DiscordMember, DateTime>(); // Member : Timeout
-        public static int slowModeTime = -1;
         public static SVObject.RootObject SVData = new SVObject.RootObject();
         public static DiscordChannel GuildRankingChannel;
         public static DiscordChannel HeroRankingChannel;
@@ -37,7 +34,7 @@ namespace RPBot
         public static DiscordChannel FameChannel;
         public static DiscordRole StaffRole;
         public static DiscordRole HelpfulRole;
-        public static DiscordRole PunishedRole;
+        public static DiscordRole MuteRole;
         public static DiscordRole AdminRole;
         public static DiscordRole RPLockRole;
 

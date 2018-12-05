@@ -302,7 +302,7 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
             {
                 if (RPClass.Restarted)
                 {
-                    DiscordChannel c = e.Guild.GetChannel(329655620120608769);
+                    DiscordChannel c = e.Guild.GetChannel(404108476835430401);
                     DiscordMember me = await e.Guild.GetMemberAsync(126070623855312896);
                     await c.SendMessageAsync("Restarted successfully, " + me.Mention + "!");
                 }
@@ -311,16 +311,16 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                 RPClass.VillainRankingChannel = e.Guild.GetChannel(315048584007385093);
                 RPClass.RogueRankingChannel = e.Guild.GetChannel(371782656716832769);
                 RPClass.AcademyRankingChannel = e.Guild.GetChannel(402966763022712843);
-                RPClass.ApprovalsCategory = e.Guild.GetChannel(389160226944712705);
-                RPClass.InstanceCategory = e.Guild.GetChannel(391971392733839360);
+                RPClass.ApprovalsCategory = e.Guild.GetChannel(510382933652144138);
+                RPClass.InstanceCategory = e.Guild.GetChannel(513361784955207701);
                 RPClass.StatsChannel = e.Guild.GetChannel(312964092748890114);
                 RPClass.FameChannel = e.Guild.GetChannel(465218787768270848);
-                RPClass.GameChannel = e.Guild.GetChannel(395882029738360832);
-                RPClass.StaffRole = e.Guild.GetRole(313845882841858048);
+                RPClass.GameChannel = e.Guild.GetChannel(378770557757423617);
+                RPClass.StaffRole = e.Guild.GetRole(415936404598685721); 
                 RPClass.HelpfulRole = e.Guild.GetRole(312979390516559885);
-                RPClass.PunishedRole = e.Guild.GetRole(379163684276142091);
+                RPClass.MuteRole = e.Guild.GetRole(379163684276142091);
                 RPClass.AdminRole = e.Guild.GetRole(312961839359328266);
-                RPClass.RPLockRole = e.Guild.GetRole(418246854854180864);
+                RPClass.RPLockRole = e.Guild.GetRole(516706421316780034);
                 FameRoles.Init(e.Guild);
                 RPClass.RPGuild = e.Guild;
 
@@ -410,8 +410,6 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                     try
                     {
                         RPClass.FirstRun = false;
-                        RPClass.PastebinClient = new PasteSharpClient("3b2b211e3132a233b50a1f9a42fc3103");
-
                         Thread myNewThread = new Thread(async () => await RPClass.UpdateClock(e, Discord));
                         myNewThread.Start();
                     }
@@ -436,57 +434,6 @@ Hope you enjoy your time here " + e.Member.Mention + "!");
                         catch
                         {
 
-                        }
-                    }
-                    if (e.Message.ChannelId == 312918289988976653 && e.Author.Id != 313107775943213056)
-                    {
-                        Regex ItemRegex = new Regex(@"\.(png|gif|jpg|jpeg|tiff|webp)");
-                        if (ItemRegex.IsMatch(e.Message.Content) || e.Message.Attachments.Any())
-                        {
-                            var u = RPClass.imageList.FirstOrDefault(x => x.Key == e.Message.Author);
-                            if (u.Key != null)
-                            {
-
-                                if (Math.Abs((u.Value - DateTime.UtcNow).TotalSeconds) <= 60)
-                                {
-                                    if (!(e.Author as DiscordMember).Roles.Any(x => x.Name == "Administrator"))
-                                    {
-                                        await e.Message.DeleteAsync();
-                                    }
-                                }
-                                else
-                                {
-                                    RPClass.imageList[e.Message.Author as DiscordMember] = DateTime.UtcNow;
-                                }
-                            }
-                            else
-                            {
-                                RPClass.imageList.Add(e.Message.Author as DiscordMember, DateTime.UtcNow);
-                            }
-                        }
-
-                        if (RPClass.slowModeTime > 0)
-                        {
-                            var u = RPClass.slowModeList.FirstOrDefault(x => x.Key == e.Message.Author);
-                            if (u.Key != null)
-                            {
-
-                                if (Math.Abs((u.Value - DateTime.UtcNow).TotalSeconds) <= RPClass.slowModeTime)
-                                {
-                                    if (!(e.Author as DiscordMember).Roles.Any(x => x.Name == "Administrator"))
-                                    {
-                                        await e.Message.DeleteAsync();
-                                    }
-                                }
-                                else
-                                {
-                                    RPClass.slowModeList[e.Message.Author as DiscordMember] = DateTime.UtcNow;
-                                }
-                            }
-                            else
-                            {
-                                RPClass.slowModeList.Add(e.Message.Author as DiscordMember, DateTime.UtcNow);
-                            }
                         }
                     }
                 }

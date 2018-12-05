@@ -3258,7 +3258,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.3": {
-      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
+      "sha512": "wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
       "type": "package",
       "path": "newtonsoft.json/10.0.3",
       "files": [
@@ -7731,28 +7731,33 @@
     ]
   },
   "packageFolders": {
-    "/Users/Joseph/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Joseph\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/Users/Joseph/Projects/RPBot/RPBot-Core/RPBot-Core.csproj",
+      "projectUniqueName": "E:\\Desktop\\Coding\\Bots\\RPBot\\RPBot-Core\\RPBot-Core.csproj",
       "projectName": "RPBot-Core",
-      "projectPath": "/Users/Joseph/Projects/RPBot/RPBot-Core/RPBot-Core.csproj",
-      "packagesPath": "/Users/Joseph/.nuget/packages/",
-      "outputPath": "/Users/Joseph/Projects/RPBot/RPBot-Core/obj",
+      "projectPath": "E:\\Desktop\\Coding\\Bots\\RPBot\\RPBot-Core\\RPBot-Core.csproj",
+      "packagesPath": "C:\\Users\\Joseph\\.nuget\\packages\\",
+      "outputPath": "E:\\Desktop\\Coding\\Bots\\RPBot\\RPBot-Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Joseph/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Joseph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://www.myget.org/F/dsharpplus-nightly/api/v3/index.json": {}
       },
@@ -7770,25 +7775,11 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
+          "Microsoft.CodeAnalysis.Scripting": {
             "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
-          "DSharpPlus": {
-            "target": "Package",
-            "version": "4.0.0-beta-00417"
-          },
-          "DSharpPlus.CommandsNext": {
-            "target": "Package",
-            "version": "4.0.0-beta-00417"
+            "version": "2.6.1"
           },
           "DSharpPlus.Interactivity": {
-            "target": "Package",
-            "version": "4.0.0-beta-00417"
-          },
-          "DSharpPlus.VoiceNext": {
             "target": "Package",
             "version": "4.0.0-beta-00417"
           },
@@ -7796,29 +7787,42 @@
             "target": "Package",
             "version": "2.6.1"
           },
-          "Microsoft.CodeAnalysis.CSharp.Scripting": {
+          "DSharpPlus.CommandsNext": {
             "target": "Package",
-            "version": "2.6.1"
+            "version": "4.0.0-beta-00417"
           },
-          "Microsoft.CodeAnalysis.Scripting": {
+          "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.6.1"
-          },
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "10.0.3"
-          },
-          "PasteSharpCore": {
-            "target": "Package",
-            "version": "1.1.0"
+            "version": "2.0",
+            "autoReferenced": true
           },
           "SixLabors.ImageSharp": {
             "target": "Package",
             "version": "1.0.0-beta0002"
           },
+          "Microsoft.CodeAnalysis.CSharp.Scripting": {
+            "target": "Package",
+            "version": "2.6.1"
+          },
+          "PasteSharpCore": {
+            "target": "Package",
+            "version": "1.1.0"
+          },
           "SixLabors.ImageSharp.Drawing": {
             "target": "Package",
             "version": "1.0.0-beta0002"
+          },
+          "DSharpPlus": {
+            "target": "Package",
+            "version": "4.0.0-beta-00417"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "10.0.3"
+          },
+          "DSharpPlus.VoiceNext": {
+            "target": "Package",
+            "version": "4.0.0-beta-00417"
           }
         },
         "imports": [

@@ -18,6 +18,7 @@ using Newtonsoft.Json.Linq;
 using System.Net.Http;
 using Microsoft.CodeAnalysis;
 using PasteSharp.Config;
+using Newtonsoft.Json;
 
 namespace RPBot
 {
@@ -73,25 +74,7 @@ namespace RPBot
             }
             await e.RespondAsync(list + "\n```");
         }
-
-        [Group("slowmode"), Description("Slowmode commands"), IsMuted]
-        class Slowmode : BaseCommandModule
-        {
-            [Command("on"), Description("Admin command to make OOC chill tf out"), RequireRoles(RoleCheckMode.Any, "Administrator")]
-            public async Task On(CommandContext e, [Description("Amount of time required between each message (seconds)")] int limitTime)
-            {
-                RPClass.slowModeTime = limitTime;
-                await e.RespondAsync("Slowmode activated, with " + limitTime + " seconds between each message.");
-            }
-
-            [Command("off"), Description("Admin command to disable slow mode"), RequireRoles(RoleCheckMode.Any, "Administrator")]
-            public async Task Off(CommandContext e)
-            {
-                RPClass.slowModeTime = -1;
-                await e.RespondAsync("Slowmode disabled.");
-            }
-        }
-
+        
         [Command("hackban"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
         public async Task HackBan(CommandContext e,[Description("User ID")] ulong userId)
         {
@@ -604,6 +587,33 @@ namespace RPBot
         public async Task GiveRole(CommandContext e, DiscordMember member, DiscordRole role)
         {
             await member.GrantRoleAsync(role);
+        }
+        [Command("rip"), RequireOwner] 
+        public async Task RIP(CommandContext e)
+        {
+            List<DiscordMessage> messageList = new List<DiscordMessage>();
+
+            int iter = 1;
+            messageList.AddRange(await e.Channel.GetMessagesAsync(100));
+            while (true)
+            {
+                if (iter % 10 == 0)
+                {
+                    await e.Guild.GetChannel(404108476835430401).SendMessageAsync($"iter: {iter}");
+                }
+
+                messageList.AddRange(await e.Channel.GetMessagesBeforeAsync(messageList.Last().Id, 100));
+                iter++;
+
+                if (messageList.Count != (100 * iter))
+                {
+                    break;
+                }
+            }
+
+            messageList.Reverse();
+            File.WriteAllText($"stuff/{e.Channel.Name}.json", JsonConvert.SerializeObject(messageList));
+            await e.RespondAsync("lol done.");
         }
 
         [Command("moveroletest"), RequireOwner]

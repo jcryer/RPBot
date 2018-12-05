@@ -151,7 +151,7 @@ namespace RPBot
     {
         public override Task<bool> ExecuteCheckAsync(CommandContext ctx, bool help)
         {
-            if (ctx.Member.Roles.Contains(RPClass.PunishedRole))
+            if (ctx.Member.Roles.Contains(RPClass.MuteRole))
                 return Task.FromResult(false);
                 
             return Task.FromResult(true);
