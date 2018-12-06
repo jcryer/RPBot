@@ -16,7 +16,6 @@ using System.Diagnostics;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using System.IO;
-using PasteSharp;
 
 namespace RPBot
 {

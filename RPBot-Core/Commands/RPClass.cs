@@ -7,7 +7,6 @@ using System;
 using Newtonsoft.Json;
 using DSharpPlus.Entities;
 using DSharpPlus.EventArgs;
-using PasteSharp;
 
 namespace RPBot
 {
@@ -40,7 +39,6 @@ namespace RPBot
 
         public static DiscordGuild RPGuild;
         public static Random Random = new Random();
-        public static PasteSharpClient PastebinClient;
         
         public static bool FirstRun = true;
         public static Extensions.SlidingBuffer<KeyValuePair<ulong, string>> MessageBuffer = new Extensions.SlidingBuffer<KeyValuePair<ulong, string>>(500);

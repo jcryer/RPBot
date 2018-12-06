@@ -17,7 +17,6 @@ using System.Diagnostics;
 using Newtonsoft.Json.Linq;
 using System.Net.Http;
 using Microsoft.CodeAnalysis;
-using PasteSharp.Config;
 using Newtonsoft.Json;
 
 namespace RPBot
@@ -228,9 +227,9 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await PurgeLog(ctx, paste);
             }
 
             [Command("from"), Description("Delete an amount of messages from a specified message"), Aliases("f", "fr")]
@@ -250,9 +249,9 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in ms)
                 {
-                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await PurgeLog(ctx, paste);
             }
 
             [Command("fromto"), Description("Delete all messages between two specified messages")]
@@ -302,9 +301,9 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await PurgeLog(ctx, paste);
             }
 
             [Command("user"), Description("Delete an amount of messages by an user."), Aliases("u", "pu")]
@@ -336,9 +335,9 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await PurgeLog(ctx, paste);
             }
 
             [Command("commands"), Description("Purge RPBot's messages."), Aliases("c", "self", "own", "clean")]
@@ -356,9 +355,9 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await PurgeLog(ctx, paste);
             }
 
             [Command("bots"), Description("Purge messages from all bots in this channel"), Aliases("b", "bot")]
@@ -376,9 +375,9 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await PurgeLog(ctx, paste);
             }
 
             [Command("images"), Description("Purge messages with images or attachments on them."), Aliases("i", "imgs", "img")]
@@ -396,9 +395,9 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deleteThis)
                 {
-                    paste += m.Author.Username + "#" + m.Author.Discriminator + ": " + m.Content + Environment.NewLine + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
                 }
-                await PurgeLog(ctx, await RPClass.PastebinClient.CreatePasteAsync(DateTime.Now.ToString(), false, paste, ExpireTime.Never));
+                await PurgeLog(ctx, paste);
             }
         }
 
@@ -731,19 +730,22 @@ namespace RPBot
 
         }
 
-        public static async Task PurgeLog(CommandContext e, string pastebinLink)
+        public static async Task PurgeLog(CommandContext e, string messages)
         {
+
             DiscordEmbedBuilder b = new DiscordEmbedBuilder
             {
                 Title = $"Messages Purged",
                 Color = DiscordColor.Red
             }
             .AddField("By", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
-            .AddField("Channel", e.Message.Channel.Name, true)
-            .AddField("Messages", pastebinLink, false);
+            .AddField("Channel", e.Message.Channel.Name, true);
+            string fileName = DateTime.Now.ToString("yyyy-dd-M--HH-mm-ss");
+            File.WriteAllText($"{fileName}.txt", messages);
 
-            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b.Build());
+            await e.Guild.GetChannel(392429153909080065).SendFileAsync($"{fileName}.txt", embed: b.Build());
+            File.Delete(fileName + ".txt");
         }
-        
+
     }
 }
