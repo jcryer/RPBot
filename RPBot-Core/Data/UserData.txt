@@ -2,8 +2,8 @@
   {
     "UserData": {
       "UserID": 64751081975975936,
-      "Username": "Jupiter",
-      "Role": 2,
+      "Username": "Forge",
+      "Role": 1,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -98,8 +98,8 @@
   {
     "UserData": {
       "UserID": 344274343804534794,
-      "Username": "Volk",
-      "Role": 1,
+      "Username": "spooked as heck",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -290,8 +290,8 @@
   {
     "UserData": {
       "UserID": 289978831350136833,
-      "Username": "Dragonforge",
-      "Role": 1,
+      "Username": "Epixelator, Light Dulled",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -354,7 +354,7 @@
   {
     "UserData": {
       "UserID": 199996479161630720,
-      "Username": "Arbiter",
+      "Username": "Analogue",
       "Role": 2,
       "Money": 0,
       "MeritPoints": 0,
@@ -450,8 +450,8 @@
   {
     "UserData": {
       "UserID": 144865936699162624,
-      "Username": "Hat Man",
-      "Role": 1,
+      "Username": "Man-Hat",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -514,8 +514,8 @@
   {
     "UserData": {
       "UserID": 209011880696479744,
-      "Username": "Midas",
-      "Role": 3,
+      "Username": "Circe",
+      "Role": 2,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -610,8 +610,8 @@
   {
     "UserData": {
       "UserID": 58917839020494848,
-      "Username": "Silver Lion",
-      "Role": 1,
+      "Username": "Vainglory",
+      "Role": 2,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -674,8 +674,8 @@
   {
     "UserData": {
       "UserID": 158284124770140161,
-      "Username": "Equilibrium",
-      "Role": 1,
+      "Username": "Bananas",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -898,7 +898,7 @@
   {
     "UserData": {
       "UserID": 382533339770388481,
-      "Username": "Shatter",
+      "Username": "Shiver",
       "Role": 3,
       "Money": 0,
       "MeritPoints": 0,
@@ -994,7 +994,7 @@
   {
     "UserData": {
       "UserID": 351161828174331907,
-      "Username": "West Wind",
+      "Username": "Sanada",
       "Role": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -1058,7 +1058,7 @@
   {
     "UserData": {
       "UserID": 321501319095517185,
-      "Username": "Midas",
+      "Username": "Fentanest",
       "Role": 2,
       "Money": 0,
       "MeritPoints": 0,
@@ -1090,8 +1090,8 @@
   {
     "UserData": {
       "UserID": 124924700781576192,
-      "Username": "Amari Nileus",
-      "Role": 1,
+      "Username": "Nas/UglyJibbz",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -1218,7 +1218,7 @@
   {
     "UserData": {
       "UserID": 358907314503417856,
-      "Username": "Shiki Granbell (Uzu/Crimson)",
+      "Username": "☆Uzu☆ψ(｀∇´)ψ",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -1444,7 +1444,7 @@
   {
     "UserData": {
       "UserID": 310863110951010306,
-      "Username": "Artemis",
+      "Username": "Ares",
       "Role": 2,
       "Money": 0,
       "MeritPoints": 0,
@@ -1476,8 +1476,8 @@
   {
     "UserData": {
       "UserID": 296875172198350848,
-      "Username": "UpChuck",
-      "Role": 2,
+      "Username": "Delilah McFocker",
+      "Role": 4,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -1604,8 +1604,8 @@
   {
     "UserData": {
       "UserID": 375812712854454272,
-      "Username": "Iwaizumi Hikitsukeru",
-      "Role": 4,
+      "Username": "Ojiro Mashirao (Tailman)",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -1636,8 +1636,8 @@
   {
     "UserData": {
       "UserID": 351955028459913227,
-      "Username": "Safety Pin",
-      "Role": 0,
+      "Username": "Blank",
+      "Role": 3,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -1668,8 +1668,8 @@
   {
     "UserData": {
       "UserID": 314419885369196544,
-      "Username": "Arnold Drew",
-      "Role": 2,
+      "Username": "Noir",
+      "Role": 1,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -1700,8 +1700,8 @@
   {
     "UserData": {
       "UserID": 369622772684685324,
-      "Username": "Vulcan",
-      "Role": 0,
+      "Username": "Tragedy",
+      "Role": 2,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -1764,8 +1764,8 @@
   {
     "UserData": {
       "UserID": 376563261317054474,
-      "Username": "Nyx",
-      "Role": 2,
+      "Username": "Lovegirl",
+      "Role": 1,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -1860,8 +1860,8 @@
   {
     "UserData": {
       "UserID": 247387080437661696,
-      "Username": "Joanna1995",
-      "Role": 0,
+      "Username": "Sparkles",
+      "Role": 4,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -1924,8 +1924,8 @@
   {
     "UserData": {
       "UserID": 124102469646024704,
-      "Username": "Indra",
-      "Role": 1,
+      "Username": "Azrael Arkwright",
+      "Role": 4,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -1956,8 +1956,8 @@
   {
     "UserData": {
       "UserID": 389590546810929173,
-      "Username": "Zeke",
-      "Role": 3,
+      "Username": "Knuckles",
+      "Role": 2,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -2084,8 +2084,8 @@
   {
     "UserData": {
       "UserID": 242720599158423554,
-      "Username": "Sin",
-      "Role": 1,
+      "Username": "Logan Moskowitz",
+      "Role": 4,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -2148,71 +2148,7 @@
   {
     "UserData": {
       "UserID": 237928154273021952,
-      "Username": "Leader of Babies",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 253946322804015104,
-      "Username": "Spike",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 313024849314578442,
-      "Username": "V",
+      "Username": "Man-Eater",
       "Role": 2,
       "Money": 0,
       "MeritPoints": 0,
@@ -2243,9 +2179,73 @@
   },
   {
     "UserData": {
+      "UserID": 253946322804015104,
+      "Username": "Buried Sun",
+      "Role": 2,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 313024849314578442,
+      "Username": "Tartarus",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
       "UserID": 139089329988435968,
-      "Username": "Glowstick",
-      "Role": 1,
+      "Username": "Khali Vernon",
+      "Role": 4,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -2340,7 +2340,7 @@
   {
     "UserData": {
       "UserID": 241973301260320768,
-      "Username": "Marin",
+      "Username": "Faust",
       "Role": 1,
       "Money": 0,
       "MeritPoints": 0,
@@ -2404,8 +2404,8 @@
   {
     "UserData": {
       "UserID": 280686912107315200,
-      "Username": "Day",
-      "Role": 1,
+      "Username": "Greevol & Grevel",
+      "Role": 4,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -2500,8 +2500,8 @@
   {
     "UserData": {
       "UserID": 269924664401330177,
-      "Username": "Hay Reaper",
-      "Role": 2,
+      "Username": "Santathulhu!",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -2532,8 +2532,8 @@
   {
     "UserData": {
       "UserID": 234319272376139777,
-      "Username": "Stigma",
-      "Role": 2,
+      "Username": "Kevin Alten",
+      "Role": 4,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -2724,8 +2724,8 @@
   {
     "UserData": {
       "UserID": 392123818749067265,
-      "Username": "Union",
-      "Role": 0,
+      "Username": "Lotus",
+      "Role": 3,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -2788,8 +2788,8 @@
   {
     "UserData": {
       "UserID": 366350762437246981,
-      "Username": "Hiro Tate",
-      "Role": 1,
+      "Username": "Crossfire",
+      "Role": 2,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -2820,8 +2820,8 @@
   {
     "UserData": {
       "UserID": 187027544711757824,
-      "Username": "Ravenstone",
-      "Role": 0,
+      "Username": "Black Recluse",
+      "Role": 1,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -3012,8 +3012,8 @@
   {
     "UserData": {
       "UserID": 375102509330464768,
-      "Username": "Wandering Swordsman",
-      "Role": 3,
+      "Username": "uchiha sasuke",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -3044,8 +3044,8 @@
   {
     "UserData": {
       "UserID": 362299393547698176,
-      "Username": "Infamous Metalico",
-      "Role": 2,
+      "Username": "Sorry",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -3076,7 +3076,7 @@
   {
     "UserData": {
       "UserID": 425748875358371842,
-      "Username": "Moon-y",
+      "Username": "RLs 🚨",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -3140,8 +3140,8 @@
   {
     "UserData": {
       "UserID": 285496656470867988,
-      "Username": "Eamon",
-      "Role": 1,
+      "Username": "Sam_The_Dude",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -3492,8 +3492,8 @@
   {
     "UserData": {
       "UserID": 238309088260390912,
-      "Username": "Zephyr",
-      "Role": 2,
+      "Username": "Killua Hone",
+      "Role": 4,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -3524,8 +3524,8 @@
   {
     "UserData": {
       "UserID": 365938029640024064,
-      "Username": "Overgrowth",
-      "Role": 0,
+      "Username": "Identity",
+      "Role": 3,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -3620,8 +3620,8 @@
   {
     "UserData": {
       "UserID": 395792549685755905,
-      "Username": "Frostbite",
-      "Role": 3,
+      "Username": "teenagedirtbag",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -3748,8 +3748,8 @@
   {
     "UserData": {
       "UserID": 340729390088323072,
-      "Username": "Kelly McFurlend",
-      "Role": 4,
+      "Username": "Sting",
+      "Role": 3,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -4132,7 +4132,7 @@
   {
     "UserData": {
       "UserID": 493298237671735296,
-      "Username": "Tyrr",
+      "Username": "SpecTyr",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -4164,8 +4164,8 @@
   {
     "UserData": {
       "UserID": 316299936067092480,
-      "Username": "Glenn Beleren",
-      "Role": 4,
+      "Username": "Lucio Tidal",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -4197,7 +4197,7 @@
     "UserData": {
       "UserID": 313723251459096588,
       "Username": "Takashi Ryu",
-      "Role": 4,
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -4228,8 +4228,8 @@
   {
     "UserData": {
       "UserID": 356495039582699524,
-      "Username": "2dmp",
-      "Role": 0,
+      "Username": "Yokatta",
+      "Role": 4,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -4260,8 +4260,8 @@
   {
     "UserData": {
       "UserID": 464668932926734347,
-      "Username": "Fruity",
-      "Role": 0,
+      "Username": "DJ",
+      "Role": 2,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -4420,8 +4420,8 @@
   {
     "UserData": {
       "UserID": 419771199195971585,
-      "Username": "Field of View",
-      "Role": 3,
+      "Username": "Field",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -4484,8 +4484,8 @@
   {
     "UserData": {
       "UserID": 152152237681016832,
-      "Username": "Ryuu Hinode",
-      "Role": 3,
+      "Username": "RyRy",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -4644,7 +4644,7 @@
   {
     "UserData": {
       "UserID": 411997656542347274,
-      "Username": "insertspookyname",
+      "Username": "insertcreativename",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -4708,8 +4708,8 @@
   {
     "UserData": {
       "UserID": 327354503563051011,
-      "Username": "Carnage",
-      "Role": 2,
+      "Username": "K/DA",
+      "Role": 3,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -4772,8 +4772,8 @@
   {
     "UserData": {
       "UserID": 358338709407399936,
-      "Username": "Tsuyoi Amari",
-      "Role": 4,
+      "Username": "fried rice",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -4804,7 +4804,7 @@
   {
     "UserData": {
       "UserID": 486230453297348676,
-      "Username": "Healy Boy",
+      "Username": "Egg",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -4836,7 +4836,7 @@
   {
     "UserData": {
       "UserID": 258253639100006400,
-      "Username": "Trashpanda",
+      "Username": "SnowyPanda64",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -4932,8 +4932,8 @@
   {
     "UserData": {
       "UserID": 356001203110281216,
-      "Username": "Searbh",
-      "Role": 4,
+      "Username": "Hugo",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -4964,7 +4964,7 @@
   {
     "UserData": {
       "UserID": 326121659532705792,
-      "Username": "Max Pendragon",
+      "Username": "🎧Max the VA🎤",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -5156,7 +5156,7 @@
   {
     "UserData": {
       "UserID": 287903102760386571,
-      "Username": "Phoenix",
+      "Username": "derphoenix02",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -5220,8 +5220,8 @@
   {
     "UserData": {
       "UserID": 460844653902823444,
-      "Username": "Dark Lion",
-      "Role": 2,
+      "Username": "marc_black16",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -5316,7 +5316,7 @@
   {
     "UserData": {
       "UserID": 417837453102153739,
-      "Username": "Falloutsaber3213",
+      "Username": "Mr. New Vegas",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -5508,7 +5508,7 @@
   {
     "UserData": {
       "UserID": 289526224731242515,
-      "Username": "M卂K乇~ØUㄒ~卄ILL",
+      "Username": "死去的皇帝",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -5732,7 +5732,7 @@
   {
     "UserData": {
       "UserID": 366341433147260961,
-      "Username": "=^.^= | Missy-Kitty| =^.^=",
+      "Username": "❄ Annoyingly Festive ❄",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -5764,8 +5764,8 @@
   {
     "UserData": {
       "UserID": 470538332947087369,
-      "Username": "Peacemaker",
-      "Role": 2,
+      "Username": "Yamiyo",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -5828,8 +5828,8 @@
   {
     "UserData": {
       "UserID": 478807644807626756,
-      "Username": "Aliasa",
-      "Role": 2,
+      "Username": "Violet Evergarden",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -5861,6 +5861,902 @@
     "UserData": {
       "UserID": 414646159223685132,
       "Username": "OK!",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 362014966343008258,
+      "Username": "SpineCricket",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 120477108261748738,
+      "Username": "Hangaku",
+      "Role": 2,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 423505966529642496,
+      "Username": "metty",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 249390560522141696,
+      "Username": "Void",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 331598027062116362,
+      "Username": "Essence",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 506868051841384449,
+      "Username": "Glitch",
+      "Role": 3,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 264341427448840194,
+      "Username": "astara",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 479986982378930177,
+      "Username": "Diego Blanco",
+      "Role": 4,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 251040821413937163,
+      "Username": "Ralsei, The Fluffy Prince",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 205100036760141825,
+      "Username": "Vandal",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 418388803095625728,
+      "Username": "Mary Belladonna",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 385466620337979394,
+      "Username": "andy.cooper",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 317387763127287818,
+      "Username": "Recon",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 197380529593647105,
+      "Username": "Aion",
+      "Role": 3,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 236219008586743809,
+      "Username": "SkeletronPrime655",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 440613147032944651,
+      "Username": "Sinky",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 300718862796849153,
+      "Username": "SpaghettiAtSunset",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 249054980353425409,
+      "Username": "Plan B",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 207830454089285632,
+      "Username": "Corn",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 244529976009818112,
+      "Username": "-WhyDidThisHappenToME?-",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 428383959030824990,
+      "Username": "Lucian",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 151759858410979329,
+      "Username": "L☹VE - Skinner",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 480828627089489951,
+      "Username": "komayday",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 284793926492225537,
+      "Username": "Nep",
+      "Role": 4,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 335527664301506560,
+      "Username": "Birthday Boy",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 229462326665805826,
+      "Username": "Aegis",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 484753036242190337,
+      "Username": "thegreatpumpkin",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 511369339409006593,
+      "Username": "Pierce Sign",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,

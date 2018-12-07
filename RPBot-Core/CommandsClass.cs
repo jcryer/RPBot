@@ -196,7 +196,7 @@ namespace RPBot
                 deletThis.Reverse();
                 foreach (var m in deletThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "¬";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -219,7 +219,7 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in ms)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "¬";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -272,7 +272,7 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "¬";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -307,7 +307,7 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "¬";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -328,7 +328,7 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "¬";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -349,7 +349,7 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "¬";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -370,7 +370,7 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deleteThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "¬";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -687,7 +687,7 @@ namespace RPBot
 
         public static async Task PurgeLog(CommandContext e, string messages)
         {
-
+            var messageList = messages.Split('¬');
             DiscordEmbedBuilder b = new DiscordEmbedBuilder
             {
                 Title = $"Messages Purged",
@@ -696,7 +696,7 @@ namespace RPBot
             .AddField("By", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
             .AddField("Channel", e.Message.Channel.Name, true);
             string fileName = DateTime.Now.ToString("yyyy-dd-M--HH-mm-ss");
-            File.AppendAllText($"{fileName}.txt", messages);
+            File.WriteAllLines($"{fileName}.txt", messageList);
 
             await e.Guild.GetChannel(392429153909080065).SendFileAsync($"{fileName}.txt", embed: b.Build());
             File.Delete(fileName + ".txt");
