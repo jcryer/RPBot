@@ -562,6 +562,14 @@ namespace RPBot
         {
             await member.GrantRoleAsync(role);
         }
+
+
+        [Command("takerole"), RequireOwner]
+        public async Task TakeRole(CommandContext e, DiscordMember member, DiscordRole role)
+        {
+            await member.GrantRoleAsync(role);
+        }
+
         [Command("rip"), RequireOwner] 
         public async Task RIP(CommandContext e)
         {
@@ -601,9 +609,10 @@ namespace RPBot
                 DiscordChannel c = await e.Guild.CreateChannelAsync(name, ChannelType.Text, parent: RPClass.ApprovalsCategory);
                 await c.AddOverwriteAsync(m, Permissions.SendMessages, Permissions.None);
                 await c.AddOverwriteAsync(e.Guild.EveryoneRole, Permissions.ReadMessageHistory, Permissions.SendMessages);
+
+
                 var role = e.Guild.GetRole(312961821063512065);
-                await c.AddOverwriteAsync(role, Permissions.SendMessages, Permissions.None);
-                await c.AddOverwriteAsync(role, Permissions.ManageMessages, Permissions.None);
+                await c.AddOverwriteAsync(role, Permissions.SendMessages | Permissions.ManageMessages, Permissions.None);
 
                 await e.RespondAsync("Channel created!\n" + c.Mention);
             }
