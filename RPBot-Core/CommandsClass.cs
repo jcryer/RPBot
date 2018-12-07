@@ -647,6 +647,7 @@ namespace RPBot
                 DiscordChannel c = await e.Guild.CreateChannelAsync(name, ChannelType.Text, parent: RPClass.ApprovalsCategory);
                 await c.AddOverwriteAsync(m, Permissions.SendMessages, Permissions.None);
                 await c.AddOverwriteAsync(e.Guild.EveryoneRole, Permissions.ReadMessageHistory, Permissions.SendMessages);
+                await c.AddOverwriteAsync(e.Guild.GetRole(312961821063512065), Permissions.ManageChannels, Permissions.None);
                 await e.RespondAsync("Channel created!\n" + c.Mention);
             }
         }
