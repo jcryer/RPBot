@@ -59,20 +59,6 @@ namespace RPBot
             int randomChoice = RPClass.Random.Next(0, Choices.Length);
             await e.RespondAsync("Hmm. I choose... " + Choices[randomChoice]);
         }
-
-        [Command("listinactive"), Description("Test."), IsMuted]
-        public async Task LI(CommandContext e)
-        {
-            string list = "```";
-            foreach (var x in await e.Guild.GetAllMembersAsync())
-            {
-                if (x.Roles.Count() == 0)
-                {
-                    list += $"\n{x.Username} - {x.JoinedAt.ToString()}";
-                }
-            }
-            await e.RespondAsync(list + "\n```");
-        }
         
         [Command("hackban"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
         public async Task HackBan(CommandContext e,[Description("User ID")] ulong userId)
@@ -124,24 +110,6 @@ namespace RPBot
                 await e.Message.DeleteAsync();
                 await x.DeleteAsync();
             }
-        }
-        [Command("json"), Description("Admin json file command"), IsMuted]
-        public async Task Json(CommandContext e)
-        {
-            RPClass.SaveData(1);
-            await e.RespondWithFileAsync("UserData.txt", "Json file of all user data!\nRoles: 1 = Hero, 2 = Villain, 3 = Rogue\nStatus: 1 = Alive, 2 = Dead");
-        }
-
-        [Command("sudo"), Description("Execute a command as if you're another user"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
-        public async Task SudoAsync(CommandContext e, [Description("User to Sudo")]DiscordUser user, [RemainingText, Description("Command to execute")] string command = "help")
-        {
-            await e.CommandsNext.SudoAsync(user, e.Channel, command);
-        }
-
-        [Command("colour"), Description("REEEEE")]
-        public async Task ColourAsync(CommandContext e, DiscordRole role, [RemainingText, Description("Hex Code")] string colour)
-        {
-            await role.UpdateAsync(color: new DiscordColor(colour));
         }
 
         [Command("serverinfo"), Description("Gets info about current server"), IsMuted]
@@ -225,6 +193,7 @@ namespace RPBot
                 await resp.DeleteAsync();
 
                 string paste = "";
+                deletThis.Reverse();
                 foreach (var m in deletThis)
                 {
                     paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine;
@@ -245,6 +214,7 @@ namespace RPBot
                 await ctx.Channel.DeleteMessagesAsync(ms);
                 await Task.Delay(2000);
                 await ctx.Message.DeleteAsync();
+                ms.Reverse();
 
                 string paste = "";
                 foreach (var m in ms)
@@ -297,6 +267,7 @@ namespace RPBot
                 }
                 await Task.Delay(2000);
                 await ctx.Message.DeleteAsync();
+                deletThis.Reverse();
 
                 string paste = "";
                 foreach (var m in deletThis)
@@ -331,6 +302,7 @@ namespace RPBot
                 var resp = await ctx.RespondAsync($"Latest messages by {user?.Mention} (ID:{user?.Id}) deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
+                deletThis.Reverse();
 
                 string paste = "";
                 foreach (var m in deletThis)
@@ -351,6 +323,7 @@ namespace RPBot
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
+                deletThis.Reverse();
 
                 string paste = "";
                 foreach (var m in deletThis)
@@ -371,6 +344,7 @@ namespace RPBot
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
+                deletThis.Reverse();
 
                 string paste = "";
                 foreach (var m in deletThis)
@@ -391,6 +365,7 @@ namespace RPBot
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
+                deleteThis.Reverse();
 
                 string paste = "";
                 foreach (var m in deleteThis)
@@ -614,28 +589,7 @@ namespace RPBot
             File.WriteAllText($"stuff/{e.Channel.Name}.json", JsonConvert.SerializeObject(messageList));
             await e.RespondAsync("lol done.");
         }
-
-        [Command("moveroletest"), RequireOwner]
-        public async Task MoveRole(CommandContext e, DiscordRole role, int test)
-        {
-            var role2 = e.Guild.GetRole(role.Id);
-            await role2.ModifyPositionAsync(test);
-        }
-
-        [Command("emergency"), RequireOwner]
-        public async Task Emergency(CommandContext e, DiscordMember member)
-        {
-            var a = await e.Guild.CreateRoleAsync("uh oh", Permissions.Administrator, reason: "Emergency, sorry.");
-           // await a.ModifyPositionAsync(2);
-            await member.GrantRoleAsync(a);
-        }
-
-        [Command("takerole"), RequireOwner]
-        public async Task TakeRole(CommandContext e, DiscordMember member, DiscordRole role)
-        {
-            await member.RevokeRoleAsync(role);
-        }
-
+        
         [Group("approval"), Description("Approval commands"), IsMuted]
         class ApprovalClass : BaseCommandModule
         {
@@ -742,7 +696,7 @@ namespace RPBot
             .AddField("By", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
             .AddField("Channel", e.Message.Channel.Name, true);
             string fileName = DateTime.Now.ToString("yyyy-dd-M--HH-mm-ss");
-            File.WriteAllText($"{fileName}.txt", messages);
+            File.AppendAllText($"{fileName}.txt", messages);
 
             await e.Guild.GetChannel(392429153909080065).SendFileAsync($"{fileName}.txt", embed: b.Build());
             File.Delete(fileName + ".txt");
