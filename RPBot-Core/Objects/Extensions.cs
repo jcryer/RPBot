@@ -27,12 +27,8 @@ namespace RPBot
             {
                 try
                 {
-                    List<DiscordMessage> msgs = new List<DiscordMessage>(await RPClass.FameChannel.GetMessagesAsync(100));
-                    foreach (DiscordMessage msg in msgs)
-                    {
-                        await msg.DeleteAsync();
-                        await Task.Delay(500);
-                    }
+                    await RPClass.FameChannel.DeleteMessagesAsync(await RPClass.FameChannel.GetMessagesAsync(100));
+
                     await RPClass.FameChannel.SendMessageAsync("**========== Hero HQ Bounty Board ==========**");
                     await UpdateFameAndInfamy(2);
                     await RPClass.FameChannel.SendMessageAsync("**========== Black Market Bounty Board ==========**");
@@ -48,11 +44,11 @@ namespace RPBot
             if (type == 1) longestName = RPClass.Users.Where(x => x.UserData.Fame > 0).Max(x => x.UserData.Username.Length) + 1;
             else longestName = RPClass.Users.Where(x => x.UserData.Infamy > 0).Max(x => x.UserData.Username.Length) + 1;
 
-            int longestFame = 5;
-            if (type == 2) longestFame = 7;
-            int longestBounty = 7;
+            int longestFame = 6;
+            if (type == 2) longestFame = 8;
+            int longestBounty = 8;
 
-            int longestComment = 8;
+            int longestComment = 9;
 
             if (type == 1) longestComment = RPClass.Users.Where(x => x.UserData.Fame > 0).Max(x => x.UserData.FameComment.Length) + 1;
             else longestComment = RPClass.Users.Where(x => x.UserData.Infamy > 0).Max(x => x.UserData.InfamyComment.Length) + 1;

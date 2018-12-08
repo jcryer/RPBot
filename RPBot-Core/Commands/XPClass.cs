@@ -174,6 +174,21 @@ namespace RPBot
         // Non-Command Methods
         public static async Task UpdateStats(DiscordChannel c)
         {
+            if (!RPClass.Users.Where(x => x.Xp > 0).Any())
+            {
+                try
+                {
+                    await c.DeleteMessagesAsync(await c.GetMessagesAsync(100));
+                }
+                catch { }
+                return;
+            }
+            try
+            {
+                await c.DeleteMessagesAsync(await c.GetMessagesAsync(100));
+            }
+            catch { }
+
             int longestName = 1;
             if (RPClass.Users.Any()) longestName = RPClass.Users.Where(x => x.Xp > 0).Max(x => x.UserData.Username.Length) + 2;
             int longestXP = 7;
@@ -185,16 +200,7 @@ namespace RPBot
             List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
 
             SortedUsers = RPClass.Users.OrderByDescending(x => x.Xp).ToList();
-            try
-            {
-                List<DiscordMessage> msgs = new List<DiscordMessage>(await c.GetMessagesAsync(100));
-                foreach (DiscordMessage msg in msgs)
-                {
-                    await msg.DeleteAsync();
-                    await Task.Delay(500);
-                }
-            }
-            catch { }
+
             foreach (UserObject.RootObject user in SortedUsers)
             {
                 if (user.Xp > 0)
@@ -225,25 +231,30 @@ namespace RPBot
 
         public static async Task UpdatePlayerRanking(DiscordGuild e, int type)
 		{
+
 			DiscordChannel RankingChannel = RPClass.HeroRankingChannel;
 
             if (type == 2) RankingChannel = RPClass.VillainRankingChannel;
             else if (type == 3) RankingChannel = RPClass.RogueRankingChannel;
             else if (type == 4) RankingChannel = RPClass.AcademyRankingChannel;
 
-			List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
-
-			SortedUsers = RPClass.Users.Where(x => x.UserData.Role == type).OrderByDescending(x => (x.Xp)).ToList();
+            if (!RPClass.Users.Where(x => x.UserData.Role == type && x.Xp > 0).Any())
+            {
+                try
+                {
+                    await RankingChannel.DeleteMessagesAsync(await RankingChannel.GetMessagesAsync(100));
+                }
+                catch { }
+                return;
+            }
             try
             {
-                List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAsync(100));
-                foreach (DiscordMessage msg in msgs)
-                {
-                    await msg.DeleteAsync();
-                    await Task.Delay(500);
-                }
+                await RankingChannel.DeleteMessagesAsync(await RankingChannel.GetMessagesAsync(100));
             }
             catch { }
+            List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
+
+			SortedUsers = RPClass.Users.Where(x => x.UserData.Role == type).OrderByDescending(x => (x.Xp)).ToList();
             int countNum = 1;
             var tableData = new List<RankingRow>();
 			foreach (UserObject.RootObject user in SortedUsers)
@@ -262,8 +273,23 @@ namespace RPBot
 
         public static async Task UpdateGuildRanking(DiscordGuild e)
         {
+
             DiscordChannel RankingChannel = RPClass.GuildRankingChannel;
 
+            if (!RPClass.Guilds.Any())
+            {
+                try
+                {
+                    await RankingChannel.DeleteMessagesAsync(await RankingChannel.GetMessagesAsync(100));
+                }
+                catch { }
+                return;
+            }
+            try
+            {
+                await RankingChannel.DeleteMessagesAsync(await RankingChannel.GetMessagesAsync(100));
+            }
+            catch { }
             List<string> tableStrings = new List<string>();
             int positionMax = 4;
             int nameMax = RPClass.Guilds.Max(x => x.Name.Length) + 2;
@@ -302,16 +328,7 @@ namespace RPBot
                 }
             }
             List<GuildObject.RootObject> SortedGuilds = GuildsNew.OrderByDescending(x => x.UserIDs[0]).ToList();
-            try
-            {
-                List<DiscordMessage> msgs = new List<DiscordMessage>(await RankingChannel.GetMessagesAsync(100));
-                foreach (DiscordMessage msg in msgs)
-                {
-                    await msg.DeleteAsync();
-                    await Task.Delay(500);
-                }
-            }
-            catch { }
+
             int countNum = 1;
             foreach (GuildObject.RootObject guild in SortedGuilds)
             {
