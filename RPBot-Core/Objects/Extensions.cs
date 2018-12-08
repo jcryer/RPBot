@@ -40,29 +40,30 @@ namespace RPBot
 
             DiscordChannel FameChannel = RPClass.FameChannel;
 
+            List<string> tableStrings = new List<string>();
+            int longestPosition = 4;
             int longestName = 1;
             if (type == 1) longestName = RPClass.Users.Where(x => x.UserData.Fame > 0).Max(x => x.UserData.Username.Length) + 1;
             else longestName = RPClass.Users.Where(x => x.UserData.Infamy > 0).Max(x => x.UserData.Username.Length) + 1;
 
             int longestFame = 6;
             if (type == 2) longestFame = 8;
+
+            string fame = " Fame";
+            if (type == 2) fame = " Infamy";
             int longestBounty = 8;
 
             int longestComment = 9;
-
             if (type == 1) longestComment = RPClass.Users.Where(x => x.UserData.Fame > 0).Max(x => x.UserData.FameComment.Length) + 1;
             else longestComment = RPClass.Users.Where(x => x.UserData.Infamy > 0).Max(x => x.UserData.InfamyComment.Length) + 1;
 
-            if (longestComment < 8) longestComment = 8;
+            if (longestName < 6) longestName = 6;
+            if (longestComment < 9) longestComment = 9;
 
-            string Count = "Pos".PadRight(longestFame) + "| ";
-            string Name = "Name".PadRight(longestName) + "| ";
-            string Fame = "Fame".PadRight(longestFame) + "| ";
-            if (type == 2) Fame = "Infamy".PadRight(longestFame) + "| ";
-            string Bounty = "Bounty".PadRight(longestBounty) + "| ";
-            string Comment = "Comment";
-            string value = "";
-            value += $"```{Count}{Name}{Fame}{Bounty}{Comment}\n{new string('-', $"{Count}{Name}{Fame}{Bounty}".Length + longestComment)}\n";
+            string table = $"╔{new string('═', longestPosition)}╤{new string('═', longestName)}╤{new string('═', longestFame)}╤{new string('═', longestBounty)}╤{new string('═', longestComment)}╗\n";
+            table += $"║{"Pos".PadRight(longestPosition)}│{" Name".PadRight(longestName)}│{fame.PadRight(longestFame)}│{" Bounty".PadRight(longestBounty)}│{" Comment".PadRight(longestComment)}║\n";
+            table += $"╠{new string('═', longestPosition)}╪{new string('═', longestName)}╪{new string('═', longestFame)}╪{new string('═', longestBounty)}╪{new string('═', longestComment)}╣\n";
+
             List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
             if (type == 1) SortedUsers = RPClass.Users.Where(x => x.UserData.Fame > 0).OrderByDescending(x => (x.UserData.Fame)).ToList();
             else SortedUsers = RPClass.Users.Where(x => x.UserData.Infamy > 0 && x.UserData.Role != 1).OrderByDescending(x => (x.UserData.Infamy)).ToList();
@@ -79,15 +80,29 @@ namespace RPBot
 
                 string FinalComment = user.UserData.FameComment;
                 if (type == 2) FinalComment = user.UserData.InfamyComment;
-                if (value.Length > 1500)
+
+                table += $"║{countNum.ToString().PadRight(longestPosition)}│ {user.UserData.Username.PadRight(longestName - 1)}│ {FameOrInfamy.PadRight(longestFame - 1)}│ {FinalBounty.PadRight(longestBounty - 1)}│ {FinalComment.PadRight(longestComment - 1)}║\n";
+
+                if (table.Length > 1500)
                 {
-                    await FameChannel.SendMessageAsync(value + "```");
-                    value = "```";
+                    table += $"╚{new string('═', longestPosition)}╧{new string('═', longestName)}╧{new string('═', longestFame)}╧{new string('═', longestBounty)}╧{new string('═', longestComment)}╝\n";
+                    tableStrings.Add(table);
+                    table = "";
+                    if (user != SortedUsers.Last())
+                    {
+                        table = $"╔{new string('═', longestPosition)}╤{new string('═', longestName)}╤{new string('═', longestFame)}╤{new string('═', longestBounty)}╤{new string('═', longestComment)}╗\n";
+                    }
                 }
-                value += (countNum.ToString().PadRight(longestFame) + "| " + user.UserData.Username.PadRight(longestName) + "| " + FameOrInfamy.PadRight(longestFame) + "| " + FinalBounty.PadRight(longestBounty) + "| " + FinalComment + "\n");
                 countNum += 1;
             }
-            await FameChannel.SendMessageAsync(value + "```");
+
+            if (table != "")
+            {
+                table += $"╚{new string('═', longestPosition)}╧{new string('═', longestName)}╧{new string('═', longestFame)}╧{new string('═', longestBounty)}╧{new string('═', longestComment)}╝\n";
+                tableStrings.Add(table);
+            }
+            foreach (var tableString in tableStrings)
+                await FameChannel.SendMessageAsync("```" + tableString + "```");
         }
 
         public class SlidingBuffer<T> : IEnumerable<T>
