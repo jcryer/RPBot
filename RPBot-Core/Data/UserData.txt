@@ -3076,8 +3076,8 @@
   {
     "UserData": {
       "UserID": 425748875358371842,
-      "Username": "RLs 🚨",
-      "Role": 0,
+      "Username": "Darcy Wright",
+      "Role": 4,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -6660,7 +6660,7 @@
   {
     "UserData": {
       "UserID": 335527664301506560,
-      "Username": "Birthday Boy",
+      "Username": "Alycyn",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -6692,8 +6692,8 @@
   {
     "UserData": {
       "UserID": 229462326665805826,
-      "Username": "Aegis",
-      "Role": 0,
+      "Username": "Magna",
+      "Role": 3,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -6724,7 +6724,7 @@
   {
     "UserData": {
       "UserID": 484753036242190337,
-      "Username": "thegreatpumpkin",
+      "Username": "imaloser",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -6757,6 +6757,38 @@
     "UserData": {
       "UserID": 511369339409006593,
       "Username": "Pierce Sign",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 520423602831753216,
+      "Username": "*lA_bRuJa*",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
