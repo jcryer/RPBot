@@ -113,28 +113,24 @@ namespace RPBot
 
         public static string CreateTable(List<Table> tableData)
         {
-            int positionMax = tableData.Select(x => x.Position.Length).Max();
-            int nameMax = tableData.Select(x => x.Name.Length).Max();
-            int fameMax = tableData.Select(x => x.Fame.Length).Max();
-            int infamyMax = tableData.Select(x => x.Infamy.Length).Max();
-            int guildMax = tableData.Select(x => x.Guild.Length).Max();
-            int rankMax = tableData.Select(x => x.Rank.Length).Max();
+            int positionMax = 4;
+            int nameMax = tableData.Select(x => x.Name.Length).Max() + 1;
+            int fameMax = 6;
+            int infamyMax = 8;
+            int guildMax = tableData.Select(x => x.Guild.Length).Max() + 1;
+            int rankMax = 6;
 
-            if (positionMax < 4) positionMax = 4;
             if (nameMax < 6) nameMax = 6;
-            if (fameMax < 6) fameMax = 6;
-            if (infamyMax < 8) infamyMax = 8;
             if (guildMax < 7) guildMax = 7;
-            if (rankMax < 6) rankMax = 6;
 
 
-            string table = $"╔{new string('═', positionMax)}╤{new string('═', nameMax)}╤{new string('═', fameMax)}╤{new string('═', infamyMax)}╤{new string('═', guildMax)}╤{new string('═', rankMax)}╗";
-            table += $"║{"Pos".PadRight(positionMax)}│ {"Name".PadRight(nameMax)}│ {"Fame".PadRight(fameMax)}│ {"Infamy".PadRight(infamyMax)}│ {"Guild".PadRight(guildMax)}│ {"Rank".PadRight(rankMax)}║";
-            table += $"╠{new string('═', positionMax)}╪{new string('═', nameMax)}╪{new string('═', fameMax)}╪{new string('═', infamyMax)}╪{new string('═', guildMax)}╪{new string('═', rankMax)}╣";
+            string table = $"╔{new string('═', positionMax)}╤{new string('═', nameMax)}╤{new string('═', fameMax)}╤{new string('═', infamyMax)}╤{new string('═', guildMax)}╤{new string('═', rankMax)}╗\n";
+            table += $"║{"Pos".PadRight(positionMax)}│{" Name".PadRight(nameMax)}│{" Fame".PadRight(fameMax)}│{" Infamy".PadRight(infamyMax)}│{" Guild".PadRight(guildMax)}│{" Rank".PadRight(rankMax)}║\n";
+            table += $"╠{new string('═', positionMax)}╪{new string('═', nameMax)}╪{new string('═', fameMax)}╪{new string('═', infamyMax)}╪{new string('═', guildMax)}╪{new string('═', rankMax)}╣\n";
 
             foreach (var row in tableData)
             {
-                table += $"║{row.Position.PadRight(positionMax)}│ {row.Name.PadRight(nameMax)}│ {row.Fame.PadRight(fameMax)}│ {row.Infamy.PadRight(infamyMax)}│ {row.Guild.PadRight(guildMax)}│ {row.Rank.PadRight(rankMax)}║";
+                table += $"║{row.Position.PadRight(positionMax)}│ {row.Name.PadRight(nameMax-1)}│ {row.Fame.PadRight(fameMax-1)}│ {row.Infamy.PadRight(infamyMax-1)}│ {row.Guild.PadRight(guildMax-1)}│ {row.Rank.PadRight(rankMax-1)}║\n";
             }
             table += $"╚{new string('═', positionMax)}╧{new string('═', nameMax)}╧{new string('═', fameMax)}╧{new string('═', infamyMax)}╧{new string('═', guildMax)}╧{new string('═', rankMax)}╝";
 
