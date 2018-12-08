@@ -263,16 +263,20 @@ namespace RPBot
         public static async Task UpdateGuildRanking(DiscordGuild e)
         {
             DiscordChannel RankingChannel = RPClass.GuildRankingChannel;
-            int longestCount = 5;
-            int longestName = 10;
-            if (RPClass.Guilds.Any()) longestName = RPClass.Guilds.Max(x => x.Name.Length) + 1;
 
-            string Count = "Pos".PadRight(longestCount) + "| ";
-            string Name = "Name".PadRight(longestName) + "| ";
-            string Fame = "Fame | ";
-            string Infamy = "Infamy | ";
-            string Rank = "Rank";
-            string value = $"```{Count}{Name}{Fame}{Infamy}{Rank}\n{new string('-', $"{Count}{Name}{Fame}{Infamy}{Rank}".Length)}\n";
+            List<string> tableStrings = new List<string>();
+            int positionMax = 4;
+            int nameMax = RPClass.Guilds.Max(x => x.Name.Length) + 2;
+            int fameMax = 6;
+            int infamyMax = 8;
+            int rankMax = 6;
+
+            if (nameMax < 6) nameMax = 6;
+
+            string table = $"╔{new string('═', positionMax)}╤{new string('═', nameMax)}╤{new string('═', fameMax)}╤{new string('═', infamyMax)}╤{new string('═', rankMax)}╗\n";
+            table += $"║{"Pos".PadRight(positionMax)}│{" Name".PadRight(nameMax)}│{" Fame".PadRight(fameMax)}│{" Infamy".PadRight(infamyMax)}│{" Rank".PadRight(rankMax)}║\n";
+            table += $"╠{new string('═', positionMax)}╪{new string('═', nameMax)}╪{new string('═', fameMax)}╪{new string('═', infamyMax)}╪{new string('═', rankMax)}╣\n";
+
 
             List<GuildObject.RootObject> GuildsNew = new List<GuildObject.RootObject>();
             foreach (GuildObject.RootObject guild in RPClass.Guilds)
@@ -294,8 +298,7 @@ namespace RPBot
                         }
                     }
                     xp = (xp / guild.UserIDs.Count);
-                    GuildsNew.Add(new GuildObject.RootObject(0, guild.Name, new List<ulong>() { (ulong)xp, (ulong)fame, (ulong)infamy }));
-
+                    GuildsNew.Add(new GuildObject.RootObject(0, guild.Name, new List<ulong>() { (ulong)xp, (ulong)fame, (ulong)infamy })); // xp, fame, infamy
                 }
             }
             List<GuildObject.RootObject> SortedGuilds = GuildsNew.OrderByDescending(x => x.UserIDs[0]).ToList();
@@ -330,17 +333,31 @@ namespace RPBot
                 if (rank < 1000) GuildRank = "D2";
                 if (rank < 500) GuildRank = "D3";
 
-                if (value.Length > 1500)
+                table += $"║{countNum.ToString().PadRight(positionMax)}│ {guild.Name.PadRight(nameMax - 1)}│ {guild.UserIDs[1].ToString().PadRight(fameMax - 1)}│ {guild.UserIDs[2].ToString().PadRight(infamyMax - 1)}│ {GuildRank.PadRight(rankMax - 1)}║\n";
+
+
+                if (table.Length > 1500)
                 {
-                    await RankingChannel.SendMessageAsync(value + "```");
-                    value = "```";
+                    table += $"╚{new string('═', positionMax)}╧{new string('═', nameMax)}╧{new string('═', fameMax)}╧{new string('═', infamyMax)}╧{new string('═', rankMax)}╝";
+                    tableStrings.Add(table);
+                    table = "";
+                    if (guild != SortedGuilds.Last())
+                    {
+                        table = $"╔{new string('═', positionMax)}╤{new string('═', nameMax)}╤{new string('═', fameMax)}╤{new string('═', infamyMax)}╤{new string('═', rankMax)}╗\n";
+                    }
                 }
 
-                value += (countNum.ToString().PadRight(longestCount) + "| " + guild.Name.PadRight(longestName) + "| " + guild.UserIDs[1].ToString().PadRight(5) + "| " + guild.UserIDs[2].ToString().PadRight(7) + "| " +  GuildRank + "\n");
                 countNum += 1;
 
             }
-            await RankingChannel.SendMessageAsync(value + "```");
+
+            if (table != "")
+            {
+                table += $"╚{new string('═', positionMax)}╧{new string('═', nameMax)}╧{new string('═', fameMax)}╧{new string('═', infamyMax)}╧{new string('═', rankMax)}╝";
+                tableStrings.Add(table);
+            }
+            foreach (var tableString in tableStrings)
+                await RankingChannel.SendMessageAsync("```" + tableString + "```");
         }
     }
 }
