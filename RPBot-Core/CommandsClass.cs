@@ -196,7 +196,7 @@ namespace RPBot
                 deletThis.Reverse();
                 foreach (var m in deletThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "aaaa \r\n";
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + " \r\n";
                 }
                 await PurgeLog(ctx, paste);
             }
