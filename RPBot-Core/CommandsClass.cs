@@ -196,7 +196,7 @@ namespace RPBot
                 deletThis.Reverse();
                 foreach (var m in deletThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine+ Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "aaaa \r\n";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -219,7 +219,7 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in ms)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine+ Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "\r\n";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -272,7 +272,7 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine+ Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "\r\n";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -307,7 +307,7 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine+ Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "\r\n";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -328,7 +328,7 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine+ Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "\r\n";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -349,7 +349,7 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deletThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine+ Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "\r\n";
                 }
                 await PurgeLog(ctx, paste);
             }
@@ -370,7 +370,7 @@ namespace RPBot
                 string paste = "";
                 foreach (var m in deleteThis)
                 {
-                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + Environment.NewLine+ Environment.NewLine;
+                    paste += (m.Author as DiscordMember).DisplayName + ": " + m.Content + "\r\n";
                 }
                 await PurgeLog(ctx, paste);
             }
