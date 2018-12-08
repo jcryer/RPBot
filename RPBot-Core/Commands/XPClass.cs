@@ -115,7 +115,7 @@ namespace RPBot
         {
             List<string> tableStrings = new List<string>();
             int positionMax = 4;
-            int nameMax = tableData.Select(x => x.Name.Length).Max() + 1;
+            int nameMax = tableData.Select(x => x.Name.Length).Max() + 2;
             int fameMax = 6;
             int infamyMax = 8;
             int guildMax = tableData.Select(x => x.Guild.Length).Max() + 1;
@@ -175,7 +175,7 @@ namespace RPBot
         public static async Task UpdateStats(DiscordChannel c)
         {
             int longestName = 1;
-            if (RPClass.Users.Any()) longestName = RPClass.Users.Where(x => x.Xp > 0).Max(x => x.UserData.Username.Length) + 1;
+            if (RPClass.Users.Any()) longestName = RPClass.Users.Where(x => x.Xp > 0).Max(x => x.UserData.Username.Length) + 2;
             int longestXP = 7;
             var tables = new List<string>();
             string table = $"╔{new string('═', longestName)}╤{new string('═', longestXP)}╗\n";
@@ -199,7 +199,7 @@ namespace RPBot
             {
                 if (user.Xp > 0)
                 {
-                    table += $"║{user.UserData.Username.PadRight(longestName)}│{user.Xp.ToString().PadRight(longestXP)}║\n";
+                    table += $"║ {user.UserData.Username.PadRight(longestName-1)}│ {user.Xp.ToString().PadRight(longestXP-1)}║\n";
 
                     if (table.Length > 1500)
                     {
