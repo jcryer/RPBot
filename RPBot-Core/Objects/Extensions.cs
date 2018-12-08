@@ -43,8 +43,8 @@ namespace RPBot
             List<string> tableStrings = new List<string>();
             int longestPosition = 4;
             int longestName = 1;
-            if (type == 1) longestName = RPClass.Users.Where(x => x.UserData.Fame > 0).Max(x => x.UserData.Username.Length) + 1;
-            else longestName = RPClass.Users.Where(x => x.UserData.Infamy > 0).Max(x => x.UserData.Username.Length) + 1;
+            if (type == 1) longestName = RPClass.Users.Where(x => x.UserData.Fame > 0).Max(x => x.UserData.Username.Length) + 2;
+            else longestName = RPClass.Users.Where(x => x.UserData.Infamy > 0).Max(x => x.UserData.Username.Length) + 2;
 
             int longestFame = 6;
             if (type == 2) longestFame = 8;
