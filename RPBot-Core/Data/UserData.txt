@@ -2148,8 +2148,8 @@
   {
     "UserData": {
       "UserID": 237928154273021952,
-      "Username": "Man-Eater",
-      "Role": 2,
+      "Username": "Leader Of Babies",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -4356,7 +4356,7 @@
   {
     "UserData": {
       "UserID": 446296875168038924,
-      "Username": "Shani",
+      "Username": "I AM CAT",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -5828,7 +5828,7 @@
   {
     "UserData": {
       "UserID": 478807644807626756,
-      "Username": "Violet Evergarden",
+      "Username": "Kirumi Tojo (Violet Evergarden)",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,

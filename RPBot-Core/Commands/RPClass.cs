@@ -20,6 +20,7 @@ namespace RPBot
         public static List<TagObject.RootObject> TagsList = new List<TagObject.RootObject>();
         public static List<SignupObject.RootObject> SignupList = new List<SignupObject.RootObject>();
         public static Dictionary<ulong, ulong> approvalsList = new Dictionary<ulong, ulong>(); // Channel ID : User ID
+        public static Dictionary<string, string> CardList = new Dictionary<string, string>();
         public static SVObject.RootObject SVData = new SVObject.RootObject();
         public static DiscordChannel GuildRankingChannel;
         public static DiscordChannel HeroRankingChannel;
@@ -52,6 +53,7 @@ namespace RPBot
                 SaveData(2);
                 SaveData(3);
                 SaveData(4);
+                SaveData(5);
                 SaveData(6);
                 SaveData(7);
                 SaveData(8);
@@ -78,6 +80,11 @@ namespace RPBot
             {
                 string output = JsonConvert.SerializeObject(SpeechList, Formatting.Indented);
                 File.WriteAllText("Data/SpeechData.txt", output);
+            }
+            else if (saveType == 5)
+            {
+                string output = JsonConvert.SerializeObject(CardList, Formatting.Indented);
+                File.WriteAllText("Data/CardData.txt", output);
             }
             else if (saveType == 6)
             {
@@ -128,6 +135,11 @@ namespace RPBot
             {
                 List<InstanceObject.ChannelTemplate> input = JsonConvert.DeserializeObject<List<InstanceObject.ChannelTemplate>>(File.ReadAllText("Data/ChannelTemplates.txt"));
                 ChannelTemplates = input;
+            }
+            if (File.ReadAllLines("Data/CardData.txt").Any())
+            {
+                Dictionary<string, string> input = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText("Data/CardData.txt"));
+                CardList = input;
             }
             if (File.ReadAllLines("Data/InstanceData.txt").Any())
             {

@@ -1,5 +1,7 @@
 ﻿using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
+using DSharpPlus.Entities;
+using DSharpPlus.Interactivity;
 using SixLabors.Fonts;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
@@ -19,34 +21,125 @@ namespace RPBot
     class CardClass : BaseCommandModule
     {
         [Command("create")]
-        public async Task ShowCard(CommandContext e, [Description("Name of the character")]string characterName, [Description("Image for the front - URL")]string frontImage, 
+        public async Task ShowCard(CommandContext e, [Description("Name of the character")]string characterName, [Description("Role - 'Hero', 'Villain' or 'Rogue'")]string role,
+            [Description("Image for the front - URL")]string frontImage,
             [Description("Icon for the back - URL")]string backImage, [Description("Hex colour of background")]string hex, [Description("Location of birth")]string born, [Description("Height (feet & inches)")]string height, [Description("Weight (kg)")]string weight,
-            [Description("Quirk name")]string quirk, [Description("Power (/5)")]string power, [Description("Intelligence (/5)")]string intelligence, [Description("Speed (/5)")]string speed, 
+            [Description("Quirk name")]string quirk, [Description("Power (/5)")]string power, [Description("Intelligence (/5)")]string intelligence, [Description("Speed (/5)")]string speed,
             [Description("Agility (/5)")]string agility, [Description("Technique (/5)")]string technique, [Description("Precision (/5)")]string precision, [Description("Quote title")]string quoteTitle,
             [Description("Quote content")]string quote)
         {
+
+            if (File.Exists($"Cards/Done/front-{characterName}.png"))
+            {
+                await e.RespondAsync("Card already exists. Use the command `!card delete NAME`.");
+                return;
+            }
+
+            Roles r = Roles.Hero;
+            if (role == "Hero") r = Roles.Hero;
+            else if (role == "Villain") r = Roles.Villain;
+            else if (role == "Rogue") r = Roles.Rogue;
+            else
+            {
+                await e.RespondAsync("Invalid role type.");
+                return;
+            }
             string fileStamp = DateTime.Now.ToString("yyyy-dd-M--HH-mm-ss");
 
             using (WebClient webClient = new WebClient())
             {
                 webClient.DownloadFile(frontImage, $"Cards/frontimage-{fileStamp}.png");
             }
-            string front = GenerateFront(characterName, Roles.Hero, $"Cards/frontimage-{fileStamp}.png");
+            string front = GenerateFront(characterName, r, $"Cards/frontimage-{fileStamp}.png");
 
             using (WebClient webClient = new WebClient())
             {
                 webClient.DownloadFile(backImage, $"Cards/backimage-{fileStamp}.png");
             }
 
-            string back = GenerateBack($"Cards/frontimage-{fileStamp}.png", hex, Roles.Hero, characterName, born, height, weight, quirk, power, intelligence, speed, agility, technique, precision, quoteTitle, quote);
+            string back = GenerateBack($"Cards/backimage-{fileStamp}.png", hex, r, characterName, born, height, weight, quirk, power, intelligence, speed, agility, technique, precision, quoteTitle, quote);
 
+            RPClass.CardList.Add(characterName, $"{front}¬{back}");
             await e.RespondWithFileAsync(front);
             await e.RespondWithFileAsync(back);
+            await e.Message.DeleteAsync();
 
-            File.Delete(front);
-            File.Delete(back);
             File.Delete($"Cards/frontimage-{fileStamp}.png");
             File.Delete($"Cards/backimage-{fileStamp}.png");
+            RPClass.SaveData(5);
+        }
+
+        [Command("show")]
+        public async Task ShowCard(CommandContext e, [Description("Name of the character")]string characterName)
+        {
+            if (RPClass.CardList.Any(x => x.Key == characterName))
+            {
+                string[] vals = RPClass.CardList[characterName].Split('¬');
+                await e.RespondWithFileAsync(vals[0]);
+                await e.RespondWithFileAsync(vals[1]);
+
+            }
+        }
+
+        [Command("list"), Description("Lists all cards.")]
+        public async Task List(CommandContext e)
+        {
+            var interactivity = e.Client.GetInteractivity();
+            List<Page> interactivityPages = new List<Page>();
+
+            Page p = new Page();
+
+            DiscordEmbedBuilder b = new DiscordEmbedBuilder()
+            {
+                Color = new DiscordColor("4169E1"),
+                Timestamp = DateTime.UtcNow
+            }
+            .WithFooter("Heroes & Villains");
+            bool even = false;
+            foreach (string name in RPClass.CardList.Keys)
+            {
+                if (!even)
+                {
+                    b.AddField(name, "-");
+                }
+                else
+                {
+                    b.Fields.Last().Value = name;
+                }
+                even = !even;
+                if (b.Fields.Count >= 10 && !even)
+                {
+                    p.Embed = b;
+                    interactivityPages.Add(p);
+                    p = new Page();
+                    b.ClearFields();
+                    even = false;
+                }
+            }
+            p.Embed = b;
+            interactivityPages.Add(p);
+            p = new Page();
+            b.ClearFields();
+            await interactivity.SendPaginatedMessage(e.Channel, e.Member, interactivityPages, timeoutoverride: TimeSpan.FromSeconds(60));
+        }
+
+        [Command("delete")]
+        public async Task DeleteCard(CommandContext e, [Description("Name of the character")]string characterName)
+        {
+            if (File.Exists($"Cards/Done/front-{characterName}.png"))
+            {
+                File.Delete($"Cards/Done/front-{characterName}.png");
+            }
+            if (File.Exists($"Cards/Done/back-{characterName}.png"))
+            {
+                File.Delete($"Cards/Done/back-{characterName}.png");
+            }
+            if (RPClass.CardList.Any(x => x.Key == characterName))
+            {
+                RPClass.CardList.Remove(characterName);
+            }
+            RPClass.SaveData(5);
+            await e.RespondAsync("Done!");
         }
 
         public static string GenerateFront(string name, Roles role, string filePath)
@@ -89,10 +182,9 @@ namespace RPBot
                         break;
                     }
                     backgroundImage.Mutate(x => x.Resize(new ResizeOptions() { Mode = ResizeMode.Crop, Size = new Size(500, 700), Position = AnchorPositionMode.Top }).DrawImage(borderImage, 1).DrawText(name, childFont, Brushes.Solid(Rgba32.FromHex("#FFFFFF")), Pens.Solid(Rgba32.FromHex(hexcode), 8), new PointF(textOffset, 630)).DrawText(name, childFont, Brushes.Solid(Rgba32.FromHex("#FFFFFF")), new PointF(textOffset, 630)));
-                    string fileName = DateTime.Now.ToString("yyyy-dd-M--HH-mm-ss");
 
-                    backgroundImage.Save($"Cards/front-{fileName}.png");
-                    return $"Cards/front-{fileName}.png";
+                    backgroundImage.Save($"Cards/Done/front-{name}.png");
+                    return $"Cards/Done/front-{name}.png";
                 }
             }
         }
@@ -204,11 +296,8 @@ namespace RPBot
                     test += 3 + (int)lineSize.Height;
                 }
 
-
-                string fileName = DateTime.Now.ToString("yyyy-dd-M--HH-mm-ss");
-
-                backgroundImage.Save($"Cards/back-{fileName}.png");
-                return $"Cards/back-{fileName}.png";
+                backgroundImage.Save($"Cards/Done/back-{name}.png");
+                return $"Cards/Done/back-{name}.png";
             }
         }
         public static List<string> GetNLines(string input, int num)
@@ -328,6 +417,11 @@ namespace RPBot
         }
     }
 
+    public class CardObject
+    {
+        public string Name;
+        public string FilePath;
+    }
     enum Roles
     {
         Hero,

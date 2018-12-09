@@ -1,0 +1,3 @@
+{
+  "Daedalus": "Cards/Done/front-Daedalus.png¬Cards/Done/back-Daedalus.png"
+}
