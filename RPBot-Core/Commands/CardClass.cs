@@ -81,6 +81,28 @@ namespace RPBot
             }
         }
 
+        [Command("add")]
+        public async Task AddCard(CommandContext e, [Description("Name of the character")]string characterName, [Description("Front Image")]string front, [Description("Back image")]string back)
+        {
+            if (File.Exists($"Cards/Done/front-{characterName}.png"))
+            {
+                await e.RespondAsync("Card already exists. Use the command `!card delete NAME`.");
+                return;
+            }
+            using (WebClient webClient = new WebClient())
+            {
+                webClient.DownloadFile(front, $"Cards/Done/front-{characterName}.png");
+            }
+
+            using (WebClient webClient = new WebClient())
+            {
+                webClient.DownloadFile(back, $"Cards/Done/back-{characterName}.png");
+            }
+
+            RPClass.CardList.Add(characterName, $"Cards/Done/front-{characterName}.png¬Cards/Done/back-{characterName}.png");
+            RPClass.SaveData(5);
+            await e.RespondAsync("Added!");
+        }
         [Command("list"), Description("Lists all cards.")]
         public async Task List(CommandContext e)
         {
