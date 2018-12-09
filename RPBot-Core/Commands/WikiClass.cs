@@ -83,8 +83,10 @@ namespace RPBot
         public async Task AddOCAsync(CommandContext e, [RemainingText]string charName)
         {
             string role = "";
-            Wiki.Page page = new Wiki.Page(WikiSite, charName);
-            page.text = "";
+            Wiki.Page page = new Wiki.Page(WikiSite, charName)
+            {
+                text = ""
+            };
 
             var interactivity = e.Client.GetInteractivity();
 
@@ -321,38 +323,6 @@ namespace RPBot
             await mainMessage.DeleteAsync();
             await infoBoxEmbedMessage.DeleteAsync();
             await embedMessage.DeleteAsync();
-        }
-
-        [Command("uploadtest"), RequireRoles(RoleCheckMode.Any, "Administrator")]
-        public async Task aaa(CommandContext e)
-        {
-
-
-            PageList p = new PageList(WikiSite);
-            p.FillAndLoadFromFiles("Pages");
-            // p.FillFromAllPages("", 0, true, 1000);
-            //p.LoadWithMetadata();
-            //p.SaveToFiles("Pages");
-            p.Save();
-            //limit=500&user=&title=Special%3AListFiles&
-            //        var x = WikiSite.GetApiQueryResult("user=", "title=Special:ListFiles", 1000);
-
-            // p.FillFromCustomSpecialPage("ListFiles", 10000);
-            //p.FillFromCategoryTree("Category:All_Characters");
-            //  }
-            //WikiSite.fil
-
-           // string[] images = Directory.GetFiles("Images");
-           /* int count = 0;
-            foreach (string imageName in images)
-            {
-                
-                count++;
-                Wiki.Page l = new Wiki.Page(WikiSite, imageName);
-                l.UploadImageFromWeb("http://51.15.222.156/wiki/" + imageName.Replace("File:", ""), "N/A", "N/A", "N/A");
-                Console.WriteLine(count);
-            }*/
-                await e.RespondAsync("Done!");
         }
     }
 }

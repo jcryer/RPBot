@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "29fe6c4e5986418a13ef5a0ba73eb5379656d227"
+    "signature": "8b715d7303d56aa3fa8c7b9a97619bc12e2a03a0"
   },
   "compilationOptions": {},
   "targets": {
@@ -16,8 +16,8 @@
           "Microsoft.CodeAnalysis.CSharp.Scripting": "2.6.1",
           "Microsoft.CodeAnalysis.Scripting": "2.6.1",
           "Newtonsoft.Json": "10.0.3",
-          "SixLabors.ImageSharp": "1.0.0-beta0002",
-          "SixLabors.ImageSharp.Drawing": "1.0.0-beta0002",
+          "SixLabors.ImageSharp": "1.0.0-beta0005",
+          "SixLabors.ImageSharp.Drawing": "1.0.0-beta0005",
           "CommonMark": "0.1.0.0",
           "DotNetWikiBot": "1.0.0.0"
         },
@@ -87,7 +87,7 @@
           "System.AppContext": "4.3.0",
           "System.Collections": "4.3.0",
           "System.Collections.Concurrent": "4.3.0",
-          "System.Collections.Immutable": "1.4.0",
+          "System.Collections.Immutable": "1.3.1",
           "System.Console": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Diagnostics.FileVersionInfo": "4.3.0",
@@ -176,7 +176,7 @@
           "Microsoft.CodeAnalysis.Common": "2.6.1",
           "System.AppContext": "4.3.0",
           "System.Collections": "4.3.0",
-          "System.Collections.Immutable": "1.4.0",
+          "System.Collections.Immutable": "1.3.1",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Diagnostics.StackTrace": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
@@ -429,7 +429,12 @@
           }
         }
       },
-      "SixLabors.Core/1.0.0-beta0004": {
+      "SixLabors.Core/1.0.0-beta0006": {
+        "dependencies": {
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
         "runtime": {
           "lib/netcoreapp2.0/SixLabors.Core.dll": {
             "assemblyVersion": "0.1.0.0",
@@ -437,10 +442,9 @@
           }
         }
       },
-      "SixLabors.Fonts/1.0.0-beta0003": {
+      "SixLabors.Fonts/1.0.0-beta0007": {
         "dependencies": {
-          "SixLabors.Core": "1.0.0-beta0004",
-          "System.Collections.Immutable": "1.4.0"
+          "SixLabors.Core": "1.0.0-beta0006"
         },
         "runtime": {
           "lib/netstandard2.0/SixLabors.Fonts.dll": {
@@ -449,12 +453,10 @@
           }
         }
       },
-      "SixLabors.ImageSharp/1.0.0-beta0002": {
+      "SixLabors.ImageSharp/1.0.0-beta0005": {
         "dependencies": {
-          "SixLabors.Core": "1.0.0-beta0004",
-          "System.Buffers": "4.4.0",
-          "System.Memory": "4.4.0-preview2-25405-01",
-          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
+          "SixLabors.Core": "1.0.0-beta0006",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "runtime": {
           "lib/netstandard2.0/SixLabors.ImageSharp.dll": {
@@ -463,12 +465,11 @@
           }
         }
       },
-      "SixLabors.ImageSharp.Drawing/1.0.0-beta0002": {
+      "SixLabors.ImageSharp.Drawing/1.0.0-beta0005": {
         "dependencies": {
-          "SixLabors.Core": "1.0.0-beta0004",
-          "SixLabors.ImageSharp": "1.0.0-beta0002",
-          "SixLabors.Shapes": "1.0.0-beta0003",
-          "SixLabors.Shapes.Text": "1.0.0-beta0003"
+          "SixLabors.Fonts": "1.0.0-beta0007",
+          "SixLabors.ImageSharp": "1.0.0-beta0005",
+          "SixLabors.Shapes": "1.0.0-beta0007"
         },
         "runtime": {
           "lib/netstandard2.0/SixLabors.ImageSharp.Drawing.dll": {
@@ -477,25 +478,12 @@
           }
         }
       },
-      "SixLabors.Shapes/1.0.0-beta0003": {
+      "SixLabors.Shapes/1.0.0-beta0007": {
         "dependencies": {
-          "SixLabors.Core": "1.0.0-beta0004",
-          "System.Buffers": "4.4.0"
+          "SixLabors.Core": "1.0.0-beta0006"
         },
         "runtime": {
           "lib/netstandard2.0/SixLabors.Shapes.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "SixLabors.Shapes.Text/1.0.0-beta0003": {
-        "dependencies": {
-          "SixLabors.Fonts": "1.0.0-beta0003",
-          "SixLabors.Shapes": "1.0.0-beta0003"
-        },
-        "runtime": {
-          "lib/netstandard2.0/SixLabors.Shapes.Text.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -506,7 +494,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Buffers/4.4.0": {},
+      "System.Buffers/4.5.0": {},
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Targets": "1.1.0",
@@ -527,7 +515,18 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Collections.Immutable/1.4.0": {},
+      "System.Collections.Immutable/1.3.1": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0"
+        }
+      },
       "System.Collections.NonGeneric/4.3.0": {
         "dependencies": {
           "System.Diagnostics.Debug": "4.3.0",
@@ -818,7 +817,7 @@
       },
       "System.IO.Compression/4.3.0": {
         "dependencies": {
-          "System.Buffers": "4.4.0",
+          "System.Buffers": "4.5.0",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
           "System.IO": "4.3.0",
@@ -904,28 +903,14 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Memory/4.4.0-preview2-25405-01": {
+      "System.Memory/4.5.1": {
         "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25405.1"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netcoreapp2.0/System.Memory.dll": {
-            "rid": "unix",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25405.1"
-          },
-          "runtimes/win/lib/netcoreapp2.0/System.Memory.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.25405.1"
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.26606.5"
           }
         }
       },
@@ -1158,7 +1143,7 @@
       "System.Reflection.Metadata/1.4.2": {
         "dependencies": {
           "System.Collections": "4.3.0",
-          "System.Collections.Immutable": "1.4.0",
+          "System.Collections.Immutable": "1.3.1",
           "System.Diagnostics.Debug": "4.3.0",
           "System.IO": "4.3.0",
           "System.IO.Compression": "4.3.0",
@@ -1200,10 +1185,10 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "assemblyVersion": "4.0.3.0",
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.4.0",
             "fileVersion": "0.0.0.0"
           }
         }
@@ -1961,47 +1946,40 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
     },
-    "SixLabors.Core/1.0.0-beta0004": {
+    "SixLabors.Core/1.0.0-beta0006": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cvARRKizglXytmRuVfDA/qCsHzahFApCkzdwtHi07Im0xKL36tPf16gWnPWyEGQJXBd3NzkmXFKPSv1gRSd4zQ==",
-      "path": "sixlabors.core/1.0.0-beta0004",
-      "hashPath": "sixlabors.core.1.0.0-beta0004.nupkg.sha512"
+      "sha512": "sha512-AY/aNmjmsU6OftAA8ownjARTy7A8+Q+HjJMAOpIwhIxacOIGF8JhwUDAZw/g70+hfcjkbCzIKYwEF1vdanWz/g==",
+      "path": "sixlabors.core/1.0.0-beta0006",
+      "hashPath": "sixlabors.core.1.0.0-beta0006.nupkg.sha512"
     },
-    "SixLabors.Fonts/1.0.0-beta0003": {
+    "SixLabors.Fonts/1.0.0-beta0007": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Cpq+1P2koooh+eHyVmKn+MqvbhgVf1uF3+BtXDtobvM1fTctyplXBg30RGvmG4TAaxYt/VFfpggvHTDl+Dyxvw==",
-      "path": "sixlabors.fonts/1.0.0-beta0003",
-      "hashPath": "sixlabors.fonts.1.0.0-beta0003.nupkg.sha512"
+      "sha512": "sha512-0ICeSTwPaYH4K9K4GC1lhoDjo49oPMiqaUfkLJZ3vl6crsNBGf5JSbqZ/Ca2KbKkLNlMYlEXNDfieuAGaGHivA==",
+      "path": "sixlabors.fonts/1.0.0-beta0007",
+      "hashPath": "sixlabors.fonts.1.0.0-beta0007.nupkg.sha512"
     },
-    "SixLabors.ImageSharp/1.0.0-beta0002": {
+    "SixLabors.ImageSharp/1.0.0-beta0005": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sTOUx0gIDkIcedB/bcWNJIaeVEHV5UTEYxW0haMjV8fNO+ah2OyaH4Uxoago0OLYpM3RlSRCXZn5D8beyo2Sxw==",
-      "path": "sixlabors.imagesharp/1.0.0-beta0002",
-      "hashPath": "sixlabors.imagesharp.1.0.0-beta0002.nupkg.sha512"
+      "sha512": "sha512-mcaaf6v9WF1r25gmBQujFu/S20yotMRJSwqUaWj4LNS7OUUtBejPmfaWnejGeSQgZWDR4qjNTXY/namjDAgQiA==",
+      "path": "sixlabors.imagesharp/1.0.0-beta0005",
+      "hashPath": "sixlabors.imagesharp.1.0.0-beta0005.nupkg.sha512"
     },
-    "SixLabors.ImageSharp.Drawing/1.0.0-beta0002": {
+    "SixLabors.ImageSharp.Drawing/1.0.0-beta0005": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZbBgbsf338N7Zk57iUQshUAaVzXNleZmXf/NQfhOPUkQxdcw5dm8k0bMIywHXWcI4OTGMwsABoYfQ94w3vg4Bw==",
-      "path": "sixlabors.imagesharp.drawing/1.0.0-beta0002",
-      "hashPath": "sixlabors.imagesharp.drawing.1.0.0-beta0002.nupkg.sha512"
+      "sha512": "sha512-6cVQR2vrXlV/jgqJ9IzIlxwKc4DuTJDHkTQPZiavlqk0r2p9FjHOuxBxGreRt6BZrXhM50z+YQXKG5amVhvAlA==",
+      "path": "sixlabors.imagesharp.drawing/1.0.0-beta0005",
+      "hashPath": "sixlabors.imagesharp.drawing.1.0.0-beta0005.nupkg.sha512"
     },
-    "SixLabors.Shapes/1.0.0-beta0003": {
+    "SixLabors.Shapes/1.0.0-beta0007": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fwKhkZ3PLZ9cWebaZPvMsVAE1mfAYra6DH+J7EhPIbXjx+QGEVkI1irpWmOJ71k5qhd+d6DkYWe6P3ofNcwEOA==",
-      "path": "sixlabors.shapes/1.0.0-beta0003",
-      "hashPath": "sixlabors.shapes.1.0.0-beta0003.nupkg.sha512"
-    },
-    "SixLabors.Shapes.Text/1.0.0-beta0003": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zzDMRJpcSe0xDu8eaOU4uiN2JBJvt4ibBevDFcTjy6L2fEoIgDaly2SHMMr/Wkpnt4WoKK4DPhmxng4SpRWRhQ==",
-      "path": "sixlabors.shapes.text/1.0.0-beta0003",
-      "hashPath": "sixlabors.shapes.text.1.0.0-beta0003.nupkg.sha512"
+      "sha512": "sha512-3kRKxUjetbTgTQ+VtLI7rT/On1frW0WH4I9HfcDgiEoZsW1lnwUZZmGp85YRYb5IZXLnsJUketD9xT3e+rjC4w==",
+      "path": "sixlabors.shapes/1.0.0-beta0007",
+      "hashPath": "sixlabors.shapes.1.0.0-beta0007.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",
@@ -2010,12 +1988,12 @@
       "path": "system.appcontext/4.3.0",
       "hashPath": "system.appcontext.4.3.0.nupkg.sha512"
     },
-    "System.Buffers/4.4.0": {
+    "System.Buffers/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
-      "path": "system.buffers/4.4.0",
-      "hashPath": "system.buffers.4.4.0.nupkg.sha512"
+      "sha512": "sha512-xpHYjjtyTEpzMwtSQBWdVc3dPjLdQtvyUg6fBlBqcLl1r2Y7gDG/W/enAYOB98nG3oD3Q153Y2FBO8JDWd+0Xw==",
+      "path": "system.buffers/4.5.0",
+      "hashPath": "system.buffers.4.5.0.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",
@@ -2031,12 +2009,12 @@
       "path": "system.collections.concurrent/4.3.0",
       "hashPath": "system.collections.concurrent.4.3.0.nupkg.sha512"
     },
-    "System.Collections.Immutable/1.4.0": {
+    "System.Collections.Immutable/1.3.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-71hw5RUJRu5+q/geUY69gpXD8Upd12cH+F3MwpXV2zle7Bqqkrmc1JblOTuvUcgmdnUtQvBlV5e1d6RH+H2lvA==",
-      "path": "system.collections.immutable/1.4.0",
-      "hashPath": "system.collections.immutable.1.4.0.nupkg.sha512"
+      "sha512": "sha512-n+AGX7zmiZumW9aggOkXaHzUeAS3EfeTErnkKCusyONUozbTv+kMb8VE36m+ldV6kF9g57G2c641KCdgH9E0pg==",
+      "path": "system.collections.immutable/1.3.1",
+      "hashPath": "system.collections.immutable.1.3.1.nupkg.sha512"
     },
     "System.Collections.NonGeneric/4.3.0": {
       "type": "package",
@@ -2248,12 +2226,12 @@
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
     },
-    "System.Memory/4.4.0-preview2-25405-01": {
+    "System.Memory/4.5.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9YCuIA7uv/aEGbwUGQ4QhlrxFgPW/CPwz32xoxSwnv2SIDqmeDDtO4RF+tN+LUzVLBa/vm24xc5rxzSNo1VBdw==",
-      "path": "system.memory/4.4.0-preview2-25405-01",
-      "hashPath": "system.memory.4.4.0-preview2-25405-01.nupkg.sha512"
+      "sha512": "sha512-vcG3/MbfpxznMkkkaAblJi7RHOmuP7kawQMhDgLSuA1tRpRQYsFSCTxRSINDUgn2QNn2jWeLxv8er5BXbyACkw==",
+      "path": "system.memory/4.5.1",
+      "hashPath": "system.memory.4.5.1.nupkg.sha512"
     },
     "System.Net.Http/4.3.3": {
       "type": "package",
@@ -2388,12 +2366,12 @@
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9dLLuBxr5GNmOfl2jSMcsHuteEg32BEfUotmmUkmZjpR3RpVHE8YQwt0ow3p6prwA1ME8WqDVZqrr8z6H8G+Kw==",
-      "path": "system.runtime.compilerservices.unsafe/4.4.0",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512"
+      "sha512": "sha512-x/3d5xb+mc9e4I2GOOT+HPRWMZLbYjNN/kYKsb0fyUKcWizn/t1CIrGRLIBhv7H0ptYEt+WTTztdPmwSUMyKig==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.1",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
     },
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",
