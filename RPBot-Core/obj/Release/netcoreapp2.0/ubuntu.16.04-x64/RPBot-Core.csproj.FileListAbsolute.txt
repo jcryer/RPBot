@@ -1,0 +1,17 @@
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Release\netcoreapp2.0\ubuntu.16.04-x64\libhostpolicy.so
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Release\netcoreapp2.0\ubuntu.16.04-x64\libhostfxr.so
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core.deps.json
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core.runtimeconfig.json
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core.runtimeconfig.dev.json
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core.dll
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core.pdb
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Release\netcoreapp2.0\ubuntu.16.04-x64\CommonMark.dll
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Release\netcoreapp2.0\ubuntu.16.04-x64\DotNetWikiBot.dll
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core.csprojAssemblyReference.cache
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core.csproj.CoreCompileInputs.cache
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core.AssemblyInfoInputs.cache
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core.AssemblyInfo.cs
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core.csproj.CopyComplete
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core.dll
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Release\netcoreapp2.0\ubuntu.16.04-x64\RPBot-Core.pdb

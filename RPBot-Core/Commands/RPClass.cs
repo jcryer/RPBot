@@ -136,10 +136,15 @@ namespace RPBot
                 List<InstanceObject.ChannelTemplate> input = JsonConvert.DeserializeObject<List<InstanceObject.ChannelTemplate>>(File.ReadAllText("Data/ChannelTemplates.txt"));
                 ChannelTemplates = input;
             }
-            if (File.ReadAllLines("Data/CardData.txt").Any())
+            CardList = new Dictionary<string, string>();
+            if (Directory.GetFiles("Cards/Done/") != null)
             {
-                Dictionary<string, string> input = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText("Data/CardData.txt"));
-                CardList = input;
+                foreach (var file in Directory.GetFiles("Cards/Done/")) {
+                    if (!CardList.ContainsKey(file.Split('-')[1].Split('.')[0]))
+                    {
+                        CardList.Add(file.Split('-')[1].Split('.')[0], $"Cards/Done/front-{ file.Split('-')[1].Split('.')[0] }.png¬Cards/Done/back-{file.Split('-')[1].Split('.')[0] }.png");
+                    }
+                }
             }
             if (File.ReadAllLines("Data/InstanceData.txt").Any())
             {
@@ -230,7 +235,6 @@ namespace RPBot
             while (true)
             {
 				await d.UpdateStatusAsync(new DiscordActivity("Time pass: " + DateTime.UtcNow.Hour + ":" + DateTime.UtcNow.Minute.ToString("00"), ActivityType.Watching)); 
-
                 string TimePhase = "";
                 if (DateTime.UtcNow.Minute == 0 && DateTime.UtcNow.Hour == 6 && y.AddHours(2) < DateTime.UtcNow)
                 {

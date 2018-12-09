@@ -17,10 +17,10 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("card"), IsMuted, RequireRoles(RoleCheckMode.Any, "Staff")]
+    [Group("card"), IsMuted]
     class CardClass : BaseCommandModule
     {
-        [Command("create")]
+        [Command("create"), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task ShowCard(CommandContext e, [Description("Name of the character")]string characterName, [Description("Role - 'Hero', 'Villain' or 'Rogue'")]string role,
             [Description("Image for the front - URL")]string frontImage,
             [Description("Icon for the back - URL")]string backImage, [Description("Hex colour of background")]string hex, [Description("Location of birth")]string born, [Description("Height (feet & inches)")]string height, [Description("Weight (kg)")]string weight,
@@ -81,7 +81,7 @@ namespace RPBot
             }
         }
 
-        [Command("add")]
+        [Command("add"), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task AddCard(CommandContext e, [Description("Name of the character")]string characterName, [Description("Front Image")]string front, [Description("Back image")]string back)
         {
             if (File.Exists($"Cards/Done/front-{characterName}.png"))
@@ -145,7 +145,7 @@ namespace RPBot
             await interactivity.SendPaginatedMessage(e.Channel, e.Member, interactivityPages, timeoutoverride: TimeSpan.FromSeconds(60));
         }
 
-        [Command("delete")]
+        [Command("delete"), RequireRoles(RoleCheckMode.Any, "Staff")]
         public async Task DeleteCard(CommandContext e, [Description("Name of the character")]string characterName)
         {
             if (File.Exists($"Cards/Done/front-{characterName}.png"))

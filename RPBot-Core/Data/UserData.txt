@@ -674,7 +674,7 @@
   {
     "UserData": {
       "UserID": 158284124770140161,
-      "Username": "Bananas",
+      "Username": "Nanas🍡",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -2212,8 +2212,8 @@
   {
     "UserData": {
       "UserID": 313024849314578442,
-      "Username": "Tartarus",
-      "Role": 0,
+      "Username": "Michael",
+      "Role": 1,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -2500,7 +2500,7 @@
   {
     "UserData": {
       "UserID": 269924664401330177,
-      "Username": "Santathulhu!",
+      "Username": "๖̶̶̶ۣۣۜۜ͜ζ͜͡Santathulhu",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
