@@ -53,20 +53,20 @@ namespace RPBot
                 else points = UserData.Infamy;
                 int Bounty = 0;
 
-                if (points > 250) return 150;
+                if (points > 250) return 600;
                 if (points < 1) return 0;
-                if (rank == 'S') return 250;
-                if (rank == 'A') Bounty = 35;
-                if (rank == 'B') Bounty = 25;
-                if (rank == 'C') Bounty = 15;
-                if (rank == 'D') Bounty = 5;
+                if (rank == 'S') return 600;
+                if (rank == 'A') Bounty = 175;
+                if (rank == 'B') Bounty = 125;
+                if (rank == 'C') Bounty = 75;
+                if (rank == 'D') Bounty = 25;
 
-                if (points <= 25) return Bounty + 5;
-                if (points <= 50) return Bounty + 15;
-                if (points <= 100) return Bounty + 25;
-                if (points <= 150) return Bounty + 35;
-                if (points <= 200) return Bounty + 45;
-                if (points <= 250) return Bounty + 55;
+                if (points <= 25) return Bounty + 25;
+                if (points <= 50) return Bounty + 75;
+                if (points <= 100) return Bounty + 125;
+                if (points <= 150) return Bounty + 175;
+                if (points <= 200) return Bounty + 225;
+                if (points <= 250) return Bounty + 275;
 
                 return 0;
             }
