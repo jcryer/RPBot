@@ -472,6 +472,25 @@ namespace RPBot
             await e.Message.DeleteAsync();
         }
 
+        [Command("edit"), Description("Tell the bot what to say"), RequireOwner, IsMuted]
+        public async Task Edit(CommandContext e, string messageID, [RemainingText, Description("What to say?")] string text)
+        {
+            var message = await e.Channel.GetMessageAsync(ulong.Parse(messageID));
+            await message.ModifyAsync(text);
+
+            DiscordEmbedBuilder b = new DiscordEmbedBuilder
+            {
+                Title = "Edit Executed",
+                Color = DiscordColor.CornflowerBlue
+            }
+            .AddField("By", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
+            .AddField("Channel", e.Message.Channel.Name, true)
+            .AddField("Message", message.Content, false);
+
+            await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b.Build());
+            await e.Message.DeleteAsync();
+        }
+
 
         [Command("embed"), Description("Allows you to make the bot say messages in an embed\n**Usage:**\n`!embed <Title>:<Description>:<Field 1 Title>:<Field 1 Description>:` etc."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
         public async Task Embed(CommandContext e, [RemainingText, Description("What to say?")] string text)
