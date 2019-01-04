@@ -586,7 +586,7 @@ namespace RPBot
         [Command("takerole"), RequireOwner]
         public async Task TakeRole(CommandContext e, DiscordMember member, DiscordRole role)
         {
-            await member.GrantRoleAsync(role);
+            await member.RevokeRoleAsync(role);
         }
 
         [Command("rip"), RequireOwner] 

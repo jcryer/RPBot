@@ -45,7 +45,7 @@ namespace RPBot
             public bool Active { get; set; }
             public bool Started { get; set; }
             public DateTime Timer { get; set; }
-            
+
             public RootObject()
             {
                 Players = new List<UserObject>();
