@@ -582,7 +582,6 @@ namespace RPBot
             await member.GrantRoleAsync(role);
         }
 
-
         [Command("takerole"), RequireOwner]
         public async Task TakeRole(CommandContext e, DiscordMember member, DiscordRole role)
         {

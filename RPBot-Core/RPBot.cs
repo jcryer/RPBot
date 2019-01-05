@@ -439,6 +439,11 @@ We hope you enjoy your stay!")
                         }
                     }
                 }
+
+                if (e.Message.Content == "@someone" && (e.Author as DiscordMember).Roles.Any(x => x.Name == "Staff")) {
+                    var list = await e.Guild.GetAllMembersAsync();
+                    await e.Channel.SendMessageAsync("I choose... " + list.PickRandom().Mention + "!");
+                }
             }
         }
 
