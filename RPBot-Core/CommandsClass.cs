@@ -187,7 +187,19 @@ namespace RPBot
                         deletThis.Add(m);
                 }
                 if (deletThis.Any())
-                    await ctx.Channel.DeleteMessagesAsync(deletThis);
+                {
+                    try
+                    {
+                        await ctx.Channel.DeleteMessagesAsync(deletThis);
+                    }
+                    catch
+                    {
+                        foreach (var msg in deletThis)
+                        {
+                            await msg.DeleteAsync();
+                        }
+                    }
+                }
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
@@ -211,7 +223,17 @@ namespace RPBot
                     return;
                 }
                 var ms = await ctx.Channel.GetMessagesBeforeAsync(message.Id, limit);
-                await ctx.Channel.DeleteMessagesAsync(ms);
+                try
+                {
+                    await ctx.Channel.DeleteMessagesAsync(ms);
+                }
+                catch
+                {
+                    foreach (var msg in ms)
+                    {
+                        await msg.DeleteAsync();
+                    }
+                }
                 await Task.Delay(2000);
                 await ctx.Message.DeleteAsync();
                 ms.Reverse();
@@ -256,7 +278,17 @@ namespace RPBot
                     var messageListSplit = Extensions.Split(deletThis, 100);
                     foreach (var messageList in messageListSplit)
                     {
-                        await ctx.Channel.DeleteMessagesAsync(messageList);
+                        try
+                        {
+                            await ctx.Channel.DeleteMessagesAsync(messageList);
+                        }
+                        catch
+                        {
+                            foreach (var msg in messageList)
+                            {
+                                await msg.DeleteAsync();
+                            }
+                        }
                         await Task.Delay(500);
                     }
                     await ctx.Channel.DeleteMessageAsync(from);
@@ -298,7 +330,19 @@ namespace RPBot
                         deletThis.Add(m);
                 }
                 if (deletThis.Any())
-                    await ctx.Channel.DeleteMessagesAsync(deletThis);
+                {
+                    try
+                    {
+                        await ctx.Channel.DeleteMessagesAsync(deletThis);
+                    }
+                    catch
+                    {
+                        foreach (var msg in deletThis)
+                        {
+                            await msg.DeleteAsync();
+                        }
+                    }
+                }
                 var resp = await ctx.RespondAsync($"Latest messages by {user?.Mention} (ID:{user?.Id}) deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
@@ -319,7 +363,19 @@ namespace RPBot
                 var deletThis = ms.Where(m => m.Author.Id == ctx.Client.CurrentUser.Id || m.Content.StartsWith("!"))
                     .ToList();
                 if (deletThis.Any())
-                    await ctx.Channel.DeleteMessagesAsync(deletThis);
+                {
+                    try
+                    {
+                        await ctx.Channel.DeleteMessagesAsync(deletThis);
+                    }
+                    catch
+                    {
+                        foreach (var msg in deletThis)
+                        {
+                            await msg.DeleteAsync();
+                        }
+                    }
+                }
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
@@ -340,7 +396,19 @@ namespace RPBot
                 var deletThis = ms.Where(m => m.Author.IsBot || m.Content.StartsWith("!"))
                     .ToList();
                 if (deletThis.Any())
-                    await ctx.Channel.DeleteMessagesAsync(deletThis);
+                {
+                    try
+                    {
+                        await ctx.Channel.DeleteMessagesAsync(deletThis);
+                    }
+                    catch
+                    {
+                        foreach (var msg in deletThis)
+                        {
+                            await msg.DeleteAsync();
+                        }
+                    }
+                }
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
@@ -361,7 +429,19 @@ namespace RPBot
                 Regex ImageRegex = new Regex(@"\.(png|gif|jpg|jpeg|tiff|webp)");
                 var deleteThis = ms.Where(m => ImageRegex.IsMatch(m.Content) || m.Attachments.Any()).ToList();
                 if (deleteThis.Any())
-                    await ctx.Channel.DeleteMessagesAsync(deleteThis);
+                {
+                    try
+                    {
+                        await ctx.Channel.DeleteMessagesAsync(deleteThis);
+                    }
+                    catch
+                    {
+                        foreach (var msg in deleteThis)
+                        {
+                            await msg.DeleteAsync();
+                        }
+                    }
+                }
                 var resp = await ctx.RespondAsync("Latest messages deleted.");
                 await Task.Delay(2000);
                 await resp.DeleteAsync();
@@ -551,7 +631,17 @@ namespace RPBot
                 }
                 await e.RespondAsync(ret);
             }
-            await e.Channel.DeleteMessagesAsync(messageList);
+            try
+            {
+                await e.Channel.DeleteMessagesAsync(messageList);
+            }
+            catch
+            {
+                foreach (var msg in messageList)
+                {
+                    await msg.DeleteAsync();
+                }
+            }
 
         }
 

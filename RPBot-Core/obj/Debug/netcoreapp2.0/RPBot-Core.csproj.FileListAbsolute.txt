@@ -37,19 +37,6 @@ E:/Desktop/Coding/Bots/RPBot/RPBot-Core/obj/Debug/netcoreapp2.0/RPBot-Core.Assem
 E:/Desktop/Coding/Bots/RPBot/RPBot-Core/obj/Debug/netcoreapp2.0/RPBot-Core.AssemblyInfo.cs
 E:/Desktop/Coding/Bots/RPBot/RPBot-Core/obj/Debug/netcoreapp2.0/RPBot-Core.dll
 E:/Desktop/Coding/Bots/RPBot/RPBot-Core/obj/Debug/netcoreapp2.0/RPBot-Core.pdb
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/bin/Debug/netcoreapp2.0/RPBot-Core.deps.json
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/bin/Debug/netcoreapp2.0/RPBot-Core.runtimeconfig.json
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/bin/Debug/netcoreapp2.0/RPBot-Core.runtimeconfig.dev.json
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/bin/Debug/netcoreapp2.0/RPBot-Core.dll
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/bin/Debug/netcoreapp2.0/RPBot-Core.pdb
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/bin/Debug/netcoreapp2.0/CommonMark.dll
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/bin/Debug/netcoreapp2.0/DotNetWikiBot.dll
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/obj/Debug/netcoreapp2.0/RPBot-Core.csprojResolveAssemblyReference.cache
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/obj/Debug/netcoreapp2.0/RPBot-Core.csproj.CoreCompileInputs.cache
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/obj/Debug/netcoreapp2.0/RPBot-Core.AssemblyInfoInputs.cache
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/obj/Debug/netcoreapp2.0/RPBot-Core.AssemblyInfo.cs
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/obj/Debug/netcoreapp2.0/RPBot-Core.dll
-E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/obj/Debug/netcoreapp2.0/RPBot-Core.pdb
 C:/Users/Joseph/Desktop/RPBot/RPBot-Core/bin/Debug/netcoreapp2.0/RPBot-Core.deps.json
 C:/Users/Joseph/Desktop/RPBot/RPBot-Core/bin/Debug/netcoreapp2.0/RPBot-Core.runtimeconfig.json
 C:/Users/Joseph/Desktop/RPBot/RPBot-Core/bin/Debug/netcoreapp2.0/RPBot-Core.runtimeconfig.dev.json
@@ -77,3 +64,16 @@ C:/Users/Joseph/Desktop/RPBot/RPBot-Core/obj/Debug/netcoreapp2.0/RPBot-Core.pdb
 /Users/Joseph/Desktop/Joseph's Stuff/GitHub/RPBot/RPBot-Core/bin/Debug/netcoreapp2.0/RPBot-Core.pdb
 /Users/Joseph/Desktop/Joseph's Stuff/GitHub/RPBot/RPBot-Core/bin/Debug/netcoreapp2.0/CommonMark.dll
 /Users/Joseph/Desktop/Joseph's Stuff/GitHub/RPBot/RPBot-Core/bin/Debug/netcoreapp2.0/DotNetWikiBot.dll
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Debug\netcoreapp2.0\RPBot-Core.deps.json
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Debug\netcoreapp2.0\RPBot-Core.runtimeconfig.json
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Debug\netcoreapp2.0\RPBot-Core.runtimeconfig.dev.json
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Debug\netcoreapp2.0\RPBot-Core.dll
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Debug\netcoreapp2.0\RPBot-Core.pdb
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Debug\netcoreapp2.0\CommonMark.dll
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\bin\Debug\netcoreapp2.0\DotNetWikiBot.dll
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.csprojResolveAssemblyReference.cache
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.csproj.CoreCompileInputs.cache
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.AssemblyInfoInputs.cache
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.AssemblyInfo.cs
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.dll
+E:\Desktop\Coding\Bots\RP-Bot\RPBot-Core\obj\Debug\netcoreapp2.0\RPBot-Core.pdb

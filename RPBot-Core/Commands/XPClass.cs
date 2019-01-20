@@ -180,14 +180,28 @@ namespace RPBot
                 {
                     await c.DeleteMessagesAsync(await c.GetMessagesAsync(100));
                 }
-                catch { }
+                catch {
+                    var msgs = await c.GetMessagesAsync(100);
+
+                    foreach (var msg in msgs)
+                    {
+                        await msg.DeleteAsync();
+                    }
+                }
                 return;
             }
             try
             {
                 await c.DeleteMessagesAsync(await c.GetMessagesAsync(100));
             }
-            catch { }
+            catch {
+                var msgs = await c.GetMessagesAsync(100);
+
+                foreach (var msg in msgs)
+                {
+                    await msg.DeleteAsync();
+                }
+            }
 
             int longestName = 1;
             if (RPClass.Users.Any()) longestName = RPClass.Users.Where(x => x.Xp > 0).Max(x => x.UserData.Username.Length) + 2;
@@ -244,14 +258,30 @@ namespace RPBot
                 {
                     await RankingChannel.DeleteMessagesAsync(await RankingChannel.GetMessagesAsync(100));
                 }
-                catch { }
+                catch {
+
+                    var msgs = await RankingChannel.GetMessagesAsync(100);
+
+                    foreach (var msg in msgs)
+                    {
+                        await msg.DeleteAsync();
+                    }
+                }
                 return;
             }
             try
             {
                 await RankingChannel.DeleteMessagesAsync(await RankingChannel.GetMessagesAsync(100));
             }
-            catch { }
+            catch {
+
+                var msgs = await RankingChannel.GetMessagesAsync(100);
+
+                foreach (var msg in msgs)
+                {
+                    await msg.DeleteAsync();
+                }
+            }
             List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
 
 			SortedUsers = RPClass.Users.Where(x => x.UserData.Role == type).OrderByDescending(x => (x.Xp)).ToList();
@@ -282,14 +312,30 @@ namespace RPBot
                 {
                     await RankingChannel.DeleteMessagesAsync(await RankingChannel.GetMessagesAsync(100));
                 }
-                catch { }
+                catch {
+
+                    var msgs = await RankingChannel.GetMessagesAsync(100);
+
+                    foreach (var msg in msgs)
+                    {
+                        await msg.DeleteAsync();
+                    }
+                }
                 return;
             }
             try
             {
                 await RankingChannel.DeleteMessagesAsync(await RankingChannel.GetMessagesAsync(100));
             }
-            catch { }
+            catch {
+
+                var msgs = await RankingChannel.GetMessagesAsync(100);
+
+                foreach (var msg in msgs)
+                {
+                    await msg.DeleteAsync();
+                }
+            }
             List<string> tableStrings = new List<string>();
             int positionMax = 4;
             int nameMax = RPClass.Guilds.Max(x => x.Name.Length) + 2;

@@ -25,16 +25,23 @@ namespace RPBot
         {
             if (type == 0)
             {
+                var messages = await RPClass.FameChannel.GetMessagesAsync(100);
                 try
                 {
-                    await RPClass.FameChannel.DeleteMessagesAsync(await RPClass.FameChannel.GetMessagesAsync(100));
-
-                    await RPClass.FameChannel.SendMessageAsync("**========== Hero HQ Bounty Board ==========**");
-                    await UpdateFameAndInfamy(2);
-                    await RPClass.FameChannel.SendMessageAsync("**========== Black Market Bounty Board ==========**");
-                    await UpdateFameAndInfamy(1);
+                    await RPClass.FameChannel.DeleteMessagesAsync(messages);
                 }
-                catch { }
+                catch
+                {
+                    foreach (var msg in messages)
+                    {
+                        await msg.DeleteAsync();
+                    }
+                }
+
+                await RPClass.FameChannel.SendMessageAsync("**========== Hero HQ Bounty Board ==========**");
+                await UpdateFameAndInfamy(2);
+                await RPClass.FameChannel.SendMessageAsync("**========== Black Market Bounty Board ==========**");
+                await UpdateFameAndInfamy(1);
                 return;
             }
 
