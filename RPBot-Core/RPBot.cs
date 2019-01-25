@@ -429,7 +429,7 @@ We hope you enjoy your stay!")
                             var roles = new List<DiscordRole>();
                             foreach (var ping in list)
                             {
-                                var pingCut = ping.Substring(1, ping.Length - 2);
+                                var pingCut = ping.Substring(2, ping.Length - 3);
 
                                 if (e.Guild.Roles.Any(x => x.Name == pingCut))
                                 {
