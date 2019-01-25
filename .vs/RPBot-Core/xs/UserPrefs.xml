@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{F2514633-3B51-4CCE-80C8-E20780D27F61}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RPBot-Core/RPBot.cs">
+    <Files>
+      <File FileName="RPBot-Core/Commands/SVClass.cs" Line="25" Column="1" />
+      <File FileName="RPBot-Core/Objects/SVObject.cs" Line="44" Column="35" />
+      <File FileName="RPBot-Core/CommandsClass.cs" Line="584" Column="1" />
+      <File FileName="RPBot-Core/RPBot.cs" Line="421" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.RPBot-Core PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
