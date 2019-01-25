@@ -423,6 +423,7 @@ We hope you enjoy your stay!")
                     {
                         MatchCollection matchList = Regex.Matches(e.Message.Content, "`{0,3}{{(.+?)}}`{0,3}");
                         var list = matchList.Cast<Match>().Select(match => match.Value).ToList();
+                        int changes = 0;
                         if (list.Any())
                         {
                             string content = e.Message.Content;
@@ -448,14 +449,17 @@ We hope you enjoy your stay!")
                                         catch (Exception exception) { }
                                     }
                                     content = content.Replace(ping, role.Mention);
+                                    changes++;
                                 }
                             }
-
-                            await e.Channel.SendMessageAsync(content);
-                            await e.Message.DeleteAsync();
-                            foreach (var role in roles)
+                            if (changes != 0)
                             {
-                                await role.UpdateAsync(mentionable: false);
+                                await e.Channel.SendMessageAsync(content);
+                                await e.Message.DeleteAsync();
+                                foreach (var role in roles)
+                                {
+                                    await role.UpdateAsync(mentionable: false);
+                                }
                             }
                         }
                     }
