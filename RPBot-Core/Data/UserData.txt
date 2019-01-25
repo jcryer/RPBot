@@ -1218,7 +1218,7 @@
   {
     "UserData": {
       "UserID": 358907314503417856,
-      "Username": "RedHood",
+      "Username": "Red Hood",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -1314,8 +1314,8 @@
   {
     "UserData": {
       "UserID": 192287928611766281,
-      "Username": "Darth Tyrael",
-      "Role": 0,
+      "Username": "Soul Eater",
+      "Role": 2,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -2084,8 +2084,8 @@
   {
     "UserData": {
       "UserID": 242720599158423554,
-      "Username": "Logan Moskowitz",
-      "Role": 4,
+      "Username": "Coffee",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -5508,7 +5508,7 @@
   {
     "UserData": {
       "UserID": 289526224731242515,
-      "Username": "死去的皇帝",
+      "Username": "死んだ皇帝",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -5732,7 +5732,7 @@
   {
     "UserData": {
       "UserID": 366341433147260961,
-      "Username": "♡ Psychopathic Tendencies ♡",
+      "Username": "♡ Annoyingly Cute ♡",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -5828,7 +5828,7 @@
   {
     "UserData": {
       "UserID": 478807644807626756,
-      "Username": "Kea Enazami",
+      "Username": "I don't wanna know,care or die",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
