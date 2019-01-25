@@ -421,7 +421,7 @@ We hope you enjoy your stay!")
                 {
                     if ((e.Author as DiscordMember).Roles.Any(x => x == RPClass.StaffRole)) 
                     {
-                        MatchCollection matchList = Regex.Matches(e.Message.Content, "{{(.+?)}}");
+                        MatchCollection matchList = Regex.Matches(e.Message.Content, "`{0,3}{{(.+?)}}`{0,3}");
                         var list = matchList.Cast<Match>().Select(match => match.Value).ToList();
                         if (list.Any())
                         {
@@ -429,6 +429,10 @@ We hope you enjoy your stay!")
                             var roles = new List<DiscordRole>();
                             foreach (var ping in list)
                             {
+                                if (ping.Contains("`"))
+                                {
+                                    continue;
+                                }
                                 var pingCut = ping.Substring(2, ping.Length - 4);
 
                                 if (e.Guild.Roles.Any(x => x.Name == pingCut))
