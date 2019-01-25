@@ -2707,12 +2707,10 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection/2.0.0": {
-      "sha512": "V6xeuEEpIIygDHtOtJ+0X0qkKtVSUS1+kwOC3O4pH0depJf8AfofGo8hanOxoRgooj7WmTtPcgOIjwAteEe28A==",
+      "sha512": "wakg18gHYiUL1pcjjyZuYk6OvDpbSw1E7IWxm78TMepsr+gQ8W0tWzuRm0q/9RFblngwPwo15rrgZSUV51W5Iw==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection/2.0.0",
       "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
@@ -2720,12 +2718,10 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
-      "sha512": "P4dK3DZQFsp7fFzkBu9H9jesBj0KB3O9c50n9FeAOIF+A8aQKBRj63luC9gPqvcedNdMfYQoEUe5dLps1sqvuA==",
+      "sha512": "eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
       "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
@@ -3245,11 +3241,10 @@
       ]
     },
     "Newtonsoft.Json/10.0.3": {
-      "sha512": "wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
+      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
       "type": "package",
       "path": "newtonsoft.json/10.0.3",
       "files": [
-        ".nupkg.metadata",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -5120,7 +5115,7 @@
       ]
     },
     "System.Memory/4.5.1": {
-      "sha512": "oonnLQPZAGD21qtNMG4EtVmbYOInk2jV7M+g108B6OHOb67ZOaWnA/K8P5oQ6uK9wxKzB1iEXSChQOi2scKOqA==",
+      "sha512": "vcG3/MbfpxznMkkkaAblJi7RHOmuP7kawQMhDgLSuA1tRpRQYsFSCTxRSINDUgn2QNn2jWeLxv8er5BXbyACkw==",
       "type": "package",
       "path": "system.memory/4.5.1",
       "files": [
@@ -6080,11 +6075,10 @@
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/4.5.1": {
-      "sha512": "x/3d5xb+mc9e4I2GOOT+HPRWMZLbYjNN/kYKsb0fyUKcWizn/t1CIrGRLIBhv7H0ptYEt+WTTztdPmwSUMyKig==",
+      "sha512": "qUJMNWhbm9oZ3XaMFiEMiYmRPszbnXIkRIi7+4b2Md2xZ6JUOepf0/kY3S85qistRohl9OdMe4PsO+RdG2kTIQ==",
       "type": "package",
       "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -7713,33 +7707,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Joseph\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/Joseph/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "E:\\Desktop\\Coding\\Bots\\RP-Bot\\RPBot-Core\\RPBot-Core.csproj",
+      "projectUniqueName": "/Users/Joseph/Desktop/Joseph's Stuff/GitHub/RPBot/RPBot-Core/RPBot-Core.csproj",
       "projectName": "RPBot-Core",
-      "projectPath": "E:\\Desktop\\Coding\\Bots\\RP-Bot\\RPBot-Core\\RPBot-Core.csproj",
-      "packagesPath": "C:\\Users\\Joseph\\.nuget\\packages\\",
-      "outputPath": "E:\\Desktop\\Coding\\Bots\\RP-Bot\\RPBot-Core\\obj\\",
+      "projectPath": "/Users/Joseph/Desktop/Joseph's Stuff/GitHub/RPBot/RPBot-Core/RPBot-Core.csproj",
+      "packagesPath": "/Users/Joseph/.nuget/packages/",
+      "outputPath": "/Users/Joseph/Desktop/Joseph's Stuff/GitHub/RPBot/RPBot-Core/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Joseph\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/Joseph/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://www.myget.org/F/dsharpplus-nightly/api/v3/index.json": {}
       },
@@ -7757,11 +7746,25 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Scripting": {
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
-            "version": "2.6.1"
+            "version": "2.0",
+            "autoReferenced": true
+          },
+          "DSharpPlus": {
+            "target": "Package",
+            "version": "4.0.0-beta-00417"
+          },
+          "DSharpPlus.CommandsNext": {
+            "target": "Package",
+            "version": "4.0.0-beta-00417"
           },
           "DSharpPlus.Interactivity": {
+            "target": "Package",
+            "version": "4.0.0-beta-00417"
+          },
+          "DSharpPlus.VoiceNext": {
             "target": "Package",
             "version": "4.0.0-beta-00417"
           },
@@ -7769,42 +7772,29 @@
             "target": "Package",
             "version": "2.6.1"
           },
-          "System.Runtime": {
-            "target": "Package",
-            "version": "4.1.2"
-          },
-          "DSharpPlus.CommandsNext": {
-            "target": "Package",
-            "version": "4.0.0-beta-00417"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
-          "SixLabors.ImageSharp": {
-            "target": "Package",
-            "version": "1.0.0-beta0005"
-          },
           "Microsoft.CodeAnalysis.CSharp.Scripting": {
             "target": "Package",
             "version": "2.6.1"
           },
-          "SixLabors.ImageSharp.Drawing": {
+          "Microsoft.CodeAnalysis.Scripting": {
             "target": "Package",
-            "version": "1.0.0-beta0005"
-          },
-          "DSharpPlus": {
-            "target": "Package",
-            "version": "4.0.0-beta-00417"
+            "version": "2.6.1"
           },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "10.0.3"
           },
-          "DSharpPlus.VoiceNext": {
+          "SixLabors.ImageSharp": {
             "target": "Package",
-            "version": "4.0.0-beta-00417"
+            "version": "1.0.0-beta0005"
+          },
+          "SixLabors.ImageSharp.Drawing": {
+            "target": "Package",
+            "version": "1.0.0-beta0005"
+          },
+          "System.Runtime": {
+            "target": "Package",
+            "version": "4.1.2"
           }
         },
         "imports": [

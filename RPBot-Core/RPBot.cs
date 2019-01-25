@@ -419,6 +419,43 @@ We hope you enjoy your stay!")
                 }
                 if (!e.Message.Content.StartsWith("!"))
                 {
+                    if ((e.Author as DiscordMember).Roles.Any(x => x == RPClass.StaffRole)) 
+                    {
+                        MatchCollection matchList = Regex.Matches(e.Message.Content, "{{(.+?)}}");
+                        var list = matchList.Cast<Match>().Select(match => match.Value).ToList();
+                        if (list.Any())
+                        {
+                            string content = e.Message.Content;
+                            var roles = new List<DiscordRole>();
+                            foreach (var ping in list)
+                            {
+                                var pingCut = ping.Substring(1, ping.Length - 2);
+
+                                if (e.Guild.Roles.Any(x => x.Name == pingCut))
+                                {
+                                    var role = e.Guild.Roles.First(x => x.Name == pingCut);
+                                    if (!role.IsMentionable)
+                                    {
+                                        try
+                                        {
+                                            await role.UpdateAsync(mentionable: true);
+                                            roles.Add(role);
+                                        }
+                                        catch { }
+                                    }
+                                    content = content.Replace(ping, role.Mention);
+                                }
+                            }
+
+                            await e.Channel.SendMessageAsync(content);
+                            await e.Message.DeleteAsync();
+                            foreach (var role in roles)
+                            {
+                                await role.UpdateAsync(mentionable: false);
+                            }
+                        }
+                    }
+
                     if (RPClass.SpeechList.Any(x => x.Id == e.Author.Id) && !e.Message.Content.StartsWith("*"))
                     {
                         SpeechObject.RootObject savedName = RPClass.SpeechList.First(x => x.Id == e.Author.Id);
@@ -438,11 +475,6 @@ We hope you enjoy your stay!")
 
                         }
                     }
-                }
-
-                if (e.Message.Content == "@someone" && (e.Author as DiscordMember).Roles.Any(x => x.Name == "Staff")) {
-                    var list = await e.Guild.GetAllMembersAsync();
-                    await e.Channel.SendMessageAsync("I choose... " + list.PickRandom().Mention + "!");
                 }
             }
         }
