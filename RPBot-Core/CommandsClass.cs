@@ -59,7 +59,15 @@ namespace RPBot
             int randomChoice = RPClass.Random.Next(0, Choices.Length);
             await e.RespondAsync("Hmm. I choose... " + Choices[randomChoice]);
         }
-        
+
+        [Command("weather"), Description("Command to create a one-day weather image."), IsMuted]
+        public async Task WeatherCommand(CommandContext e, int high, int low, [Description("Weather Type - 0: Sunny, 1: Partly Cloudy, 2: Mostly Cloudy, 3: Cloudy, 4: Showers, 5: Rain, 6: Heavy Rain, 7: Rain And Snow, 8: Snow, 9: Hail, 10: Heavy Snow, 11: Thunderstorm")]int weatherType, int windSpeed, string windDirection, int humidity)
+        {
+            string fileName = Weather.GenerateOneDay(new WeatherObject(DateTime.Today, high, low, (WeatherType)weatherType, windSpeed, windDirection, humidity), DateTime.Today.ToString("dd-MM-yyyy.png"));
+            await e.RespondWithFileAsync(fileName);
+            File.Delete(fileName);
+        }
+
         [Command("hackban"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
         public async Task HackBan(CommandContext e,[Description("User ID")] ulong userId)
         {

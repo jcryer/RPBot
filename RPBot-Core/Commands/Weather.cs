@@ -10,7 +10,7 @@ using System.Text;
 
 namespace RPBot
 {
-    class Weather
+    static class Weather
     {
         private static Random r = new Random(DateTime.Now.Millisecond);
         static Coordinate Coords = new Coordinate(52.135712, 0);
