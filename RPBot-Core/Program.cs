@@ -24,13 +24,14 @@ namespace RPBot
 
         private async Task Run(string[] args)
         {
-          /*  using (var db = new Context())
-            {
-                db.Database.CreateIfNotExists();
-                var user = new User() { UserID = 00001010101010, Characters = "oof", IsMuted = false, MutedRoles = "test" };
-                db.Users.Add(user);
-                db.SaveChanges();
-            }*/
+            /*  using (var db = new Context())
+              {
+                  db.Database.CreateIfNotExists();
+                  var user = new User() { UserID = 00001010101010, Characters = "oof", IsMuted = false, MutedRoles = "test" };
+                  db.Users.Add(user);
+                  db.SaveChanges();
+              }*/
+
             if (args.Any())
             {
                 RPClass.Restarted = true;

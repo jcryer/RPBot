@@ -1508,8 +1508,8 @@
   {
     "UserData": {
       "UserID": 410221896190394391,
-      "Username": "Abaddon",
-      "Role": 3,
+      "Username": "Dante 🍀🍀",
+      "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
       "BloodPoints": 0,
@@ -2084,7 +2084,7 @@
   {
     "UserData": {
       "UserID": 242720599158423554,
-      "Username": "Coffee",
+      "Username": "Yeehaw",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -2404,7 +2404,7 @@
   {
     "UserData": {
       "UserID": 280686912107315200,
-      "Username": "Greevol & Grevel",
+      "Username": "Greevol&Grevel",
       "Role": 4,
       "Money": 0,
       "MeritPoints": 0,
@@ -4804,7 +4804,7 @@
   {
     "UserData": {
       "UserID": 486230453297348676,
-      "Username": "Its me",
+      "Username": "I should get a better name",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -5732,7 +5732,7 @@
   {
     "UserData": {
       "UserID": 366341433147260961,
-      "Username": "♡ Annoyingly Cute ♡",
+      "Username": "♡ Cupid's Daughter ♡",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -5828,7 +5828,7 @@
   {
     "UserData": {
       "UserID": 478807644807626756,
-      "Username": "I don't wanna know,care or die",
+      "Username": "狼  ちょっと 愛人",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,
@@ -7237,6 +7237,358 @@
     "UserData": {
       "UserID": 322418950560415745,
       "Username": "jimochiii",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 149653849630703617,
+      "Username": "nordir",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 444234063251767307,
+      "Username": "Jigsaw",
+      "Role": 1,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 207323743972753418,
+      "Username": "Mega",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 516090874489339934,
+      "Username": "alien",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 322037470910873601,
+      "Username": "Griffyn",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 484487743918047254,
+      "Username": "Crimson Claws",
+      "Role": 3,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 249608242601263105,
+      "Username": "kitkat",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 536196824504074271,
+      "Username": "CatGrrrl",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 169165373449568256,
+      "Username": "TheInsaneScientist",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 532045213779361812,
+      "Username": "Superfly",
+      "Role": 0,
+      "Money": 0,
+      "MeritPoints": 0,
+      "BloodPoints": 0,
+      "Fame": 0,
+      "Infamy": 0,
+      "FameComment": "",
+      "InfamyComment": "",
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsMuted": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 256464809845981195,
+      "Username": "Birds",
       "Role": 0,
       "Money": 0,
       "MeritPoints": 0,

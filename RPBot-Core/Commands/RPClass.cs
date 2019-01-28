@@ -22,6 +22,7 @@ namespace RPBot
         public static Dictionary<ulong, ulong> approvalsList = new Dictionary<ulong, ulong>(); // Channel ID : User ID
         public static Dictionary<string, string> CardList = new Dictionary<string, string>();
         public static SVObject.RootObject SVData = new SVObject.RootObject();
+        public static WeatherList WeatherList = new WeatherList();
         public static DiscordChannel GuildRankingChannel;
         public static DiscordChannel HeroRankingChannel;
         public static DiscordChannel VillainRankingChannel;
@@ -58,6 +59,8 @@ namespace RPBot
                 SaveData(7);
                 SaveData(8);
                 SaveData(9);
+                SaveData(10);
+
             }
             if (saveType == 1)
             {
@@ -107,10 +110,18 @@ namespace RPBot
                 string output = JsonConvert.SerializeObject(TagsList, Formatting.Indented);
                 File.WriteAllText("Data/TagsList.txt", output);
             }
+            else if (saveType == 10)
+            {
+
+                string output = JsonConvert.SerializeObject(WeatherList, Formatting.Indented);
+                File.WriteAllText("Data/WeatherList.txt", output);
+            }
         }
 
         public static void LoadData()
         {
+            if (!File.Exists("Data/WeatherList.txt")) File.Create("Data/WeatherList.txt");
+
             if (File.ReadAllLines("Data/UserData.txt").Any())
             {
                 List<UserObject.RootObject> input = JsonConvert.DeserializeObject<List<UserObject.RootObject>>(File.ReadAllText("Data/UserData.txt"));
@@ -165,6 +176,11 @@ namespace RPBot
             {
                 List<SignupObject.RootObject> input = JsonConvert.DeserializeObject<List<SignupObject.RootObject>>(File.ReadAllText("Data/SignupList.txt"));
                 SignupList = input;
+            }
+            if (File.ReadAllLines("Data/WeatherList.txt").Any())
+            {
+                WeatherList input = JsonConvert.DeserializeObject<WeatherList>(File.ReadAllText("Data/WeatherList.txt"));
+                WeatherList = input;
             }
         }
 
@@ -234,7 +250,68 @@ namespace RPBot
 
             while (true)
             {
-				await d.UpdateStatusAsync(new DiscordActivity("Time pass: " + DateTime.UtcNow.Hour + ":" + DateTime.UtcNow.Minute.ToString("00"), ActivityType.Watching)); 
+                if (WeatherList.DatePosted != DateTime.Today)
+                {
+                    if (DateTime.UtcNow.DayOfWeek == DayOfWeek.Monday)
+                    {
+                        if (!WeatherList.WeatherObjects.Any()) WeatherList.WeatherObjects.Add(new WeatherObject(DateTime.Today.AddDays(-1), 12, 6, WeatherType.Rain, 15, "NW", 50));
+
+                        if (!WeatherList.WeatherObjects.Any(x => x.Date == DateTime.Today))
+                        {
+                            for (int i = 0; i < 7; i++)
+                            {
+                                WeatherList.WeatherObjects.Add(Weather.NextDay(WeatherList.WeatherObjects.Last()));
+                            }
+                        }
+                        WeatherList.DatePosted = DateTime.Today;
+                        SaveData(10);
+                        var week = new List<WeatherObject>();
+
+                        week.Add(WeatherList.WeatherObjects.First(x => x.Date == DateTime.Today));
+                        week.AddRange(WeatherList.WeatherObjects.Where(x => x.Date > DateTime.Today && x.Date < DateTime.Today.AddDays(8)));
+                        for (int i = 1; i < week.Count; i++)
+                        {
+                            int displace = Random.Next(-4, 4);
+                            week[i].High += Random.Next(-1, 1) + displace;
+                            week[i].Low -= Random.Next(-1, 1) + displace;
+                            int weatherType = (int)week[i].Type + Random.Next(-2, 2);
+                            if (weatherType < 0) weatherType = 0;
+                            if (weatherType > 11) weatherType = 11;
+                            week[i].Type = (WeatherType)weatherType;
+                            if (week[i].High < week[i].Low)
+                            {
+                                int high = week[i].High;
+                                week[i].High = week[i].Low;
+                                week[i].Low = high;
+                            }
+                        }
+
+                        string fileName = Weather.GenerateSevenDays(week, DateTime.Today.ToString("dd-MM-yyyy.png"));
+                        await AnnouncementChannel.SendFileAsync(fileName);
+                        File.Delete(fileName);
+
+                    }
+                    else
+                    {
+                        if (!WeatherList.WeatherObjects.Any()) WeatherList.WeatherObjects.Add(new WeatherObject(DateTime.Today.AddDays(-1), 12, 6, WeatherType.Rain, 15, "NW", 50));
+
+                        if (!WeatherList.WeatherObjects.Any(x => x.Date == DateTime.Today))
+                        {
+                            for (int i = 0; i < 7; i++)
+                            {
+                                WeatherList.WeatherObjects.Add(Weather.NextDay(WeatherList.WeatherObjects.Last()));
+                            }
+                        }
+
+                        string fileName = Weather.GenerateOneDay(WeatherList.WeatherObjects.First(x => x.Date == DateTime.Today), DateTime.Today.ToString("dd-MM-yyyy.png"));
+                        await AnnouncementChannel.SendFileAsync(fileName);
+                        File.Delete(fileName);
+                        WeatherList.DatePosted = DateTime.Today;
+                        SaveData(10);
+                    }
+                }
+
+                await d.UpdateStatusAsync(new DiscordActivity("Time pass: " + DateTime.UtcNow.Hour + ":" + DateTime.UtcNow.Minute.ToString("00"), ActivityType.Watching)); 
                 string TimePhase = "";
                 if (DateTime.UtcNow.Minute == 0 && DateTime.UtcNow.Hour == 6 && y.AddHours(2) < DateTime.UtcNow)
                 {
@@ -248,7 +325,9 @@ namespace RPBot
                     y = DateTime.UtcNow;
                     await AnnouncementChannel.SendMessageAsync(TimePhase);
 
+                    
                 }
+
                 else if (DateTime.UtcNow.Minute == 0 && DateTime.UtcNow.Hour == 18 && y.AddHours(2) < DateTime.UtcNow)
                 {
                     

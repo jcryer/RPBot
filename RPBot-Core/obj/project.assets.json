@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "CoordinateSharp/1.1.4.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.TypeExtensions": "4.5.0",
+          "System.Runtime.Serialization.Formatters": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/CoordinateSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CoordinateSharp.dll": {}
+        }
+      },
       "DSharpPlus/4.0.0-beta-00417": {
         "type": "package",
         "dependencies": {
@@ -1721,17 +1735,13 @@
           "ref/netstandard1.0/System.Reflection.Primitives.dll": {}
         }
       },
-      "System.Reflection.TypeExtensions/4.3.0": {
+      "System.Reflection.TypeExtensions/4.5.0": {
         "type": "package",
-        "dependencies": {
-          "System.Reflection": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.5/_._": {}
+          "ref/netcoreapp2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.Resources.ResourceManager/4.3.0": {
@@ -2438,6 +2448,24 @@
     }
   },
   "libraries": {
+    "CoordinateSharp/1.1.4.2": {
+      "sha512": "t+6ZQFD7SRuSttnEcn0QK59DNi1Js7w+b/FqqsCB9Uy6DtSlna1nD4bHCjEhVTq9tgCLFd6noo8Pms9AX38tAw==",
+      "type": "package",
+      "path": "coordinatesharp/1.1.4.2",
+      "files": [
+        ".signature.p7s",
+        "coordinatesharp.1.1.4.2.nupkg.sha512",
+        "coordinatesharp.nuspec",
+        "lib/net40/CoordinateSharp.dll",
+        "lib/net40/CoordinateSharp.xml",
+        "lib/netstandard1.3/CoordinateSharp.dll",
+        "lib/netstandard1.3/CoordinateSharp.xml",
+        "lib/netstandard1.4/CoordinateSharp.dll",
+        "lib/netstandard1.4/CoordinateSharp.xml",
+        "lib/netstandard2.0/CoordinateSharp.dll",
+        "lib/netstandard2.0/CoordinateSharp.xml"
+      ]
+    },
     "DSharpPlus/4.0.0-beta-00417": {
       "sha512": "hWtpwtHvKuEkEjELwgr4tRvAKlsVPq/UuKNGgV8Rtu1JJLPqrS7jEzgQEN6M9lirM5azgUwxJC76piFeIVBoZg==",
       "type": "package",
@@ -2707,10 +2735,12 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection/2.0.0": {
-      "sha512": "wakg18gHYiUL1pcjjyZuYk6OvDpbSw1E7IWxm78TMepsr+gQ8W0tWzuRm0q/9RFblngwPwo15rrgZSUV51W5Iw==",
+      "sha512": "V6xeuEEpIIygDHtOtJ+0X0qkKtVSUS1+kwOC3O4pH0depJf8AfofGo8hanOxoRgooj7WmTtPcgOIjwAteEe28A==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection/2.0.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
@@ -2718,10 +2748,12 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
-      "sha512": "eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
+      "sha512": "P4dK3DZQFsp7fFzkBu9H9jesBj0KB3O9c50n9FeAOIF+A8aQKBRj63luC9gPqvcedNdMfYQoEUe5dLps1sqvuA==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
@@ -3241,10 +3273,11 @@
       ]
     },
     "Newtonsoft.Json/10.0.3": {
-      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
+      "sha512": "wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
       "type": "package",
       "path": "newtonsoft.json/10.0.3",
       "files": [
+        ".nupkg.metadata",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -5115,7 +5148,7 @@
       ]
     },
     "System.Memory/4.5.1": {
-      "sha512": "vcG3/MbfpxznMkkkaAblJi7RHOmuP7kawQMhDgLSuA1tRpRQYsFSCTxRSINDUgn2QNn2jWeLxv8er5BXbyACkw==",
+      "sha512": "oonnLQPZAGD21qtNMG4EtVmbYOInk2jV7M+g108B6OHOb67ZOaWnA/K8P5oQ6uK9wxKzB1iEXSChQOi2scKOqA==",
       "type": "package",
       "path": "system.memory/4.5.1",
       "files": [
@@ -5877,19 +5910,25 @@
         "system.reflection.primitives.nuspec"
       ]
     },
-    "System.Reflection.TypeExtensions/4.3.0": {
-      "sha512": "7u6ulLcZbyxB5Gq0nMkQttcdBTx57ibzw+4IOXEfR+sXYQoHvjW5LTLyNr8O22UIMrqYbchJQJnos4eooYzYJA==",
+    "System.Reflection.TypeExtensions/4.5.0": {
+      "sha512": "Si8PkGGxxDKLm6ap31x4hoDBsL3yX+gwmGJWqVJUwHofyTubjj8MjC6ckhAmjGWszWLA1wGNC+QAQMQkWG8qbw==",
       "type": "package",
-      "path": "system.reflection.typeextensions/4.3.0",
+      "path": "system.reflection.typeextensions/4.5.0",
       "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net46/System.Reflection.TypeExtensions.dll",
-        "lib/net462/System.Reflection.TypeExtensions.dll",
+        "lib/net461/System.Reflection.TypeExtensions.dll",
         "lib/netcore50/System.Reflection.TypeExtensions.dll",
+        "lib/netcoreapp1.0/System.Reflection.TypeExtensions.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/System.Reflection.TypeExtensions.dll",
         "lib/netstandard1.5/System.Reflection.TypeExtensions.dll",
+        "lib/netstandard2.0/System.Reflection.TypeExtensions.dll",
+        "lib/uap10.0.16299/_._",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
@@ -5897,7 +5936,9 @@
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
         "ref/net46/System.Reflection.TypeExtensions.dll",
-        "ref/net462/System.Reflection.TypeExtensions.dll",
+        "ref/net461/System.Reflection.TypeExtensions.dll",
+        "ref/net461/System.Reflection.TypeExtensions.xml",
+        "ref/netcoreapp2.0/_._",
         "ref/netstandard1.3/System.Reflection.TypeExtensions.dll",
         "ref/netstandard1.3/System.Reflection.TypeExtensions.xml",
         "ref/netstandard1.3/de/System.Reflection.TypeExtensions.xml",
@@ -5920,13 +5961,19 @@
         "ref/netstandard1.5/ru/System.Reflection.TypeExtensions.xml",
         "ref/netstandard1.5/zh-hans/System.Reflection.TypeExtensions.xml",
         "ref/netstandard1.5/zh-hant/System.Reflection.TypeExtensions.xml",
+        "ref/netstandard2.0/System.Reflection.TypeExtensions.dll",
+        "ref/netstandard2.0/System.Reflection.TypeExtensions.xml",
+        "ref/uap10.0.16299/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
         "runtimes/aot/lib/netcore50/System.Reflection.TypeExtensions.dll",
-        "system.reflection.typeextensions.4.3.0.nupkg.sha512",
-        "system.reflection.typeextensions.nuspec"
+        "runtimes/aot/lib/uap10.0.16299/_._",
+        "system.reflection.typeextensions.4.5.0.nupkg.sha512",
+        "system.reflection.typeextensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Resources.ResourceManager/4.3.0": {
@@ -6075,10 +6122,11 @@
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/4.5.1": {
-      "sha512": "qUJMNWhbm9oZ3XaMFiEMiYmRPszbnXIkRIi7+4b2Md2xZ6JUOepf0/kY3S85qistRohl9OdMe4PsO+RdG2kTIQ==",
+      "sha512": "x/3d5xb+mc9e4I2GOOT+HPRWMZLbYjNN/kYKsb0fyUKcWizn/t1CIrGRLIBhv7H0ptYEt+WTTztdPmwSUMyKig==",
       "type": "package",
       "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -7692,6 +7740,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "CoordinateSharp >= 1.1.4.2",
       "DSharpPlus >= 4.0.0-beta-00417",
       "DSharpPlus.CommandsNext >= 4.0.0-beta-00417",
       "DSharpPlus.Interactivity >= 4.0.0-beta-00417",
@@ -7707,28 +7756,33 @@
     ]
   },
   "packageFolders": {
-    "/Users/Joseph/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Joseph\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/Users/Joseph/Desktop/Joseph's Stuff/GitHub/RPBot/RPBot-Core/RPBot-Core.csproj",
+      "projectUniqueName": "E:\\Desktop\\Coding\\Bots\\RP-Bot\\RPBot-Core\\RPBot-Core.csproj",
       "projectName": "RPBot-Core",
-      "projectPath": "/Users/Joseph/Desktop/Joseph's Stuff/GitHub/RPBot/RPBot-Core/RPBot-Core.csproj",
-      "packagesPath": "/Users/Joseph/.nuget/packages/",
-      "outputPath": "/Users/Joseph/Desktop/Joseph's Stuff/GitHub/RPBot/RPBot-Core/obj",
+      "projectPath": "E:\\Desktop\\Coding\\Bots\\RP-Bot\\RPBot-Core\\RPBot-Core.csproj",
+      "packagesPath": "C:\\Users\\Joseph\\.nuget\\packages\\",
+      "outputPath": "E:\\Desktop\\Coding\\Bots\\RP-Bot\\RPBot-Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/Joseph/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Joseph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://www.myget.org/F/dsharpplus-nightly/api/v3/index.json": {}
       },
@@ -7746,25 +7800,11 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
+          "Microsoft.CodeAnalysis.Scripting": {
             "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
-          "DSharpPlus": {
-            "target": "Package",
-            "version": "4.0.0-beta-00417"
-          },
-          "DSharpPlus.CommandsNext": {
-            "target": "Package",
-            "version": "4.0.0-beta-00417"
+            "version": "2.6.1"
           },
           "DSharpPlus.Interactivity": {
-            "target": "Package",
-            "version": "4.0.0-beta-00417"
-          },
-          "DSharpPlus.VoiceNext": {
             "target": "Package",
             "version": "4.0.0-beta-00417"
           },
@@ -7772,29 +7812,46 @@
             "target": "Package",
             "version": "2.6.1"
           },
-          "Microsoft.CodeAnalysis.CSharp.Scripting": {
+          "System.Runtime": {
             "target": "Package",
-            "version": "2.6.1"
+            "version": "4.1.2"
           },
-          "Microsoft.CodeAnalysis.Scripting": {
+          "DSharpPlus.CommandsNext": {
             "target": "Package",
-            "version": "2.6.1"
+            "version": "4.0.0-beta-00417"
           },
-          "Newtonsoft.Json": {
+          "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "10.0.3"
+            "version": "2.0",
+            "autoReferenced": true
+          },
+          "CoordinateSharp": {
+            "target": "Package",
+            "version": "1.1.4.2"
           },
           "SixLabors.ImageSharp": {
             "target": "Package",
             "version": "1.0.0-beta0005"
           },
+          "Microsoft.CodeAnalysis.CSharp.Scripting": {
+            "target": "Package",
+            "version": "2.6.1"
+          },
           "SixLabors.ImageSharp.Drawing": {
             "target": "Package",
             "version": "1.0.0-beta0005"
           },
-          "System.Runtime": {
+          "DSharpPlus": {
             "target": "Package",
-            "version": "4.1.2"
+            "version": "4.0.0-beta-00417"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "10.0.3"
+          },
+          "DSharpPlus.VoiceNext": {
+            "target": "Package",
+            "version": "4.0.0-beta-00417"
           }
         },
         "imports": [
