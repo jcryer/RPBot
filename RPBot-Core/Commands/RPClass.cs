@@ -252,7 +252,7 @@ namespace RPBot
             {
                 if (WeatherList.DatePosted != DateTime.Today)
                 {
-                    if (DateTime.UtcNow.DayOfWeek == DayOfWeek.Monday)
+                    if (DateTime.UtcNow.DayOfWeek == DayOfWeek.Tuesday)
                     {
                         if (!WeatherList.WeatherObjects.Any()) WeatherList.WeatherObjects.Add(new WeatherObject(DateTime.Today.AddDays(-1), 12, 6, WeatherType.Rain, 15, "NW", 50));
 
@@ -287,7 +287,7 @@ namespace RPBot
                         }
 
                         string fileName = Weather.GenerateSevenDays(week, DateTime.Today.ToString("dd-MM-yyyy.png"));
-                        await AnnouncementChannel.SendFileAsync(fileName);
+                        await RPChannels.First(x => x.Id == 367727566720598016).SendFileAsync(fileName);
                         File.Delete(fileName);
 
                     }
@@ -304,7 +304,7 @@ namespace RPBot
                         }
 
                         string fileName = Weather.GenerateOneDay(WeatherList.WeatherObjects.First(x => x.Date == DateTime.Today), DateTime.Today.ToString("dd-MM-yyyy.png"));
-                        await AnnouncementChannel.SendFileAsync(fileName);
+                        await RPChannels.First(x => x.Id == 367727566720598016).SendFileAsync(fileName);
                         File.Delete(fileName);
                         WeatherList.DatePosted = DateTime.Today;
                         SaveData(10);
