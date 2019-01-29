@@ -252,7 +252,7 @@ namespace RPBot
             {
                 if (WeatherList.DatePosted != DateTime.Today)
                 {
-                    if (DateTime.UtcNow.DayOfWeek == DayOfWeek.Tuesday)
+                    if (DateTime.UtcNow.DayOfWeek == DayOfWeek.Monday)
                     {
                         if (!WeatherList.WeatherObjects.Any()) WeatherList.WeatherObjects.Add(new WeatherObject(DateTime.Today.AddDays(-1), 12, 6, WeatherType.Rain, 15, "NW", 50));
 
