@@ -169,7 +169,7 @@ namespace RPBot
             .AddField("Joined this Server on: ", $"{JoinDate.ToString("dd MMM yyyy H:mm")}\n({DateTime.Now.Subtract(JoinDate).Days} days ago)", true);
             if (user != null)
             {
-                b.AddField("Roleplay Stats: ", $"Message Count: {user.Activity.MessageCount}\nWord Count: {user.Activity.WordCount}\nCharacter Count: {user.Activity.CharacterCount}\n Avg Char Count (per Message): {user.Activity.CharacterCount / user.Activity.MessageCount}\n Avg Word Count (per Message): {user.Activity.WordCount / user.Activity.MessageCount}", false);
+                b.AddField("Roleplay Stats: ", $"Message Count: {user.Activity.MessageCount}\nWord Count: {user.Activity.WordCount}\nCharacter Count: {user.Activity.CharacterCount}\n Avg Char Count (per msg): " + (user.Activity.MessageCount > 0 ? ""+(user.Activity.CharacterCount / user.Activity.MessageCount) : "-") + "\n Avg Word Count (per msg): " + (user.Activity.MessageCount > 0 ? "" + (user.Activity.WordCount / user.Activity.MessageCount) : "-"), false);
             }
             b.AddField("Roles: ", m.Roles.Any() ? string.Join(", ", m.Roles.Select(x => x.Name)) : "-", false);
 
