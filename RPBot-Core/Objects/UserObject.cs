@@ -15,13 +15,15 @@ namespace RPBot
             {
                 UserData = userData;
                 Stats = new StatData();
-                this.ModData = new ModData();
+                ModData = new ModData();
+                Activity = new CountData();
             }
 
             public UserData UserData { get; set; }
             public int Xp { get; set; }
             public StatData Stats { get; set; }
             public ModData ModData { get; set; }
+            public CountData Activity { get; set; }
 
             public string GetRank()
             {
@@ -166,6 +168,12 @@ namespace RPBot
             public int IsMuted { get; set; }
             public TimeSpan MuteDuration { get; set; }
             public List<DiscordRole> Roles { get; set; }
+        }
+        public class CountData
+        {
+            public int MessageCount;
+            public int CharacterCount;
+            public int WordCount;
         }
     }
 }

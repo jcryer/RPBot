@@ -169,12 +169,14 @@ namespace RPBot
         {
             try
             {
-                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Restarting: Socket Close");
+                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Not Restarting(test): Socket Close");
             }
             catch
             {
             }
+
             RPClass.SaveData(-1);
+            /*
             var process = new Process()
             {
                 StartInfo = new ProcessStartInfo
@@ -189,18 +191,21 @@ namespace RPBot
             process.Start();
             Environment.Exit(-1);
             await Task.Delay(0);
+            */
         }
 
         private async Task Discord_ClientErrored(ClientErrorEventArgs e)
         {
             try
             {
-                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Restarting: Client Error");
+                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Not Restarting (test): Client Error");
             }
             catch
             {
             }
+            
             RPClass.SaveData(-1);
+            /*
             var process = new Process()
             {
                 StartInfo = new ProcessStartInfo
@@ -215,19 +220,20 @@ namespace RPBot
             process.Start();
             Environment.Exit(-1);
             await Task.Delay(0);
-            
+            */
         }
 
         private async Task Discord_SocketError(SocketErrorEventArgs e)
         {
             try
             {
-                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Restarting: Socket Error");
+                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Not Restarting(test): Socket Error");
             }
             catch
             {
             }
             RPClass.SaveData(-1);
+            /*
             var process = new Process()
             {
                 StartInfo = new ProcessStartInfo
@@ -242,6 +248,7 @@ namespace RPBot
             process.Start();
             Environment.Exit(-1);
             await Task.Delay(0);
+            */
         }
 
         private async Task Discord_GuildMemberAdded(GuildMemberAddEventArgs e)
@@ -406,7 +413,8 @@ We hope you enjoy your stay!")
 
         public async Task Discord_MessageCreated(MessageCreateEventArgs e)
         {
-            if (e.Guild == RPClass.RPGuild) { 
+            if (e.Guild == RPClass.RPGuild)
+            { 
                 if (RPClass.FirstRun)
                 {
                     try
@@ -417,8 +425,22 @@ We hope you enjoy your stay!")
                     }
                     catch { }
                 }
+
                 if (!e.Message.Content.StartsWith("!"))
                 {
+                    if (e.Channel.ParentId.HasValue)
+                    {
+                        if (RPClass.RPCategories.Contains(e.Channel.ParentId.Value))
+                        {
+                            var user = RPClass.Users.FirstOrDefault(x => x.UserData.UserID == e.Author.Id);
+                            if (user != null)
+                            {
+                                user.Activity.CharacterCount += e.Message.Content.Length;
+                                user.Activity.MessageCount += 1;
+                                user.Activity.WordCount += CountWords(e.Message.Content);
+                            }
+                        }
+                    } 
                     if ((e.Author as DiscordMember).Roles.Any(x => x == RPClass.StaffRole)) 
                     {
                         MatchCollection matchList = Regex.Matches(e.Message.Content, "`{0,3}{{(.+?)}}`{0,3}");
@@ -485,6 +507,12 @@ We hope you enjoy your stay!")
                     }
                 }
             }
+        }
+
+        public static int CountWords(string s)
+        {
+            MatchCollection collection = Regex.Matches(s, @"[\S]+");
+            return collection.Count;
         }
 
         private Task Discord_MessageReactionAdd(MessageReactionAddEventArgs e)

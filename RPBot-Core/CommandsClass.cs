@@ -149,7 +149,7 @@ namespace RPBot
             if (m == null)
                 m = ctx.Member;
             DateTime JoinDate = m.JoinedAt.DateTime;
-
+            var user = RPClass.Users.FirstOrDefault(x => x.UserData.UserID == m.Id);
             if (m.Id == 126070623855312896)
                 JoinDate = new DateTime(2017, 5, 13, 14, 11, 19);
             else if (m.Id == 242720599158423554)
@@ -166,8 +166,12 @@ namespace RPBot
             }
             .WithFooter($"User ID:{m.Id}")
             .AddField("Joined Discord on: ", $"{m.CreationTimestamp.ToString("dd MMM yyyy H:mm")} \n({DateTimeOffset.Now.Subtract(m.CreationTimestamp).Days} days ago)", true)
-            .AddField("Joined this Server on: ", $"{JoinDate.ToString("dd MMM yyyy H:mm")}\n({DateTime.Now.Subtract(JoinDate).Days} days ago)", true)
-            .AddField("Roles: ", string.Join(", ", m.Roles.Select(x => x.Name)), true);
+            .AddField("Joined this Server on: ", $"{JoinDate.ToString("dd MMM yyyy H:mm")}\n({DateTime.Now.Subtract(JoinDate).Days} days ago)", true);
+            if (user != null)
+            {
+                b.AddField("Roleplay Stats: ", $"Message Count: {user.Activity.MessageCount}\nWord Count: {user.Activity.WordCount}\nCharacter Count: {user.Activity.CharacterCount}\n Avg Char Count (per Message): {user.Activity.CharacterCount / user.Activity.MessageCount}\n Avg Word Count (per Message): {user.Activity.WordCount / user.Activity.MessageCount}", false);
+            }
+            b.AddField("Roles: ", m.Roles.Any() ? string.Join(", ", m.Roles.Select(x => x.Name)) : "-", false);
 
             await ctx.RespondAsync("", embed: b.Build());
         }

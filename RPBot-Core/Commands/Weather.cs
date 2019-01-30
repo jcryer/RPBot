@@ -95,8 +95,7 @@ namespace RPBot
             }
             int maxTemp = averageTemp + r.Next(1, 5);
             int minTemp = averageTemp - r.Next(1, 5);
-            return new WeatherObject(lastDay.Date.AddDays(1), maxTemp, minTemp, ChooseWeatherType(maxTemp, minTemp, season, (int)lastDay.Type), (int)RandomBiasedPow(1, 80, 4, 20), ChooseWindDirection(), (int)RandomBiasedPow(10, 100, 5, 70));
-
+            return new WeatherObject(lastDay.Date.AddDays(1), maxTemp, minTemp, ChooseWeatherType(maxTemp, minTemp, season, (int)lastDay.Type), (int)RandomBiasedPow(1, 70, 4, 10), ChooseWindDirection(), (int)RandomBiasedPow(20, 100, 5, 70));
         }
 
         public static string ChooseWindDirection()
@@ -182,10 +181,10 @@ namespace RPBot
                     var image1 = Image.Load($"Weather/{day.Type.ToString()}.png");
                     backgroundImage.Mutate(x => x.DrawImage(image1, 1, new Point(imageX, 775)).DrawText(dayString, parentFont, Rgba32.Black, new PointF(dateOffset, 370)).DrawText(maxTemp, childFont, Rgba32.Black, new PointF(maxOffset, 445)).DrawText(minTemp, childFont, Rgba32.FromHex("#4E4E4E"), new PointF(minOffset, 445)));
                     string windDescriptor = "";
-                    if (day.WindSpeed < 15) windDescriptor = "Light";
-                    if (day.WindSpeed >= 15 && day.WindSpeed < 30) windDescriptor = "Moderate";
-                    if (day.WindSpeed >= 30 && day.WindSpeed < 60) windDescriptor = "Strong";
-                    if (day.WindSpeed >= 60) windDescriptor = "Gale Force";
+                    if (day.WindSpeed < 10) windDescriptor = "Light";
+                    if (day.WindSpeed >= 15 && day.WindSpeed < 25) windDescriptor = "Moderate";
+                    if (day.WindSpeed >= 25 && day.WindSpeed < 50) windDescriptor = "Strong";
+                    if (day.WindSpeed >= 50) windDescriptor = "Gale Force";
 
                     string wind = $"{windDescriptor}, {day.WindSpeed} km/h {day.WindDirection}";
 
@@ -262,6 +261,7 @@ namespace RPBot
 
                 var windOffset = 307 - windSize.Width / 2;
 
+                Coords.GeoDate = day.Date;
                 string sunrise = "Sunrise: " + Coords.CelestialInfo.SunRise.GetValueOrDefault().ToString("hh:mm tt");
                 string sunset = "Sunset: " + Coords.CelestialInfo.SunSet.GetValueOrDefault().ToString("hh:mm tt");
 

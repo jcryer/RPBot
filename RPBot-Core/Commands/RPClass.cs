@@ -12,6 +12,12 @@ namespace RPBot
 {
     static class RPClass
     {
+        public static List<ulong> RPCategories = new List<ulong>()
+        { 526492402941296651, 510299090656034816, 510299212382994443,
+            510299976329330698, 510299305513451541, 510299354301595669,
+            510299441627136020, 510299398501171251,537714909941727232,
+            511895853674528778, 513361784955207701 };
+
         public static List<UserObject.RootObject> Users = new List<UserObject.RootObject>();
         public static List<GuildObject.RootObject> Guilds = new List<GuildObject.RootObject>();
         public static List<SpeechObject.RootObject> SpeechList = new List<SpeechObject.RootObject>();
