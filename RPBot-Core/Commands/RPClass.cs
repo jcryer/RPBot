@@ -271,10 +271,8 @@ namespace RPBot
                         }
                         WeatherList.DatePosted = DateTime.Today;
                         SaveData(10);
-                        var week = new List<WeatherObject>();
+                        List<WeatherObject> week = Extensions.DeepClone(WeatherList.WeatherObjects.Where(x => x.Date >= DateTime.Today && x.Date < DateTime.Today.AddDays(8))).ToList();
 
-                        week.Add(WeatherList.WeatherObjects.First(x => x.Date == DateTime.Today));
-                        week.AddRange(WeatherList.WeatherObjects.Where(x => x.Date > DateTime.Today && x.Date < DateTime.Today.AddDays(8)));
                         for (int i = 1; i < week.Count; i++)
                         {
                             int displace = Random.Next(-4, 4);
@@ -293,7 +291,7 @@ namespace RPBot
                         }
 
                         string fileName = Weather.GenerateSevenDays(week, DateTime.Today.ToString("dd-MM-yyyy.png"));
-                        await RPChannels.First(x => x.Id == 367727566720598016).SendFileAsync(fileName);
+                        await RPChannels.First(x => x.Id == 540493682659426304).SendFileAsync(fileName);
                         File.Delete(fileName);
 
                     }
@@ -310,7 +308,7 @@ namespace RPBot
                         }
 
                         string fileName = Weather.GenerateOneDay(WeatherList.WeatherObjects.First(x => x.Date == DateTime.Today), DateTime.Today.ToString("dd-MM-yyyy.png"));
-                        await RPChannels.First(x => x.Id == 367727566720598016).SendFileAsync(fileName);
+                        await RPChannels.First(x => x.Id == 540493682659426304).SendFileAsync(fileName);
                         File.Delete(fileName);
                         WeatherList.DatePosted = DateTime.Today;
                         SaveData(10);

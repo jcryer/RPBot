@@ -4,13 +4,26 @@ using DSharpPlus.Entities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading.Tasks;
 
 namespace RPBot
 {
     public static class Extensions
     {
+        public static T DeepClone<T>(T obj)
+        {
+            using (var stream = new MemoryStream())
+            {
+                var formatter = new BinaryFormatter();
+                formatter.Serialize(stream, obj);
+                stream.Position = 0;
+                return (T)formatter.Deserialize(stream);
+            }
+        }
+
         public static async Task UpdateFameAndInfamyRoles(int fame, int infamy, DiscordMember user, bool hero)
         {
             var userRoles = FameRoles.SetUserRoles(user.Roles.ToList(), FameRoles.GetRequiredRoles(fame, infamy, hero));
