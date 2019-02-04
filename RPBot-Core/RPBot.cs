@@ -307,14 +307,12 @@ We hope you enjoy your stay!")
 
         public async Task Discord_GuildAvailable(GuildCreateEventArgs e)
         {
+            this.GameGuard = new Timer(TimerCallback, null, TimeSpan.FromMinutes(0), TimeSpan.FromMinutes(15));
+
+            this.Discord.DebugLogger.LogMessage(LogLevel.Info, "DSPlus", $"Guild available: {e.Guild.Name}", DateTime.UtcNow);
+
             if (e.Guild.Id == 312918289988976653)
             {
-                if (RPClass.Restarted)
-                {
-                    DiscordChannel c = e.Guild.GetChannel(404108476835430401);
-                    DiscordMember me = await e.Guild.GetMemberAsync(126070623855312896);
-                    await c.SendMessageAsync("Restarted successfully, " + me.Mention + "!");
-                }
                 RPClass.GuildRankingChannel = e.Guild.GetChannel(312964153197330433);
                 RPClass.HeroRankingChannel = e.Guild.GetChannel(315048564525105153);
                 RPClass.VillainRankingChannel = e.Guild.GetChannel(315048584007385093);
@@ -334,10 +332,16 @@ We hope you enjoy your stay!")
                 RPClass.RPGuild = e.Guild;
 
                 await RPClass.AddOrUpdateUsers(RPClass.RPGuild, true);
-            }
-            this.GameGuard = new Timer(TimerCallback, null, TimeSpan.FromMinutes(0), TimeSpan.FromMinutes(15));
 
-            this.Discord.DebugLogger.LogMessage(LogLevel.Info, "DSPlus", $"Guild available: {e.Guild.Name}", DateTime.UtcNow);
+                if (RPClass.Restarted)
+                {
+                    DiscordChannel c = e.Guild.GetChannel(404108476835430401);
+                    DiscordMember me = await e.Guild.GetMemberAsync(126070623855312896);
+                    await c.SendMessageAsync("Restarted successfully, " + me.Mention + "!");
+                }
+            }
+            
+            
         }
 
         private Task Discord_PresenceUpdate(PresenceUpdateEventArgs e)
