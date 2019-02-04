@@ -92,9 +92,9 @@ namespace RPBot
             string HTMLResponse = File.ReadAllText("Data/template.html");
             HTMLResponse = HTMLResponse.Replace("TOPICHERE", desc).Replace("CHANNELHERE", e.Channel.Name).Replace("CONTENTHERE", returnedHTML);
             string fileName = e.Channel.Name + "_" + DateTime.UtcNow.ToString("dd-MM-yyyy");
-            File.WriteAllText("../../var/www/html/logs/" + fileName, HTMLResponse);
+            File.WriteAllText("/var/www/html/logs/" + fileName, HTMLResponse);
             string logList = File.ReadAllText("../../var/www/html/logs/loglist.csv");
-            File.WriteAllText("../../var/www/html/logs/loglist.csv", logList + "," + fileName);
+            File.WriteAllText("/var/www/html/logs/loglist.csv", logList + "," + fileName);
             string output = JsonConvert.SerializeObject(messageList);
             string logFile = "logs/" + DateTime.UtcNow.ToString("dd_MM_yy-H_mm_ss") + "(" + e.Channel.Name + ")" + ".txt";
             File.WriteAllText(logFile, output);
