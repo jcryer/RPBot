@@ -176,9 +176,10 @@ namespace RPBot
             await ctx.RespondAsync("", embed: b.Build());
         }
 
-        [Group("purge", CanInvokeWithoutSubcommand = true), Aliases("p"), IsStaff, IsMuted]
+        [Group("purge"), Aliases("p"), IsStaff, IsMuted]
         class Purge : BaseCommandModule
         {
+            [GroupCommand]
             [Description("Delete an amount of messages from the current channel.")]
             public async Task ExecuteGroupAsync(CommandContext ctx, [Description("Amount of messages to remove (max 100)")]int limit = -1,
                 [Description("Amount of messages to skip")]int skip = 0)
@@ -734,10 +735,11 @@ namespace RPBot
             }
         }
 
-        [Group("emoji", CanInvokeWithoutSubcommand = true), Aliases("e"), Description("Emoji commands"), IsMuted, RequireOwner]
+        [Group("emoji"), Aliases("e"), Description("Emoji commands"), IsMuted, RequireOwner]
         [Hidden]
         class EmojiClass : BaseCommandModule
         {
+            [GroupCommand]
             public async Task ExecuteGroupAsync(CommandContext e, [RemainingText] string emoji)
             {
                 

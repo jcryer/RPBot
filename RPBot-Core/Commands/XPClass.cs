@@ -12,9 +12,10 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("xp", CanInvokeWithoutSubcommand = true), Description("Admin command to give XP"), IsMuted, IsStaff]
+    [Group("xp"), Description("Admin command to give XP"), IsMuted, IsStaff]
     class XPClass : BaseCommandModule
     {
+        [GroupCommand]
         public async Task ExecuteGroupAsync(CommandContext e, [Description("User to change stats of")] DiscordMember user, [Description("How much you wish to change it by")] int xpNum)
         {
             if (xpNum != 0)

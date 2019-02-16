@@ -10,9 +10,10 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("tag", CanInvokeWithoutSubcommand = true), Aliases("t"), Description("Commands to manage tags"), IsMuted]
+    [Group("tag"), Aliases("t"), Description("Commands to manage tags"), IsMuted]
     class TagClass : BaseCommandModule
     {
+        [GroupCommand]
         public async Task ExecuteGroupAsync(CommandContext e, [RemainingText] string tagName)
         {
             if (RPClass.TagsList.Exists(x => x.Name == tagName.ToLower()))

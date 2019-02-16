@@ -18,7 +18,6 @@ E:/Desktop/Coding/Bots/RP-Bot/RPBot-Core/obj/Release/netcoreapp2.0/RPBot-Core.cs
 /Users/Joseph/Desktop/Joseph's Stuff/GitHub/Mournstead/RPBot-Core/bin/Release/netcoreapp2.0/RPBot-Core.pdb
 /Users/Joseph/Desktop/Joseph's Stuff/GitHub/Mournstead/RPBot-Core/bin/Release/netcoreapp2.0/CommonMark.dll
 /Users/Joseph/Desktop/Joseph's Stuff/GitHub/Mournstead/RPBot-Core/bin/Release/netcoreapp2.0/DotNetWikiBot.dll
-/Users/Joseph/Desktop/Joseph's Stuff/GitHub/Mournstead/RPBot-Core/obj/Release/netcoreapp2.0/RPBot-Core.csprojResolveAssemblyReference.cache
 /Users/Joseph/Desktop/Joseph's Stuff/GitHub/Mournstead/RPBot-Core/obj/Release/netcoreapp2.0/RPBot-Core.csproj.CoreCompileInputs.cache
 /Users/Joseph/Desktop/Joseph's Stuff/GitHub/Mournstead/RPBot-Core/obj/Release/netcoreapp2.0/RPBot-Core.AssemblyInfoInputs.cache
 /Users/Joseph/Desktop/Joseph's Stuff/GitHub/Mournstead/RPBot-Core/obj/Release/netcoreapp2.0/RPBot-Core.AssemblyInfo.cs
