@@ -76,7 +76,7 @@ namespace RPBot
                 await e.RespondAsync("You can only vote in the day.");  
             }
         }
-        [Command("create"), Description("Creates a new Secret Villain™ game."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("create"), Description("Creates a new Secret Villain™ game."), IsStaff]
         public async Task Create(CommandContext e)
         {
             if (!active)
@@ -91,7 +91,7 @@ namespace RPBot
             }
         }
 
-        [Command("start"), Description("Starts the Secret Villain™ game."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("start"), Description("Starts the Secret Villain™ game."), IsStaff]
         public async Task Start(CommandContext e)
         {
             if (active && !RPClass.SVData.Started && RPClass.SVData.Players.Count >= 4)
@@ -117,7 +117,7 @@ namespace RPBot
             }
         }
 
-        [Command("stop"), Description("Stops the active Secret Villain™ game."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("stop"), Description("Stops the active Secret Villain™ game."), IsStaff]
         public async Task Stop(CommandContext e)
         {
             if (active && !RPClass.SVData.Started)

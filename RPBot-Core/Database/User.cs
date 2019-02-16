@@ -9,7 +9,7 @@ namespace RPBot
     class User
     {
         public ulong UserID;
-        public bool IsMuted;
+        public bool IsStaff;
 
         public string Characters;
 

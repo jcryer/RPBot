@@ -1,4 +1,77 @@
 {
-  "WeatherObjects": [],
-  "DatePosted": "0001-01-01T00:00:00"
+  "WeatherObjects": [
+    {
+      "Date": "2019-02-15T00:00:00+00:00",
+      "High": 12,
+      "Low": 6,
+      "WindSpeed": 15,
+      "WindDirection": "NW",
+      "Humidity": 50,
+      "Type": 5
+    },
+    {
+      "Date": "2019-02-16T00:00:00+00:00",
+      "High": 11,
+      "Low": 6,
+      "WindSpeed": 22,
+      "WindDirection": "SE",
+      "Humidity": 90,
+      "Type": 4
+    },
+    {
+      "Date": "2019-02-17T00:00:00+00:00",
+      "High": 10,
+      "Low": 4,
+      "WindSpeed": 20,
+      "WindDirection": "E",
+      "Humidity": 94,
+      "Type": 4
+    },
+    {
+      "Date": "2019-02-18T00:00:00+00:00",
+      "High": 10,
+      "Low": 7,
+      "WindSpeed": 4,
+      "WindDirection": "N",
+      "Humidity": 95,
+      "Type": 3
+    },
+    {
+      "Date": "2019-02-19T00:00:00+00:00",
+      "High": 11,
+      "Low": 7,
+      "WindSpeed": 14,
+      "WindDirection": "N",
+      "Humidity": 97,
+      "Type": 1
+    },
+    {
+      "Date": "2019-02-20T00:00:00+00:00",
+      "High": 12,
+      "Low": 5,
+      "WindSpeed": 10,
+      "WindDirection": "S",
+      "Humidity": 97,
+      "Type": 0
+    },
+    {
+      "Date": "2019-02-21T00:00:00+00:00",
+      "High": 10,
+      "Low": 5,
+      "WindSpeed": 20,
+      "WindDirection": "S",
+      "Humidity": 90,
+      "Type": 3
+    },
+    {
+      "Date": "2019-02-22T00:00:00+00:00",
+      "High": 12,
+      "Low": 7,
+      "WindSpeed": 13,
+      "WindDirection": "SE",
+      "Humidity": 88,
+      "Type": 2
+    }
+  ],
+  "DatePosted": "2019-02-16T00:00:00+00:00"
 }

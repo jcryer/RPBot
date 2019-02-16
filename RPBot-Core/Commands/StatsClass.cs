@@ -45,7 +45,7 @@ namespace RPBot
             File.Delete(response);
         }
 
-        [Command("set"), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("set"), IsStaff]
         public async Task SetStats(CommandContext e, DiscordMember d, [Description("Give all stats with commas separating them, in the order: " +
         "Melee Attack, Ranged Attack, Mobility, Dodge, Durability, Utility, Healing, Influence, Potential." +
         "\n e.g. 'A+,B-,A-,C+,F+,D,A,S,N/A'."), RemainingText] string stats)

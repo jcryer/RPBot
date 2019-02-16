@@ -29,21 +29,15 @@ namespace RPBot
         public static Dictionary<string, string> CardList = new Dictionary<string, string>();
         public static SVObject.RootObject SVData = new SVObject.RootObject();
         public static WeatherList WeatherList = new WeatherList();
-        public static DiscordChannel GuildRankingChannel;
-        public static DiscordChannel HeroRankingChannel;
-        public static DiscordChannel VillainRankingChannel;
-        public static DiscordChannel RogueRankingChannel;
-        public static DiscordChannel AcademyRankingChannel;
+        public static DiscordChannel PlayerRankingChannel;
         public static DiscordChannel StatsChannel;
         public static DiscordChannel ApprovalsCategory;
+        public static DiscordChannel GuildRankingChannel;
         public static DiscordChannel InstanceCategory;
         public static DiscordChannel GameChannel;
         public static DiscordChannel FameChannel;
-        public static DiscordRole StaffRole;
-        public static DiscordRole HelpfulRole;
-        public static DiscordRole MuteRole;
         public static DiscordRole AdminRole;
-        public static DiscordRole RPLockRole;
+        public static DiscordRole MuteRole;
 
         public static DiscordGuild RPGuild;
         public static Random Random = new Random();
@@ -197,51 +191,17 @@ namespace RPBot
             List<DiscordChannel> Channels = new List<DiscordChannel>(await guild.GetChannelsAsync());
             foreach (DiscordMember user in AllUsers)
             {
-                int role = 0;
-                /*312980663638818817 = Pro Hero
-                 * 312981984790052866 = Sidekick
-                 * 312980292086530048 = Academy Student
-                 312982325908471808 = Villain
-                 317915877775245312 = Rogue
-                 
-                 */
-                if (user.Roles.Any(x => x.Id == 312980663638818817))
-                {
-                    role = 1;
-                }
-                else if (user.Roles.Any(x => x.Id == 312982325908471808))
-                {
-                    role = 2;
-                }
-                else if (user.Roles.Any(x => x.Id == 317915877775245312))
-                {
-                    role = 3;
-                }
-                else if (user.Roles.Any(x => x.Id == 312981984790052866 || x.Id == 312980292086530048))
-                {
-                    role = 4;
-                }
                 if (!Users.Any(x => x.UserData.UserID == user.Id))
                 {
-                    Users.Add(new UserObject.RootObject(new UserObject.UserData(user.Id, user.DisplayName, role), new UserObject.InvData()));
+                    Users.Add(new UserObject.RootObject(new UserObject.UserData(user.Id, user.DisplayName), new UserObject.InvData()));
                 }
-                if (Users.Find(x => x.UserData.UserID == user.Id).UserData.Username != user.DisplayName)
-                {
-                    Users.Find(x => x.UserData.UserID == user.Id).UserData.Username = user.DisplayName;
-                }
-                if (Users.Find(x => x.UserData.UserID == user.Id).UserData.Role != role)
-                {
-                    Users.Find(x => x.UserData.UserID == user.Id).UserData.Role = role;
-                }
+                Users.Find(x => x.UserData.UserID == user.Id).UserData.Username = user.DisplayName;
             }
             if (update)
             {
                 await XPClass.UpdateStats(StatsChannel);
                 await XPClass.UpdateGuildRanking(guild);
-                await XPClass.UpdatePlayerRanking(guild, 1);
-                await XPClass.UpdatePlayerRanking(guild, 2);
-                await XPClass.UpdatePlayerRanking(guild, 3);
-                await XPClass.UpdatePlayerRanking(guild, 4);
+                await XPClass.UpdatePlayerRanking(guild);
 
             }
             SaveData(-1);
@@ -249,9 +209,8 @@ namespace RPBot
 
 		public static async Task UpdateClock(MessageCreateEventArgs e, DiscordClient d)
         {
-            DiscordGuild RPGuild = e.Guild;
             List<DiscordChannel> RPChannels = new List<DiscordChannel>(await e.Guild.GetChannelsAsync());
-            DiscordChannel AnnouncementChannel = RPChannels.First(x => x.Id == 312918289988976653);
+            DiscordChannel AnnouncementChannel = RPChannels.First(x => x.Id == 543522226058690560);
             DateTime y = DateTime.UtcNow.AddHours(-4);
 
             while (true)
@@ -271,7 +230,7 @@ namespace RPBot
                         }
                         WeatherList.DatePosted = DateTime.Today;
                         SaveData(10);
-                        List<WeatherObject> week = Extensions.DeepClone(WeatherList.WeatherObjects.Where(x => x.Date >= DateTime.Today && x.Date < DateTime.Today.AddDays(8))).ToList();
+                        List<WeatherObject> week = WeatherList.WeatherObjects.Where(x => x.Date >= DateTime.Today && x.Date < DateTime.Today.AddDays(8)).ToList();
 
                         for (int i = 1; i < week.Count; i++)
                         {
@@ -291,7 +250,7 @@ namespace RPBot
                         }
 
                         string fileName = Weather.GenerateSevenDays(week, DateTime.Today.ToString("dd-MM-yyyy.png"));
-                        await RPChannels.First(x => x.Id == 540493682659426304).SendFileAsync(fileName);
+                        await RPChannels.First(x => x.Id == 544790402071265280).SendFileAsync(fileName);
                         File.Delete(fileName);
 
                     }
@@ -308,7 +267,7 @@ namespace RPBot
                         }
 
                         string fileName = Weather.GenerateOneDay(WeatherList.WeatherObjects.First(x => x.Date == DateTime.Today), DateTime.Today.ToString("dd-MM-yyyy.png"));
-                        await RPChannels.First(x => x.Id == 540493682659426304).SendFileAsync(fileName);
+                        await RPChannels.First(x => x.Id == 544790402071265280).SendFileAsync(fileName);
                         File.Delete(fileName);
                         WeatherList.DatePosted = DateTime.Today;
                         SaveData(10);

@@ -57,7 +57,7 @@ namespace RPBot
                     Color = DiscordColor.Blue,
                     Title = "Secret Villain™"
                 }
-                .WithFooter("Heroes & Villains");
+                .WithFooter("Mournstead");
 
                 foreach (UserObject user in Players)
                 {
@@ -85,7 +85,7 @@ namespace RPBot
                     Color = DiscordColor.Blue,
                     Title = "Secret Villain™"
                 }
-                .WithFooter("Heroes & Villains");
+                .WithFooter("Mournstead");
 
                 foreach (UserObject user in Players)
                 {

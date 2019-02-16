@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("xp", CanInvokeWithoutSubcommand = true), Description("Admin command to give XP"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
+    [Group("xp", CanInvokeWithoutSubcommand = true), Description("Admin command to give XP"), IsMuted, IsStaff]
     class XPClass : BaseCommandModule
     {
         public async Task ExecuteGroupAsync(CommandContext e, [Description("User to change stats of")] DiscordMember user, [Description("How much you wish to change it by")] int xpNum)
@@ -26,27 +26,7 @@ namespace RPBot
                 await UpdateStats(RPClass.StatsChannel);
                 RPClass.SaveData(1);
                 UserObject.RootObject newUserData = RPClass.Users.Find(x => x.UserData.UserID == user.Id);
-                switch (newUserData.UserData.Role)
-                {
-                    case 1:
-                        await UpdatePlayerRanking(e.Guild, 1);
-                        break;
-                    case 2:
-                        await UpdatePlayerRanking(e.Guild, 2);
-                        break;
-                    case 3:
-                        await UpdatePlayerRanking(e.Guild, 3);
-                        break;
-                    case 4:
-                        await UpdatePlayerRanking(e.Guild, 4);
-                        break;
-                    case 0:
-                        await UpdatePlayerRanking(e.Guild, 1);
-                        await UpdatePlayerRanking(e.Guild, 2);
-                        await UpdatePlayerRanking(e.Guild, 3);
-                        await UpdatePlayerRanking(e.Guild, 4);
-                        break;
-                }
+                await UpdatePlayerRanking(e.Guild);
                 await e.RespondAsync("Stat changed.");
             }
         }
@@ -73,10 +53,7 @@ namespace RPBot
                 {
                     await UpdateStats(RPClass.StatsChannel);
                     RPClass.SaveData(1);
-                    await UpdatePlayerRanking(e.Guild, 1);
-                    await UpdatePlayerRanking(e.Guild, 2);
-                    await UpdatePlayerRanking(e.Guild, 3);
-                    await UpdatePlayerRanking(e.Guild, 4);
+                    await UpdatePlayerRanking(e.Guild);
 
                     await e.RespondAsync("Stats updated.");
                 }
@@ -102,10 +79,7 @@ namespace RPBot
             {
                 await UpdateStats(RPClass.StatsChannel);
                 RPClass.SaveData(1);
-                await UpdatePlayerRanking(e.Guild, 1);
-                await UpdatePlayerRanking(e.Guild, 2);
-                await UpdatePlayerRanking(e.Guild, 3);
-                await UpdatePlayerRanking(e.Guild, 4);
+                await UpdatePlayerRanking(e.Guild);
 
                 await e.RespondAsync("Stats updated.");
             }
@@ -116,8 +90,6 @@ namespace RPBot
             List<string> tableStrings = new List<string>();
             int positionMax = 4;
             int nameMax = tableData.Select(x => x.Name.Length).Max() + 2;
-            int fameMax = 6;
-            int infamyMax = 8;
             int guildMax = tableData.Select(x => x.Guild.Length).Max() + 1;
             int rankMax = 6;
 
@@ -125,27 +97,27 @@ namespace RPBot
             if (guildMax < 7) guildMax = 7;
 
 
-            string table = $"╔{new string('═', positionMax)}╤{new string('═', nameMax)}╤{new string('═', fameMax)}╤{new string('═', infamyMax)}╤{new string('═', guildMax)}╤{new string('═', rankMax)}╗\n";
-            table += $"║{"Pos".PadRight(positionMax)}│{" Name".PadRight(nameMax)}│{" Fame".PadRight(fameMax)}│{" Infamy".PadRight(infamyMax)}│{" Guild".PadRight(guildMax)}│{" Rank".PadRight(rankMax)}║\n";
-            table += $"╠{new string('═', positionMax)}╪{new string('═', nameMax)}╪{new string('═', fameMax)}╪{new string('═', infamyMax)}╪{new string('═', guildMax)}╪{new string('═', rankMax)}╣\n";
+            string table = $"╔{new string('═', positionMax)}╤{new string('═', nameMax)}╤{new string('═', guildMax)}╤{new string('═', rankMax)}╗\n";
+            table += $"║{"Pos".PadRight(positionMax)}│{" Name".PadRight(nameMax)}│{" Guild".PadRight(guildMax)}│{" Rank".PadRight(rankMax)}║\n";
+            table += $"╠{new string('═', positionMax)}╪{new string('═', nameMax)}╪{new string('═', guildMax)}╪{new string('═', rankMax)}╣\n";
 
             foreach (var row in tableData)
             {
-                table += $"║{row.Position.PadRight(positionMax)}│ {row.Name.PadRight(nameMax-1)}│ {row.Fame.PadRight(fameMax-1)}│ {row.Infamy.PadRight(infamyMax-1)}│ {row.Guild.PadRight(guildMax-1)}│ {row.Rank.PadRight(rankMax-1)}║\n";
+                table += $"║{row.Position.PadRight(positionMax)}│ {row.Name.PadRight(nameMax-1)}│ {row.Guild.PadRight(guildMax-1)}│ {row.Rank.PadRight(rankMax-1)}║\n";
                 if (table.Length > 1500)
                 {
-                    table += $"╚{new string('═', positionMax)}╧{new string('═', nameMax)}╧{new string('═', fameMax)}╧{new string('═', infamyMax)}╧{new string('═', guildMax)}╧{new string('═', rankMax)}╝";
+                    table += $"╚{new string('═', positionMax)}╧{new string('═', nameMax)}╧{new string('═', guildMax)}╧{new string('═', rankMax)}╝";
                     tableStrings.Add(table);
                     table = "";
                     if (row != tableData.Last())
                     {
-                        table = $"╔{new string('═', positionMax)}╤{new string('═', nameMax)}╤{new string('═', fameMax)}╤{new string('═', infamyMax)}╤{new string('═', guildMax)}╤{new string('═', rankMax)}╗\n";
+                        table = $"╔{new string('═', positionMax)}╤{new string('═', nameMax)}╤{new string('═', guildMax)}╤{new string('═', rankMax)}╗\n";
                     }
                 }
             }
             if (table != "")
             {
-                table += $"╚{new string('═', positionMax)}╧{new string('═', nameMax)}╧{new string('═', fameMax)}╧{new string('═', infamyMax)}╧{new string('═', guildMax)}╧{new string('═', rankMax)}╝";
+                table += $"╚{new string('═', positionMax)}╧{new string('═', nameMax)}╧{new string('═', guildMax)}╧{new string('═', rankMax)}╝";
                 tableStrings.Add(table);
             }
             return tableStrings;
@@ -155,17 +127,13 @@ namespace RPBot
         {
             public string Position;
             public string Name;
-            public string Fame;
-            public string Infamy;
             public string Guild;
             public string Rank;
 
-            public RankingRow(string position, string name, string fame, string infamy, string guild, string rank)
+            public RankingRow(string position, string name, string guild, string rank)
             {
                 Position = position;
                 Name = name;
-                Fame = fame;
-                Infamy = infamy;
                 Guild = guild;
                 Rank = rank;
             }
@@ -243,16 +211,12 @@ namespace RPBot
                 await c.SendMessageAsync("```" + tableString + "```");
         }
 
-        public static async Task UpdatePlayerRanking(DiscordGuild e, int type)
+        public static async Task UpdatePlayerRanking(DiscordGuild e)
 		{
 
-			DiscordChannel RankingChannel = RPClass.HeroRankingChannel;
+			DiscordChannel RankingChannel = RPClass.PlayerRankingChannel;
 
-            if (type == 2) RankingChannel = RPClass.VillainRankingChannel;
-            else if (type == 3) RankingChannel = RPClass.RogueRankingChannel;
-            else if (type == 4) RankingChannel = RPClass.AcademyRankingChannel;
-
-            if (!RPClass.Users.Where(x => x.UserData.Role == type && x.Xp > 0).Any())
+            if (!RPClass.Users.Where(x => x.Xp > 0).Any())
             {
                 try
                 {
@@ -284,7 +248,7 @@ namespace RPBot
             }
             List<UserObject.RootObject> SortedUsers = new List<UserObject.RootObject>();
 
-			SortedUsers = RPClass.Users.Where(x => x.UserData.Role == type).OrderByDescending(x => (x.Xp)).ToList();
+            SortedUsers = RPClass.Users.Where(x => x.Xp > 0).OrderByDescending(x => (x.Xp)).ToList();
             int countNum = 1;
             var tableData = new List<RankingRow>();
 			foreach (UserObject.RootObject user in SortedUsers)
@@ -293,7 +257,7 @@ namespace RPBot
                 if (user.UserData.GuildID == 0) userGuild += "N/A";
                 else userGuild += RPClass.Guilds.First(x => x.Id == user.UserData.GuildID && x.UserIDs.Contains(user.UserData.UserID)).Name;
 
-                tableData.Add(new RankingRow(countNum.ToString(), user.UserData.Username, user.UserData.Fame.ToString(), user.UserData.Infamy.ToString(), userGuild, user.GetRank()));
+                tableData.Add(new RankingRow(countNum.ToString(), user.UserData.Username, userGuild, user.GetRank()));
 
 				countNum += 1;
             }
@@ -303,7 +267,7 @@ namespace RPBot
 
         public static async Task UpdateGuildRanking(DiscordGuild e)
         {
-
+            
             DiscordChannel RankingChannel = RPClass.GuildRankingChannel;
 
             if (!RPClass.Guilds.Any())
@@ -339,23 +303,19 @@ namespace RPBot
             List<string> tableStrings = new List<string>();
             int positionMax = 4;
             int nameMax = RPClass.Guilds.Max(x => x.Name.Length) + 2;
-            int fameMax = 6;
-            int infamyMax = 8;
             int rankMax = 6;
 
             if (nameMax < 6) nameMax = 6;
 
-            string table = $"╔{new string('═', positionMax)}╤{new string('═', nameMax)}╤{new string('═', fameMax)}╤{new string('═', infamyMax)}╤{new string('═', rankMax)}╗\n";
-            table += $"║{"Pos".PadRight(positionMax)}│{" Name".PadRight(nameMax)}│{" Fame".PadRight(fameMax)}│{" Infamy".PadRight(infamyMax)}│{" Rank".PadRight(rankMax)}║\n";
-            table += $"╠{new string('═', positionMax)}╪{new string('═', nameMax)}╪{new string('═', fameMax)}╪{new string('═', infamyMax)}╪{new string('═', rankMax)}╣\n";
+            string table = $"╔{new string('═', positionMax)}╤{new string('═', nameMax)}╤{new string('═', rankMax)}╗\n";
+            table += $"║{"Pos".PadRight(positionMax)}│{" Name".PadRight(nameMax)}│{" Rank".PadRight(rankMax)}║\n";
+            table += $"╠{new string('═', positionMax)}╪{new string('═', nameMax)}╪{new string('═', rankMax)}╣\n";
 
 
             List<GuildObject.RootObject> GuildsNew = new List<GuildObject.RootObject>();
             foreach (GuildObject.RootObject guild in RPClass.Guilds)
             {
                 int xp = 0;
-                int fame = 0;
-                int infamy = 0;
                 UserObject.RootObject user;
                 if (guild.UserIDs.Count > 0)
                 {
@@ -365,12 +325,10 @@ namespace RPBot
                         if (user != null)
                         {
                             xp += user.Xp;
-                            fame += user.UserData.Fame;
-                            infamy += user.UserData.Infamy;
                         }
                     }
                     xp = (xp / guild.UserIDs.Count);
-                    GuildsNew.Add(new GuildObject.RootObject(0, guild.Name, new List<ulong>() { (ulong)xp, (ulong)fame, (ulong)infamy })); // xp, fame, infamy
+                    GuildsNew.Add(new GuildObject.RootObject(0, guild.Name, new List<ulong>() { (ulong)xp})); 
                 }
             }
             List<GuildObject.RootObject> SortedGuilds = GuildsNew.OrderByDescending(x => x.UserIDs[0]).ToList();
@@ -380,33 +338,27 @@ namespace RPBot
             {
                 ulong rank = guild.UserIDs[0];
                 RPClass.Users.Where(x => x.UserData.GuildID == guild.Id);
-                string GuildRank = "S1";
-                if (rank < 10000) GuildRank = "S2";
-                if (rank < 9000) GuildRank = "S3";
-                if (rank < 8000) GuildRank = "A1";
-                if (rank < 7000) GuildRank = "A2";
-                if (rank < 6000) GuildRank = "A3";
-                if (rank < 5500) GuildRank = "B1";
-                if (rank < 5000) GuildRank = "B2";
-                if (rank < 4500) GuildRank = "B3";
-                if (rank < 4000) GuildRank = "C1";
-                if (rank < 3000) GuildRank = "C2";
-                if (rank < 2500) GuildRank = "C3";
-                if (rank < 2000) GuildRank = "D1";
-                if (rank < 1000) GuildRank = "D2";
-                if (rank < 500) GuildRank = "D3";
+                string GuildRank = "S";
+                if (rank < 7000) GuildRank = "A1";
+                if (rank < 5750) GuildRank = "A2";
+                if (rank < 4500) GuildRank = "B1";
+                if (rank < 3750) GuildRank = "B2";
+                if (rank < 2500) GuildRank = "C1";
+                if (rank < 1750) GuildRank = "C2";
+                if (rank < 1000) GuildRank = "D1";
+                if (rank < 500) GuildRank = "D2";
 
-                table += $"║{countNum.ToString().PadRight(positionMax)}│ {guild.Name.PadRight(nameMax - 1)}│ {guild.UserIDs[1].ToString().PadRight(fameMax - 1)}│ {guild.UserIDs[2].ToString().PadRight(infamyMax - 1)}│ {GuildRank.PadRight(rankMax - 1)}║\n";
+                table += $"║{countNum.ToString().PadRight(positionMax)}│ {guild.Name.PadRight(nameMax - 1)}│ {GuildRank.PadRight(rankMax - 1)}║\n";
 
 
                 if (table.Length > 1500)
                 {
-                    table += $"╚{new string('═', positionMax)}╧{new string('═', nameMax)}╧{new string('═', fameMax)}╧{new string('═', infamyMax)}╧{new string('═', rankMax)}╝";
+                    table += $"╚{new string('═', positionMax)}╧{new string('═', nameMax)}╧{new string('═', rankMax)}╝";
                     tableStrings.Add(table);
                     table = "";
                     if (guild != SortedGuilds.Last())
                     {
-                        table = $"╔{new string('═', positionMax)}╤{new string('═', nameMax)}╤{new string('═', fameMax)}╤{new string('═', infamyMax)}╤{new string('═', rankMax)}╗\n";
+                        table = $"╔{new string('═', positionMax)}╤{new string('═', nameMax)}╤{new string('═', rankMax)}╗\n";
                     }
                 }
 
@@ -416,11 +368,12 @@ namespace RPBot
 
             if (table != "")
             {
-                table += $"╚{new string('═', positionMax)}╧{new string('═', nameMax)}╧{new string('═', fameMax)}╧{new string('═', infamyMax)}╧{new string('═', rankMax)}╝";
+                table += $"╚{new string('═', positionMax)}╧{new string('═', nameMax)}╧{new string('═', rankMax)}╝";
                 tableStrings.Add(table);
             }
             foreach (var tableString in tableStrings)
                 await RankingChannel.SendMessageAsync("```" + tableString + "```");
         }
+
     }
 }

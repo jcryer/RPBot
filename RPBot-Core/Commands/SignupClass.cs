@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("event"), Description("Event commands")]
+    [Group("event"), Description("Event commands"), IsMuted]
     class SignupClass : BaseCommandModule
     {
-        [Command("create"), Description("Creates an event signup"), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("create"), Description("Creates an event signup"), IsStaff]
         public async Task Create(CommandContext e, [RemainingText]string id)
         {
             if (RPClass.SignupList.Any(x => x.Id == id))
@@ -25,7 +25,7 @@ namespace RPBot
             await e.RespondAsync($"Event signup setup! Please, join using the command: `!event join {id}`.");
         }
 
-        [Command("destroy"), Description("Destroys an event signup"), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("destroy"), Description("Destroys an event signup"), IsStaff]
         public async Task Destroy(CommandContext e, [RemainingText]string id)
         {
             if (!RPClass.SignupList.Any(x => x.Id == id))
@@ -71,7 +71,7 @@ namespace RPBot
             await e.RespondAsync($"You have now been removed from the event: {id}");
         }
 
-        [Command("list"), Description("List of people in a specific event."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("list"), Description("List of people in a specific event."), IsStaff]
         public async Task List(CommandContext e, [RemainingText]string id)
         {
             if (!RPClass.SignupList.Any(x => x.Id == id))
@@ -91,7 +91,7 @@ namespace RPBot
                 Timestamp = DateTime.UtcNow,
                 Title = "Event: " + id
             }
-            .WithFooter("Heroes & Villains");
+            .WithFooter("Mournstead");
 
             bool even = false;
             var users = await e.Guild.GetAllMembersAsync();

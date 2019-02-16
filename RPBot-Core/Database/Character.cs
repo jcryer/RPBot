@@ -8,7 +8,6 @@ namespace RPBot
     class Character
     {
         public string Name;
-        public Role Role;
         public bool IsActive;
         public int XP;
         public int Money;
@@ -19,13 +18,5 @@ namespace RPBot
         public int Infamy;
         public string InfamyComment;
         public int GuildID;
-    }
-
-    enum Role
-    {
-        Hero,
-        Villain,
-        Rogue,
-        AcademyStudent
     }
 }

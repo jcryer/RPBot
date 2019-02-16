@@ -60,7 +60,7 @@ namespace RPBot
             await e.RespondAsync("Hmm. I choose... " + Choices[randomChoice]);
         }
 
-        [Command("weather"), Description("Command to create a one-day weather image."), IsMuted]
+        [Command("weather"), Description("Command to create a one-day weather image."), IsMuted, IsStaff]
         public async Task WeatherCommand(CommandContext e, int high, int low, [Description("Weather Type - 0: Sunny, 1: Partly Cloudy, 2: Mostly Cloudy, 3: Cloudy, 4: Showers, 5: Rain, 6: Heavy Rain, 7: Rain And Snow, 8: Snow, 9: Hail, 10: Heavy Snow, 11: Thunderstorm")]int weatherType, int windSpeed, string windDirection, int humidity)
         {
             string fileName = Weather.GenerateOneDay(new WeatherObject(DateTime.Today, high, low, (WeatherType)weatherType, windSpeed, windDirection, humidity), DateTime.Today.ToString("dd-MM-yyyy.png"));
@@ -68,7 +68,7 @@ namespace RPBot
             File.Delete(fileName);
         }
 
-        [Command("hackban"), Description("Admin cases command."), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
+        [Command("hackban"), Description("Admin cases command."), IsStaff, IsMuted]
         public async Task HackBan(CommandContext e,[Description("User ID")] ulong userId)
         {
 
@@ -77,7 +77,7 @@ namespace RPBot
             await e.RespondAsync($"Hackbanned ID: {userId}");
         }
 
-        [Command("name"), Description("Command for users to change their RP name temporarily"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
+        [Command("name"), Description("Command for users to change their RP name temporarily"), IsStaff, IsMuted]
         public async Task Name(CommandContext e, [Description("What to call yourself")] string name = "")
         {
             DiscordMessage x;
@@ -176,7 +176,7 @@ namespace RPBot
             await ctx.RespondAsync("", embed: b.Build());
         }
 
-        [Group("purge", CanInvokeWithoutSubcommand = true), Aliases("p"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
+        [Group("purge", CanInvokeWithoutSubcommand = true), Aliases("p"), IsStaff, IsMuted]
         class Purge : BaseCommandModule
         {
             [Description("Delete an amount of messages from the current channel.")]
@@ -468,7 +468,7 @@ namespace RPBot
             }
         }
 
-        [Command("restart"),  Description("Admin restart command"), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
+        [Command("restart"),  Description("Admin restart command"), IsStaff, IsMuted]
         public async Task Restart(CommandContext e)
         {
             RPClass.SaveData(-1);
@@ -516,7 +516,7 @@ namespace RPBot
             {
                 string response = await client.GetStringAsync("https://icanhazdadjoke.com/slack");
                 dynamic obj = JObject.Parse(response);
-                await e.RespondAsync(obj.Attachments[0].Text);
+                await e.RespondAsync(obj.attachments[0].text);
             }
         }
 
@@ -546,7 +546,7 @@ namespace RPBot
             await e.RespondAsync(retVal);
         }
 
-        [Command("say"), Description("Tell the bot what to say"), RequireRoles(RoleCheckMode.Any, "Staff", "Game Masters"), IsMuted]
+        [Command("say"), Description("Tell the bot what to say"), IsStaff, IsMuted]
         public async Task Say(CommandContext e, [RemainingText, Description("What to say?")] string text)
         {
             await e.RespondAsync(text);
@@ -584,7 +584,7 @@ namespace RPBot
         }
 
 
-        [Command("embed"), Description("Allows you to make the bot say messages in an embed\n**Usage:**\n`!embed <Title>:<Description>:<Field 1 Title>:<Field 1 Description>:` etc."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
+        [Command("embed"), Description("Allows you to make the bot say messages in an embed\n**Usage:**\n`!embed <Title>:<Description>:<Field 1 Title>:<Field 1 Description>:` etc."), IsStaff, IsMuted]
         public async Task Embed(CommandContext e, [RemainingText, Description("What to say?")] string text)
         {
             DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
@@ -610,7 +610,7 @@ namespace RPBot
             await e.Message.DeleteAsync();
         }
 
-        [Command("sayall"), Description("Makes the bot delete all messages in a channel (the channel the command is used in) and repost them."), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
+        [Command("sayall"), Description("Makes the bot delete all messages in a channel (the channel the command is used in) and repost them."), IsStaff, IsMuted]
         public async Task SayAll(CommandContext e, string whattodelete = "", string whattosetto = "")
         {
             await e.Message.DeleteAsync();
@@ -657,7 +657,7 @@ namespace RPBot
 
         }
 
-        [Command("removeuser"), Description("Makes the bot delete a user that has left the server (Name in statsheets, copied exactly)."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
+        [Command("removeuser"), Description("Makes the bot delete a user that has left the server (Name in statsheets, copied exactly)."), IsStaff, IsMuted]
         public async Task RemoveUser(CommandContext e, [RemainingText] string whotodelete = "")
         {
             if (RPClass.Users.Any(x => x.UserData.Username == whotodelete))
@@ -718,10 +718,10 @@ namespace RPBot
             await e.RespondAsync("lol done.");
         }
         
-        [Group("approval"), Description("Approval commands"), IsMuted]
+        [Group("approval"), Description("Approval commands"), IsStaff, IsMuted]
         class ApprovalClass : BaseCommandModule
         {
-            [Command("add"), Description("Command to create a new approval instance."), RequireRoles(RoleCheckMode.Any, "Staff")]
+            [Command("add"), Description("Command to create a new approval instance.")]
             public async Task AddApproval(CommandContext e, [Description("Mention the user you will be approving.")]DiscordMember m)
             {
                 Regex rgx = new Regex("[^a-zA-Z0-9-]");
@@ -730,15 +730,12 @@ namespace RPBot
                 await c.AddOverwriteAsync(m, Permissions.SendMessages, Permissions.None);
                 await c.AddOverwriteAsync(e.Guild.EveryoneRole, Permissions.ReadMessageHistory, Permissions.SendMessages);
 
-
-                var role = e.Guild.GetRole(312961821063512065);
-                await c.AddOverwriteAsync(role, Permissions.SendMessages | Permissions.ManageMessages, Permissions.None);
-
                 await e.RespondAsync("Channel created!\n" + c.Mention);
             }
         }
 
-        [Group("emoji", CanInvokeWithoutSubcommand = true), Aliases("e"), Description("Emoji commands"), IsMuted]
+        [Group("emoji", CanInvokeWithoutSubcommand = true), Aliases("e"), Description("Emoji commands"), IsMuted, RequireOwner]
+        [Hidden]
         class EmojiClass : BaseCommandModule
         {
             public async Task ExecuteGroupAsync(CommandContext e, [RemainingText] string emoji)
@@ -747,7 +744,7 @@ namespace RPBot
                 await e.RespondAsync(DiscordEmoji.FromName(e.Client, ":" + emoji + ":"));
             }
 
-            [Command("bee"), Description("BEE MOVIE!"), RequireRoles(RoleCheckMode.Any, "Administrator")]
+            [Command("bee"), Description("BEE MOVIE!")]
             public async Task Bee(CommandContext e, [RemainingText]string emoji)
             {
                 string response = "";
@@ -779,7 +776,7 @@ namespace RPBot
                     Color = new DiscordColor("4169E1"),
                     Timestamp = DateTime.UtcNow
                 }
-                .WithFooter("Heroes & Villains");
+                .WithFooter("Mournstead");
                 bool even = false;
                 foreach (DiscordGuild g in e.Client.Guilds.Values)
                 {
@@ -829,7 +826,7 @@ namespace RPBot
             string fileName = DateTime.Now.ToString("yyyy-dd-M--HH-mm-ss");
             File.WriteAllText($"{fileName}.txt", messages);
 
-            await e.Guild.GetChannel(392429153909080065).SendFileAsync($"{fileName}.txt", embed: b.Build());
+            await e.Guild.GetChannel(545297190856163329).SendFileAsync($"{fileName}.txt", embed: b.Build());
             File.Delete(fileName + ".txt");
         }
 

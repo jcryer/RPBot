@@ -14,7 +14,7 @@ namespace RPBot
     {
         public static List<EventObject> Participants = new List<EventObject>();
 
-        [Command("adduser"), Aliases("a", "au"), Description("Adds a participant to the event."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("adduser"), Aliases("a", "au"), Description("Adds a participant to the event."), IsStaff]
         public async Task AddUser(CommandContext e, [Description("User to add to the event")] DiscordMember user)
         {
             if (!Participants.Any(x => x.UserId == user.Id))
@@ -28,7 +28,7 @@ namespace RPBot
             await e.RespondAsync("That user is already in the event!");
         }
 
-        [Command("removeuser"), Aliases("r", "ru"), Description("Removes a participant from the event."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("removeuser"), Aliases("r", "ru"), Description("Removes a participant from the event."), IsStaff]
         public async Task RemoveUser(CommandContext e, [Description("User to remove from the event")] DiscordMember user)
         {
             if (Participants.Any(x => x.UserId == user.Id))
@@ -42,7 +42,7 @@ namespace RPBot
             await e.RespondAsync("That user is already in the event!");
         }
 
-        [Command("health"), Aliases("h"), Description("Edits participant health"), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("health"), Aliases("h"), Description("Edits participant health"), IsStaff]
         public async Task Health(CommandContext e, [Description("User to change health of")] DiscordMember user, int health)
         {
             if (Participants.Any(x => x.UserId == user.Id))

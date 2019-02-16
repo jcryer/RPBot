@@ -56,7 +56,7 @@ namespace RPBot
                 Color = new DiscordColor("4169E1"),
                 Timestamp = DateTime.UtcNow
             }
-            .WithFooter("Heroes & Villains");
+            .WithFooter("Mournstead");
             bool even = false;
             foreach (TagObject.RootObject t in RPClass.TagsList)
             {                
@@ -88,7 +88,7 @@ namespace RPBot
 
         }
 
-        [Command("remove"), Description("Adds a tag."), RequireRoles(RoleCheckMode.Any, "Staff")]
+        [Command("remove"), Description("Adds a tag."), IsStaff]
         public async Task Remove(CommandContext e, [Description("Name of the tag "), RemainingText] string tagName)
         {
             if (RPClass.TagsList.Exists(x => x.Name == tagName.ToLower()))

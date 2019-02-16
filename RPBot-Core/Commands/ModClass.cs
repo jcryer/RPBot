@@ -11,22 +11,16 @@ namespace RPBot
 {
     class ModClass : BaseCommandModule
     {
-        [Command("mute"), Aliases("ultmute", "ultimatepunish", "upunish", "umute", "um", "up", "ultimute", "begone", "punish"), Description("Command for staff to mute a user and strip them of their roles."), RequireRoles(RoleCheckMode.Any, "Staff"), IsMuted]
+        [Command("mute"), Aliases("ultmute", "ultimatepunish", "upunish", "umute", "um", "up", "ultimute", "begone", "punish"), Description("Command for staff to mute a user and strip them of their roles."), IsStaff, IsMuted]
         public async Task UltimateMute(CommandContext e, [Description("Member to be muted")] DiscordMember user, bool silent = false)
         {
             try
             {
                 UserObject.RootObject userObject = RPClass.Users.First(x => x.UserData.UserID == user.Id);
 
-                if (userObject.ModData.IsMuted == 2)
+                if (userObject.ModData.IsStaff == 1)
                 {
-                    if (!silent)
-                        await e.RespondAsync("Fail: user is RP Locked.");
-                    return;
-                }
-                else if (userObject.ModData.IsMuted == 1)
-                {
-                    userObject.ModData.IsMuted = 0;
+                    userObject.ModData.IsStaff = 0;
                     await user.ReplaceRolesAsync(userObject.ModData.Roles);
                     if (!silent)
                         await e.RespondAsync("User unmuted.");
@@ -36,10 +30,10 @@ namespace RPBot
                     if (user.Roles.Any(x => x == RPClass.AdminRole) && !e.Member.Roles.Any(x => x == RPClass.AdminRole))
                     {
                         if (!silent)
-                            await e.RespondAsync("Admins are the master race, leave us alone.");
+                            await e.RespondAsync("Mute wars suck. So, no.");
                         return;
                     }
-                    userObject.ModData.IsMuted = 1;
+                    userObject.ModData.IsStaff = 1;
                     userObject.ModData.Roles = user.Roles.ToList();
                     await user.ReplaceRolesAsync(new List<DiscordRole>() { RPClass.MuteRole });
                     if (!silent)
@@ -56,7 +50,7 @@ namespace RPBot
         }
 
 
-        [Command("ultibulk"), Aliases ("allmute", "am", "ub", "ultib", "allm"), Description("Admin command to mute multiple people.."), RequireRoles(RoleCheckMode.Any, "Administrator")]
+        [Command("ultibulk"), Aliases ("allmute", "am", "ub", "ultib", "allm"), Description("Admin command to mute multiple people.."), IsStaff, IsMuted]
         public async Task Bulk(CommandContext e)
         {
             await e.RespondAsync("Mention a user to ultimute/un ultimute them. To end this process, type `stop`.");
@@ -89,40 +83,6 @@ namespace RPBot
             else
             {
                 await e.RespondAsync("Ultibulk complete.");
-            }
-        }
-
-        [Command("rplock"), Description("Command for admins to hide all channels from a user and remove their roles"), RequireRoles(RoleCheckMode.Any, "Administrator"), IsMuted]
-        public async Task RPLock(CommandContext e, [Description("Member to be muted")] DiscordMember user)
-        {
-            try
-            {
-                UserObject.RootObject userObject = RPClass.Users.First(x => x.UserData.UserID == user.Id);
-
-                if (userObject.ModData.IsMuted == 2)
-                {
-                    userObject.ModData.IsMuted = 0;
-                    await user.ReplaceRolesAsync(userObject.ModData.Roles);
-                    await e.RespondAsync("User un rp-locked.");
-                }
-                else if (userObject.ModData.IsMuted == 1)
-                {
-                    await e.RespondAsync("Fail: user is muted.");
-                    return;
-                }
-                else
-                {
-                    userObject.ModData.IsMuted = 2;
-                    userObject.ModData.Roles = user.Roles.ToList();
-                    await user.ReplaceRolesAsync(new List<DiscordRole>() { RPClass.RPLockRole });
-                    await e.RespondAsync("User rplocked.");
-                }
-                RPClass.SaveData(1);
-
-            }
-            catch
-            {
-                await e.RespondAsync("NO");
             }
         }
     }

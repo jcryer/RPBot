@@ -83,7 +83,6 @@ namespace RPBot
             CommandsNextService.RegisterCommands(typeof(CommandsClass));
             CommandsNextService.RegisterCommands(typeof(GuildClass));
             CommandsNextService.RegisterCommands(typeof(BloodClass));
-            CommandsNextService.RegisterCommands(typeof(MeritClass));
             CommandsNextService.RegisterCommands(typeof(LogClass));
             CommandsNextService.RegisterCommands(typeof(TriviaClass));
             CommandsNextService.RegisterCommands(typeof(ModClass));
@@ -92,12 +91,7 @@ namespace RPBot
             CommandsNextService.RegisterCommands(typeof(WikiClass));
             CommandsNextService.RegisterCommands(typeof(StatsClass));
             CommandsNextService.RegisterCommands(typeof(SignupClass));
-            CommandsNextService.RegisterCommands(typeof(FameClass));
-            CommandsNextService.RegisterCommands(typeof(InfamyClass));
             CommandsNextService.RegisterCommands(typeof(CardClass));
-
-
-            // WikiClass.InitWiki();
 
             InteractivityConfiguration icfg = new InteractivityConfiguration();
 			this.InteractivityService = Discord.UseInteractivity(icfg);
@@ -169,7 +163,7 @@ namespace RPBot
         {
             try
             {
-                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Not Restarting(test): Socket Close");
+                await (await e.Client.GetChannelAsync(545297190856163329)).SendMessageAsync($"Socket Close.");
             }
             catch
             {
@@ -198,7 +192,7 @@ namespace RPBot
         {
             try
             {
-                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Not Restarting (test): Client Error");
+                await (await e.Client.GetChannelAsync(545297190856163329)).SendMessageAsync($"Client Error: {e.Exception.Message}");
             }
             catch
             {
@@ -227,7 +221,7 @@ namespace RPBot
         {
             try
             {
-                await (await e.Client.GetChannelAsync(392429153909080065)).SendMessageAsync("Not Restarting(test): Socket Error");
+                await (await e.Client.GetChannelAsync(545297190856163329)).SendMessageAsync($"Socket Error: {e.Exception.Message}");
             }
             catch
             {
@@ -257,18 +251,18 @@ namespace RPBot
             {
                 DiscordEmbedBuilder b = new DiscordEmbedBuilder()
                 .AddField($"Welcome, {e.Member.Username}!",
-$@"Welcome to the Heroes & Villains Discord Server, {e.Member.Mention}!
-First things first, please read the <#511221485004783618> to see how we run things here.
-Once you've done that, then head over to <#463498007514710016> to get some help for your OC and ask for an approval channel.
-To learn more about the lore and the Server, then browse through <#366574305418543105> or head over to our Wiki and have a look through the pages!
+$@"Welcome to the Mournstead Discord Server, {e.Member.Mention}!
+First things first, please read the <#543836599180328961> to see how we run things here.
+Once you've done that, then head over to <#544993893054152706> to get some help for your OC and ask for an approval channel.
+To learn more about the lore and the Server, then browse through <#543823507667288064> or head over to our Wiki and have a look through the pages!
 
-https://roleplay-heroes-and-villains.wikia.com/wiki/Role-Play:_Heroes_and_Villains_Wiki
+https://mournstead.fandom.com/wiki/Mournstead_Wiki
 
 We hope you enjoy your stay!")
-            .WithFooter("Heroes & Villains Discord Server").WithColor(DiscordColor.CornflowerBlue);
+            .WithFooter("Mournstead Discord Server").WithColor(DiscordColor.CornflowerBlue);
 
                 await e.Member.SendMessageAsync("", embed: b);
-                await e.Guild.Channels.First(x => x.Id == 312918289988976653).SendMessageAsync("", embed: b);
+                await e.Guild.Channels.First(x => x.Id == 543522226058690560).SendMessageAsync("", embed: b);
 
                 DiscordEmbedBuilder c = new DiscordEmbedBuilder
                 {
@@ -278,7 +272,7 @@ We hope you enjoy your stay!")
                 .AddField("Member", e.Member.DisplayName + "#" + e.Member.Discriminator + " (" + e.Member.Id + ")", true)
                 .AddField("Timestamp", e.Member.JoinedAt.ToString(), true);
 
-                await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: c);
+                await e.Guild.GetChannel(545297190856163329).SendMessageAsync(embed: c);
             }
         }
 
@@ -291,7 +285,7 @@ We hope you enjoy your stay!")
                     Title = "Goodbye!"
                 }
                 .AddField("Bye " + e.Member.DisplayName, "We didn't like them anyway.");
-                await e.Guild.Channels.First(x => x.Id == 312918289988976653).SendMessageAsync("", embed: b);
+                await e.Guild.Channels.First(x => x.Id == 543522226058690560).SendMessageAsync("", embed: b);
 
                 DiscordEmbedBuilder c = new DiscordEmbedBuilder
                 {
@@ -301,7 +295,7 @@ We hope you enjoy your stay!")
                 .AddField("Member", e.Member.DisplayName + "#" + e.Member.Discriminator + " (" + e.Member.Id + ")", true)
                 .AddField("Timestamp", DateTime.UtcNow.ToString(), true);
 
-                await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: c);
+                await e.Guild.GetChannel(545297190856163329).SendMessageAsync(embed: c);
             }
         }
 
@@ -311,31 +305,25 @@ We hope you enjoy your stay!")
 
             this.Discord.DebugLogger.LogMessage(LogLevel.Info, "DSPlus", $"Guild available: {e.Guild.Name}", DateTime.UtcNow);
 
-            if (e.Guild.Id == 312918289988976653)
+            if (e.Guild.Id == 543522225383538689)
             {
-                RPClass.GuildRankingChannel = e.Guild.GetChannel(312964153197330433);
-                RPClass.HeroRankingChannel = e.Guild.GetChannel(315048564525105153);
-                RPClass.VillainRankingChannel = e.Guild.GetChannel(315048584007385093);
-                RPClass.RogueRankingChannel = e.Guild.GetChannel(371782656716832769);
-                RPClass.AcademyRankingChannel = e.Guild.GetChannel(402966763022712843);
-                RPClass.ApprovalsCategory = e.Guild.GetChannel(510382933652144138);
-                RPClass.InstanceCategory = e.Guild.GetChannel(513361784955207701);
-                RPClass.StatsChannel = e.Guild.GetChannel(312964092748890114);
-                RPClass.FameChannel = e.Guild.GetChannel(465218787768270848);
-                RPClass.GameChannel = e.Guild.GetChannel(378770557757423617);
-                RPClass.StaffRole = e.Guild.GetRole(415936404598685721); 
-                RPClass.HelpfulRole = e.Guild.GetRole(312979390516559885);
-                RPClass.MuteRole = e.Guild.GetRole(379163684276142091);
-                RPClass.AdminRole = e.Guild.GetRole(312961839359328266);
-                RPClass.RPLockRole = e.Guild.GetRole(516706421316780034);
-                FameRoles.Init(e.Guild);
+
+                RPClass.PlayerRankingChannel = e.Guild.GetChannel(543867552644857856);
+                RPClass.GuildRankingChannel = e.Guild.GetChannel(546450383959228436);
+                RPClass.ApprovalsCategory = e.Guild.GetChannel(543552228347346954);
+                RPClass.InstanceCategory = e.Guild.GetChannel(545298774327689254);
+                RPClass.StatsChannel = e.Guild.GetChannel(543867534055571472);
+                RPClass.FameChannel = e.Guild.GetChannel(545299207330725908);
+                RPClass.GameChannel = e.Guild.GetChannel(544282739713638402);
+                RPClass.AdminRole = e.Guild.GetRole(543526548855324694); 
+                RPClass.MuteRole = e.Guild.GetRole(543553426433245200);
                 RPClass.RPGuild = e.Guild;
 
                 await RPClass.AddOrUpdateUsers(RPClass.RPGuild, true);
 
                 if (RPClass.Restarted)
                 {
-                    DiscordChannel c = e.Guild.GetChannel(404108476835430401);
+                    DiscordChannel c = e.Guild.GetChannel(544790402071265280);
                     DiscordMember me = await e.Guild.GetMemberAsync(126070623855312896);
                     await c.SendMessageAsync("Restarted successfully, " + me.Mention + "!");
                 }
@@ -356,24 +344,21 @@ We hope you enjoy your stay!")
                 {
                     try
                     {
-                        if (e.Channel.Id != 419128665549570049)
+                        if (!e.Message.Content.StartsWith("!"))
                         {
-                            if (!e.Message.Content.StartsWith("!"))
+                            DiscordEmbedBuilder b = new DiscordEmbedBuilder
                             {
-                                DiscordEmbedBuilder b = new DiscordEmbedBuilder
-                                {
-                                    Title = "Message Deleted",
-                                    Color = DiscordColor.Red
-                                }
-                                .AddField("Member", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
-                                .AddField("Channel", e.Message.Channel.Name, true)
-                                .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
-                                .AddField("Deletion Timestamp", e.Message.Timestamp.ToString(), true)
-                                .AddField("Message", e.Message.Content.Any() ? e.Message.Content : "-", false)
-                                .AddField("Attachments", e.Message.Attachments.Any() ? string.Join("\n", e.Message.Attachments.Select(x => x.Url)) : "-", false);
-
-                                await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: b);
+                                Title = "Message Deleted",
+                                Color = DiscordColor.Red
                             }
+                            .AddField("Member", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
+                            .AddField("Channel", e.Message.Channel.Name, true)
+                            .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
+                            .AddField("Deletion Timestamp", e.Message.Timestamp.ToString(), true)
+                            .AddField("Message", e.Message.Content.Any() ? e.Message.Content : "-", false)
+                            .AddField("Attachments", e.Message.Attachments.Any() ? string.Join("\n", e.Message.Attachments.Select(x => x.Url)) : "-", false);
+
+                            await e.Guild.GetChannel(545297190856163329).SendMessageAsync(embed: b);
                         }
                     }
                     catch { }
@@ -391,23 +376,20 @@ We hope you enjoy your stay!")
                     {
                         if (!e.Message.Content.StartsWith("!"))
                         {
-                            if (e.Channel.Id != 419128665549570049)
+                            DiscordEmbedBuilder embed = new DiscordEmbedBuilder
                             {
-                                DiscordEmbedBuilder embed = new DiscordEmbedBuilder
-                                {
-                                    Title = "Message Edited",
-                                    Color = DiscordColor.Orange
-                                }
-                                .AddField("Member", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
-                                .AddField("Channel", e.Message.Channel.Name, true)
-                                .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
-                                .AddField("Edit Timestamp", e.Message.EditedTimestamp.ToString(), true)
-                                .AddField("Old Message", e.MessageBefore.Content.Any() ? e.MessageBefore.Content : "-", false)
-                                .AddField("New Message", e.Message.Content.Any() ? e.Message.Content : "-", false)
-                                .AddField("Attachments", e.Message.Attachments.Any() ? string.Join("\n", e.Message.Attachments.Select(x => x.Url)) : "-", false);
-
-                                await e.Guild.GetChannel(392429153909080065).SendMessageAsync(embed: embed);
+                                Title = "Message Edited",
+                                Color = DiscordColor.Orange
                             }
+                            .AddField("Member", e.Message.Author.Username + "#" + e.Message.Author.Discriminator + " (" + e.Message.Author.Id + ")", true)
+                            .AddField("Channel", e.Message.Channel.Name, true)
+                            .AddField("Creation Timestamp", e.Message.CreationTimestamp.ToString(), true)
+                            .AddField("Edit Timestamp", e.Message.EditedTimestamp.ToString(), true)
+                            .AddField("Old Message", e.MessageBefore.Content.Any() ? e.MessageBefore.Content : "-", false)
+                            .AddField("New Message", e.Message.Content.Any() ? e.Message.Content : "-", false)
+                            .AddField("Attachments", e.Message.Attachments.Any() ? string.Join("\n", e.Message.Attachments.Select(x => x.Url)) : "-", false);
+
+                            await e.Guild.GetChannel(545297190856163329).SendMessageAsync(embed: embed);
                         }
                     }
                     catch { }
@@ -445,7 +427,7 @@ We hope you enjoy your stay!")
                             }
                         }
                     } 
-                    if ((e.Author as DiscordMember).Roles.Any(x => x == RPClass.StaffRole)) 
+                    if ((e.Author as DiscordMember).Roles.Any(x => x == RPClass.AdminRole)) 
                     {
                         MatchCollection matchList = Regex.Matches(e.Message.Content, "`{0,3}{{(.+?)}}`{0,3}");
                         var list = matchList.Cast<Match>().Select(match => match.Value).ToList();
@@ -469,7 +451,7 @@ We hope you enjoy your stay!")
                                     {
                                         try
                                         {
-                                            await role.UpdateAsync(mentionable: true);
+                                            await role.ModifyAsync(mentionable: true);
                                             roles.Add(role);
                                         }
                                         catch (Exception exception) { }
@@ -484,7 +466,7 @@ We hope you enjoy your stay!")
                                 await e.Message.DeleteAsync();
                                 foreach (var role in roles)
                                 {
-                                    await role.UpdateAsync(mentionable: false);
+                                    await role.ModifyAsync(mentionable: false);
                                 }
                             }
                         }
@@ -559,24 +541,35 @@ We hope you enjoy your stay!")
             
             var ms = e.Exception.Message;
             var st = e.Exception.StackTrace;
-
-            ms = ms.Length > 1000 ? ms.Substring(0, 1000) : ms;
-            st = st.Length > 1000 ? st.Substring(0, 1000) : st;
+            if (ms != null)
+            {
+                ms = ms.Length > 1000 ? ms.Substring(0, 1000) : ms;
+            }
+            if (st != null)
+            {
+                st = st.Length > 1000 ? st.Substring(0, 1000) : st;
+            }
 
             DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
             {
-                Title = "You failure at life.",
-                Description = "You fucked it up, didn't you. You are a mess. You are a disgrace. There's a door, use it and never come back,you miserable piece of shit.",
+                Title = "Error",
+                Description = "The old description made me sad so it's this now.",
                 Color = new DiscordColor(0xFF0000),
                 Timestamp = DateTime.UtcNow
             }
-            .WithFooter("Heroes & Villains")
-            .AddField("Command errored", $"```{e.Exception.GetType()} occured when executing `{ e.Command.Name }`.\n" + ms + "```")
-            .AddField("Stack trace", $"```cs\n{st}\n```")
-            .AddField("Source", e.Exception.Source)
-            .AddField("Message", e.Exception.Message);
-            await e.Context.RespondAsync("Message errored. Go bug J.C.");
-            await e.Context.Guild.Channels.First(x => x.Id == 392429153909080065).SendMessageAsync("", embed: embed);
+            .WithFooter("Mournstead")
+                .AddField("Command errored", $"```{e.Exception.GetType()} occured when executing `{ e.Command.Name }`.\n" + ms + "```")
+                .AddField("Message", e.Exception.Message);
+            if (st != null)
+            {
+                embed.AddField("Stack trace", $"```cs\n{st}\n```");
+            }
+            if (e.Exception.Source != null)
+            {
+                embed.AddField("Source", e.Exception.Source);
+            }
+            await e.Context.RespondAsync("Command errored.");
+            await e.Context.Guild.Channels.First(x => x.Id == 545297190856163329).SendMessageAsync("", embed: embed);
         }
 
         private async Task CommandsNextService_CommandExecuted(CommandExecutionEventArgs e)

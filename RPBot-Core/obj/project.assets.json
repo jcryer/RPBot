@@ -16,10 +16,11 @@
           "lib/netstandard2.0/CoordinateSharp.dll": {}
         }
       },
-      "DSharpPlus/4.0.0-beta-00417": {
+      "DSharpPlus/4.0.0-nightly-00571": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
+          "System.Memory": "4.5.2",
           "System.Net.Http": "4.3.3",
           "System.Net.WebSockets": "4.3.0",
           "System.Net.WebSockets.Client": "4.3.1",
@@ -1377,13 +1378,13 @@
           "lib/netstandard1.3/System.Linq.Parallel.dll": {}
         }
       },
-      "System.Memory/4.5.1": {
+      "System.Memory/4.5.2": {
         "type": "package",
         "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "compile": {
-          "ref/netstandard2.0/System.Memory.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {}
@@ -1767,7 +1768,7 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -2466,12 +2467,12 @@
         "lib/netstandard2.0/CoordinateSharp.xml"
       ]
     },
-    "DSharpPlus/4.0.0-beta-00417": {
-      "sha512": "hWtpwtHvKuEkEjELwgr4tRvAKlsVPq/UuKNGgV8Rtu1JJLPqrS7jEzgQEN6M9lirM5azgUwxJC76piFeIVBoZg==",
+    "DSharpPlus/4.0.0-nightly-00571": {
+      "sha512": "5CjU2mg6emx0gcwD3c+/Xo2fat9Yf7Q0W+15ZajLOrfIevX0nN25Kg6zQR93AggVR26NTT/rNrCCMLL/FU0DcQ==",
       "type": "package",
-      "path": "dsharpplus/4.0.0-beta-00417",
+      "path": "dsharpplus/4.0.0-nightly-00571",
       "files": [
-        "dsharpplus.4.0.0-beta-00417.nupkg.sha512",
+        "dsharpplus.4.0.0-nightly-00571.nupkg.sha512",
         "dsharpplus.nuspec",
         "lib/net45/DSharpPlus.dll",
         "lib/net45/DSharpPlus.xml",
@@ -2735,12 +2736,10 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection/2.0.0": {
-      "sha512": "V6xeuEEpIIygDHtOtJ+0X0qkKtVSUS1+kwOC3O4pH0depJf8AfofGo8hanOxoRgooj7WmTtPcgOIjwAteEe28A==",
+      "sha512": "wakg18gHYiUL1pcjjyZuYk6OvDpbSw1E7IWxm78TMepsr+gQ8W0tWzuRm0q/9RFblngwPwo15rrgZSUV51W5Iw==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection/2.0.0",
       "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
@@ -2748,12 +2747,10 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
-      "sha512": "P4dK3DZQFsp7fFzkBu9H9jesBj0KB3O9c50n9FeAOIF+A8aQKBRj63luC9gPqvcedNdMfYQoEUe5dLps1sqvuA==",
+      "sha512": "eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
       "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
@@ -3273,11 +3270,10 @@
       ]
     },
     "Newtonsoft.Json/10.0.3": {
-      "sha512": "wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
+      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
       "type": "package",
       "path": "newtonsoft.json/10.0.3",
       "files": [
-        ".nupkg.metadata",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -5147,10 +5143,10 @@
         "system.linq.parallel.nuspec"
       ]
     },
-    "System.Memory/4.5.1": {
-      "sha512": "oonnLQPZAGD21qtNMG4EtVmbYOInk2jV7M+g108B6OHOb67ZOaWnA/K8P5oQ6uK9wxKzB1iEXSChQOi2scKOqA==",
+    "System.Memory/4.5.2": {
+      "sha512": "Ohf9h6em5CjPaAzupGtW/TWMzX6aVfIGPh7bq5KQmfvYJr+DqvOa0cRS9ggFKGIuvKTModCQEacGC/CwE8j7cg==",
       "type": "package",
-      "path": "system.memory/4.5.1",
+      "path": "system.memory/4.5.2",
       "files": [
         ".signature.p7s",
         "LICENSE.TXT",
@@ -5161,11 +5157,7 @@
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "ref/netstandard1.1/System.Memory.dll",
-        "ref/netstandard1.1/System.Memory.xml",
-        "ref/netstandard2.0/System.Memory.dll",
-        "ref/netstandard2.0/System.Memory.xml",
-        "system.memory.4.5.1.nupkg.sha512",
+        "system.memory.4.5.2.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -6121,12 +6113,11 @@
         "system.runtime.nuspec"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
-      "sha512": "x/3d5xb+mc9e4I2GOOT+HPRWMZLbYjNN/kYKsb0fyUKcWizn/t1CIrGRLIBhv7H0ptYEt+WTTztdPmwSUMyKig==",
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "sha512": "hMkdWxksypQlFXB7JamQegDscxEAQO4FHd/lw/zlSZU9dZgAij65xjCrXer183wvoNAzJic5zzjj2oc9/dloWg==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.1",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -6140,7 +6131,7 @@
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -7741,7 +7732,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "CoordinateSharp >= 1.1.4.2",
-      "DSharpPlus >= 4.0.0-beta-00417",
+      "DSharpPlus >= 4.0.0-nightly-00571",
       "DSharpPlus.CommandsNext >= 4.0.0-beta-00417",
       "DSharpPlus.Interactivity >= 4.0.0-beta-00417",
       "DSharpPlus.VoiceNext >= 4.0.0-beta-00417",
@@ -7756,35 +7747,29 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Joseph\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/Joseph/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "E:\\Desktop\\Coding\\Bots\\RP-Bot\\RPBot-Core\\RPBot-Core.csproj",
+      "projectUniqueName": "/Users/Joseph/Desktop/Joseph's Stuff/GitHub/Mournstead/RPBot-Core/RPBot-Core.csproj",
       "projectName": "RPBot-Core",
-      "projectPath": "E:\\Desktop\\Coding\\Bots\\RP-Bot\\RPBot-Core\\RPBot-Core.csproj",
-      "packagesPath": "C:\\Users\\Joseph\\.nuget\\packages\\",
-      "outputPath": "E:\\Desktop\\Coding\\Bots\\RP-Bot\\RPBot-Core\\obj\\",
+      "projectPath": "/Users/Joseph/Desktop/Joseph's Stuff/GitHub/Mournstead/RPBot-Core/RPBot-Core.csproj",
+      "packagesPath": "/Users/Joseph/.nuget/packages/",
+      "outputPath": "/Users/Joseph/Desktop/Joseph's Stuff/GitHub/Mournstead/RPBot-Core/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Joseph\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/Joseph/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/dsharpplus-nightly/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
@@ -7800,58 +7785,58 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Scripting": {
-            "target": "Package",
-            "version": "2.6.1"
-          },
-          "DSharpPlus.Interactivity": {
-            "target": "Package",
-            "version": "4.0.0-beta-00417"
-          },
-          "Microsoft.CodeAnalysis": {
-            "target": "Package",
-            "version": "2.6.1"
-          },
-          "System.Runtime": {
-            "target": "Package",
-            "version": "4.1.2"
-          },
-          "DSharpPlus.CommandsNext": {
-            "target": "Package",
-            "version": "4.0.0-beta-00417"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
           "CoordinateSharp": {
             "target": "Package",
-            "version": "1.1.4.2"
-          },
-          "SixLabors.ImageSharp": {
-            "target": "Package",
-            "version": "1.0.0-beta0005"
-          },
-          "Microsoft.CodeAnalysis.CSharp.Scripting": {
-            "target": "Package",
-            "version": "2.6.1"
-          },
-          "SixLabors.ImageSharp.Drawing": {
-            "target": "Package",
-            "version": "1.0.0-beta0005"
+            "version": "[1.1.4.2, )"
           },
           "DSharpPlus": {
             "target": "Package",
-            "version": "4.0.0-beta-00417"
+            "version": "[4.0.0-nightly-00571, )"
           },
-          "Newtonsoft.Json": {
+          "DSharpPlus.CommandsNext": {
             "target": "Package",
-            "version": "10.0.3"
+            "version": "[4.0.0-beta-00417, )"
+          },
+          "DSharpPlus.Interactivity": {
+            "target": "Package",
+            "version": "[4.0.0-beta-00417, )"
           },
           "DSharpPlus.VoiceNext": {
             "target": "Package",
-            "version": "4.0.0-beta-00417"
+            "version": "[4.0.0-beta-00417, )"
+          },
+          "Microsoft.CodeAnalysis": {
+            "target": "Package",
+            "version": "[2.6.1, )"
+          },
+          "Microsoft.CodeAnalysis.CSharp.Scripting": {
+            "target": "Package",
+            "version": "[2.6.1, )"
+          },
+          "Microsoft.CodeAnalysis.Scripting": {
+            "target": "Package",
+            "version": "[2.6.1, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[10.0.3, )"
+          },
+          "SixLabors.ImageSharp": {
+            "target": "Package",
+            "version": "[1.0.0-beta0005, )"
+          },
+          "SixLabors.ImageSharp.Drawing": {
+            "target": "Package",
+            "version": "[1.0.0-beta0005, )"
+          },
+          "System.Runtime": {
+            "target": "Package",
+            "version": "[4.1.2, )"
           }
         },
         "imports": [

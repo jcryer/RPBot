@@ -2,15 +2,9 @@
   {
     "UserData": {
       "UserID": 64751081975975936,
-      "Username": "Forge",
-      "Role": 1,
+      "Username": "Literally Satan",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -26,7 +20,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -38,16 +32,10 @@
   },
   {
     "UserData": {
-      "UserID": 182959413018099712,
-      "Username": "Senkaris",
-      "Role": 2,
+      "UserID": 362299393547698176,
+      "Username": "Mammon",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -63,7 +51,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -75,16 +63,10 @@
   },
   {
     "UserData": {
-      "UserID": 125016217504317440,
-      "Username": "Red",
-      "Role": 4,
+      "UserID": 425748875358371842,
+      "Username": "Loopy",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -100,155 +82,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 344274343804534794,
-      "Username": "spooked as heck",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 328509223572996108,
-      "Username": "Volty",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 58279543764422656,
-      "Username": "Fireheart",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 285586166139453440,
-      "Username": "Kinzoku Dangan",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -261,15 +95,9 @@
   {
     "UserData": {
       "UserID": 322120939850563584,
-      "Username": "Lycan",
-      "Role": 3,
+      "Username": "Dre Angel Of Death",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -285,118 +113,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 271794986230611969,
-      "Username": "Blyat Man",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 289978831350136833,
-      "Username": "Killstreak",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 58277187530268672,
-      "Username": "Silverlocks",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -409,15 +126,9 @@
   {
     "UserData": {
       "UserID": 199996479161630720,
-      "Username": "Analogue",
-      "Role": 2,
+      "Username": "Morgan",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -433,155 +144,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 213036391083278336,
-      "Username": "Wilgenz",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 164069879069147146,
-      "Username": "Tokoro Kensha",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 144865936699162624,
-      "Username": "Hat-Fuck",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 244954633691332611,
-      "Username": "Penguinostar2356",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -594,15 +157,9 @@
   {
     "UserData": {
       "UserID": 209011880696479744,
-      "Username": "Circe",
-      "Role": 2,
+      "Username": "Snas",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -618,7 +175,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -632,14 +189,8 @@
     "UserData": {
       "UserID": 175897323325358082,
       "Username": "Blarble",
-      "Role": 0,
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -655,44 +206,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 130477928239726593,
-      "Username": "The Dreamer",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -705,15 +219,9 @@
   {
     "UserData": {
       "UserID": 58917839020494848,
-      "Username": "Vainglory",
-      "Role": 2,
+      "Username": "John Steele",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -729,7 +237,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -741,16 +249,10 @@
   },
   {
     "UserData": {
-      "UserID": 199033828348657664,
-      "Username": "Devon Redwyne",
-      "Role": 4,
+      "UserID": 314487500355665920,
+      "Username": "Sayanora",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -766,7 +268,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -778,16 +280,10 @@
   },
   {
     "UserData": {
-      "UserID": 158284124770140161,
-      "Username": "Nanas🍡",
-      "Role": 0,
+      "UserID": 120477108261748738,
+      "Username": "Ziz //Nightingale",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -803,2964 +299,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 312022550932619265,
-      "Username": "Phasekiller",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 132683316573765632,
-      "Username": "Riptide",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 132682286368817152,
-      "Username": "Rei",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 198349325330284545,
-      "Username": "Hiroshi Hayate",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 411682400578437120,
-      "Username": "Yukimi Nashinoya",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 267725165863895046,
-      "Username": "Jōseph Shiraīyūki",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 382533339770388481,
-      "Username": "Shiver",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 222662196939718656,
-      "Username": "Gabriel Parzival",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 382353918039949313,
-      "Username": "Ray Longmore",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 351161828174331907,
-      "Username": "Sanada",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 372749370866663424,
-      "Username": "Honkers",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 321501319095517185,
-      "Username": "Fentanest",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 124924700781576192,
-      "Username": "Mythil Khad",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 315318484022067202,
-      "Username": "Rose",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 375710268442804236,
-      "Username": "Fallen",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 162597717271379968,
-      "Username": "De Mysteriis Dom Sativa",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 358907314503417856,
-      "Username": "Vanitas",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 344326235658387456,
-      "Username": "Stag",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 221576298743595009,
-      "Username": "Mustang",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 192287928611766281,
-      "Username": "Soul Eater",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": [
-        {
-          "color": 0,
-          "name": "Staff",
-          "hoist": false,
-          "position": 25,
-          "permissions": 470281296,
-          "managed": false,
-          "mentionable": true,
-          "Mention": "<@&415936404598685721>",
-          "id": 415936404598685721
-        },
-        {
-          "color": 3066993,
-          "name": "Administrator",
-          "hoist": false,
-          "position": 28,
-          "permissions": 2146958463,
-          "managed": false,
-          "mentionable": true,
-          "Mention": "<@&312961839359328266>",
-          "id": 312961839359328266
-        },
-        {
-          "color": 0,
-          "name": "Game Masters",
-          "hoist": true,
-          "position": 24,
-          "permissions": 139280,
-          "managed": false,
-          "mentionable": true,
-          "Mention": "<@&367421656408260618>",
-          "id": 367421656408260618
-        }
-      ]
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 112392146782318592,
-      "Username": "Pestilence",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 227119222168223747,
-      "Username": "Charlie Cage",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 310863110951010306,
-      "Username": "Ares",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 296875172198350848,
-      "Username": "Delilah McFocker",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 410221896190394391,
-      "Username": "Dante 🍀🍀",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 126070623855312896,
-      "Username": "Surge",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 340581981106470923,
-      "Username": "Tobi",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 375812712854454272,
-      "Username": "Ojiro Mashirao (Tailman)",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 351955028459913227,
-      "Username": "Disaster",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 314419885369196544,
-      "Username": "Noir",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 369622772684685324,
-      "Username": "Aize",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 206502432740474880,
-      "Username": "LightningMcWolf",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 376563261317054474,
-      "Username": "Lovegirl",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 219098218963664897,
-      "Username": "Caustic",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 388681351781679105,
-      "Username": "Ishitori Kabai",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 247387080437661696,
-      "Username": "Sparkles",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 239750748160655361,
-      "Username": "Fujiko Akizuki",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 124102469646024704,
-      "Username": "Azrael Arkwright",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 389590546810929173,
-      "Username": "Knuckles",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 284842370246377474,
-      "Username": "Rescue",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 320713870199226368,
-      "Username": "Lucky Dragon",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 360260373611282432,
-      "Username": "WhiteSilver",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 242720599158423554,
-      "Username": "Yeehaw",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 348921803168546821,
-      "Username": "kaou.chan",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 237928154273021952,
-      "Username": "Methanol",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 253946322804015104,
-      "Username": "Buried Sun",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 313024849314578442,
-      "Username": "Michael",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 139089329988435968,
-      "Username": "Khali Vernon",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 382476761750831104,
-      "Username": "Yukimi",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 436508482431221760,
-      "Username": "Nice",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 241973301260320768,
-      "Username": "Faust",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 266944798303191040,
-      "Username": "Kharazhul",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 280686912107315200,
-      "Username": "Greevol&Grevel",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 365185286977749002,
-      "Username": "Kenzie🖤",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 366410578388058113,
-      "Username": "Orion",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 269924664401330177,
-      "Username": "๖̶̶̶ۣۣۜۜ͜ζ͜͡SirCthulhu",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 234319272376139777,
-      "Username": "Kevin Alten",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 411518459562950657,
-      "Username": "A F. Kay",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 378800715264688129,
-      "Username": "Idaina Ryū",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 437237473878343691,
-      "Username": "7",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 198458539046338560,
-      "Username": "Psion",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 377505705030057986,
-      "Username": "Chino (Performer)",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 392123818749067265,
-      "Username": "Lotus",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 371732151797940224,
-      "Username": "GL!TCH",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 366350762437246981,
-      "Username": "Crossfire",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 187027544711757824,
-      "Username": "Black Recluse",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 397688951382474752,
-      "Username": "サー・ヘンター",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 400007993753731089,
-      "Username": "Gaytoria",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 144860863541673984,
-      "Username": "Dezco",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 286222030997684226,
-      "Username": "StarForger",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 246639171899359232,
-      "Username": "Blue Streak",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 375102509330464768,
-      "Username": "Shadow Swordsman",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 362299393547698176,
-      "Username": "Ghost",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 425748875358371842,
-      "Username": "Darcy Wright",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 343665884579233793,
-      "Username": "kateass",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 285496656470867988,
-      "Username": "Sam_The_Dude",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 95705085316698112,
-      "Username": "Neetshot",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 342960669370613760,
-      "Username": "Jest",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 346413033179971597,
-      "Username": "Quinn",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -3774,14 +313,8 @@
     "UserData": {
       "UserID": 377555255371759619,
       "Username": "trashacan",
-      "Role": 0,
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -3797,1080 +330,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 312557500828221440,
-      "Username": "Docu",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 365517085469704193,
-      "Username": "Lexi",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 299930861103480842,
-      "Username": "Hermes",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 378472352213630977,
-      "Username": "dreiyahbanana",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 392756979115753483,
-      "Username": "fly",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 145185976283693056,
-      "Username": "Nathaniel",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 238309088260390912,
-      "Username": "Killua Hone",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 365938029640024064,
-      "Username": "Identity",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 237622058383572992,
-      "Username": "Warriorbadger",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 132217176965775360,
-      "Username": "Reldin",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 395792549685755905,
-      "Username": "teenagedirtbag",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 435620946406014996,
-      "Username": "Eirwyn",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 292032014851375106,
-      "Username": "Me.lamy",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 419088532502478849,
-      "Username": "eMiya Desu",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 340729390088323072,
-      "Username": "Sting",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 298553590933618689,
-      "Username": "N    U    T",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 207865809580589056,
-      "Username": "Mau ni",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 455419987037782016,
-      "Username": "Nova",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 408013387801559060,
-      "Username": "GamiGamiGenki",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 388518849454014484,
-      "Username": "moved",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 477096501160443905,
-      "Username": "XannStark",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 442812002528919555,
-      "Username": "Monomoon",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 424601173207810069,
-      "Username": "clockworker",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 385985561975848970,
-      "Username": "Excalibur",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 448279009235697689,
-      "Username": "Hatsumi",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 480113457946165269,
-      "Username": "awkwardlydrowningtodeath",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 493298237671735296,
-      "Username": "Tyrr",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 316299936067092480,
-      "Username": "Lucio Tidal",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 313723251459096588,
-      "Username": "Takashi Ryu",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -4883,15 +343,9 @@
   {
     "UserData": {
       "UserID": 356495039582699524,
-      "Username": "Yokatta",
-      "Role": 4,
+      "Username": "praise the lord BOB ROBERT.",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -4907,7 +361,100 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    },
+    "Activity": {
+      "MessageCount": 0,
+      "CharacterCount": 0,
+      "WordCount": 0
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 307943347392348161,
+      "Username": "Arin",
+      "Money": 0,
+      "SoulShards": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsStaff": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    },
+    "Activity": {
+      "MessageCount": 0,
+      "CharacterCount": 0,
+      "WordCount": 0
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 252824643344269315,
+      "Username": "High Lord Kitten",
+      "Money": 0,
+      "SoulShards": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsStaff": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    },
+    "Activity": {
+      "MessageCount": 0,
+      "CharacterCount": 0,
+      "WordCount": 0
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 321501319095517185,
+      "Username": "Vierzehn || Bell",
+      "Money": 0,
+      "SoulShards": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -4920,15 +467,9 @@
   {
     "UserData": {
       "UserID": 464668932926734347,
-      "Username": "DJ",
-      "Role": 2,
+      "Username": "Boo || Leviathan",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -4944,7 +485,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -4956,16 +497,10 @@
   },
   {
     "UserData": {
-      "UserID": 166097488413982720,
-      "Username": "MrBottomText",
-      "Role": 0,
+      "UserID": 162597717271379968,
+      "Username": "Rickard Schmidt",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -4981,7 +516,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -4993,16 +528,10 @@
   },
   {
     "UserData": {
-      "UserID": 504709393456037890,
-      "Username": "Hey whatsup guys",
-      "Role": 0,
+      "UserID": 221576298743595009,
+      "Username": "Sturm",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -5018,7 +547,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -5030,16 +559,10 @@
   },
   {
     "UserData": {
-      "UserID": 446296875168038924,
-      "Username": "Lorax",
-      "Role": 0,
+      "UserID": 112392146782318592,
+      "Username": "The Mighty B || Apep",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -5055,7 +578,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -5067,16 +590,10 @@
   },
   {
     "UserData": {
-      "UserID": 500699787637686293,
-      "Username": "ThePrettyFucker",
-      "Role": 0,
+      "UserID": 310863110951010306,
+      "Username": "RegentPuppet",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -5092,7 +609,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -5104,16 +621,10 @@
   },
   {
     "UserData": {
-      "UserID": 419771199195971585,
-      "Username": "Field",
-      "Role": 0,
+      "UserID": 410221896190394391,
+      "Username": "Dante/ Raven Queen",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -5129,7 +640,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -5141,16 +652,10 @@
   },
   {
     "UserData": {
-      "UserID": 303708177323655168,
-      "Username": "EZ Money™",
-      "Role": 0,
+      "UserID": 302524640285163521,
+      "Username": "Lt.Commander Matt",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -5166,266 +671,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 152152237681016832,
-      "Username": "RyRy",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 456284416633995265,
-      "Username": "maddie.banke",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 460393780663812097,
-      "Username": "Bonnabel",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 504601823601098753,
-      "Username": "Mrbuttalands",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 395714477422804994,
-      "Username": "Oscar",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 411997656542347274,
-      "Username": "insertcreativename",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 455753679849652227,
-      "Username": "Riku",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -5438,15 +684,9 @@
   {
     "UserData": {
       "UserID": 327354503563051011,
-      "Username": "K/DA",
-      "Role": 3,
+      "Username": "dutchkiller69",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -5462,7 +702,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -5474,16 +714,10 @@
   },
   {
     "UserData": {
-      "UserID": 277998984839036928,
-      "Username": "Akito",
-      "Role": 0,
+      "UserID": 126070623855312896,
+      "Username": "Useless.",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 100,
       "GuildID": 0
     },
     "Xp": 0,
@@ -5499,7 +733,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -5511,16 +745,10 @@
   },
   {
     "UserData": {
-      "UserID": 358338709407399936,
-      "Username": "fried rice",
-      "Role": 0,
+      "UserID": 351955028459913227,
+      "Username": "Safety Pin",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -5536,7 +764,69 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    },
+    "Activity": {
+      "MessageCount": 0,
+      "CharacterCount": 0,
+      "WordCount": 0
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 369622772684685324,
+      "Username": "Crow//Cardinal",
+      "Money": 0,
+      "SoulShards": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsStaff": 0,
+      "MuteDuration": "00:00:00",
+      "Roles": null
+    },
+    "Activity": {
+      "MessageCount": 0,
+      "CharacterCount": 0,
+      "WordCount": 0
+    }
+  },
+  {
+    "UserData": {
+      "UserID": 376563261317054474,
+      "Username": "nyxie",
+      "Money": 0,
+      "SoulShards": 0,
+      "GuildID": 0
+    },
+    "Xp": 0,
+    "Stats": {
+      "Melee": 0,
+      "Ranged": 0,
+      "Mobility": 0,
+      "Dodge": 0,
+      "Durability": 0,
+      "Utility": 0,
+      "Healing": 0,
+      "Influence": 0,
+      "Potential": 0
+    },
+    "ModData": {
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -5549,15 +839,9 @@
   {
     "UserData": {
       "UserID": 486230453297348676,
-      "Username": "I should get a better name",
-      "Role": 0,
+      "Username": "Bellbun",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -5573,1709 +857,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 258253639100006400,
-      "Username": "ShatteredFox",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 452651491325509632,
-      "Username": "Glitter Spring",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 425920452800544789,
-      "Username": "tonbo",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 356001203110281216,
-      "Username": "Amp",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 326121659532705792,
-      "Username": "🎧Max the VA🎤",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 372520178073862144,
-      "Username": "Arsenica",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 207287933630152704,
-      "Username": "Fyah",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 465469804019449857,
-      "Username": "Danna",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 387406766943764481,
-      "Username": "AnimationAdventurer",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 444931762179801088,
-      "Username": "居合刀",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 287903102760386571,
-      "Username": "derphoenix02",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 310000143892086784,
-      "Username": "1010todd",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 460844653902823444,
-      "Username": "marc_black16",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 462568464603807744,
-      "Username": "Gladeyz",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 118608409410011140,
-      "Username": "groundedbeef",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 417837453102153739,
-      "Username": "Mr. New Vegas",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 459376042025549825,
-      "Username": "Death",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 430769543724400640,
-      "Username": "~ ChEeSeCaKe ~",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 415283235501899797,
-      "Username": "The MVP.",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 191261919741476864,
-      "Username": "BruceOxFord",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 245774738050252803,
-      "Username": "TabbyCallie",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 289526224731242515,
-      "Username": "KingOfTheDead",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 351973783608754176,
-      "Username": "ᏓᏆᎷᎷY ᏴᏆᏚᏟᏌᏆᎢᏚ",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 327202991235137548,
-      "Username": "pew pew",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 473470355994836992,
-      "Username": "Casper",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 460849225329016854,
-      "Username": "Logan",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 224649688807112704,
-      "Username": "bonezman5000",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 419571715908042754,
-      "Username": "Seb",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 366341433147260961,
-      "Username": "♡ Cupid's Daughter ♡",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 470538332947087369,
-      "Username": "Yamiyo",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 443910073471729664,
-      "Username": "irish boi",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 478807644807626756,
-      "Username": "狼  ちょっと 愛人",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 414646159223685132,
-      "Username": "OK!",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 362014966343008258,
-      "Username": "SpineCricket",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 120477108261748738,
-      "Username": "Hangaku",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 423505966529642496,
-      "Username": "metty",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 249390560522141696,
-      "Username": "Void",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 331598027062116362,
-      "Username": "Essence",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 506868051841384449,
-      "Username": "Glitch",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 264341427448840194,
-      "Username": "astara",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 479986982378930177,
-      "Username": "Diego Blanco",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 251040821413937163,
-      "Username": "Ralsei, The Fluffy Prince",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 205100036760141825,
-      "Username": "Blackguard",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 418388803095625728,
-      "Username": "Mary Belladonna",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 385466620337979394,
-      "Username": "andy_cooper",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 317387763127287818,
-      "Username": "Recon",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -7288,15 +870,9 @@
   {
     "UserData": {
       "UserID": 197380529593647105,
-      "Username": "Aion",
-      "Role": 3,
+      "Username": "Ikelos Stranzer",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -7312,7 +888,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -7324,16 +900,10 @@
   },
   {
     "UserData": {
-      "UserID": 236219008586743809,
-      "Username": "SkeletronPrime655",
-      "Role": 0,
+      "UserID": 389590546810929173,
+      "Username": "rennex",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -7349,7 +919,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -7362,15 +932,9 @@
   {
     "UserData": {
       "UserID": 440613147032944651,
-      "Username": "Ambulance Addict",
-      "Role": 3,
+      "Username": "Sinky",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -7386,895 +950,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 300718862796849153,
-      "Username": "SpaghettiAtSunset",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 249054980353425409,
-      "Username": "Plan B",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 207830454089285632,
-      "Username": "Smile",
-      "Role": 1,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 244529976009818112,
-      "Username": "-WhyDidThisHappenToME?-",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 428383959030824990,
-      "Username": "Lucian",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 151759858410979329,
-      "Username": "Skinner ~ YungWeeper ~ 新 ドラゴン",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 480828627089489951,
-      "Username": "Komayday",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 284793926492225537,
-      "Username": "Nep",
-      "Role": 4,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 335527664301506560,
-      "Username": "Alco-51N",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 229462326665805826,
-      "Username": "Magna",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 484753036242190337,
-      "Username": "imasmartloser",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 511369339409006593,
-      "Username": "Pierce Sign",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 520423602831753216,
-      "Username": "*lA_bRuJa*",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 409089336785764363,
-      "Username": "disastrous.kai",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 150767260464709632,
-      "Username": "June Axel",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 95576806295339008,
-      "Username": "𝙺𝚛𝚊𝚏𝚝 𝙿𝚞𝚗𝚔",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 509460281290653696,
-      "Username": "Lucifer",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 428772663754752030,
-      "Username": "Ito",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 409094158679277569,
-      "Username": "Clove",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 509876572724133888,
-      "Username": "thunder cat",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 301165933076938752,
-      "Username": "Tori Elkheart",
-      "Role": 2,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 472893215352291341,
-      "Username": "Penguinostary",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 492253029777670146,
-      "Username": "Nancy Blanchard",
-      "Role": 3,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 382691395250552833,
-      "Username": "Dream",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8288,14 +964,8 @@
     "UserData": {
       "UserID": 524967502694973440,
       "Username": "Nanas🍡",
-      "Role": 0,
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8311,7 +981,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8323,16 +993,10 @@
   },
   {
     "UserData": {
-      "UserID": 112011268268810240,
-      "Username": "New Person",
-      "Role": 0,
+      "UserID": 237928154273021952,
+      "Username": "Elisa Faulner/ Vlad Bloodfallen",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8348,7 +1012,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8360,16 +1024,10 @@
   },
   {
     "UserData": {
-      "UserID": 322418950560415745,
-      "Username": "jimochiii",
-      "Role": 0,
+      "UserID": 207830454089285632,
+      "Username": "The Emperor Of Dawn",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8385,7 +1043,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8397,16 +1055,10 @@
   },
   {
     "UserData": {
-      "UserID": 149653849630703617,
-      "Username": "nordir",
-      "Role": 0,
+      "UserID": 253946322804015104,
+      "Username": "Sarc",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8422,7 +1074,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8434,16 +1086,10 @@
   },
   {
     "UserData": {
-      "UserID": 444234063251767307,
-      "Username": "Jigsaw",
-      "Role": 1,
+      "UserID": 313024849314578442,
+      "Username": "Tartarus",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8459,7 +1105,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8471,16 +1117,10 @@
   },
   {
     "UserData": {
-      "UserID": 207323743972753418,
-      "Username": "Mega",
-      "Role": 0,
+      "UserID": 525578485410955266,
+      "Username": "ash machine broke",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8496,7 +1136,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8508,16 +1148,10 @@
   },
   {
     "UserData": {
-      "UserID": 516090874489339934,
-      "Username": "alien",
-      "Role": 0,
+      "UserID": 241973301260320768,
+      "Username": "Charlie dun need an Operation",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8533,7 +1167,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8545,16 +1179,10 @@
   },
   {
     "UserData": {
-      "UserID": 322037470910873601,
-      "Username": "Griffyn",
-      "Role": 0,
+      "UserID": 280686912107315200,
+      "Username": "Sporting Defiance",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8570,7 +1198,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8582,16 +1210,10 @@
   },
   {
     "UserData": {
-      "UserID": 484487743918047254,
-      "Username": "Crimson Claws",
-      "Role": 3,
+      "UserID": 340729390088323072,
+      "Username": "°°°·.°·..· ᗰᗩ ·._.·°¯°·.·°",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8607,7 +1229,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8619,16 +1241,10 @@
   },
   {
     "UserData": {
-      "UserID": 249608242601263105,
-      "Username": "kitkat",
-      "Role": 0,
+      "UserID": 229462326665805826,
+      "Username": "Ludwig von Aelfried XI",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8644,7 +1260,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8656,16 +1272,10 @@
   },
   {
     "UserData": {
-      "UserID": 536196824504074271,
-      "Username": "CatGrrrl",
-      "Role": 0,
+      "UserID": 245774738050252803,
+      "Username": "TabbyCallie",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8681,7 +1291,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8693,16 +1303,10 @@
   },
   {
     "UserData": {
-      "UserID": 169165373449568256,
-      "Username": "TheInsaneScientist",
-      "Role": 0,
+      "UserID": 234319272376139777,
+      "Username": "Omega",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8718,7 +1322,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8730,16 +1334,10 @@
   },
   {
     "UserData": {
-      "UserID": 532045213779361812,
-      "Username": "Superfly",
-      "Role": 0,
+      "UserID": 392123818749067265,
+      "Username": "Jaenelle",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8755,7 +1353,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
@@ -8767,16 +1365,10 @@
   },
   {
     "UserData": {
-      "UserID": 256464809845981195,
-      "Username": "Birds",
-      "Role": 0,
+      "UserID": 187027544711757824,
+      "Username": "Mister Sir",
       "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
+      "SoulShards": 0,
       "GuildID": 0
     },
     "Xp": 0,
@@ -8792,44 +1384,7 @@
       "Potential": 0
     },
     "ModData": {
-      "IsMuted": 0,
-      "MuteDuration": "00:00:00",
-      "Roles": null
-    },
-    "Activity": {
-      "MessageCount": 0,
-      "CharacterCount": 0,
-      "WordCount": 0
-    }
-  },
-  {
-    "UserData": {
-      "UserID": 222077129557409792,
-      "Username": "Elenir1",
-      "Role": 0,
-      "Money": 0,
-      "MeritPoints": 0,
-      "BloodPoints": 0,
-      "Fame": 0,
-      "Infamy": 0,
-      "FameComment": "",
-      "InfamyComment": "",
-      "GuildID": 0
-    },
-    "Xp": 0,
-    "Stats": {
-      "Melee": 0,
-      "Ranged": 0,
-      "Mobility": 0,
-      "Dodge": 0,
-      "Durability": 0,
-      "Utility": 0,
-      "Healing": 0,
-      "Influence": 0,
-      "Potential": 0
-    },
-    "ModData": {
-      "IsMuted": 0,
+      "IsStaff": 0,
       "MuteDuration": "00:00:00",
       "Roles": null
     },
