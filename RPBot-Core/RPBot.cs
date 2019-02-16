@@ -170,22 +170,7 @@ namespace RPBot
             }
 
             RPClass.SaveData(-1);
-            /*
-            var process = new Process()
-            {
-                StartInfo = new ProcessStartInfo
-                {
-                    FileName = "/bin/bash",
-                    Arguments = $"-c \"dotnet RPBot-Core.dll\"",
-                    RedirectStandardOutput = true,
-                    UseShellExecute = false,
-                    CreateNoWindow = true,
-                }
-            };
-            process.Start();
-            Environment.Exit(-1);
-            await Task.Delay(0);
-            */
+
         }
 
         private async Task Discord_ClientErrored(ClientErrorEventArgs e)
