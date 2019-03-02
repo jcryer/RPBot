@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace RPBot
 {
-    [Group("xp"), Description("Admin command to give XP"), IsMuted, IsStaff]
+    [Group("xp"), Description("Admin command to give XP"), IsMuted, RequireRoles(RoleCheckMode.Any, "XP Mod", "admin")]
     class XPClass : BaseCommandModule
     {
         [GroupCommand]

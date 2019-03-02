@@ -1,7 +1,7 @@
 {
   "WeatherObjects": [
     {
-      "Date": "2019-02-15T00:00:00+00:00",
+      "Date": "2019-02-16T00:00:00+00:00",
       "High": 12,
       "Low": 6,
       "WindSpeed": 15,
@@ -10,68 +10,68 @@
       "Type": 5
     },
     {
-      "Date": "2019-02-16T00:00:00+00:00",
-      "High": 11,
-      "Low": 6,
-      "WindSpeed": 22,
-      "WindDirection": "SE",
-      "Humidity": 90,
-      "Type": 4
-    },
-    {
       "Date": "2019-02-17T00:00:00+00:00",
-      "High": 10,
-      "Low": 4,
-      "WindSpeed": 20,
-      "WindDirection": "E",
-      "Humidity": 94,
+      "High": 9,
+      "Low": 7,
+      "WindSpeed": 41,
+      "WindDirection": "N",
+      "Humidity": 98,
       "Type": 4
     },
     {
       "Date": "2019-02-18T00:00:00+00:00",
-      "High": 10,
-      "Low": 7,
-      "WindSpeed": 4,
-      "WindDirection": "N",
-      "Humidity": 95,
-      "Type": 3
+      "High": 9,
+      "Low": 6,
+      "WindSpeed": 8,
+      "WindDirection": "NE",
+      "Humidity": 94,
+      "Type": 6
     },
     {
       "Date": "2019-02-19T00:00:00+00:00",
-      "High": 11,
+      "High": 9,
       "Low": 7,
       "WindSpeed": 14,
-      "WindDirection": "N",
-      "Humidity": 97,
-      "Type": 1
+      "WindDirection": "W",
+      "Humidity": 92,
+      "Type": 4
     },
     {
       "Date": "2019-02-20T00:00:00+00:00",
-      "High": 12,
-      "Low": 5,
-      "WindSpeed": 10,
-      "WindDirection": "S",
-      "Humidity": 97,
-      "Type": 0
+      "High": 10,
+      "Low": 6,
+      "WindSpeed": 9,
+      "WindDirection": "N",
+      "Humidity": 88,
+      "Type": 3
     },
     {
       "Date": "2019-02-21T00:00:00+00:00",
-      "High": 10,
-      "Low": 5,
-      "WindSpeed": 20,
-      "WindDirection": "S",
-      "Humidity": 90,
+      "High": 12,
+      "Low": 7,
+      "WindSpeed": 35,
+      "WindDirection": "SE",
+      "Humidity": 85,
       "Type": 3
     },
     {
       "Date": "2019-02-22T00:00:00+00:00",
-      "High": 12,
-      "Low": 7,
-      "WindSpeed": 13,
+      "High": 10,
+      "Low": 4,
+      "WindSpeed": 10,
       "WindDirection": "SE",
-      "Humidity": 88,
+      "Humidity": 93,
+      "Type": 3
+    },
+    {
+      "Date": "2019-02-23T00:00:00+00:00",
+      "High": 11,
+      "Low": 7,
+      "WindSpeed": 16,
+      "WindDirection": "N",
+      "Humidity": 95,
       "Type": 2
     }
   ],
-  "DatePosted": "2019-02-16T00:00:00+00:00"
+  "DatePosted": "2019-02-17T00:00:00+00:00"
 }

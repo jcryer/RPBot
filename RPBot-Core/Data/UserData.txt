@@ -653,7 +653,7 @@
   {
     "UserData": {
       "UserID": 302524640285163521,
-      "Username": "Lt.Commander Matt",
+      "Username": "Colonel Jefferson L. Xavier",
       "Money": 0,
       "SoulShards": 0,
       "GuildID": 0
@@ -715,7 +715,7 @@
   {
     "UserData": {
       "UserID": 126070623855312896,
-      "Username": "Useless.",
+      "Username": "Joe",
       "Money": 0,
       "SoulShards": 100,
       "GuildID": 0
@@ -746,7 +746,7 @@
   {
     "UserData": {
       "UserID": 351955028459913227,
-      "Username": "Safety Pin",
+      "Username": "Kaido",
       "Money": 0,
       "SoulShards": 0,
       "GuildID": 0
@@ -808,7 +808,7 @@
   {
     "UserData": {
       "UserID": 376563261317054474,
-      "Username": "nyxie",
+      "Username": "Nikki",
       "Money": 0,
       "SoulShards": 0,
       "GuildID": 0
@@ -1149,7 +1149,7 @@
   {
     "UserData": {
       "UserID": 241973301260320768,
-      "Username": "Charlie dun need an Operation",
+      "Username": "Check the Operation for Charlie",
       "Money": 0,
       "SoulShards": 0,
       "GuildID": 0
@@ -1366,7 +1366,7 @@
   {
     "UserData": {
       "UserID": 187027544711757824,
-      "Username": "Mister Sir",
+      "Username": "Lilith/0",
       "Money": 0,
       "SoulShards": 0,
       "GuildID": 0

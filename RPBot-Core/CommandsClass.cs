@@ -176,7 +176,7 @@ namespace RPBot
             await ctx.RespondAsync("", embed: b.Build());
         }
 
-        [Group("purge"), Aliases("p"), IsStaff, IsMuted]
+        [Group("purge"), Aliases("p"), RequireRoles(RoleCheckMode.Any, "Game Master", "Wiki Mod", "XP Mod", "Approvals Mod", "admin"), IsMuted]
         class Purge : BaseCommandModule
         {
             [GroupCommand]

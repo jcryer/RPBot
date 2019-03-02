@@ -182,9 +182,9 @@ namespace RPBot
                     backgroundImage.Mutate(x => x.DrawImage(image1, 1, new Point(imageX, 775)).DrawText(dayString, parentFont, Rgba32.Black, new PointF(dateOffset, 370)).DrawText(maxTemp, childFont, Rgba32.Black, new PointF(maxOffset, 445)).DrawText(minTemp, childFont, Rgba32.FromHex("#4E4E4E"), new PointF(minOffset, 445)));
                     string windDescriptor = "";
                     if (day.WindSpeed < 10) windDescriptor = "Light";
-                    if (day.WindSpeed >= 15 && day.WindSpeed < 25) windDescriptor = "Moderate";
-                    if (day.WindSpeed >= 25 && day.WindSpeed < 50) windDescriptor = "Strong";
-                    if (day.WindSpeed >= 50) windDescriptor = "Gale Force";
+                    if (day.WindSpeed >= 10 && day.WindSpeed < 20) windDescriptor = "Moderate";
+                    if (day.WindSpeed >= 20 && day.WindSpeed < 40) windDescriptor = "Strong";
+                    if (day.WindSpeed >= 40) windDescriptor = "Gale Force";
 
                     string wind = $"{windDescriptor}, {day.WindSpeed} km/h {day.WindDirection}";
 
